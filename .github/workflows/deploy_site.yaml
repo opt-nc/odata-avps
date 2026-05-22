@@ -1,0 +1,56 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'zensical.toml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: pages-github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      # 1. Récupération du code
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Installation de 'uv' (Gestionnaire Python ultra-rapide)
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      # 3. Installation propre de Zensical et build du site
+      # (Plus besoin d'apt-get install, uv gère l'environnement virtuel tout seul)
+      - name: Build site with Zensical
+        run: |
+          uv run --with zensical zensical build
+
+      # 4. Upload du dossier généré par Zensical (par défaut ./site)
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      # 5. Déploiement sur le Web
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

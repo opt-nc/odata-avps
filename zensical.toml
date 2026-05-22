@@ -1,0 +1,13 @@
+[site]
+title = "Bourse de l'Emploi OPT"
+description = "Espace de consultation des Avis de Vacances de Poste (AVP) pour les agents de l'OPT."
+author = "M"
+
+[build]
+docs_dir = "data"
+# Dossier final généré (celui que GitHub Pages publiera)
+site_dir = "public" 
+
+[theme]
+name = "material" 
+palette = { primary = "blue", accent = "blue" } 
