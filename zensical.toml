@@ -11,3 +11,13 @@ site_dir = "public"
 [theme]
 name = "material" 
 palette = { primary = "blue", accent = "blue" } 
+
+
+[project]
+# On déclare le fichier CSS
+extra_css = ["style/extra.css"]
+
+[project.theme]
+# On déclare le logo principal (qui s'affichera en haut à gauche par défaut)
+logo = "assets/logo-opt.png"
+favicon = "assets/logo-opt.png"

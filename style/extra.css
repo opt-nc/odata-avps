@@ -1,0 +1,84 @@
+/* ---------------------------------------------------
+   1. AMÉLIORATION DU TABLEAU RÉCAPITULATIF 
+--------------------------------------------------- */
+.md-typeset table {
+    background-color: #ffffff;
+    border-radius: 8px; /* Bords légèrement arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Ombre douce type "carte" */
+    border: 1px solid #e0e0e0;
+    width: 100%; /* Prend toute la largeur de l'article */
+    margin-bottom: 2em;
+    border-collapse: collapse; 
+    overflow: hidden; /* Empêche les angles de dépasser des bords arrondis */
+}
+
+/* Espacement à l'intérieur des cellules */
+.md-typeset table td, 
+.md-typeset table th {
+    padding: 14px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Retirer la bordure de la toute dernière ligne pour faire propre */
+.md-typeset table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Design de la colonne de GAUCHE (Les libellés) */
+.md-typeset table td:first-child {
+    font-weight: 600; /* Texte en gras */
+    color: #4a4a4a;   /* Gris foncé */
+    background-color: #f8f9fa; /* Fond très légèrement grisé pour la détacher */
+    width: 35%; /* Prend un tiers de la largeur */
+    border-right: 1px solid #f0f0f0;
+}
+
+/* Design de la colonne de DROITE (Les valeurs) */
+.md-typeset table td:last-child {
+    color: #111111; /* Noir bien lisible */
+    font-weight: 500;
+}
+
+/* mais on va plutot masquer le tableau et en creer un autre en HTML pour pouvoir le personnaliser davantage et ajouter des badges etc. */
+/* Cache le tableau des métadonnées généré par défaut par Zensical */
+.md-typeset table:first-of-type {
+    display: none;
+}
+
+/* ---------------------------------------------------
+   2. TOUCHES OPT (Optionnel)
+--------------------------------------------------- */
+/* Si tu veux que les liens ou certains éléments aient le bleu de l'OPT */
+.md-typeset a {
+    color: #0055A4; 
+}
+
+
+/* Badge NOUVEAU */
+.md-tag--new {
+    background-color: #2e7d32; /* Vert foncé */
+    color: white;
+}
+
+/* Badge URGENT (J-x) */
+.md-tag--urgent {
+    background-color: #f57c00; /* Orange */
+    color: white;
+}
+
+/* Badge CLOS */
+.md-tag--closed {
+    background-color: #c62828; /* Rouge */
+    color: white;
+}
+
+/* Animation de pulsation pour le badge Nouveau */
+.md-tag--new {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+}
