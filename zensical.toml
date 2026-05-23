@@ -1,7 +1,11 @@
 [site]
 title = "Bourse de l'Emploi OPT"
 description = "Espace de consultation des Avis de Vacances de Poste (AVP) pour les agents de l'OPT."
-author = "M"
+site_name = "AVPS OPT-NC"
+site_description = "Avis de Vacances de Poste de l'Office des Postes et Télécommunications de Nouvelle-Calédonie"
+site_author = "OPT-NC"
+site_url = "https://opt-nc.github.io/odata-avps/"
+repo_url = "https://github.com/opt-nc/odata-avps"
 
 [build]
 docs_dir = "data"
@@ -11,6 +15,10 @@ site_dir = "public"
 [theme]
 name = "material" 
 palette = { primary = "blue", accent = "blue" } 
+language = "fr"
+logo = "assets/logo.png"
+favicon = "assets/logo.png"
+custom_dir = "overrides"
 
 
 [project]
