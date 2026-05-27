@@ -7,7 +7,7 @@ on:
 jobs:
   automator:
     # On ne déclenche l'auto-merge que si la branche commence par notre préfixe AVP
-    if: startsWith(github.head_ref, 'avp-')
+    if: startsWith(github.head_ref, 'avp/')
     runs-on: ubuntu-latest
     
     # Permissions minimales requises pour modifier les PRs
