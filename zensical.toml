@@ -21,4 +21,4 @@ favicon = "assets/logo-opt.png"
 name = "material" 
 palette = { primary = "blue", accent = "blue" } 
 language = "fr"
-# custom_dir = "overrides"
+# custom_dir = "overrides" 
