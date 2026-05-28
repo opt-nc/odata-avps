@@ -18,10 +18,10 @@ jobs:
     steps:
       - name: 📥 Checkout du dépôt
         uses: actions/checkout@v4
-        
+
       - name: 🚀 Fusion automatique de la PR et suppression de la branche
         run: |
-          gh pr merge ${{ github.event.pull_request.number }} --squash --auto --delete-branch
+          gh pr merge ${{ github.event.pull_request.number }} --squash --delete-branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
