@@ -10,7 +10,6 @@ repo_url = "https://github.com/opt-nc/odata-avps"
 extra_css = ["style/extra.css"]
 extra_javascript = ["style/extra.js"]
 
-[build]
 docs_dir = "data"
 # Dossier final généré (celui que GitHub Pages publiera)
 site_dir = "public" 
