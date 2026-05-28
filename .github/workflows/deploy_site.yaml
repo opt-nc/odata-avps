@@ -7,6 +7,9 @@ on:
     paths:
       - 'data/**'
       - 'zensical.toml'
+      - 'overrides/**'
+      - 'assets/**'
+      - 'styles/**'
   workflow_dispatch:
 
 permissions:
