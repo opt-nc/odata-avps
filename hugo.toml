@@ -1,5 +1,5 @@
 baseURL = 'https://opt-nc.github.io/odata-avps/'
-languageCode = 'fr-fr'
+locale = 'fr-fr'
 defaultContentLanguage = 'fr'
 title = "Bourse de l'Emploi OPT-NC"
 theme = 'hugo-theme-relearn'
