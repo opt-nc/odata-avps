@@ -1,0 +1,15 @@
+baseURL = 'https://opt-nc.github.io/odata-avps/'
+languageCode = 'fr-fr'
+defaultContentLanguage = 'fr'
+title = "Bourse de l'Emploi OPT-NC"
+theme = 'hugo-theme-relearn'
+
+[params]
+  # Options du thème Relearn
+  # themeVariant = 'blue' # Un beau thème bleu pro par défaut
+  themeVariant = 'opt'
+  disableSearch = false # Garde la barre de recherche (très pratique pour les AVP !)
+  disableBreadcrumb = false # Fil d'ariane
+  
+  # Configuration de l'auteur pour les métadonnées
+  author = "OPT-NC"
