@@ -1,29 +1,10 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} sur {{ end }}{{ .Site.Title }}{{ end }}</title>
-    <link>{{ .Permalink }}</link>
-    <description>Flux RSS des Avis de Vacances de Poste - {{ .Site.Title }}</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>{{ .Site.LanguageCode }}</language>
-    
-    <image>
-      <url>{{ "assets/logo-opt.png" | absURL }}</url>
-      <title>{{ .Site.Title }}</title>
-      <link>{{ .Permalink }}</link>
-    </image>
-
-    {{ with .OutputFormats.Get "RSS" }}
-        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType.Type | safeHTML }}
-    {{ end }}
-    
-    {{ range .Pages }}
-    <item>
-      <title>{{ .Title }}</title>
-      <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      <guid>{{ .Permalink }}</guid>
-      <description>{{ .Summary | html }}</description>
-    </item>
-    {{ end }}
-  </channel>
-</rss>
+<div style="display: flex; align-items: center; justify-content: space-between; width: 100%; padding-right: 10px;">
+  <a href="{{ '/' | relLangURL }}" style="display: flex; align-items: center; text-decoration: none;">
+    <img src="{{ 'assets/logo-opt.png' | relURL }}" alt="Logo OPT-NC" style="height: 40px; margin-top: 5px;">
+    <span style="font-weight: bold; font-size: 1.1rem; vertical-align: middle; margin-left: 8px; color: #005A9C;">AVPS OPT-NC</span>
+  </a>
+  
+  <a href="{{ 'index.xml' | relURL }}" title="S'abonner au flux RSS" style="color: #F28C00; font-size: 1.3rem; transition: transform 0.2s;" target="_blank" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+    <i class="fas fa-rss"></i>
+  </a>
+</div>
