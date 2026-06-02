@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div style="position: relative;"> {{ partial "avp-badge.html" . }}
+
+  <h1>{{ .Title }}</h1>
+
+  <table class="avp-info-table">
+    <tbody>
+      <tr><td><strong>Référence</strong></td><td><code>{{ .Params.ref }}</code></td></tr>
+      <tr><td><strong>Date limite</strong></td><td>{{ .Params.date_cloture }}</td></tr>
+      <tr><td><strong>Disponibilité</strong></td><td>{{ .Params.disponibilite }}</td></tr>
+      <tr><td><strong>Direction</strong></td><td>{{ index .Params.tags 1 }}</td></tr>
+      <tr><td><strong>Lieu</strong></td><td>{{ index .Params.tags 0 }}</td></tr>
+      <tr><td><strong>Fichier</strong></td><td><a href="{{ .Params.url_pdf }}" class="btn-pdf"><i class="fas fa-file-pdf"></i> Télécharger l'AVP</a></td></tr>
+    </tbody>
+  </table>
+
+  <div class="avp-content">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}
