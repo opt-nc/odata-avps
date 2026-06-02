@@ -1,2 +1,11 @@
-.DS_Store
+
 samples
+
+# Fichiers générés par Hugo
+/public/
+/resources/
+.hugo_build.lock
+
+# Fichiers système Mac
+.DS_Store
+*~
