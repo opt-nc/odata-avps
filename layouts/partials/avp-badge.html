@@ -1,0 +1,38 @@
+{{ if .Params.date_cloture }}
+<div class="avp-urgency-badge" data-cloture="{{ .Params.date_cloture }}">
+  </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const badgeContainer = document.querySelector('[data-cloture]');
+    if (!badgeContainer) return;
+
+    const dateClotureStr = badgeContainer.getAttribute('data-cloture');
+    // Force le parsing de la date YYYY-MM-DD à minuit local
+    const cloture = new Date(dateClotureStr + 'T00:00:00');
+    const now = new Date();
+    
+    // Reset des heures pour comparer uniquement les jours
+    cloture.setHours(0,0,0,0);
+    now.setHours(0,0,0,0);
+
+    const diffTime = cloture - now;
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+    let badgeHtml = '';
+    if (diffDays < 0) {
+      badgeHtml = '<span class="badge badge-expired">⚠️ Clôture passée</span>';
+    } else if (diffDays === 0) {
+      badgeHtml = '<span class="badge badge-critical">🔥 Clôture AUJOURD\'HUI !</span>';
+    } else if (diffDays === 1) {
+      badgeHtml = '<span class="badge badge-critical">🔥 Clôture demain !</span>';
+    } else if (diffDays <= 3) {
+      badgeHtml = '<span class="badge badge-warning">⏳ J-' + diffDays + ' avant clôture</span>';
+    } else {
+      badgeHtml = '<span class="badge badge-info">📅 Ouvert</span>';
+    }
+
+    badgeContainer.innerHTML = badgeHtml;
+  });
+</script>
+{{ end }}
