@@ -1,0 +1,19 @@
+:root {
+  /* Couleurs globales du contenu */
+  --PRIMARY-color: #005A9C; /* Bleu OPT pour les liens et bordures */
+  --SECONDARY-color: #F28C00; /* Orange OPT pour les boutons/accents */
+  --ACCENT-color: #F28C00; 
+
+  /* Personnalisation du menu latéral (Sidebar) */
+  --MENU-HEADER-bg-color: #ffffff; /* Fond blanc pour bien voir le logo */
+  --MENU-HEADER-BORDER-color: #e0e0e0;
+  
+  --MENU-SECTIONS-BG-color: #005A9C; /* Fond du menu en Bleu OPT */
+  --MENU-SECTIONS-LINK-color: #ffffff; /* Texte du menu en blanc */
+  --MENU-SECTIONS-LINK-HOVER-color: #F28C00; /* Texte qui passe à l'orange au survol */
+  
+  --MENU-SECTIONS-ACTIVE-BG-color: #003d6b; /* Bleu plus foncé pour l'onglet actif */
+  
+  --MENU-SEARCH-BG-color: #004b87; /* Fond de la barre de recherche */
+  --MENU-SEARCH-color: #ffffff;
+}
