@@ -1,0 +1,17 @@
+<script>
+  document.addEventListener('keydown', function(e) {
+    // Détecte Ctrl+K ou Cmd+K
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      // Le thème Relearn utilise généralement l'ID #R-search-by ou le sélecteur d'attribut
+      const searchInput = document.getElementById('R-search-by') 
+                          || document.querySelector('.search-by input')
+                          || document.querySelector('[data-search-input]');
+      
+      if (searchInput) {
+        e.preventDefault(); // Empêche le comportement du navigateur (ex: ouvrir les favoris)
+        searchInput.focus(); // Met le curseur dans la barre de recherche
+        searchInput.select(); // Sélectionne le texte déjà présent s'il y en a un
+      }
+    }
+  });
+</script>
