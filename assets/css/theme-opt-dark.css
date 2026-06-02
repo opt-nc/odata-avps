@@ -1,19 +1,27 @@
 :root {
-  /* Couleurs globales du contenu */
-  --PRIMARY-color: #005A9C; /* Bleu OPT pour les liens et bordures */
-  --SECONDARY-color: #F28C00; /* Orange OPT pour les boutons/accents */
+  /* 🔵 PARTIE DROITE : Contenu Principal (Mode Sombre) */
+  --MAIN-BG-color: #121824;          /* Fond de page sombre (Bleu nuit très foncé) */
+  --MAIN-TEXT-color: #e2e8f0;        /* Texte principal en gris clair/blanc */
+  --MAIN-TITLES-color: #ffffff;      /* Titres H1, H2, H3 en blanc pur */
+  --MAIN-LINK-color: #F28C00;        /* Liens dans le texte en Orange OPT (super lisible sur fond sombre) */
+  --MAIN-LINK-HOVER-color: #ffaa33;  /* Liens au survol (Orange plus clair) */
+  --CODE-BG-color: #1e293b;          /* Fond des numéros de référence (Consolas) */
+
+  /* 🎨 Couleurs globales de comportement */
+  --PRIMARY-color: #005A9C; 
+  --SECONDARY-color: #F28C00; 
   --ACCENT-color: #F28C00; 
 
-  /* Personnalisation du menu latéral (Sidebar) */
-  --MENU-HEADER-bg-color: #ffffff; /* Fond blanc pour bien voir le logo */
-  --MENU-HEADER-BORDER-color: #e0e0e0;
+  /* 📂 PARTIE GAUCHE : Menu latéral (Sidebar) */
+  --MENU-HEADER-bg-color: #1a2333;   /* Haut du menu sombre pour s'accorder au reste */
+  --MENU-HEADER-BORDER-color: #243147;
   
-  --MENU-SECTIONS-BG-color: #005A9C; /* Fond du menu en Bleu OPT */
-  --MENU-SECTIONS-LINK-color: #ffffff; /* Texte du menu en blanc */
-  --MENU-SECTIONS-LINK-HOVER-color: #F28C00; /* Texte qui passe à l'orange au survol */
+  --MENU-SECTIONS-BG-color: #004b82; /* Fond du menu : Bleu OPT légèrement assombri */
+  --MENU-SECTIONS-LINK-color: #ffffff; 
+  --MENU-SECTIONS-LINK-HOVER-color: #F28C00; 
   
-  --MENU-SECTIONS-ACTIVE-BG-color: #003d6b; /* Bleu plus foncé pour l'onglet actif */
+  --MENU-SECTIONS-ACTIVE-BG-color: #002d54; /* Bleu très foncé pour l'onglet actif */
   
-  --MENU-SEARCH-BG-color: #004b87; /* Fond de la barre de recherche */
+  --MENU-SEARCH-BG-color: #00365d;   /* Fond de la barre de recherche */
   --MENU-SEARCH-color: #ffffff;
 }
