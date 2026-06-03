@@ -1,3 +1,54 @@
+/* ==========================================================================
+   🚨 BLINDAGE ULTIME POUR LE MODE SOMBRE (À METTRE TOUT EN BAS DU FICHIER)
+   ========================================================================== */
+
+/* 1️⃣ FORCE LE TITRE "AVPS OPT-NC" EN BLANC (Haut gauche)
+   On cible tout ce qui vit dans le bloc d'en-tête du menu */
+#header-wrapper,
+#header-wrapper *,
+#sidebar .brand,
+#sidebar .brand * {
+    color: #ffffff !important;
+}
+
+/* 2️⃣ FORCE TOUS LES AVPs DU MENU EN BLANC PUR (Pas en gris)
+   On cible spécifiquement les sous-liens imbriqués sous les catégories */
+#sidebar ul.topics li ul li a,
+#sidebar ul.topics li ul li a *,
+#sidebar ul li li a,
+#sidebar ul li li a * {
+    color: #ffffff !important;
+    opacity: 1 !important; /* Enlève l'effet de gris opacifié du thème */
+}
+
+/* 5️⃣ FORCE LE BOUTON ACCUEIL (Bienvenue) EN BLANC PUR */
+.r-home-link,
+.r-home-link *,
+#r-home-link,
+#r-home-link * {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* 3️⃣ FORCE LES TAGS ET ÉTIQUETTES EN BLANC SUR FOND BLEU 
+   On cible l'élément fléché et tout ce qui est écrit dedans */
+.page-arguments a,
+.page-arguments a *,
+.flex-block a,
+.flex-block a *,
+a.taxonomy-term,
+a.taxonomy-term *,
+a[href*="/tags/"],
+a[href*="/tags/"] * {
+    color: #ffffff !important;
+}
+
+/* 4️⃣ BONUS : Optionnel - Si la petite maison "Bienvenue" reste trop sombre */
+#sidebar #homelink a,
+#sidebar #homelink a * {
+    color: #ffffff !important;
+}
+
 :root {
   /* 🔵 PARTIE DROITE : Contenu Principal (Mode Sombre) */
   --MAIN-BG-color: #121824;          /* Bleu nuit très foncé */
@@ -112,13 +163,64 @@
 }
 
 
-.page-arguments a,
-.page-arguments a *,
-.flex-block a,
-.flex-block a *,
-a[href*="/tags/"],
-a[href*="/tags/"] *,
-a[href*="/categories/"],
-a[href*="/categories/"] * {
-    color: #ffffff !important;
+/* ==========================================================================
+   🃏 DESIGN DES CARTES DE RECHERCHE (Mode Sombre Complet)
+   ========================================================================== */
+
+/* 🧼 Nettoyage du conteneur global du thème pour libérer les cartes */
+#R-searchresults {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* Force chaque résultat à devenir une carte indépendante et surélevée */
+#R-searchresults > * {
+    background-color: var(--CARD-BG-color) !important;
+    border: 1px solid var(--CARD-BORDER-color) !important;
+    border-left: 5px solid var(--SECONDARY-color) !important; /* Bordure Orange OPT */
+    padding: 1.5rem !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25) !important;
+    margin-bottom: 1.5rem !important;
+    display: block !important; /* Force la séparation physique des cartes */
+    position: relative !important;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s !important;
+}
+
+/* 🏷️ Si la carte contient un lien vers un mot-clé ou catégorie, bordure Bleue */
+#R-searchresults > *:has(a[href*="/tags/"]),
+#R-searchresults > *:has(a[href*="/categories/"]) {
+    border-left-color: var(--PRIMARY-color) !important;
+}
+
+/* 🧼 Supprime les puces et flèches natives "»" du thème */
+#R-searchresults > *::before,
+#R-searchresults a::before {
+    display: none !important;
+    content: "" !important;
+}
+
+/* Force les titres des fiches à passer en blanc pur pour le contraste */
+#R-searchresults > * a {
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    color: #ffffff !important; 
+    display: inline-block !important;
+    margin-bottom: 0.4rem !important;
+}
+
+/* Ajustement de la couleur du texte de description et du fil d'Ariane */
+#R-searchresults > * {
+    color: var(--MAIN-TEXT-color) !important;
+    font-size: 0.95rem !important;
+}
+
+/* 🔥 Effet de survol "électrique" propre au mode sombre */
+#R-searchresults > *:hover {
+    transform: translateY(-2px) !important;
+    background-color: rgba(242, 140, 0, 0.04) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
 }

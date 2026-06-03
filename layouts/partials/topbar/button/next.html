@@ -1,0 +1,37 @@
+{{- $onwidths := cond (isset . "onwidths") .onwidths "show" }}
+{{- $onwidthm := cond (isset . "onwidthm") .onwidthm "show" }}
+{{- $onwidthl := cond (isset . "onwidthl") .onwidthl "show" }}
+{{- with .page }}
+    {{- $show := not (.Param "disableNextPrev") }}
+    {{- if $show }}
+        {{- $endarrow := "🡒" }}
+        {{- if eq (.Language.LanguageDirection | default (T "Reading-direction") | default "ltr") "rtl" }}
+            {{- $endarrow = "🡐" }}
+        {{- end }}
+        
+        {{- /* 1. On laisse le thème calculer la page suivante partout sur le site */}}
+        {{- $next := partialCached "_relearn/pageNext.gotmpl" . .Path }}
+        
+        {{- /* 🔄 2. BOUCLE INFINIE : Si on arrive à la toute fin du site, on boucle vers l'accueil */}}
+        {{- if or (not $next) (not $next.Path) }}
+            {{- $next = .Site.Home }}
+        {{- end }}
+
+        {{- $nextTitle := partial "title.gotmpl" (dict "page" $next "outputFormat" "html") }}
+        {{- $href := "" }}
+        {{- with (and $next $next.Path) }}
+            {{- $href = . }}
+        {{- end }}
+        
+        {{- partial "topbar/func/button.html" (dict
+            "page" .
+            "class" "topbar-button-next"
+            "href" $href
+            "icon" "chevron-right"
+            "onwidths" $onwidths
+            "onwidthm" $onwidthm
+            "onwidthl" $onwidthl
+            "hint" (printf "%s (%s)" $nextTitle ($endarrow | safeHTML))
+        )}}
+    {{- end }}
+{{- end }}

@@ -95,3 +95,57 @@
     width: 100%;         
     box-sizing: border-box;
 }
+
+/* ==========================================================================
+   🃏 UNIFICATION DES CARTES DE RECHERCHE (Mode Clair - Sélecteur Universel)
+   ========================================================================== */
+
+/* Attrape n'importe quel conteneur de résultat direct et le transforme en carte */
+#R-searchresults > * {
+    background-color: var(--CARD-BG-color) !important;
+    border: 1px solid var(--CARD-BORDER-color) !important;
+    border-left: 5px solid var(--SECONDARY-color) !important; /* Orange par défaut */
+    padding: 1.5rem !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
+    margin-bottom: 1.5rem !important;
+    display: block !important; /* Force le rendu sous forme de bloc/carte */
+    position: relative !important;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s !important;
+}
+
+/* 🏷️ Si la carte contient un lien vers un mot-clé ou catégorie, bordure Bleue */
+#R-searchresults > *:has(a[href*="/tags/"]),
+#R-searchresults > *:has(a[href*="/categories/"]) {
+    border-left-color: var(--PRIMARY-color) !important;
+}
+
+/* 🧼 Supprime la flèche bleue native "»" devenue inutile et moche */
+#R-searchresults > *::before,
+#R-searchresults a::before {
+    display: none !important;
+    content: "" !important;
+}
+
+/* Sublimation des titres à l'intérieur des cartes */
+#R-searchresults > * a {
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    color: var(--MAIN-LINK-color) !important;
+    display: inline-block !important;
+    margin-bottom: 0.4rem !important;
+}
+
+/* Ajustement cosmétique du texte de description et du fil d'Ariane sous le titre */
+#R-searchresults > * {
+    color: var(--MAIN-TEXT-color) !important;
+    font-size: 0.95rem !important;
+}
+
+/* Effet au survol des cartes */
+#R-searchresults > *:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    background-color: rgba(242, 140, 0, 0.02) !important;
+}
