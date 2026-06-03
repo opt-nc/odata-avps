@@ -1,14 +1,11 @@
 {{ if .Page.Params.featured_image }}
-    {{/* 1. On récupère le chemin du Front Matter */}}
     {{ $imgPath := .Page.Params.featured_image }}
-
-    {{/* 2. On nettoie le slash au début pour forcer Hugo à analyser la baseURL */}}
     {{ $imgPath = strings.TrimPrefix "/" $imgPath }}
 
-    <div class="avp-dynamic-banner" style="margin: 2rem 0; width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid var(--CARD-BORDER-color, #e0e0e0);">
-        {{/* 3. Hugo applique maintenant le sous-dossier uniquement si nécessaire */}}
+    <div class="avp-dynamic-banner" style="margin: 2rem 0; width: 100%; display: flex; justify-content: center; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid var(--CARD-BORDER-color, #e0e0e0); background-color: var(--CARD-BG-color, #ffffff);">
+        {{/* 🎯 On supprime max-height et object-fit pour afficher l'image sans aucun crop */}}
         <img src="{{ $imgPath | relURL }}" 
              alt="Illustration du poste" 
-             style="width: 100%; height: auto; max-height: 280px; object-fit: cover; display: block;">
+             style="max-width: 100%; height: auto; display: block;">
     </div>
 {{ end }}
