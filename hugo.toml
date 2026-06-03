@@ -10,12 +10,12 @@ theme = 'hugo-theme-relearn'
   themeVariant = [ "opt-light", "opt-dark" ]
   disableSearch = false # Garde la barre de recherche (très pratique pour les AVP !)
   disableBreadcrumb = false # Fil d'ariane
-  
+  landingPageName = "Accueil"
   # Configuration de l'auteur pour les métadonnées
   author = "OPT-NC"
 
   # Ajoute un lien personnalisé en bas du menu de gauche
-  [[params.menuFooter]]
+[[params.menuFooter]]
     name = "<i class='fas fa-building'></i> Site Institutionnel OPT"
     url = "https://www.opt.nc"
     weight = 10
