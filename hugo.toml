@@ -8,20 +8,14 @@ theme = 'hugo-theme-relearn'
   # Options du thème Relearn
   # themeVariant = 'blue' # Un beau thème bleu pro par défaut
   themeVariant = [ "opt-light", "opt-dark" ]
-  disableSearch = false # Garde la barre de recherche (très pratique pour les AVP !)
-  disableBreadcrumb = false # Fil d'ariane
-  landingPageName = "Accueil"
-  # Configuration de l'auteur pour les métadonnées
-  author = "OPT-NC"
-
-  # Ajoute un lien personnalisé en bas du menu de gauche
-[[params.menuFooter]]
-    name = "<i class='fas fa-building'></i> Site Institutionnel OPT"
-    url = "https://www.opt.nc"
-    weight = 10
+  landingPageName = "<i class='fa-fw fas fa-home'></i> Bienvenue"
 
 [outputs]
   home = ["HTML", "RSS"]
   page = ["HTML"]
-  # On dit explicitement à Hugo de générer la 404 en HTML pur
-  notfound = ["HTML"]
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # ✅ Autorise le HTML brut (comme ton footer <center>) dans le Markdown
