@@ -1,0 +1,31 @@
+<div class="avp-cards-list" style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+  {{ range . }}
+    <div class="avp-list-card">
+      
+      <h3 style="margin-top: 0; margin-bottom: 0.75rem; font-size: 1.3rem;">
+        <a href="{{ .RelPermalink }}" style="text-decoration: none; font-weight: bold;">
+          {{ .Title }}
+        </a>
+      </h3>
+
+      <p style="margin: 0 0 0.75rem 0; font-size: 0.9rem; color: #666;">
+        <i class="fas fa-barcode"></i> <code>{{ .Params.ref }}</code> 
+        <span style="margin: 0 10px;">•</span>
+        <i class="fas fa-calendar-alt"></i> Clôture : <strong>{{ .Params.date_cloture }}</strong>
+      </p>
+
+      {{ if .Params.summary }}
+        <p style="margin: 0; font-size: 0.95rem; line-height: 1.5;">
+          {{ .Params.summary }}
+        </p>
+      {{ end }}
+
+      <div style="text-align: right; margin-top: 0.5rem;">
+        <a href="{{ .RelPermalink }}" style="font-size: 0.9rem; color: var(--SECONDARY-color); font-weight: bold; text-decoration: none;">
+          Voir la fiche complète <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  {{ end }}
+</div>

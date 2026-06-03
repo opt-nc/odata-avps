@@ -1,0 +1,48 @@
+{{- define "menu" }}
+    {{- partial "menu.html" . }}
+{{- end }}
+
+{{ define "body" }}
+<div class="avp-taxonomy-container" style="margin-bottom: 3rem; padding: 10px 0;">
+  
+  {{ if eq .Kind "taxonomy" }}
+    
+    <h1 style="color: var(--MAIN-TITLES-color); margin-bottom: 0.5rem; font-size: 2rem;">
+      <i class="fas fa-tags"></i> Index des mots-clés (Filtres RH)
+    </h1>
+    <p style="font-style: italic; color: var(--MAIN-TEXT-color); opacity: 0.7; margin-bottom: 2.5rem;">
+    Cliquez sur un tag pour découvrir les offres d'emploi correspondantes.
+    </p>
+
+    <div class="avp-tags-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.2rem;">
+      {{ range .Pages }}
+        <a href="{{ .RelPermalink }}">
+          <div class="avp-tag-item-card" style="padding: 1.2rem; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.01);">
+            <span style="font-weight: bold;">
+              <i class="fas fa-tag" style="color: var(--PRIMARY-color); margin-right: 8px; font-size: 0.9rem;"></i>{{ .Title }}
+            </span>
+            <span style="background-color: var(--SECONDARY-color); color: white; padding: 3px 9px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; white-space: nowrap;">
+              {{ len .Pages }} AVP
+            </span>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+
+  {{ else }}
+    
+    <h1 style="color: var(--MAIN-TITLES-color); margin-bottom: 0.5rem; font-size: 2rem;">
+      <i class="fas fa-tag"></i> Offres associées au critère : {{ .Title }}
+    </h1>
+    <p style="font-style: italic; color: var(--MAIN-TEXT-color); opacity: 0.7; margin-bottom: 2.5rem;">
+    {{ len .Pages }} poste(s) disponible(s).
+    </p>
+
+    {{ partial "avp-cards-list.html" .Pages }}
+
+  {{ end }}
+
+</div>
+
+{{ partial "content-footer.html" . }}
+{{ end }}

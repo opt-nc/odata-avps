@@ -1,11 +1,11 @@
 :root {
   /* 🔵 PARTIE DROITE : Contenu Principal (Mode Clair) */
-  --MAIN-BG-color: #ffffff;          /* Fond de page blanc pur */
-  --MAIN-TEXT-color: #2d3748;        /* Texte principal en gris très foncé (plus doux que le noir) */
-  --MAIN-TITLES-color: #005A9C;      /* Tous les titres en Bleu OPT ! */
-  --MAIN-LINK-color: #005A9C;        /* Liens dans le texte en Bleu OPT */
-  --MAIN-LINK-HOVER-color: #F28C00;  /* Liens qui passent à l'Orange OPT au survol */
-  --CODE-BG-color: #f7fafc;          /* Fond des numéros de référence (Consolas) */
+  --MAIN-BG-color: #ffffff;          
+  --MAIN-TEXT-color: #2d3748;        
+  --MAIN-TITLES-color: #005A9C;      
+  --MAIN-LINK-color: #005A9C;        
+  --MAIN-LINK-HOVER-color: #F28C00;  
+  --CODE-BG-color: #f7fafc;          
 
   /* 🎨 Couleurs globales de comportement */
   --PRIMARY-color: #005A9C; 
@@ -24,9 +24,16 @@
   
   --MENU-SEARCH-BG-color: #004b87; 
   --MENU-SEARCH-color: #ffffff;
+
+  /* 🃏 Cartes (Mode Clair) */
+  --CARD-BG-color: #ffffff;
+  --CARD-BORDER-color: #e0e0e0;
 }
 
-/* Container du badge pour le positionnement */
+/* ==========================================================================
+   STRUCTURES ET LAYOUTS COMMUNS (COMMUN AUX DEUX MODES)
+   ========================================================================== */
+
 .avp-urgency-badge {
     position: absolute;
     top: 20px;
@@ -34,7 +41,6 @@
     z-index: 10;
 }
 
-/* Style de base des badges */
 .badge {
     padding: 8px 15px;
     border-radius: 50px;
@@ -44,8 +50,48 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-transform: uppercase;
 }
+.badge-critical { background-color: #d9534f; }
+.badge-warning { background-color: #f0ad4e; }
+.badge-info { background-color: #5bc0de; }
+.badge-expired { background-color: #777; }
 
-.badge-critical { background-color: #d9534f; } /* Rouge */
-.badge-warning { background-color: #f0ad4e; }  /* Orange OPT */
-.badge-info { background-color: #5bc0de; }     /* Bleu */
-.badge-expired { background-color: #777; }     /* Gris */
+.avp-list-card {
+    background-color: var(--CARD-BG-color);
+    border: 1px solid var(--CARD-BORDER-color);
+    border-left: 5px solid var(--SECONDARY-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.avp-tag-item-card {
+    background-color: var(--CARD-BG-color);
+    border: 1px solid var(--CARD-BORDER-color);
+    border-left: 5px solid var(--PRIMARY-color);
+    padding: 1.2rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.avp-list-card:hover, .avp-tag-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    background-color: rgba(242, 140, 0, 0.02) !important;
+}
+
+.avp-tags-grid a {
+    display: flex;       
+    text-decoration: none;
+    color: inherit;
+}
+
+.avp-tag-item-card {
+    width: 100%;         
+    box-sizing: border-box;
+}
