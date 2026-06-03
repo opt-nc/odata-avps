@@ -9,12 +9,14 @@
             {{- $endarrow = "🡐" }}
         {{- end }}
         
-        {{- /* 1. On laisse le thème calculer la page suivante partout sur le site */}}
+        {{- /* 1. Calcul natif de la page suivante par le thème */}}
         {{- $next := partialCached "_relearn/pageNext.gotmpl" . .Path }}
         
-        {{- /* 🔄 2. BOUCLE INFINIE : Si on arrive à la toute fin du site, on boucle vers l'accueil */}}
-        {{- if or (not $next) (not $next.Path) }}
-            {{- $next = .Site.Home }}
+        {{- /* 🔄 2. BOUCLE INFINIE : Sécurisée et restreinte UNIQUEMENT aux fiches de postes */}}
+        {{- if eq .Kind "page" }}
+            {{- if or (not $next) (not $next.Path) }}
+                {{- $next = .Site.Home }}
+            {{- end }}
         {{- end }}
 
         {{- $nextTitle := partial "title.gotmpl" (dict "page" $next "outputFormat" "html") }}

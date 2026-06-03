@@ -9,14 +9,16 @@
             {{- $startarrow = "🡒" }}
         {{- end }}
         
-        {{- /* 1. On laisse le thème calculer la page précédente normale */}}
+        {{- /* 1. Calcul natif de la page précédente par le thème */}}
         {{- $prev := partialCached "_relearn/pagePrev.gotmpl" . .Path }}
         
-        {{- /* 🔄 2. BOUCLE INFINIE : Si on est au début du site, on recule vers la toute dernière fiche */}}
-        {{- if or (not $prev) (not $prev.Path) }}
-            {{- $allPages := .Site.RegularPages }}
-            {{- if $allPages }}
-                {{- $prev = index $allPages (sub (len $allPages) 1) }}
+        {{- /* 🔄 2. BOUCLE INFINIE : Sécurisée et restreinte UNIQUEMENT aux fiches de postes */}}
+        {{- if eq .Kind "page" }}
+            {{- if or (not $prev) (not $prev.Path) }}
+                {{- $allPages := .Site.RegularPages }}
+                {{- if $allPages }}
+                    {{- $prev = index $allPages (sub (len $allPages) 1) }}
+                {{- end }}
             {{- end }}
         {{- end }}
 
