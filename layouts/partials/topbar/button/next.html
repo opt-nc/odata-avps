@@ -2,6 +2,7 @@
 {{- $onwidthm := cond (isset . "onwidthm") .onwidthm "show" }}
 {{- $onwidthl := cond (isset . "onwidthl") .onwidthl "show" }}
 {{- with .page }}
+    {{- $currentPage := . }}
     {{- $show := not (.Param "disableNextPrev") }}
     {{- if $show }}
         {{- $endarrow := "🡒" }}
@@ -9,31 +10,66 @@
             {{- $endarrow = "🡐" }}
         {{- end }}
         
-        {{- /* 1. Calcul natif de la page suivante par le thème */}}
-        {{- $next := partialCached "_relearn/pageNext.gotmpl" . .Path }}
+        {{- $s := newScratch }}
         
-        {{- /* 🔄 2. BOUCLE INFINIE : Sécurisée et restreinte UNIQUEMENT aux fiches de postes */}}
-        {{- if eq .Kind "page" }}
-            {{- if or (not $next) (not $next.Path) }}
-                {{- $next = .Site.Home }}
+        {{- /* 🔄 VÉRIFICATION DE L'ADN DE L'AVP */}}
+        {{- if $currentPage.Params.ref }}
+            {{- /* 1. On extrait les fiches */}}
+            {{- $avpPages := where $currentPage.Site.RegularPages "Params.ref" "!=" nil }}
+            
+            {{- /* 2. 🎯 LE DOUBLE TRI MAGIQUE : Chronologique, puis groupé par Catégorie */}}
+            {{- $avpPages = sort $avpPages "Date" "desc" }}
+            {{- $avpPages = sort $avpPages "Section" "asc" }}
+            
+            {{- $len := len $avpPages }}
+            {{- if gt $len 0 }}
+                {{- $currentIndex := -1 }}
+                {{- range $index, $page := $avpPages }}
+                    {{- if eq $page.Path $currentPage.Path }}
+                        {{- $currentIndex = $index }}
+                    {{- end }}
+                {{- end }}
+                
+                {{- if gt $currentIndex -1 }}
+                    {{- $nextIndex := add $currentIndex 1 }}
+                    {{- if ge $nextIndex $len }}
+                        {{- $nextIndex = 0 }}
+                    {{- end }}
+                    {{- $s.Set "next" (index $avpPages $nextIndex) }}
+                {{- end }}
             {{- end }}
+        {{- else }}
+            {{- /* Fallback pour le reste du site */}}
+            {{- $nativeNext := partialCached "_relearn/pageNext.gotmpl" . .Path }}
+            {{- if eq .Kind "page" }}
+                {{- if or (not $nativeNext) (not $nativeNext.Path) }}
+                    {{- $nativeNext = .Site.Home }}
+                {{- end }}
+            {{- end }}
+            {{- $s.Set "next" $nativeNext }}
         {{- end }}
 
-        {{- $nextTitle := partial "title.gotmpl" (dict "page" $next "outputFormat" "html") }}
+        {{- $next := $s.Get "next" }}
+        {{- $nextTitle := "" }}
         {{- $href := "" }}
-        {{- with (and $next $next.Path) }}
-            {{- $href = . }}
+        {{- if $next }}
+            {{- $nextTitle = partial "title.gotmpl" (dict "page" $next "outputFormat" "html") }}
+            {{- with $next.Path }}
+                {{- $href = . }}
+            {{- end }}
         {{- end }}
         
-        {{- partial "topbar/func/button.html" (dict
-            "page" .
-            "class" "topbar-button-next"
-            "href" $href
-            "icon" "chevron-right"
-            "onwidths" $onwidths
-            "onwidthm" $onwidthm
-            "onwidthl" $onwidthl
-            "hint" (printf "%s (%s)" $nextTitle ($endarrow | safeHTML))
-        )}}
+        {{- if $href }}
+            {{- partial "topbar/func/button.html" (dict
+                "page" $currentPage
+                "class" "topbar-button-next"
+                "href" $href
+                "icon" "chevron-right"
+                "onwidths" $onwidths
+                "onwidthm" $onwidthm
+                "onwidthl" $onwidthl
+                "hint" (printf "%s (%s)" $nextTitle ($endarrow | safeHTML))
+            )}}
+        {{- end }}
     {{- end }}
 {{- end }}

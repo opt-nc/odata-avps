@@ -2,6 +2,7 @@
 {{- $onwidthm := cond (isset . "onwidthm") .onwidthm "show" }}
 {{- $onwidthl := cond (isset . "onwidthl") .onwidthl "show" }}
 {{- with .page }}
+    {{- $currentPage := . }}
     {{- $show := not (.Param "disableNextPrev") }}
     {{- if $show }}
         {{- $startarrow := "🡐" }}
@@ -9,34 +10,69 @@
             {{- $startarrow = "🡒" }}
         {{- end }}
         
-        {{- /* 1. Calcul natif de la page précédente par le thème */}}
-        {{- $prev := partialCached "_relearn/pagePrev.gotmpl" . .Path }}
+        {{- $s := newScratch }}
         
-        {{- /* 🔄 2. BOUCLE INFINIE : Sécurisée et restreinte UNIQUEMENT aux fiches de postes */}}
-        {{- if eq .Kind "page" }}
-            {{- if or (not $prev) (not $prev.Path) }}
-                {{- $allPages := .Site.RegularPages }}
-                {{- if $allPages }}
-                    {{- $prev = index $allPages (sub (len $allPages) 1) }}
+        {{- /* 🔄 VÉRIFICATION DE L'ADN DE L'AVP */}}
+        {{- if $currentPage.Params.ref }}
+            {{- /* 1. On extrait les fiches */}}
+            {{- $avpPages := where $currentPage.Site.RegularPages "Params.ref" "!=" nil }}
+            
+            {{- /* 2. 🎯 LE DOUBLE TRI MAGIQUE : Chronologique, puis groupé par Catégorie */}}
+            {{- $avpPages = sort $avpPages "Date" "desc" }}
+            {{- $avpPages = sort $avpPages "Section" "asc" }}
+            
+            {{- $len := len $avpPages }}
+            {{- if gt $len 0 }}
+                {{- $currentIndex := -1 }}
+                {{- range $index, $page := $avpPages }}
+                    {{- if eq $page.Path $currentPage.Path }}
+                        {{- $currentIndex = $index }}
+                    {{- end }}
+                {{- end }}
+                
+                {{- if gt $currentIndex -1 }}
+                    {{- $prevIndex := sub $currentIndex 1 }}
+                    {{- if lt $prevIndex 0 }}
+                        {{- $prevIndex = sub $len 1 }}
+                    {{- end }}
+                    {{- $s.Set "prev" (index $avpPages $prevIndex) }}
                 {{- end }}
             {{- end }}
+        {{- else }}
+            {{- /* Fallback pour le reste du site */}}
+            {{- $nativePrev := partialCached "_relearn/pagePrev.gotmpl" . .Path }}
+            {{- if eq .Kind "page" }}
+                {{- if or (not $nativePrev) (not $nativePrev.Path) }}
+                    {{- $allPages := .Site.RegularPages }}
+                    {{- if $allPages }}
+                        {{- $nativePrev = index $allPages (sub (len $allPages) 1) }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+            {{- $s.Set "prev" $nativePrev }}
         {{- end }}
 
-        {{- $prevTitle := partial "title.gotmpl" (dict "page" $prev "outputFormat" "html") }}
+        {{- $prev := $s.Get "prev" }}
+        {{- $prevTitle := "" }}
         {{- $href := "" }}
-        {{- with (and $prev $prev.Path) }}
-            {{- $href = . }}
+        {{- if $prev }}
+            {{- $prevTitle = partial "title.gotmpl" (dict "page" $prev "outputFormat" "html") }}
+            {{- with $prev.Path }}
+                {{- $href = . }}
+            {{- end }}
         {{- end }}
         
-        {{- partial "topbar/func/button.html" (dict
-            "page" .
-            "class" "topbar-button-prev"
-            "href" $href
-            "icon" "chevron-left"
-            "onwidths" $onwidths
-            "onwidthm" $onwidthm
-            "onwidthl" $onwidthl
-            "hint" (printf "%s (%s)" $prevTitle ($startarrow | safeHTML))
-        )}}
+        {{- if $href }}
+            {{- partial "topbar/func/button.html" (dict
+                "page" $currentPage
+                "class" "topbar-button-prev"
+                "href" $href
+                "icon" "chevron-left"
+                "onwidths" $onwidths
+                "onwidthm" $onwidthm
+                "onwidthl" $onwidthl
+                "hint" (printf "%s (%s)" $prevTitle ($startarrow | safeHTML))
+            )}}
+        {{- end }}
     {{- end }}
 {{- end }}
