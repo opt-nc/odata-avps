@@ -1,14 +1,58 @@
-<hr style="margin-top: 3rem; border: 0; border-top: 1px solid var(--MENU-HEADER-BORDER-color);">
+<hr class="opt-footer-hr">
+<footer class="opt-page-footer" role="contentinfo">
+  
+  <!-- 🌐 Les 5 réseaux sociaux de l'OPT (gérés dynamiquement) -->
+  <div class="opt-social-links">
+    
+    {{ with .Site.Params.social.facebook }}
+      <a href="{{ . }}" aria-label="Suivez l'OPT sur Facebook" target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    {{ end }}
+    
+    {{ with .Site.Params.social.twitter }}
+      <a href="{{ . }}" aria-label="Suivez l'OPT sur Twitter" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    {{ end }}
 
-<footer style="padding: 1rem 0; text-align: center; font-size: 0.9rem; color: var(--MAIN-TEXT-color); opacity: 0.8; width: 100%;">
-  <p style="margin-bottom: 0.5rem;">
-    <a href="https://office.opt.nc/fr/emploi-et-carriere/postuler-lopt-nc/avp" 
-       target="_blank" 
-       style="color: var(--MAIN-LINK-color); font-weight: bold; text-decoration: none; transition: color 0.2s;" 
-       onmouseover="this.style.color='var(--MAIN-LINK-HOVER-color)'" 
-       onmouseout="this.style.color='var(--MAIN-LINK-color)'">
+    {{ with .Site.Params.social.instagram }}
+      <a href="{{ . }}" aria-label="Suivez l'OPT sur Instagram" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    {{ end }}
+
+    {{ with .Site.Params.social.youtube }}
+      <a href="{{ . }}" aria-label="Découvrez la chaîne YouTube de l'OPT" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i>
+      </a>
+    {{ end }}
+    
+    {{ with .Site.Params.social.linkedin }}
+      <a href="{{ . }}" aria-label="Suivez l'OPT sur LinkedIn" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    {{ end }}
+    
+  </div>
+
+  <!-- 🏢 Liens utiles & Institutionnels -->
+  <p class="opt-institution-link">
+    <a href="https://office.opt.nc/fr/emploi-et-carriere/postuler-lopt-nc/avp" target="_blank" rel="noopener">
       <i class="fas fa-building"></i> Site Institutionnel OPT
     </a>
   </p>
-  <p style="margin: 0; font-style: italic;">Office des Postes et Télécommunications de Nouvelle-Calédonie</p>
+  
+  <!-- ⚖️ Mentions légales, Contact & Accessibilité -->
+  <div class="opt-legal-text">
+    <p>
+      <a href="https://office.opt.nc/fr/mentions-legales" target="_blank" rel="noopener">Mentions légales</a>
+      <span class="opt-separator">|</span>
+      <a href="https://office.opt.nc/fr/l-opt-nc/contact" target="_blank" rel="noopener">Contact</a>
+    </p>
+    <p>© {{ now.Format "2006" }} OPT NC — Tous droits réservés.</p>
+    <p class="opt-italic-brand">Office des Postes et Télécommunications de Nouvelle-Calédonie</p>
+    <p class="opt-accessibility-note">Site conçu pour être accessible aux outils de lecture d'écran (RGAA).</p>
+  </div>
+
 </footer>

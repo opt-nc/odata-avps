@@ -19,3 +19,11 @@ theme = 'hugo-theme-relearn'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true # ✅ Autorise le HTML brut (comme ton footer <center>) dans le Markdown
+
+
+[params.social]
+  facebook  = "https://www.facebook.com/OPT.NC"
+  twitter   = "https://twitter.com/opt_nc"
+  instagram = "https://www.instagram.com/opt_nc/"
+  youtube   = "https://www.youtube.com/user/optnc"
+  linkedin  = "https://www.linkedin.com/company/opt-new-caledonia"

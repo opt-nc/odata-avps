@@ -224,3 +224,110 @@ a[href*="/tags/"] * {
     background-color: rgba(242, 140, 0, 0.04) !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
 }
+
+
+/* ==========================================================================
+   📌 AJUSTEMENTS COMPLÉMENTAIRES — BOURSE DE L'EMPLOI OPT-NC
+   ========================================================================== */
+
+/* --- 📌 Styles du Footer de Page (content-footer) --- */
+.opt-footer-hr {
+    margin-top: 3rem;
+    border: 0;
+    border-top: 1px solid var(--MENU-HEADER-BORDER-color);
+}
+.opt-page-footer {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--MAIN-TEXT-color);
+    width: 100%;
+}
+.opt-social-links {
+    margin-bottom: 1.2rem;
+}
+.opt-social-links a {
+    margin: 0 15px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--MAIN-LINK-color);
+    transition: transform 0.2s, color 0.2s;
+    display: inline-block;
+}
+.opt-social-links a:hover {
+    transform: scale(1.2);
+    color: var(--MAIN-LINK-HOVER-color);
+}
+.opt-institution-link {
+    margin-bottom: 0.5rem;
+}
+.opt-institution-link a {
+    color: var(--MAIN-LINK-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+.opt-institution-link a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+}
+.opt-legal-text {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+.opt-italic-brand {
+    margin: 4px 0 0 0;
+    font-style: italic;
+    opacity: 0.8;
+}
+.opt-accessibility-note {
+    margin: 6px 0 0 0;
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+/* --- Bouton d'impression (Shortcode) --- */
+.avp-actions {
+    margin-bottom: 2rem;
+    text-align: right;
+}
+.btn-print {
+    padding: 8px 16px;
+    background-color: #005A9C;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+.btn-print:hover {
+    background-color: #004070;
+}
+
+/* --- 🖨️ Gestion de l'Impression Papier --- */
+@media print {
+    #R-sidebar, .btn-print, .opt-page-footer, .topbar-button, #R-content-meta {
+        display: none !important;
+    }
+    #R-body {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+/* Style des liens de navigation légale du footer */
+.opt-legal-text a {
+    color: var(--MAIN-LINK-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.opt-legal-text a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+    text-decoration: underline;
+}
+
+.opt-separator {
+    margin: 0 8px;
+    opacity: 0.4;
+    color: var(--MAIN-TEXT-color);
+}
