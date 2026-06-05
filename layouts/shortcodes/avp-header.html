@@ -38,13 +38,25 @@
     </tbody>
   </table>
 
-  {{ if .Page.Params.featured_image }}
+{{ if .Page.Params.featured_image }}
     {{ $imgPath := .Page.Params.featured_image }}
-    {{ $imgPath = strings.TrimPrefix "/" $imgPath }}
-    <div class="avp-dynamic-banner">
-        <img src="{{ $imgPath | relURL }}" alt="Illustration du poste : {{ $.Page.Title }}">
-    </div>
-  {{ end }}
+    {{ $imgPath = strings.TrimPrefix "/" $imgPath }} {{/* 🎯 On demande à Hugo d'aller chercher l'image dans le dossier assets/ */}}
+    {{ with resources.Get $imgPath }}
+        
+        {{/* ⚡ LA CONVERSION MAGIQUE : Hugo transforme en WebP et compresse à 80% */}}
+        {{ $webp := .Process "webp q80" }}
+        
+        <div class="avp-dynamic-banner">
+            <img src="{{ $webp.RelPermalink }}" alt="Illustration du poste : {{ $.Page.Title }}">
+        </div>
+        
+    {{ else }}
+        {{/* 🔄 FALLBACK DE SÉCURITÉ : Si l'image n'est pas encore déplacée dans assets, on l'affiche normalement */}}
+        <div class="avp-dynamic-banner">
+            <img src="{{ .Page.Params.featured_image | relURL }}" alt="Illustration du poste : {{ $.Page.Title }}">
+        </div>
+    {{ end }}
+{{ end }}
 
 </div>
 

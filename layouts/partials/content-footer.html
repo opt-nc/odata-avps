@@ -29,6 +29,11 @@
         <i class="fab fa-linkedin-in" aria-hidden="true"></i>
       </a>
     {{ end }}
+    {{ with .Site.Params.social.tiktok }}
+      <a href="{{ . }}" aria-label="Suivez l'OPT sur TikTok" target="_blank" rel="noopener">
+        <i class="fab fa-tiktok" aria-hidden="true"></i>
+      </a>
+    {{ end }}
   </div>
 
   <!-- 🏢 Liens utiles & Institutionnels -->
