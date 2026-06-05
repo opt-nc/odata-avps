@@ -17,7 +17,7 @@
             {{- /* 1. On extrait les fiches */}}
             {{- $avpPages := where $currentPage.Site.RegularPages "Params.ref" "!=" nil }}
             
-            {{- /* 2. 🎯 LE DOUBLE TRI MAGIQUE : Chronologique, puis groupé par Catégorie */}}
+            {{- /* 2. Le double tri stable (Chronologique + Catégorie) */}}
             {{- $avpPages = sort $avpPages "Date" "desc" }}
             {{- $avpPages = sort $avpPages "Section" "asc" }}
             
@@ -60,6 +60,57 @@
         {{- end }}
         
         {{- if $href }}
+            
+            {{- /* 🎬 1. INJECTION DU BOUTON PLAY (Uniquement sur les fiches AVP) */}}
+            {{- if $currentPage.Params.ref }}
+                {{- partial "topbar/func/button.html" (dict
+                    "page" $currentPage
+                    "class" "topbar-button-play"
+                    "href" "#"
+                    "icon" "play"
+                    "onwidths" $onwidths
+                    "onwidthm" $onwidthm
+                    "onwidthl" $onwidthl
+                    "hint" "Lancer le diaporama automatique"
+                )}}
+                
+                <script>
+                  document.addEventListener("DOMContentLoaded", function() {
+                    const playBtn = document.querySelector('.topbar-button-play a, .topbar-button-play button');
+                    if (!playBtn) return;
+                    
+                    const icon = playBtn.querySelector('i');
+                    let isSlideshow = sessionStorage.getItem('avp_slideshow') === 'true';
+                    
+                    if (isSlideshow) {
+                      if (icon) {
+                        icon.classList.remove('fa-play');
+                        icon.classList.add('fa-pause');
+                      }
+                      playBtn.setAttribute('title', 'Arrêter le diaporama');
+                    }
+                    
+                    playBtn.addEventListener('click', function(e) {
+                      e.preventDefault();
+                      isSlideshow = sessionStorage.getItem('avp_slideshow') === 'true';
+                      
+                      if (isSlideshow) {
+                        sessionStorage.setItem('avp_slideshow', 'false');
+                        if (window.avpSlideshowTimeout) clearTimeout(window.avpSlideshowTimeout);
+                        const url = new URL(window.location.href);
+                        url.searchParams.delete('slideshow');
+                        window.location.href = url.pathname;
+                      } else {
+                        sessionStorage.setItem('avp_slideshow', 'true');
+                        // 🎯 CORRECTION : Utilisation de RelPermalink pour inclure /odata-avps/
+                        window.location.href = "{{ $next.RelPermalink }}?slideshow=true";
+                      }
+                    });
+                  });
+                </script>
+            {{- end }}
+
+            {{- /* 🡒 2. RENDU DU BOUTON NEXT NATIF */}}
             {{- partial "topbar/func/button.html" (dict
                 "page" $currentPage
                 "class" "topbar-button-next"
@@ -70,6 +121,24 @@
                 "onwidthl" $onwidthl
                 "hint" (printf "%s (%s)" $nextTitle ($endarrow | safeHTML))
             )}}
+
+            {{- /* ⏱️ 3. GESTION DU MINUTEUR DE ZAP AUTOMATIQUE */}}
+            <script>
+              (function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const isSlideshow = urlParams.get('slideshow') === 'true' || sessionStorage.getItem('avp_slideshow') === 'true';
+                
+                if (isSlideshow) {
+                  sessionStorage.setItem('avp_slideshow', 'true');
+                  const tempsAffichage = 8000; // 8 secondes
+                  
+                  window.avpSlideshowTimeout = setTimeout(() => {
+                    // 🎯 CORRECTION : Utilisation de RelPermalink ici aussi
+                    window.location.href = "{{ $next.RelPermalink }}?slideshow=true";
+                  }, tempsAffichage);
+                }
+              })();
+            </script>
         {{- end }}
     {{- end }}
 {{- end }}
