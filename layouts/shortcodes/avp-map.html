@@ -1,0 +1,61 @@
+<!-- Élément accessible uniquement pour les lecteurs d'écran (sr-only) -->
+<div class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;">
+  Carte interactive affichant la répartition géographique des offres d'emploi. Les offres sont également listées textuellement ci-dessous par ordre de publication.
+</div>
+
+<!-- On ajoute le rôle et la description sur la carte Leaflet -->
+<div id="avp-global-map" class="avp-map-container" role="application" aria-label="Carte des vacances de poste"></div>
+
+<!-- Chargement sécurisé de Leaflet CSS et JS via CDN -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<!-- Le conteneur de la carte (Piloté proprement par la classe CSS) -->
+<div id="avp-global-map" class="avp-map-container"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // 1. Initialisation de la carte (Centrée par défaut sur la Nouvelle-Calédonie)
+    const map = L.map('avp-global-map').setView([-21.3, 165.5], 7);
+
+    // 2. Application des fonds de carte OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // 3. Génération dynamique du tableau JavaScript par le moteur de Hugo
+    const avpPoints = [
+      {{ range .Page.Site.RegularPages }}
+        {{ if and .Params.latitude .Params.longitude }}
+        {
+          lat: {{ .Params.latitude }},
+          lng: {{ .Params.longitude }},
+          title: {{ .Title }},
+          url: {{ .RelPermalink }},
+          ref: {{ .Params.ref }},
+          ville: {{ .Params.ville }}
+        },
+        {{ end }}
+      {{ end }}
+    ];
+
+    // 4. Placement automatique des pins de l'OPT sur la carte
+    avpPoints.forEach(function(avp) {
+      // Construction propre de la bulle d'information au clic
+      const popupHtml = `
+        <div class="avp-map-popup">
+          <h4 class="avp-popup-title"><a href="${avp.url}">${avp.title}</a></h4>
+          <p class="avp-popup-meta">
+            <i class="fas fa-barcode"></i> <code>${avp.ref}</code><br>
+            <i class="fas fa-map-marker-alt"></i> Ville : <strong>${avp.ville}</strong>
+          </p>
+          <a href="${avp.url}" class="avp-popup-link">Consulter l'offre →</a>
+        </div>
+      `;
+
+      L.marker([avp.lat, avp.lng])
+       .addTo(map)
+       .bindPopup(popupHtml);
+    });
+  });
+</script>
