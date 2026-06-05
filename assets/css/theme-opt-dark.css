@@ -2,52 +2,6 @@
    🚨 BLINDAGE ULTIME POUR LE MODE SOMBRE (À METTRE TOUT EN BAS DU FICHIER)
    ========================================================================== */
 
-/* 1️⃣ FORCE LE TITRE "AVPS OPT-NC" EN BLANC (Haut gauche)
-   On cible tout ce qui vit dans le bloc d'en-tête du menu */
-#header-wrapper,
-#header-wrapper *,
-#sidebar .brand,
-#sidebar .brand * {
-    color: #ffffff !important;
-}
-
-/* 2️⃣ FORCE TOUS LES AVPs DU MENU EN BLANC PUR (Pas en gris)
-   On cible spécifiquement les sous-liens imbriqués sous les catégories */
-#sidebar ul.topics li ul li a,
-#sidebar ul.topics li ul li a *,
-#sidebar ul li li a,
-#sidebar ul li li a * {
-    color: #ffffff !important;
-    opacity: 1 !important; /* Enlève l'effet de gris opacifié du thème */
-}
-
-/* 5️⃣ FORCE LE BOUTON ACCUEIL (Bienvenue) EN BLANC PUR */
-.r-home-link,
-.r-home-link *,
-#r-home-link,
-#r-home-link * {
-    color: #ffffff !important;
-    opacity: 1 !important;
-}
-
-/* 3️⃣ FORCE LES TAGS ET ÉTIQUETTES EN BLANC SUR FOND BLEU 
-   On cible l'élément fléché et tout ce qui est écrit dedans */
-.page-arguments a,
-.page-arguments a *,
-.flex-block a,
-.flex-block a *,
-a.taxonomy-term,
-a.taxonomy-term *,
-a[href*="/tags/"],
-a[href*="/tags/"] * {
-    color: #ffffff !important;
-}
-
-/* 4️⃣ BONUS : Optionnel - Si la petite maison "Bienvenue" reste trop sombre */
-#sidebar #homelink a,
-#sidebar #homelink a * {
-    color: #ffffff !important;
-}
 
 :root {
   /* 🔵 PARTIE DROITE : Contenu Principal (Mode Sombre) */
@@ -445,4 +399,29 @@ a[href*="/tags/"] * {
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+}
+
+/* ==========================================================================
+   🎯 CORRECTIFS DE LISIBILITÉ (MODE SOMBRE)
+   ========================================================================== */
+
+/* Force le titre du site à être blanc sur le bandeau bleu */
+#R-header-wrapper a span {
+    color: #ffffff !important;
+}
+
+
+/*  REPRISE ET CONFIGURATION FINALE POUR LE BOUTON "BIENVENUE"
+   Cible l'ID exact au pluriel découvert dans image_d0f4c1.png */
+#R-homelinks,
+#R-homelinks *,
+#R-homelinks a,
+#R-homelinks a *,
+#R-sidebar li.active.visited > a,
+#R-sidebar li.active.visited > a *,
+.R-shortcutmenu-homelinks,
+.R-shortcutmenu-homelinks a,
+.R-shortcutmenu-homelinks a * {
+    color: #ffffff !important;
+    opacity: 1 !important;
 }

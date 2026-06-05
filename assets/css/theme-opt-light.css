@@ -369,3 +369,12 @@
     white-space: nowrap !important;
     border: 0 !important;
 }
+
+/* ==========================================================================
+   🎯 CORRECTIFS DE LISIBILITÉ (MODE CLAIR)
+   ========================================================================== */
+
+/* Force le titre du site en blanc pour contraster avec le fond bleu du bandeau */
+#R-header-wrapper a span {
+    color: #ffffff !important;
+}
