@@ -58,5 +58,6 @@
 </section>
 
 <div class="avp-build-info" style="font-size: 0.65rem; opacity: 0.5; padding: 10px; text-align: center; border-top: 1px solid var(--CARD-BORDER-color);">
+  Version : <code>r-{{ if fileExists "data/git_commit.txt" }}{{ readFile "data/git_commit.txt" | strings.TrimSpace }}{{ else }}dev{{ end }}</code><br>
   Généré le : {{ now.Format "02/01/2006 à 15:04" }}
 </div>
