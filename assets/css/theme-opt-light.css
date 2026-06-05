@@ -546,3 +546,50 @@
         box-shadow: none;
     }
 }
+
+/* ==========================================================================
+   🃏 COMPOSANTS DES CARTES DE LISTE (MODE MINI-TAMPON)
+   ========================================================================== */
+
+/* La carte globale de l'offre dans la liste */
+.avp-list-card {
+    position: relative; /* ⚓ Obligatoire pour ancrer le mini-tampon absolu */
+    display: block !important; /* On repasse en block pour libérer l'espace naturel du texte */
+    padding-right: 110px !important; /* On crée une zone de sécurité à droite pour éviter que le texte touche le tampon */
+}
+
+/* 💮 LE MINI-TAMPON DES CARTES */
+.avp-card-qrcode-container {
+    position: absolute;
+    bottom: 50px;       /* Ajusté pour flotter pile au-dessus du lien "Voir la fiche" */
+    right: 25px;        /* Calé sur le bord droit de la carte */
+    z-index: 10;
+    padding: 5px;
+    background-color: #ffffff !important; /* Blanc opaque obligatoire pour trancher sur le fond bleu nuit */
+    border: 2px solid #005A9C;            /* Ligne de cachet bleu OPT */
+    border-radius: 4px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Ombre portée pour l'effet relief */
+    transform: rotate(-6deg);             /* 🔄 Rotation inversée (-6°) pour casser la ligne de la carte */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Petit effet dynamique au survol de la carte */
+.avp-list-card:hover .avp-card-qrcode-container {
+    transform: rotate(0deg) scale(1.1); /* Le tampon se remet droit et grossit un poil */
+}
+
+/* Sécurité Mobile pour les listes */
+@media (max-width: 768px) {
+    .avp-list-card {
+        padding-right: 20px !important;
+        padding-bottom: 90px; /* Laisse de la place pour le tampon qui descend */
+    }
+    .avp-card-qrcode-container {
+        bottom: 15px;
+        right: 20px;
+        transform: none; /* On remet droit sur mobile pour faciliter le scan direct */
+    }
+    .avp-list-card:hover .avp-card-qrcode-container {
+        transform: none;
+    }
+}
