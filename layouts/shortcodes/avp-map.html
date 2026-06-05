@@ -1,17 +1,14 @@
-<!-- Élément accessible uniquement pour les lecteurs d'écran (sr-only) -->
-<div class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;">
+<!-- ♿ Élément accessible uniquement pour les lecteurs d'écran (Utilise la classe globale CSS) -->
+<div class="sr-only">
   Carte interactive affichant la répartition géographique des offres d'emploi. Les offres sont également listées textuellement ci-dessous par ordre de publication.
 </div>
 
-<!-- On ajoute le rôle et la description sur la carte Leaflet -->
-<div id="avp-global-map" class="avp-map-container" role="application" aria-label="Carte des vacances de poste"></div>
-
-<!-- Chargement sécurisé de Leaflet CSS et JS via CDN -->
+<!-- 🌐 Chargement sécurisé de Leaflet CSS et JS via CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-<!-- Le conteneur de la carte (Piloté proprement par la classe CSS) -->
-<div id="avp-global-map" class="avp-map-container"></div>
+<!-- 🗺️ L'UNIQUE conteneur de la carte (Enrichi pour le RGAA) -->
+<div id="avp-global-map" class="avp-map-container" role="application" aria-label="Carte des vacances de poste"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
