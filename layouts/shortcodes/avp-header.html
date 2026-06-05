@@ -1,45 +1,32 @@
 <div class="avp-header-wrapper">
-  <div class="avp-urgency-badge" data-cloture="{{ $.Page.Params.date_cloture }}"></div>
+  
+  <div class="avp-banner-actions">
+    <div class="avp-urgency-badge" data-cloture="{{ $.Page.Params.date_cloture }}"></div>
+    
+    <button class="btn-print" onclick="window.print()" aria-label="Imprimer cette offre d'emploi">
+      <i class="fas fa-print" aria-hidden="true"></i> Imprimer l'offre
+    </button>
+  </div>
 
   <h2 id="informations-administratives-opt">🏛️ Informations administratives</h2>
+  
+  <div class="avp-stamp-qrcode">
+    <div class="sr-only">Code QR pour postuler depuis un smartphone.</div>
+    <p class="avp-qrcode-text">AVP Officiel</p>
+    <div id="avp-page-qrcode" class="avp-qrcode-zone"></div>
+  </div>
+
   <table class="avp-info-table">
     <tbody>
-      <tr>
-        <th scope="row">Référence</th>
-        <td><code>{{ $.Page.Params.ref }}</code></td>
-      </tr>
-      <tr>
-        <th scope="row">Date limite de candidature</th>
-        <td>{{ $.Page.Params.date_cloture }}</td>
-      </tr>
-      <tr>
-        <th scope="row">Corps / Grade / Domaine d’emploi</th>
-        <td>{{ $.Page.Params.corps_grade }}</td>
-      </tr>
-      <tr>
-        <th scope="row">Direction</th>
-        <td>{{ $.Page.Params.direction }}</td>
-      </tr>
-      <tr>
-        <th scope="row">Service / Unité</th>
-        <td>{{ $.Page.Params.unite_orga }}</td>
-      </tr>
-      <tr>
-        <th scope="row">Nombre d’agents encadrés</th>
-        <td>{{ $.Page.Params.nb_agents }}</td>
-      </tr>
-      <tr>
-        <th scope="row">Ville</th>
-        <td>{{ $.Page.Params.ville }}</td>
-      </tr>
-      <tr>
-        <th scope="row">Lieu de travail</th>
-        <td>{{ $.Page.Params.adresse_complete }}</td>
-      </tr>
-      <tr>
-        <th scope="row">Disponibilité</th>
-        <td>{{ $.Page.Params.disponibilite }}</td>
-      </tr>
+      <tr><th scope="row">Référence</th><td><code>{{ $.Page.Params.ref }}</code></td></tr>
+      <tr><th scope="row">Date limite de candidature</th><td>{{ $.Page.Params.date_cloture }}</td></tr>
+      <tr><th scope="row">Corps / Grade / Domaine d’emploi</th><td>{{ $.Page.Params.corps_grade }}</td></tr>
+      <tr><th scope="row">Direction</th><td>{{ $.Page.Params.direction }}</td></tr>
+      <tr><th scope="row">Service / Unité</th><td>{{ $.Page.Params.unite_orga }}</td></tr>
+      <tr><th scope="row">Nombre d’agents encadrés</th><td>{{ $.Page.Params.nb_agents }}</td></tr>
+      <tr><th scope="row">Ville</th><td>{{ $.Page.Params.ville }}</td></tr>
+      <tr><th scope="row">Lieu de travail</th><td>{{ $.Page.Params.adresse_complete }}</td></tr>
+      <tr><th scope="row">Disponibilité</th><td>{{ $.Page.Params.disponibilite }}</td></tr>
       <tr>
         <th scope="row">Document d'origine</th>
         <td>
@@ -50,38 +37,50 @@
       </tr>
     </tbody>
   </table>
+
+  {{ if .Page.Params.featured_image }}
+    {{ $imgPath := .Page.Params.featured_image }}
+    {{ $imgPath = strings.TrimPrefix "/" $imgPath }}
+    <div class="avp-dynamic-banner">
+        <img src="{{ $imgPath | relURL }}" alt="Illustration du poste : {{ $.Page.Title }}">
+    </div>
+  {{ end }}
+
 </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    // Logic 1 : Gestion dynamique du badge d'urgence
     const badgeContainer = document.querySelector('[data-cloture]');
-    if (!badgeContainer) return;
+    if (badgeContainer) {
+      const dateClotureStr = badgeContainer.getAttribute('data-cloture');
+      if (dateClotureStr) {
+        const cloture = new Date(dateClotureStr + 'T00:00:00');
+        const now = new Date();
+        cloture.setHours(0,0,0,0); now.setHours(0,0,0,0);
+        const diffDays = Math.ceil((cloture - now) / (1000 * 60 * 60 * 24));
 
-    const dateClotureStr = badgeContainer.getAttribute('data-cloture');
-    if (!dateClotureStr) return;
-    
-    const cloture = new Date(dateClotureStr + 'T00:00:00');
-    const now = new Date();
-    
-    cloture.setHours(0,0,0,0);
-    now.setHours(0,0,0,0);
-
-    const diffTime = cloture - now;
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-    let badgeHtml = '';
-    if (diffDays < 0) {
-      badgeHtml = '<span class="badge badge-expired">⚠️ Clôture passée</span>';
-    } else if (diffDays === 0) {
-      badgeHtml = '<span class="badge badge-critical">🔥 Clôture AUJOURD\'HUI !</span>';
-    } else if (diffDays === 1) {
-      badgeHtml = '<span class="badge badge-critical">🔥 Clôture demain !</span>';
-    } else if (diffDays <= 3) {
-      badgeHtml = '<span class="badge badge-warning">⏳ J-' + diffDays + ' avant clôture</span>';
-    } else {
-      badgeHtml = '<span class="badge badge-info">📅 Ouvert</span>';
+        let badgeHtml = '<span class="badge badge-info">📅 Ouvert</span>';
+        if (diffDays < 0) badgeHtml = '<span class="badge badge-expired">⚠️ Clôture passée</span>';
+        else if (diffDays === 0) badgeHtml = '<span class="badge badge-critical">🔥 Clôture AUJOURD\'HUI !</span>';
+        else if (diffDays === 1) badgeHtml = '<span class="badge badge-critical">🔥 Clôture demain !</span>';
+        else if (diffDays <= 3) badgeHtml = '<span class="badge badge-warning">⏳ J-' + diffDays + ' avant clôture</span>';
+        badgeContainer.innerHTML = badgeHtml;
+      }
     }
 
-    badgeContainer.innerHTML = badgeHtml;
+    // Logic 2 : Génération du QR code de la page (avec logo central)
+    const pageQrContainer = document.getElementById('avp-page-qrcode');
+    if (pageQrContainer && typeof QRCode !== 'undefined') {
+      new QRCode(pageQrContainer, {
+        text: window.location.href,
+        width: 110, height: 110,
+        colorDark: "#005A9C", colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
+        logo: '{{ "assets/logo-opt.png" | relURL }}',
+        logoWidth: 32, logoHeight: 32,
+        logoBackgroundColor: '#ffffff', logoBackgroundTransparent: false
+      });
+    }
   });
 </script>

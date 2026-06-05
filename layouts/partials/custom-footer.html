@@ -1,15 +1,45 @@
+<script src="https://cdn.jsdelivr.net/npm/easyqrcodejs@4.4.1/dist/easy.qrcode.min.js"></script>
+
 <script>
-  // ⌨️ Raccourci clavier Ctrl+K / Cmd+K
+  // ⌨️ Raccourci clavier Ctrl+K
   document.addEventListener('keydown', function(e) {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
-      const searchInput = document.getElementById('R-search-by') 
-                          || document.querySelector('.search-by input')
-                          || document.querySelector('[data-search-input]');
-      if (searchInput) {
-        e.preventDefault();
-        searchInput.focus();
-        searchInput.select();
-      }
+      const searchInput = document.getElementById('R-search-by') || document.querySelector('.search-by input') || document.querySelector('[data-search-input]');
+      if (searchInput) { e.preventDefault(); searchInput.focus(); searchInput.select(); }
     }
+  });
+
+  // 🃏 📱 AUTO-INJECTION DES QR CODES SUR LES CARTES D'AVP
+  document.addEventListener("DOMContentLoaded", function() {
+    if (typeof QRCode === 'undefined') return;
+    
+    // On cible toutes les cartes d'offres de la liste
+    const cards = document.querySelectorAll('.avp-list-card');
+    
+    cards.forEach(function(card, index) {
+      // On cherche le lien de la fiche dans la carte (le titre h3 ou premier lien)
+      const targetLink = card.querySelector('h3 a') || card.querySelector('a');
+      if (!targetLink) return;
+
+      // Création dynamique d'un conteneur pour le mini QR Code
+      const qrWrapper = document.createElement('div');
+      qrWrapper.className = 'avp-card-qrcode-container';
+      
+      const qrCanvasDiv = document.createElement('div');
+      qrCanvasDiv.id = 'card-qr-' + index;
+      
+      qrWrapper.appendChild(qrCanvasDiv);
+      card.appendChild(qrWrapper); // On l'injecte dans la carte
+
+      // Génération du mini QR code ciblant l'URL exacte de la fiche
+      new QRCode(qrCanvasDiv, {
+        text: targetLink.href,
+        width: 65,
+        height: 65,
+        colorDark: "#005A9C",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.M // Pas besoin du logo sur les petites cartes
+      });
+    });
   });
 </script>

@@ -378,3 +378,171 @@
 #R-header-wrapper a span {
     color: #ffffff !important;
 }
+
+
+/* ==========================================================================
+   📱 CONFIGURATION DU QR CODE ACCESSIBLE (LOGO CENTRAL)
+   ========================================================================== */
+
+.avp-qrcode-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid var(--CARD-BORDER-color, #e0e0e0);
+    border-radius: 6px;
+    background-color: #ffffff; /* Toujours blanc pour garantir le contraste du scan */
+    width: 180px;
+    margin: 1.5rem 0 1.5rem auto; /* Aligné à droite */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.avp-qrcode-text {
+    font-size: 0.8rem !important;
+    font-weight: bold;
+    color: #2d3748 !important; /* Toujours sombre pour la lecture humaine */
+    margin: 0 0 10px 0 !important;
+    text-align: center;
+}
+
+.avp-qrcode-zone canvas, .avp-qrcode-zone img {
+    display: block;
+    max-width: 100%;
+}
+
+/* 🖨️ GESTION DE L'IMPRESSION : On veut ABSOLUMENT le QR code sur le papier */
+@media print {
+    .avp-qrcode-block {
+        display: flex !important; /* Force l'apparition sur le papier */
+        float: right;
+        margin-top: 0;
+        border: 1px solid #ccc;
+    }
+}
+
+/* ==========================================================================
+   💮 EFFET TAMPON QR CODE PAR-DESSUS LE TABLEAU
+   ========================================================================== */
+
+.avp-header-wrapper {
+    position: relative; /* ⚓ Obligatoire pour ancrer le tampon absolu */
+    width: 100%;
+}
+
+.avp-banner-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+/* 📊 Le Tableau de base */
+.avp-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.avp-info-table th {
+    padding: 11px 15px;
+    border: 1px solid var(--CARD-BORDER-color, #e0e0e0);
+    width: 28%;
+    text-align: left;
+    font-weight: 600;
+    color: var(--MAIN-TITLES-color);
+    background-color: var(--CODE-BG-color, #f7fafc);
+}
+
+.avp-info-table td {
+    padding: 11px 15px;
+    border: 1px solid var(--CARD-BORDER-color, #e0e0e0);
+    color: var(--MAIN-TEXT-color);
+}
+
+/* 🛡️ Zone de sécurité : évite que le texte long du tableau ne passe sous le tampon */
+.avp-info-table tr:nth-child(-n+4) td {
+    padding-right: 170px; /* Réserve l'espace à droite sur les 4 premières lignes */
+}
+
+/* 💮 LE FAMEUX TAMPON */
+.avp-stamp-qrcode {
+    position: absolute;
+    top: 90px;     /* Ajusté un poil plus bas pour mordre joliment sur la première ligne */
+    right: 25px;   
+    z-index: 999 !important;   /* 🔥 Augmenté au max pour passer au-dessus des cellules du tableau */
+    background-color: #ffffff !important; /* ⚪ Fond blanc opaque obligatoire pour masquer le tableau en dessous */
+    padding: 8px 10px 10px 10px;
+    border: 3px double #005A9C; 
+    border-radius: 6px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15); /* Ombre légèrement accentuée pour l'effet de relief */
+    transform: rotate(4deg); 
+    transition: transform 0.2s ease-in-out;
+}
+/* Petit effet de survol amusant */
+.avp-stamp-qrcode:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.avp-qrcode-text {
+    font-size: 0.65rem !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #005A9C !important; /* Bleu de l'établissement */
+    margin: 0 0 6px 0 !important;
+    text-align: center;
+}
+
+.avp-qrcode-zone {
+    display: block;
+}
+
+/* 🖼️ Bannière d'illustration dynamique */
+.avp-dynamic-banner {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--CARD-BORDER-color, #e0e0e0);
+    background-color: var(--CARD-BG-color, #ffffff);
+}
+.avp-dynamic-banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 📱 Responsive Mobile (On remet à plat pour les écrans étroits) */
+@media (max-width: 768px) {
+    .avp-stamp-qrcode {
+        position: static; /* Repasse dans le flux normal */
+        margin: 1.5rem auto;
+        transform: none;
+        width: 136px;
+    }
+    .avp-stamp-qrcode:hover {
+        transform: none;
+    }
+    .avp-info-table, .avp-info-table tbody, .avp-info-table tr, .avp-info-table th, .avp-info-table td {
+        display: block;
+        width: 100% !important;
+    }
+    .avp-info-table tr:nth-child(-n+4) td {
+        padding-right: 15px; /* Réinitialisation du padding sur mobile */
+    }
+}
+
+/* 🖨️ Impression Papier */
+@media print {
+    .btn-print { display: none !important; }
+    .avp-stamp-qrcode {
+        right: 10px;
+        border: 2px solid #000000;
+        box-shadow: none;
+    }
+}
