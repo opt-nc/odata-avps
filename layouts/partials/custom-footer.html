@@ -9,6 +9,52 @@
     }
   });
 
+document.addEventListener('DOMContentLoaded', () => {
+    let touchstartX = 0;
+    let touchstartY = 0;
+    let touchendX = 0;
+    let touchendY = 0;
+
+    const minSwipeDistance = 90;    // Distance minimale (en px) pour déclencher le swipe
+    const maxVerticalDistance = 40; // Seuil vertical max pour éviter de confondre défilement et swipe
+
+    function checkSwipe() {
+        const diffX = touchendX - touchstartX;
+        const diffY = Math.abs(touchendY - touchstartY);
+
+        // Sécurité : On s'assure que le geste est horizontal et pas un défilement vertical (scroll)
+        if (Math.abs(diffX) > minSwipeDistance && diffY < maxVerticalDistance) {
+            if (diffX > 0) {
+                // Swipe vers la DROITE -> Page PRÉCÉDENTE
+                const prevButton = document.querySelector('.topbar-button-prev a, a.nav-prev');
+                if (prevButton) prevButton.click();
+            } else {
+                // Swipe vers la GAUCHE -> Page SUIVANTE
+                const nextButton = document.querySelector('.topbar-button-next a, a.nav-next');
+                if (nextButton) nextButton.click();
+            }
+        }
+    }
+
+    // Gestionnaires d'événements tactiles
+    document.addEventListener('touchstart', e => {
+        // Optionnel : Bloquer le swipe si l'utilisateur glisse sur un tableau ou un bloc de code scrollable
+        if (e.target.closest('pre, code, table, .scroller')) return;
+
+        touchstartX = e.changedTouches[0].screenX;
+        touchstartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    document.addEventListener('touchend', e => {
+        // Même sécurité qu'au touchstart
+        if (e.target.closest('pre, code, table, .scroller')) return;
+
+        touchendX = e.changedTouches[0].screenX;
+        touchendY = e.changedTouches[0].screenY;
+        checkSwipe();
+    }, { passive: true });
+});
+
   // 🃏 📱 AUTO-INJECTION DES QR CODES SUR LES CARTES D'AVP
   document.addEventListener("DOMContentLoaded", function() {
     if (typeof QRCode === 'undefined') return;

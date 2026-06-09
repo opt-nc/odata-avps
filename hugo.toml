@@ -9,6 +9,13 @@ theme = 'hugo-theme-relearn'
   # themeVariant = 'blue' # Un beau thème bleu pro par défaut
   themeVariant = [ "opt-light", "opt-dark" ]
   landingPageName = "<i class='fa-fw fas fa-home'></i> Bienvenue"
+  collapsibleMenu = true
+  disableShortcutsTitle = true
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-info-circle'></i> À propos"
+pageRef = "/a-propos"
+weight = 10
 
 [outputs]
   home = ['html', 'rss', 'print','markdown']

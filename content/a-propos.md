@@ -3,6 +3,9 @@ title: "À propos de la plateforme"
 description: "Démarche de production automatisée des fiches d'offres OPT-NC."
 archetype: "page"
 disableNextPrev: true # Evite que les flèches de navigation cyclent sur cette page
+
+hidden: true
+
 ---
 
 ### 🏛️ La démarche de production
