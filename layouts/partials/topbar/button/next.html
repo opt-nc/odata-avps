@@ -12,12 +12,9 @@
         
         {{- $s := newScratch }}
         
-        {{- /* 🔄 VÉRIFICATION DE L'ADN DE L'AVP */}}
+        {{- /* 🔄 VÉRIFICATION DE L'AVP */}}
         {{- if $currentPage.Params.ref }}
-            {{- /* 1. On extrait les fiches */}}
             {{- $avpPages := where $currentPage.Site.RegularPages "Params.ref" "!=" nil }}
-            
-            {{- /* 2. Le double tri stable (Chronologique + Catégorie) */}}
             {{- $avpPages = sort $avpPages "Date" "desc" }}
             {{- $avpPages = sort $avpPages "Section" "asc" }}
             
@@ -39,7 +36,6 @@
                 {{- end }}
             {{- end }}
         {{- else }}
-            {{- /* Fallback pour le reste du site */}}
             {{- $nativeNext := partialCached "_relearn/pageNext.gotmpl" . .Path }}
             {{- if eq .Kind "page" }}
                 {{- if or (not $nativeNext) (not $nativeNext.Path) }}
@@ -61,7 +57,7 @@
         
         {{- if $href }}
             
-            {{- /* 🎬 1. INJECTION DU BOUTON PLAY (Uniquement sur les fiches AVP) */}}
+            {{- /* 🎬 1. INJECTION DU BOUTON PLAY */}}
             {{- if $currentPage.Params.ref }}
                 {{- partial "topbar/func/button.html" (dict
                     "page" $currentPage
@@ -97,12 +93,9 @@
                       if (isSlideshow) {
                         sessionStorage.setItem('avp_slideshow', 'false');
                         if (window.avpSlideshowTimeout) clearTimeout(window.avpSlideshowTimeout);
-                        const url = new URL(window.location.href);
-                        url.searchParams.delete('slideshow');
-                        window.location.href = url.pathname;
+                        window.location.href = new URL(window.location.href).pathname;
                       } else {
                         sessionStorage.setItem('avp_slideshow', 'true');
-                        // 🎯 CORRECTION : Utilisation de RelPermalink pour inclure /odata-avps/
                         window.location.href = "{{ $next.RelPermalink }}?slideshow=true";
                       }
                     });
@@ -122,18 +115,20 @@
                 "hint" (printf "%s (%s)" $nextTitle ($endarrow | safeHTML))
             )}}
 
-            {{- /* ⏱️ 3. GESTION DU MINUTEUR DE ZAP AUTOMATIQUE */}}
+            {{- /* ⏱️ 3. GESTION DU MINUTEUR DE ZAP ET APPLICATION DU LOOK DIAPORAMA */}}
             <script>
               (function() {
                 const urlParams = new URLSearchParams(window.location.search);
                 const isSlideshow = urlParams.get('slideshow') === 'true' || sessionStorage.getItem('avp_slideshow') === 'true';
                 
+                // On applique l'état immédiatement avant le chargement complet pour couper la sidebar
+                document.body.classList.toggle('slideshow-active', isSlideshow);
+
                 if (isSlideshow) {
                   sessionStorage.setItem('avp_slideshow', 'true');
-                  const tempsAffichage = 8000; // 8 secondes
+                  const tempsAffichage = 8000;
                   
                   window.avpSlideshowTimeout = setTimeout(() => {
-                    // 🎯 CORRECTION : Utilisation de RelPermalink ici aussi
                     window.location.href = "{{ $next.RelPermalink }}?slideshow=true";
                   }, tempsAffichage);
                 }

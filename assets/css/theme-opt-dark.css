@@ -641,3 +641,21 @@
         transform: none;
     }
 }
+
+/* ==========================================================================
+   MODE DIAPORAMA : MASQUAGE + PLEINE LARGEUR NETTE
+   ========================================================================== */
+body.slideshow-active {
+    --sidebar-width: 0rem !important;
+}
+
+body.slideshow-active #R-sidebar {
+    left: calc(var(--sidebar-width) * -1) !important;
+    visibility: hidden !important;
+}
+
+body.slideshow-active #R-body {
+    margin-left: 0 !important;
+    width: 100% !important;         /* 🎯 FORCE le bloc à prendre tout l'écran */
+    max-width: 100% !important;     /* 🎯 Supprime le bridage du thème sur PC */
+}

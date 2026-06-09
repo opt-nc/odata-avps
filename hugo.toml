@@ -12,6 +12,9 @@ theme = 'hugo-theme-relearn'
   collapsibleMenu = true
   disableShortcutsTitle = true
 
+[params.topbar]
+    sidebar = "show"
+
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-info-circle'></i> À propos"
 pageRef = "/a-propos"
