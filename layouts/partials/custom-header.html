@@ -64,3 +64,15 @@ document.addEventListener("DOMContentLoaded", function() {
 {{ else }}
   <meta name="twitter:image" content="{{ "assets/logo-opt.png" | absURL }}" />
 {{ end }}
+
+{{/* 🎯 Récupération de l'ID de l'AVP en cours */}}
+{{ $avpID := .Params.ref | replace "/" "_" | replace " " "_" }}
+
+{{/* 🔍 Hugo va chercher le fichier JSON correspondant dans le dossier data/avps/ */}}
+{{ $jsonData := index .Site.Data.avps $avpID }}
+
+{{ with $jsonData }}
+  <script type="application/ld+json">
+    {{ . | jsonify }}
+  </script>
+{{ end }}
