@@ -1,14 +1,37 @@
 {{/* ==========================================================================
-   MASQUAGE AUTOMATIQUE DES CATÉGORIES VIDES DANS LA SIDEBAR
+   NETTOYAGE CHIRURGICAL DES CATÉGORIES VIDES (IMMUNE AUX PIÈGES D'URLS)
    ========================================================================== */}}
-<style>
-{{- range where site.AllPages "IsSection" true }}
-  {{- /* .RegularPages ne compte que les vraies fiches de postes (pas les index) */}}
-  {{- if eq (len .RegularPages) 0 }}
-    /* Masquage de la catégorie vide : {{ .Title }} */
-    #R-sidebar li[data-nav-id="{{ .RelPermalink }}"] {
-      display: none !important;
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // 1. Hugo génère proprement la liste de TOUS les titres de vos catégories
+  const checkedCategories = [
+    {{- range .Site.Pages }}
+      {{- if .IsSection }}
+        "{{ .Title }}",
+      {{- end }}
+    {{- end }}
+  ];
+
+  // 2. Le script inspecte les éléments réels de la sidebar au chargement
+  document.querySelectorAll('#R-sidebar li > a').forEach(function(anchor) {
+    const linkText = anchor.textContent.trim();
+    
+    // Si le lien correspond à l'une de nos catégories
+    if (checkedCategories.includes(linkText)) {
+      const listItem = anchor.closest('li');
+      
+      if (listItem) {
+        // Dans le thème Relearn, la présence d'enfants crée un élément <label> ou une icône de chevron
+        const hasArrow = listItem.querySelector('label') || 
+                         listItem.querySelector('.fa-chevron-right') || 
+                         listItem.querySelector('.fa-chevron-down');
+        
+        // S'il n'y a PAS de flèche ">", c'est que la catégorie est vide !
+        if (!hasArrow) {
+          listItem.style.setProperty('display', 'none', 'important');
+        }
+      }
     }
-  {{- end }}
-{{- end }}
-</style>
+  });
+});
+</script>
