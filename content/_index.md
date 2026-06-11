@@ -19,4 +19,7 @@ Sous certaines conditions, l'OPT-NC publie des offres d’emploi pour des postes
 
 👈 **Utilisez le menu latéral** pour naviguer entre les différentes offres et consulter les profils recherchés.
 
+{{< latest-drh-complete >}}
+
 {{< avp-map >}}
+

@@ -1,0 +1,44 @@
+{{/* 1. On récupère les messages de la DRH */}}
+{{ $drhPages := where .Site.RegularPages "Section" "mot-drh" }}
+
+{{ if $drhPages }}
+  {{/* 2. On prend le plus récent */}}
+  {{ $latest := index (sort $drhPages ".Date" "desc") 0 }}
+
+  <div class="drh-complete-card" style="background: var(--CARD-BACKGROUND-color, #ffffff); border: 1px solid var(--CARD-BORDER-color, #e0e0e0); border-radius: 12px; overflow: hidden; margin: 30px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+    
+    {{/* 3. Traitement et optimisation de l'image de couverture */}}
+    {{ with $latest.Params.cover }}
+      {{ $img := resources.Get . }}
+      {{ if $img }}
+        {{/* On redimensionne à 1200px de large max pour un beau rendu bannière */}}
+        {{ $optimized := $img.Resize "1200x" }}
+        <div class="drh-cover-wrapper" style="width: 100%; max-height: 400px; overflow: hidden;">
+          <img src="{{ $optimized.RelPermalink }}" 
+               alt="Illustration du message de la direction" 
+               style="width: 100%; height: auto; object-fit: cover;">
+        </div>
+      {{ end }}
+    {{ end }}
+
+    {{/* 4. Corps de la carte (Texte) */}}
+    <div class="drh-card-body" style="padding: 30px;">
+      
+      <h2 style="margin-top: 0; margin-bottom: 10px; color: var(--MENU-SECTIONS-LINK-color, #0056b3); font-size: 1.8rem;">
+        {{ $latest.Title }}
+      </h2>
+      
+      <div class="drh-meta" style="font-size: 0.8rem; opacity: 0.6; margin-bottom: 20px;">
+        <i class="fas fa-calendar-alt" aria-hidden="true"></i> Communiqué du {{ $latest.Date.Format "02/01/2006" }}
+      </div>
+
+      <div class="drh-text-content" style="line-height: 1.7; color: var(--MAIN-TEXT-color); font-size: 1.05rem;">
+        {{ $latest.Content }}
+      </div>
+      
+    </div>
+  </div>
+
+{{ else }}
+  <p style="text-align: center; font-style: italic; opacity: 0.5;">Aucun communiqué disponible pour le moment.</p>
+{{ end }}
