@@ -35,7 +35,7 @@ jobs:
       - name: Build with Hugo
         run: |
           mkdir -p data
-          git rev-parse --short HEAD > data/git_commit.txt
+          echo "hash: $(git rev-parse --short HEAD)" > data/git_commit.yaml
           hugo --minify
 
       - name: Upload artifact

@@ -24,6 +24,6 @@ Le processus de publication est entièrement automatisé et s'articule autour de
 
 Pour garantir la traçabilité de l'application, les indicateurs de révision système sont injectés à chaque déploiement :
 
-* **Révision du code source (Git) :** `r-{{ readFile "data/git_commit.txt" | default "version-dev" | strings.TrimSpace }}`
+* **Révision du code source (Git) :** `r-{{ if site.Data.git_commit }}{{ site.Data.git_commit.hash }}{{ else }}dev{{ end }}`
 * **Moteur de rendu :** Hugo `v{{ hugo.Version }}`
 * **Dernière synchronisation :** En production le {{ hugo.BuildDate.Format "02/01/2006 à 15:04:05" }}
