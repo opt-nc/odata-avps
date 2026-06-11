@@ -1,0 +1,151 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Agent d'exploitation",
+    "direction": "BU Distribution",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de cellule – Superviseur Grand Nord",
+    "placeOrganigramme": "N-4 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Cellule guichet",
+      "Chef d'agence",
+      "Chef de cellule"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Est sous la responsabilité du Chef de cellule Superviseur / Planificateur, mais est aussi en affectation sous la responsabilité d'un Chef d'agence (ou Chef de Cellule). Itinérance."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Unité organisationnelle",
+        "value": "Cellule guichet"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Avis de vacance de poste pour un poste de Chargé de contact clientèle en soutien au sein de la BU Distribution de l'OPT-NC, basé sur la zone Nord (Voh, Koné, Pouembout).",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-0438/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chargé de contact clientèle en soutien - ZN Voh-Koné-Pouembout",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et Télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Direction Générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "20.64.63",
+    "email": "drh-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-03-27",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Offre et réglementation des produits et services commercialisés par l'OPT",
+      "Organisation et fonctionnement de l'OPT-NC",
+      "Techniques de vente",
+      "Outils de bureautique, applications informatiques et logiciels de guichet",
+      "Techniques de gestes et postures",
+      "Règles d'hygiène et sécurité",
+      "Utiliser les applications informatiques 'métier'",
+      "Manipuler du numéraire, tenir une caisse"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "Office des Postes et Télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et Télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": "Indemnité de guichet. Indemnité forfaitaire mensuelle d’utilisation de véhicule personnel.",
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Agences de Voh, Koné et Pouembout",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Koné"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": "Commercial et clientèle",
+  "physicalRequirement": null,
+  "qualifications": "Permis B (Obligatoire)",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé de contact clientèle",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "C1201",
+      "name": "Accueil et services bancaires"
+    }
+  },
+  "responsibilities": [
+    "Renforcer les agences en tant que besoin (renfort, remplacement ...)",
+    "Garantir la réalisation effective des opérations intra agence (Commercialisation, opérations de guichet, activités administratives, tenue de poste et renfort…), dans les meilleures conditions d'accueil du client, de conformité aux guides et pratiques et de délai de réalisation",
+    "Réaliser pour le périmètre 'agence', l'ensemble des opérations concourant à la commercialisation, au conseil client, à la délivrance des produits et services ainsi qu'au meilleur accueil et à la satisfaction des clients",
+    "Garantir la conformité de ces opérations ainsi que les activités dites administratives associées, aux guides, procédures et pratiques internes",
+    "Maintenir implication dans la lutte contre les non-conformités et suggérer les leviers d'une plus grande maîtrise des opérations confiées",
+    "Produire les auto-contrôles et autres activités permettant une meilleure maîtrise/couverture des risques",
+    "Rendre compte de l'activité, l'analyser et proposer toutes sources d'amélioration",
+    "Contribuer à la meilleure efficacité collective de l'entité de rattachement par la capacité à tenir d'autre positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) /conseiller ses collègues"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Gérer une relation client",
+    "Communiquer",
+    "Accueillir une personne, un groupe, du public",
+    "Mettre en œuvre une règle, une norme, une procédure, un protocole",
+    "Gérer une situation de crise, d’urgence ou dangereuse",
+    "Sens du service publique",
+    "Aisance relationnelle",
+    "Esprit d'initiative",
+    "Faculté d’adaptation",
+    "Être rigoureux",
+    "Faire preuve de discrétion",
+    "Avoir l’esprit d'équipe",
+    "Maitrise de soi"
+  ],
+  "specialCommitments": null,
+  "title": "Chargé de contact clientèle en soutien - ZN Voh-Koné-Pouembout",
+  "totalJobOpenings": null,
+  "validThrough": "2026-04-17",
+  "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence"
+}
