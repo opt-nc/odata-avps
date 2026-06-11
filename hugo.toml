@@ -20,8 +20,18 @@ name = "<i class='fas fa-fw fa-info-circle'></i> À propos"
 pageRef = "/a-propos"
 weight = 10
 
+[outputFormats.jobs_sitemap]
+  mediaType = "application/xml"
+  baseName = "jobs-sitemap"
+  isHTML = false
+  
+[outputFormats.flux_ats]
+  mediaType = "application/xml"
+  baseName = "flux_ats"
+  isHTML = false
+
 [outputs]
-  home = ['html', 'rss', 'print','markdown']
+  home = ['html', 'rss', 'print','markdown','jobs_sitemap','flux_ats']
   page = ['html', 'print','markdown']
   section = ['html', 'rss', 'print','markdown']
 
