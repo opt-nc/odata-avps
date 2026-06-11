@@ -6,11 +6,12 @@ theme = 'hugo-theme-relearn'
 
 [params]
   # Options du thème Relearn
-  # themeVariant = 'blue' # Un beau thème bleu pro par défaut
   themeVariant = [ "opt-light", "opt-dark" ]
   landingPageName = "<i class='fa-fw fas fa-home'></i> Bienvenue"
   collapsibleMenu = true
   disableShortcutsTitle = true
+  author = "OPT-NC"
+  images = ["/assets/logo-opt.png"]
 
 [params.topbar]
     sidebar = "show"
@@ -24,7 +25,7 @@ weight = 10
   mediaType = "application/xml"
   baseName = "jobs-sitemap"
   isHTML = false
-  
+
 [outputFormats.flux_ats]
   mediaType = "application/xml"
   baseName = "flux_ats"
