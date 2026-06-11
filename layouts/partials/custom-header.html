@@ -65,14 +65,20 @@ document.addEventListener("DOMContentLoaded", function() {
   <meta name="twitter:image" content="{{ "assets/logo-opt.png" | absURL }}" />
 {{ end }}
 
-{{/* 🎯 Récupération de l'ID de l'AVP en cours */}}
-{{ $avpID := .Params.ref | replace "/" "_" | replace " " "_" }}
 
-{{/* 🔍 Hugo va chercher le fichier JSON correspondant dans le dossier data/avps/ */}}
-{{ $jsonData := index .Site.Data.avps $avpID }}
 
-{{ with $jsonData }}
-  <script type="application/ld+json">
-    {{ . | jsonify }}
-  </script>
+{{ if .Params.ref }}
+  {{/* 1. On construit le chemin exact du fichier sur le disque */}}
+  {{ $fileName := replace .Params.ref "/" "_" }}
+  {{ $filePath := printf "data/avps/%s.json" $fileName }}
+
+
+  {{/* 2. On vérifie que le fichier existe physiquement */}}
+  {{ if fileExists $filePath }}
+    <script type="application/ld+json">
+      {{ readFile $filePath | safeJS }}
+    </script>
+    
+  {{ else }}
+    {{ end }}
 {{ end }}
