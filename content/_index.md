@@ -1,11 +1,11 @@
 ---
-title: "Accueil"
+title: "🏢 Vous souhaitez exercer un métier à l'OPT-NC ?"
 weight: 1
 ---
 
-## 🏢 Vous souhaitez exercer un métier à l'OPT-NC ?
 
-### L'office recrute. 
+{{< latest-drh-complete >}}
+
 
 Rejoignez les 1200 collaborateurs de l'office qui œuvrent chaque jour au service des Calédoniens.
 
@@ -19,7 +19,6 @@ Sous certaines conditions, l'OPT-NC publie des offres d’emploi pour des postes
 
 👈 **Utilisez le menu latéral** pour naviguer entre les différentes offres et consulter les profils recherchés.
 
-{{< latest-drh-complete >}}
 
 {{< avp-map >}}
 

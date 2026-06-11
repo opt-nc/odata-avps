@@ -1,0 +1,13 @@
+{{/* ==========================================================================
+   MASQUAGE AUTOMATIQUE DES CATÉGORIES VIDES DANS LA SIDEBAR
+   ========================================================================== */}}
+<style>
+{{- range .Site.Sections }}
+  {{- if eq (len .Pages) 0 }}
+    /* Détection : La catégorie "{{ .Title }}" est vide, on la masque */
+    #R-sidebar li:has(a[href="{{ .RelPermalink }}"]) {
+      display: none !important;
+    }
+  {{- end }}
+{{- end }}
+</style>
