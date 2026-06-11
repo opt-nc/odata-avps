@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} sur {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
@@ -23,6 +23,15 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
+      
+      {{/* 🎯 INJECTION DE L'ILLUSTRATION NANO BANANA DE L'AVP */}}
+      {{ with .Params.featured_image }}
+        {{/* 1. Balise standard RSS 2.0 (La fonction absURL convertit automatiquement le chemin en URL absolue obligatoire) */}}
+        <enclosure url="{{ . | absURL }}" type="image/png" length="0" />
+        
+        {{/* 2. Balise enrichie Yahoo/Media RSS pour les agrégateurs modernes (Feedly, Inoreader...) */}}
+        <media:content url="{{ . | absURL }}" medium="image" type="image/png" width="1200" height="675" />
+      {{ end }}
     </item>
     {{ end }}
   </channel>
