@@ -1,13 +1,10 @@
-<!-- ♿ Élément accessible uniquement pour les lecteurs d'écran (Utilise la classe globale CSS) -->
 <div class="sr-only">
   Carte interactive affichant la répartition géographique des offres d'emploi. Les offres sont également listées textuellement ci-dessous par ordre de publication.
 </div>
 
-<!-- 🌐 Chargement sécurisé de Leaflet CSS et JS via CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-<!-- 🗺️ L'UNIQUE conteneur de la carte (Enrichi pour le RGAA) -->
 <div id="avp-global-map" class="avp-map-container" role="application" aria-label="Carte des vacances de poste"></div>
 
 <script>
@@ -36,10 +33,16 @@
       {{ end }}
     ];
 
-    // 4. Placement automatique des pins de l'OPT sur la carte
+    // 🎯 4. Cache mémoire pour détecter et regrouper les coordonnées identiques
+    const markersCache = {};
+
+    // 5. Placement intelligent des pins de l'OPT sur la carte
     avpPoints.forEach(function(avp) {
-      // Construction propre de la bulle d'information au clic
-      const popupHtml = `
+      // Clé unique basée sur le couple Latitude + Longitude
+      const geoKey = `${avp.lat}_${avp.lng}`;
+
+      // Structure unitaire d'un AVP dans la bulle
+      const itemHtml = `
         <div class="avp-map-popup">
           <h4 class="avp-popup-title"><a href="${avp.url}">${avp.title}</a></h4>
           <p class="avp-popup-meta">
@@ -50,9 +53,23 @@
         </div>
       `;
 
-      L.marker([avp.lat, avp.lng])
-       .addTo(map)
-       .bindPopup(popupHtml);
+      if (markersCache[geoKey]) {
+        // 🔥 LE CHEVRON GÉOGRAPHIQUE : Le point existe déjà !
+        // On récupère le contenu actuel de la bulle et on y greffe le nouvel AVP
+        const currentPopup = markersCache[geoKey].getPopup();
+        const currentContent = currentPopup.getContent();
+        
+        // On fusionne les contenus en ajoutant une bordure de séparation stylisée
+        const separator = '<hr style="border:0; border-top:1px dashed var(--CARD-BORDER-color, #e0e0e0); margin:10px 0;">';
+        currentPopup.setContent(currentContent + separator + itemHtml);
+      } else {
+        // PREMIER PASSAGE : Aucun AVP enregistré à cette adresse
+        const marker = L.marker([avp.lat, avp.lng]).addTo(map);
+        marker.bindPopup(itemHtml);
+        
+        // On garde précieusement la référence du marqueur Leaflet dans notre cache
+        markersCache[geoKey] = marker;
+      }
     });
   });
 </script>
