@@ -2,10 +2,11 @@
    MASQUAGE AUTOMATIQUE DES CATÉGORIES VIDES DANS LA SIDEBAR
    ========================================================================== */}}
 <style>
-{{- range .Site.Sections }}
-  {{- if eq (len .Pages) 0 }}
-    /* Détection : La catégorie "{{ .Title }}" est vide, on la masque */
-    #R-sidebar li:has(a[href="{{ .RelPermalink }}"]) {
+{{- range .Site.AllSections }}
+  {{- /* On compte les vraies fiches (.RegularPages). S'il n'y en a aucune, c'est vide */}}
+  {{- if eq (len .RegularPages) 0 }}
+    /* Détection : La catégorie "{{ .Title }}" ne contient aucun AVP actif */
+    #R-sidebar li[data-nav-id="{{ .RelPermalink }}"] {
       display: none !important;
     }
   {{- end }}
