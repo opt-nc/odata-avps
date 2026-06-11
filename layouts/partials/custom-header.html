@@ -4,7 +4,7 @@
 <style>
 {{- range .Site.AllSections }}
   {{- /* On compte les vraies fiches (.RegularPages). S'il n'y en a aucune, c'est vide */}}
-  {{- if eq (len .RegularPages) 0 }}
+  {{- if eq (len .RegularPages) 1 }}
     /* Détection : La catégorie "{{ .Title }}" ne contient aucun AVP actif */
     #R-sidebar li[data-nav-id="{{ .RelPermalink }}"] {
       display: none !important;
