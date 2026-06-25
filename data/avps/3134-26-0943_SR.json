@@ -1,0 +1,137 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "Direction du Postal",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de section SI, logistique et transports",
+    "placeOrganigramme": "N-2 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Communes de la Nouvelle Calédonie",
+      "Équipes techniques",
+      "DDI"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations et permis requis",
+        "value": "Permis B + A1 / A2 (2 roues)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Déplacements sur l'ensemble du territoire"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériel fourni",
+        "value": "Téléphone mobile de service"
+      }
+    ]
+  },
+  "alternateName": "Chargé(e) d'études distribution et adressage",
+  "description": "Le/la Chargé(e) d'études distribution et adressage est chargé(e) d'analyser et d'optimiser les opérations liées à la distribution postale, sur l'ensemble de la Nouvelle Calédonie. Il/elle assure également un appui technique en matière d'adressage auprès des communes de la Nouvelle Calédonie.",
+  "disambiguatingDescription": "Poste de Contrôleur au sein de la Direction du Postal en charge de l'analyse et de l'optimisation de la distribution postale et de l'adressage.",
+  "identifier": "3134-26-0943/SR",
+  "name": "Chargé(e) d'études distribution et adressage",
+  "owner": {
+    "@type": "GovernmentOrganization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Immeuble Kling",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 rue F. Forest",
+      "addressLocality": "Nouméa"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "+687 26 81 34",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "datePosted": "2026-07-10",
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Très bonne connaissance de l'organisation et du fonctionnement de l'OPT-NC",
+      "Très bonne connaissance du domaine postal (réglementation) et de ses processus métiers",
+      "Très bonne connaissance du SIG de l'OPT-NC : ESRI",
+      "Connaissance des techniques de communication et d'information",
+      "Maîtrise de l'outil informatique",
+      "Capacités à travailler en équipe"
+    ]
+  },
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Direction du Postal"
+  },
+  "hiringOrganization": {
+    "@type": "GovernmentOrganization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Immeuble Kling",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 rue F. Forest",
+      "addressLocality": "Nouméa"
+    }
+  },
+  "occupationalCategory": "Poste et logistique",
+  "qualifications": "Permis B + A1 / A2 (2 roues)",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé(e) d'études opérationnelles postales (H/F)",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "N1302",
+      "name": "Organisation et pilotage des flux du courrier et des colis"
+    }
+  },
+  "responsibilities": [
+    "Collecter et analyser les données relatives aux volumes de courrier et de colis à distribuer",
+    "Élaborer des modèles prévisionnels de charges en tenant compte des variations saisonnières et des évolutions du marché",
+    "Identifier les besoins en ressources humaines et matérielles pour assurer une distribution efficace",
+    "Proposer des ajustements organisationnels pour optimiser les opérations de distribution en fonction des charges prévues",
+    "Gérer et mettre à jour le système d'information géographique postal",
+    "Veiller à l'exactitude et à l'intégrité des données géographiques utilisées dans les processus de distribution",
+    "Collaborer avec les équipes techniques pour résoudre les problèmes liés au système et assurer sa disponibilité permanente",
+    "Proposer des améliorations du système d'information géographique pour optimiser les itinéraires de distribution",
+    "Suivre les évolutions technologiques et réglementaires dans le domaine de la distribution postale",
+    "Analyser l'impact de ces évolutions sur les processus de distribution et proposer des ajustements nécessaires",
+    "Coordonner la mise en œuvre des nouvelles méthodes de travail et des outils technologiques pour améliorer l'efficacité de la distribution",
+    "Former le personnel aux nouvelles procédures et veiller à leur adoption",
+    "Apporter un soutien technique aux centres et agences",
+    "Travailler en collaboration avec les communes à l'amélioration de l'adressage (dénomination et numérotation des voies)",
+    "Rendre compte de l'activité couverte sur tous les volets de son périmètre via des indicateurs, les analyser, proposer à sa hiérarchie des enseignements et recommandations si besoin et assurer un suivi des correctifs mis en place",
+    "Élaborer en collaboration avec le chef de section et la DDI, une planification annuelle des missions à couvrir pour l'année en cours",
+    "S'inscrire dans une démarche d'amélioration continue en identifiant les opportunités d'optimisation"
+  ],
+  "skills": [
+    "Appliquer les règles d'hygiène et sécurité en vigueur",
+    "Communiquer efficacement à l'oral et à l'écrit avec des interlocuteurs variés",
+    "Négocier avec des institutions publiques et des entreprises privées",
+    "Renseigner et conseiller les clients",
+    "Identifier et anticiper les problèmes",
+    "Analyser des plans de charges et organiser le travail en conséquence",
+    "Qualités relationnelles",
+    "Diplomatie",
+    "Autonomie",
+    "Capacité d'initiative",
+    "Aptitude au changement",
+    "Disponibilité",
+    "Sens de l'anticipation",
+    "Esprit d'analyse",
+    "Sens de l'organisation",
+    "Rigueur"
+  ],
+  "specialCommitments": "Déplacements sur l'ensemble du territoire",
+  "title": "Chargé(e) d'études distribution et adressage",
+  "validThrough": "2026-06-19"
+}
