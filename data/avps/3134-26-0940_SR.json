@@ -1,0 +1,154 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Technicien",
+    "direction": "Direction des moyens et de l’immobilier",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de Cellule exploitation, service et maintenance",
+    "placeOrganigramme": "N-4 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Cellule exploitation, service et maintenance"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Bureau, visites de chantiers et déplacements sur l’ensemble de la Nouvelle-Calédonie. Interventions possibles en dehors des heures ouvrées."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Equipements de protection individuel (EPI), Habillement, Téléphone de service"
+      }
+    ]
+  },
+  "alternateName": "Coordinateur de travaux",
+  "description": "Assurer la prise en charge, le traitement et le suivi des incidents, des services et des domaines d’activités du parc mobilier et immobilier. Veiller à la bonne exécution, au pilotage et au contrôle des contrats de service et de maintenance du périmètre d’activité confié.",
+  "disambiguatingDescription": "Gestionnaire technique de contrat de service et maintenance au sein de la Cellule exploitation, service et maintenance.",
+  "identifier": "3134-26-0940/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Gestionnaire technique de contrat de service et maintenance - CPSM",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Nouvelle-Calédonie",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Nouméa"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "20 64 10",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-06-19",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Technicien",
+    "competencyRequired": [
+      "Prioriser, gérer et hiérarchiser les urgences et les échéances",
+      "Porter un diagnostic technique sur le patrimoine bâti, argumenter les propositions techniques et informer des contraintes techniques inhérentes",
+      "Assurer une maintenance, contrôler, anticiper, résoudre un problème, gérer une situation de crise, d’urgence ou dangereuse",
+      "Appliquer les techniques et procédures comptables",
+      "Suivre et analyser les indicateurs de pilotage d'activité",
+      "Contrôler l’application de la réglementation et des règles internes",
+      "Gérer des deniers publics",
+      "Rédiger et s’assurer de s’exprimer clairement",
+      "Appréhender les limites de son action"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience requise dans la gestion de parcs techniques immobiliers et le suivi de contrats de maintenance.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Centre parc service et maintenance",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 rue Fernand FOREST - Ducos",
+      "addressLocality": "Nouméa"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": "Poste et logistique",
+  "physicalRequirement": null,
+  "qualifications": "Permis B, Habilitation électrique",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Coordinateur de travaux",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "F1201",
+      "name": "Conduite de travaux du BTP"
+    }
+  },
+  "responsibilities": [
+    "Gérer les parcs techniques, les demandes de services, procéder aux commandes et assurer la coordination des opérations de maintenance préventive, curative et corrective des parcs immobiliers relevant de sa responsabilité (interventions, planification, outils de suivis)",
+    "Contrôler et assurer la bonne exécution administrative et financière des contrats de maintenance et des prestations commandées en veillant à la qualité des opérations et prestations, réceptionner les factures liées à son activité",
+    "Définir les besoins, proposer, rédiger, valider et mettre en œuvre l’ensemble des contrats de maintenance en relation avec son responsable pour l’ensemble des parcs relevant de sa responsabilité",
+    "Participer aux réunions techniques en interne ou en externe en qualité de représentant de l'OPT-NC et organiser les réunions annuelles d’échange, de démarrage et de pilotage avec les prestataires",
+    "Veiller au respect des règles de sécurité sur les chantiers, rédiger et s’assurer de l’application des plans de prévention",
+    "Fiabiliser les données techniques liées aux services en maintenant la mise à jour de la base de données",
+    "Assurer le reporting de ses activités",
+    "Participer à la préparation et à la passation des marchés publics",
+    "Conseiller sa hiérarchie sur l'organisation et les moyens à mettre en œuvre",
+    "Apporter le soutien technique à la hiérarchie et participer à l’élaboration et au suivi de l’exécution du budget dans les domaines confiés",
+    "Participer à la formation des nouveaux agents ou à l'accueil des stagiaires",
+    "A la demande de sa hiérarchie, assurer une entraide au sein de la section en cas de situation exceptionnelle et effectuer toute mission particulière confiée par la DMI dans le cadre de ses attributions (groupes de travail, études diverses)"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Maîtriser les techniques et procédures comptables",
+    "Technique des marchés publics",
+    "Savoir prioriser, gérer et hiérarchiser les urgences et les échéances",
+    "Suivre et analyser les indicateurs de pilotage d'activité",
+    "Contrôler l’application de la réglementation et des règles internes",
+    "Gérer des deniers publics",
+    "Rédiger, synthétiser et s’exprimer clairement",
+    "Appréhender les limites de son action",
+    "Très bon relationnel, bonne communication et travail d'équipe",
+    "Sens du service client et des responsabilités",
+    "Rigueur, discrétion, méthode et sens de l’organisation",
+    "Autonomie et esprit d’initiative",
+    "Disponibilité, notamment lors des charges de travail importante en période de clôture budgétaire"
+  ],
+  "specialCommitments": "Interventions possibles en dehors des heures ouvrées. Disponibilité notamment en décembre et janvier lors de la clôture budgétaire.",
+  "title": "Gestionnaire technique de contrat de service et maintenance - CPSM",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-10",
+  "workHours": "Interventions possibles en dehors des heures ouvrées"
+}
