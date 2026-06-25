@@ -1,0 +1,163 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre technique ou technicien",
+    "direction": "Direction des télécommunications",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de service SMQP",
+    "placeOrganigramme": "N-2 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Service méthodes processus qualité",
+      "Direction des systèmes d'information (DSI)"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Unité organisationnelle",
+        "value": "Service méthodes processus qualité"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Piloter l'alignement des SI Télécoms sur les orientations stratégiques et sur les processus métiers. Assurer les activités d'administrateur fonctionnel et transférer/former à cette responsabilité. Contribuer à la performance par la réduction du délai d'implémentation des évolutions du système d'information.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-0946/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Consultant fonctionnel - SMQP",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Direction générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "+687761175",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-06-19",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Organisation et fonctionnement de l'OPT-NC",
+      "Très bonne connaissance des produits et services télécoms",
+      "Très bonne connaissance des différents SI Télécoms",
+      "Connaissance des processus métiers",
+      "Maîtrise d'une méthodologie de gestion de projet (PMP, PMI, Prince 2, Agile…)",
+      "Maîtrise des outils de gestion de projets",
+      "Maîtrise des outils bureautiques",
+      "Bonne connaissance du domaine fonctionnel impacté",
+      "Anglais : lu, parlé, écrit"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Immeuble Le Fulton à Ducos",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Immeuble Le Fulton, Ducos",
+      "addressLocality": "Nouméa"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": "Informatique et technologies",
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Consultant fonctionnel",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1806",
+      "name": "Conseil et maîtrise d'ouvrage en systèmes d'information"
+    }
+  },
+  "responsibilities": [
+    "Assurer la maîtrise d'ouvrage des projets SI dans le respect des référentiels et/ou guides de pratiques internes",
+    "Représenter le métier vis à vis du maître d'œuvre (DSI)",
+    "Conduire, produire/faire produire l'ensemble des activités/opérations et livrables de la phase de cadrage à la réception et mise en exploitation des outils SI",
+    "Accompagner/assister/former les équipes, piloter toute action favorisant la maîtrise et l'autonomie des équipes métiers, la bonne appropriation des différents outils par les utilisateurs",
+    "Exercer le rôle de chef de projet et conduire entre autres, les activités de planification, d'identification/mobilisation/optimisation des ressources et moyens nécessaires, de coordination, de suivi des phases et des livrables, des tests associés, et d'évaluation/suivi des coûts",
+    "Proposer tout moyen/dispositif concourant à la réussite des projets menés et fournir toutes informations permettant les arbitrages",
+    "Assurer les activités d'administrateur fonctionnel en phase de RUN de manière temporaire et transférer/former à cette responsabilité",
+    "Produire les documents permettant consultation et sous-traitance et assurer le contrôle des prestations sous-traitées",
+    "Participer à l'élaboration et au suivi du budget",
+    "Définir, alimenter et diffuser les KPI relatifs aux responsabilités définies et aux phases projets (communication)",
+    "Contribuer à l'analyse et la maîtrise des risques",
+    "Initier/conduire les projets innovants et POC relatifs au périmètre couvert",
+    "Participer aux différents échanges de la communauté Amélioration Continue",
+    "Rendre compte de l'activité couverte sur tous les volets, l'analyser et en proposer à sa hiérarchie les enseignements /recommandations",
+    "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT (Agents)"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Communiquer efficacement",
+    "Retranscrire un besoin",
+    "Rédiger des cahiers des charges, des spécifications fonctionnelles, des cahiers de tests et des comptes rendus",
+    "Tenir un tableau de bord",
+    "Rendre compte",
+    "Travailler en réseau",
+    "Coordonner",
+    "Prioriser",
+    "Proposer",
+    "Accompagner un changement",
+    "Curiosité intellectuelle",
+    "Esprit d'analyse",
+    "Esprit de synthèse",
+    "Esprit d'équipe",
+    "Esprit d'initiative",
+    "Rigueur",
+    "Autonomie",
+    "Sens de l'organisation"
+  ],
+  "specialCommitments": null,
+  "title": "Consultant fonctionnel - SMQP",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-10",
+  "workHours": null
+}
