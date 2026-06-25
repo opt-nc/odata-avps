@@ -1,0 +1,177 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Emploi fonctionnel",
+    "direction": "Direction des Finances",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Secrétaire général",
+    "placeOrganigramme": "N - 2 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Directions métiers",
+      "Agence comptable",
+      "DSI",
+      "DRH",
+      "Partenaires institutionnels"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériel fourni",
+        "value": "Tél fixe de service, Tél mobile d'exploitation"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Grande disponibilité"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "Indemnité hiérarchique de directeur opérationnel, Indemnité de logement"
+      }
+    ]
+  },
+  "alternateName": "DFI - Directeur des Finances",
+  "description": "Le poste de directeur(rice) des finances s'inscrit dans un contexte de transformation majeure de la fonction financière de l'OPT-NC. Cette transformation vise notamment la création d'un pôle financier unifié regroupant à terme la Direction des finances et l'Agence comptable, l'évolution du référentiel comptable de l'établissement vers le Plan Comptable Général, la modernisation des processus financiers, la refonte du dispositif de contrôle interne ainsi que le déploiement d'un nouvel ERP financier. Dans cette perspective, le titulaire du poste exerce les fonctions de directeur des finances et assure parallèlement la préfiguration du futur pôle financier. Il pilote la trajectoire de transformation, prépare les évolutions organisationnelles, contribue à la définition du modèle cible et accompagne les équipes dans la conduite du changement.",
+  "disambiguatingDescription": "Poste fonctionnel de Directeur des Finances en charge de la transformation financière et de la préfiguration du pôle financier unifié de l'OPT-NC.",
+  "identifier": "3134-26-0903/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Directeur des Finances",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26 82 65",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-06-12",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Expérience de direction financière ou de pilotage financier dans une organisation complexe",
+      "Très bonne maîtrise de la gestion budgétaire, financière et du contrôle de gestion",
+      "Bonne compréhension des enjeux de transformation des organisations financières",
+      "Expérience en conduite de projets de transformation",
+      "Connaissance des ERP financiers et des projets de modernisation des systèmes d'information",
+      "Connaissance des référentiels comptables publics et privés",
+      "Maîtrise des dispositifs de contrôle interne, de gestion des risques et de gouvernance financière",
+      "Connaissance du cadre juridique de la commande publique"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public engagé dans une transformation majeure de sa fonction financière.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Direction des Finances",
+    "url": "https://www.opt.nc"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience de direction financière ou de pilotage financier dans une organisation complexe, ainsi qu'une expérience confirmée en conduite de projets de transformation.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": "Indemnité hiérarchique de directeur opérationnel, Indemnité de logement",
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Immeuble Le Waruna II",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": "Administration, finance et juridique",
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Directeur",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1205",
+      "name": "Direction administrative et financière"
+    }
+  },
+  "responsibilities": [
+    "Définir et mettre en œuvre la stratégie financière de l'établissement sous l'autorité du secrétaire général",
+    "Assurer le pilotage de la gestion budgétaire, financière, de la trésorerie, du financement, du contrôle de gestion et de la facturation de l'Office",
+    "Garantir la qualité de la prévision financière, la soutenabilité des trajectoires budgétaires et la production des analyses nécessaires à la prise de décision des instances de gouvernance",
+    "Contribuer à la performance globale de l'établissement en développant une culture de pilotage économique, de maîtrise des risques et d'amélioration continue",
+    "Participer aux travaux de modernisation comptable et financière conduits conjointement avec l'Agence comptable",
+    "Piloter la définition de la cible organisationnelle, fonctionnelle et opérationnelle du futur pôle financier",
+    "Coordonner l'ensemble des chantiers de transformation de la fonction financière en lien avec les directions métiers, l'Agence comptable, la DSI, la DRH et les partenaires institutionnels",
+    "Préparer la convergence progressive des organisations, processus, compétences et outils financiers dans la perspective de la création du pôle financier",
+    "Contribuer à la définition de la trajectoire de transition vers le Plan Comptable Général et à l'adaptation du cadre de gestion de l'établissement",
+    "Piloter la conception des processus cibles en matière de budget, achats, dépenses, recettes, trésorerie, immobilisations, clôture, contrôle de gestion et pilotage de la performance",
+    "Assurer le pilotage fonctionnel du projet ERP pour le périmètre financier et veiller à l'adéquation de la solution aux besoins de l'établissement en lien avec le directeur de projet ERP",
+    "Contribuer activement aux travaux de cadrage, de paramétrage, de reprise de données, de conduite du changement et de préparation de la bascule",
+    "Définir et mettre en œuvre le dispositif cible de contrôle interne budgétaire, financier et comptable",
+    "Identifier et maîtriser les risques organisationnels, financiers et opérationnels liés à la transformation",
+    "Préparer les évolutions de gouvernance, de responsabilités et de fonctionnement associées à la création du futur pôle financier",
+    "Accompagner la montée en compétence des équipes et le développement d'une culture commune au sein des fonctions financières",
+    "Piloter l'élaboration budgétaire et le suivi de l'exécution des budgets",
+    "Élaborer et mettre en œuvre les trajectoires financières pluriannuelles",
+    "Superviser la trésorerie, les financements, les emprunts et les opérations de financement complexes",
+    "Superviser la facturation de l'établissement et la qualité du processus de recettes",
+    "Développer les dispositifs de contrôle de gestion et de pilotage de la performance",
+    "Produire les analyses économiques et financières nécessaires aux arbitrages de la direction générale",
+    "Contribuer à la définition des politiques financières de l'établissement",
+    "Assurer la veille réglementaire, financière et stratégique",
+    "Piloter les projets de modernisation relevant du périmètre financier",
+    "Manager la Direction des finances et conduire les transformations nécessaires à son évolution"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Définir une vision cible et conduire une trajectoire de transformation",
+    "Piloter des projets complexes et transversaux",
+    "Arbitrer et prendre des décisions dans un environnement à forts enjeux",
+    "Concevoir et formaliser des organisations et processus cibles",
+    "Mobiliser des équipes autour d'un projet de changement",
+    "Dialoguer avec des interlocuteurs de haut niveau et fédérer des parties prenantes diverses",
+    "Traduire des orientations stratégiques en plans d'action opérationnels",
+    "Vision stratégique",
+    "Force de proposition et de conviction",
+    "Autonomie",
+    "Rigueur",
+    "Sens de l'anticipation et de l'innovation",
+    "Esprit d'analyse et de synthèse",
+    "Aptitude à fédérer et à conduire le changement",
+    "Capacité d'initiative",
+    "Sens de l'écoute, de la coopération et de la communication",
+    "Diplomatie"
+  ],
+  "specialCommitments": null,
+  "title": "Directeur des Finances",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-03",
+  "workHours": "Grande disponibilité"
+}
