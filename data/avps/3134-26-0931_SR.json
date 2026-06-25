@@ -1,0 +1,143 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre technique",
+    "direction": "Télécom",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de Centre de Supervision NOC (CSNO)",
+    "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Centre de Supervision NOC",
+      "Direction des Télécoms",
+      "Contrôle interne DT"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis de conduire B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Lieu de dépôt physique des candidatures",
+        "value": "Direction générale, 2 rue Paul Montchovet, Port Plaisance 98841 Nouméa Cédex"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le poste consiste à participer à la gestion des maintenances ou incidents télécoms au sein du centre de supervision, assurer la gouvernance des processus et de la documentation du centre, participer au reporting et suivre les plans d'action avec les équipes du contrôle interne.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-0931/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Responsable processus, documentation et communication - CSNOC",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "+687 26 75 01",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-06-19",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Organisation et fonctionnement de l'OPT-NC",
+      "Connaissances des réseaux et services télécoms",
+      "Connaissances des systèmes d'information",
+      "Connaissances d'outils de gestion de services d'assistance (OTRS)",
+      "Connaissances des bonnes pratiques ITIL",
+      "Anglais lu (requis) et parlé (souhaité)",
+      "Principes de gestion de crise et communication opérationnelle"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie est l'opérateur public historique des services postaux et des télécommunications.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Centre de Supervision NOC"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "CSNO (Centre de Supervision NOC)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 rue du Général Gallieni",
+      "addressLocality": "Nouméa"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": "Télécommunications",
+  "physicalRequirement": null,
+  "qualifications": "Permis de conduire B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Ingénieur des réseaux et services des télécommunications",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1402",
+      "name": "Ingénierie et intégration de réseaux et télécoms"
+    }
+  },
+  "responsibilities": [
+    "Centraliser et suivre les maintenances réseaux programmées lors des comités d'interventions programmées (CIP)",
+    "Assurer la communication interne et externe de ces maintenances",
+    "Participer à la gestion des incidents en assurant la coordination avec les équipes métiers et les superviseurs",
+    "Réaliser la communication interne et externe en cas d'incidents sur les réseaux télécoms",
+    "Participer aux REX et assurer le suivi des actions",
+    "Concevoir, formaliser et maintenir les processus et procédures opérationnels du centre en collaboration avec les managers et agents",
+    "Participer au reporting du centre",
+    "Assurer le suivi des plans d'actions avec les équipes de contrôle interne et de maîtrise du risque de la Direction des Télécoms",
+    "Garantir la documentation et les référentiels du centre (qualité, cohérence, mise à jour, accessibilité)",
+    "Mettre en place des standards documentaires et outils associés",
+    "Collaborer sur des projets d'envergures en lien avec la feuille de route du centre",
+    "S'inscrire dans une dynamique d'amélioration continue de l'activité et de veille technologique par rapport aux solutions de supervision"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Excellentes capacités rédactionnelles (clarté, synthèse, structuration)",
+    "Gestion et structuration de la documentation (référentiels, procédures)",
+    "Formalisation et optimisation de processus",
+    "Gestion de la communication en situation critique",
+    "Analyse d'incidents et amélioration continue",
+    "Rigueur",
+    "Esprit d'initiative",
+    "Autonomie",
+    "Aisance relationnelle",
+    "Esprit d'équipe",
+    "Faculté d'adaptation"
+  ],
+  "specialCommitments": null,
+  "title": "Responsable processus, documentation et communication - CSNOC",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-10",
+  "workHours": null
+}
