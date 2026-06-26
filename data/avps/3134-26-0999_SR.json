@@ -1,0 +1,170 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation ou Contrôleur",
+    "direction": "Direction de la Poste et des services de proximité",
+    "nbAgentsEncadres": 11,
+    "superieurHierarchique": "Chef de service Support métiers",
+    "placeOrganigramme": "N - 3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Service pilotage de la direction"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "indemnités hiérarchiques chef de section"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Statut du poste",
+        "value": "Susceptible d'être à pourvoir dans le cadre de la réorganisation"
+      }
+    ]
+  },
+  "alternateName": "Chef de section Applications et pratiques métiers",
+  "description": "Garantir l'efficacité opérationnelle, la disponibilité et la montée en compétence de son équipe dans les domaines techniques, fonctionnels ou organisationnels placés sous sa responsabilité. Piloter, coordonner et optimiser les activités, les projets et les processus, dans une démarche d'amélioration continue, afin d'assurer la qualité du service rendu et la satisfaction des usagers internes et externes.",
+  "disambiguatingDescription": "Avis de vacance de poste lié à la réorganisation de la Direction de la Poste et des services de proximité.",
+  "identifier": "3134-26-0999/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef(fe) de section Applications et pratiques métiers – Service support métiers",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Direction générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.79.28",
+    "email": "drh-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-06-26",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Bureautique et outils collaboratifs",
+      "Conduite et gestion de projet",
+      "Culture pluridisciplinaire",
+      "Gestion de l'information",
+      "Management/Pilotage",
+      "Matériels, systèmes et réseaux d'information et de communication",
+      "Organisation, méthode et processus",
+      "Techniques d'animation/Expression orale"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public territorial assurant des missions de service public postal, financier et de télécommunications.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "Service support métiers"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience confirmée en management d'équipe et en gestion de projets ou d'activités de support fonctionnel.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": "indemnités hiérarchiques chef de section",
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction de la poste et des services de proximité",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": "Poste et logistique",
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé de soutien réseaux de vente",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "D1401",
+      "name": "Animation de réseau de vente"
+    }
+  },
+  "responsibilities": [
+    "Manager et animer son équipe en appliquant le référentiel managérial OPT",
+    "Piloter et suivre les indicateurs d'activités et de performance de sa section",
+    "Identifier, proposer et mettre en œuvre toutes actions et évolutions d'organisation permettant d'améliorer le fonctionnement de sa section",
+    "Assurer le reporting auprès du chef de service et contribuer au tableau de bord du service",
+    "Piloter ou superviser les projets de développement, d'évolution ou d'optimisation des systèmes, processus ou outils métiers",
+    "Contribuer à la planification et à la priorisation des actions selon les ressources disponibles",
+    "Apporter un appui expert et un accompagnement aux utilisateurs ou équipes internes",
+    "Garantir la diffusion des bonnes pratiques et la mise à jour des référentiels (procédures, normes, documentation)",
+    "Analyser, déclarer et suivre la résolution d'un incident",
+    "Mettre en œuvre toute action de communication en lien avec les SI métiers et pratiques métiers",
+    "Identifier les leviers d'optimisation des processus, outils et méthodes de travail",
+    "Promouvoir une culture d'innovation, d'agilité et de performance",
+    "Contribuer à la veille technologique, organisationnelle ou réglementaire"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Analyser un besoin",
+    "Animer un réseau, une communauté",
+    "Animer une réunion",
+    "Anticiper un risque, une évolution",
+    "Assurer une maîtrise d'ouvrage",
+    "Exploiter une information",
+    "Maîtriser les délais",
+    "Modéliser un processus",
+    "Prioriser",
+    "Travailler en mode projet",
+    "Esprit de synthèse",
+    "Esprit d'initiative",
+    "Être autonome",
+    "Sens de l'analyse",
+    "Aisance relationnelle",
+    "Faculté d'adaptation",
+    "Réactivité",
+    "Sens de l'organisation",
+    "Sens des responsabilités"
+  ],
+  "specialCommitments": null,
+  "title": "Chef(fe) de section Applications et pratiques métiers – Service support métiers",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-17",
+  "workHours": null
+}
