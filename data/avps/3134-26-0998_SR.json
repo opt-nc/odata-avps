@@ -1,0 +1,151 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation ou Contrôleur",
+    "direction": "Direction de la poste et des services de proximité",
+    "nbAgentsEncadres": 30,
+    "superieurHierarchique": "Chef de service support métiers",
+    "placeOrganigramme": "N - 3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Poste à pourvoir",
+        "value": "Susceptible d’être à pourvoir dans le cadre de la réorganisation"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "Indemnités hiérarchiques de chef de section"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste de Chef(fe) de section appui métiers au sein du Service support métiers vise à garantir l’efficacité opérationnelle, la disponibilité et la montée en compétence de son équipe dans les domaines, moyens, logistiques, immobiliers ou organisationnels placés sous sa responsabilité.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-0998/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef(fe) de section appui métiers",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.79.38",
+    "email": "drh-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-06-26",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Bureautique et outils collaboratifs",
+      "Conduite et gestion de projet",
+      "Culture pluridisciplinaire",
+      "Gestion de l'information",
+      "Management/Pilotage",
+      "Matériels, systèmes et réseaux d'information et de communication",
+      "Organisation, méthode et processus",
+      "Techniques d'animation/Expression orale"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "Service support métiers"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": null,
+  "jobBenefits": "Indemnités hiérarchiques de chef de section",
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": "Poste et logistique",
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé de soutien réseaux de vente",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "D1406",
+      "name": "Management en force de vente"
+    }
+  },
+  "responsibilities": [
+    "Manager et animer son équipe en appliquant le référentiel managérial OPT-NC",
+    "Piloter et suivre les indicateurs d'activités et de performance de sa section",
+    "Identifier, proposer et mettre en œuvre toutes actions et évolutions d'organisation permettant d'améliorer le fonctionnement de sa section",
+    "Assurer le reporting auprès du chef de service et contribuer au tableau de bord du service",
+    "Superviser et accompagner les projets de développement, d’évolution ou d’optimisation des moyens immobiliers, des logistiques de transports, de distribution et d’adressage",
+    "Mettre en œuvre les outils/dispositifs pour maîtriser et suivre les projets immobiliers et/ou le déploiement d’équipements et d’aménagement en conformité avec la réglementation",
+    "Contribuer à la planification et à la priorisation des actions selon les ressources disponibles",
+    "Contrôler la cohérence de la planification et de l’affectation des ressources",
+    "Identifier les leviers d’optimisation des organisations",
+    "Promouvoir une culture d’innovation, d’agilité et de performance",
+    "Contribuer à la veille technologique, organisationnelle ou réglementaire"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Analyser un besoin",
+    "Animer un réseau, une communauté",
+    "Animer une réunion",
+    "Anticiper un risque, une évolution",
+    "Assurer une maîtrise d’ouvrage",
+    "Exploiter une information",
+    "Maîtriser les délais",
+    "Modéliser un processus",
+    "Prioriser",
+    "Travailler en mode projet",
+    "Esprit de synthèse",
+    "Esprit d'initiative",
+    "Être autonome",
+    "Sens de l'analyse",
+    "Aisance relationnelle",
+    "Faculté d'adaptation",
+    "Réactivité",
+    "Sens de l'organisation",
+    "Sens des responsabilités"
+  ],
+  "specialCommitments": null,
+  "title": "Chef(fe) de section appui métiers",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-17",
+  "workHours": null
+}
