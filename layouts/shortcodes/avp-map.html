@@ -64,7 +64,7 @@
         currentPopup.setContent(currentContent + separator + itemHtml);
       } else {
         // PREMIER PASSAGE : Aucun AVP enregistré à cette adresse
-        const marker = L.marker([avp.lat, avp.lng]).addTo(map);
+        const marker = L.marker([avp.lat, avp.lng], { alt: avp.title }).addTo(map);
         marker.bindPopup(itemHtml);
         
         // On garde précieusement la référence du marqueur Leaflet dans notre cache

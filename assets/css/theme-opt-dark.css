@@ -55,10 +55,10 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-transform: uppercase;
 }
-.badge-critical { background-color: #d9534f; }
-.badge-warning { background-color: #f0ad4e; }
-.badge-info { background-color: #5bc0de; }
-.badge-expired { background-color: #616161; }
+.badge-critical { background-color: #c82333; }
+.badge-warning { background-color: #f0ad4e; color: #121824 !important; }
+.badge-info { background-color: #5bc0de; color: #121824 !important; }
+.badge-expired { background-color: #c82333; }
 
 .avp-list-card {
     background-color: var(--CARD-BG-color);

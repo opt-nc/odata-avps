@@ -52,19 +52,21 @@
 }
 
 .badge-critical {
-    background-color: #d9534f;
+    background-color: #c82333;
 }
 
 .badge-warning {
     background-color: #f0ad4e;
+    color: #121824 !important;
 }
 
 .badge-info {
     background-color: #5bc0de;
+    color: #121824 !important;
 }
 
 .badge-expired {
-    background-color: #d9534f;
+    background-color: #c82333;
 }
 
 .avp-list-card {

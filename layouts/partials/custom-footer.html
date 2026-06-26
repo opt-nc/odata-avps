@@ -2,14 +2,14 @@
 
 <script>
   // ⌨️ Raccourci clavier Ctrl+K
-  document.addEventListener('keydown', function(e) {
+  document.addEventListener('keydown', function (e) {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
       const searchInput = document.getElementById('R-search-by') || document.querySelector('.search-by input') || document.querySelector('[data-search-input]');
       if (searchInput) { e.preventDefault(); searchInput.focus(); searchInput.select(); }
     }
   });
 
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     let touchstartX = 0;
     let touchstartY = 0;
     let touchendX = 0;
@@ -19,50 +19,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const maxVerticalDistance = 40; // Seuil vertical max pour éviter de confondre défilement et swipe
 
     function checkSwipe() {
-        const diffX = touchendX - touchstartX;
-        const diffY = Math.abs(touchendY - touchstartY);
+      const diffX = touchendX - touchstartX;
+      const diffY = Math.abs(touchendY - touchstartY);
 
-        // Sécurité : On s'assure que le geste est horizontal et pas un défilement vertical (scroll)
-        if (Math.abs(diffX) > minSwipeDistance && diffY < maxVerticalDistance) {
-            if (diffX > 0) {
-                // Swipe vers la DROITE -> Page PRÉCÉDENTE
-                const prevButton = document.querySelector('.topbar-button-prev a, a.nav-prev');
-                if (prevButton) prevButton.click();
-            } else {
-                // Swipe vers la GAUCHE -> Page SUIVANTE
-                const nextButton = document.querySelector('.topbar-button-next a, a.nav-next');
-                if (nextButton) nextButton.click();
-            }
+      // Sécurité : On s'assure que le geste est horizontal et pas un défilement vertical (scroll)
+      if (Math.abs(diffX) > minSwipeDistance && diffY < maxVerticalDistance) {
+        if (diffX > 0) {
+          // Swipe vers la DROITE -> Page PRÉCÉDENTE
+          const prevButton = document.querySelector('.topbar-button-prev a, a.nav-prev');
+          if (prevButton) prevButton.click();
+        } else {
+          // Swipe vers la GAUCHE -> Page SUIVANTE
+          const nextButton = document.querySelector('.topbar-button-next a, a.nav-next');
+          if (nextButton) nextButton.click();
         }
+      }
     }
 
     // Gestionnaires d'événements tactiles
     document.addEventListener('touchstart', e => {
-        // Optionnel : Bloquer le swipe si l'utilisateur glisse sur un tableau ou un bloc de code scrollable
-        if (e.target.closest('pre, code, table, .scroller')) return;
+      // Optionnel : Bloquer le swipe si l'utilisateur glisse sur un tableau ou un bloc de code scrollable
+      if (e.target.closest('pre, code, table, .scroller')) return;
 
-        touchstartX = e.changedTouches[0].screenX;
-        touchstartY = e.changedTouches[0].screenY;
+      touchstartX = e.changedTouches[0].screenX;
+      touchstartY = e.changedTouches[0].screenY;
     }, { passive: true });
 
     document.addEventListener('touchend', e => {
-        // Même sécurité qu'au touchstart
-        if (e.target.closest('pre, code, table, .scroller')) return;
+      // Même sécurité qu'au touchstart
+      if (e.target.closest('pre, code, table, .scroller')) return;
 
-        touchendX = e.changedTouches[0].screenX;
-        touchendY = e.changedTouches[0].screenY;
-        checkSwipe();
+      touchendX = e.changedTouches[0].screenX;
+      touchendY = e.changedTouches[0].screenY;
+      checkSwipe();
     }, { passive: true });
-});
+  });
 
   // 🃏 📱 AUTO-INJECTION DES QR CODES SUR LES CARTES D'AVP
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     if (typeof QRCode === 'undefined') return;
-    
+
     // On cible toutes les cartes d'offres de la liste
     const cards = document.querySelectorAll('.avp-list-card');
-    
-    cards.forEach(function(card, index) {
+
+    cards.forEach(function (card, index) {
       // On cherche le lien de la fiche dans la carte (le titre h3 ou premier lien)
       const targetLink = card.querySelector('h3 a') || card.querySelector('a');
       if (!targetLink) return;
@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Création dynamique d'un conteneur pour le mini QR Code
       const qrWrapper = document.createElement('div');
       qrWrapper.className = 'avp-card-qrcode-container';
-      
+
       const qrCanvasDiv = document.createElement('div');
       qrCanvasDiv.id = 'card-qr-' + index;
-      
+
       qrWrapper.appendChild(qrCanvasDiv);
       card.appendChild(qrWrapper); // On l'injecte dans la carte
 
@@ -86,6 +86,15 @@ document.addEventListener('DOMContentLoaded', () => {
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.M // Pas besoin du logo sur les petites cartes
       });
+
+      // Ajout d'attributs d'accessibilité sur les mini QR codes générés
+      setTimeout(function () {
+        const qrImages = qrCanvasDiv.querySelectorAll('img, canvas');
+        qrImages.forEach(function (el) {
+          el.setAttribute('alt', '');
+          el.setAttribute('aria-hidden', 'true');
+        });
+      }, 200);
     });
   });
 </script>
