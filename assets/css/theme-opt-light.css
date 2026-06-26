@@ -1,33 +1,33 @@
 :root {
-  /* 🔵 PARTIE DROITE : Contenu Principal (Mode Clair) */
-  --MAIN-BG-color: #ffffff;          
-  --MAIN-TEXT-color: #2d3748;        
-  --MAIN-TITLES-color: #005A9C;      
-  --MAIN-LINK-color: #005A9C;        
-  --MAIN-LINK-HOVER-color: #F28C00;  
-  --CODE-BG-color: #f7fafc;          
+    /* 🔵 PARTIE DROITE : Contenu Principal (Mode Clair) */
+    --MAIN-BG-color: #ffffff;
+    --MAIN-TEXT-color: #2d3748;
+    --MAIN-TITLES-color: #005A9C;
+    --MAIN-LINK-color: #005A9C;
+    --MAIN-LINK-HOVER-color: #F28C00;
+    --CODE-BG-color: #f7fafc;
 
-  /* 🎨 Couleurs globales de comportement */
-  --PRIMARY-color: #005A9C; 
-  --SECONDARY-color: #F28C00; 
-  --ACCENT-color: #F28C00; 
+    /* 🎨 Couleurs globales de comportement */
+    --PRIMARY-color: #005A9C;
+    --SECONDARY-color: #F28C00;
+    --ACCENT-color: #F28C00;
 
-  /* 📂 PARTIE GAUCHE : Menu latéral (Sidebar) */
-  --MENU-HEADER-bg-color: #ffffff; 
-  --MENU-HEADER-BORDER-color: #e0e0e0;
-  
-  --MENU-SECTIONS-BG-color: #005A9C; 
-  --MENU-SECTIONS-LINK-color: #ffffff; 
-  --MENU-SECTIONS-LINK-HOVER-color: #F28C00; 
-  
-  --MENU-SECTIONS-ACTIVE-BG-color: #003d6b; 
-  
-  --MENU-SEARCH-BG-color: #004b87; 
-  --MENU-SEARCH-color: #ffffff;
+    /* 📂 PARTIE GAUCHE : Menu latéral (Sidebar) */
+    --MENU-HEADER-bg-color: #ffffff;
+    --MENU-HEADER-BORDER-color: #e0e0e0;
 
-  /* 🃏 Cartes (Mode Clair) */
-  --CARD-BG-color: #ffffff;
-  --CARD-BORDER-color: #e0e0e0;
+    --MENU-SECTIONS-BG-color: #005A9C;
+    --MENU-SECTIONS-LINK-color: #ffffff;
+    --MENU-SECTIONS-LINK-HOVER-color: #F28C00;
+
+    --MENU-SECTIONS-ACTIVE-BG-color: #003d6b;
+
+    --MENU-SEARCH-BG-color: #004b87;
+    --MENU-SEARCH-color: #ffffff;
+
+    /* 🃏 Cartes (Mode Clair) */
+    --CARD-BG-color: #ffffff;
+    --CARD-BORDER-color: #e0e0e0;
 }
 
 /* ==========================================================================
@@ -47,13 +47,25 @@
     font-weight: bold;
     font-size: 0.9rem;
     color: white;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
 }
-.badge-critical { background-color: #d9534f; }
-.badge-warning { background-color: #f0ad4e; }
-.badge-info { background-color: #5bc0de; }
-.badge-expired { background-color: #777; }
+
+.badge-critical {
+    background-color: #d9534f;
+}
+
+.badge-warning {
+    background-color: #f0ad4e;
+}
+
+.badge-info {
+    background-color: #5bc0de;
+}
+
+.badge-expired {
+    background-color: #d9534f;
+}
 
 .avp-list-card {
     background-color: var(--CARD-BG-color);
@@ -61,7 +73,7 @@
     border-left: 5px solid var(--SECONDARY-color);
     padding: 1.5rem;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     position: relative;
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
@@ -75,24 +87,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
-.avp-list-card:hover, .avp-tag-item-card:hover {
+.avp-list-card:hover,
+.avp-tag-item-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
     background-color: rgba(242, 140, 0, 0.02) !important;
 }
 
 .avp-tags-grid a {
-    display: flex;       
+    display: flex;
     text-decoration: none;
     color: inherit;
 }
 
 .avp-tag-item-card {
-    width: 100%;         
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -101,34 +114,36 @@
    ========================================================================== */
 
 /* Attrape n'importe quel conteneur de résultat direct et le transforme en carte */
-#R-searchresults > * {
+#R-searchresults>* {
     background-color: var(--CARD-BG-color) !important;
     border: 1px solid var(--CARD-BORDER-color) !important;
-    border-left: 5px solid var(--SECONDARY-color) !important; /* Orange par défaut */
+    border-left: 5px solid var(--SECONDARY-color) !important;
+    /* Orange par défaut */
     padding: 1.5rem !important;
     border-radius: 6px !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) !important;
     margin-bottom: 1.5rem !important;
-    display: block !important; /* Force le rendu sous forme de bloc/carte */
+    display: block !important;
+    /* Force le rendu sous forme de bloc/carte */
     position: relative !important;
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s !important;
 }
 
 /* 🏷️ Si la carte contient un lien vers un mot-clé ou catégorie, bordure Bleue */
-#R-searchresults > *:has(a[href*="/tags/"]),
-#R-searchresults > *:has(a[href*="/categories/"]) {
+#R-searchresults>*:has(a[href*="/tags/"]),
+#R-searchresults>*:has(a[href*="/categories/"]) {
     border-left-color: var(--PRIMARY-color) !important;
 }
 
 /* 🧼 Supprime la flèche bleue native "»" devenue inutile et moche */
-#R-searchresults > *::before,
+#R-searchresults>*::before,
 #R-searchresults a::before {
     display: none !important;
     content: "" !important;
 }
 
 /* Sublimation des titres à l'intérieur des cartes */
-#R-searchresults > * a {
+#R-searchresults>* a {
     font-size: 1.3rem !important;
     font-weight: bold !important;
     text-decoration: none !important;
@@ -138,15 +153,15 @@
 }
 
 /* Ajustement cosmétique du texte de description et du fil d'Ariane sous le titre */
-#R-searchresults > * {
+#R-searchresults>* {
     color: var(--MAIN-TEXT-color) !important;
     font-size: 0.95rem !important;
 }
 
 /* Effet au survol des cartes */
-#R-searchresults > *:hover {
+#R-searchresults>*:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
     background-color: rgba(242, 140, 0, 0.02) !important;
 }
 
@@ -160,6 +175,7 @@
     border: 0;
     border-top: 1px solid var(--MENU-HEADER-BORDER-color);
 }
+
 .opt-page-footer {
     padding: 2rem 0;
     text-align: center;
@@ -167,9 +183,11 @@
     color: var(--MAIN-TEXT-color);
     width: 100%;
 }
+
 .opt-social-links {
     margin-bottom: 1.2rem;
 }
+
 .opt-social-links a {
     margin: 0 15px;
     font-size: 1.4rem;
@@ -178,30 +196,37 @@
     transition: transform 0.2s, color 0.2s;
     display: inline-block;
 }
+
 .opt-social-links a:hover {
     transform: scale(1.2);
     color: var(--MAIN-LINK-HOVER-color);
 }
+
 .opt-institution-link {
     margin-bottom: 0.5rem;
 }
+
 .opt-institution-link a {
     color: var(--MAIN-LINK-color);
     font-weight: bold;
     text-decoration: none;
 }
+
 .opt-institution-link a:hover {
     color: var(--MAIN-LINK-HOVER-color);
 }
+
 .opt-legal-text {
     margin-top: 1rem;
     line-height: 1.5;
 }
+
 .opt-italic-brand {
     margin: 4px 0 0 0;
     font-style: italic;
     opacity: 0.8;
 }
+
 .opt-accessibility-note {
     margin: 6px 0 0 0;
     font-size: 0.75rem;
@@ -213,6 +238,7 @@
     margin-bottom: 2rem;
     text-align: right;
 }
+
 .btn-print {
     padding: 8px 16px;
     background-color: #005A9C;
@@ -223,15 +249,22 @@
     font-weight: bold;
     transition: background-color 0.2s;
 }
+
 .btn-print:hover {
     background-color: #004070;
 }
 
 /* --- 🖨️ Gestion de l'Impression Papier --- */
 @media print {
-    #R-sidebar, .btn-print, .opt-page-footer, .topbar-button, #R-content-meta {
+
+    #R-sidebar,
+    .btn-print,
+    .opt-page-footer,
+    .topbar-button,
+    #R-content-meta {
         display: none !important;
     }
+
     #R-body {
         margin-left: 0 !important;
         width: 100% !important;
@@ -263,7 +296,8 @@
 /* Cadre général de la carte */
 .avp-map-container {
     width: 100%;
-    height: 550px; /* Hauteur fixe requise par Leaflet */
+    height: 550px;
+    /* Hauteur fixe requise par Leaflet */
     border-radius: 8px;
     border: 1px solid var(--CARD-BORDER-color, #e0e0e0);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -316,7 +350,7 @@
 /* 🌙 Ajustements spécifiques pour les textes des popups Leaflet */
 .leaflet-popup-content-wrapper {
     border-radius: 6px !important;
-    box-shadow: 0 3px 14px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* --- Mise en forme de la table administrative accessible --- */
@@ -348,7 +382,8 @@
 }
 
 .avp-pdf-link {
-    color: var(--SECONDARY-color, #F28C00) !important;
+    color: #c05600 !important;
+    /* Orange foncé accessible (4.58:1 sur fond blanc) */
     font-weight: bold;
     text-decoration: none;
 }
@@ -392,21 +427,25 @@
     padding: 15px;
     border: 1px solid var(--CARD-BORDER-color, #e0e0e0);
     border-radius: 6px;
-    background-color: #ffffff; /* Toujours blanc pour garantir le contraste du scan */
+    background-color: #ffffff;
+    /* Toujours blanc pour garantir le contraste du scan */
     width: 180px;
-    margin: 1.5rem 0 1.5rem auto; /* Aligné à droite */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin: 1.5rem 0 1.5rem auto;
+    /* Aligné à droite */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .avp-qrcode-text {
     font-size: 0.8rem !important;
     font-weight: bold;
-    color: #2d3748 !important; /* Toujours sombre pour la lecture humaine */
+    color: #2d3748 !important;
+    /* Toujours sombre pour la lecture humaine */
     margin: 0 0 10px 0 !important;
     text-align: center;
 }
 
-.avp-qrcode-zone canvas, .avp-qrcode-zone img {
+.avp-qrcode-zone canvas,
+.avp-qrcode-zone img {
     display: block;
     max-width: 100%;
 }
@@ -414,7 +453,8 @@
 /* 🖨️ GESTION DE L'IMPRESSION : On veut ABSOLUMENT le QR code sur le papier */
 @media print {
     .avp-qrcode-block {
-        display: flex !important; /* Force l'apparition sur le papier */
+        display: flex !important;
+        /* Force l'apparition sur le papier */
         float: right;
         margin-top: 0;
         border: 1px solid #ccc;
@@ -426,7 +466,8 @@
    ========================================================================== */
 
 .avp-header-wrapper {
-    position: relative; /* ⚓ Obligatoire pour ancrer le tampon absolu */
+    position: relative;
+    /* ⚓ Obligatoire pour ancrer le tampon absolu */
     width: 100%;
 }
 
@@ -463,23 +504,29 @@
 
 /* 🛡️ Zone de sécurité : évite que le texte long du tableau ne passe sous le tampon */
 .avp-info-table tr:nth-child(-n+4) td {
-    padding-right: 170px; /* Réserve l'espace à droite sur les 4 premières lignes */
+    padding-right: 170px;
+    /* Réserve l'espace à droite sur les 4 premières lignes */
 }
 
 /* 💮 LE FAMEUX TAMPON */
 .avp-stamp-qrcode {
     position: absolute;
-    top: 90px;     /* Ajusté un poil plus bas pour mordre joliment sur la première ligne */
-    right: 25px;   
-    z-index: 999 !important;   /* 🔥 Augmenté au max pour passer au-dessus des cellules du tableau */
-    background-color: #ffffff !important; /* ⚪ Fond blanc opaque obligatoire pour masquer le tableau en dessous */
+    top: 90px;
+    /* Ajusté un poil plus bas pour mordre joliment sur la première ligne */
+    right: 25px;
+    z-index: 999 !important;
+    /* 🔥 Augmenté au max pour passer au-dessus des cellules du tableau */
+    background-color: #ffffff !important;
+    /* ⚪ Fond blanc opaque obligatoire pour masquer le tableau en dessous */
     padding: 8px 10px 10px 10px;
-    border: 3px double #005A9C; 
+    border: 3px double #005A9C;
     border-radius: 6px;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15); /* Ombre légèrement accentuée pour l'effet de relief */
-    transform: rotate(4deg); 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    /* Ombre légèrement accentuée pour l'effet de relief */
+    transform: rotate(4deg);
     transition: transform 0.2s ease-in-out;
 }
+
 /* Petit effet de survol amusant */
 .avp-stamp-qrcode:hover {
     transform: rotate(0deg) scale(1.05);
@@ -490,7 +537,8 @@
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #005A9C !important; /* Bleu de l'établissement */
+    color: #005A9C !important;
+    /* Bleu de l'établissement */
     margin: 0 0 6px 0 !important;
     text-align: center;
 }
@@ -511,6 +559,7 @@
     border: 1px solid var(--CARD-BORDER-color, #e0e0e0);
     background-color: var(--CARD-BG-color, #ffffff);
 }
+
 .avp-dynamic-banner img {
     max-width: 100%;
     height: auto;
@@ -520,26 +569,38 @@
 /* 📱 Responsive Mobile (On remet à plat pour les écrans étroits) */
 @media (max-width: 768px) {
     .avp-stamp-qrcode {
-        position: static; /* Repasse dans le flux normal */
+        position: static;
+        /* Repasse dans le flux normal */
         margin: 1.5rem auto;
         transform: none;
         width: 136px;
     }
+
     .avp-stamp-qrcode:hover {
         transform: none;
     }
-    .avp-info-table, .avp-info-table tbody, .avp-info-table tr, .avp-info-table th, .avp-info-table td {
+
+    .avp-info-table,
+    .avp-info-table tbody,
+    .avp-info-table tr,
+    .avp-info-table th,
+    .avp-info-table td {
         display: block;
         width: 100% !important;
     }
+
     .avp-info-table tr:nth-child(-n+4) td {
-        padding-right: 15px; /* Réinitialisation du padding sur mobile */
+        padding-right: 15px;
+        /* Réinitialisation du padding sur mobile */
     }
 }
 
 /* 🖨️ Impression Papier */
 @media print {
-    .btn-print { display: none !important; }
+    .btn-print {
+        display: none !important;
+    }
+
     .avp-stamp-qrcode {
         right: 10px;
         border: 2px solid #000000;
@@ -553,42 +614,56 @@
 
 /* La carte globale de l'offre dans la liste */
 .avp-list-card {
-    position: relative; /* ⚓ Obligatoire pour ancrer le mini-tampon absolu */
-    display: block !important; /* On repasse en block pour libérer l'espace naturel du texte */
-    padding-right: 110px !important; /* On crée une zone de sécurité à droite pour éviter que le texte touche le tampon */
+    position: relative;
+    /* ⚓ Obligatoire pour ancrer le mini-tampon absolu */
+    display: block !important;
+    /* On repasse en block pour libérer l'espace naturel du texte */
+    padding-right: 110px !important;
+    /* On crée une zone de sécurité à droite pour éviter que le texte touche le tampon */
 }
 
 /* 💮 LE MINI-TAMPON DES CARTES */
 .avp-card-qrcode-container {
     position: absolute;
-    bottom: 50px;       /* Ajusté pour flotter pile au-dessus du lien "Voir la fiche" */
-    right: 25px;        /* Calé sur le bord droit de la carte */
+    bottom: 50px;
+    /* Ajusté pour flotter pile au-dessus du lien "Voir la fiche" */
+    right: 25px;
+    /* Calé sur le bord droit de la carte */
     z-index: 10;
     padding: 5px;
-    background-color: #ffffff !important; /* Blanc opaque obligatoire pour trancher sur le fond bleu nuit */
-    border: 2px solid #005A9C;            /* Ligne de cachet bleu OPT */
+    background-color: #ffffff !important;
+    /* Blanc opaque obligatoire pour trancher sur le fond bleu nuit */
+    border: 2px solid #005A9C;
+    /* Ligne de cachet bleu OPT */
     border-radius: 4px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Ombre portée pour l'effet relief */
-    transform: rotate(-6deg);             /* 🔄 Rotation inversée (-6°) pour casser la ligne de la carte */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Ombre portée pour l'effet relief */
+    transform: rotate(-6deg);
+    /* 🔄 Rotation inversée (-6°) pour casser la ligne de la carte */
     transition: transform 0.2s ease-in-out;
 }
 
 /* Petit effet dynamique au survol de la carte */
 .avp-list-card:hover .avp-card-qrcode-container {
-    transform: rotate(0deg) scale(1.1); /* Le tampon se remet droit et grossit un poil */
+    transform: rotate(0deg) scale(1.1);
+    /* Le tampon se remet droit et grossit un poil */
 }
 
 /* Sécurité Mobile pour les listes */
 @media (max-width: 768px) {
     .avp-list-card {
         padding-right: 20px !important;
-        padding-bottom: 90px; /* Laisse de la place pour le tampon qui descend */
+        padding-bottom: 90px;
+        /* Laisse de la place pour le tampon qui descend */
     }
+
     .avp-card-qrcode-container {
         bottom: 15px;
         right: 20px;
-        transform: none; /* On remet droit sur mobile pour faciliter le scan direct */
+        transform: none;
+        /* On remet droit sur mobile pour faciliter le scan direct */
     }
+
     .avp-list-card:hover .avp-card-qrcode-container {
         transform: none;
     }
@@ -609,6 +684,8 @@ body.slideshow-active #R-sidebar {
 
 body.slideshow-active #R-body {
     margin-left: 0 !important;
-    width: 100% !important;         /* 🎯 FORCE le bloc à prendre tout l'écran */
-    max-width: 100% !important;     /* 🎯 Supprime le bridage du thème sur PC */
+    width: 100% !important;
+    /* 🎯 FORCE le bloc à prendre tout l'écran */
+    max-width: 100% !important;
+    /* 🎯 Supprime le bridage du thème sur PC */
 }
