@@ -54,6 +54,48 @@
     {{ end }}
 {{ end }}
 
+{{ if and .Page.Params.latitude .Page.Params.longitude }}
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <div class="avp-single-map-wrapper" style="margin-top: 2rem; margin-bottom: 2rem;">
+    <h3 id="localisation-poste" style="margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+      <i class="fas fa-map-marked-alt" aria-hidden="true"></i> Localisation géographique
+    </h3>
+    <div id="avp-single-map-{{ .Page.Params.ref | urlize }}" class="avp-map-container" style="height: 350px; border-radius: 8px; overflow: hidden;" role="application" aria-label="Carte de localisation du poste"></div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const lat = {{ .Page.Params.latitude }};
+      const lng = {{ .Page.Params.longitude }};
+      const title = {{ .Page.Title }};
+      const ref = {{ .Page.Params.ref }};
+      const ville = {{ .Page.Params.ville }};
+      const address = {{ .Page.Params.adresse_complete | default "" }};
+      
+      const map = L.map('avp-single-map-{{ .Page.Params.ref | urlize }}').setView([lat, lng], 14);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+
+      const popupHtml = `
+        <div class="avp-map-popup">
+          <h4 class="avp-popup-title">${title}</h4>
+          <p class="avp-popup-meta">
+            <i class="fas fa-barcode"></i> <code>${ref}</code><br>
+            <i class="fas fa-map-marker-alt"></i> ${address ? address : ville}
+          </p>
+        </div>
+      `;
+
+      L.marker([lat, lng]).addTo(map).bindPopup(popupHtml).openPopup();
+    });
+  </script>
+{{ end }}
+
 </div>
 
 <script>
