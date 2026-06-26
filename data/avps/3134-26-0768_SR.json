@@ -1,0 +1,182 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Emploi fonctionnel",
+    "direction": "Agence comptable",
+    "nbAgentsEncadres": 21,
+    "superieurHierarchique": null,
+    "placeOrganigramme": "Membre du conseil de direction (CODIR)",
+    "relationsFonctionnelles": [
+      "Ordonnateur",
+      "Conseil d'Administration",
+      "Commission d'appels d'offres aux marchés publics",
+      "Comité d'entreprise",
+      "Agences OPT",
+      "Centre de traitement postal",
+      "Agence philatélique",
+      "Centre de Production Bancaire"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Logement de fonction"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "Indemnité hiérarchique d'agent comptable principal"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Caractéristiques particulières de l'emploi",
+        "value": "Le recrutement s'inscrit dans une séquence de transformation financière majeure prévue sur les deux prochaines années, impliquant une forte capacité de pilotage, de sécurisation et d'accompagnement du changement."
+      }
+    ],
+    "uniteOrganisationnelle": "AGENCE COMPTABLE"
+  },
+  "alternateName": "AC – Agent comptable",
+  "description": "Le poste d'agent comptable s'exerce dans un contexte de transformation de la fonction financière de l'OPT-NC, marqué par l'évolution du référentiel comptable de l'établissement, la modernisation des processus financiers et la préparation du déploiement d'un futur ERP. Dans ce cadre, le titulaire du poste contribue, en lien étroit avec l'ordonnateur et les directions concernées, à la définition et à la sécurisation de la trajectoire cible de la fonction financière, tout en garantissant la continuité, la régularité, la fiabilité et la qualité de l'exécution comptable pendant toute la phase de transition.",
+  "disambiguatingDescription": "Poste d'agent comptable principal encadrant une équipe de 21 personnes dans un contexte de transformation financière et de déploiement ERP.",
+  "identifier": "3134-26-0768/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Agent comptable",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Direction générale OPT Immeuble Waruna",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "+687268217",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-05-22",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Solide maîtrise des règles de la comptabilité publique et de la production comptable",
+      "Bonne compréhension des enjeux de transformation de la fonction financière",
+      "Expérience appréciée en conduite de projet de modernisation comptable, financière ou organisationnelle",
+      "Connaissance ou appétence pour les projets ERP, les schémas comptables, les règles de gestion et le contrôle interne",
+      "Capacité à formaliser des processus cibles et à travailler en mode projet",
+      "Aptitude à articuler sécurité comptable, conformité réglementaire et recherche d'efficience opérationnelle"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui accompagne le développement économique et social du territoire à travers ses activités postales, financières et de télécommunications.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "AGENCE COMPTABLE"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience appréciée en conduite de projet de modernisation comptable, financière ou organisationnelle.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": "Indemnité hiérarchique d'agent comptable principal",
+  "industry": "Service public",
+  "jobBenefits": "Logement de fonction, Indemnité hiérarchique d'agent comptable principal",
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction générale OPT Immeuble Waruna",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "2026-09-01",
+  "occupationalCategory": "Administration, finance et juridique",
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Responsable comptable",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1205",
+      "name": "Direction administrative et financière"
+    }
+  },
+  "responsibilities": [
+    "Encadrer une équipe de 21 personnes en charge de la perception des recettes et du paiement des dépenses de l'Office",
+    "Produire et présenter le compte financier annuel au Conseil d'Administration",
+    "Contribuer à la définition de la cible comptable et financière de l'établissement, en lien avec les travaux de modernisation engagés",
+    "Analyse les impacts comptables, organisationnels et de contrôle interne liés à l'évolution du référentiel comptable et des processus financiers",
+    "Participe à la conception des processus cibles en matière de dépenses, recettes, trésorerie, clôture et production des comptes",
+    "Veille à la cohérence des schémas comptables, des règles de gestion et des contrôles intégrés dans le futur système d'information financier",
+    "Contribue au cadrage fonctionnel du futur ERP sur son périmètre de compétence",
+    "Prépare et sécurise la reprise des données comptables ainsi que les conditions de bascule vers le futur système",
+    "Identifie et maîtrise les risques comptables, financiers et organisationnels liés à la phase de transition",
+    "Accompagne l'évolution des pratiques, la formalisation des procédures et la montée en compétence des équipes dans un environnement en transformation",
+    "Centralise et intègre dans ses écritures les opérations des comptables secondaires : 32 agences OPT, Centre de traitement postal, agence philatélique et Centre de Production Bancaire",
+    "Prend en charge les mandats de dépenses pour paiement, après réalisation des contrôles réglementaires",
+    "Prend en charge les titres de recettes après réalisation des contrôles réglementaires et en exerce le recouvrement amiable et forcé",
+    "Dresse l'état des restes à recouvrer",
+    "Etablit en fin d'exercice le rapport sur le compte financier et fait approuver par le Conseil d'Administration le compte financier annuel et le présente au juge des comptes",
+    "Assiste avec voix consultative aux séances du conseil d'administration et de la commission d'appels d'offres aux marchés publics",
+    "Participer en tant que membre du conseil de direction et expert au comité d'entreprise dans le domaine économique et financier",
+    "Mise en place et suivi du CICF ainsi que de la qualité comptable",
+    "Prodiguer des conseils divers en cas de saisine des différents services de l'OPT-NC"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Capacité d'analyse et de recul",
+    "Sens de l'organisation et de la sécurisation des risques",
+    "Capacité à travailler en transversalité avec des interlocuteurs multiples",
+    "Aptitude à accompagner le changement avec pédagogie et fermeté",
+    "Capacité à s'inscrire dans une dynamique de transformation institutionnelle",
+    "Rigueur et méthode",
+    "Détermination et pugnacité",
+    "Sens des responsabilités",
+    "Adaptation et animation",
+    "Sens de l'organisation",
+    "Sens des relations humaines",
+    "Sens aigu du service public",
+    "Grande ouverture d'esprit",
+    "Esprit d'analyse et de synthèse"
+  ],
+  "specialCommitments": null,
+  "title": "Agent comptable",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-06-12",
+  "workHours": null
+}
