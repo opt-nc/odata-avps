@@ -1,0 +1,158 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "Direction de la poste et des services de proximité",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de section appui stratégique",
+    "placeOrganigramme": "N -3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Poste à pourvoir",
+        "value": "Susceptible d’être à pourvoir dans le cadre de la réorganisation"
+      }
+    ]
+  },
+  "alternateName": "Référent RH",
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité pour un poste d'Assistant(e) Ressources Humaines études et projets au sein de la Section appui stratégique.",
+  "disambiguatingDescription": "Poste d'Assistant(e) Ressources Humaines études et projets au sein de la Section appui stratégique de la DPSP.",
+  "identifier": "3134-26-679/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Assistant(e) Ressources Humaines études et projets – Section appui stratégique",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Direction générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.79.28",
+    "email": "drh-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-05-08",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Ressources humaines (statuts du personnel de la fonction publique)",
+      "Environnement administratif, institutionnel et politique",
+      "Techniques de communication",
+      "Techniques de rédaction",
+      "Bureautique et outils collaboratifs",
+      "Organisation, méthode et processus"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications sur le territoire.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Section appui stratégique"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction de la poste et des services de proximité",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": "Ressources humaines",
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Référent RH",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1501",
+      "name": "Assistanat en ressources humaines"
+    }
+  },
+  "responsibilities": [
+    "Intervenir en appui opérationnel aux études et projets RH relatifs à l’organisation et aux équipes, dans le cadre des orientations définies par la Direction",
+    "Contribuer à la préparation, à l’instruction et au suivi des travaux d’études RH, en apportant un soutien méthodologique et technique adapté à leur périmètre",
+    "Participer à la coordination des acteurs et à la mise en œuvre des dispositifs RH, afin de soutenir le fonctionnement des équipes et l’application des décisions prises",
+    "Collecter, fiabiliser et consolider les données RH nécessaires aux différents types d’études à mener",
+    "Participer à la réalisation d’analyses de charge et d’impacts RH, selon les méthodes et orientations définies",
+    "Contribuer à l’identification des besoins en compétences à partir des éléments recueillis",
+    "Préparer des éléments d’analyse et de synthèse pour alimenter les travaux d’aide à la décision",
+    "Contribuer à l’élaboration et à la mise à jour d’outils de suivi RH et de tableaux de bord",
+    "Participer à la formalisation des circuits internes (demandes, validations, remontées d’information)",
+    "Aider à la production d’indicateurs RH, sous le pilotage de la Direction",
+    "Instruire les dossiers liés aux évolutions d’organisation, à la mobilité ou aux ajustements internes",
+    "Assurer le suivi opérationnel des actions RH décidées (planning, tableaux de suivi, états d’avancement)",
+    "Mettre à jour les supports et documents de référence RH"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Accompagner une personne, un groupe",
+    "Accompagner un changement, une réforme, un dispositif",
+    "Alerter sur une situation à risque",
+    "Analyser un contexte, une problématique, une complexité",
+    "Concevoir un projet, une démarche",
+    "Traduire un projet en plan d’actions",
+    "Elaborer un plan d’action, un programme",
+    "Aisance relationnelle",
+    "Capacité à communiquer",
+    "Esprit de synthèse",
+    "Sens de l’analyse",
+    "Être rigoureux",
+    "Faire preuve de discrétion",
+    "Etre diplomate",
+    "Faculté d’adaptation",
+    "Réactivité"
+  ],
+  "specialCommitments": null,
+  "title": "Assistant(e) Ressources Humaines études et projets – Section appui stratégique",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-05-29",
+  "workHours": null
+}
