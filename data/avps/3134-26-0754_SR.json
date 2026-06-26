@@ -16,19 +16,25 @@
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires",
         "value": "Indemnité hiérarchique de Chef d’agence"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence et des permanences à assurer."
       }
-    ]
+    ],
+    "uniteOrganisationnelle": "DIRECTION DE LA DISTRIBUTION"
   },
-  "alternateName": "Chef d'établissement",
+  "alternateName": null,
   "description": "Contrôler et adapter les moyens disponibles en agence, garantir la qualité de service ainsi que le respect des guides et pratiques par les agents, assurer les activités relatives à la position d'agent comptable secondaire, produire le reporting d'activités et en tirer les recommandations éventuelles. Développer des nouveaux services ou activités visant à faire rayonner les agences sur la zone. Développer les niveaux de maîtrise des différentes fonctions au sein des agences, inspirer, imposer et accompagner les comportements adéquats (prise d'initiative, accueil et conseils client, posture commerciale et entraide mutuelle...) Contribuer à l'attractivité de l'agence et du réseau ainsi qu'à la notoriété/image de l'office.",
-  "disambiguatingDescription": "Chef d'Agence pour l'Agence de Koné et son annexe Pouembout",
+  "disambiguatingDescription": null,
   "identifier": "3134-26-0754/SR",
   "image": null,
   "mainEntityOfPage": null,
   "name": "Chef d'Agence - Agence Koné - Pouembout",
   "owner": {
     "@type": "Organization",
-    "name": "Office des postes et télécommunications",
+    "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
@@ -38,17 +44,7 @@
   "url": null,
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "applicantLocationRequirements": {
-    "@type": "Place",
-    "name": "Direction générale",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
-      "addressLocality": "Nouméa",
-      "addressRegion": "Province Sud",
-      "addressCountry": "NC"
-    }
-  },
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "+687 20 64 60",
@@ -56,7 +52,7 @@
   },
   "baseSalary": null,
   "datePosted": "2026-05-15",
-  "directApply": false,
+  "directApply": null,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -66,20 +62,18 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui assure des missions de service public postal, financier et de télécommunications.",
+  "employerOverview": null,
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "Direction de la Distribution",
-    "url": null,
-    "logo": null
+    "@type": "OrganizationalUnit",
+    "name": "DIRECTION DE LA DISTRIBUTION"
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
   "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
-    "name": "Office des postes et télécommunications",
+    "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
@@ -106,7 +100,7 @@
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Chef d'établissement",
+    "name": "Chef d’établissement",
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "M1302",
@@ -114,7 +108,7 @@
     }
   },
   "responsibilities": [
-    "Prévoir et anticiper : analyser l'activité passée (évènements intervenus, volumétrie d'activités, chiffre d'affaires, ressources utilisées, saisonnalité, stock, valeurs ...) et en tirer des prévisions quant à la mobilisation des moyens nécessaires et leur calendrier de mise en œuvre (travaux, congés des collaborateurs, pic d'activité...) de manière à assurer la continuité de service",
+    "Prévoir et anticiper : analyser l'activité passée (évènements intervenus, volumétrie d'activités, chiffre d'affaires, ressources utilisées, saisonnalité, stock, valeurs ...) et en tirer les prévisions quant à la mobilisation des moyens nécessaires et leur calendrier de mise en œuvre (travaux, congés des collaborateurs, pic d'activité...) de manière à assurer la continuité de service",
     "Solliciter sa hiérarchie si moyens particuliers / spécifiques",
     "Garantir les bons niveaux de stock fonds et valeur",
     "Contrôler la disponibilité et la qualité des moyens nécessaires convenus (l'immobilier - les équipements - les hommes et leurs compétences), alerter la hiérarchie en cas d'écarts et suggérer les adaptations - organiser le travail en agence de manière à garantir la qualité de service et la satisfaction des clients ainsi que la meilleure optimisation des moyens alloués",
@@ -127,7 +121,7 @@
     "Apporter une contribution personnelle sur les sujets d'évolution/transformation/amélioration, en particulier être porteur des démarches Lean au sein de l’agence",
     "Contribuer à la meilleure efficacité collective de l'entité de rattachement par la capacité à tenir d'autres positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) /conseiller ses collègues"
   ],
-  "salaryCurrency": "XPF",
+  "salaryCurrency": null,
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
@@ -152,5 +146,5 @@
   "title": "Chef d'Agence - Agence Koné - Pouembout",
   "totalJobOpenings": 1,
   "validThrough": "2026-06-05",
-  "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence et des permanences à assurer."
+  "workHours": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence et des permanences à assurer"
 }
