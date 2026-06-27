@@ -1,3 +1,9 @@
+---
+type: "index"
+title: "Index des Offres d'Emploi de l'OPT-NC (Open Knowledge Format)"
+description: "Ce dossier contient l'index et les fiches de concepts des Avis de Vacances de Poste (AVP) de l'OPT Nouvelle-Calédonie au format standardisé OKF (Open Knowledge Format v0.1)."
+---
+
 # Index des Offres d'Emploi de l'OPT-NC (Open Knowledge Format)
 
 Ce dossier contient l'index et les fiches de concepts des Avis de Vacances de Poste (AVP) de l'OPT Nouvelle-Calédonie au format standardisé OKF (Open Knowledge Format v0.1).
