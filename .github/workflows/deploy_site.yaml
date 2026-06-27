@@ -36,6 +36,8 @@ jobs:
         run: |
           mkdir -p data
           echo "hash: $(git rev-parse --short HEAD)" > data/git_commit.yaml
+          python3 scripts/enrich_descriptions.py
+          python3 scripts/generate_okf_bundle.py
           hugo --minify
 
       - name: Upload artifact
