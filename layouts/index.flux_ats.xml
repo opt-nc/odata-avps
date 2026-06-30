@@ -3,61 +3,59 @@
   <publisherurl>{{ .Site.BaseURL }}</publisherurl>
   <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
 
-  {{ range $key, $jsonData := .Site.Data.avps }}
+  {{/* 🎯 On pilote le flux par les PAGES réelles (et non par les data files) :
+       cela garantit que l'URL diffusée existe vraiment et pointe sur la fiche publiée.
+       Les champs riches (missions, compétences) sont récupérés dans le JSON associé.
+       Les champs simples sont en texte XML échappé ; seule la description (HTML) est en CDATA. */}}
+  {{ range .Site.RegularPages }}
+    {{ if .Params.ref }}
+      {{ $page := . }}
+      {{ $key := replace .Params.ref "/" "_" }}
+      {{ with index $.Site.Data.avps $key }}
     <job>
-      <title>{{ "<![CDATA[" | safeHTML }}{{ $jsonData.title | htmlUnescape | safeHTML }}{{ "]]>" | safeHTML }}</title>
-      <referencenumber>{{ "<![CDATA[" | safeHTML }}{{ $jsonData.identifier }}{{ "]]>" | safeHTML }}</referencenumber>
-      
-      <url>{{ "<![CDATA[" | safeHTML }}{{ $.Site.BaseURL }}avps/{{ $key }}/{{ "]]>" | safeHTML }}</url>
-      
-      <company>{{ "<![CDATA[OPT-NC]]>" | safeHTML }}</company>
-      <pubdate>{{ "<![CDATA[" | safeHTML }}{{ $jsonData.datePosted }}{{ "]]>" | safeHTML }}</pubdate>
-      
-      {{ if $jsonData.validThrough }}
-        <expirydate>{{ "<![CDATA[" | safeHTML }}{{ $jsonData.validThrough }}{{ "]]>" | safeHTML }}</expirydate>
-      {{ end }}
-      
+      <title>{{ .title | htmlUnescape }}</title>
+      <referencenumber>{{ .identifier }}</referencenumber>
+
+      {{/* ✅ URL canonique réelle de la fiche (et non un chemin /avps/ inexistant) */}}
+      <url>{{ $page.Permalink }}</url>
+
+      <company>OPT-NC</company>
+      <pubdate>{{ .datePosted }}</pubdate>
+
+      {{ with .validThrough }}<expirydate>{{ . }}</expirydate>{{ end }}
+
       {{ $city := "Nouméa" }}
-      {{ if $jsonData.applicantLocationRequirements }}
-        {{ if $jsonData.applicantLocationRequirements.address }}
-          {{ $city = $jsonData.applicantLocationRequirements.address.addressLocality }}
-        {{ end }}
-      {{ else if $jsonData.jobLocation }}
-        {{ if $jsonData.jobLocation.address }}
-           {{ $city = $jsonData.jobLocation.address.addressLocality }}
-        {{ end }}
+      {{ if .applicantLocationRequirements }}
+        {{ with .applicantLocationRequirements.address }}{{ $city = .addressLocality }}{{ end }}
+      {{ else if .jobLocation }}
+        {{ with .jobLocation.address }}{{ $city = .addressLocality }}{{ end }}
       {{ end }}
-      <city>{{ "<![CDATA[" | safeHTML }}{{ $city }}{{ "]]>" | safeHTML }}</city>
-      <country>{{ "<![CDATA[Nouvelle-Calédonie]]>" | safeHTML }}</country>
-      
-      {{/* 🎯 La ligne corrigée est ici (sans le "Rhodes" !!) */}}
-      <category>{{ "<![CDATA[" | safeHTML }}{{ $jsonData.occupationalCategory | default "Autres métiers" | htmlUnescape | safeHTML }}{{ "]]>" | safeHTML }}</category>
-      
+      <city>{{ $city }}</city>
+      <country>Nouvelle-Calédonie</country>
+
+      <category>{{ .occupationalCategory | default "Autres métiers" | htmlUnescape }}</category>
+
       <description>{{ "<![CDATA[" | safeHTML }}
-        {{ if $jsonData.description }}
-          <p><strong>Description du poste :</strong><br>{{ $jsonData.description | htmlUnescape | safeHTML }}</p>
+        {{ with .description }}
+          <p><strong>Description du poste :</strong><br>{{ . | htmlUnescape | safeHTML }}</p>
         {{ end }}
 
-        {{ if $jsonData.responsibilities }}
+        {{ with .responsibilities }}
           <p><strong>Missions principales :</strong></p>
           <ul>
-            {{ range $jsonData.responsibilities }}
-              <li>{{ . | htmlUnescape | safeHTML }}</li>
-            {{ end }}
+            {{ range . }}<li>{{ . | htmlUnescape | safeHTML }}</li>{{ end }}
           </ul>
         {{ end }}
 
-        {{ if $jsonData.skills }}
+        {{ with .skills }}
           <p><strong>Compétences et profil recherché :</strong></p>
           <ul>
-            {{ range $jsonData.skills }}
-              <li>{{ . | htmlUnescape | safeHTML }}</li>
-            {{ end }}
+            {{ range . }}<li>{{ . | htmlUnescape | safeHTML }}</li>{{ end }}
           </ul>
         {{ end }}
-        
-        
       {{ "]]>" | safeHTML }}</description>
     </job>
+      {{ end }}
+    {{ end }}
   {{ end }}
 </source>

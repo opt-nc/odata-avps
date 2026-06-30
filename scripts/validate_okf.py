@@ -2,7 +2,9 @@ import os
 import re
 from datetime import datetime
 
-content_dir = "/Users/melaniegault/Documents/github/odata-avps/content"
+# Chemin du dossier `content` relatif à la racine du dépôt
+# (robuste quel que soit le CWD / la machine / la CI)
+content_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content")
 categories = [
     "commercial-et-clientele",
     "ressources-humaines",

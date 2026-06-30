@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Composants AVP — styles extraits des templates (fin des styles inline).
+   Chargé une seule fois via custom-header.html.
+   ========================================================================== */
+
+/* --- Liste de cartes d'AVP (shortcode list-avps / partial avp-cards-list) --- */
+.avp-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.avp-list-card__title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+.avp-list-card__title a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.avp-list-card__meta {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: var(--MAIN-TEXT-color, #666);
+  opacity: 0.85;
+}
+.avp-list-card__meta-sep {
+  margin: 0 10px;
+}
+
+.avp-list-card__summary {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.avp-list-card__more {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.avp-list-card__more a {
+  font-size: 0.9rem;
+  color: var(--SECONDARY-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* --- Carte de localisation unitaire (shortcode avp-header) --- */
+.avp-single-map-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.avp-single-map-wrapper h3 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.avp-single-map {
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* --- Séparateur entre AVP groupés sur un même point de la carte globale --- */
+.avp-popup-separator {
+  border: 0;
+  border-top: 1px dashed var(--CARD-BORDER-color, #e0e0e0);
+  margin: 10px 0;
+}

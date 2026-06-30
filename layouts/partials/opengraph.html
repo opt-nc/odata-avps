@@ -1,0 +1,36 @@
+{{- /* Surcharge OPT-NC du partial Open Graph du thème Relearn.
+       Objectif : une SEULE source de balises og:, avec des URL d'image correctes
+       sur le sous-chemin /odata-avps/ (le partial du thème perdait le préfixe). */ -}}
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ site.Title | plainify }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ site.Title | plainify }}{{ else }}{{ .Title | plainify }} | {{ site.Title | plainify }}{{ end }}">
+{{- with trim (or .Description .Summary | plainify | htmlUnescape) "\n\r\t " }}
+    <meta property="og:description" content="{{ . }}">
+{{- end }}
+{{- with site.Language.LanguageCode }}
+    <meta property="og:locale" content="{{ replace . `-` `_` }}">
+{{- end }}
+
+{{- if and .IsPage (not (partial "_relearn/pageIsSpecial.gotmpl" .)) }}
+    <meta property="og:type" content="article">
+  {{- with or .PublishDate .Date }}
+    <meta property="article:published_time" {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }}>
+  {{- end }}
+  {{- with .Lastmod }}
+    <meta property="article:modified_time" {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }}>
+  {{- end }}
+  {{- range .GetTerms "tags" | first 6 }}
+    <meta property="article:tag" content="{{ .Title | plainify }}">
+  {{- end }}
+{{- else }}
+    <meta property="og:type" content="website">
+{{- end }}
+
+{{- /* Image : bannière de la fiche si présente, sinon logo OPT. On retire le slash
+       initial pour que absURL conserve le préfixe /odata-avps/. */ -}}
+{{- $img := .Params.featured_image | default "/assets/logo-opt.png" -}}
+{{- $img = strings.TrimPrefix "/" $img -}}
+    <meta property="og:image" content="{{ $img | absURL }}">
+    <meta property="og:image:secure_url" content="{{ $img | absURL }}">
