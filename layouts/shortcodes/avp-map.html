@@ -68,7 +68,16 @@
       } else {
         // PREMIER PASSAGE : Aucun AVP enregistré à cette adresse
         const marker = L.marker([avp.lat, avp.lng], { alt: avp.title }).addTo(map);
-        marker.bindPopup(itemHtml);
+        // maxHeight => la bulle défile en interne si plusieurs AVP au même point
+        // (sinon le lien « Consulter l'offre » sort de l'écran en mobile).
+        // autoPanPadding + keepInView => la bulle se replace dans la zone visible.
+        marker.bindPopup(itemHtml, {
+          maxHeight: 260,
+          minWidth: 220,
+          maxWidth: 280,
+          keepInView: true,
+          autoPanPadding: L.point(16, 60)
+        });
         
         // On garde précieusement la référence du marqueur Leaflet dans notre cache
         markersCache[geoKey] = marker;

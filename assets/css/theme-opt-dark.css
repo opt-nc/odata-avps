@@ -40,10 +40,10 @@
    ========================================================================== */
 
 .avp-urgency-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
+    /* Dans le flux (plus en position absolue) pour ne pas chevaucher le titre,
+       notamment en mobile où le titre remonte sous le badge. */
+    display: inline-flex;
+    align-items: center;
 }
 
 .badge {
@@ -480,7 +480,7 @@
 
 .avp-banner-actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 1.5rem;
     width: 100%;

@@ -128,7 +128,9 @@
         </div>
       `;
 
-    L.marker([lat, lng], { alt: "Localisation du poste" }).addTo(map).bindPopup(popupHtml).openPopup();
+    L.marker([lat, lng], { alt: "Localisation du poste" }).addTo(map)
+      .bindPopup(popupHtml, { maxHeight: 260, minWidth: 220, maxWidth: 280, keepInView: true, autoPanPadding: L.point(16, 60) })
+      .openPopup();
     });
   </script>
   {{ end }}

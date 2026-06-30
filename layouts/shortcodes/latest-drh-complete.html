@@ -5,7 +5,7 @@
   {{/* 2. On prend le plus récent */}}
   {{ $latest := index (sort $drhPages ".Date" "desc") 0 }}
 
-  <div class="drh-complete-card" style="background: var(--CARD-BACKGROUND-color, #ffffff); border: 1px solid var(--CARD-BORDER-color, #e0e0e0); border-radius: 12px; overflow: hidden; margin: 30px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+  <div class="drh-complete-card" style="background: var(--CARD-BG-color, #ffffff); border: 1px solid var(--CARD-BORDER-color, #e0e0e0); border-radius: 12px; overflow: hidden; margin: 30px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
     
     {{/* 3. Traitement et optimisation de l'image de couverture */}}
     {{ with $latest.Params.cover }}

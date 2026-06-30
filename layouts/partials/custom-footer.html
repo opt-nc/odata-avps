@@ -97,4 +97,18 @@
       }, 200);
     });
   });
+
+  // ☎️ Rend les numéros de téléphone cliquables sur les fiches déjà publiées
+  //    (les fiches régénérées par le pipeline contiennent déjà un lien tel:).
+  document.addEventListener("DOMContentLoaded", function () {
+    const NC_PHONE = /(\(?\+?\s*687\)?[\s. \-]*\d[\d\s. \-]{4,}\d)/;
+    document.querySelectorAll('li, p').forEach(function (el) {
+      if (el.querySelector('a[href^="tel:"]')) return;                 // déjà cliquable
+      if (!/par t[ée]l[ée]phone/i.test(el.textContent)) return;        // bloc « Par téléphone »
+      el.innerHTML = el.innerHTML.replace(NC_PHONE, function (num) {
+        const href = num.replace(/[^\d+]/g, '');
+        return '<a href="tel:' + href + '">' + num.trim() + '</a>';
+      });
+    });
+  });
 </script>

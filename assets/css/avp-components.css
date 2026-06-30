@@ -65,6 +65,12 @@
   overflow: hidden;
 }
 
+/* --- Lien « Consulter l'offre » dans les bulles : cible tactile plus large (mobile) --- */
+.avp-popup-link {
+  margin-top: 6px;
+  padding: 4px 0;
+}
+
 /* --- Séparateur entre AVP groupés sur un même point de la carte globale --- */
 .avp-popup-separator {
   border: 0;
