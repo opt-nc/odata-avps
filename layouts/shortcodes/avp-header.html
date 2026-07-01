@@ -6,6 +6,27 @@
 
   <h2 id="informations-administratives-opt">🏛️ Informations administratives</h2>
 
+  {{ if .Page.Params.featured_image }}
+  {{ $imgPath := .Page.Params.featured_image }}
+  {{ $imgPath = strings.TrimPrefix "/" $imgPath }} {{/* 🎯 On demande à Hugo d'aller chercher l'image dans le dossier
+  assets/ */}}
+  {{ with resources.Get $imgPath }}
+
+  {{/* ⚡ LA CONVERSION MAGIQUE : Hugo transforme en WebP et compresse à 80% */}}
+  {{ $webp := .Process "webp q80" }}
+
+  <div class="avp-dynamic-banner">
+    <img src="{{ $webp.RelPermalink }}" alt="Illustration du poste : {{ $.Page.Title }}">
+  </div>
+
+  {{ else }}
+  {{/* 🔄 FALLBACK DE SÉCURITÉ : Si l'image n'est pas encore déplacée dans assets, on l'affiche normalement */}}
+  <div class="avp-dynamic-banner">
+    <img src="{{ .Page.Params.featured_image | relURL }}" alt="Illustration du poste : {{ $.Page.Title }}">
+  </div>
+  {{ end }}
+  {{ end }}
+
   <div class="avp-stamp-qrcode">
     <div class="sr-only">Code QR pour postuler depuis un smartphone.</div>
     <p class="avp-qrcode-text">AVP Officiel</p>
@@ -66,43 +87,23 @@
     </tbody>
   </table>
 
-  {{ if .Page.Params.featured_image }}
-  {{ $imgPath := .Page.Params.featured_image }}
-  {{ $imgPath = strings.TrimPrefix "/" $imgPath }} {{/* 🎯 On demande à Hugo d'aller chercher l'image dans le dossier
-  assets/ */}}
-  {{ with resources.Get $imgPath }}
-
-  {{/* ⚡ LA CONVERSION MAGIQUE : Hugo transforme en WebP et compresse à 80% */}}
-  {{ $webp := .Process "webp q80" }}
-
-  <div class="avp-dynamic-banner">
-    <img src="{{ $webp.RelPermalink }}" alt="Illustration du poste : {{ $.Page.Title }}">
-  </div>
-
-  {{ else }}
-  {{/* 🔄 FALLBACK DE SÉCURITÉ : Si l'image n'est pas encore déplacée dans assets, on l'affiche normalement */}}
-  <div class="avp-dynamic-banner">
-    <img src="{{ .Page.Params.featured_image | relURL }}" alt="Illustration du poste : {{ $.Page.Title }}">
-  </div>
-  {{ end }}
-  {{ end }}
-
   {{ if and .Page.Params.latitude .Page.Params.longitude }}
   <!-- Leaflet (auto-hébergé, sans dépendance CDN) -->
-  <link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
-  <script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script>
+  <link rel="stylesheet" href="{{ " vendor/leaflet/leaflet.css" | relURL }}">
+  <script src="{{ " vendor/leaflet/leaflet.js" | relURL }}" defer></script>
 
   <div class="avp-single-map-wrapper">
     <h3 id="localisation-poste">
       <i class="fas fa-map-marked-alt" aria-hidden="true"></i> Localisation géographique
     </h3>
-    <div id="avp-single-map-{{ .Page.Params.ref | urlize }}" class="avp-map-container avp-single-map"
-      role="application" aria-label="Carte de localisation du poste"></div>
+    <div id="avp-single-map-{{ .Page.Params.ref | urlize }}" class="avp-map-container avp-single-map" role="application"
+      aria-label="Carte de localisation du poste"></div>
   </div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const lat = {{ .Page.Params.latitude }};
+      const lat = {{ .Page.Params.latitude }
+    };
     const lng = {{ .Page.Params.longitude }};
     const title = {{ .Page.Title }};
     const ref = {{ .Page.Params.ref }};
@@ -172,9 +173,9 @@
       });
 
       // Ajout d'attributs d'accessibilité sur les images générées
-      setTimeout(function() {
+      setTimeout(function () {
         const qrImages = pageQrContainer.querySelectorAll('img, canvas');
-        qrImages.forEach(function(el) {
+        qrImages.forEach(function (el) {
           el.setAttribute('alt', '');
           el.setAttribute('aria-hidden', 'true');
         });
