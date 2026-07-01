@@ -4,11 +4,12 @@
     "direction": "Agence comptable",
     "nbAgentsEncadres": 21,
     "superieurHierarchique": null,
-    "placeOrganigramme": "Membre du conseil de direction (CODIR)",
+    "placeOrganigramme": null,
     "relationsFonctionnelles": [
       "Ordonnateur",
       "Conseil d'Administration",
       "Commission d'appels d'offres aux marchés publics",
+      "Conseil de direction",
       "Comité d'entreprise",
       "Agences OPT",
       "Centre de traitement postal",
@@ -23,25 +24,30 @@
       },
       {
         "@type": "PropertyValue",
-        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "name": "Avantages",
         "value": "Logement de fonction"
       },
       {
         "@type": "PropertyValue",
-        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "name": "Régime indemnitaire",
         "value": "Indemnité hiérarchique d'agent comptable principal"
       },
       {
         "@type": "PropertyValue",
-        "name": "Caractéristiques particulières de l'emploi",
+        "name": "Contexte de recrutement",
         "value": "Le recrutement s'inscrit dans une séquence de transformation financière majeure prévue sur les deux prochaines années, impliquant une forte capacité de pilotage, de sécurisation et d'accompagnement du changement."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12952006.PDF"
       }
     ],
     "uniteOrganisationnelle": "AGENCE COMPTABLE"
   },
   "alternateName": "AC – Agent comptable",
   "description": "Le poste d'agent comptable s'exerce dans un contexte de transformation de la fonction financière de l'OPT-NC, marqué par l'évolution du référentiel comptable de l'établissement, la modernisation des processus financiers et la préparation du déploiement d'un futur ERP. Dans ce cadre, le titulaire du poste contribue, en lien étroit avec l'ordonnateur et les directions concernées, à la définition et à la sécurisation de la trajectoire cible de la fonction financière, tout en garantissant la continuité, la régularité, la fiabilité et la qualité de l'exécution comptable pendant toute la phase de transition.",
-  "disambiguatingDescription": "Poste d'agent comptable principal encadrant une équipe de 21 personnes dans un contexte de transformation financière et de déploiement ERP.",
+  "disambiguatingDescription": "Poste d'agent comptable principal en charge de l'encadrement de l'agence comptable et de la production du compte financier annuel dans un contexte de transformation financière et de déploiement ERP.",
   "identifier": "3134-26-0768/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -58,17 +64,7 @@
   "url": null,
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "applicantLocationRequirements": {
-    "@type": "Place",
-    "name": "Direction générale OPT Immeuble Waruna",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 rue Paul Montchovet",
-      "addressLocality": "Nouméa",
-      "addressRegion": "Province Sud",
-      "addressCountry": "NC"
-    }
-  },
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "+687268217",
@@ -89,10 +85,10 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui accompagne le développement économique et social du territoire à travers ses activités postales, financières et de télécommunications.",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public engagé dans la modernisation de ses processus financiers et la transformation de sa fonction financière.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
+    "@type": "OrganizationalUnit",
     "name": "AGENCE COMPTABLE"
   },
   "estimatedSalary": null,
@@ -104,7 +100,7 @@
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": "Indemnité hiérarchique d'agent comptable principal",
+  "incentiveCompensation": null,
   "industry": "Service public",
   "jobBenefits": "Logement de fonction, Indemnité hiérarchique d'agent comptable principal",
   "jobDuration": null,
@@ -127,11 +123,11 @@
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Responsable comptable",
+    "name": "Gestionnaire comptable",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "M1205",
-      "name": "Direction administrative et financière"
+      "codeValue": "M1203",
+      "name": "Comptabilité"
     }
   },
   "responsibilities": [
