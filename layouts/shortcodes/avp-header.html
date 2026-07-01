@@ -89,8 +89,8 @@
 
   {{ if and .Page.Params.latitude .Page.Params.longitude }}
   <!-- Leaflet (auto-hébergé, sans dépendance CDN) -->
-  <link rel="stylesheet" href="{{ " vendor/leaflet/leaflet.css" | relURL }}">
-  <script src="{{ " vendor/leaflet/leaflet.js" | relURL }}" defer></script>
+  <link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
+  <script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script>
 
   <div class="avp-single-map-wrapper">
     <h3 id="localisation-poste">
@@ -102,8 +102,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const lat = {{ .Page.Params.latitude }
-    };
+      const lat = {{ .Page.Params.latitude }};
     const lng = {{ .Page.Params.longitude }};
     const title = {{ .Page.Title }};
     const ref = {{ .Page.Params.ref }};
