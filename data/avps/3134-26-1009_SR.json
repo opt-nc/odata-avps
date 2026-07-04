@@ -1,0 +1,159 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation ou Contrôleur",
+    "direction": "Direction de la poste et des services de proximité",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de section Expérience commerciale",
+    "placeOrganigramme": "N - 4 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955540.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à animer et coordonner les actions commerciales du réseau au service de la performance et de la satisfaction client, contribuer à la mise en œuvre opérationnelle des campagnes marketing et au déploiement de la stratégie commerciale sur le terrain, et participer à l'amélioration de l'expérience client et à la valorisation des offres de l'OPT-NC.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1009/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chargé(e) de l'animation commerciale",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.79.28",
+    "email": "drh-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-07-03",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Environnement administratif, institutionnel et politique",
+      "Droit/Réglementation",
+      "Conduite et gestion de projet",
+      "Gestion de l'information",
+      "Organisation, méthode et processus",
+      "Techniques d'animation/Expression orale",
+      "Techniques et supports de communication/Médias"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Section expérience commerciale"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Nouméa",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": "Commercial et clientèle",
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé d’études en urbanisme commercial",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K1201",
+      "name": "Communication"
+    }
+  },
+  "responsibilities": [
+    "Participer à la conception, la planification et au déploiement des actions commerciales dans le respect du cadre réglementaire",
+    "Assurer une collaboration intra et inter BU",
+    "Assurer la mise en œuvre opérationnelle des campagnes et le suivi des résultats commerciaux",
+    "Accompagner les équipes réseau dans la promotion et la valorisation des offres et produits",
+    "Suivre les indicateurs de performance commerciale (ventes, satisfaction, fidélisation)",
+    "Identifier et remonter les besoins du réseau pour adapter les dispositifs marketing",
+    "Contribuer à la formation et à la montée en compétence des équipes sur les produits et les techniques de vente",
+    "Garantir la cohérence du discours commercial et le respect de l'identité de marque OPT-NC",
+    "Participer à la veille concurrentielle et à l'analyse des comportements clients",
+    "Promouvoir une culture d'innovation, d'agilité et de performance"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Animer un groupe, une équipe",
+    "Animer une réunion",
+    "Communiquer",
+    "Coordonner",
+    "Gérer les relations interpersonnelles",
+    "Travailler en équipe",
+    "Gérer une relation client",
+    "Organiser une activité, une réunion, un événement",
+    "Analyser une information, une donnée, une situation, un dispositif",
+    "Contribuer (prendre part à une activité collective, à la conduite d'un projet, à l'élaboration d'une procédure ou d'un dispositif, à la rédaction d'un document)",
+    "Aptitude à l'écoute",
+    "Sens du service public",
+    "Avoir l'esprit d'équipe",
+    "Réactivité",
+    "Sens de l'organisation",
+    "Être autonome",
+    "Être rigoureux",
+    "Faculté d'adaptation",
+    "Esprit d'initiative"
+  ],
+  "specialCommitments": null,
+  "title": "Chargé(e) de l'animation commerciale",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-24",
+  "workHours": null
+}
