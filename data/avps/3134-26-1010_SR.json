@@ -1,0 +1,165 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Ingénieur",
+    "direction": "Direction des Systèmes d'Information",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de la section SI Télécom",
+    "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Section SI Télécom",
+      "Service Développement et Maintenance"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Durée de résidence exigée pour le recrutement sur titre",
+        "value": "Ingénieur 1er grade : au moins égale à 10 ans ; Ingénieur 2ème grade : au moins égale à 5 ans"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "2 jours de télétravail possibles"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Téléphone Mobile de sécurité"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "Sans objet"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955296.PDF"
+      }
+    ],
+    "uniteOrganisationnelle": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
+  },
+  "alternateName": "Administrateur d'applications SI Télécom",
+  "description": "Intégré au sein d'une équipe de 8 agents, l'administrateur d'applications définit les procédures d'exploitation, assure les évolutions et la maintenance, et administre les systèmes d'information relevant du périmètre fonctionnel de la section SI Télécom.",
+  "disambiguatingDescription": "Poste d'administrateur d'applications au sein de la section SI Télécom de l'OPT-NC.",
+  "identifier": "3134-26-1010/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Administrateur d'applications SI Télécom",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/themes/custom/opt/logo.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Siège OPT",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9, rue Gallieni",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "+687267600",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-07-03",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Bac+3",
+    "competencyRequired": [
+      "Connaissance de l'architecture standard d'un SI Télécom et des infrastructures Télécom",
+      "Connaissance d'outils de gestion collaborative (Sharepoint Confluence) et de suivi des évolutions (JIRA)",
+      "Connaissance des systèmes d'exploitation Linux (RHEL), Unix (AIX)",
+      "Connaissance SQL, Korn Shell, Java souhaitée",
+      "Anglais technique lu et écrit"
+    ]
+  },
+  "eligibilityToWorkRequirement": "Durée de résidence minimale exigée en Nouvelle-Calédonie selon le grade d'intégration.",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications sur le territoire.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": false,
+  "experienceRequirements": "Au moins 2 ans d'expérience dans une activité similaire.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/themes/custom/opt/logo.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction des Systèmes d'Information",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9, rue Gallieni",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": "Informatique et technologies",
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Administrateur d'applications",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1801",
+      "name": "Administration de systèmes d'information"
+    }
+  },
+  "responsibilities": [
+    "Assurer la disponibilité et le bon fonctionnement des applications",
+    "Apporter un support technique et une assistance aux utilisateurs sur les applications dont il a la charge",
+    "Assurer la maintenance évolutive et corrective des applications en lien avec les éditeurs et fournisseurs",
+    "Superviser et surveiller les applications afin de garantir leur performance et leur stabilité",
+    "Rédiger et maintenir à jour la documentation technique ainsi que la base de connaissances associée"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Collaborer avec les acteurs des métiers Télécom",
+    "Conduire des projets techniques",
+    "Présenter et argumenter des recommandations",
+    "Garantir le bon fonctionnement d'un système de médiation Télécom",
+    "Gérer des relations avec un prestataire dans le cadre d'une TMA ou de développements tiers",
+    "Maintenance de documentation et de référentiels d'architecture technique",
+    "Accompagnement, conseil et support de ses collaborateurs",
+    "Motivation, implication et respect des engagements",
+    "Esprit d'initiative, force de proposition",
+    "Facultés de communication, d'écoute et d'expression",
+    "Esprit d'équipe",
+    "Rigueur, sens de la méthode et probité",
+    "Autonomie"
+  ],
+  "specialCommitments": null,
+  "title": "Administrateur d'applications SI Télécom",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-24",
+  "workHours": "Temps plein"
+}
