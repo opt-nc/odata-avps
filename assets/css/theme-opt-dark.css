@@ -311,6 +311,10 @@
     margin: 0 0 6px 0 !important;
     font-size: 1.1rem !important;
     font-weight: bold;
+    /* Fix dark mode : le titre est un <h4> en texte simple (pas un lien). Sans couleur
+       explicite il héritait du gris clair du thème sombre -> illisible sur la popup
+       Leaflet qui reste blanche. On force le bleu de marque (contraste AA sur blanc). */
+    color: #005A9C !important;
 }
 
 .avp-popup-title a {
@@ -348,6 +352,15 @@
 .leaflet-popup-content-wrapper {
     border-radius: 6px !important;
     box-shadow: 0 3px 14px rgba(0,0,0,0.2) !important;
+}
+
+/* La popup reste une "carte" blanche par-dessus la carte, y compris en dark mode :
+   on verrouille fond blanc + texte foncé (conteneur ET pointe) pour garantir le
+   contraste et l'accessibilité, quel que soit le thème actif. */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    background: #ffffff !important;
+    color: #1f2d3d !important;
 }
 
 /* --- Mise en forme de la table administrative accessible --- */

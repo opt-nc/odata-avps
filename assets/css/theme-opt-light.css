@@ -316,6 +316,9 @@
     margin: 0 0 6px 0 !important;
     font-size: 1.1rem !important;
     font-weight: bold;
+    /* Couleur explicite : le titre est un <h4> en texte simple (pas un lien) sur les
+       pages AVP, il ne doit donc PAS hériter de la couleur de texte du thème. */
+    color: #005A9C !important;
 }
 
 .avp-popup-title a {
