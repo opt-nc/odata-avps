@@ -1,7 +1,7 @@
 {
   "additionalType": {
     "corpsDomaine": "Cadre d'exploitation ou contrôleur",
-    "direction": "Direction des Télécommunications",
+    "direction": "Direction des télécommunications",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Cheffe de section communication et digital",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
@@ -13,26 +13,38 @@
       {
         "@type": "PropertyValue",
         "name": "Conditions de travail",
-        "value": "Du lundi au vendredi. Peut être amené à travailler hors horaire habituel sur des évènements."
+        "value": "Du lundi au vendredi. Peut être amené à travailler hors horaire habituel sur des événements."
       },
       {
         "@type": "PropertyValue",
-        "name": "Habilitations et permis",
-        "value": "Permis B"
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Non spécifié"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "Non spécifié"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953468.PDF"
       }
-    ]
+    ],
+    "uniteOrganisationnelle": "SECTION COMMUNICATION ET DIGITAL"
   },
-  "alternateName": null,
+  "alternateName": "DT – Chargé (e) de communication - SMC",
   "description": "Intégré(e) à la section Communication et Digital de la Direction des Télécommunications, l'agent participe à la mise en œuvre des actions de communication interne et externe de la direction.",
-  "disambiguatingDescription": null,
+  "disambiguatingDescription": "Poste de chargé de communication au sein de la Direction des Télécommunications de l'OPT-NC.",
   "identifier": "3134-26-0944/SR",
   "image": null,
   "mainEntityOfPage": null,
-  "name": "Chargé de communication",
+  "name": "Chargé (e) de communication",
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -40,15 +52,7 @@
   "url": null,
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "applicantLocationRequirements": {
-    "@type": "Place",
-    "name": "Direction Générale",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
-      "addressLocality": "Nouméa"
-    }
-  },
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "26.83.63",
@@ -56,9 +60,9 @@
   },
   "baseSalary": null,
   "datePosted": "2026-06-19",
-  "directApply": null,
+  "directApply": false,
   "educationRequirements": {
-    "credentialCategory": null,
+    "credentialCategory": "Non spécifié",
     "competencyRequired": [
       "Maîtrise des outils bureautiques",
       "Bonne culture numérique",
@@ -68,20 +72,22 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "Office des Postes et des Télécommunications de Nouvelle-Calédonie",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'établissement public en charge des services postaux et des télécommunications.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc"
+    "@type": "OrganizationalUnit",
+    "name": "SECTION COMMUNICATION ET DIGITAL",
+    "url": null,
+    "logo": null
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
-  "experienceRequirements": null,
+  "experienceRequirements": "Les connaissances spécifiques aux métiers de la communication pourront être acquises dans le cadre d'un accompagnement et de formations internes.",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
   "industry": "Télécommunications",
@@ -93,12 +99,14 @@
     "name": "Direction Générale, Immeuble Waruna, Port Plaisance",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Immeuble Waruna, Port Plaisance",
-      "addressLocality": "Nouméa"
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
   "jobLocationType": null,
-  "jobStartDate": null,
+  "jobStartDate": "Dès que possible",
   "occupationalCategory": "Commercial et clientèle",
   "physicalRequirement": null,
   "qualifications": "Permis B",
@@ -107,18 +115,18 @@
     "name": "Chargé de communication",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "E1103",
+      "codeValue": "K1403",
       "name": "Communication"
     }
   },
   "responsibilities": [
     "La rédaction d'articles, de publications et de contenus digitaux",
     "La création et la mise à jour de supports de communication",
-    "L’animation des réseaux sociaux",
+    "L'animation des réseaux sociaux",
     "La couverture de manifestations et d'événements",
     "La réalisation de reportages photo et vidéo",
     "La mise à jour des contenus sur les supports digitaux de la DT",
-    "L’utilisation des outils numériques et d'intelligence artificielle pour la création de contenus",
+    "L'utilisation des outils numériques et d'intelligence artificielle pour la création de contenus",
     "La réalisation d'une veille sur l'actualité des télécommunications, des médias et des tendances digitales",
     "La réalisation de benchmarks afin d'identifier les bonnes pratiques et les innovations en matière de communication",
     "Le suivi administratif et opérationnel des partenariats de communication",
@@ -150,5 +158,5 @@
   "title": "Chargé de communication",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-10",
-  "workHours": "Du lundi au vendredi. Peut être amené à travailler hors horaire habituel sur des évènements."
+  "workHours": "Du lundi au vendredi"
 }
