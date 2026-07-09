@@ -1,28 +1,19 @@
 {
   "additionalType": {
     "corpsDomaine": "Cadre d'exploitation ou Contrôleur",
-    "direction": "Direction de la poste et des services de proximité",
+    "direction": "DIRECTION DE LA DISTRIBUTION",
+    "uniteOrganisationnelle": "Section expérience commerciale",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de section Expérience commerciale",
     "placeOrganigramme": "N - 4 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
-      "Direction de la poste et des services de proximité",
-      "Section expérience commerciale"
+      "Réseau",
+      "BU"
     ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Durée de résidence exigée pour le recrutement sur titre",
-        "value": null
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Poste à pourvoir",
-        "value": "Susceptible d'être à pourvoir dans le cadre de la réorganisation"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Habilitations, permis nécessaires pour l'exercice des fonctions",
+        "name": "Habilitations requises",
         "value": "Permis B"
       },
       {
@@ -51,30 +42,30 @@
   "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à animer et coordonner les actions commerciales du réseau au service de la performance et de la satisfaction client, contribuer à la mise en œuvre opérationnelle des campagnes marketing et au déploiement de la stratégie commerciale sur le terrain, et participer à l'amélioration de l'expérience client et à la valorisation des offres de l'OPT-NC.",
   "disambiguatingDescription": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
   "identifier": "3134-26-1009/SR",
-  "image": null,
-  "mainEntityOfPage": null,
-  "name": "DPS - Chargé(e) de l'animation commerciale - Section expérience commerciale",
+  "name": "Chargé(e) de l'animation commerciale",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "www.opt.nc",
+    "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "potentialAction": null,
-  "sameAs": null,
-  "subjectOf": null,
-  "url": null,
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "applicantLocationRequirements": null,
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Nouméa",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "26.79.28",
     "email": "drh-candidature@opt.nc"
   },
-  "baseSalary": null,
   "datePosted": "2026-07-03",
-  "directApply": true,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -87,44 +78,32 @@
       "Techniques et supports de communication/Médias"
     ]
   },
-  "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est l'employeur de référence pour les services postaux et de télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
-    "name": "Section expérience commerciale",
-    "url": null,
-    "logo": null
+    "name": "Section expérience commerciale"
   },
-  "estimatedSalary": null,
-  "experienceInPlaceOfEducation": null,
-  "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "www.opt.nc",
+    "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": null,
-  "industry": "Service public",
-  "jobBenefits": null,
-  "jobDuration": null,
-  "jobImmediateStart": false,
   "jobLocation": {
     "@type": "Place",
-    "name": "Direction de la poste et des services de proximité",
+    "name": "Nouméa",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "streetAddress": null,
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
     }
   },
-  "jobLocationType": null,
-  "jobStartDate": null,
-  "occupationalCategory": "Commercial et clientèle",
-  "physicalRequirement": null,
+  "occupationalCategory": [
+    "Vente et relation client",
+    "Marketing et communication"
+  ],
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
@@ -132,7 +111,7 @@
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "K1201",
-      "name": "Communication"
+      "name": "Animation de vente"
     }
   },
   "responsibilities": [
@@ -147,9 +126,6 @@
     "Participer à la veille concurrentielle et à l'analyse des comportements clients",
     "Promouvoir une culture d'innovation, d'agilité et de performance"
   ],
-  "salaryCurrency": "XPF",
-  "securityClearanceRequirement": null,
-  "sensoryRequirement": null,
   "skills": [
     "Animer un groupe, une équipe",
     "Animer une réunion",
@@ -160,7 +136,7 @@
     "Gérer une relation client",
     "Organiser une activité, une réunion, un événement",
     "Analyser une information, une donnée, une situation, un dispositif",
-    "Contribuer (prendre part à une activité collective, à la conduite d'un projet, à l'élaboration d'une procédure ou d'un dispositif, à la rédaction d'un document)",
+    "Contribuer à l'élaboration d'une procédure ou d'un dispositif, à la rédaction d'un document",
     "Aptitude à l'écoute",
     "Sens du service public",
     "Avoir l'esprit d'équipe",
@@ -171,9 +147,6 @@
     "Faculté d'adaptation",
     "Esprit d'initiative"
   ],
-  "specialCommitments": null,
   "title": "Chargé(e) de l'animation commerciale",
-  "totalJobOpenings": 1,
-  "validThrough": "2026-07-24",
-  "workHours": null
+  "validThrough": "2026-07-24"
 }
