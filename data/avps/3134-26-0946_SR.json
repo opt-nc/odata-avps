@@ -1,24 +1,29 @@
 {
   "additionalType": {
-    "corpsDomaine": "Cadre technique ou technicien",
+    "corpsDomaine": "Cadre technique ou ou technicien",
     "direction": "Direction des télécommunications",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de service SMQP",
     "placeOrganigramme": "N-2 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
-      "Service méthodes processus qualité",
-      "Direction des systèmes d'information (DSI)"
+      "DSI",
+      "Service méthodes processus qualité"
     ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Habilitations requises",
+        "name": "Durée de résidence exigée pour le recrutement sur titre",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations, permis nécessaires pour l'exercice des fonctions",
         "value": "Permis B"
       },
       {
         "@type": "PropertyValue",
-        "name": "Unité organisationnelle",
-        "value": "Service méthodes processus qualité"
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12954564.PDF"
       }
     ]
   },
@@ -31,8 +36,9 @@
   "name": "Consultant fonctionnel - SMQP",
   "owner": {
     "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "name": "Office des Postes et des Télécommunications",
+    "url": "www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -40,15 +46,7 @@
   "url": null,
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "applicantLocationRequirements": {
-    "@type": "Place",
-    "name": "Direction générale",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
-      "addressLocality": "Nouméa"
-    }
-  },
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "+687761175",
@@ -56,7 +54,7 @@
   },
   "baseSalary": null,
   "datePosted": "2026-06-19",
-  "directApply": null,
+  "directApply": false,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -64,54 +62,56 @@
       "Très bonne connaissance des produits et services télécoms",
       "Très bonne connaissance des différents SI Télécoms",
       "Connaissance des processus métiers",
-      "Maîtrise d'une méthodologie de gestion de projet (PMP, PMI, Prince 2, Agile…)",
+      "Maîtrise d'une méthodologie de gestion de projet (PMP, PMI, Prince 2, Agile...)",
       "Maîtrise des outils de gestion de projets",
       "Maîtrise des outils bureautiques",
       "Bonne connaissance du domaine fonctionnel impacté",
-      "Anglais : lu, parlé, écrit"
+      "Anglais lu, parlé, écrit"
     ]
   },
   "eligibilityToWorkRequirement": null,
   "employerOverview": null,
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "@type": "OrganizationalUnit",
+    "name": "Service méthodes processus qualité"
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
   "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "name": "Office des Postes et des Télécommunications",
+    "url": "www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
   "industry": "Télécommunications",
   "jobBenefits": null,
   "jobDuration": null,
-  "jobImmediateStart": null,
+  "jobImmediateStart": true,
   "jobLocation": {
     "@type": "Place",
     "name": "Immeuble Le Fulton à Ducos",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Immeuble Le Fulton, Ducos",
-      "addressLocality": "Nouméa"
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
   "jobLocationType": null,
-  "jobStartDate": "Dès que possible",
+  "jobStartDate": null,
   "occupationalCategory": "Informatique et technologies",
   "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Consultant fonctionnel",
+    "name": "Consultant emploi/formation",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "M1806",
+      "codeValue": "K2110",
       "name": "Conseil et maîtrise d'ouvrage en systèmes d'information"
     }
   },
