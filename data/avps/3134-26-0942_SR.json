@@ -1,31 +1,33 @@
 {
   "additionalType": {
     "corpsDomaine": "Agent d'exploitation",
-    "direction": "Direction de la Distribution",
+    "direction": "DIRECTION DE LA DISTRIBUTION",
+    "uniteOrganisationnelle": "AGENCE DE DUMBEA",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de cellule guichet",
     "placeOrganigramme": "N - 4 (par rapport au directeur opérationnel)",
-    "relationsFonctionnelles": [
-      "Chef d'agence",
-      "Chef de cellule guichet"
-    ],
+    "relationsFonctionnelles": [],
     "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
+      },
       {
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
         "value": "indemnité de guichet"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Postes à pourvoir",
-        "value": "Susceptible d'être vacant"
       }
-    ],
-    "uniteOrganisationnelle": "DIRECTION DE LA DISTRIBUTION"
+    ]
   },
-  "alternateName": "Chargé de contact clientèle",
+  "alternateName": null,
   "description": "Accueillir et conseiller les clients dans la découverte de l'ensemble des offres et services proposés par l'OPT-NC. Vendre les produits et services adaptés à leur besoin, contribuer à la satisfaction de nos clients.",
-  "disambiguatingDescription": "Poste de Chargé de contact clientèle au sein de l'Agence de Dumbéa et son annexe Panda.",
+  "disambiguatingDescription": null,
   "identifier": "3134-26-0942/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -63,13 +65,11 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui propose des services postaux, financiers et de télécommunications.",
+  "employerOverview": null,
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
-    "name": "DIRECTION DE LA DISTRIBUTION",
-    "url": null,
-    "logo": null
+    "name": "AGENCE DE DUMBEA"
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
@@ -80,9 +80,9 @@
     "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": "Indemnité de guichet",
+  "incentiveCompensation": null,
   "industry": "Service public",
-  "jobBenefits": null,
+  "jobBenefits": "indemnité de guichet",
   "jobDuration": null,
   "jobImmediateStart": false,
   "jobLocation": {
@@ -98,16 +98,18 @@
   },
   "jobLocationType": null,
   "jobStartDate": null,
-  "occupationalCategory": "Commercial et clientèle",
-  "physicalRequirement": "Techniques de gestes et postures",
-  "qualifications": "Permis B",
+  "occupationalCategory": [
+    "Vente et relation client"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "permis B",
   "relevantOccupation": {
     "@type": "Occupation",
     "name": "Chargé de contact clientèle",
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "D1401",
-      "name": "Vente en espace commercial"
+      "name": "Assistanat commercial"
     }
   },
   "responsibilities": [
@@ -120,7 +122,7 @@
     "Garantir des opérations de gestion de caisse en respectant les méthodes de manipulations de fonds et en appliquant strictement les règles y afférentes",
     "Contribuer à la meilleure efficacité collective de l'agence par la capacité à tenir d'autres positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) et conseiller ses collègues"
   ],
-  "salaryCurrency": "XPF",
+  "salaryCurrency": null,
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
@@ -143,5 +145,5 @@
   "title": "Chargé de contact clientèle - Agence Dumbéa et son annexe panda",
   "totalJobOpenings": 1,
   "validThrough": "2026-06-19",
-  "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
+  "workHours": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
 }

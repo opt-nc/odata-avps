@@ -1,34 +1,32 @@
 {
   "additionalType": {
     "corpsDomaine": "Contrôleur",
-    "direction": "Direction de la Distribution",
+    "direction": "DIRECTION DE LA DISTRIBUTION",
+    "uniteOrganisationnelle": "SERVICE SOUTIEN",
     "nbAgentsEncadres": 16,
     "superieurHierarchique": "Chef de section RH et Moyens Humains",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
-      "Réseau d'agences",
       "Chefs d'agence",
       "Managers de zone",
-      "Chef de bureau du soutien SI et pratiques métiers",
-      "Autres chefs de cellule superviseurs"
+      "Chef de bureau du soutien SI et pratiques métiers"
     ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "indemnité hiérarchique de chef de cellule"
+        "name": "Habilitations requises",
+        "value": "permis B"
       },
       {
         "@type": "PropertyValue",
-        "name": "Durée de résidence exigée pour le recrutement sur titre",
-        "value": "Sans objet"
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "indemnité hiérarchique de chef de cellule"
       }
-    ],
-    "uniteOrganisationnelle": "SERVICE SOUTIEN"
+    ]
   },
   "alternateName": "DDI - Chef de cellule Superviseur zone",
-  "description": "Le titulaire du poste assure le contrôle de la disponibilité et de la capacité des effectifs encadrés ainsi que la bonne affectation en soutien et en Hotline en fonction des besoins de renforts et de remplacements émis par le réseau d'agences. Il développe les niveaux de maîtrise des différentes fonctions au sein de son unité, inspire, impose et accompagne les comportements adéquats et assure une proximité physique avec le terrain en soutien des agences.",
-  "disambiguatingDescription": "Poste de Chef de cellule Superviseur zone rattaché à la Direction de la Distribution, Service Soutien, basé à Nouméa.",
+  "description": "Le titulaire du poste assure le pilotage et le contrôle de la disponibilité et de la capacité des effectifs encadrés, ainsi que leur bonne affectation en soutien et en Hotline selon les besoins du réseau d'agences. Il développe les compétences au sein de son unité, accompagne les comportements adéquats et assure un soutien de proximité auprès des agences de sa zone.",
+  "disambiguatingDescription": "Poste de Chef de cellule Superviseur zone au sein de la Direction de la Distribution, Service Soutien, basé à Nouméa.",
   "identifier": "3134-26-0973/SR",
   "name": "Chef de cellule Superviseur zone",
   "owner": {
@@ -39,10 +37,10 @@
   },
   "applicantLocationRequirements": {
     "@type": "Place",
-    "name": "Nouméa/Agglomération",
+    "name": "Immeuble Le Waruna II",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
@@ -55,10 +53,10 @@
   },
   "datePosted": "2026-07-17",
   "educationRequirements": {
-    "credentialCategory": "Contrôleur",
+    "credentialCategory": null,
     "competencyRequired": [
       "Organisation et des processus de l'Office applicables à l'activité relation client/agence",
-      "SI métier (outils informatiques et SI spécifiques à l'activité des équipes de vente",
+      "SI métier (ouitls informatiques et SI spécifiques à l'activité des équipes de vente",
       "Produits et services de l'OPT",
       "Techniques d'animations commerciales et coaching",
       "Techniques de vente (processus de vente : à l'activité relation client, prospection, accueil client, découverte du besoin, présentation produits, négociation, suivi du client...)",
@@ -72,26 +70,30 @@
     "@type": "OrganizationalUnit",
     "name": "SERVICE SOUTIEN"
   },
-  "experienceRequirements": "Expérience en management d'équipe et en animation commerciale/relation client requise.",
+  "experienceRequirements": "Expérience en management d'équipe et en gestion d'activité de relation client ou d'exploitation commerciale.",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
+  "jobBenefits": "indemnité hiérarchique de chef de cellule",
   "jobLocation": {
     "@type": "Place",
     "name": "Immeuble Le Waruna II",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
     }
   },
-  "occupationalCategory": "Commercial et clientèle",
-  "qualifications": "Permis B",
+  "occupationalCategory": [
+    "Vente et relation client",
+    "Pilotage"
+  ],
+  "qualifications": "permis B",
   "relevantOccupation": {
     "@type": "Occupation",
     "name": "Chargé de l’exploitation commerciale",
@@ -102,17 +104,14 @@
     }
   },
   "responsibilities": [
-    "Contrôler la disponibilité/capacité des effectifs encadrés ainsi que la bonne affectation en soutien et en Hotline en fonction des besoins de renforts / remplacements émis par le réseau d'agences",
-    "Développer les niveaux de maîtrise des différentes fonctions au sein de son unité, inspirer, imposer et accompagner les comportements adéquats (prise d'initiative, accueil et conseils client, posture commerciale et entraide mutuelle...)",
-    "Assurer une proximité physique avec le terrain et être en soutien des agences dans leurs projets, besoins d'accompagnements, formations... en fonction de son activité",
     "Contrôler et piloter la bonne compréhension et application par ses équipes de toutes les directives et instructions de travail, guides et procédures ayant attrait soit au métier confié soit aux politiques internes d'amélioration continue et de maîtrise des risques",
-    "Recueillir /collecter l'ensemble des besoins émanant des différentes entités du réseau et pesant sur la disponibilité des effectifs d'exploitation et de soutien",
+    "Recueillir et collecter l'ensemble des besoins émanant des différentes entités du réseau et pesant sur la disponibilité des effectifs d'exploitation et de soutien",
     "En collaboration avec les autres chefs de cellule superviseurs, analyser l'ensemble des informations collectées, proposer le dimensionnement des effectifs attribués au soutien pratiques métiers (hotline) et produire le plan de charge prévisionnel des effectifs en soutien du réseau",
-    "Adapter ce plan de charge aux évènements d'exploitation, dans les meilleurs compromis optimisation/stabilité",
+    "Adapter ce plan de charge aux évènements d'exploitation, dans les meilleurs compromis optimisation et stabilité",
     "Collecter les informations de suivi de la mise en œuvre et tracer, analyser les écarts",
-    "Rendre compte de l'activité couverte sur tous les volets, l'analyser et en proposer à sa hiérarchie les enseignements / recommandations",
-    "Apporter une contribution personnelle sur les sujets d'évolution/transformation/amélioration",
-    "Contribuer à l'analyse de l'activité soutien (soutien pratiques métiers - remplacement...) et proposer les améliorations",
+    "Rendre compte de l'activité couverte sur tous les volets, l'analyser et en proposer à sa hiérarchie les enseignements et recommandations",
+    "Apporter une contribution personnelle sur les sujets d'évolution, transformation et amélioration",
+    "Contribuer à l'analyse de l'activité soutien et proposer les améliorations",
     "Assurer la collecte d'informations auprès des chefs d'agence, des managers de zone et du chef de bureau du soutien SI et pratiques métiers pour la bonne évaluation des collaborateurs",
     "Manager l'équipe : s'approprier, mettre en œuvre et incarner les valeurs, les responsabilités et les pratiques managériales telles que spécifiées dans le référentiel managérial interne",
     "Efficacité collective : au sein d'un collectif superviseur planificateur, contribuer personnellement au bon partage d'informations, collaboration bienveillante et efficace et recherche d'homogénéité des pratiques",
@@ -137,6 +136,6 @@
     "Capacité d'adaptation",
     "Autonomie"
   ],
-  "title": "DDI - Chef de cellule Superviseur zone",
+  "title": "Chef de cellule Superviseur zone",
   "validThrough": "2026-06-26"
 }
