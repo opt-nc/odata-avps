@@ -3,7 +3,7 @@
     "corpsDomaine": "Technicien",
     "direction": "Direction des moyens et de l’immobilier",
     "nbAgentsEncadres": 0,
-    "superieurHierarchique": "Chef de Section Hotline",
+    "superieurHierarchique": "Chef de Section Hotline (Johan BAS)",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [],
     "informationsLibres": [
@@ -19,14 +19,20 @@
       },
       {
         "@type": "PropertyValue",
-        "name": "Unité organisationnelle",
-        "value": "Section Hotline"
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "Néant"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956066.PDF"
       }
-    ]
+    ],
+    "uniteOrganisationnelle": "SECTION HOTLINE"
   },
-  "alternateName": null,
+  "alternateName": "DMI – Technicien Hotline – CPSM",
   "description": "Contribue à la sécurité des systèmes en appliquant les règles de cybersécurité et en traitant les incidents liés aux services sensibles, garantissant ainsi la fiabilité des opérations critiques. Qualifie, oriente et traite les incidents tout en réalisant les demandes de travaux informatiques pour assurer la continuité et la qualité des services.",
-  "disambiguatingDescription": null,
+  "disambiguatingDescription": "Technicien Hotline au sein de la Section Hotline de la Direction des moyens et de l’immobilier.",
   "identifier": "3134-26-0939/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -34,7 +40,8 @@
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -45,29 +52,28 @@
   "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
-    "telephone": "(+687) 267482",
+    "telephone": "+687 267482",
     "email": "DRH-candidature@opt.nc"
   },
   "baseSalary": null,
   "datePosted": "2026-06-19",
-  "directApply": null,
+  "directApply": false,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
-      "Maîtrise des outils d'un outil de gestion de ticket",
+      "Maîtrise des outils d’un outil de gestion de ticket",
       "Grande expérience en micro-informatique",
-      "Solide connaissance des systèmes d'exploitation Microsoft",
+      "Solide connaissance des systèmes d’exploitation Microsoft",
       "Bonne connaissance des logiciels Microsoft (Suite Office)",
       "Connaissances en réseau informatique"
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": null,
+  "employerOverview": "Office des Postes et des Télécommunications de Nouvelle-Calédonie",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc"
+    "@type": "OrganizationalUnit",
+    "name": "SECTION HOTLINE"
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
@@ -75,11 +81,12 @@
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
   "industry": "Télécommunications",
-  "jobBenefits": "Néant",
+  "jobBenefits": null,
   "jobDuration": null,
   "jobImmediateStart": null,
   "jobLocation": {
@@ -88,7 +95,9 @@
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "15 rue Fernand FOREST – Ducos",
-      "addressLocality": "NOUMEA"
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
   "jobLocationType": null,
@@ -98,28 +107,28 @@
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Technicien support utilisateur",
+    "name": "Technicien géologue",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "I1401",
-      "name": "Assistance informatique et maintenance logicielle"
+      "codeValue": "I1304",
+      "name": "Assistance et support technique en informatique"
     }
   },
   "responsibilities": [
     "Qualifier, orienter et assurer le suivi des incidents pour garantir une résolution rapide et efficace",
     "Répondre aux sollicitations des utilisateurs (appels téléphoniques, emails ou tickets de support)",
-    "Traiter et réaliser les demandes de travaux informatiques, en veillant à maintenir et mettre à jour la base de connaissances, afin de faciliter le support et le partage d'informations",
+    "Traiter et réaliser les demandes de travaux informatiques, en veillant à maintenir et mettre à jour la base de connaissances, afin de faciliter le support et le partage d’informations",
     "Contribuer à la mise en œuvre et à la gestion des applications critiques telles que Endpoints Central et les correctifs zéro day",
     "Assurer une veille technologique en informatique et cybersécurité, traiter les attaques et incidents liés à la sécurité informatique",
     "Fournir des instructions claires et concises sur l'utilisation de l'ordinateur et des logiciels, en veillant particulièrement à assister les utilisateurs dans la gestion des problèmes liés aux virus, aux logiciels malveillants et à la sécurité informatique",
     "Collaborer avec d'autres techniciens informatiques pour résoudre les problèmes plus complexes",
     "Rédiger, documenter et actualiser les procédures internes pour assurer la conformité et la cohérence des pratiques",
     "Assurer le service de permanence Hotline le samedi",
-    "Proposer et mettre en œuvre des solutions visant à améliorer la qualité des services, la productivité et l'organisation du service",
+    "Proposer et mettre en œuvre des solutions visant à améliorer la qualité des services, la productivité et l’organisation du service",
     "Participer à des projets de développement informatique pour fournir une assistance technique et aider à la mise en place de nouvelles technologies",
     "Contribuer aux inspections et audits réglementaires",
     "Soutien technique à la hiérarchie dans les domaines qui lui sont confiés",
-    "Conseille sa hiérarchie sur l'organisation et les moyens à mettre en œuvre"
+    "Conseille sa hiérarchie sur l’organisation et les moyens à mettre en œuvre"
   ],
   "salaryCurrency": null,
   "securityClearanceRequirement": null,
@@ -127,21 +136,21 @@
   "skills": [
     "Diagnostiquer et qualifier rapidement les incidents informatiques",
     "Proposer des solutions adaptées",
-    "Capacité d'écoute et de conseil",
+    "Capacité d’écoute et de conseil",
     "Aptitude à la gestion du stress",
     "Appliquer rigoureusement les règles de cybersécurité, y compris les attaques ciblées ou les vulnérabilités critiques",
-    "Capacité à rendre compte de son activité et à prioriser l'urgence",
-    "Gestion de l'urgence, réactivité et rapidité d'exécution",
+    "Capacité à rendre compte de son activité et à prioriser l’urgence",
+    "Gestion de l’urgence, réactivité et rapidité d’exécution",
     "Rigueur et autonomie",
     "Sens des responsabilités",
     "Bonne communication et bon relationnel",
-    "Sens de l'anticipation et prise d'initiative",
+    "Sens de l’anticipation et prise d’initiative",
     "Force de proposition",
-    "Esprit d'analyse et de synthèse"
+    "Esprit d’analyse et de synthèse"
   ],
-  "specialCommitments": null,
+  "specialCommitments": "Assurer le service de permanence Hotline le samedi",
   "title": "Technicien Hotline",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-10",
-  "workHours": "Bureau"
+  "workHours": "Permanence Hotline le samedi"
 }
