@@ -13,27 +13,29 @@
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Unité organisationnelle",
-        "value": "Agence Entreprises"
+        "name": "Habilitations et permis requis",
+        "value": "Permis de conduire B"
       },
       {
         "@type": "PropertyValue",
         "name": "Conditions de travail",
-        "value": "du lundi au samedi en fonction du règlement intérieur"
+        "value": "Du lundi au samedi en fonction du règlement intérieur"
       }
-    ]
+    ],
+    "uniteOrganisationnelle": "CENTRE AGENCE ENTREPRISES"
   },
   "alternateName": "Chargé d'affaires Télécom Entreprises",
   "description": "Garantir une relation de proximité avec les clients en portefeuille (B to B). Écouter, identifier et analyser les besoins émis et proposer des solutions adaptées.",
-  "disambiguatingDescription": "Poste de chargé d'affaires télécom pour l'Agence Entreprises de l'OPT-NC.",
+  "disambiguatingDescription": "Poste de Chargé d'affaires Télécom Entreprises au sein de l'Agence Entreprises de l'OPT-NC.",
   "identifier": "3134-26-0945/SR",
   "image": null,
   "mainEntityOfPage": null,
-  "name": "Chargé d'affaires Télécom Entreprises",
+  "name": "Chargés d'affaires Télécom Entreprises à l'Agence Entreprises",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -41,15 +43,7 @@
   "url": null,
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "applicantLocationRequirements": {
-    "@type": "Place",
-    "name": "Agence Entreprise",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "9 rue Galliéni",
-      "addressLocality": "Nouméa"
-    }
-  },
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "26 77 98",
@@ -72,20 +66,20 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est l'établissement public en charge des services postaux et des télécommunications.",
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "@type": "OrganizationalUnit",
+    "name": "CENTRE AGENCE ENTREPRISES"
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
-  "experienceRequirements": "Expérience requise dans le domaine de la relation commerciale B2B et des télécommunications.",
+  "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
   "industry": "Télécommunications",
@@ -98,7 +92,9 @@
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9 rue Galliéni",
-      "addressLocality": "Nouméa"
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
   "jobLocationType": null,
@@ -128,7 +124,7 @@
     "Garantir la transmission des informations aux assistants commerciaux et veiller à la complétude des dossiers clients",
     "Assurer le reporting de son activité et proposer à sa hiérarchie des axes d'amélioration et recommandations",
     "Veiller à la qualité des données clients dans les systèmes d'information",
-    "Contribuer à la meilleure efficacité collective de l'entité de rattachement par la capacité à tenir d'autres positions, à élever son niveau de pratique, à tutorer, à conseiller ses collègues",
+    "Contribuer à la meilleure efficacité collective de l'entité de rattachement par la capacité à tenir d'autres positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat), à conseiller ses collègues",
     "Assurer la représentation de l'agence entreprises lors des manifestations (salon, forum, etc)",
     "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT (agents)"
   ],
@@ -160,8 +156,8 @@
     "Etre autonome"
   ],
   "specialCommitments": null,
-  "title": "Chargés d’affaires Télécom Entreprises à l’Agence Entreprises",
+  "title": "Chargés d'affaires Télécom Entreprises à l'Agence Entreprises",
   "totalJobOpenings": null,
   "validThrough": "2026-06-19",
-  "workHours": "du lundi au samedi en fonction du règlement intérieur"
+  "workHours": "Du lundi au samedi en fonction du règlement intérieur"
 }
