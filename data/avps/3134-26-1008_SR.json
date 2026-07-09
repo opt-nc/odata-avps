@@ -9,13 +9,8 @@
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Durée de résidence exigée pour le recrutement sur titre",
-        "value": null
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Poste à pourvoir",
-        "value": "Susceptible d'être à pourvoir dans le cadre de la réorganisation"
+        "name": "Habilitations, permis nécessaires pour l'exercice des fonctions",
+        "value": "Permis B"
       },
       {
         "@type": "PropertyValue",
@@ -40,12 +35,12 @@
     ]
   },
   "alternateName": null,
-  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à concevoir, développer et coordonner les partenariats internes et externes de la direction, en appui aux objectifs stratégiques, de performance et d'innovation. Il s'agit également de contribuer à la valorisation des initiatives d'innovation, à la performance du réseau et à la mise en œuvre de projets de collaboration au service du développement commercial et numérique dans une logique de mutualisation des ressources.",
   "disambiguatingDescription": null,
   "identifier": "3134-26-1008/SR",
   "image": null,
   "mainEntityOfPage": null,
-  "name": "Chargé(e) de partenariats",
+  "name": "Chargé(e) de partenariats – Service Expérience client",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
@@ -106,7 +101,7 @@
     "name": "Direction de la poste et des services de proximité",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "streetAddress": null,
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
@@ -114,7 +109,10 @@
   },
   "jobLocationType": null,
   "jobStartDate": null,
-  "occupationalCategory": "Commercial et clientèle",
+  "occupationalCategory": [
+    "Vente et relation client",
+    "Marketing et communication"
+  ],
   "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
@@ -123,7 +121,7 @@
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "M1503",
-      "name": "Conseil en organisation et management d'entreprise"
+      "name": "Management de relation clientèle d'entreprises"
     }
   },
   "responsibilities": [
