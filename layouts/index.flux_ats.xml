@@ -33,7 +33,7 @@
       <city>{{ $city }}</city>
       <country>Nouvelle-Calédonie</country>
 
-      <category>{{ .occupationalCategory | default "Autres métiers" | htmlUnescape }}</category>
+      <category>{{ if and .occupationalCategory (gt (len .occupationalCategory) 0) }}{{ index .occupationalCategory 0 | htmlUnescape }}{{ else }}Autres métiers{{ end }}</category>
 
       <description>{{ "<![CDATA[" | safeHTML }}
         {{ with .description }}
