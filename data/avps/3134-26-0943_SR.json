@@ -7,83 +7,105 @@
     "placeOrganigramme": "N-2 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
       "Communes de la Nouvelle Calédonie",
-      "Équipes techniques",
-      "DDI"
+      "DDI",
+      "Centres et agences"
     ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Habilitations et permis requis",
-        "value": "Permis B + A1 / A2 (2 roues)"
-      },
-      {
-        "@type": "PropertyValue",
         "name": "Conditions de travail",
-        "value": "Déplacements sur l'ensemble du territoire"
+        "value": "Déplacements sur l’ensemble du territoire"
       },
       {
         "@type": "PropertyValue",
-        "name": "Matériel fourni",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
         "value": "Téléphone mobile de service"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "Sans objet"
       }
-    ]
+    ],
+    "uniteOrganisationnelle": "DIRECTION DU POSTAL"
   },
-  "alternateName": "Chargé(e) d'études distribution et adressage",
+  "alternateName": "DPO - CHARGE(E) D'ETUDES DISTRIBUTION ET ADRESSAGE",
   "description": "Le/la Chargé(e) d'études distribution et adressage est chargé(e) d'analyser et d'optimiser les opérations liées à la distribution postale, sur l'ensemble de la Nouvelle Calédonie. Il/elle assure également un appui technique en matière d'adressage auprès des communes de la Nouvelle Calédonie.",
-  "disambiguatingDescription": "Poste de Contrôleur au sein de la Direction du Postal en charge de l'analyse et de l'optimisation de la distribution postale et de l'adressage.",
+  "disambiguatingDescription": "Poste de Contrôleur au sein de la Direction du Postal axé sur l'analyse, l'optimisation de la distribution postale et l'appui technique en adressage.",
   "identifier": "3134-26-0943/SR",
-  "name": "Chargé(e) d'études distribution et adressage",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "DPO - CHARGE(E) D'ETUDES DISTRIBUTION ET ADRESSAGE",
   "owner": {
-    "@type": "GovernmentOrganization",
+    "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "http://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "applicantLocationRequirements": {
-    "@type": "Place",
-    "name": "Immeuble Kling",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "15 rue F. Forest",
-      "addressLocality": "Nouméa"
-    }
-  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "+687 26 81 34",
     "email": "DRH-candidature@opt.nc"
   },
+  "baseSalary": null,
   "datePosted": "2026-07-10",
+  "directApply": false,
   "educationRequirements": {
-    "credentialCategory": null,
+    "credentialCategory": "Non spécifié",
     "competencyRequired": [
-      "Très bonne connaissance de l'organisation et du fonctionnement de l'OPT-NC",
+      "Très bonne connaissance de l’organisation et du fonctionnement de l’OPT-NC",
       "Très bonne connaissance du domaine postal (réglementation) et de ses processus métiers",
-      "Très bonne connaissance du SIG de l'OPT-NC : ESRI",
-      "Connaissance des techniques de communication et d'information",
+      "Très bonne connaissance du SIG de l’OPT-NC : ESRI",
+      "Connaissance des techniques de communication et d’information",
       "Maîtrise de l'outil informatique",
       "Capacités à travailler en équipe"
     ]
   },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'opérateur public historique des services postaux, financiers et de télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
-    "name": "Direction du Postal"
+    "name": "DIRECTION DU POSTAL",
+    "url": null,
+    "logo": null
   },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Non spécifié",
   "hiringOrganization": {
-    "@type": "GovernmentOrganization",
+    "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "http://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
+  "incentiveCompensation": null,
+  "industry": "Poste et logistique",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": true,
   "jobLocation": {
     "@type": "Place",
     "name": "Immeuble Kling",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "15 rue F. Forest",
-      "addressLocality": "Nouméa"
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
   "occupationalCategory": "Poste et logistique",
+  "physicalRequirement": null,
   "qualifications": "Permis B + A1 / A2 (2 roues)",
   "relevantOccupation": {
     "@type": "Occupation",
@@ -91,7 +113,7 @@
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "N1302",
-      "name": "Organisation et pilotage des flux du courrier et des colis"
+      "name": "Organisation et planification des flux logistiques"
     }
   },
   "responsibilities": [
@@ -109,13 +131,16 @@
     "Former le personnel aux nouvelles procédures et veiller à leur adoption",
     "Apporter un soutien technique aux centres et agences",
     "Travailler en collaboration avec les communes à l'amélioration de l'adressage (dénomination et numérotation des voies)",
-    "Rendre compte de l'activité couverte sur tous les volets de son périmètre via des indicateurs, les analyser, proposer à sa hiérarchie des enseignements et recommandations si besoin et assurer un suivi des correctifs mis en place",
-    "Élaborer en collaboration avec le chef de section et la DDI, une planification annuelle des missions à couvrir pour l'année en cours",
+    "Rendre compte de l'activité couverte sur tous les volets de son périmètre via des indicateurs, les analyser, proposer à sa hiérarchie des enseignements ou recommandations si besoin et assurer un suivi des correctifs mis en place",
+    "Élaborer en collaboration avec le chef de section et la DDI, une planification annuelle des missions à couvrir pour l’année en cours",
     "S'inscrire dans une démarche d'amélioration continue en identifiant les opportunités d'optimisation"
   ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
   "skills": [
-    "Appliquer les règles d'hygiène et sécurité en vigueur",
-    "Communiquer efficacement à l'oral et à l'écrit avec des interlocuteurs variés",
+    "Appliquer les règles d’hygiène et sécurité en vigueur",
+    "Communiquer efficacement à l’oral et à l’écrit avec des interlocuteurs variés",
     "Négocier avec des institutions publiques et des entreprises privées",
     "Renseigner et conseiller les clients",
     "Identifier et anticiper les problèmes",
@@ -123,15 +148,17 @@
     "Qualités relationnelles",
     "Diplomatie",
     "Autonomie",
-    "Capacité d'initiative",
+    "Capacité d’initiative",
     "Aptitude au changement",
     "Disponibilité",
-    "Sens de l'anticipation",
-    "Esprit d'analyse",
-    "Sens de l'organisation",
+    "Sens de l’anticipation",
+    "Esprit d’analyse",
+    "Sens de l’organisation",
     "Rigueur"
   ],
-  "specialCommitments": "Déplacements sur l'ensemble du territoire",
-  "title": "Chargé(e) d'études distribution et adressage",
-  "validThrough": "2026-06-19"
+  "specialCommitments": null,
+  "title": "DPO - CHARGE(E) D'ETUDES DISTRIBUTION ET ADRESSAGE",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-06-19",
+  "workHours": "Temps plein"
 }
