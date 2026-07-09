@@ -5,28 +5,27 @@
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de cellule guichet",
     "placeOrganigramme": "N - 4 (par rapport au directeur opérationnel)",
-    "relationsFonctionnelles": [],
+    "relationsFonctionnelles": [
+      "Chef d'agence",
+      "Chef de cellule guichet"
+    ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Conditions de travail",
-        "value": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
-      },
-      {
-        "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Indemnité de guichet"
+        "value": "indemnité de guichet"
       },
       {
         "@type": "PropertyValue",
-        "name": "Contact supplémentaire",
-        "value": "Fonction du supérieur hiérarchique : Chef d'agence"
+        "name": "Postes à pourvoir",
+        "value": "Susceptible d'être vacant"
       }
-    ]
+    ],
+    "uniteOrganisationnelle": "DIRECTION DE LA DISTRIBUTION"
   },
-  "alternateName": null,
+  "alternateName": "Chargé de contact clientèle",
   "description": "Accueillir et conseiller les clients dans la découverte de l'ensemble des offres et services proposés par l'OPT-NC. Vendre les produits et services adaptés à leur besoin, contribuer à la satisfaction de nos clients.",
-  "disambiguatingDescription": null,
+  "disambiguatingDescription": "Poste de Chargé de contact clientèle au sein de l'Agence de Dumbéa et son annexe Panda.",
   "identifier": "3134-26-0942/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -34,7 +33,8 @@
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "http://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -42,15 +42,7 @@
   "url": null,
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "applicantLocationRequirements": {
-    "@type": "Place",
-    "name": "Direction générale",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
-      "addressLocality": "Nouméa"
-    }
-  },
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "41.15.15",
@@ -58,7 +50,7 @@
   },
   "baseSalary": null,
   "datePosted": "2026-07-10",
-  "directApply": null,
+  "directApply": false,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -71,42 +63,50 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": null,
-  "employmentType": null,
-  "employmentUnit": null,
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui propose des services postaux, financiers et de télécommunications.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "DIRECTION DE LA DISTRIBUTION",
+    "url": null,
+    "logo": null
+  },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
   "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "url": "http://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": null,
-  "industry": null,
-  "jobBenefits": "Indemnité de guichet",
+  "incentiveCompensation": "Indemnité de guichet",
+  "industry": "Service public",
+  "jobBenefits": null,
   "jobDuration": null,
-  "jobImmediateStart": null,
+  "jobImmediateStart": false,
   "jobLocation": {
     "@type": "Place",
     "name": "Agence de Dumbéa et son annexe Panda",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": null,
-      "addressLocality": "Dumbéa"
+      "addressLocality": "Dumbéa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
   "jobLocationType": null,
   "jobStartDate": null,
   "occupationalCategory": "Commercial et clientèle",
-  "physicalRequirement": null,
+  "physicalRequirement": "Techniques de gestes et postures",
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
     "name": "Chargé de contact clientèle",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "D1406",
+      "codeValue": "D1401",
       "name": "Vente en espace commercial"
     }
   },
@@ -114,13 +114,13 @@
     "Commercialiser les produits et services de l'OPT-NC, apporter du conseil, contribuer au meilleur accueil et à la satisfaction des clients",
     "Promouvoir les dispositifs de vente multi canal (téléphone, mail, formulaires en ligne ou guichet) et accompagner nos clients dans leur appropriation",
     "Orienter les clients vers des interlocuteurs dédiés en fonction de leurs besoins",
-    "Réaliser les opérations courantes des produits et services de l'OPT-NC (traitement du courrier, colis, gestion des demandes financières, télécoms…)",
-    "Contribuer à l'amélioration de la qualité de nos services (être proactif, force de proposition dans l'organisation, remonter à sa hiérarchie les retours clients…)",
+    "Réaliser les opérations courantes des produits et services de l'OPT-NC (traitement du courrier, colis, gestion des demandes financières, télécoms...)",
+    "Contribuer à l'amélioration de la qualité de nos services (être proactif, force de proposition dans l'organisation, remonter à sa hiérarchie les retours clients...)",
     "Garantir la conformité des opérations dans le respect des règles, process et procédures",
     "Garantir des opérations de gestion de caisse en respectant les méthodes de manipulations de fonds et en appliquant strictement les règles y afférentes",
     "Contribuer à la meilleure efficacité collective de l'agence par la capacité à tenir d'autres positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) et conseiller ses collègues"
   ],
-  "salaryCurrency": null,
+  "salaryCurrency": "XPF",
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
@@ -141,7 +141,7 @@
   ],
   "specialCommitments": null,
   "title": "Chargé de contact clientèle - Agence Dumbéa et son annexe panda",
-  "totalJobOpenings": null,
+  "totalJobOpenings": 1,
   "validThrough": "2026-06-19",
   "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
 }
