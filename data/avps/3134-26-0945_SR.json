@@ -1,7 +1,8 @@
 {
   "additionalType": {
     "corpsDomaine": "Contrôleur",
-    "direction": "Télécom",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "CENTRE AGENCE ENTREPRISES",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de Cellule Développement Clients",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
@@ -13,23 +14,20 @@
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Habilitations et permis requis",
-        "value": "Permis de conduire B"
+        "name": "Conditions de travail",
+        "value": "Du lundi au samedi en fonction du règlement intérieur"
       },
       {
         "@type": "PropertyValue",
-        "name": "Conditions de travail",
-        "value": "Du lundi au samedi en fonction du règlement intérieur"
+        "name": "Postes à pourvoir",
+        "value": "Susceptible d'être à pourvoir"
       }
-    ],
-    "uniteOrganisationnelle": "CENTRE AGENCE ENTREPRISES"
+    ]
   },
   "alternateName": "Chargé d'affaires Télécom Entreprises",
   "description": "Garantir une relation de proximité avec les clients en portefeuille (B to B). Écouter, identifier et analyser les besoins émis et proposer des solutions adaptées.",
-  "disambiguatingDescription": "Poste de Chargé d'affaires Télécom Entreprises au sein de l'Agence Entreprises de l'OPT-NC.",
+  "disambiguatingDescription": "Poste de Chargé d'affaires Télécom Entreprises au sein de l'Agence Entreprises de la Direction des Télécommunications.",
   "identifier": "3134-26-0945/SR",
-  "image": null,
-  "mainEntityOfPage": null,
   "name": "Chargés d'affaires Télécom Entreprises à l'Agence Entreprises",
   "owner": {
     "@type": "Organization",
@@ -37,21 +35,23 @@
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "potentialAction": null,
-  "sameAs": null,
-  "subjectOf": null,
-  "url": null,
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "applicantLocationRequirements": null,
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Agence Entreprise",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 rue Galliéni",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "26 77 98",
     "email": "drh-candidature@opt.nc"
   },
-  "baseSalary": null,
   "datePosted": "2026-07-10",
-  "directApply": false,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -62,30 +62,20 @@
       "Produits et services télécoms commercialisés par l'OPT-NC",
       "Organisation de l'OPT-NC",
       "Processus métiers et interlocuteurs internes",
-      "Techniques de vente (processus de vente : prospection, accueil client, découverte du besoin, présentation produits, négociation, suivi du client)"
+      "Techniques de vente (processus de vente : prospection, accueil client, découverte du besoin, présentation produits, négociation, suivi du client...)"
     ]
   },
-  "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
     "name": "CENTRE AGENCE ENTREPRISES"
   },
-  "estimatedSalary": null,
-  "experienceInPlaceOfEducation": null,
-  "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": null,
-  "industry": "Télécommunications",
-  "jobBenefits": null,
-  "jobDuration": null,
-  "jobImmediateStart": false,
   "jobLocation": {
     "@type": "Place",
     "name": "Agence Entreprise",
@@ -97,10 +87,10 @@
       "addressCountry": "NC"
     }
   },
-  "jobLocationType": null,
-  "jobStartDate": null,
-  "occupationalCategory": "Commercial et clientèle",
-  "physicalRequirement": null,
+  "occupationalCategory": [
+    "Vente et relation client",
+    "Télécommunications"
+  ],
   "qualifications": "Permis de conduire B",
   "relevantOccupation": {
     "@type": "Occupation",
@@ -128,9 +118,6 @@
     "Assurer la représentation de l'agence entreprises lors des manifestations (salon, forum, etc)",
     "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT (agents)"
   ],
-  "salaryCurrency": null,
-  "securityClearanceRequirement": null,
-  "sensoryRequirement": null,
   "skills": [
     "Prospecter une clientèle",
     "Gérer une relation client",
@@ -155,9 +142,7 @@
     "Réactivité",
     "Etre autonome"
   ],
-  "specialCommitments": null,
   "title": "Chargés d'affaires Télécom Entreprises à l'Agence Entreprises",
-  "totalJobOpenings": null,
   "validThrough": "2026-06-19",
   "workHours": "Du lundi au samedi en fonction du règlement intérieur"
 }
