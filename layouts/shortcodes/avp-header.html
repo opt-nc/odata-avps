@@ -3,12 +3,12 @@
   {{- if .Page.Params.families_metier }}
   <div class="families-metier-badges">
     {{- range .Page.Params.families_metier }}
-      {{- $family := . }}
-      {{- $colors := $.Site.Data.families_colors.families }}
-      {{- $color := index $colors $family }}
-      <span class="famille-badge" style="--couleur: {{ $color | default "#999999" }}">
-        {{ $family }}
-      </span>
+    {{- $family := . }}
+    {{- $colors := $.Site.Data.families_colors.families }}
+    {{- $color := index $colors $family }}
+    <span class="famille-badge" style="--couleur: {{ $color | default " #999999" }}">
+      {{ $family }}
+    </span>
     {{- end }}
   </div>
   {{- end }}
@@ -60,10 +60,34 @@
         <th scope="row">Corps / Grade / Domaine d’emploi</th>
         <td>{{ $.Page.Params.corps_grade }}</td>
       </tr>
+      {{- with $.Page.Params.families_metier }}
+      <tr>
+        <th scope="row">Famille(s) de métier</th>
+        <td>
+          {{- $colors := $.Site.Data.families_colors.families }}
+          {{- range . }}
+          <span class="famille-badge" style="--couleur: {{ index $colors . | default "#999999" }}">{{ . }}</span>
+          {{- end }}
+        </td>
+      </tr>
+      {{- end }}
+      {{- with $.Page.Params.code_rome }}
+      <tr>
+        <th scope="row">Code ROME</th>
+        <td><code>{{ . }}</code>{{ with $.Page.Params.libelle_rome }} — {{ . }}{{ end }}</td>
+      </tr>
+      {{- end }}
+      {{- with $.Page.Params.url_fiche_generique }}
       <tr>
         <th scope="row">Fiche emploi RESPNC</th>
-        <td>{{ $.Page.Params.url_fiche_generique }}</td>
+        <td>
+          <a href="{{ $.Page.Params.url_fiche_generique }}" class="avp-pdf-link" target="_blank" rel="noopener"
+            title="Télécharger la fiche officielle - Nouvelle fenêtre">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i> Télécharger la fiche officielle
+          </a>
+        </td>
       </tr>
+      {{- end }}
       <tr>
         <th scope="row">Direction</th>
         <td>{{ $.Page.Params.direction }}</td>
