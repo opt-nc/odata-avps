@@ -1,21 +1,24 @@
 {
   "additionalType": {
     "corpsDomaine": "Cadre technique ou Technicien",
-    "direction": "Direction des moyens et de l’immobilier",
+    "direction": "Direction des moyens et de l'immobilier",
     "nbAgentsEncadres": 9,
     "superieurHierarchique": "Chef de centre",
     "placeOrganigramme": "N-2 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
-      "Entreprises externes",
-      "Clients internes",
-      "Direction des moyens et de l’immobilier",
-      "Chef de centre"
+      "Direction des moyens et de l'immobilier",
+      "Centre parcs, services et maintenances"
     ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
+        "name": "Durée de résidence exigée pour le recrutement sur titre",
+        "value": "Non spécifiée"
+      },
+      {
+        "@type": "PropertyValue",
         "name": "Conditions de travail",
-        "value": "Bureau, visite de chantiers et déplacements sur l’ensemble de la Nouvelle-Calédonie"
+        "value": "Bureau, visite de chantiers et déplacements sur l'ensemble de la Nouvelle-Calédonie"
       },
       {
         "@type": "PropertyValue",
@@ -26,25 +29,21 @@
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
         "value": "Indemnités hiérarchiques de chef de section"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Unité organisationnelle",
-        "value": "Centre parcs, services et maintenances"
       }
     ]
   },
-  "alternateName": "Chef de section services et maintenance - CPSM",
-  "description": "Le chef de section manage, pilote et anime la section et ses équipes dans l’exécution des missions qui lui sont confiées et dans le cadre des délégations définies. Il organise la mise en œuvre et le suivi des actions, alloue les ressources nécessaires pour atteindre les objectifs fixés, pilote et gère les activités.",
-  "disambiguatingDescription": "Gestion de la section services et maintenance au sein du Centre parcs, services et maintenances.",
+  "alternateName": "DMI - Chef de section services et maintenance - CPSM",
+  "description": "Le chef de section manage, pilote et anime la section et ses équipes dans l'exécution des missions qui lui sont confiées et dans le cadre des délégations définies. Il organise la mise en œuvre et le suivi des actions, alloue les ressources nécessaires pour atteindre les objectifs fixés, pilote et gère les activités.",
+  "disambiguatingDescription": "Poste de Chef de section services et maintenance au sein de la Direction des moyens et de l'immobilier de l'OPT-NC.",
   "identifier": "3134-26-0941/SR",
   "image": null,
   "mainEntityOfPage": null,
   "name": "Chef de section services et maintenance",
   "owner": {
     "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -54,16 +53,18 @@
   "@type": "JobPosting",
   "applicantLocationRequirements": {
     "@type": "Place",
-    "name": "Centre parc service et maintenance",
+    "name": "Nouvelle-Calédonie",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "15 rue Fernand FOREST - Ducos",
-      "addressLocality": "Nouméa"
+      "streetAddress": null,
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
   "applicationContact": {
     "@type": "ContactPoint",
-    "telephone": "+687 20 64 01",
+    "telephone": "+687206401",
     "email": "DRH-candidature@opt.nc"
   },
   "baseSalary": null,
@@ -72,10 +73,10 @@
   "educationRequirements": {
     "credentialCategory": "Cadre technique ou Technicien",
     "competencyRequired": [
-      "Maîtriser la réglementation liée aux conventions et aux marchés publics de l’OPT-NC",
-      "Maitriser l’utilisation du système d’information (OTRS, GLPI, Patrimoine immobilier)",
-      "Règles d’entretien et de gestion écoresponsable d’un bâtiment (tri sélectif, économies d’eau, etc)",
-      "Périmètre d’intervention en fonction de ses qualifications et habilitations techniques bâtiment second œuvre prenant en compte les spécialités de chaque corps d’état",
+      "Maîtriser la réglementation liée aux conventions et aux marchés publics de l'OPT-NC",
+      "Maitriser l'utilisation du système d'information (OTRS, GLPI, Patrimoine immobilier)",
+      "Règles d'entretien et de gestion écoresponsable d'un bâtiment (tri sélectif, économies d'eau, etc)",
+      "Périmètre d'intervention en fonction de ses qualifications et habilitations techniques bâtiment second œuvre prenant en compte les spécialités de chaque corps d'état",
       "Réglementation thermique et labels pour le patrimoine bâti existant",
       "Réglementation des ERP, système hydraulique et électrique, système de sécurité incendie et automatisme",
       "Techniques de planification",
@@ -85,20 +86,22 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui recrute pour sa Direction des moyens et de l'immobilier.",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public territorial qui assure des missions de service public postal, financier et de télécommunications.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "@type": "OrganizationalUnit",
+    "name": "Centre parcs, services et maintenances",
+    "url": null,
+    "logo": null
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
-  "experienceRequirements": "Non spécifié",
+  "experienceRequirements": "Expérience confirmée en gestion de maintenance immobilière et en management d'équipe.",
   "hiringOrganization": {
     "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
   "industry": "Service public",
@@ -111,7 +114,9 @@
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "15 rue Fernand FOREST - Ducos",
-      "addressLocality": "Nouméa"
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
   "jobLocationType": null,
@@ -124,30 +129,30 @@
     "name": "Gestionnaire logistique",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "I1201",
-      "name": "Direction d'exploitation de maintenance immobilière"
+      "codeValue": "N1303",
+      "name": "Intervention technique d'exploitation logistique"
     }
   },
   "responsibilities": [
     "Animer, coordonner, mettre en œuvre et superviser les activités de la section",
     "Manager des services",
-    "Superviser, piloter et développer les moyens communs à l’attention des clients internes",
-    "Prendre en charge et mettre à disposition des services de proximité à l’attention des clients internes",
-    "Gérer l’entretien et le pilotage des travaux d’entretien et de maintenance des parcs immobiliers relevant de son périmètre d’activité en recourant à des entreprises externes",
-    "Assurer la gestion courante de l’exploitation de ses services dans le respect des engagements écrits, des plannings et de la qualité attendue",
+    "Superviser, piloter et développer les moyens communs à l'attention des clients internes",
+    "Prendre en charge et mettre à disposition des services de proximité à l'attention des clients internes",
+    "Gérer l'entretien et le pilotage des travaux d'entretien et de maintenance des parcs immobiliers relevant de son périmètre d'activité en recourant à des entreprises externes",
+    "Assurer la gestion courante de l'exploitation de ses services dans le respect des engagements écrits, des plannings et de la qualité attendue",
     "Développer de nouveaux services à destination des clients internes",
     "Assurer la maintenance des parcs immobiliers",
     "Superviser, piloter et développer la maintenance immobilière",
     "Assurer la gestion et le pilotage de la maintenance des parcs immobiliers",
-    "Réaliser les diagnostics et contrôler les équipements relevant de son périmètre d’activité et leurs utilisations",
-    "Assurer les travaux de maintenance et d’entretien courant des équipements et autres éléments immobiliers relevant de son périmètre d’activité",
+    "Réaliser les diagnostics et contrôler les équipements relevant de son périmètre d'activité et leurs utilisations",
+    "Assurer les travaux de maintenance et d'entretien courant des équipements et autres éléments immobiliers relevant de son périmètre d'activité",
     "Assurer le reporting et les actions de communication sur les activités de la section",
-    "Suppléer à l’absence du chef de centre lorsqu’il en reçoit la délégation spécifique",
+    "Suppléer à l'absence du chef de centre lorsqu'il en reçoit la délégation spécifique",
     "Former les nouveaux agents, assurer l'accueil et le suivi des stagiaires et saisonniers",
     "Assurer une entraide au sein de la direction et du centre en cas de situation exceptionnelle et effectuer toute mission particulière confiée par la DMI dans le cadre de ses attributions",
     "Fiabiliser les données techniques liées aux services en maintenant la mise à jour de la base de données"
   ],
-  "salaryCurrency": null,
+  "salaryCurrency": "XPF",
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
@@ -158,27 +163,27 @@
     "Anticiper, préparer les échéances de renouvellement des contrats",
     "Analyser les besoins et les attentes des clients internes OPT ou des prestataires",
     "Savoir hiérarchiser et interpréter les problèmes rencontrés",
-    "Contrôler l’application des normes et techniques de mise en œuvre des maintenances",
-    "Rendre compte auprès de sa hiérarchie (compte rendu d’activité)",
+    "Contrôler l'application des normes et techniques de mise en œuvre des maintenances",
+    "Rendre compte auprès de sa hiérarchie",
     "Animer des réunions",
     "Appréhender les limites de son action",
     "Garantir la satisfaction des clients internes",
     "Analyser des dossiers et synthétiser des problèmes posés",
     "Concevoir et mettre en œuvre des projets",
-    "Capacité d’écoute et de conseil",
+    "Capacité d'écoute et de conseil",
     "Aptitude à la gestion du stress",
     "Discrétion, rigueur et autonomie",
-    "Sens de l’organisation et des responsabilités",
+    "Sens de l'organisation et des responsabilités",
     "Bonne communication et bon relationnel",
-    "Sens de l’anticipation, de la planification et esprit d’initiative",
+    "Sens de l'anticipation, de la planification et esprit d'initiative",
     "Force de proposition",
-    "Capacité de proposition et d’adaptation à des situation complexes",
-    "Vision à moyen et long terme des évolutions utiles de l’organisation opérationnelle",
-    "Esprit d’analyse et de synthèse"
+    "Capacité de proposition et d'adaptation à des situations complexes",
+    "Vision à moyen et long terme des évolutions utiles de l'organisation opérationnelle",
+    "Esprit d'analyse et de synthèse"
   ],
   "specialCommitments": null,
   "title": "Chef de section services et maintenance",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-10",
-  "workHours": "Bureau, visite de chantiers et déplacements sur l’ensemble de la Nouvelle-Calédonie"
+  "workHours": "Horaires de bureau, déplacements fréquents"
 }
