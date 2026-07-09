@@ -6,8 +6,8 @@
     "superieurHierarchique": "Chef de la section SI Télécom",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
-      "Section SI Télécom",
-      "Service Développement et Maintenance"
+      "Service Développement et Maintenance",
+      "Section SI Télécom"
     ],
     "informationsLibres": [
       {
@@ -38,9 +38,9 @@
     ],
     "uniteOrganisationnelle": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
   },
-  "alternateName": "Administrateur d'applications SI Télécom",
-  "description": "Intégré au sein d'une équipe de 8 agents, l'administrateur d'applications définit les procédures d'exploitation, assure les évolutions et la maintenance, et administre les systèmes d'information relevant du périmètre fonctionnel de la section SI Télécom.",
-  "disambiguatingDescription": "Poste d'administrateur d'applications au sein de la section SI Télécom de l'OPT-NC.",
+  "alternateName": "Administrateur d'Applications",
+  "description": "Intégré au sein d'une équipe de 8 agents, l'administrateur d'applications définit les procédures d'exploitation, assure les évolutions et la maintenance, et administre les systèmes d'information relevant du périmètre fonctionnel de la section SI Télécom. La section SI Télécom porte les systèmes d'information télécom de l'OPT.",
+  "disambiguatingDescription": "Administrateur d'applications SI Télécom au sein du Service Développement et Maintenance",
   "identifier": "3134-26-1010/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -49,7 +49,7 @@
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
-    "logo": "https://www.opt.nc/themes/custom/opt/logo.png"
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -59,7 +59,7 @@
   "@type": "JobPosting",
   "applicantLocationRequirements": {
     "@type": "Place",
-    "name": "Siège OPT",
+    "name": "Direction des Systèmes d'Information",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9, rue Gallieni",
@@ -79,15 +79,16 @@
   "educationRequirements": {
     "credentialCategory": "Bac+3",
     "competencyRequired": [
+      "Ingénierie Informatique",
       "Connaissance de l'architecture standard d'un SI Télécom et des infrastructures Télécom",
-      "Connaissance d'outils de gestion collaborative (Sharepoint Confluence) et de suivi des évolutions (JIRA)",
-      "Connaissance des systèmes d'exploitation Linux (RHEL), Unix (AIX)",
-      "Connaissance SQL, Korn Shell, Java souhaitée",
+      "Connaissance d'outils de gestion collaborative Sharepoint Confluence et de suivi des évolutions JIRA",
+      "Connaissance des systèmes d'exploitation Linux RHEL, Unix AIX",
+      "Connaissance SQL, Korn Shell, Java",
       "Anglais technique lu et écrit"
     ]
   },
-  "eligibilityToWorkRequirement": "Durée de résidence minimale exigée en Nouvelle-Calédonie selon le grade d'intégration.",
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications sur le territoire.",
+  "eligibilityToWorkRequirement": "Durée de résidence exigée de 5 à 10 ans selon le grade",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui assure les services postaux, financiers et de télécommunications sur l'ensemble du territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
@@ -95,21 +96,21 @@
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": false,
-  "experienceRequirements": "Au moins 2 ans d'expérience dans une activité similaire.",
+  "experienceRequirements": "2 ans d'expérience dans une activité similaire",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
-    "logo": "https://www.opt.nc/themes/custom/opt/logo.png"
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
   "industry": "Télécommunications",
-  "jobBenefits": null,
+  "jobBenefits": "Possibilité de 2 jours de télétravail par semaine, mise à disposition d'un téléphone mobile de sécurité",
   "jobDuration": null,
-  "jobImmediateStart": false,
+  "jobImmediateStart": true,
   "jobLocation": {
     "@type": "Place",
-    "name": "Direction des Systèmes d'Information",
+    "name": "DSI",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9, rue Gallieni",
@@ -135,7 +136,7 @@
   "responsibilities": [
     "Assurer la disponibilité et le bon fonctionnement des applications",
     "Apporter un support technique et une assistance aux utilisateurs sur les applications dont il a la charge",
-    "Assurer la maintenance évolutive et corrective des applications en lien avec les éditeurs et fournisseurs",
+    "Assurer la maintenance évolutive et corrective des applications en lien avec les éditeurs ou fournisseurs",
     "Superviser et surveiller les applications afin de garantir leur performance et leur stabilité",
     "Rédiger et maintenir à jour la documentation technique ainsi que la base de connaissances associée"
   ],
@@ -161,5 +162,5 @@
   "title": "Administrateur d'applications SI Télécom",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-24",
-  "workHours": "Temps plein"
+  "workHours": "Temps plein avec possibilité de télétravail"
 }
