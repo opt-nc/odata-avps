@@ -1,7 +1,8 @@
 {
   "additionalType": {
     "corpsDomaine": "Cadre d'exploitation ou contrôleur",
-    "direction": "Direction des télécommunications",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "SECTION COMMUNICATION ET DIGITAL",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Cheffe de section communication et digital",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
@@ -18,85 +19,34 @@
       {
         "@type": "PropertyValue",
         "name": "Fourniture ou mise à disposition de matériels, biens ou services",
-        "value": "Non spécifié"
+        "value": "Aucun"
       },
       {
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Non spécifié"
+        "value": "Aucun"
       },
       {
         "@type": "PropertyValue",
         "name": "Fiche d'emploi générique RESPNC",
         "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953468.PDF"
       }
-    ],
-    "uniteOrganisationnelle": "SECTION COMMUNICATION ET DIGITAL"
+    ]
   },
-  "alternateName": "DT – Chargé (e) de communication - SMC",
+  "alternateName": "Chargé (e) de communication - SMC",
   "description": "Intégré(e) à la section Communication et Digital de la Direction des Télécommunications, l'agent participe à la mise en œuvre des actions de communication interne et externe de la direction.",
-  "disambiguatingDescription": "Poste de chargé de communication au sein de la Direction des Télécommunications de l'OPT-NC.",
+  "disambiguatingDescription": "Chargé de communication au sein de la Direction des Télécommunications de l'OPT-NC.",
   "identifier": "3134-26-0944/SR",
-  "image": null,
-  "mainEntityOfPage": null,
-  "name": "Chargé (e) de communication",
+  "name": "Chargé (e) de communication - SMC",
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "potentialAction": null,
-  "sameAs": null,
-  "subjectOf": null,
-  "url": null,
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "applicantLocationRequirements": null,
-  "applicationContact": {
-    "@type": "ContactPoint",
-    "telephone": "26.83.63",
-    "email": "DRH-candidature@opt.nc"
-  },
-  "baseSalary": null,
-  "datePosted": "2026-06-19",
-  "directApply": false,
-  "educationRequirements": {
-    "credentialCategory": "Non spécifié",
-    "competencyRequired": [
-      "Maîtrise des outils bureautiques",
-      "Bonne culture numérique",
-      "Connaissance des réseaux sociaux",
-      "Intérêt pour la communication digitale",
-      "Intérêt pour les outils d'intelligence artificielle"
-    ]
-  },
-  "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'établissement public en charge des services postaux et des télécommunications.",
-  "employmentType": "FULL_TIME",
-  "employmentUnit": {
-    "@type": "OrganizationalUnit",
-    "name": "SECTION COMMUNICATION ET DIGITAL",
-    "url": null,
-    "logo": null
-  },
-  "estimatedSalary": null,
-  "experienceInPlaceOfEducation": null,
-  "experienceRequirements": "Les connaissances spécifiques aux métiers de la communication pourront être acquises dans le cadre d'un accompagnement et de formations internes.",
-  "hiringOrganization": {
-    "@type": "Organization",
-    "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc",
-    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
-  },
-  "incentiveCompensation": null,
-  "industry": "Télécommunications",
-  "jobBenefits": null,
-  "jobDuration": null,
-  "jobImmediateStart": true,
-  "jobLocation": {
+  "applicantLocationRequirements": {
     "@type": "Place",
-    "name": "Direction Générale, Immeuble Waruna, Port Plaisance",
+    "name": "Direction Générale, Immeuble Waruna",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
@@ -105,10 +55,47 @@
       "addressCountry": "NC"
     }
   },
-  "jobLocationType": null,
-  "jobStartDate": "Dès que possible",
-  "occupationalCategory": "Commercial et clientèle",
-  "physicalRequirement": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.83.63",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "datePosted": "2026-06-19",
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Maîtrise des outils bureautiques",
+      "Bonne culture numérique",
+      "Connaissance des réseaux sociaux",
+      "Intérêt pour la communication digitale",
+      "Intérêt pour les outils d'intelligence artificielle"
+    ]
+  },
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SECTION COMMUNICATION ET DIGITAL"
+  },
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction Générale, Immeuble Waruna",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
+  "occupationalCategory": [
+    "Marketing et communication"
+  ],
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
@@ -122,11 +109,11 @@
   "responsibilities": [
     "La rédaction d'articles, de publications et de contenus digitaux",
     "La création et la mise à jour de supports de communication",
-    "L'animation des réseaux sociaux",
+    "L’animation des réseaux sociaux",
     "La couverture de manifestations et d'événements",
     "La réalisation de reportages photo et vidéo",
     "La mise à jour des contenus sur les supports digitaux de la DT",
-    "L'utilisation des outils numériques et d'intelligence artificielle pour la création de contenus",
+    "L’utilisation des outils numériques et d'intelligence artificielle pour la création de contenus",
     "La réalisation d'une veille sur l'actualité des télécommunications, des médias et des tendances digitales",
     "La réalisation de benchmarks afin d'identifier les bonnes pratiques et les innovations en matière de communication",
     "Le suivi administratif et opérationnel des partenariats de communication",
@@ -134,9 +121,6 @@
     "Le suivi et la coordination des actions de communication menées par la direction",
     "La participation à l'évaluation des actions réalisées et à l'amélioration continue des dispositifs de communication"
   ],
-  "salaryCurrency": null,
-  "securityClearanceRequirement": null,
-  "sensoryRequirement": null,
   "skills": [
     "Travailler en équipe",
     "Mener une veille",
@@ -154,9 +138,7 @@
     "Faculté d'adaptation",
     "Empathie"
   ],
-  "specialCommitments": null,
-  "title": "Chargé de communication",
-  "totalJobOpenings": 1,
+  "title": "Chargé (e) de communication",
   "validThrough": "2026-07-10",
-  "workHours": "Du lundi au vendredi"
+  "workHours": "Du lundi au vendredi (horaires habituels de bureau, sauf événements)"
 }
