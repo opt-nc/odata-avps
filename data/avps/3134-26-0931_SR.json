@@ -1,7 +1,8 @@
 {
   "additionalType": {
     "corpsDomaine": "Cadre technique",
-    "direction": "Télécom",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "Centre de Supervision NOC",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de Centre de Supervision NOC (CSNO)",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
@@ -14,18 +15,18 @@
       {
         "@type": "PropertyValue",
         "name": "Durée de résidence exigée pour le recrutement sur titre",
-        "value": "Sans objet"
+        "value": null
       },
       {
         "@type": "PropertyValue",
         "name": "Poste à pourvoir",
-        "value": "Susceptible d'être à pourvoir"
+        "value": "susceptible d'être à pourvoir"
       }
     ]
   },
   "alternateName": "DT - Responsable processus, documentation et communication - CSNOC",
   "description": "Le titulaire du poste participe à la gestion des maintenances ou incidents télécoms au sein du centre de supervision, assure la gouvernance des processus et de la documentation du centre, participe au reporting et suit les plans d'action avec les équipes du contrôle interne de la Direction des Télécoms.",
-  "disambiguatingDescription": "Poste de cadre technique au sein du Centre de Supervision NOC (CSNO) rattaché à la Direction des Télécoms.",
+  "disambiguatingDescription": "Poste de cadre technique au sein du Centre de Supervision NOC de la Direction des Télécoms, axé sur les processus, la documentation et la communication opérationnelle.",
   "identifier": "3134-26-0931/SR",
   "name": "Responsable processus, documentation et communication - CSNOC",
   "owner": {
@@ -52,7 +53,7 @@
   },
   "datePosted": "2026-06-19",
   "educationRequirements": {
-    "credentialCategory": "Cadre technique",
+    "credentialCategory": null,
     "competencyRequired": [
       "Organisation et fonctionnement de l'OPT-NC",
       "Connaissances des réseaux et services télécoms",
@@ -68,7 +69,6 @@
     "@type": "OrganizationalUnit",
     "name": "Centre de Supervision NOC"
   },
-  "experienceRequirements": "Non spécifié",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
@@ -86,34 +86,35 @@
       "addressCountry": "NC"
     }
   },
-  "occupationalCategory": "Télécommunications",
+  "occupationalCategory": [
+    "Télécommunications",
+    "Pilotage"
+  ],
   "qualifications": "Permis de conduire B",
   "relevantOccupation": {
     "@type": "Occupation",
     "name": "Ingénieur des réseaux et services des télécommunications",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "I1402",
-      "name": "Ingénierie et supervision de réseaux de télécommunications"
+      "codeValue": "M1802",
+      "name": "Expertise et support technique en systèmes d'information"
     }
   },
   "responsibilities": [
-    "Centraliser et suivre les maintenances réseaux programmées lors des comités d'interventions programmées (CIP)",
-    "Assurer la communication interne et externe de ces maintenances",
-    "Assurer la coordination avec les équipes métiers et les superviseurs pour l'analyse et la remontée des impacts d'incidents",
-    "Réaliser la communication interne et externe en cas d'incidents sur les réseaux télécoms",
-    "Participer aux retours d'expérience (REX) et assurer le suivi des actions",
-    "Concevoir, formaliser et maintenir les processus et procédures opérationnels du centre en collaboration avec les managers et agents",
+    "Centraliser et suivre les maintenances réseaux programmées lors des comités d'interventions programmées (CIP). Assurer la communication interne/externe de ces maintenances",
+    "Participer à la gestion des incidents en assurant la coordination avec les équipes métiers, les superviseurs, pour l'analyse et la remontée des impacts",
+    "Réaliser la communication interne/externe en cas d'incidents sur les réseaux télécoms",
+    "Participer aux REX et assurer le suivi des actions",
+    "En collaboration avec les managers et agents : concevoir, formaliser et maintenir les processus et procédures opérationnels du centre",
     "Participer au reporting du centre",
     "Être un interlocuteur privilégié pour le suivi des plans d'actions avec les équipes de contrôle interne et de maîtrise du risque de la Direction des Télécoms",
-    "Être garant de la documentation et des référentiels du centre en veillant à la qualité, la cohérence, la mise à jour et l'accessibilité",
-    "Mettre en place des standards documentaires et outils associés",
+    "Être garant de la documentation et des référentiels du centre (qualité, cohérence, mise à jour, accessibilité). Mettre en place des standards documentaires et outils associés",
     "Collaborer sur des projets d'envergures en lien avec la feuille de route du centre",
     "Être dans une dynamique d'amélioration continue de l'activité et de veille technologique par rapport aux solutions de supervision"
   ],
   "skills": [
-    "Excellentes capacités rédactionnelles",
-    "Gestion et structuration de la documentation",
+    "Excellentes capacités rédactionnelles (clarté, synthèse, structuration)",
+    "Gestion et structuration de la documentation (référentiels, procédures)",
     "Formalisation et optimisation de processus",
     "Gestion de la communication en situation critique",
     "Analyse d'incidents et amélioration continue",
