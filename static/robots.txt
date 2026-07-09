@@ -1,0 +1,40 @@
+# Directives de crawl pour tous les robots
+User-agent: *
+Allow: /odata-avps/
+Disallow: /odata-avps/categories/
+Disallow: /odata-avps/tags/
+Disallow: /odata-avps/admin/
+
+# Spécifique Google - optimiser le crawl des jobs
+User-agent: Googlebot-Job
+Allow: /odata-avps/direction-*
+Crawl-delay: 1
+Sitemap: https://opt-nc.github.io/odata-avps/sitemap-index.xml
+
+# Spécifique Google Search
+User-agent: Googlebot
+Allow: /odata-avps/
+Disallow: /odata-avps/categories/
+Disallow: /odata-avps/tags/
+Crawl-delay: 0
+Sitemap: https://opt-nc.github.io/odata-avps/sitemap-index.xml
+
+# Autres bons crawlers
+User-agent: Bingbot
+Allow: /odata-avps/
+Disallow: /odata-avps/categories/
+Disallow: /odata-avps/tags/
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /odata-avps/
+Disallow: /odata-avps/categories/
+Disallow: /odata-avps/tags/
+
+User-agent: DuckDuckBot
+Allow: /odata-avps/
+Disallow: /odata-avps/categories/
+Disallow: /odata-avps/tags/
+
+User-agent: Baiduspider
+Disallow: /odata-avps/
