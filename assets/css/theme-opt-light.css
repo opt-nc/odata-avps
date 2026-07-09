@@ -306,6 +306,44 @@
     margin: 2rem 0;
 }
 
+/* ========================================
+   🎨 CODES COULEUR FAMILLES DE MÉTIER OPT
+   ======================================== */
+
+.avp-header-wrapper {
+    margin-bottom: 2rem;
+}
+
+/* Conteneur des badges multiples */
+.families-metier-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Badge catégorie (scannabilité + contraste WCAG AA) */
+.famille-badge {
+    display: inline-block;
+    background-color: var(--couleur);
+    color: white; /* défaut blanc pour contraste */
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Couleurs claires : texte noir (meilleur contraste) */
+.famille-badge[style*="#FBC109"],
+.famille-badge[style*="#F16B20"],
+.famille-badge[style*="#FFBE98"],
+.famille-badge[style*="#F699D2"],
+.famille-badge[style*="#88B04B"] {
+    color: #000000;
+}
+
 /* Customisation de la bulle d'information (Popup) */
 .avp-map-popup {
     padding: 5px;

@@ -1,0 +1,16 @@
+# Mapping des familles de métier OPT vers leurs couleurs officielles
+# Inclut les 12 catégories officielles + les variantes trouvées dans les données
+families:
+  # Catégories officielles OPT
+  "Vente et relation client": "#7A004B"
+  "Marketing et communication": "#F699D2"
+  "Services bancaires": "#009CAB"
+  "Activités postales": "#FBC109"
+  "Télécommunications": "#FF0005"
+  "Administration": "#007A3F"
+  "Ressources humaines": "#B87BD8"
+  "Finances et Budget": "#F16B20"
+  "Patrimoine Bâti": "#88B04B"
+  "Logistique": "#7FC9CB"
+  "Systèmes d'information": "#0F4C81"
+  "Pilotage": "#FFBE98"

@@ -301,6 +301,44 @@
     margin: 2rem 0;
 }
 
+/* ========================================
+   🎨 CODES COULEUR FAMILLES DE MÉTIER OPT
+   ======================================== */
+
+.avp-header-wrapper {
+    margin-bottom: 2rem;
+}
+
+/* Conteneur des badges multiples */
+.families-metier-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Badge catégorie (scannabilité + contraste WCAG AA) */
+.famille-badge {
+    display: inline-block;
+    background-color: var(--couleur);
+    color: white; /* défaut blanc pour contraste */
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Couleurs claires : texte noir (meilleur contraste) */
+.famille-badge[style*="#FBC109"],
+.famille-badge[style*="#F16B20"],
+.famille-badge[style*="#FFBE98"],
+.famille-badge[style*="#F699D2"],
+.famille-badge[style*="#88B04B"] {
+    color: #000000;
+}
+
 /* Customisation de la bulle d'information (Popup) */
 .avp-map-popup {
     padding: 5px;
@@ -672,4 +710,71 @@ body.slideshow-active #R-body {
     width: 100% !important;         /* 🎯 FORCE le bloc à prendre tout l'écran */
     max-width: 100% !important;     /* 🎯 Supprime le bridage du thème sur PC */
 }
+
+/* ========================================
+   🎨 FAMILLES DE MÉTIER OPT (GRILLE)
+   ======================================== */
+
+.familles-metier-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.famille-card {
+    --couleur: #999999;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--CARD-BG-color);
+    border: 1px solid var(--CARD-BORDER-color);
+    border-left: 5px solid var(--couleur);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.famille-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    border-left-width: 8px;
+}
+
+.famille-numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--couleur);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.famille-contenu {
+    flex: 1;
+    min-width: 0;
+}
+
+.famille-titre {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--couleur);
+    line-height: 1.2;
+}
+
+.famille-count {
+    display: block;
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 0.25rem;
+}
+
 

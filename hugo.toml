@@ -72,23 +72,3 @@ weight = 10
   [[module.mounts]]
     source = "archetypes"
     target = "archetypes"
-
-  # OKF Bundle mounts
-  [[module.mounts]]
-    source = "content/commercial-et-clientele"
-    target = "static/okf/commercial-et-clientele"
-  [[module.mounts]]
-    source = "content/ressources-humaines"
-    target = "static/okf/ressources-humaines"
-  [[module.mounts]]
-    source = "content/poste-et-logistique"
-    target = "static/okf/poste-et-logistique"
-  [[module.mounts]]
-    source = "content/telecommunications"
-    target = "static/okf/telecommunications"
-  [[module.mounts]]
-    source = "content/informatique-et-technologies"
-    target = "static/okf/informatique-et-technologies"
-  [[module.mounts]]
-    source = "content/administration-finance-et-juridique"
-    target = "static/okf/administration-finance-et-juridique"

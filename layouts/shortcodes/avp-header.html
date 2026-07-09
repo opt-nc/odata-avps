@@ -1,5 +1,18 @@
 <div class="avp-header-wrapper">
 
+  {{- if .Page.Params.families_metier }}
+  <div class="families-metier-badges">
+    {{- range .Page.Params.families_metier }}
+      {{- $family := . }}
+      {{- $colors := $.Site.Data.families_colors.families }}
+      {{- $color := index $colors $family }}
+      <span class="famille-badge" style="--couleur: {{ $color | default "#999999" }}">
+        {{ $family }}
+      </span>
+    {{- end }}
+  </div>
+  {{- end }}
+
   <div class="avp-banner-actions">
     <div class="avp-urgency-badge" data-cloture="{{ $.Page.Params.date_cloture }}"></div>
   </div>
