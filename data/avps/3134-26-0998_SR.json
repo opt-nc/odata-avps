@@ -5,23 +5,36 @@
     "nbAgentsEncadres": 30,
     "superieurHierarchique": "Chef de service support métiers",
     "placeOrganigramme": "N - 3 (par rapport au directeur opérationnel)",
-    "relationsFonctionnelles": [],
+    "relationsFonctionnelles": [
+      "Service support métiers",
+      "Direction de la poste et des services de proximité"
+    ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Poste à pourvoir",
-        "value": "Susceptible d’être à pourvoir dans le cadre de la réorganisation"
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": null
       },
       {
         "@type": "PropertyValue",
-        "name": "Régimes indemnitaires",
-        "value": "Indemnités hiérarchiques de chef de section"
+        "name": "Conditions de travail",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Durée de résidence exigée pour le recrutement sur titre",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Poste à pourvoir",
+        "value": "Susceptible d'être à pourvoir dans le cadre de la réorganisation"
       }
     ]
   },
-  "alternateName": null,
-  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste de Chef(fe) de section appui métiers au sein du Service support métiers vise à garantir l’efficacité opérationnelle, la disponibilité et la montée en compétence de son équipe dans les domaines, moyens, logistiques, immobiliers ou organisationnels placés sous sa responsabilité.",
-  "disambiguatingDescription": null,
+  "alternateName": "DPSP – Chef(fe) de section appui métiers – Service support métiers",
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à garantir l'efficacité opérationnelle, la disponibilité et la montée en compétence de son équipe dans les domaines, moyens, logistiques, immobiliers ou organisationnels placés sous sa responsabilité. Il s'agit également de piloter, coordonner et optimiser les activités, les projets et les processus, dans une démarche d'amélioration continue, afin d'assurer la qualité du service rendu et la satisfaction des usagers internes et externes.",
+  "disambiguatingDescription": "Chef(fe) de section appui métiers au sein du Service support métiers de la Direction de la poste et des services de proximité.",
   "identifier": "3134-26-0998/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -46,7 +59,7 @@
   },
   "baseSalary": null,
   "datePosted": "2026-06-26",
-  "directApply": null,
+  "directApply": false,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -61,15 +74,17 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": null,
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "Service support métiers"
+    "@type": "OrganizationalUnit",
+    "name": "Service support métiers",
+    "url": null,
+    "logo": null
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
-  "experienceRequirements": null,
+  "experienceRequirements": "Expérience requise en management d'équipe, pilotage d'activité et gestion de projets logistiques ou immobiliers.",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
@@ -77,10 +92,10 @@
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
-  "industry": null,
+  "industry": "Service public",
   "jobBenefits": "Indemnités hiérarchiques de chef de section",
   "jobDuration": null,
-  "jobImmediateStart": null,
+  "jobImmediateStart": false,
   "jobLocation": {
     "@type": "Place",
     "name": "Direction générale",
@@ -102,8 +117,8 @@
     "name": "Chargé de soutien réseaux de vente",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "D1406",
-      "name": "Management en force de vente"
+      "codeValue": "N1303",
+      "name": "Intervention technique d'exploitation logistique"
     }
   },
   "responsibilities": [
@@ -111,15 +126,15 @@
     "Piloter et suivre les indicateurs d'activités et de performance de sa section",
     "Identifier, proposer et mettre en œuvre toutes actions et évolutions d'organisation permettant d'améliorer le fonctionnement de sa section",
     "Assurer le reporting auprès du chef de service et contribuer au tableau de bord du service",
-    "Superviser et accompagner les projets de développement, d’évolution ou d’optimisation des moyens immobiliers, des logistiques de transports, de distribution et d’adressage",
-    "Mettre en œuvre les outils/dispositifs pour maîtriser et suivre les projets immobiliers et/ou le déploiement d’équipements et d’aménagement en conformité avec la réglementation",
+    "Superviser et accompagner les projets de développement, d'évolution ou d'optimisation des moyens immobiliers, des logistiques de transports, de distribution et d'adressage",
+    "Mettre en œuvre les outils/dispositifs pour maîtriser et suivre les projets immobiliers et/ou le déploiement d'équipements et d'aménagement en conformité avec la réglementation",
     "Contribuer à la planification et à la priorisation des actions selon les ressources disponibles",
-    "Contrôler la cohérence de la planification et de l’affectation des ressources",
-    "Identifier les leviers d’optimisation des organisations",
-    "Promouvoir une culture d’innovation, d’agilité et de performance",
+    "Contrôler la cohérence de la planification et de l'affectation des ressources",
+    "Identifier les leviers d'optimisation des organisations",
+    "Promouvoir une culture d'innovation, d'agilité et de performance",
     "Contribuer à la veille technologique, organisationnelle ou réglementaire"
   ],
-  "salaryCurrency": null,
+  "salaryCurrency": "XPF",
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
@@ -127,7 +142,7 @@
     "Animer un réseau, une communauté",
     "Animer une réunion",
     "Anticiper un risque, une évolution",
-    "Assurer une maîtrise d’ouvrage",
+    "Assurer une maîtrise d'ouvrage",
     "Exploiter une information",
     "Maîtriser les délais",
     "Modéliser un processus",
@@ -135,7 +150,7 @@
     "Travailler en mode projet",
     "Esprit de synthèse",
     "Esprit d'initiative",
-    "Être autonome",
+    "Etre autonome",
     "Sens de l'analyse",
     "Aisance relationnelle",
     "Faculté d'adaptation",
@@ -147,5 +162,5 @@
   "title": "Chef(fe) de section appui métiers",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-17",
-  "workHours": null
+  "workHours": "Temps plein"
 }
