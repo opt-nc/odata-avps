@@ -1,13 +1,13 @@
 {
   "additionalType": {
     "corpsDomaine": "Cadre technique ou ou technicien",
-    "direction": "Direction des télécommunications",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "Service méthodes processus qualité",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de service SMQP",
     "placeOrganigramme": "N-2 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
-      "DSI",
-      "Service méthodes processus qualité"
+      "DSI"
     ],
     "informationsLibres": [
       {
@@ -17,23 +17,28 @@
       },
       {
         "@type": "PropertyValue",
-        "name": "Habilitations, permis nécessaires pour l'exercice des fonctions",
-        "value": "Permis B"
+        "name": "Conditions de travail",
+        "value": null
       },
       {
         "@type": "PropertyValue",
-        "name": "Fiche d'emploi générique RESPNC",
-        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12954564.PDF"
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": null
       }
     ]
   },
-  "alternateName": null,
-  "description": "Piloter l'alignement des SI Télécoms sur les orientations stratégiques et sur les processus métiers. Assurer les activités d'administrateur fonctionnel et transférer/former à cette responsabilité. Contribuer à la performance par la réduction du délai d'implémentation des évolutions du système d'information.",
-  "disambiguatingDescription": null,
+  "alternateName": "Consultant fonctionnel - SMQP",
+  "description": "Piloter l'alignement des SI Télécoms sur les orientations stratégiques et sur les processus métiers. Assurer les activités d'administrateur fonctionnel et transférer/former à cette responsabilité. Contribuer à la performance par la réduction du délai d’implémentation des évolutions du système d’information.",
+  "disambiguatingDescription": "Poste de Consultant fonctionnel au sein du Service méthodes processus qualité de la Direction des télécommunications.",
   "identifier": "3134-26-0946/SR",
   "image": null,
   "mainEntityOfPage": null,
-  "name": "Consultant fonctionnel - SMQP",
+  "name": "DT – Consultant fonctionnel - SMQP",
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
@@ -49,28 +54,28 @@
   "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
-    "telephone": "+687761175",
+    "telephone": "+68776.11.75",
     "email": "DRH-candidature@opt.nc"
   },
   "baseSalary": null,
   "datePosted": "2026-06-19",
-  "directApply": false,
+  "directApply": true,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
-      "Organisation et fonctionnement de l'OPT-NC",
+      "Organisation et fonctionnement de l’OPT-NC",
       "Très bonne connaissance des produits et services télécoms",
       "Très bonne connaissance des différents SI Télécoms",
       "Connaissance des processus métiers",
-      "Maîtrise d'une méthodologie de gestion de projet (PMP, PMI, Prince 2, Agile...)",
+      "Maîtrise d’une méthodologie de gestion de projet (PMP, PMI, Prince 2, Agile…)",
       "Maîtrise des outils de gestion de projets",
       "Maîtrise des outils bureautiques",
       "Bonne connaissance du domaine fonctionnel impacté",
-      "Anglais lu, parlé, écrit"
+      "Anglais : lu, parlé, écrit"
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'opérateur public historique du territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
@@ -102,16 +107,19 @@
     }
   },
   "jobLocationType": null,
-  "jobStartDate": null,
-  "occupationalCategory": "Informatique et technologies",
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": [
+    "Télécommunications",
+    "Systèmes d'information"
+  ],
   "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Consultant emploi/formation",
+    "name": "Consultant fonctionnel",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "K2110",
+      "codeValue": "M1806",
       "name": "Conseil et maîtrise d'ouvrage en systèmes d'information"
     }
   },
@@ -124,7 +132,7 @@
     "Proposer tout moyen/dispositif concourant à la réussite des projets menés et fournir toutes informations permettant les arbitrages",
     "Assurer les activités d'administrateur fonctionnel en phase de RUN de manière temporaire et transférer/former à cette responsabilité",
     "Produire les documents permettant consultation et sous-traitance et assurer le contrôle des prestations sous-traitées",
-    "Participer à l'élaboration et au suivi du budget",
+    "Participer à l’élaboration et au suivi du budget",
     "Définir, alimenter et diffuser les KPI relatifs aux responsabilités définies et aux phases projets (communication)",
     "Contribuer à l'analyse et la maîtrise des risques",
     "Initier/conduire les projets innovants et POC relatifs au périmètre couvert",
@@ -149,14 +157,14 @@
     "Curiosité intellectuelle",
     "Esprit d'analyse",
     "Esprit de synthèse",
-    "Esprit d'équipe",
-    "Esprit d'initiative",
+    "Esprit d’équipe",
+    "Esprit d’initiative",
     "Rigueur",
     "Autonomie",
     "Sens de l'organisation"
   ],
   "specialCommitments": null,
-  "title": "Consultant fonctionnel - SMQP",
+  "title": "DT – Consultant fonctionnel - SMQP",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-10",
   "workHours": null
