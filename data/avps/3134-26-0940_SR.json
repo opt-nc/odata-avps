@@ -5,9 +5,7 @@
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de Cellule exploitation, service et maintenance",
     "placeOrganigramme": "N-4 (par rapport au directeur opérationnel)",
-    "relationsFonctionnelles": [
-      "Cellule exploitation, service et maintenance"
-    ],
+    "relationsFonctionnelles": [],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
@@ -18,20 +16,26 @@
         "@type": "PropertyValue",
         "name": "Fourniture ou mise à disposition de matériels, biens ou services",
         "value": "Equipements de protection individuel (EPI), Habillement, Téléphone de service"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953424.PDF"
       }
     ]
   },
-  "alternateName": "Coordinateur de travaux",
+  "alternateName": null,
   "description": "Assurer la prise en charge, le traitement et le suivi des incidents, des services et des domaines d’activités du parc mobilier et immobilier. Veiller à la bonne exécution, au pilotage et au contrôle des contrats de service et de maintenance du périmètre d’activité confié.",
-  "disambiguatingDescription": "Gestionnaire technique de contrat de service et maintenance au sein de la Cellule exploitation, service et maintenance.",
+  "disambiguatingDescription": null,
   "identifier": "3134-26-0940/SR",
   "image": null,
   "mainEntityOfPage": null,
   "name": "Gestionnaire technique de contrat de service et maintenance - CPSM",
   "owner": {
     "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "name": "Office des Postes et des Télécommunications",
+    "url": "http://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -39,15 +43,7 @@
   "url": null,
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "applicantLocationRequirements": {
-    "@type": "Place",
-    "name": "Nouvelle-Calédonie",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": null,
-      "addressLocality": "Nouméa"
-    }
-  },
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "20 64 10",
@@ -57,7 +53,7 @@
   "datePosted": "2026-06-19",
   "directApply": false,
   "educationRequirements": {
-    "credentialCategory": "Technicien",
+    "credentialCategory": null,
     "competencyRequired": [
       "Prioriser, gérer et hiérarchiser les urgences et les échéances",
       "Porter un diagnostic technique sur le patrimoine bâti, argumenter les propositions techniques et informer des contraintes techniques inhérentes",
@@ -66,38 +62,40 @@
       "Suivre et analyser les indicateurs de pilotage d'activité",
       "Contrôler l’application de la réglementation et des règles internes",
       "Gérer des deniers publics",
-      "Rédiger et s’assurer de s’exprimer clairement",
+      "Rédiger et s’exprimer clairement",
       "Appréhender les limites de son action"
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications.",
+  "employerOverview": null,
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "@type": "OrganizationalUnit",
+    "name": "Cellule exploitation, service et maintenance"
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
-  "experienceRequirements": "Expérience requise dans la gestion de parcs techniques immobiliers et le suivi de contrats de maintenance.",
+  "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
-    "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc"
+    "name": "Office des Postes et des Télécommunications",
+    "url": "http://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
-  "industry": "Télécommunications",
+  "industry": "Service public",
   "jobBenefits": null,
   "jobDuration": null,
-  "jobImmediateStart": false,
+  "jobImmediateStart": null,
   "jobLocation": {
     "@type": "Place",
     "name": "Centre parc service et maintenance",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "15 rue Fernand FOREST - Ducos",
-      "addressLocality": "Nouméa"
+      "streetAddress": "15 rue Fernand FOREST, Ducos",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
     }
   },
   "jobLocationType": null,
@@ -107,10 +105,10 @@
   "qualifications": "Permis B, Habilitation électrique",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Coordinateur de travaux",
+    "name": "Gestionnaire technique topographie et foncier",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "F1201",
+      "codeValue": "I1305",
       "name": "Conduite de travaux du BTP"
     }
   },
@@ -126,7 +124,7 @@
     "Conseiller sa hiérarchie sur l'organisation et les moyens à mettre en œuvre",
     "Apporter le soutien technique à la hiérarchie et participer à l’élaboration et au suivi de l’exécution du budget dans les domaines confiés",
     "Participer à la formation des nouveaux agents ou à l'accueil des stagiaires",
-    "A la demande de sa hiérarchie, assurer une entraide au sein de la section en cas de situation exceptionnelle et effectuer toute mission particulière confiée par la DMI dans le cadre de ses attributions (groupes de travail, études diverses)"
+    "A la demande de sa hiérarchie, assurer une entraide au sein de la section en cas de situation exceptionnelle et effectuer toute mission particulière confiée par la DMI dans le cadre de ses attributions"
   ],
   "salaryCurrency": null,
   "securityClearanceRequirement": null,
@@ -146,8 +144,8 @@
     "Autonomie et esprit d’initiative",
     "Disponibilité, notamment lors des charges de travail importante en période de clôture budgétaire"
   ],
-  "specialCommitments": "Interventions possibles en dehors des heures ouvrées. Disponibilité notamment en décembre et janvier lors de la clôture budgétaire.",
-  "title": "Gestionnaire technique de contrat de service et maintenance - CPSM",
+  "specialCommitments": null,
+  "title": "Gestionnaire technique de contrat de service et maintenance",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-10",
   "workHours": "Interventions possibles en dehors des heures ouvrées"
