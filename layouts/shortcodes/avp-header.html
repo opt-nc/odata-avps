@@ -54,8 +54,18 @@
         <th scope="row">Famille(s) de métier</th>
         <td>
           {{- $colors := $.Site.Data.families_colors.families }}
+          {{- $ref := $.Site.Data.familles_referentiel }}
           {{- range . }}
+          {{- $slug := index $ref.familles . }}
+          {{- if $slug }}
+          <a href="{{ $ref.base_url }}{{ $slug }}/" target="_blank" rel="noopener"
+             title="Voir la famille « {{ . }} » dans le référentiel métiers officiel OPT-NC"
+             style="text-decoration: none;">
+            <span class="famille-badge" style="--couleur: {{ index $colors . | default "#999999" }}">{{ . }}</span>
+          </a>
+          {{- else }}
           <span class="famille-badge" style="--couleur: {{ index $colors . | default "#999999" }}">{{ . }}</span>
+          {{- end }}
           {{- end }}
         </td>
       </tr>
@@ -64,6 +74,22 @@
       <tr>
         <th scope="row">Code ROME</th>
         <td><code>{{ . }}</code>{{ with $.Page.Params.libelle_rome }} — {{ . }}{{ end }}</td>
+      </tr>
+      {{- end }}
+      {{- with $.Page.Params.metier_ref_nom }}
+      <tr>
+        <th scope="row">Métier de référence</th>
+        <td>
+          {{- if $.Page.Params.url_fiche_metier }}
+          <a href="{{ $.Page.Params.url_fiche_metier }}" target="_blank" rel="noopener"
+             title="Voir la fiche métier dans le référentiel officiel OPT-NC - Nouvelle fenêtre"
+             style="display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fas fa-book" aria-hidden="true"></i> {{ $.Page.Params.metier_ref_nom }}
+          </a>
+          {{- else }}
+          {{ $.Page.Params.metier_ref_nom }}
+          {{- end }}
+        </td>
       </tr>
       {{- end }}
       {{- with $.Page.Params.url_fiche_generique }}

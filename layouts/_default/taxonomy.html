@@ -34,9 +34,24 @@
     <h1 style="color: var(--MAIN-TITLES-color); margin-bottom: 0.5rem; font-size: 2rem;">
       <i class="fas fa-tag"></i> Offres associées au critère : {{ .Title }}
     </h1>
-    <p style="font-style: italic; color: var(--MAIN-TEXT-color); opacity: 0.7; margin-bottom: 2.5rem;">
+    <p style="font-style: italic; color: var(--MAIN-TEXT-color); opacity: 0.7; margin-bottom: 1.5rem;">
     {{ len .Pages }} poste(s) disponible(s).
     </p>
+
+    {{/* Si ce tag est une famille de métier, on renvoie vers sa fiche dans le référentiel officiel OPT-NC. */}}
+    {{- $ref := .Site.Data.familles_referentiel }}
+    {{- $term := or (and .Data .Data.Term) .Title }}
+    {{- with index $ref.familles $term }}
+    {{- $couleur := index $.Site.Data.families_colors.families $term | default "#005A9C" }}
+    <p style="margin-bottom: 2.5rem;">
+      <a href="{{ $ref.base_url }}{{ . }}/" target="_blank" rel="noopener"
+         class="avp-referentiel-link"
+         style="display: inline-flex; align-items: center; gap: 8px; padding: 0.6rem 1rem; background-color: {{ $couleur }}; color: #fff; border-radius: 6px; font-weight: bold; text-decoration: none;">
+        <i class="fas fa-book" aria-hidden="true"></i>
+        Découvrir la famille « {{ $term }} » dans le référentiel métiers officiel OPT-NC
+      </a>
+    </p>
+    {{- end }}
 
     {{ partial "avp-cards-list.html" .Pages }}
 

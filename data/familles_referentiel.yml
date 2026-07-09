@@ -1,0 +1,18 @@
+# Correspondance famille de métier (tag AVP) -> slug du référentiel métiers officiel OPT-NC.
+# Le slug n'est PAS dérivable du libellé (ex: "vente_relation_client" sans "et", mais
+# "marketing_et_communication" avec "et") : ce mapping explicite est donc la source de vérité.
+# Page cible : {base_url}{slug}/
+base_url: "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/"
+familles:
+  "Vente et relation client": "vente_relation_client"
+  "Marketing et communication": "marketing_et_communication"
+  "Services bancaires": "services_bancaires"
+  "Activités postales": "activites_postales"
+  "Télécommunications": "telecommunications"
+  "Administration": "administration"
+  "Ressources humaines": "ressources_humaines"
+  "Finances et Budget": "finances_budget"
+  "Patrimoine Bâti": "patrimoine_bati"
+  "Logistique": "logistique"
+  "Systèmes d'information": "systemes_d_information"
+  "Pilotage": "pilotage"
