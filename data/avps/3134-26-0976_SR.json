@@ -1,13 +1,17 @@
 {
   "additionalType": {
     "corpsDomaine": "Ingénieur",
-    "direction": "Direction des Systèmes d'Information",
+    "direction": "DIRECTION DES SYSTEMES D'INFORMATION",
+    "uniteOrganisationnelle": "SERVICE DEVELOPPEMENT ET MAINTENANCE",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de la section SI Télécom",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
       "Service Développement et Maintenance",
-      "Section SI Télécom"
+      "Section SI Télécom",
+      "Maitrise d'ouvrage",
+      "Editeurs",
+      "Intégrateurs"
     ],
     "informationsLibres": [
       {
@@ -30,12 +34,11 @@
         "name": "Régimes indemnitaires rattachés au poste de travail",
         "value": "Sans objet"
       }
-    ],
-    "uniteOrganisationnelle": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
+    ]
   },
   "alternateName": "Concepteur-Développeur d’Applications SI Télécom",
-  "description": "Intégré au sein d’une équipe de 14 agents et prestataires, le concepteur/développeur d’applications participera aux développements logiciels et à la maintenance, d’un ensemble d’applications couvrant le domaine fonctionnel de la section SI Télécom.",
-  "disambiguatingDescription": "Poste de Concepteur-Développeur au sein de la section SI Télécom de la Direction des Systèmes d'Information de l'OPT-NC.",
+  "description": "Intégré au sein d'une équipe de 14 agents et prestataires, le concepteur/développeur d'applications participera aux développements logiciels et à la maintenance, d'un ensemble d'applications couvrant le domaine fonctionnel de la section SI Télécom. La section SI Télécom porte les systèmes d'information télécom de l'OPT.",
+  "disambiguatingDescription": "Poste de Concepteur-Développeur d'applications au sein du Service Développement et Maintenance, Section SI Télécom de la DSI de l'OPT-NC.",
   "identifier": "3134-26-0976/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -43,8 +46,8 @@
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "http://www.opt.nc",
-    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/logo.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -53,7 +56,7 @@
   "@context": "https://schema.org",
   "@type": "JobPosting",
   "applicantLocationRequirements": {
-    "@type": "Place",
+    "@type": "AreaServed",
     "name": "Nouvelle-Calédonie",
     "address": {
       "@type": "PostalAddress",
@@ -74,6 +77,7 @@
   "educationRequirements": {
     "credentialCategory": "Bac+3",
     "competencyRequired": [
+      "BAC+3 minimum en Informatique",
       "Maîtrise des approches agiles",
       "Connaissance des architectures WOA (webservices REST, micro-services...)",
       "Démarche DevOps",
@@ -85,7 +89,7 @@
     ]
   },
   "eligibilityToWorkRequirement": "Durée de résidence exigée pour le recrutement sur titre : ingénieur 1er grade au moins égale à 10 ans, ingénieur 2ème grade au moins égale à 5 ans",
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'employeur public de référence pour les services postaux et de télécommunications sur le territoire.",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'opérateur public historique des télécommunications, du postal et des services financiers en Nouvelle-Calédonie.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
@@ -93,21 +97,21 @@
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": false,
-  "experienceRequirements": "5 ans d’expérience minimum en développement logiciel",
+  "experienceRequirements": "5 ans d'expérience minimum en développement logiciel",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "http://www.opt.nc",
-    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/logo.png"
   },
   "incentiveCompensation": null,
   "industry": "Télécommunications",
-  "jobBenefits": "2 jours de télétravail possibles, Téléphone Mobile de sécurité",
+  "jobBenefits": null,
   "jobDuration": null,
-  "jobImmediateStart": false,
+  "jobImmediateStart": true,
   "jobLocation": {
     "@type": "Place",
-    "name": "DSI",
+    "name": "DSI - Service développement et maintenance",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9, rue Gallieni",
@@ -118,7 +122,9 @@
   },
   "jobLocationType": null,
   "jobStartDate": "Dès que possible",
-  "occupationalCategory": "Informatique et technologies",
+  "occupationalCategory": [
+    "Systèmes d'information"
+  ],
   "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
