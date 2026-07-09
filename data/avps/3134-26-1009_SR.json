@@ -5,8 +5,26 @@
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de section Expérience commerciale",
     "placeOrganigramme": "N - 4 (par rapport au directeur opérationnel)",
-    "relationsFonctionnelles": [],
+    "relationsFonctionnelles": [
+      "Direction de la poste et des services de proximité",
+      "Section expérience commerciale"
+    ],
     "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Durée de résidence exigée pour le recrutement sur titre",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Poste à pourvoir",
+        "value": "Susceptible d'être à pourvoir dans le cadre de la réorganisation"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations, permis nécessaires pour l'exercice des fonctions",
+        "value": "Permis B"
+      },
       {
         "@type": "PropertyValue",
         "name": "Conditions de travail",
@@ -29,17 +47,17 @@
       }
     ]
   },
-  "alternateName": null,
+  "alternateName": "Chargé(e) de l'animation commerciale",
   "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à animer et coordonner les actions commerciales du réseau au service de la performance et de la satisfaction client, contribuer à la mise en œuvre opérationnelle des campagnes marketing et au déploiement de la stratégie commerciale sur le terrain, et participer à l'amélioration de l'expérience client et à la valorisation des offres de l'OPT-NC.",
-  "disambiguatingDescription": null,
+  "disambiguatingDescription": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
   "identifier": "3134-26-1009/SR",
   "image": null,
   "mainEntityOfPage": null,
-  "name": "Chargé(e) de l'animation commerciale",
+  "name": "DPS - Chargé(e) de l'animation commerciale - Section expérience commerciale",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc",
+    "url": "www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
@@ -56,7 +74,7 @@
   },
   "baseSalary": null,
   "datePosted": "2026-07-03",
-  "directApply": null,
+  "directApply": true,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -70,11 +88,13 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": null,
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est l'employeur de référence pour les services postaux et de télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
-    "name": "Section expérience commerciale"
+    "name": "Section expérience commerciale",
+    "url": null,
+    "logo": null
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
@@ -82,20 +102,20 @@
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc",
+    "url": "www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
   "industry": "Service public",
   "jobBenefits": null,
   "jobDuration": null,
-  "jobImmediateStart": null,
+  "jobImmediateStart": false,
   "jobLocation": {
     "@type": "Place",
-    "name": "Nouméa",
+    "name": "Direction de la poste et des services de proximité",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
@@ -127,7 +147,7 @@
     "Participer à la veille concurrentielle et à l'analyse des comportements clients",
     "Promouvoir une culture d'innovation, d'agilité et de performance"
   ],
-  "salaryCurrency": null,
+  "salaryCurrency": "XPF",
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
