@@ -6,31 +6,30 @@
     "superieurHierarchique": "Chef de section RH et Moyens Humains",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
+      "Réseau d'agences",
       "Chefs d'agence",
       "Managers de zone",
       "Chef de bureau du soutien SI et pratiques métiers",
-      "Chefs de cellule superviseurs"
+      "Autres chefs de cellule superviseurs"
     ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Régimes indemnitaires",
-        "value": "Indemnité hiérarchique de chef de cellule"
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "indemnité hiérarchique de chef de cellule"
       },
       {
         "@type": "PropertyValue",
-        "name": "Postes à pourvoir",
-        "value": "Susceptible d'être à pourvoir"
+        "name": "Durée de résidence exigée pour le recrutement sur titre",
+        "value": "Sans objet"
       }
     ],
     "uniteOrganisationnelle": "SERVICE SOUTIEN"
   },
-  "alternateName": null,
-  "description": "DDI - Chef de cellule Superviseur zone au sein de la Direction de la Distribution, Service Soutien. Ce poste consiste à contrôler la disponibilité et la capacité des effectifs encadrés, à développer les niveaux de maîtrise des fonctions au sein de l'unité, et à assurer un soutien de proximité aux agences.",
-  "disambiguatingDescription": null,
+  "alternateName": "DDI - Chef de cellule Superviseur zone",
+  "description": "Le titulaire du poste assure le contrôle de la disponibilité et de la capacité des effectifs encadrés ainsi que la bonne affectation en soutien et en Hotline en fonction des besoins de renforts et de remplacements émis par le réseau d'agences. Il développe les niveaux de maîtrise des différentes fonctions au sein de son unité, inspire, impose et accompagne les comportements adéquats et assure une proximité physique avec le terrain en soutien des agences.",
+  "disambiguatingDescription": "Poste de Chef de cellule Superviseur zone rattaché à la Direction de la Distribution, Service Soutien, basé à Nouméa.",
   "identifier": "3134-26-0973/SR",
-  "image": null,
-  "mainEntityOfPage": null,
   "name": "Chef de cellule Superviseur zone",
   "owner": {
     "@type": "Organization",
@@ -38,86 +37,76 @@
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "potentialAction": null,
-  "sameAs": null,
-  "subjectOf": null,
-  "url": null,
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "applicantLocationRequirements": null,
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Nouméa/Agglomération",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "26 79 60",
     "email": "DRH-candidature@opt.nc"
   },
-  "baseSalary": null,
   "datePosted": "2026-07-17",
-  "directApply": null,
   "educationRequirements": {
-    "credentialCategory": null,
+    "credentialCategory": "Contrôleur",
     "competencyRequired": [
       "Organisation et des processus de l'Office applicables à l'activité relation client/agence",
       "SI métier (outils informatiques et SI spécifiques à l'activité des équipes de vente",
       "Produits et services de l'OPT",
       "Techniques d'animations commerciales et coaching",
-      "Techniques de vente (processus de vente : à l'activité \"relation client\", prospection, accueil client, découverte du besoin, présentation produits, négociation, suivi du client...)",
+      "Techniques de vente (processus de vente : à l'activité relation client, prospection, accueil client, découverte du besoin, présentation produits, négociation, suivi du client...)",
       "Réglementation et des procédures afférentes au domaine d'activité",
       "Techniques de management",
       "Techniques de résolution des conflits"
     ]
   },
-  "eligibilityToWorkRequirement": null,
-  "employerOverview": null,
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
     "name": "SERVICE SOUTIEN"
   },
-  "estimatedSalary": null,
-  "experienceInPlaceOfEducation": null,
-  "experienceRequirements": null,
+  "experienceRequirements": "Expérience en management d'équipe et en animation commerciale/relation client requise.",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": null,
-  "industry": "Télécommunications",
-  "jobBenefits": null,
-  "jobDuration": null,
-  "jobImmediateStart": null,
   "jobLocation": {
     "@type": "Place",
-    "name": "Immeuble « Le Waruna II »",
+    "name": "Immeuble Le Waruna II",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
     }
   },
-  "jobLocationType": null,
-  "jobStartDate": null,
   "occupationalCategory": "Commercial et clientèle",
-  "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
     "name": "Chargé de l’exploitation commerciale",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "D1406",
-      "name": "Management en force de vente"
+      "codeValue": "D1401",
+      "name": "Animation de vente"
     }
   },
   "responsibilities": [
     "Contrôler la disponibilité/capacité des effectifs encadrés ainsi que la bonne affectation en soutien et en Hotline en fonction des besoins de renforts / remplacements émis par le réseau d'agences",
     "Développer les niveaux de maîtrise des différentes fonctions au sein de son unité, inspirer, imposer et accompagner les comportements adéquats (prise d'initiative, accueil et conseils client, posture commerciale et entraide mutuelle...)",
     "Assurer une proximité physique avec le terrain et être en soutien des agences dans leurs projets, besoins d'accompagnements, formations... en fonction de son activité",
-    "Contrôler et piloter la bonne compréhension et application par ses équipes de toutes les directives et instructions de travail, guides et procédures ayant attrait soit au métier confié soit aux politiques internes d'amélioration continue (qualité - santé / sécurité / hygiène - RSE...) et de maîtrise des risques (réglementation, risques ...)",
-    "Recueillir /collecter l'ensemble des besoins émanant des différentes entités du réseau et pesant sur la disponibilité des effectifs d'exploitation et de soutien (absences programmées et non programmées quelles qu'en soient les raisons, demandes de remplacement, demandes de renfort, lancement de nouveaux produits/services, modifications substantielles de conditions de mise en œuvre ...)",
+    "Contrôler et piloter la bonne compréhension et application par ses équipes de toutes les directives et instructions de travail, guides et procédures ayant attrait soit au métier confié soit aux politiques internes d'amélioration continue et de maîtrise des risques",
+    "Recueillir /collecter l'ensemble des besoins émanant des différentes entités du réseau et pesant sur la disponibilité des effectifs d'exploitation et de soutien",
     "En collaboration avec les autres chefs de cellule superviseurs, analyser l'ensemble des informations collectées, proposer le dimensionnement des effectifs attribués au soutien pratiques métiers (hotline) et produire le plan de charge prévisionnel des effectifs en soutien du réseau",
     "Adapter ce plan de charge aux évènements d'exploitation, dans les meilleurs compromis optimisation/stabilité",
     "Collecter les informations de suivi de la mise en œuvre et tracer, analyser les écarts",
@@ -126,12 +115,9 @@
     "Contribuer à l'analyse de l'activité soutien (soutien pratiques métiers - remplacement...) et proposer les améliorations",
     "Assurer la collecte d'informations auprès des chefs d'agence, des managers de zone et du chef de bureau du soutien SI et pratiques métiers pour la bonne évaluation des collaborateurs",
     "Manager l'équipe : s'approprier, mettre en œuvre et incarner les valeurs, les responsabilités et les pratiques managériales telles que spécifiées dans le référentiel managérial interne",
-    "Efficacité collective : au sein d'un collectif \"superviseur planificateur\", contribuer personnellement au bon partage d'informations, collaboration bienveillante et efficace et recherche d'homogénéité des pratiques",
+    "Efficacité collective : au sein d'un collectif superviseur planificateur, contribuer personnellement au bon partage d'informations, collaboration bienveillante et efficace et recherche d'homogénéité des pratiques",
     "S'inscrire dans une démarche de soutien auprès des agences de sa zone en fonction de leurs projets, besoins particuliers organisationnels"
   ],
-  "salaryCurrency": null,
-  "securityClearanceRequirement": null,
-  "sensoryRequirement": null,
   "skills": [
     "Travailler en collaboration avec ses pairs",
     "Contrôler les opérations effectuées",
@@ -151,9 +137,6 @@
     "Capacité d'adaptation",
     "Autonomie"
   ],
-  "specialCommitments": null,
-  "title": "Chef de cellule Superviseur zone",
-  "totalJobOpenings": 1,
-  "validThrough": "2026-06-26",
-  "workHours": null
+  "title": "DDI - Chef de cellule Superviseur zone",
+  "validThrough": "2026-06-26"
 }
