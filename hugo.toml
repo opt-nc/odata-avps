@@ -31,8 +31,13 @@ weight = 10
   baseName = "flux_ats"
   isHTML = false
 
+[outputFormats.sitemap-index]
+  mediaType = "application/xml"
+  baseName = "sitemap-index"
+  isHTML = false
+
 [outputs]
-  home = ['html', 'rss', 'print','markdown','jobs_sitemap','flux_ats']
+  home = ['html', 'rss', 'print','markdown','jobs_sitemap','flux_ats','sitemap-index']
   page = ['html', 'print','markdown']
   section = ['html', 'rss', 'print','markdown']
 
