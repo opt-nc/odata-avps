@@ -7,34 +7,39 @@
     "placeOrganigramme": "N - 4 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
       "Chef de cellule superviseur / planificateur",
-      "Chef d'agence",
+      "Chef d'agence (ou cellule)",
       "Chef de bureau soutien SI et pratiques métiers"
     ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
         "name": "Caractéristiques particulières du poste",
-        "value": "Est sous la responsabilité du chef de cellule superviseur / planificateur mais est placé aussi en affectation sous la responsabilité d'un chef d'agence (ou cellule) et peut l’être aussi sous la responsabilité du chef de bureau soutien SI et pratiques métiers. Itinérance."
+        "value": "Est sous la responsabilité du chef de cellule superviseur / planificateur mais est placé aussi en affectation sous la responsabilité d'un chef d'agence (ou cellule) et peut l'être aussi sous la responsabilité du chef de bureau soutien SI et pratiques métiers. Itinérance."
       },
       {
         "@type": "PropertyValue",
-        "name": "Postes à pourvoir",
-        "value": "Susceptible d’être vacant"
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "indemnité de guichet et indemnité forfaitaire mensuelle d'utilisation de véhicule personnel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12957712.PDF"
       }
     ],
-    "uniteOrganisationnelle": "DIRECTION DE LA DISTRIBUTION"
+    "uniteOrganisationnelle": "SERVICE SOUTIEN"
   },
-  "alternateName": null,
-  "description": "Renforcer les agences en tant que de besoin (renfort, remplacement…) pour la fonction de chef de cellule et chef d’agences Garantir à ce titre, la réalisation effective des opérations intra agence (commercialisation, opérations de guichet, activités administratives, tenue de poste et renfort…), dans les meilleures conditions d'accueil du client, de conformité aux guides et pratiques et de délai de réalisation Assurer le SAV métier (sur affectation)",
-  "disambiguatingDescription": null,
+  "alternateName": "Chargé de contact clientèle",
+  "description": "Renforcer les agences en tant que de besoin (renfort, remplacement…) pour la fonction de chef de cellule et chef d'agences. Garantir à ce titre, la réalisation effective des opérations intra agence (commercialisation, opérations de guichet, activités administratives, tenue de poste et renfort…), dans les meilleures conditions d'accueil du client, de conformité aux guides et pratiques et de délai de réalisation. Assurer le SAV métier (sur affectation).",
+  "disambiguatingDescription": "Contrôleur en soutien et SAV au sein du Service soutien de la Direction de la Distribution.",
   "identifier": "3134-26-0972/SR",
   "image": null,
   "mainEntityOfPage": null,
-  "name": "Contrôleur en soutien et SAV – Service soutien",
+  "name": "DDI - Contrôleur en soutien et SAV – Service soutien",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc",
+    "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
@@ -51,7 +56,7 @@
   },
   "baseSalary": null,
   "datePosted": "2026-07-17",
-  "directApply": null,
+  "directApply": false,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -64,11 +69,11 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": null,
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui propose des services postaux, financiers et de télécommunications.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
-    "@type": "Organization",
-    "name": "DIRECTION DE LA DISTRIBUTION"
+    "@type": "OrganizationalUnit",
+    "name": "SERVICE SOUTIEN"
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
@@ -76,14 +81,14 @@
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc",
+    "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": null,
+  "incentiveCompensation": "Indemnité de guichet et indemnité forfaitaire mensuelle d'utilisation de véhicule personnel",
   "industry": "Service public",
-  "jobBenefits": "Indemnité de guichet et indemnité forfaitaire mensuelle d’utilisation de véhicule personnel",
+  "jobBenefits": null,
   "jobDuration": null,
-  "jobImmediateStart": null,
+  "jobImmediateStart": false,
   "jobLocation": {
     "@type": "Place",
     "name": "Agences de Nouméa et Grand Nouméa et leurs annexes",
@@ -102,11 +107,11 @@
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Chargé de contact clientèle",
+    "name": "Contrôleur de gestion",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "D1401",
-      "name": "Assistance auprès de la clientèle"
+      "codeValue": "K2102",
+      "name": "Accueil et services bancaires"
     }
   },
   "responsibilities": [
@@ -128,27 +133,28 @@
     "Assurer la passation sans moyen supplémentaire",
     "Assurer le SAV métier (sur affectation)"
   ],
-  "salaryCurrency": null,
+  "salaryCurrency": "XPF",
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
     "Appliquer les techniques de vente",
-    "Utiliser les applications informatiques 'métier'",
+    "Utiliser les applications informatiques métier",
     "S'exprimer et communiquer avec aisance",
     "Conseiller et renseigner les clients",
     "Manipuler du numéraire, tenir une caisse",
     "Appliquer les procédures et règlements en vigueur",
     "Faire preuve de maîtrise de soi en toutes circonstances",
-    "Sens de l’accueil et relationnel avec le public et le personnel",
-    "Esprit d'initiative - Aptitude au changement",
+    "Sens de l'accueil et relationnel avec le public et le personnel",
+    "Esprit d'initiative",
+    "Aptitude au changement",
     "Rigueur et méthode",
     "Intégrité et discrétion professionnelle",
     "Esprit d'entreprise",
     "Esprit d'équipe et d'entraide"
   ],
-  "specialCommitments": null,
-  "title": "Contrôleur en soutien et SAV – Service soutien",
+  "specialCommitments": "Itinérance",
+  "title": "DDI - Contrôleur en soutien et SAV",
   "totalJobOpenings": null,
   "validThrough": "2026-06-26",
-  "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence"
+  "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
 }
