@@ -89,7 +89,7 @@
           <a href="{{ $.Page.Params.url_fiche_metier }}" target="_blank" rel="noopener"
              title="Voir la fiche métier dans le référentiel officiel OPT-NC - Nouvelle fenêtre"
              style="display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fas fa-book" aria-hidden="true"></i> {{ $.Page.Params.metier_ref_nom }}
+            <i class="fas fa-book" aria-hidden="true"></i> {{ $.Page.Params.metier_ref_nom }}{{ with $.Page.Params.code_metier_ref }} <code>{{ . }}</code>{{ end }}
           </a>
           {{- else }}
           {{ $.Page.Params.metier_ref_nom }}
