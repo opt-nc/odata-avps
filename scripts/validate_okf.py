@@ -1,99 +1,94 @@
+"""Validateur de conformité OKF (Open Knowledge Format v0.1).
+
+Parcourt TOUTES les fiches JobPosting de content/ (quelle que soit leur organisation
+en dossiers) et vérifie les champs requis par la spécification OKF :
+  - type       = "JobPosting"
+  - timestamp  = ISO 8601 UTC (YYYY-MM-DDTHH:MM:SSZ)
+  - resource   = URI canonique du site
+Recommandés : title, description.
+
+Stdlib uniquement. Code retour non nul si des erreurs sont trouvées (utilisable en CI).
+"""
 import os
 import re
+import sys
 from datetime import datetime
 
-# Chemin du dossier `content` relatif à la racine du dépôt
-# (robuste quel que soit le CWD / la machine / la CI)
-content_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content")
-categories = [
-    "commercial-et-clientele",
-    "ressources-humaines",
-    "poste-et-logistique",
-    "telecommunications",
-    "informatique-et-technologies",
-    "administration-finance-et-juridique"
-]
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CONTENT_DIR = os.path.join(ROOT, "content")
+CANONICAL_PREFIX = "https://opt-nc.github.io/odata-avps/"
 
-def validate_iso8601(timestamp_str):
+
+def validate_iso8601(ts):
     try:
-        # Standard OKF format: YYYY-MM-DDTHH:MM:SSZ
-        datetime.strptime(timestamp_str, "%Y-%m-%dT%H:%M:%SZ")
+        datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ")
         return True
     except ValueError:
         return False
 
-print("🔍 Lancement du validateur de conformité OKF (Open Knowledge Format)...")
+
+def field(frontmatter, name):
+    m = re.search(rf"^{name}:\s*\"?([^\n\"]+)\"?", frontmatter, re.MULTILINE)
+    return m.group(1).strip() if m else None
+
+
+print("🔍 Lancement du validateur de conformité OKF (Open Knowledge Format v0.1)...")
 print("-" * 70)
 
 total_files = 0
 valid_files = 0
 errors = []
 
-for category in categories:
-    cat_dir = os.path.join(content_dir, category)
-    if not os.path.exists(cat_dir):
-        continue
-    
-    for filename in os.listdir(cat_dir):
+for dirpath, _dirs, files in os.walk(CONTENT_DIR):
+    for filename in sorted(files):
         if not filename.endswith(".md") or filename == "_index.md":
             continue
-            
-        total_files += 1
-        file_path = os.path.join(cat_dir, filename)
-        relative_path = os.path.relpath(file_path, content_dir)
-        
+
+        file_path = os.path.join(dirpath, filename)
+        relative_path = os.path.relpath(file_path, CONTENT_DIR)
+
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
-            
+
         parts = content.split("---", 2)
         if len(parts) < 3:
-            errors.append(f"❌ {relative_path} : Structure de fichier invalide (délimiteurs '---' manquants ou mal formés)")
-            continue
-            
+            continue  # pas de front-matter → pas une fiche OKF
         frontmatter = parts[1]
-        
-        # 1. Validation du champ 'type'
-        type_match = re.search(r"^type:\s*\"?([^\n\"]+)\"?", frontmatter, re.MULTILINE)
-        if not type_match:
-            errors.append(f"❌ {relative_path} : Champ 'type' requis manquant")
-            continue
-        type_val = type_match.group(1).strip()
+
+        # On ne valide que les fiches-concepts (JobPosting) ; on ignore les autres pages.
+        type_val = field(frontmatter, "type")
         if type_val != "JobPosting":
-            errors.append(f"⚠️ {relative_path} : Type '{type_val}' non standard (recommandé: 'JobPosting')")
-            
-        # 2. Validation du champ 'timestamp'
-        ts_match = re.search(r"^timestamp:\s*\"?([^\n\"]+)\"?", frontmatter, re.MULTILINE)
-        if not ts_match:
-            errors.append(f"❌ {relative_path} : Champ 'timestamp' requis par la spécification OKF manquant")
             continue
-        ts_val = ts_match.group(1).strip()
+
+        total_files += 1
+
+        # 1. timestamp requis, au format ISO 8601 UTC.
+        ts_val = field(frontmatter, "timestamp")
+        if not ts_val:
+            errors.append(f"❌ {relative_path} : champ 'timestamp' requis manquant")
+            continue
         if not validate_iso8601(ts_val):
-            errors.append(f"❌ {relative_path} : 'timestamp' '{ts_val}' n'est pas au format ISO 8601 UTC (ex: YYYY-MM-DDTHH:MM:SSZ)")
+            errors.append(f"❌ {relative_path} : 'timestamp' '{ts_val}' non conforme ISO 8601 UTC (YYYY-MM-DDTHH:MM:SSZ)")
             continue
-            
-        # 3. Validation du champ 'resource'
-        res_match = re.search(r"^resource:\s*\"?([^\n\"]+)\"?", frontmatter, re.MULTILINE)
-        if not res_match:
-            errors.append(f"❌ {relative_path} : Champ 'resource' (URI canonique) manquant")
+
+        # 2. resource requis, pointant vers le domaine canonique.
+        res_val = field(frontmatter, "resource")
+        if not res_val:
+            errors.append(f"❌ {relative_path} : champ 'resource' (URI canonique) manquant")
             continue
-        res_val = res_match.group(1).strip()
-        if not res_val.startswith("https://opt-nc.github.io/odata-avps/"):
-            errors.append(f"❌ {relative_path} : 'resource' '{res_val}' doit pointer vers le domaine canonique du site")
+        if not res_val.startswith(CANONICAL_PREFIX):
+            errors.append(f"❌ {relative_path} : 'resource' '{res_val}' doit commencer par {CANONICAL_PREFIX}")
             continue
-            
-        # 4. Validation des recommandations (titre et description)
-        title_match = re.search(r"^title:\s*\"?([^\n\"]+)\"?", frontmatter, re.MULTILINE)
-        desc_match = re.search(r"^description:\s*\"?([^\n\"]+)\"?", frontmatter, re.MULTILINE)
-        
+
+        # 3. Recommandations : titre + description.
         warnings = []
-        if not title_match:
+        if not field(frontmatter, "title"):
             warnings.append("titre manquant")
-        if not desc_match:
+        if not field(frontmatter, "description"):
             warnings.append("description manquante")
-            
         if warnings:
-            print(f"⚠️ {relative_path} : OKF valide mais des recommandations manquent ({', '.join(warnings)})")
-        
+            print(f"⚠️ {relative_path} : OKF valide mais recommandations manquantes ({', '.join(warnings)})")
+
         valid_files += 1
 
 print("-" * 70)
@@ -103,8 +98,9 @@ if errors:
         print(err)
     print("-" * 70)
 
-print(f"\n📊 Résultat : {valid_files}/{total_files} fichiers validés avec succès comme conformes OKF.")
-if valid_files == total_files:
-    print("✅ Félicitations ! Votre graphe de connaissances est 100% conforme à la spécification OKF v0.1.")
+print(f"\n📊 Résultat : {valid_files}/{total_files} fiches JobPosting conformes OKF.")
+if total_files and valid_files == total_files:
+    print("✅ Conformité OKF v0.1 : 100%.")
 else:
-    print("❌ Des corrections sont nécessaires pour obtenir une conformité totale.")
+    print("❌ Des corrections sont nécessaires pour une conformité totale.")
+    sys.exit(1)

@@ -15,13 +15,15 @@ GCP [`gcp-avp-cloudfunctions`](../gcp-avp-cloudfunctions). Ce dépôt ne contien
 - **[Hugo](https://gohugo.io/)** (extended) + thème **[relearn](https://github.com/McShelby/hugo-theme-relearn)** (sous-module Git).
 - Déploiement **GitHub Pages** via [`.github/workflows/deploy_site.yaml`](.github/workflows/deploy_site.yaml).
 - Sorties additionnelles : **JSON-LD JobPosting** (Google for Jobs), **flux ATS** (`flux_ats.xml`),
-  **jobs-sitemap** (`jobs-sitemap.xml`) et bundle **OKF** (`static/okf/`).
+  **jobs-sitemap** (`jobs-sitemap.xml`) et bundle **OKF** (Open Knowledge Format v0.1, `static/okf/`) :
+  `index.md` (index humain à plat, facettes en ligne) + `index.jsonl` (export machine, 1 ligne/AVP).
+  Format canonique = les fiches Markdown + front-matter (`type`/`timestamp`/`resource`).
 
 ## 📂 Structure
 
 | Dossier | Rôle |
 |---|---|
-| `content/<famille>/` | Fiches AVP en Markdown (générées) + `_index.md` par famille de métiers |
+| `content/<direction>/` | Fiches AVP en Markdown (générées) + `_index.md` par direction (Pyramide, remontée niveau 4) |
 | `content/mot-drh/` | « Le mot de la DRH » (généré par le consolidateur) |
 | `data/avps/*.json` | Schéma JSON-LD par AVP (source du JSON-LD + des flux) |
 | `layouts/` | Shortcodes (`avp-header`, `avp-map`, `list-avps`), partials SEO, sorties XML |
