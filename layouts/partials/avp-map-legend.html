@@ -1,0 +1,36 @@
+{{- /*
+  Légende cliquable des familles de métier présentes dans un ensemble de pages.
+  Contexte attendu (.) : une collection de pages (ex: $pages, ou (slice .Page)).
+  Chaque entrée = pastille couleur + nom, lien vers les offres de la famille (page de tag).
+  On réutilise le .RelPermalink réel des pages de tag (préfixe /odata-avps/ + accents corrects).
+*/ -}}
+{{- $pages := . }}
+{{- $colors := site.Data.families_colors.families }}
+{{- $tagLinks := dict }}
+{{- with site.GetPage "/tags" }}
+  {{- range .Pages }}
+    {{- $tagLinks = merge $tagLinks (dict (.Title | urlize) .RelPermalink) }}
+  {{- end }}
+{{- end }}
+{{- $familles := slice }}
+{{- range $pages }}
+  {{- range .Params.families_metier }}
+    {{- $familles = $familles | append . }}
+  {{- end }}
+{{- end }}
+{{- $familles = $familles | uniq | sort }}
+{{- if $familles }}
+<div class="avp-map-legend" aria-label="Légende : familles de métier">
+  {{- range $fam := $familles }}
+  {{- $href := index $tagLinks ($fam | urlize) }}
+  {{- $col := index $colors $fam | default "#999999" }}
+  {{- if $href }}
+  <a href="{{ $href }}" class="avp-map-legend__item" title="Voir les offres de la famille « {{ $fam }} »">
+    <span class="avp-map-legend__swatch" style="background: {{ $col }}"></span>{{ $fam }}
+  </a>
+  {{- else }}
+  <span class="avp-map-legend__item"><span class="avp-map-legend__swatch" style="background: {{ $col }}"></span>{{ $fam }}</span>
+  {{- end }}
+  {{- end }}
+</div>
+{{- end }}

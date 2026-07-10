@@ -155,6 +155,8 @@
     </h3>
     <div id="avp-single-map-{{ .Page.Params.ref | urlize }}" class="avp-map-container avp-single-map" role="application"
       aria-label="Carte de localisation du poste"></div>
+    {{/* Légende cliquable des familles de cet AVP (même rendu que les autres cartes). */}}
+    {{ partial "avp-map-legend.html" (slice .Page) }}
   </div>
 
   <script>

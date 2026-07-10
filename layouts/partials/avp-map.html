@@ -17,6 +17,9 @@
 
 <div id="{{ $id }}" class="avp-map-container avp-single-map" role="application" aria-label="Carte des vacances de poste"></div>
 
+{{/* Légende cliquable des familles présentes sur cette carte. */}}
+{{ partial "avp-map-legend.html" $pages }}
+
 <script>
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
