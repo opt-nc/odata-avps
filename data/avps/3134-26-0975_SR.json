@@ -10,13 +10,14 @@
       "Service Développement et Maintenance",
       "Section SI Postal",
       "DSI",
-      "Direction des ressources humaines"
+      "Équipes de la maitrise d'ouvrage",
+      "Éditeurs ou intégrateurs"
     ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
         "name": "Durée de résidence exigée pour le recrutement sur titre",
-        "value": "ingénieur 1er grade : au moins égale à 10 ans ; ingénieur 2ème grade : au moins égale à 5 ans"
+        "value": "Ingénieur 1er grade : au moins égale à 10 ans ; Ingénieur 2ème grade : au moins égale à 5 ans"
       },
       {
         "@type": "PropertyValue",
@@ -31,7 +32,7 @@
       {
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Non spécifié"
+        "value": "Aucun"
       },
       {
         "@type": "PropertyValue",
@@ -42,10 +43,8 @@
   },
   "alternateName": "Concepteur-Développeur d’Applications SI Postal",
   "description": "Intégré au sein d’une équipe de 4 agents, le concepteur/développeur d’applications participera aux développements logiciels et à la maintenance, d’un ensemble d’applications couvrant le domaine fonctionnel de la section SI Postal. La section SI Postal porte les systèmes d’information postal de l’OPT.",
-  "disambiguatingDescription": "Poste de Concepteur-Développeur d'Applications au sein de la section SI Postal de la Direction des Systèmes d'Information.",
+  "disambiguatingDescription": "Poste de Concepteur-Développeur d'Applications SI Postal au sein du Service Développement et Maintenance de la DSI de l'OPT-NC.",
   "identifier": "3134-26-0975/SR",
-  "image": null,
-  "mainEntityOfPage": null,
   "name": "Concepteur-Développeur d’Applications SI Postal",
   "owner": {
     "@type": "Organization",
@@ -53,27 +52,28 @@
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "potentialAction": null,
-  "sameAs": null,
-  "subjectOf": null,
-  "url": null,
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "applicantLocationRequirements": null,
+  "applicantLocationRequirements": {
+    "@type": "Schedule",
+    "name": "Nouvelle-Calédonie",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9, rue Gallieni",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "+687267680",
     "email": "DRH-candidature@opt.nc"
   },
-  "baseSalary": null,
   "datePosted": "2026-06-26",
-  "directApply": false,
   "educationRequirements": {
     "credentialCategory": "Bac+3",
     "competencyRequired": [
-      "Informatique",
       "Maîtrise des approches agiles",
-      "Connaissance des architectures WOA (webservices REST, micro-services…)",
+      "Connaissance des architectures WOA (webservices REST, micro-services)",
       "Démarche DevOps",
       "Conteneurisation des applications (Docker)",
       "Framework SpringBoot, Quarkus /Angular/Ionic",
@@ -82,15 +82,11 @@
       "Gestion documentaire et de projets : Confluence, JIRA"
     ]
   },
-  "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
     "name": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
   },
-  "estimatedSalary": null,
-  "experienceInPlaceOfEducation": null,
   "experienceRequirements": "5 ans d’expérience minimum en développement logiciel",
   "hiringOrganization": {
     "@type": "Organization",
@@ -98,11 +94,7 @@
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": null,
   "industry": "Télécommunications",
-  "jobBenefits": null,
-  "jobDuration": null,
-  "jobImmediateStart": true,
   "jobLocation": {
     "@type": "Place",
     "name": "DSI",
@@ -114,12 +106,9 @@
       "addressCountry": "NC"
     }
   },
-  "jobLocationType": null,
-  "jobStartDate": "Dès que possible",
   "occupationalCategory": [
     "Systèmes d'information"
   ],
-  "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
@@ -147,9 +136,6 @@
     "Participer aux échanges techniques avec les éditeurs ou intégrateurs",
     "Contribuer aux opérations de maintenance évolutive et aux mises à niveau techniques"
   ],
-  "salaryCurrency": "XPF",
-  "securityClearanceRequirement": null,
-  "sensoryRequirement": null,
   "skills": [
     "Conception, développement, industrialisation d’applications",
     "Développement en environnement Linux, développement Web",
@@ -172,9 +158,6 @@
     "Dynamisme, esprit d’initiative",
     "Autonomie"
   ],
-  "specialCommitments": null,
   "title": "Concepteur-Développeur d’Applications SI Postal",
-  "totalJobOpenings": 1,
-  "validThrough": "2026-07-17",
-  "workHours": "Temps plein"
+  "validThrough": "2026-07-17"
 }
