@@ -20,23 +20,24 @@
       {
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Indemnité de guichet et indemnité forfaitaire mensuelle d’utilisation de véhicule personnel"
+        "value": "indemnité de guichet et indemnité forfaitaire mensuelle d’utilisation de véhicule personnel"
       },
       {
         "@type": "PropertyValue",
         "name": "Fiche d'emploi générique RESPNC",
-        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956102.PDF"
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953468.PDF"
       }
     ]
   },
   "alternateName": "DDI - Contrôleur en soutien et SAV – Service soutien",
-  "description": "Renforcer les agences en tant que de besoin (renfort, remplacement…) pour la fonction de chef de cellule et chef d’agences. Garantir à ce titre, la réalisation effective des opérations intra agence (commercialisation, opérations de guichet, activités administratives, tenue de poste et renfort…), dans les meilleures conditions d'accueil du client, de conformité aux guides et pratiques et de délai de réalisation. Assurer le SAV métier (sur affectation).",
+  "description": "Renforcer les agences en tant que de besoin (renfort, remplacement…) pour la fonction de chef de cellule et chef d’agences Garantir à ce titre, la réalisation effective des opérations intra agence (commercialisation, opérations de guichet, activités administratives, tenue de poste et renfort…), dans les meilleures conditions d'accueil du client, de conformité aux guides et pratiques et de délai de réalisation Assurer le SAV métier (sur affectation)",
+  "disambiguatingDescription": "Contrôleur en soutien et SAV au sein de la Direction de la Distribution",
   "identifier": "3134-26-0972/SR",
-  "name": "Contrôleur en soutien et SAV",
+  "name": "DDI - Contrôleur en soutien et SAV – Service soutien",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc",
+    "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "applicantLocationRequirements": {
@@ -75,10 +76,10 @@
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "https://www.opt.nc",
+    "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "jobBenefits": "Indemnité de guichet et indemnité forfaitaire mensuelle d’utilisation de véhicule personnel",
+  "jobBenefits": "indemnité de guichet et indemnité forfaitaire mensuelle d’utilisation de véhicule personnel",
   "jobLocation": {
     "@type": "Place",
     "name": "Agences de Nouméa et Grand Nouméa et leurs annexes",
@@ -100,7 +101,7 @@
     "name": "Chargé de contact clientèle",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "I1306",
+      "codeValue": "K1403",
       "name": "Accueil et services bancaires"
     },
     "code_metier": "OP005",
@@ -143,5 +144,6 @@
   ],
   "title": "Contrôleur en soutien et SAV",
   "validThrough": "2026-06-26",
-  "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence"
+  "workHours": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence",
+  "dossier": "ddi"
 }
