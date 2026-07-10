@@ -8,10 +8,7 @@
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
       "Service Développement et Maintenance",
-      "Section SI Télécom",
-      "Maitrise d'ouvrage",
-      "Editeurs",
-      "Intégrateurs"
+      "Section SI Télécom"
     ],
     "informationsLibres": [
       {
@@ -21,18 +18,18 @@
       },
       {
         "@type": "PropertyValue",
+        "name": "Habilitations et permis nécessaires",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
         "name": "Conditions de travail",
         "value": "2 jours de télétravail possibles"
       },
       {
         "@type": "PropertyValue",
-        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "name": "Fourniture ou mise à disposition de matériels",
         "value": "Téléphone Mobile de sécurité"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": null
       },
       {
         "@type": "PropertyValue",
@@ -43,7 +40,7 @@
   },
   "alternateName": "Concepteur-Développeur d’Applications SI Télécom",
   "description": "Intégré au sein d’une équipe de 14 agents et prestataires, le concepteur/développeur d’applications participera aux développements logiciels et à la maintenance, d’un ensemble d’applications couvrant le domaine fonctionnel de la section SI Télécom. La section SI Télécom porte les systèmes d’information télécom de l’OPT. Elle intervient notamment sur le système d’information de gestion de la téléphonie mobile, le système d’information de gestion de la téléphonie fixe, des applications complémentaires développées par l’OPT-NC pour répondre à des besoins spécifiques, notamment l’application mobile de gestion des forfaits clients, l’application de gestion des interventions sur le terrain, et plusieurs référentiels de données de l’Office.",
-  "disambiguatingDescription": "Poste de Concepteur-Développeur d'Applications SI Télécom au sein du Service Développement et Maintenance de la DSI de l'OPT-NC.",
+  "disambiguatingDescription": "Poste de Concepteur-Développeur d'Applications SI Télécom au sein de la Direction des Systèmes d'Information de l'OPT.",
   "identifier": "3134-26-0976/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -51,7 +48,7 @@
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc",
+    "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
@@ -61,11 +58,11 @@
   "@context": "https://schema.org",
   "@type": "JobPosting",
   "applicantLocationRequirements": {
-    "@type": "AreaServed",
-    "name": "Nouvelle-Calédonie",
+    "@type": "Schedule",
+    "name": "Direction des Systèmes d'Information",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": null,
+      "streetAddress": "9, rue Gallieni",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
@@ -78,7 +75,7 @@
   },
   "baseSalary": null,
   "datePosted": "2026-06-26",
-  "directApply": false,
+  "directApply": true,
   "educationRequirements": {
     "credentialCategory": "Bac+3",
     "competencyRequired": [
@@ -93,19 +90,19 @@
     ]
   },
   "eligibilityToWorkRequirement": "Durée de résidence exigée pour le recrutement sur titre : ingénieur 1er grade au moins égale à 10 ans, ingénieur 2ème grade au moins égale à 5 ans",
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'établissement public en charge des services postaux, financiers et des télécommunications sur le territoire.",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'employeur public de référence pour les activités postales, financières et de télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
     "name": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
   },
   "estimatedSalary": null,
-  "experienceInPlaceOfEducation": null,
+  "experienceInPlaceOfEducation": false,
   "experienceRequirements": "5 ans d’expérience minimum en développement logiciel",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "https://www.opt.nc",
+    "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
@@ -127,8 +124,7 @@
   "jobLocationType": null,
   "jobStartDate": "Dès que possible",
   "occupationalCategory": [
-    "Systèmes d'information",
-    "Télécommunications"
+    "Systèmes d'information"
   ],
   "physicalRequirement": null,
   "qualifications": "Permis B",
@@ -179,5 +175,6 @@
   "title": "Concepteur-Développeur d’Applications SI Télécom",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-17",
-  "workHours": "Temps plein"
+  "workHours": "Temps plein",
+  "dossier": "dsi"
 }
