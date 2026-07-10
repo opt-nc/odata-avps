@@ -26,14 +26,16 @@
       {
         "@type": "PropertyValue",
         "name": "Fiche d'emploi générique RESPNC",
-        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953424.PDF"
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955522.PDF"
       }
     ]
   },
-  "alternateName": "Coordinateur de travaux",
+  "alternateName": "DMI - Gestionnaire technique de contrat de service et maintenance - CPSM",
   "description": "Assurer la prise en charge, le traitement et le suivi des incidents, des services et des domaines d'activités du parc mobilier et immobilier. Veiller à la bonne exécution, au pilotage et au contrôle des contrats de service et de maintenance du périmètre d'activité confié.",
   "disambiguatingDescription": "Gestionnaire technique de contrat de service et maintenance au sein de la Cellule exploitation, service et maintenance.",
   "identifier": "3134-26-0940/SR",
+  "image": null,
+  "mainEntityOfPage": null,
   "name": "Gestionnaire technique de contrat de service et maintenance - CPSM",
   "owner": {
     "@type": "Organization",
@@ -41,6 +43,12 @@
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
   "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
@@ -65,7 +73,7 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "Office des Postes et des Télécommunications de Nouvelle-Calédonie",
+  "employerOverview": null,
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
@@ -99,17 +107,18 @@
   "jobLocationType": null,
   "jobStartDate": null,
   "occupationalCategory": [
-    "Patrimoine Bâti"
+    "Patrimoine Bâti",
+    "Logistique"
   ],
   "physicalRequirement": null,
   "qualifications": "Permis B, Habilitation électrique",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Gestionnaire technique topographie et foncier",
+    "name": "Coordinateur de travaux",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "I1305",
-      "name": "Conduite de travaux du bâtiment et des travaux publics"
+      "codeValue": "K2104",
+      "name": "Conduite de travaux du BTP"
     }
   },
   "responsibilities": [
@@ -144,8 +153,8 @@
     "Autonomie et esprit d'initiative",
     "Disponibilité, notamment lors des charges de travail importante en période de clôture budgétaire"
   ],
-  "specialCommitments": "Interventions possibles en dehors des heures ouvrées, disponibilité en décembre et janvier pour clôture budgétaire",
-  "title": "Gestionnaire technique de contrat de service et maintenance",
+  "specialCommitments": "Interventions possibles en dehors des heures ouvrées. Disponibilité notamment en décembre et janvier.",
+  "title": "Gestionnaire technique de contrat de service et maintenance - CPSM",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-10",
   "workHours": "Interventions possibles en dehors des heures ouvrées"
