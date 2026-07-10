@@ -15,20 +15,24 @@
       {
         "@type": "PropertyValue",
         "name": "Caractéristiques particulières du poste",
-        "value": "Est sous la responsabilité du chef de cellule superviseur / planificateur mais est placé aussi en affectation sous la responsabilité d'un chef d'agence (ou cellule) et peut l'être aussi sous la responsabilité du chef de bureau soutien SI et pratiques métiers. Itinérance."
+        "value": "Est sous la responsabilité du chef de cellule superviseur / planificateur mais est placé aussi en affectation sous la responsabilité d'un chef d'agence (ou cellule) et peut l’être aussi sous la responsabilité du chef de bureau soutien SI et pratiques métiers. Itinérance."
       },
       {
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Indemnité de guichet et indemnité forfaitaire mensuelle d'utilisation de véhicule personnel"
+        "value": "Indemnité de guichet et indemnité forfaitaire mensuelle d’utilisation de véhicule personnel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956102.PDF"
       }
     ]
   },
   "alternateName": "DDI - Contrôleur en soutien et SAV – Service soutien",
-  "description": "Renforcer les agences en tant que de besoin (renfort, remplacement…) pour la fonction de chef de cellule et chef d'agences. Garantir à ce titre, la réalisation effective des opérations intra agence (commercialisation, opérations de guichet, activités administratives, tenue de poste et renfort…), dans les meilleures conditions d'accueil du client, de conformité aux guides et pratiques et de délai de réalisation. Assurer le SAV métier (sur affectation).",
-  "disambiguatingDescription": "Poste de contrôleur en soutien et SAV itinérant sur les agences de Nouméa et du Grand Nouméa.",
+  "description": "Renforcer les agences en tant que de besoin (renfort, remplacement…) pour la fonction de chef de cellule et chef d’agences. Garantir à ce titre, la réalisation effective des opérations intra agence (commercialisation, opérations de guichet, activités administratives, tenue de poste et renfort…), dans les meilleures conditions d'accueil du client, de conformité aux guides et pratiques et de délai de réalisation. Assurer le SAV métier (sur affectation).",
   "identifier": "3134-26-0972/SR",
-  "name": "DDI - Contrôleur en soutien et SAV – Service soutien",
+  "name": "Contrôleur en soutien et SAV",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
@@ -40,6 +44,7 @@
     "name": "Agences de Nouméa et Grand Nouméa et leurs annexes",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": null,
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
@@ -52,7 +57,7 @@
   },
   "datePosted": "2026-07-17",
   "educationRequirements": {
-    "credentialCategory": "Non spécifié",
+    "credentialCategory": null,
     "competencyRequired": [
       "Offre et réglementation des produits et services commercialisés par l'OPT-NC",
       "Organisation et fonctionnement de l'OPT-NC",
@@ -73,11 +78,13 @@
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
+  "jobBenefits": "Indemnité de guichet et indemnité forfaitaire mensuelle d’utilisation de véhicule personnel",
   "jobLocation": {
     "@type": "Place",
     "name": "Agences de Nouméa et Grand Nouméa et leurs annexes",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": null,
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
@@ -93,9 +100,11 @@
     "name": "Chargé de contact clientèle",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "C1201",
+      "codeValue": "I1306",
       "name": "Accueil et services bancaires"
-    }
+    },
+    "code_metier": "OP005",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op005/"
   },
   "responsibilities": [
     "Organiser, contrôler et suivre l'activité des guichets et/ou du service arrière",
@@ -124,7 +133,7 @@
     "Manipuler du numéraire, tenir une caisse",
     "Appliquer les procédures et règlements en vigueur",
     "Faire preuve de maîtrise de soi en toutes circonstances",
-    "Sens de l'accueil et relationnel avec le public et le personnel",
+    "Sens de l’accueil et relationnel avec le public et le personnel",
     "Esprit d'initiative",
     "Aptitude au changement",
     "Rigueur et méthode",
@@ -132,7 +141,7 @@
     "Esprit d'entreprise",
     "Esprit d'équipe et d'entraide"
   ],
-  "title": "DDI - Contrôleur en soutien et SAV – Service soutien",
+  "title": "Contrôleur en soutien et SAV",
   "validThrough": "2026-06-26",
-  "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
+  "workHours": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence"
 }
