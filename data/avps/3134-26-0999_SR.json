@@ -12,49 +12,59 @@
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Habilitations requises",
+        "name": "Habilitations, permis nécessaires pour l'exercice des fonctions",
         "value": "Permis B"
       },
       {
         "@type": "PropertyValue",
-        "name": "Régimes indemnitaires",
+        "name": "Conditions de travail",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
         "value": "indemnités hiérarchiques chef de section"
       },
       {
         "@type": "PropertyValue",
         "name": "Fiche d'emploi générique RESPNC",
-        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953272.PDF"
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953312.PDF"
       }
     ]
   },
-  "alternateName": "DPS – Chef(fe) de section Applications et pratiques métiers – Service support métiers",
-  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le titulaire garantit l'efficacité opérationnelle, la disponibilité et la montée en compétence de son équipe dans les domaines techniques, fonctionnels ou organisationnels placés sous sa responsabilité. Il pilote, coordonne et optimise les activités, les projets et les processus, dans une démarche d'amélioration continue, afin d'assurer la qualité du service rendu et la satisfaction des usagers internes et externes.",
-  "disambiguatingDescription": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
+  "alternateName": "Chef(fe) de section Applications et pratiques métiers",
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à garantir l'efficacité opérationnelle, la disponibilité et la montée en compétence de son équipe, ainsi qu'à piloter, coordonner et optimiser les activités, les projets et les processus dans une démarche d'amélioration continue.",
+  "disambiguatingDescription": "Avis de vacance de poste lié à la réorganisation de la Direction de la Poste et des services de proximité.",
   "identifier": "3134-26-0999/SR",
-  "name": "Chef(fe) de section Applications et pratiques métiers",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "DPS – Chef(fe) de section Applications et pratiques métiers – Service support métiers",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
     "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "applicantLocationRequirements": {
-    "@type": "Schedule",
-    "name": "Direction générale",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 rue Montchovet, Port Plaisance",
-      "addressLocality": "Nouméa",
-      "addressRegion": "Province Sud",
-      "addressCountry": "NC"
-    }
-  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "26.79.28",
     "email": "drh-candidature@opt.nc"
   },
+  "baseSalary": null,
   "datePosted": "2026-06-26",
+  "directApply": false,
   "educationRequirements": {
     "credentialCategory": null,
     "competencyRequired": [
@@ -68,40 +78,52 @@
       "Techniques d'animation/Expression orale"
     ]
   },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie est l'employeur de référence pour ce poste.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
     "name": "Service support métiers"
   },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
     "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": "indemnités hiérarchiques chef de section",
+  "jobDuration": null,
+  "jobImmediateStart": false,
   "jobLocation": {
     "@type": "Place",
     "name": "Direction de la poste et des services de proximité",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": null,
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
     }
   },
+  "jobLocationType": null,
+  "jobStartDate": null,
   "occupationalCategory": [
-    "Vente et relation client",
     "Activités postales",
     "Pilotage"
   ],
+  "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
     "name": "Chargé de soutien réseaux de vente",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "M1503",
+      "codeValue": "K2503",
       "name": "Conseil en organisation et management d'entreprise"
     },
     "code_metier": "OP001",
@@ -122,6 +144,9 @@
     "Promouvoir une culture d'innovation, d'agilité et de performance",
     "Contribuer à la veille technologique, organisationnelle ou réglementaire"
   ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
   "skills": [
     "Analyser un besoin",
     "Animer un réseau, une communauté",
@@ -143,6 +168,10 @@
     "Sens de l'organisation",
     "Sens des responsabilités"
   ],
-  "title": "Chef(fe) de section Applications et pratiques métiers",
-  "validThrough": "2026-07-17"
+  "specialCommitments": null,
+  "title": "Chef(fe) de section Applications et pratiques métiers – Service support métiers",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-17",
+  "workHours": null,
+  "dossier": "ddi"
 }
