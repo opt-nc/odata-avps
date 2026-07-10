@@ -1,0 +1,153 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Agent d'exploitation",
+    "direction": "DIRECTION DE LA DISTRIBUTION",
+    "uniteOrganisationnelle": "AGENCE DE WE LIFOU",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de cellule",
+    "placeOrganigramme": "N-4 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956102.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Accueillir et conseiller les clients dans la découverte de l'ensemble des offres et services proposés par l'OPT-NC. Vendre les produits et services adaptés à leur besoin, contribuer à la satisfaction de nos clients.",
+  "disambiguatingDescription": "Une opportunité à saisir dans un environnement stimulant et en constante évolution au sein de l'agence de Lifou.",
+  "identifier": "3134-26-1049/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chargé de contact clientèle - Agence de Lifou",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "+687 20 62 81",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-07-10",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Offre et réglementation des produits et services commercialisés par l'OPT-NC",
+      "Organisation et fonctionnement de l'OPT-NC",
+      "Techniques de vente",
+      "Outils de bureautique, applications informatiques et logiciels de guichet",
+      "Techniques de gestes et postures",
+      "Règles d'hygiène et sécurité"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "AGENCE DE WE LIFOU"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": "indemnité de guichet",
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Agence de WÉ – Lifou et ses annexes de Chepenehe et Mhou",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Lifou",
+      "addressRegion": "Province des Îles Loyauté",
+      "addressCountry": "NC"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Vente et relation client",
+    "Activités postales"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé de contact clientèle",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Accueil et services bancaires"
+    },
+    "code_metier": "OP005",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op005/"
+  },
+  "responsibilities": [
+    "Commercialiser les produits et services de l'OPT-NC, apporter du conseil, contribuer au meilleur accueil et à la satisfaction des clients",
+    "Promouvoir les dispositifs de vente multi canal (téléphone, mail, formulaires en ligne ou guichet) et accompagner nos clients dans leur appropriation",
+    "Orienter les clients vers des interlocuteurs dédiés en fonction de leurs besoins",
+    "Réaliser les opérations courantes des produits et services de l'OPT-NC (traitement du courrier, colis, gestion des demandes financières, télécoms...)",
+    "Contribuer à l'amélioration de la qualité de nos services (être pro actif, force de proposition dans l'organisation, remonter à sa hiérarchie les retours clients...)",
+    "Garantir la conformité des opérations dans le respect des règles, process et procédures",
+    "Garantir des opérations de gestion de caisse en respectant les méthodes de manipulations de fonds et en appliquant strictement les règles y afférentes",
+    "Contribuer à la meilleure efficacité collective de l'agence par la capacité à tenir d'autres positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) et conseiller ses collègues",
+    "Assurer les tournées de poste mobile selon le planning de l'agence"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Gérer une relation client",
+    "Communiquer",
+    "Accueillir une personne, un groupe, du public",
+    "Mettre en œuvre une règle, une norme, une procédure, un protocole",
+    "Gérer une situation de crise, d'urgence ou dangereuse",
+    "Manipuler du numéraire, tenir une caisse",
+    "Sens du service public et de l'intérêt général",
+    "Respect des règles de déontologie",
+    "Aisance relationnelle",
+    "Esprit d'initiative",
+    "Faculté d'adaptation",
+    "Rigueur et organisation",
+    "Esprit d'équipe",
+    "Maîtrise de soi"
+  ],
+  "specialCommitments": null,
+  "title": "Chargé de contact clientèle - Agence de Lifou",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-31",
+  "workHours": "horaires de travail du lundi au samedi"
+}
