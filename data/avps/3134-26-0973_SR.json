@@ -15,13 +15,13 @@
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "indemnité hiérarchique de chef de cellule"
+        "name": "Habilitations et permis requis",
+        "value": "permis B"
       },
       {
         "@type": "PropertyValue",
-        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
-        "value": null
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "indemnité hiérarchique de chef de cellule"
       },
       {
         "@type": "PropertyValue",
@@ -31,38 +31,38 @@
     ]
   },
   "alternateName": "DDI - Chef de cellule Superviseur zone",
-  "description": "Le titulaire du poste assure le contrôle de la disponibilité et de la capacité des effectifs encadrés ainsi que leur bonne affectation en soutien et en Hotline. Il développe les niveaux de maîtrise des différentes fonctions au sein de son unité, accompagne les comportements adéquats et assure une proximité physique avec le terrain en soutien des agences.",
-  "disambiguatingDescription": "Chef de cellule Superviseur zone au sein du Service Soutien de la Direction de la Distribution.",
+  "description": "Le titulaire du poste assure le pilotage et le contrôle de la disponibilité et de la capacité des effectifs encadrés, ainsi que leur bonne affectation en soutien et en Hotline selon les besoins du réseau d'agences. Il développe les compétences au sein de son unité, accompagne les comportements adéquats et assure un soutien de proximité auprès des agences de sa zone.",
+  "disambiguatingDescription": "Chef de cellule superviseur de zone pour l'agglomération de Nouméa, rattaché au Service Soutien de la Direction de la Distribution.",
   "identifier": "3134-26-0973/SR",
-  "image": null,
-  "mainEntityOfPage": null,
-  "name": "Chef de cellule Superviseur zone",
+  "name": "Chef de cellule Superviseur zone Nouméa/Agglomération",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "potentialAction": null,
-  "sameAs": null,
-  "subjectOf": null,
-  "url": null,
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "applicantLocationRequirements": null,
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Immeuble Le Waruna II",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC"
+    }
+  },
   "applicationContact": {
     "@type": "ContactPoint",
     "telephone": "26 79 60",
     "email": "DRH-candidature@opt.nc"
   },
-  "baseSalary": null,
   "datePosted": "2026-07-17",
-  "directApply": false,
   "educationRequirements": {
-    "credentialCategory": "Contrôleur",
+    "credentialCategory": null,
     "competencyRequired": [
       "Organisation et des processus de l'Office applicables à l'activité relation client/agence",
-      "SI métier (ouitls informatiques et SI spécifiques à l'activité des équipes de vente",
+      "SI métier (outils informatiques et SI spécifiques à l'activité des équipes de vente",
       "Produits et services de l'OPT",
       "Techniques d'animations commerciales et coaching",
       "Techniques de vente (processus de vente : à l'activité relation client, prospection, accueil client, découverte du besoin, présentation produits, négociation, suivi du client...)",
@@ -71,27 +71,19 @@
       "Techniques de résolution des conflits"
     ]
   },
-  "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
     "name": "SERVICE SOUTIEN"
   },
-  "estimatedSalary": null,
-  "experienceInPlaceOfEducation": null,
-  "experienceRequirements": "Expérience requise dans le management d'équipe et la gestion de la relation client ou de l'exploitation commerciale.",
+  "experienceRequirements": "Expérience requise en management d'équipe et en animation commerciale ou relation client.",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "incentiveCompensation": "Indemnité hiérarchique de chef de cellule",
-  "industry": "Télécommunications",
-  "jobBenefits": null,
-  "jobDuration": null,
-  "jobImmediateStart": false,
+  "jobBenefits": "Indemnité hiérarchique de chef de cellule",
   "jobLocation": {
     "@type": "Place",
     "name": "Immeuble Le Waruna II",
@@ -103,13 +95,10 @@
       "addressCountry": "NC"
     }
   },
-  "jobLocationType": null,
-  "jobStartDate": null,
   "occupationalCategory": [
     "Vente et relation client",
     "Pilotage"
   ],
-  "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
@@ -117,7 +106,7 @@
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "I1306",
-      "name": "Conduite d'enquêtes"
+      "name": "Guidage d'équipe de la relation client"
     },
     "code_metier": "OP004",
     "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op004/"
@@ -126,8 +115,8 @@
     "Contrôler la disponibilité/capacité des effectifs encadrés ainsi que la bonne affectation en soutien et en Hotline en fonction des besoins de renforts / remplacements émis par le réseau d'agences",
     "Développer les niveaux de maîtrise des différentes fonctions au sein de son unité, inspirer, imposer et accompagner les comportements adéquats (prise d'initiative, accueil et conseils client, posture commerciale et entraide mutuelle...)",
     "Assurer une proximité physique avec le terrain et être en soutien des agences dans leurs projets, besoins d'accompagnements, formations... en fonction de son activité",
-    "Contrôler et piloter la bonne compréhension et application par ses équipes de toutes les directives et instructions de travail, guides et procédures ayant attrait soit au métier confié soit aux politiques internes d'amélioration continue (qualité - santé / sécurité / hygiène - RSE...) et de maîtrise des risques (réglementation, risques ...)",
-    "Recueillir /collecter l'ensemble des besoins émanant des différentes entités du réseau et pesant sur la disponibilité des effectifs d'exploitation et de soutien (absences programmées et non programmées quelles qu'en soient les raisons, demandes de remplacement, demandes de renfort, lancement de nouveaux produits/services, modifications substantielles de conditions de mise en œuvre ...)",
+    "Contrôler et piloter la bonne compréhension et application par ses équipes de toutes les directives et instructions de travail, guides et procédures ayant attrait soit au métier confié soit aux politiques internes d'amélioration continue et de maîtrise des risques",
+    "Recueillir /collecter l'ensemble des besoins émanant des différentes entités du réseau et pesant sur la disponibilité des effectifs d'exploitation et de soutien",
     "En collaboration avec les autres chefs de cellule superviseurs, analyser l'ensemble des informations collectées, proposer le dimensionnement des effectifs attribués au soutien pratiques métiers (hotline) et produire le plan de charge prévisionnel des effectifs en soutien du réseau",
     "Adapter ce plan de charge aux évènements d'exploitation, dans les meilleurs compromis optimisation/stabilité",
     "Collecter les informations de suivi de la mise en œuvre et tracer, analyser les écarts",
@@ -139,9 +128,6 @@
     "Efficacité collective : au sein d'un collectif superviseur planificateur, contribuer personnellement au bon partage d'informations, collaboration bienveillante et efficace et recherche d'homogénéité des pratiques",
     "S'inscrire dans une démarche de soutien auprès des agences de sa zone en fonction de leurs projets, besoins particuliers organisationnels"
   ],
-  "salaryCurrency": "XPF",
-  "securityClearanceRequirement": null,
-  "sensoryRequirement": null,
   "skills": [
     "Travailler en collaboration avec ses pairs",
     "Contrôler les opérations effectuées",
@@ -161,9 +147,7 @@
     "Capacité d'adaptation",
     "Autonomie"
   ],
-  "specialCommitments": null,
-  "title": "Chef de cellule Superviseur zone",
-  "totalJobOpenings": 1,
+  "title": "Chef de cellule Superviseur zone Nouméa/Agglomération",
   "validThrough": "2026-06-26",
-  "workHours": "Temps plein"
+  "dossier": "ddi"
 }
