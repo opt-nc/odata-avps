@@ -1,6 +1,6 @@
 {
   "additionalType": {
-    "corpsDomaine": "Cadre d'exploitation ou Contrôleur",
+    "corpsDomaine": "Cadre d'exploitation",
     "direction": "DIRECTION DE LA DISTRIBUTION",
     "uniteOrganisationnelle": "Service Expérience client",
     "nbAgentsEncadres": 0,
@@ -35,17 +35,17 @@
       }
     ]
   },
-  "alternateName": null,
+  "alternateName": "Chargé(e) de partenariats",
   "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à concevoir, développer et coordonner les partenariats internes et externes de la direction, en appui aux objectifs stratégiques, de performance et d'innovation. Il contribue également à la valorisation des initiatives d'innovation, à la performance du réseau et à la mise en œuvre de projets de collaboration au service du développement commercial et numérique dans une logique de mutualisation des ressources.",
-  "disambiguatingDescription": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
+  "disambiguatingDescription": "Avis de vacance de poste lié à la réorganisation de la Direction de la Poste et des services de proximité.",
   "identifier": "3134-26-1008/SR",
   "image": null,
   "mainEntityOfPage": null,
-  "name": "Chargé(e) de partenariats",
+  "name": "DPS - Chargé(e) de partenariats - Service Expérience client",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "http://www.opt.nc",
+    "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
@@ -77,7 +77,7 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "Office des postes et télécommunications de Nouvelle-Calédonie",
+  "employerOverview": "Office des postes et télécommunications de Nouvelle-Calédonie.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
@@ -89,7 +89,7 @@
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "http://www.opt.nc",
+    "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
@@ -122,7 +122,7 @@
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "I1306",
-      "name": "Marketing"
+      "name": "Conseil en organisation et management d'entreprise"
     },
     "code_metier": "OP002",
     "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op002/"
@@ -134,7 +134,7 @@
     "Participer à la conception et au déploiement de projets d'innovation et de développement liés aux partenariats",
     "Valoriser les partenariats et produire le reporting d'activité auprès de la hiérarchie et des directions associées"
   ],
-  "salaryCurrency": null,
+  "salaryCurrency": "XPF",
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
@@ -154,8 +154,9 @@
     "Curiosité intellectuelle"
   ],
   "specialCommitments": null,
-  "title": "Chargé(e) de partenariats",
+  "title": "Chargé(e) de partenariats - Service Expérience client",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-24",
-  "workHours": null
+  "workHours": null,
+  "dossier": "ddi"
 }
