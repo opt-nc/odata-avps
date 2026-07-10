@@ -11,23 +11,28 @@
       {
         "@type": "PropertyValue",
         "name": "Habilitations requises",
-        "value": "permis B"
+        "value": "Permis B"
       },
       {
         "@type": "PropertyValue",
         "name": "Conditions de travail",
-        "value": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
+        "value": "Horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
       },
       {
         "@type": "PropertyValue",
-        "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "indemnité de guichet"
+        "name": "Régimes indemnitaires",
+        "value": "Indemnité de guichet"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956102.PDF"
       }
     ]
   },
   "alternateName": null,
   "description": "Accueillir et conseiller les clients dans la découverte de l'ensemble des offres et services proposés par l'OPT-NC. Vendre les produits et services adaptés à leur besoin, contribuer à la satisfaction de nos clients.",
-  "disambiguatingDescription": null,
+  "disambiguatingDescription": "Une opportunité dans un environnement stimulant et en constante évolution au sein de l'agence de Dumbéa et son annexe Panda.",
   "identifier": "3134-26-0942/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -35,7 +40,7 @@
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "http://www.opt.nc",
+    "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
@@ -77,12 +82,12 @@
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "http://www.opt.nc",
+    "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
-  "industry": "Service public",
-  "jobBenefits": "indemnité de guichet",
+  "industry": "Services bancaires et postaux",
+  "jobBenefits": "Indemnité de guichet",
   "jobDuration": null,
   "jobImmediateStart": false,
   "jobLocation": {
@@ -99,18 +104,22 @@
   "jobLocationType": null,
   "jobStartDate": null,
   "occupationalCategory": [
-    "Vente et relation client"
+    "Vente et relation client",
+    "Activités postales",
+    "Services bancaires"
   ],
   "physicalRequirement": null,
-  "qualifications": "permis B",
+  "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
     "name": "Chargé de contact clientèle",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "D1401",
-      "name": "Assistanat commercial"
-    }
+      "codeValue": "I1306",
+      "name": "Accueil et services bancaires"
+    },
+    "code_metier": "OP005",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op005/"
   },
   "responsibilities": [
     "Commercialiser les produits et services de l'OPT-NC, apporter du conseil, contribuer au meilleur accueil et à la satisfaction des clients",
@@ -122,7 +131,7 @@
     "Garantir des opérations de gestion de caisse en respectant les méthodes de manipulations de fonds et en appliquant strictement les règles y afférentes",
     "Contribuer à la meilleure efficacité collective de l'agence par la capacité à tenir d'autres positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) et conseiller ses collègues"
   ],
-  "salaryCurrency": null,
+  "salaryCurrency": "XPF",
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
@@ -145,5 +154,5 @@
   "title": "Chargé de contact clientèle - Agence Dumbéa et son annexe panda",
   "totalJobOpenings": 1,
   "validThrough": "2026-06-19",
-  "workHours": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l'agence"
+  "workHours": "Horaires de travail du lundi au samedi"
 }
