@@ -1,6 +1,6 @@
 {
   "additionalType": {
-    "corpsDomaine": "Cadre d'exploitation",
+    "corpsDomaine": "Cadre d'exploitation ou Contrôleur",
     "direction": "DIRECTION DE LA DISTRIBUTION",
     "uniteOrganisationnelle": "Service support métiers",
     "nbAgentsEncadres": 11,
@@ -12,41 +12,38 @@
     "informationsLibres": [
       {
         "@type": "PropertyValue",
-        "name": "Durée de résidence exigée pour le recrutement sur titre",
-        "value": null
+        "name": "Habilitations requises",
+        "value": "Permis B"
       },
       {
         "@type": "PropertyValue",
-        "name": "Poste à pourvoir",
-        "value": "Susceptible d'être à pourvoir dans le cadre de la réorganisation"
+        "name": "Régimes indemnitaires",
+        "value": "indemnités hiérarchiques chef de section"
       },
       {
         "@type": "PropertyValue",
-        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
-        "value": null
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953272.PDF"
       }
     ]
   },
   "alternateName": "DPS – Chef(fe) de section Applications et pratiques métiers – Service support métiers",
-  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste vise à garantir l'efficacité opérationnelle, la disponibilité et la montée en compétence de son équipe dans les domaines techniques, fonctionnels ou organisationnels placés sous sa responsabilité. Il s'agit également de piloter, coordonner et optimiser les activités, les projets et les processus, dans une démarche d'amélioration continue, afin d'assurer la qualité du service rendu et la satisfaction des usagers internes et externes.",
-  "disambiguatingDescription": "Chef de section Applications et pratiques métiers au sein du Service support métiers de la Direction de la poste et des services de proximité.",
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le titulaire garantit l'efficacité opérationnelle, la disponibilité et la montée en compétence de son équipe dans les domaines techniques, fonctionnels ou organisationnels placés sous sa responsabilité. Il pilote, coordonne et optimise les activités, les projets et les processus, dans une démarche d'amélioration continue, afin d'assurer la qualité du service rendu et la satisfaction des usagers internes et externes.",
+  "disambiguatingDescription": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
   "identifier": "3134-26-0999/SR",
   "name": "Chef(fe) de section Applications et pratiques métiers",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "www.opt.nc",
+    "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "url": "www.opt.nc",
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
   "applicantLocationRequirements": {
     "@type": "Schedule",
-    "name": "Nouméa",
+    "name": "Direction générale",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": null,
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
@@ -76,18 +73,15 @@
     "@type": "OrganizationalUnit",
     "name": "Service support métiers"
   },
-  "experienceRequirements": "Non spécifié",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
-    "url": "www.opt.nc",
+    "url": "http://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "industry": "Télécommunications",
-  "jobBenefits": "Indemnités hiérarchiques chef de section",
   "jobLocation": {
     "@type": "Place",
-    "name": "Nouméa",
+    "name": "Direction de la poste et des services de proximité",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": null,
@@ -97,6 +91,7 @@
     }
   },
   "occupationalCategory": [
+    "Vente et relation client",
     "Activités postales",
     "Pilotage"
   ],
@@ -106,9 +101,11 @@
     "name": "Chargé de soutien réseaux de vente",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "M1502",
-      "name": "Développement des ressources humaines"
-    }
+      "codeValue": "M1503",
+      "name": "Conseil en organisation et management d'entreprise"
+    },
+    "code_metier": "OP001",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op001/"
   },
   "responsibilities": [
     "Manager et animer son équipe en appliquant le référentiel managérial OPT",
