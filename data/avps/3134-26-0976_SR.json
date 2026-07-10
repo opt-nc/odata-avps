@@ -32,13 +32,18 @@
       {
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Sans objet"
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955314.PDF"
       }
     ]
   },
   "alternateName": "Concepteur-Développeur d’Applications SI Télécom",
-  "description": "Intégré au sein d'une équipe de 14 agents et prestataires, le concepteur/développeur d'applications participera aux développements logiciels et à la maintenance, d'un ensemble d'applications couvrant le domaine fonctionnel de la section SI Télécom. La section SI Télécom porte les systèmes d'information télécom de l'OPT.",
-  "disambiguatingDescription": "Poste de Concepteur-Développeur d'applications au sein du Service Développement et Maintenance, Section SI Télécom de la DSI de l'OPT-NC.",
+  "description": "Intégré au sein d’une équipe de 14 agents et prestataires, le concepteur/développeur d’applications participera aux développements logiciels et à la maintenance, d’un ensemble d’applications couvrant le domaine fonctionnel de la section SI Télécom. La section SI Télécom porte les systèmes d’information télécom de l’OPT. Elle intervient notamment sur le système d’information de gestion de la téléphonie mobile, le système d’information de gestion de la téléphonie fixe, des applications complémentaires développées par l’OPT-NC pour répondre à des besoins spécifiques, notamment l’application mobile de gestion des forfaits clients, l’application de gestion des interventions sur le terrain, et plusieurs référentiels de données de l’Office.",
+  "disambiguatingDescription": "Poste de Concepteur-Développeur d'Applications SI Télécom au sein du Service Développement et Maintenance de la DSI de l'OPT-NC.",
   "identifier": "3134-26-0976/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -47,7 +52,7 @@
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
-    "logo": "https://www.opt.nc/logo.png"
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -77,9 +82,8 @@
   "educationRequirements": {
     "credentialCategory": "Bac+3",
     "competencyRequired": [
-      "BAC+3 minimum en Informatique",
       "Maîtrise des approches agiles",
-      "Connaissance des architectures WOA (webservices REST, micro-services...)",
+      "Connaissance des architectures WOA (webservices REST, micro-services…)",
       "Démarche DevOps",
       "Conteneurisation des applications (Docker)",
       "Framework SpringBoot, Quarkus /Angular/Ionic",
@@ -89,20 +93,20 @@
     ]
   },
   "eligibilityToWorkRequirement": "Durée de résidence exigée pour le recrutement sur titre : ingénieur 1er grade au moins égale à 10 ans, ingénieur 2ème grade au moins égale à 5 ans",
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'opérateur public historique des télécommunications, du postal et des services financiers en Nouvelle-Calédonie.",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'établissement public en charge des services postaux, financiers et des télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
     "name": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
   },
   "estimatedSalary": null,
-  "experienceInPlaceOfEducation": false,
-  "experienceRequirements": "5 ans d'expérience minimum en développement logiciel",
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "5 ans d’expérience minimum en développement logiciel",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
-    "logo": "https://www.opt.nc/logo.png"
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
   "industry": "Télécommunications",
@@ -111,7 +115,7 @@
   "jobImmediateStart": true,
   "jobLocation": {
     "@type": "Place",
-    "name": "DSI - Service développement et maintenance",
+    "name": "DSI",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9, rue Gallieni",
@@ -123,7 +127,8 @@
   "jobLocationType": null,
   "jobStartDate": "Dès que possible",
   "occupationalCategory": [
-    "Systèmes d'information"
+    "Systèmes d'information",
+    "Télécommunications"
   ],
   "physicalRequirement": null,
   "qualifications": "Permis B",
@@ -132,16 +137,14 @@
     "name": "Concepteur-Développeur",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "M1805",
+      "codeValue": "M1801",
       "name": "Études et développement informatique"
-    }
+    },
+    "code_metier": "OP068",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/systemes_d_information/op068/"
   },
   "responsibilities": [
     "Participer aux développements logiciels et à la maintenance d'un ensemble d'applications couvrant le domaine fonctionnel de la section SI Télécom",
-    "Intervenir sur le système d'information de gestion de la téléphonie mobile",
-    "Intervenir sur le système d'information de gestion de la téléphonie fixe",
-    "Intervenir sur des applications complémentaires développées par l'OPT-NC pour répondre à des besoins spécifiques (application mobile de gestion des forfaits clients, application de gestion des interventions sur le terrain...)",
-    "Intervenir sur plusieurs référentiels de données de l'Office",
     "Assister l'exploitation dans l'analyse et la résolution des problèmes de production",
     "Apporter son expertise technique aux équipes de la maitrise d'ouvrage si nécessaire",
     "Participer aux échanges techniques avec les éditeurs ou intégrateurs",
@@ -158,7 +161,7 @@
     "Pilotage et planification de développements logiciels",
     "Pratique de l'intégration, de la livraison, du déploiement, continus",
     "Culture et expérience Open Source",
-    "Migration de SI en environnements hétérogènes (AS400, Unix/Linux, Windows) et conduite au changement",
+    "Migration de SI en environnements hétérogènes (AS400, Unix/Linux, Windows) et conduite au changement appréciée",
     "Connaissance de processus et outils d'automatisation des tests",
     "Maintenance de documentation et de référentiels d'architecture technique",
     "Accompagnement, conseil et support de ses collaborateurs",
