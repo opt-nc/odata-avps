@@ -53,6 +53,19 @@
     </p>
     {{- end }}
 
+    {{/* Carte des offres de ce tag (pins colorés par famille), avant la liste. */}}
+    {{- $hasGeo := false }}
+    {{- range .Pages }}{{ if and .Params.latitude .Params.longitude }}{{ $hasGeo = true }}{{ end }}{{- end }}
+    {{- if $hasGeo }}
+    <div style="margin-bottom: 2.5rem;">
+      {{ partial "avp-map.html" (dict
+        "id" (printf "avp-map-%s" (or (and .Data .Data.Term) .Title | urlize))
+        "pages" .Pages
+        "fit" true
+      ) }}
+    </div>
+    {{- end }}
+
     {{ partial "avp-cards-list.html" .Pages }}
 
   {{ end }}

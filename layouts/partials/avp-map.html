@@ -1,0 +1,96 @@
+{{- /*
+  Carte Leaflet réutilisable avec pins colorés par famille de métier (anneau segmenté).
+  Paramètres (dict) :
+    id     : identifiant DOM unique du conteneur (obligatoire)
+    pages  : collection de pages à cartographier (obligatoire)
+    center : slice [lat lng] du centre initial (défaut Nouvelle-Calédonie)
+    zoom   : niveau de zoom initial (défaut 7)
+    fit    : si vrai, recadre la vue sur les marqueurs (utile pour un sous-ensemble)
+  Les AVP au même point sont regroupés ; l'anneau du pin agrège l'UNION de leurs familles.
+*/ -}}
+{{- $id := .id }}
+{{- $pages := .pages }}
+{{- $center := .center | default (slice -21.3 165.5) }}
+{{- $zoom := .zoom | default 7 }}
+<link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
+<script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script>
+
+<div id="{{ $id }}" class="avp-map-container avp-single-map" role="application" aria-label="Carte des vacances de poste"></div>
+
+<script>
+(function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof L === "undefined") return;
+    L.Icon.Default.imagePath = {{ "vendor/leaflet/images/" | relURL }};
+
+    var FAMILY_COLORS = {{ site.Data.families_colors.families | jsonify | safeJS }};
+
+    var map = L.map("{{ $id }}").setView([{{ index $center 0 }}, {{ index $center 1 }}], {{ $zoom }});
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Icône "anneau segmenté" : 1 famille = anneau plein, N = arcs égaux, 0 = gris.
+    function ringIcon(families) {
+      var cols = (families && families.length)
+        ? families.map(function (f) { return FAMILY_COLORS[f] || "#999999"; })
+        : ["#cccccc"];
+      var bg;
+      if (cols.length === 1) {
+        bg = cols[0];
+      } else {
+        var step = 100 / cols.length;
+        bg = "conic-gradient(" + cols.map(function (c, i) {
+          return c + " " + (i * step) + "% " + ((i + 1) * step) + "%";
+        }).join(",") + ")";
+      }
+      return L.divIcon({
+        className: "avp-fam-divicon",
+        html: '<div class="avp-fam-ring" style="background:' + bg + '"><div class="avp-fam-ring-center"></div></div>',
+        iconSize: [26, 26],
+        iconAnchor: [13, 13],
+        popupAnchor: [0, -14]
+      });
+    }
+
+    var points = [
+      {{- range $pages }}
+      {{- if and .Params.latitude .Params.longitude }}
+      { lat: {{ .Params.latitude }}, lng: {{ .Params.longitude }}, title: {{ .Title }}, url: {{ .RelPermalink }}, ref: {{ .Params.ref }}, ville: {{ .Params.ville }}, families: {{ .Params.families_metier | jsonify | safeJS }} },
+      {{- end }}
+      {{- end }}
+    ];
+
+    var markers = {}, fams = {}, bounds = [];
+    points.forEach(function (avp) {
+      var key = avp.lat + "_" + avp.lng;
+      if (!fams[key]) fams[key] = [];
+      (avp.families || []).forEach(function (f) {
+        if (fams[key].indexOf(f) === -1) fams[key].push(f);
+      });
+
+      var item = '<div class="avp-map-popup">'
+        + '<h4 class="avp-popup-title"><a href="' + avp.url + '">' + avp.title + '</a></h4>'
+        + '<p class="avp-popup-meta"><i class="fas fa-barcode"></i> <code>' + avp.ref + '</code><br>'
+        + '<i class="fas fa-map-marker-alt"></i> Ville : <strong>' + avp.ville + '</strong></p>'
+        + '<a href="' + avp.url + '" class="avp-popup-link">Consulter l\'offre →</a></div>';
+
+      if (markers[key]) {
+        var p = markers[key].getPopup();
+        p.setContent(p.getContent() + '<hr class="avp-popup-separator">' + item);
+        markers[key].setIcon(ringIcon(fams[key]));
+      } else {
+        var m = L.marker([avp.lat, avp.lng], { alt: avp.title, icon: ringIcon(fams[key]) }).addTo(map);
+        m.bindPopup(item, { maxHeight: 260, minWidth: 220, maxWidth: 280, keepInView: true, autoPanPadding: L.point(16, 60) });
+        markers[key] = m;
+        bounds.push([avp.lat, avp.lng]);
+      }
+    });
+
+    {{- if .fit }}
+    if (bounds.length > 1) { map.fitBounds(bounds, { padding: [30, 30], maxZoom: 12 }); }
+    else if (bounds.length === 1) { map.setView(bounds[0], 12); }
+    {{- end }}
+  });
+})();
+</script>

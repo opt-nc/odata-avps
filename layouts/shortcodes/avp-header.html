@@ -164,6 +164,26 @@
     // Chemin des icônes de marqueur (auto-hébergées : la détection auto de Leaflet ne marche pas en local)
     L.Icon.Default.imagePath = {{ "vendor/leaflet/images/" | relURL }};
 
+    // Pin coloré selon la/les famille(s) de métier (anneau segmenté, même rendu que la carte globale).
+    const FAMILY_COLORS = {{ site.Data.families_colors.families | jsonify | safeJS }};
+    const FAMILIES = {{ .Page.Params.families_metier | jsonify | safeJS }};
+    function avpRingIcon() {
+      const cols = (FAMILIES && FAMILIES.length)
+        ? FAMILIES.map(f => FAMILY_COLORS[f] || "#999999")
+        : ["#cccccc"];
+      let bg;
+      if (cols.length === 1) { bg = cols[0]; }
+      else {
+        const step = 100 / cols.length;
+        bg = "conic-gradient(" + cols.map((c, i) => c + " " + (i * step) + "% " + ((i + 1) * step) + "%").join(",") + ")";
+      }
+      return L.divIcon({
+        className: "avp-fam-divicon",
+        html: '<div class="avp-fam-ring" style="background:' + bg + '"><div class="avp-fam-ring-center"></div></div>',
+        iconSize: [26, 26], iconAnchor: [13, 13], popupAnchor: [0, -14]
+      });
+    }
+
     const map = L.map('avp-single-map-{{ .Page.Params.ref | urlize }}').setView([lat, lng], 14);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -180,7 +200,7 @@
         </div>
       `;
 
-    L.marker([lat, lng], { alt: "Localisation du poste" }).addTo(map)
+    L.marker([lat, lng], { alt: "Localisation du poste", icon: avpRingIcon() }).addTo(map)
       .bindPopup(popupHtml, { maxHeight: 260, minWidth: 220, maxWidth: 280, keepInView: true, autoPanPadding: L.point(16, 60) })
       .openPopup();
     });

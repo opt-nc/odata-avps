@@ -1,87 +1,10 @@
 <div class="sr-only">
-  Carte interactive affichant la répartition géographique des offres d'emploi. Les offres sont également listées textuellement ci-dessous par ordre de publication.
+  Carte interactive affichant la répartition géographique des offres d'emploi. Les offres sont également listées textuellement ci-dessous par ordre de publication. La couleur de chaque pin correspond à la ou aux familles de métier concernées.
 </div>
 
-<link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
-<script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script>
-
-<div id="avp-global-map" class="avp-map-container" role="application" aria-label="Carte des vacances de poste"></div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Chemin des icônes de marqueur (auto-hébergées : la détection auto de Leaflet ne marche pas en local)
-    L.Icon.Default.imagePath = {{ "vendor/leaflet/images/" | relURL }};
-
-    // 1. Initialisation de la carte (Centrée par défaut sur la Nouvelle-Calédonie)
-    const map = L.map('avp-global-map').setView([-21.3, 165.5], 7);
-
-    // 2. Application des fonds de carte OpenStreetMap
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
-    // 3. Génération dynamique du tableau JavaScript par le moteur de Hugo
-    const avpPoints = [
-      {{ range .Page.Site.RegularPages }}
-        {{ if and .Params.latitude .Params.longitude }}
-        {
-          lat: {{ .Params.latitude }},
-          lng: {{ .Params.longitude }},
-          title: {{ .Title }},
-          url: {{ .RelPermalink }},
-          ref: {{ .Params.ref }},
-          ville: {{ .Params.ville }}
-        },
-        {{ end }}
-      {{ end }}
-    ];
-
-    // 🎯 4. Cache mémoire pour détecter et regrouper les coordonnées identiques
-    const markersCache = {};
-
-    // 5. Placement intelligent des pins de l'OPT sur la carte
-    avpPoints.forEach(function(avp) {
-      // Clé unique basée sur le couple Latitude + Longitude
-      const geoKey = `${avp.lat}_${avp.lng}`;
-
-      // Structure unitaire d'un AVP dans la bulle
-      const itemHtml = `
-        <div class="avp-map-popup">
-          <h4 class="avp-popup-title"><a href="${avp.url}">${avp.title}</a></h4>
-          <p class="avp-popup-meta">
-            <i class="fas fa-barcode"></i> <code>${avp.ref}</code><br>
-            <i class="fas fa-map-marker-alt"></i> Ville : <strong>${avp.ville}</strong>
-          </p>
-          <a href="${avp.url}" class="avp-popup-link">Consulter l'offre →</a>
-        </div>
-      `;
-
-      if (markersCache[geoKey]) {
-        // 🔥 LE CHEVRON GÉOGRAPHIQUE : Le point existe déjà !
-        // On récupère le contenu actuel de la bulle et on y greffe le nouvel AVP
-        const currentPopup = markersCache[geoKey].getPopup();
-        const currentContent = currentPopup.getContent();
-        
-        // On fusionne les contenus en ajoutant une bordure de séparation stylisée
-        const separator = '<hr class="avp-popup-separator">';
-        currentPopup.setContent(currentContent + separator + itemHtml);
-      } else {
-        // PREMIER PASSAGE : Aucun AVP enregistré à cette adresse
-        const marker = L.marker([avp.lat, avp.lng], { alt: avp.title }).addTo(map);
-        // maxHeight => la bulle défile en interne si plusieurs AVP au même point
-        // (sinon le lien « Consulter l'offre » sort de l'écran en mobile).
-        // autoPanPadding + keepInView => la bulle se replace dans la zone visible.
-        marker.bindPopup(itemHtml, {
-          maxHeight: 260,
-          minWidth: 220,
-          maxWidth: 280,
-          keepInView: true,
-          autoPanPadding: L.point(16, 60)
-        });
-        
-        // On garde précieusement la référence du marqueur Leaflet dans notre cache
-        markersCache[geoKey] = marker;
-      }
-    });
-  });
-</script>
+{{ partial "avp-map.html" (dict
+  "id" "avp-global-map"
+  "pages" .Page.Site.RegularPages
+  "center" (slice -21.3 165.5)
+  "zoom" 7
+) }}
