@@ -54,17 +54,22 @@
         <th scope="row">Famille(s) de métier</th>
         <td>
           {{- $colors := $.Site.Data.families_colors.families }}
-          {{- $ref := $.Site.Data.familles_referentiel }}
-          {{- range . }}
-          {{- $slug := index $ref.familles . }}
-          {{- if $slug }}
-          <a href="{{ $ref.base_url }}{{ $slug }}/" target="_blank" rel="noopener"
-             title="Voir la famille « {{ . }} » dans le référentiel métiers officiel OPT-NC"
-             style="text-decoration: none;">
-            <span class="famille-badge" style="--couleur: {{ index $colors . | default "#999999" }}">{{ . }}</span>
+          {{/* Table slug->URL des pages de tag réelles : .RelPermalink gère le préfixe
+               /odata-avps/ ET l'encodage des accents (évite les 404). */}}
+          {{- $tagLinks := dict }}
+          {{- with site.GetPage "/tags" }}
+            {{- range .Pages }}
+              {{- $tagLinks = merge $tagLinks (dict (.Title | urlize) .RelPermalink) }}
+            {{- end }}
+          {{- end }}
+          {{- range $fam := . }}
+          {{- $href := index $tagLinks ($fam | urlize) }}
+          {{- if $href }}
+          <a href="{{ $href }}" title="Voir les offres de la famille « {{ $fam }} »" style="text-decoration: none;">
+            <span class="famille-badge" style="--couleur: {{ index $colors $fam | default "#999999" }}">{{ $fam }}</span>
           </a>
           {{- else }}
-          <span class="famille-badge" style="--couleur: {{ index $colors . | default "#999999" }}">{{ . }}</span>
+          <span class="famille-badge" style="--couleur: {{ index $colors $fam | default "#999999" }}">{{ $fam }}</span>
           {{- end }}
           {{- end }}
         </td>
