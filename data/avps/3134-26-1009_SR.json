@@ -1,14 +1,15 @@
 {
   "additionalType": {
-    "corpsDomaine": "Cadre d'exploitation ou Contrôleur",
+    "corpsDomaine": "Cadre d'exploitation",
     "direction": "DIRECTION DE LA DISTRIBUTION",
     "uniteOrganisationnelle": "Section expérience commerciale",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de section Expérience commerciale",
     "placeOrganigramme": "N - 4 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
-      "Réseau",
-      "BU"
+      "Direction de la poste et des services de proximité",
+      "Réseau d'agences",
+      "Business Units"
     ],
     "informationsLibres": [
       {
@@ -18,28 +19,18 @@
       },
       {
         "@type": "PropertyValue",
-        "name": "Conditions de travail",
-        "value": null
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
-        "value": null
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": null
+        "name": "Contexte de recrutement",
+        "value": "Susceptible d'être à pourvoir dans le cadre de la réorganisation"
       },
       {
         "@type": "PropertyValue",
         "name": "Fiche d'emploi générique RESPNC",
-        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955540.PDF"
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953468.PDF"
       }
     ]
   },
-  "alternateName": "Chargé(e) de l'animation commerciale",
-  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à animer et coordonner les actions commerciales du réseau au service de la performance et de la satisfaction client, contribuer à la mise en œuvre opérationnelle des campagnes marketing et au déploiement de la stratégie commerciale sur le terrain, et participer à l'amélioration de l'expérience client et à la valorisation des offres de l'OPT-NC.",
+  "alternateName": "Chargé de l'animation commerciale",
+  "description": "Animer et coordonner les actions commerciales du réseau au service de la performance et de la satisfaction client. Contribuer à la mise en œuvre opérationnelle des campagnes marketing et au déploiement de la stratégie commerciale sur le terrain. Participer à l'amélioration de l'expérience client et à la valorisation des offres de l'OPT-NC.",
   "disambiguatingDescription": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
   "identifier": "3134-26-1009/SR",
   "name": "Chargé(e) de l'animation commerciale",
@@ -51,10 +42,10 @@
   },
   "applicantLocationRequirements": {
     "@type": "Place",
-    "name": "Nouméa",
+    "name": "Direction générale",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
@@ -67,7 +58,7 @@
   },
   "datePosted": "2026-07-03",
   "educationRequirements": {
-    "credentialCategory": null,
+    "credentialCategory": "Cadre d'exploitation ou Contrôleur",
     "competencyRequired": [
       "Environnement administratif, institutionnel et politique",
       "Droit/Réglementation",
@@ -94,25 +85,26 @@
     "name": "Nouméa",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": null,
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
     }
   },
   "occupationalCategory": [
-    "Vente et relation client",
-    "Marketing et communication"
+    "Marketing et communication",
+    "Vente et relation client"
   ],
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Chargé d’études en urbanisme commercial",
+    "name": "Chargé de communication",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "K1201",
-      "name": "Animation de vente"
-    }
+      "codeValue": "K1403",
+      "name": "Communication"
+    },
+    "code_metier": "OP009",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/marketing_et_communication/op009/"
   },
   "responsibilities": [
     "Participer à la conception, la planification et au déploiement des actions commerciales dans le respect du cadre réglementaire",
@@ -136,7 +128,7 @@
     "Gérer une relation client",
     "Organiser une activité, une réunion, un événement",
     "Analyser une information, une donnée, une situation, un dispositif",
-    "Contribuer à l'élaboration d'une procédure ou d'un dispositif, à la rédaction d'un document",
+    "Contribuer à une activité collective, à la conduite d'un projet, à l'élaboration d'une procédure ou d'un dispositif, à la rédaction d'un document",
     "Aptitude à l'écoute",
     "Sens du service public",
     "Avoir l'esprit d'équipe",
