@@ -2,7 +2,7 @@
   "additionalType": {
     "corpsDomaine": "Ingénieur",
     "direction": "DIRECTION DES SYSTEMES D'INFORMATION",
-    "uniteOrganisationnelle": "SERVICE DEVELOPPEMENT ET MAINTENANCE",
+    "uniteOrganisationnelle": "Service Développement et Maintenance / Section SI Postal",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef du Service Développement et Maintenance",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
@@ -10,8 +10,9 @@
       "Service Développement et Maintenance",
       "Section SI Postal",
       "DSI",
-      "Équipes de la maitrise d'ouvrage",
-      "Éditeurs ou intégrateurs"
+      "Maitrise d'ouvrage",
+      "Editeurs",
+      "Integrateurs"
     ],
     "informationsLibres": [
       {
@@ -31,21 +32,16 @@
       },
       {
         "@type": "PropertyValue",
-        "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Aucun"
-      },
-      {
-        "@type": "PropertyValue",
         "name": "Fiche d'emploi générique RESPNC",
         "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955314.PDF"
       }
     ]
   },
-  "alternateName": "Concepteur-Développeur d’Applications SI Postal",
-  "description": "Intégré au sein d’une équipe de 4 agents, le concepteur/développeur d’applications participera aux développements logiciels et à la maintenance, d’un ensemble d’applications couvrant le domaine fonctionnel de la section SI Postal. La section SI Postal porte les systèmes d’information postal de l’OPT.",
-  "disambiguatingDescription": "Poste de Concepteur-Développeur d'Applications SI Postal au sein du Service Développement et Maintenance de la DSI de l'OPT-NC.",
+  "alternateName": "Concepteur-Développeur d'Applications SI Postal",
+  "description": "Intégré au sein d'une équipe de 4 agents, le concepteur/développeur d'applications participera aux développements logiciels et à la maintenance, d'un ensemble d'applications couvrant le domaine fonctionnel de la section SI Postal. La section SI Postal porte les systèmes d'information postal de l'OPT.",
+  "disambiguatingDescription": "Poste de Concepteur-Développeur d'Applications SI Postal au sein du Service Développement et Maintenance de la DSI.",
   "identifier": "3134-26-0975/SR",
-  "name": "Concepteur-Développeur d’Applications SI Postal",
+  "name": "Concepteur-Développeur d'Applications SI Postal",
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
@@ -53,14 +49,12 @@
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "applicantLocationRequirements": {
-    "@type": "Schedule",
+    "@type": "Place",
     "name": "Nouvelle-Calédonie",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "9, rue Gallieni",
-      "addressLocality": "Nouméa",
-      "addressRegion": "Province Sud",
-      "addressCountry": "NC"
+      "addressCountry": "NC",
+      "addressRegion": "Nouvelle-Calédonie"
     }
   },
   "applicationContact": {
@@ -72,29 +66,25 @@
   "educationRequirements": {
     "credentialCategory": "Bac+3",
     "competencyRequired": [
+      "Informatique",
       "Maîtrise des approches agiles",
       "Connaissance des architectures WOA (webservices REST, micro-services)",
       "Démarche DevOps",
       "Conteneurisation des applications (Docker)",
-      "Framework SpringBoot, Quarkus /Angular/Ionic",
-      "Environnements/langages : Linux, Windows, Java, Javascript, Typescript, JDL, HTML, JSON, XML, CSS, PostgreSQL, IDE Intellij, Github",
+      "Framework SpringBoot, Quarkus, Angular, Ionic",
+      "Environnements et langages Linux, Windows, Java, Javascript, Typescript, JDL, HTML, JSON, XML, CSS, PostgreSQL, IDE Intellij, Github",
       "Anglais technique lu et écrit",
-      "Gestion documentaire et de projets : Confluence, JIRA"
+      "Gestion documentaire et de projets Confluence, JIRA"
     ]
   },
   "employmentType": "FULL_TIME",
-  "employmentUnit": {
-    "@type": "OrganizationalUnit",
-    "name": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
-  },
-  "experienceRequirements": "5 ans d’expérience minimum en développement logiciel",
+  "experienceRequirements": "5 ans d'expérience minimum en développement logiciel",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
-  "industry": "Télécommunications",
   "jobLocation": {
     "@type": "Place",
     "name": "DSI",
@@ -131,33 +121,34 @@
     "Participer aux échanges techniques et fonctionnels",
     "Assurer un reporting régulier et une communication transverse",
     "Être force de proposition pour tous les aspects techniques sur le domaine",
-    "Assister l’exploitation dans l’analyse et la résolution des problèmes de production",
-    "Apporter son expertise technique aux équipes de la maitrise d’ouvrage si nécessaire",
+    "Assister l'exploitation dans l'analyse et la résolution des problèmes de production",
+    "Apporter son expertise technique aux équipes de la maitrise d'ouvrage si nécessaire",
     "Participer aux échanges techniques avec les éditeurs ou intégrateurs",
     "Contribuer aux opérations de maintenance évolutive et aux mises à niveau techniques"
   ],
   "skills": [
-    "Conception, développement, industrialisation d’applications",
+    "Conception, développement, industrialisation d'applications",
     "Développement en environnement Linux, développement Web",
-    "Développement d’applications mobile",
-    "Analyse et chiffrage d’évolutions logicielles",
+    "Développement d'applications mobile",
+    "Analyse et chiffrage d'évolutions logicielles",
     "Pilotage et planification de développements logiciels",
-    "Pratique de l’intégration, de la livraison, du déploiement, continus",
+    "Pratique de l'intégration, de la livraison, du déploiement, continus",
     "Culture et expérience Open Source",
     "Migration de SI en environnements hétérogènes (Unix/Linux, Windows) et conduite au changement appréciée",
-    "Connaissance de processus et outils d’automatisation des tests",
-    "Maintenance de documentation et de référentiels d’architecture technique",
+    "Connaissance de processus et outils d'automatisation des tests",
+    "Maintenance de documentation et de référentiels d'architecture technique",
     "Accompagnement, conseil et support de ses collaborateurs",
-    "Facultés de communication, d’écoute et d’expression",
-    "Culture de l’amélioration continue, de la qualité de service et de l’efficience",
-    "Esprit d’équipe",
+    "Facultés de communication, d'écoute et d'expression",
+    "Culture de l'amélioration continue, de la qualité de service et de l'efficience",
+    "Esprit d'équipe",
     "Aptitude pédagogique",
     "Esprit de synthèse et de vulgarisation",
-    "Rigueur, sens de l’organisation et des méthodes",
-    "Sens de l’anticipation et de l’écoute",
-    "Dynamisme, esprit d’initiative",
+    "Rigueur, sens de l'organisation et des méthodes",
+    "Sens de l'anticipation et de l'écoute",
+    "Dynamisme, esprit d'initiative",
     "Autonomie"
   ],
-  "title": "Concepteur-Développeur d’Applications SI Postal",
-  "validThrough": "2026-07-17"
+  "title": "Concepteur-Développeur d'Applications SI Postal",
+  "validThrough": "2026-07-17",
+  "dossier": "dsi"
 }
