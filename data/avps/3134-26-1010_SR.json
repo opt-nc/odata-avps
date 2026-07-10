@@ -7,9 +7,11 @@
     "superieurHierarchique": "Chef de la section SI Télécom",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
+      "Section SI Télécom",
+      "Editeurs",
+      "Fournisseurs",
       "Acteurs des métiers Télécom",
-      "Prestataires TMA",
-      "Éditeurs et fournisseurs"
+      "Prestataires TMA"
     ],
     "informationsLibres": [
       {
@@ -24,13 +26,13 @@
       },
       {
         "@type": "PropertyValue",
-        "name": "Fourniture ou mise à disposition de matériels",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
         "value": "Téléphone Mobile de sécurité"
       },
       {
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Aucun"
+        "value": "Sans objet"
       },
       {
         "@type": "PropertyValue",
@@ -39,19 +41,27 @@
       }
     ]
   },
-  "alternateName": "Administrateur d'Applications SI Télécom",
-  "description": "Intégré au sein d'une équipe de 8 agents, l'administrateur d'applications définit les procédures d'exploitation, assure les évolutions et la maintenance, et administre les systèmes d'information relevant du périmètre fonctionnel de la section SI Télécom. La section SI Télécom porte les systèmes d'information télécom de l'OPT.",
-  "disambiguatingDescription": "Poste d'administrateur d'applications spécialisé dans le domaine des systèmes d'information télécom au sein de la DSI de l'OPT-NC.",
+  "alternateName": "Administrateur d'applications SI Télécom",
+  "description": "Intégré au sein d'une équipe de 8 agents, l'administrateur d'applications définit les procédures d'exploitation, assure les évolutions et la maintenance, et administre les systèmes d'information relevant du périmètre fonctionnel de la section SI Télécom.",
+  "disambiguatingDescription": "Poste d'administrateur d'applications au sein de la section SI Télécom de l'OPT-NC, axé sur le maintien en conditions opérationnelles et l'évolution des solutions logicielles de téléphonie mobile, fixe et d'applications complémentaires.",
   "identifier": "3134-26-1010/SR",
+  "image": null,
+  "mainEntityOfPage": null,
   "name": "Administrateur d'applications SI Télécom",
   "owner": {
     "@type": "Organization",
-    "name": "Office des Postes et des Télécommunications de Nouvelle-Calédonie",
+    "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
-    "logo": "https://www.opt.nc/themes/custom/opt/logo.png"
+    "logo": "https://www.opt.nc/logo.png"
   },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
   "applicantLocationRequirements": {
-    "@type": "Place",
+    "@type": "Schedule",
     "name": "Nouvelle-Calédonie",
     "address": {
       "@type": "PostalAddress",
@@ -66,34 +76,43 @@
     "telephone": "+687267600",
     "email": "DRH-candidature@opt.nc"
   },
+  "baseSalary": null,
   "datePosted": "2026-07-03",
+  "directApply": false,
   "educationRequirements": {
     "credentialCategory": "Bac+3",
     "competencyRequired": [
-      "Ingénierie Informatique",
       "Connaissance de l'architecture standard d'un SI Télécom et des infrastructures Télécom",
-      "Connaissance d'outils de gestion collaborative Sharepoint Confluence et de suivi des évolutions JIRA",
-      "Connaissance des systèmes d'exploitation Linux RHEL, Unix AIX",
-      "Connaissance SQL, Korn Shell, Java",
+      "Connaissance d'outils de gestion collaborative (Sharepoint Confluence) et de suivi des évolutions (JIRA)",
+      "Connaissance des systèmes d'exploitation Linux (RHEL), Unix (AIX)",
+      "Connaissance SQL, Korn Shell, Java souhaitée",
       "Anglais technique lu et écrit"
     ]
   },
+  "eligibilityToWorkRequirement": "Durée de résidence réglementée en Nouvelle-Calédonie selon le grade d'ingénieur",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'établissement public en charge des services postaux, financiers et des télécommunications sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
     "name": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
   },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": false,
   "experienceRequirements": "2 ans d'expérience dans une activité similaire",
   "hiringOrganization": {
     "@type": "Organization",
-    "name": "Office des Postes et des Télécommunications de Nouvelle-Calédonie",
+    "name": "Office des Postes et des Télécommunications",
     "url": "https://www.opt.nc",
-    "logo": "https://www.opt.nc/themes/custom/opt/logo.png"
+    "logo": "https://www.opt.nc/logo.png"
   },
+  "incentiveCompensation": null,
   "industry": "Télécommunications",
+  "jobBenefits": "Possibilité de télétravail (2 jours par semaine), mise à disposition d'un téléphone mobile de sécurité",
+  "jobDuration": null,
+  "jobImmediateStart": true,
   "jobLocation": {
     "@type": "Place",
-    "name": "DSI",
+    "name": "DSI - Service Développement et Maintenance",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9, rue Gallieni",
@@ -102,27 +121,35 @@
       "addressCountry": "NC"
     }
   },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
   "occupationalCategory": [
     "Systèmes d'information",
     "Télécommunications"
   ],
+  "physicalRequirement": null,
   "qualifications": "Permis B",
   "relevantOccupation": {
     "@type": "Occupation",
-    "name": "Administrateur d'applications",
+    "name": "Administrateur d'Applications",
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "M1801",
       "name": "Administration de systèmes d'information"
-    }
+    },
+    "code_metier": "OP066",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/systemes_d_information/op066/"
   },
   "responsibilities": [
     "Assurer la disponibilité et le bon fonctionnement des applications",
     "Apporter un support technique et une assistance aux utilisateurs sur les applications dont il a la charge",
-    "Assurer la maintenance évolutive et corrective des applications en lien avec les éditeurs et fournisseurs",
+    "Assurer la maintenance évolutive et corrective des applications en lien avec les éditeurs / fournisseurs",
     "Superviser et surveiller les applications afin de garantir leur performance et leur stabilité",
-    "Rédiger et maintenir à jour la documentation technique ainsi que la base de connaissances associée"
+    "Rédiger et maintenir à jour la documentation technique, ainsi que la base de connaissances associée"
   ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
   "skills": [
     "Collaborer avec les acteurs des métiers Télécom",
     "Conduire des projets techniques",
@@ -138,6 +165,9 @@
     "Rigueur, sens de la méthode et probité",
     "Autonomie"
   ],
+  "specialCommitments": null,
   "title": "Administrateur d'applications SI Télécom",
-  "validThrough": "2026-07-24"
+  "totalJobOpenings": 1,
+  "validThrough": "2026-07-24",
+  "workHours": "Temps plein avec possibilité de télétravail"
 }
