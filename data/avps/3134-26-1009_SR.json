@@ -1,6 +1,6 @@
 {
   "additionalType": {
-    "corpsDomaine": "Cadre d'exploitation",
+    "corpsDomaine": "Cadre d'exploitation ou Contrôleur",
     "direction": "DIRECTION DE LA DISTRIBUTION",
     "uniteOrganisationnelle": "Section expérience commerciale",
     "nbAgentsEncadres": 0,
@@ -19,7 +19,7 @@
       },
       {
         "@type": "PropertyValue",
-        "name": "Contexte de recrutement",
+        "name": "Poste à pourvoir",
         "value": "Susceptible d'être à pourvoir dans le cadre de la réorganisation"
       },
       {
@@ -30,8 +30,8 @@
     ]
   },
   "alternateName": "Chargé de l'animation commerciale",
-  "description": "Animer et coordonner les actions commerciales du réseau au service de la performance et de la satisfaction client. Contribuer à la mise en œuvre opérationnelle des campagnes marketing et au déploiement de la stratégie commerciale sur le terrain. Participer à l'amélioration de l'expérience client et à la valorisation des offres de l'OPT-NC.",
-  "disambiguatingDescription": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le titulaire anime et coordonne les actions commerciales du réseau au service de la performance et de la satisfaction client, contribue à la mise en œuvre opérationnelle des campagnes marketing et participe à l'amélioration de l'expérience client.",
+  "disambiguatingDescription": "Poste d'animateur commercial au sein de la section expérience commerciale de la direction de la poste et des services de proximité.",
   "identifier": "3134-26-1009/SR",
   "name": "Chargé(e) de l'animation commerciale",
   "owner": {
@@ -41,7 +41,7 @@
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "applicantLocationRequirements": {
-    "@type": "Place",
+    "@type": "Schedule",
     "name": "Direction générale",
     "address": {
       "@type": "PostalAddress",
@@ -58,7 +58,7 @@
   },
   "datePosted": "2026-07-03",
   "educationRequirements": {
-    "credentialCategory": "Cadre d'exploitation ou Contrôleur",
+    "credentialCategory": null,
     "competencyRequired": [
       "Environnement administratif, institutionnel et politique",
       "Droit/Réglementation",
@@ -82,17 +82,18 @@
   },
   "jobLocation": {
     "@type": "Place",
-    "name": "Nouméa",
+    "name": "Direction de la poste et des services de proximité",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": null,
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC"
     }
   },
   "occupationalCategory": [
-    "Marketing et communication",
-    "Vente et relation client"
+    "Vente et relation client",
+    "Marketing et communication"
   ],
   "qualifications": "Permis B",
   "relevantOccupation": {
@@ -101,7 +102,7 @@
     "occupationalCategory": {
       "@type": "CategoryCode",
       "codeValue": "K1403",
-      "name": "Communication"
+      "name": "Promotion des ventes"
     },
     "code_metier": "OP009",
     "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/marketing_et_communication/op009/"
@@ -128,7 +129,7 @@
     "Gérer une relation client",
     "Organiser une activité, une réunion, un événement",
     "Analyser une information, une donnée, une situation, un dispositif",
-    "Contribuer à une activité collective, à la conduite d'un projet, à l'élaboration d'une procédure ou d'un dispositif, à la rédaction d'un document",
+    "Contribuer à une activité collective",
     "Aptitude à l'écoute",
     "Sens du service public",
     "Avoir l'esprit d'équipe",
@@ -140,5 +141,6 @@
     "Esprit d'initiative"
   ],
   "title": "Chargé(e) de l'animation commerciale",
-  "validThrough": "2026-07-24"
+  "validThrough": "2026-07-24",
+  "dossier": "ddi"
 }
