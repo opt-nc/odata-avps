@@ -21,7 +21,7 @@
       {
         "@type": "PropertyValue",
         "name": "Fiche d'emploi générique RESPNC",
-        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956102.PDF"
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953468.PDF"
       }
     ]
   },
@@ -109,7 +109,7 @@
     "name": "Chargé de contact clientèle",
     "occupationalCategory": {
       "@type": "CategoryCode",
-      "codeValue": "I1306",
+      "codeValue": "K1403",
       "name": "Accueil et services bancaires"
     },
     "code_metier": "OP005",
@@ -149,5 +149,6 @@
   "title": "Chargé de contact clientèle - Agence de Lifou",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-31",
-  "workHours": "horaires de travail du lundi au samedi"
+  "workHours": "horaires de travail du lundi au samedi",
+  "dossier": "ddi"
 }
