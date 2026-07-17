@@ -9,7 +9,9 @@
     "relationsFonctionnelles": [
       "Service Développement et Maintenance",
       "Section SI Supports",
-      "Autres SI"
+      "Autres SI",
+      "Maitrise d'ouvrage",
+      "Editeurs ou intégrateurs"
     ],
     "informationsLibres": [
       {
@@ -30,7 +32,7 @@
       {
         "@type": "PropertyValue",
         "name": "Régimes indemnitaires rattachés au poste de travail",
-        "value": "Non spécifié"
+        "value": "Sans objet"
       },
       {
         "@type": "PropertyValue",
@@ -41,7 +43,7 @@
   },
   "alternateName": "Concepteur-Développeur d'applications SI Supports",
   "description": "Intégré au sein d'une équipe de 4 agents, le concepteur/développeur d'applications participera aux développements logiciels et à la maintenance, d'un ensemble d'applications couvrant le domaine fonctionnel transverse autour de l'ERP (finance, comptabilité, logistique...). Un projet de refonte de l'ERP est en cours de contractualisation, et la section SI Supports sera donc largement actrice de ce changement, concernant le cœur, l'intégration SI OPT - cœur, et le développement de pans fonctionnels non-couverts.",
-  "disambiguatingDescription": "Concepteur-Développeur d'applications SI Supports au sein du Service Développement et Maintenance",
+  "disambiguatingDescription": "Poste de Concepteur-Développeur d'applications SI Supports au sein du Service Développement et Maintenance de la DSI de l'OPT-NC.",
   "identifier": "3134-26-1047/SR",
   "image": null,
   "mainEntityOfPage": null,
@@ -49,8 +51,8 @@
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "http://www.opt.nc",
-    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/sites/default/files/logo_opt_0.png"
   },
   "potentialAction": null,
   "sameAs": null,
@@ -60,18 +62,19 @@
   "@type": "JobPosting",
   "applicantLocationRequirements": {
     "@type": "Schedule",
-    "name": "Nouvelle-Calédonie",
+    "name": "Siège OPT",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": null,
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
-      "addressCountry": "NC"
+      "addressCountry": "NC",
+      "province": "province Sud"
     }
   },
   "applicationContact": {
     "@type": "ContactPoint",
-    "telephone": "26 76 00",
+    "telephone": "26.76.00",
     "email": "DRH-candidature@opt.nc"
   },
   "baseSalary": null,
@@ -91,7 +94,7 @@
     ]
   },
   "eligibilityToWorkRequirement": "Durée de résidence exigée pour le recrutement sur titre : Ingénieur 1er grade au moins égale à 10 ans, Ingénieur 2ème grade au moins égale à 5 ans",
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'employeur public de référence pour les services postaux, financiers et de télécommunications sur le territoire.",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, les télécommunications et les services financiers sur le territoire.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
@@ -103,23 +106,24 @@
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
-    "url": "http://www.opt.nc",
-    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/sites/default/files/logo_opt_0.png"
   },
   "incentiveCompensation": null,
   "industry": "Télécommunications",
-  "jobBenefits": "2 jours de télétravail possibles, Téléphone Mobile de sécurité",
+  "jobBenefits": null,
   "jobDuration": null,
   "jobImmediateStart": true,
   "jobLocation": {
     "@type": "Place",
-    "name": "Direction des Systèmes d'Information",
+    "name": "DSI",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "59, rue Georges Clémenceau",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
-      "addressCountry": "NC"
+      "addressCountry": "NC",
+      "province": "province Sud"
     }
   },
   "jobLocationType": null,
