@@ -6,7 +6,12 @@
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de service Expérience Client",
     "placeOrganigramme": "N - 3 (par rapport au directeur opérationnel)",
-    "relationsFonctionnelles": [],
+    "relationsFonctionnelles": [
+      "Service Expérience client",
+      "Acteurs institutionnels",
+      "Acteurs économiques",
+      "Acteurs technologiques"
+    ],
     "informationsLibres": [
       {
         "@type": "PropertyValue",
@@ -36,12 +41,12 @@
     ]
   },
   "alternateName": "Chargé(e) de partenariats",
-  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à concevoir, développer et coordonner les partenariats internes et externes de la direction, en appui aux objectifs stratégiques, de performance et d'innovation. Il contribue également à la valorisation des initiatives d'innovation, à la performance du réseau et à la mise en œuvre de projets de collaboration au service du développement commercial et numérique dans une logique de mutualisation des ressources.",
-  "disambiguatingDescription": "Avis de vacance de poste lié à la réorganisation de la Direction de la Poste et des services de proximité.",
+  "description": "Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité. Le poste consiste à concevoir, développer et coordonner les partenariats internes et externes de la direction, en appui aux objectifs stratégiques, de performance et d'innovation. Il s'agit également de contribuer à la valorisation des initiatives d'innovation, à la performance du réseau et à la mise en œuvre de projets de collaboration au service du développement commercial et numérique dans une logique de mutualisation des ressources.",
+  "disambiguatingDescription": "Avis de vacance de poste lié à la réorganisation de la Direction de la Poste et des services de proximité",
   "identifier": "3134-26-1008/SR",
   "image": null,
   "mainEntityOfPage": null,
-  "name": "DPS - Chargé(e) de partenariats - Service Expérience client",
+  "name": "Chargé(e) de partenariats",
   "owner": {
     "@type": "Organization",
     "name": "Office des postes et télécommunications",
@@ -77,7 +82,7 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "Office des postes et télécommunications de Nouvelle-Calédonie.",
+  "employerOverview": "L'Office des postes et télécommunications de Nouvelle-Calédonie (OPT-NC) est l'employeur de référence pour ce poste.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
@@ -93,7 +98,7 @@
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "incentiveCompensation": null,
-  "industry": "Service public",
+  "industry": "Services publics",
   "jobBenefits": null,
   "jobDuration": null,
   "jobImmediateStart": false,
@@ -105,14 +110,15 @@
       "streetAddress": "2 rue Montchovet, Port Plaisance",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
-      "addressCountry": "NC"
+      "addressCountry": "NC",
+      "province": "province Sud"
     }
   },
   "jobLocationType": null,
   "jobStartDate": null,
   "occupationalCategory": [
-    "Marketing et communication",
-    "Vente et relation client"
+    "Vente et relation client",
+    "Marketing et communication"
   ],
   "physicalRequirement": null,
   "qualifications": "Permis B",
@@ -154,7 +160,7 @@
     "Curiosité intellectuelle"
   ],
   "specialCommitments": null,
-  "title": "Chargé(e) de partenariats - Service Expérience client",
+  "title": "Chargé(e) de partenariats",
   "totalJobOpenings": 1,
   "validThrough": "2026-07-24",
   "workHours": null,
