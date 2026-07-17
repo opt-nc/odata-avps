@@ -1,0 +1,10 @@
+{{- /*
+  Infos de build affichées sur la page "À propos" (#475).
+  Le template Go n'est pas interprété dans le Markdown : ce shortcode
+  porte la logique à la place du contenu.
+*/ -}}
+<ul>
+  <li><strong>Révision du code source (Git) :</strong> <code>r-{{ with site.Data.git_commit }}{{ .hash }}{{ else }}dev{{ end }}</code></li>
+  <li><strong>Moteur de rendu :</strong> Hugo <code>v{{ hugo.Version }}</code></li>
+  <li><strong>Dernière synchronisation :</strong> en production le {{ now.Format "02/01/2006 à 15:04" }}</li>
+</ul>
