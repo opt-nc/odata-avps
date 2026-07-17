@@ -2,15 +2,14 @@
   "additionalType": {
     "corpsDomaine": "Ingénieur",
     "direction": "DIRECTION DES SYSTEMES D'INFORMATION",
-    "uniteOrganisationnelle": "Service Développement et Maintenance / Section SI Télécom",
+    "uniteOrganisationnelle": "SERVICE DEVELOPPEMENT ET MAINTENANCE",
     "nbAgentsEncadres": 0,
     "superieurHierarchique": "Chef de la section SI Télécom",
     "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
     "relationsFonctionnelles": [
-      "Section SI Télécom",
-      "Service Développement et Maintenance",
-      "Éditeurs et fournisseurs",
-      "Acteurs des métiers Télécom"
+      "Acteurs des métiers Télécom",
+      "Prestataires TMA",
+      "Éditeurs et fournisseurs"
     ],
     "informationsLibres": [
       {
@@ -35,11 +34,11 @@
       }
     ]
   },
-  "alternateName": "Administrateur d'applications SI Télécom",
-  "description": "Intégré au sein d'une équipe de 8 agents, l'administrateur d'applications définit les procédures d'exploitation, assure les évolutions et la maintenance, et administre les systèmes d'information relevant du périmètre fonctionnel de la section SI Télécom.",
-  "disambiguatingDescription": "Poste d'administrateur d'applications au sein de la section SI Télécom de l'OPT-NC, axé sur le maintien en conditions opérationnelles et l'évolution des solutions logicielles télécom.",
+  "alternateName": "DSI - Administrateur d’applications SI Télécom",
+  "description": "Intégré au sein d’une équipe de 8 agents, l’administrateur d’applications définit les procédures d’exploitation, assure les évolutions et la maintenance, et administre les systèmes d’information relevant du périmètre fonctionnel de la section SI Télécom.",
+  "disambiguatingDescription": "Administrateur d'applications SI Télécom au sein du Service Développement et Maintenance",
   "identifier": "3134-26-1010/SR",
-  "name": "Administrateur d'applications SI Télécom",
+  "name": "Administrateur d’applications SI Télécom",
   "owner": {
     "@type": "Organization",
     "name": "Office des Postes et des Télécommunications",
@@ -47,32 +46,39 @@
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
   "applicantLocationRequirements": {
-    "@type": "Schedule",
-    "name": "Nouvelle-Calédonie",
+    "@type": "Place",
+    "name": "Siège OPT",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "9, rue Gallieni",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
-      "addressCountry": "NC"
+      "addressCountry": "NC",
+      "province": "province Sud"
     }
   },
   "applicationContact": {
     "@type": "ContactPoint",
-    "telephone": "+687267600",
+    "telephone": "26.76.00",
     "email": "DRH-candidature@opt.nc"
   },
   "datePosted": "2026-07-03",
   "educationRequirements": {
     "credentialCategory": "Bac+3",
     "competencyRequired": [
+      "Ingénierie Informatique",
       "Connaissance de l'architecture standard d'un SI Télécom et des infrastructures Télécom",
-      "Connaissance d'outils de gestion collaborative (Sharepoint Confluence) et de suivi des évolutions (JIRA)",
-      "Connaissance des systèmes d'exploitation Linux (RHEL), Unix (AIX)",
-      "Connaissance SQL, Korn Shell, Java souhaitée",
+      "Connaissance d'outils de gestion collaborative Sharepoint Confluence et de suivi des évolutions JIRA",
+      "Connaissance des systèmes d'exploitation Linux RHEL, Unix AIX",
+      "Connaissance SQL, Korn Shell, Java",
       "Anglais technique lu et écrit"
     ]
   },
   "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SERVICE DEVELOPPEMENT ET MAINTENANCE"
+  },
   "experienceRequirements": "2 ans d'expérience dans une activité similaire",
   "hiringOrganization": {
     "@type": "Organization",
@@ -88,11 +94,14 @@
       "streetAddress": "9, rue Gallieni",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
-      "addressCountry": "NC"
+      "addressCountry": "NC",
+      "province": "province Sud"
     }
   },
+  "jobStartDate": "Dès que possible",
   "occupationalCategory": [
-    "Systèmes d'information"
+    "Systèmes d'information",
+    "Télécommunications"
   ],
   "qualifications": "Permis B",
   "relevantOccupation": {
@@ -128,7 +137,7 @@
     "Rigueur, sens de la méthode et probité",
     "Autonomie"
   ],
-  "title": "Administrateur d'applications SI Télécom - Service Développement et Maintenance",
+  "title": "Administrateur d’applications SI Télécom",
   "validThrough": "2026-07-24",
   "dossier": "dsi"
 }
