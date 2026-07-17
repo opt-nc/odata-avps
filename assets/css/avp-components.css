@@ -125,6 +125,8 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.18);
+  /* Liseré en encre du thème (currentColor) : pastille visible sur fond clair
+     ET sombre, y compris pour les couleurs de famille foncées (#448). */
+  border: 1.5px solid currentColor;
   flex-shrink: 0;
 }
