@@ -88,8 +88,6 @@ province Nord ? »* en croisant plusieurs sources.
 
 - **Dataset Hugging Face** : [opt-nc/odata-avps](https://huggingface.co/datasets/opt-nc/odata-avps)
   — le corpus consolidé (JSONL) et les embeddings (Parquet) des AVP actifs ;
-- **Bundle Open Knowledge Format** : [`/okf/index.md`](../okf/index.md) — les fiches
-  structurées pour l'exploitation par les humains *et* les IA ;
 - **Flux d'intégration emploi** : [sitemap dédié](../jobs-sitemap.xml) et JSON-LD
   `JobPosting` embarqué dans chaque page.
 

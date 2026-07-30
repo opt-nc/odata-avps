@@ -14,10 +14,8 @@ GCP [`gcp-avp-cloudfunctions`](../gcp-avp-cloudfunctions). Ce dépôt ne contien
 
 - **[Hugo](https://gohugo.io/)** (extended) + thème **[relearn](https://github.com/McShelby/hugo-theme-relearn)** (sous-module Git).
 - Déploiement **GitHub Pages** via [`.github/workflows/deploy_site.yaml`](.github/workflows/deploy_site.yaml).
-- Sorties additionnelles : **JSON-LD JobPosting** (Google for Jobs), **flux ATS** (`flux_ats.xml`),
-  **jobs-sitemap** (`jobs-sitemap.xml`) et bundle **OKF** (Open Knowledge Format v0.1, `static/okf/`) :
-  `index.md` (index humain à plat, facettes en ligne) + `index.jsonl` (export machine, 1 ligne/AVP).
-  Format canonique = les fiches Markdown + front-matter (`type`/`timestamp`/`resource`).
+- Sorties additionnelles : **JSON-LD JobPosting** (Google for Jobs), **flux ATS** (`flux_ats.xml`)
+  et **jobs-sitemap** (`jobs-sitemap.xml`). Format canonique = les fiches Markdown + front-matter.
 
 ## 📂 Structure
 
@@ -29,7 +27,7 @@ GCP [`gcp-avp-cloudfunctions`](../gcp-avp-cloudfunctions). Ce dépôt ne contien
 | `layouts/` | Shortcodes (`avp-header`, `avp-map`, `list-avps`), partials SEO, sorties XML |
 | `assets/css/` | Thèmes `opt-light` / `opt-dark` + `avp-components.css` |
 | `static/vendor/` | Leaflet & easyqrcode **auto-hébergés** (aucune dépendance CDN) |
-| `scripts/` | Outils de build : enrichissement descriptions, bundle OKF, validateur OKF |
+| `scripts/` | Outils de build : enrichissement des descriptions |
 
 ## 🚀 Développement local
 
@@ -41,13 +39,9 @@ git clone --recurse-submodules <repo>
 # 2. Scripts de pré-build (comme en CI)
 mkdir -p data && echo "hash: dev" > data/git_commit.yaml
 python3 scripts/enrich_descriptions.py
-python3 scripts/generate_okf_bundle.py
 
 # 3. Servir le site
 hugo server -D
-
-# 4. (optionnel) Vérifier la conformité OKF des fiches
-python3 scripts/validate_okf.py
 ```
 
 > ℹ️ Les libs JS (Leaflet, easyqrcode) sont versionnées dans `static/vendor/`.
