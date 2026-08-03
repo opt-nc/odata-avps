@@ -89,3 +89,23 @@ document.addEventListener("DOMContentLoaded", function() {
     </script>
   {{ end }}
 {{ end }}
+
+{{/* ==========================================================================
+   📊 MESURE D'AUDIENCE — Matomo Tag Manager (conteneur optnc.matomo.cloud)
+   Ce partial est le dernier inclus avant </head> par le thème relearn
+   (themes/hugo-theme-relearn/layouts/_default/baseof.html) : le conteneur est
+   donc chargé en fin de head, en asynchrone (pas de blocage du rendu).
+   ========================================================================== */}}
+<!-- Matomo Tag Manager -->
+<script>
+  var _mtm = window._mtm = window._mtm || [];
+  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+  (function() {
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://cdn.matomo.cloud/optnc.matomo.cloud/container_TJyI0323.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Tag Manager -->
+{{/* Note : le site déclare par ailleurs « aucune dépendance CDN » pour les libs
+   JS (Leaflet, easyqrcode auto-hébergés dans static/vendor/) — le conteneur
+   Matomo est une exception assumée (outil de mesure, mise à jour côté Matomo). */}}
