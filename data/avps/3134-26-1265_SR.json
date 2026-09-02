@@ -1,0 +1,171 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Technicien",
+    "direction": "DIRECTION DES MOYENS ET DE L'IMMOBILIER",
+    "uniteOrganisationnelle": "CELLULE INTERVENTIONS IMMOBILIERES",
+    "nbAgentsEncadres": 2,
+    "superieurHierarchique": "Chef de section services et maintenances",
+    "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Déplacements",
+        "value": "Bureau et visites de chantiers avec déplacements possibles sur l’ensemble de la Nouvelle-Calédonie"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériel fourni",
+        "value": "Utilisation du véhicule de service adapté, Équipements de Protection Individuelle (EPI), Habillement / Tenue de travail, Poste de travail informatique et téléphone d’exploitation"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "Indemnités hiérarchiques de chef de cellule"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953314.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le chef de cellule organise, coordonne et supervise les activités de son équipe en charge des travaux et de la maintenance du patrimoine immobilier de l’OPT-NC. Il accompagne son équipe dans la réalisation des activités opérationnelles et veille au respect des objectifs de qualité, de délais, de coûts et des règles d’hygiène et de sécurité. Il assure le suivi du traitement des incidents et des opérations de maintenance des bâtiments. Son objectif est de garantir le maintien en condition opérationnelle, la pérennité du patrimoine et la continuité des services.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1265/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef de cellule interventions immobilières",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "20.64.10",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-08-21",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Applications O365 et système d’information (OTRS, GLPI, SIG)",
+      "Techniques dans le domaine du bâtiment (1er et 2nd œuvre), VRD et installations techniques (portail auto, pompes …)",
+      "Modes opératoires et processus de maintenance",
+      "Réglementation et normes en matière de sécurité du bâtiment (VRD, règles d’hygiène et de sécurité)",
+      "Règles concernant les marchés publics",
+      "Procédures de commande et de facturation de l’OPT-NC",
+      "Règles de sécurité relevant des ERP et ERT"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "CELLULE INTERVENTIONS IMMOBILIERES",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Centre parc service et maintenance",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 rue Fernand FOREST, Ducos",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Patrimoine Bâti"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B, habilitations électrique et travaux en hauteur",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Gestionnaire intervention immobilière",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K2503",
+      "name": "Maintenance des bâtiments et des locaux"
+    },
+    "code_metier": "OP051",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/patrimoine_bati/op051/"
+  },
+  "responsibilities": [
+    "Anime, coordonne et supervise les activités de la cellule afin d’atteindre les objectifs de qualité, de délais et de performance",
+    "Organise et répartit les tâches et demandes de travaux, d’entretien courant et de maintenance, planifie les interventions, assure le suivi de leur réalisation, produit et suit des indicateurs, assure le reporting de l’activité",
+    "Veille au maintien en condition opérationnelle, à la disponibilité et à la qualité des services associés, du parc confié et au patrimoine immobilier de l’OPT-NC",
+    "Manage l’équipe, anime la démarche d’amélioration continue et accompagne les montées en compétence",
+    "Elabore le budget de sa cellule et assure la validation, le suivi des achats et des engagements budgétaires relevant de son périmètre, en veillant à l’optimisation des moyens et en s’assurant de l’opportunité de la dépense",
+    "Veille au respect des procédures, des règles de sécurité et des exigences réglementaires applicables",
+    "Organise la formalisation, la mise à jour et la diffusion de la documentation et des procédures opérationnelles de la cellule",
+    "Met en place et maintien des contrôles internes appropriés pour assurer la conformité et prévenir les risques",
+    "Apporte son expertise à la hiérarchie, propose des actions d’amélioration et contribue à l’évolution de l’organisation, des moyens et des prestations de maintenance",
+    "Supplée le chef de section en son absence, lorsqu’il en reçoit la délégation spécifique",
+    "Participe à la programmation budgétaire de la section, à l’évaluation des besoins et à la valorisation des demandes budgétaires internes, ainsi qu’à la rédaction des CCTP",
+    "Assure l’accueil, l’accompagnement et le suivi des stagiaires et des saisonniers",
+    "Contribue à la continuité des activités de la direction et du centre en situation exceptionnelle et réalise toute mission particulière confiée par la DMI dans le cadre de ses attributions, notamment la participation à des groupes de travail ou à des études ponctuelles"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Manager une équipe, fixer des objectifs",
+    "Analyser et arbitrer les besoins de l’OPT-NC et des clients internes",
+    "Anticiper un risque, une évolution et mener une veille",
+    "Proposer et fiabiliser des solutions, prendre des décisions dans l’intérêt de l’OPT-NC",
+    "Savoir hiérarchiser, interpréter et traiter les problèmes rencontrés",
+    "Contrôler l’application des normes et techniques de mise en œuvre des travaux bâtiment",
+    "Contrôler la conformité des documents administratifs et financiers",
+    "Animer des réunions",
+    "Rendre compte auprès de sa hiérarchie",
+    "Appréhender les limites de son action",
+    "Sens de l’organisation et du service public",
+    "Sens de l’analyse",
+    "Réactivité et faculté d’adaptation",
+    "Faire preuve de discrétion",
+    "Avoir l’esprit d’équipe",
+    "Aisance relationnelle",
+    "Curiosité intellectuelle",
+    "Être autonome",
+    "Maîtrise de soi"
+  ],
+  "specialCommitments": null,
+  "title": "Chef de cellule interventions immobilières",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-09-11",
+  "workHours": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du centre. Interventions possibles en dehors des heures ouvrées en cas d'urgence ou de situations exceptionnelles.",
+  "dossier": "dmi"
+}
