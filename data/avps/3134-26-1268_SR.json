@@ -1,0 +1,166 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre technique",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "SERVICE ARCHITECTURE ET PROJET",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef du service Architecture et Projets",
+    "placeOrganigramme": "N-2",
+    "relationsFonctionnelles": [
+      "Equipes métiers",
+      "Exploitation",
+      "Sécurité",
+      "Fournisseurs"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Déplacements ponctuels sur les sites techniques."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Poste informatique, outils de modélisation, de supervision et moyens d'accès sécurisé aux environnements techniques."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956072.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Définir, concevoir et faire évoluer les architectures des réseaux IP et de transport de l'OPT-NC afin d'en garantir la performance, la capacité, la disponibilité, la sécurité et l'évolutivité.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1268/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Architecte réseaux IP et transport",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.83.33",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-08-21",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Expérience confirmée dans la conception, l'ingénierie ou l'exploitation de réseaux d'opérateurs IP et transport",
+      "Architecture IP : routage BGP et OSPF/IS-IS, MPLS, VPN L2/L3, IPv4/IPv6 et interconnexions opérateurs",
+      "Transport : Ethernet opérateur, fibre optique, DWDM, faisceaux hertziens, CSM synchronisation SyncE/PTP et backhaul fixe/mobile",
+      "Analyse de performance, gestion de capacité et cycle de vie des infrastructures",
+      "Conduite de projet, marchés publics, gestion contractuelle et analyse technico-économique",
+      "Anglais technique permettant d'exploiter une documentation et d'échanger avec les fournisseurs"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SERVICE ARCHITECTURE ET PROJET",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience confirmée dans la conception, l'ingénierie ou l'exploitation de réseaux d'opérateurs IP et transport.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction générale Immeuble WARUNA",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Télécommunications",
+    "Systèmes d'information"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B souhaité ; habilitations spécifiques délivrées selon les besoins du poste.",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Architecte des réseaux et services des télécommunications",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Études et développement de réseaux de télécommunications"
+    },
+    "code_metier": "OP018",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/telecommunications/op018/"
+  },
+  "responsibilities": [
+    "Définir et faire évoluer l'architecture cible et la feuille de route des réseaux IP/MPLS et de transport, couvrant notamment le cœur, la collecte, les interconnexions, le transport optique et hertzien ainsi que le backhaul des réseaux fixes et mobiles",
+    "Concevoir et documenter les architectures de référence, en intégrant les exigences de capacité, de performance, de résilience, de sécurité, d'interopérabilité et de continuité de service",
+    "Conduire les études d'opportunité et de faisabilité en traduisant les besoins métiers et techniques en solutions adaptées et en évaluant les différents scénarios selon leurs coûts, risques, délais et impacts opérationnels",
+    "Piloter l'évolution et le cycle de vie des infrastructures, en anticipant les besoins de capacité, l'obsolescence technologique et les investissements nécessaires à leur modernisation",
+    "Définir et maintenir les principes d'architecture, règles d'ingénierie et exigences techniques applicables aux réseaux IP et de transport",
+    "Contribuer aux projets et consultations techniques, depuis la rédaction des cahiers des charges et spécifications jusqu'à l'analyse des offres, au choix des solutions et à la validation des études et livrables techniques",
+    "Assurer la cohérence technique globale des projets et architectures, en coordination avec les équipes métiers, exploitation, sécurité, fournisseurs et autres parties prenantes",
+    "Assurer une veille technologique et réglementaire et proposer les évolutions permettant d'améliorer la performance, la résilience et l'efficacité des infrastructures",
+    "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT-NC",
+    "Réaliser des benchmarks, preuves de concept et actions d'optimisation des infrastructures existantes",
+    "Participer au suivi budgétaire, au pilotage des fournisseurs et à l'évaluation de la qualité des prestations",
+    "Assurer le transfert de connaissances, accompagner la montée en compétence des équipes et représenter l'OPT-NC dans les échanges techniques avec les partenaires"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Formaliser une architecture cible, une trajectoire et des choix techniques argumentés",
+    "Produire des dossiers d'architecture, schémas, spécifications et dossiers d'aide à la décision",
+    "Dimensionner un réseau à partir des usages, prévisions de trafic, niveaux de service et contraintes de résilience",
+    "Analyser les risques, dépendances, impacts d'exploitation",
+    "Animer des ateliers techniques et coordonner des équipes pluridisciplinaires",
+    "Comparer des solutions, conduire des consultations et challenger les propositions des fournisseurs",
+    "Organiser et valider des tests, recettes techniques",
+    "Présenter clairement des sujets complexes à des interlocuteurs techniques, métiers et décisionnaires",
+    "Rigueur et sens des responsabilités",
+    "Vision globale et capacité d'anticipation",
+    "Esprit d'analyse, de synthèse et sens critique",
+    "Autonomie, initiative et capacité de décision",
+    "Coopération, écoute et aptitude à la négociation",
+    "Communication claire et sens de la pédagogie",
+    "Curiosité technique, adaptabilité et maîtrise de soi dans les situations à fort enjeu"
+  ],
+  "specialCommitments": null,
+  "title": "Architecte réseaux IP et transport",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-09-11",
+  "workHours": null,
+  "dossier": "dt"
+}
