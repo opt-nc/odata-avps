@@ -1,0 +1,194 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Préposé à la distribution postale",
+    "direction": "DIRECTION DE LA POSTE ET DES SERVICES DE PROXIMITE",
+    "uniteOrganisationnelle": "Service relation client – Centre de distribution du courrier du Grand Nouméa (CDC – GN) – Cellule Dumbéa / Païta",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de cellule Dumbéa / Païta",
+    "placeOrganigramme": "N-4 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du centre. Possibilité de travailler les jours fériés et le week-end. Conduite d’un véhicule deux roues (scooter). Port obligatoire de l’uniforme fourni. Gestes répétitifs. Condition physique compatible avec les missions confiées, conformément à la fiche de poste."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Utilisation du véhicule de service obligatoire, Equipement de protection individuelle, Utilisation de matériels homologués et port d’un uniforme"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "Pas de régime indemnitaire associé"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956068.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le (la) préposé(e) à la distribution à domicile est responsable de la collecte, du tri et de la distribution du courrier et des colis dans une zone géographique spécifique. Son objectif est d’assurer une livraison précise, fiable et ponctuelle du courrier et des colis aux destinataires.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1270/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Préposé à la distribution à domicile",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Direction générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "20.62.00",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-08-21",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Organisation et fonctionnement de l’OPT-NC",
+      "Modes opératoires et procédures en vigueur au sein de l’établissement",
+      "Réglementation postale, notamment en matière de distribution",
+      "Règles du raccordement postal et de l’adressage",
+      "Produits et services du domaine courrier et colis",
+      "Quartiers et secteurs géographiques concernés",
+      "Techniques de gestes et postures",
+      "Règles d’hygiène, sécurité, risques animaliers et conditions de travail",
+      "Outils de bureautique et outils digitaux SIDO, IPS, applications O365"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "Service relation client – Centre de distribution du courrier du Grand Nouméa (CDC – GN) – Cellule Dumbéa / Païta"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "CDC – Grand Nouméa",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Dumbéa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Activités postales"
+  ],
+  "physicalRequirement": "Condition physique compatible avec les missions confiées, conformément à la fiche de poste. Gestes répétitifs.",
+  "qualifications": "Permis B, A2 + aptitude à la conduite d’un deux roues (scooter) obligatoire",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé de distribution postale",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Distribution de documents"
+    },
+    "code_metier": "OP016",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/activites_postales/op016/"
+  },
+  "responsibilities": [
+    "Collecter le courrier en provenance du CTP ou d’autres points de dépôt désignés",
+    "Vérifier que le courrier est correctement trié et prêt à être distribué",
+    "Trier les objets de toute nature en fonction de leur destination en utilisant des systèmes de tri automatisés ou manuels",
+    "Réaliser les travaux préparatoires à la distribution : coupage, piquage, dépôts",
+    "Traiter les objets suivis (flashage, inscription, classement, etc.)",
+    "Distribuer le courrier et les colis aux adresses des destinataires de manière efficace et en respectant les délais de livraison impartis",
+    "Assurer la collecte et la distribution des objets en livraison personnalisée de manière efficace et en respectant les délais de livraison impartis",
+    "Utiliser des moyens de transport appropriés pour effectuer la tournée",
+    "Établissement des avis de mise en instance et dépôt des objets correspondants dans les agences d’instance",
+    "Appliquer les ordres de réexpédition",
+    "Signalement à l’encadrement de toute anomalie sur le terrain empêchant une distribution normée",
+    "S’assurer que le destinataire signe le registre et/ou l’application mobile de réception approprié",
+    "En cas de courrier non distribué, d’adresses incorrectes ou de réclamations des clients, signaler ces problèmes à son supérieur et prendre les mesures appropriées pour résoudre ces situations",
+    "Renseignement et conseil aux clients en matière de courrier et colis",
+    "Veiller à sa propre sécurité et à celle des autres pendant la conduite et la livraison",
+    "Respecter le code de la route et les règles de sécurité. Signaler les incidents ou les accidents éventuels et prendre les mesures pour éviter les risques professionnels",
+    "Polyvalence, renfort et entraide au sein de l’établissement selon les besoins de service",
+    "S'inscrire dans une démarche d'amélioration continue en identifiant les opportunités d'optimisation",
+    "Entretenir son poste de travail",
+    "Participer et s’impliquer dans la démarche d’amélioration continue du service",
+    "Formations terrain des autres facteurs sur les tournées connues",
+    "Entretien et contrôle de 1er niveau du véhicule mis à disposition",
+    "Participer à toute formation ou réunion d’information liée à son métier",
+    "Fournir toute statistique sur l’activité"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Travailler en équipe",
+    "Alerter sur une situation à risque",
+    "Appliquer une règle, une procédure, un dispositif",
+    "Utiliser un système, un matériel",
+    "Maîtriser les délais",
+    "Proposer",
+    "Agir en situation difficile",
+    "Anticiper un risque, une évolution",
+    "Rendre compte",
+    "Transmettre un savoir, une technique, une compétence",
+    "Sens de l’organisation",
+    "Être rigoureux",
+    "Faire preuve de discrétion",
+    "Avoir l’esprit d’équipe",
+    "Aisance relationnelle",
+    "Faculté d’adaptation",
+    "Curiosité intellectuelle",
+    "Maîtrise de soi",
+    "Aptitude à l’écoute",
+    "Sens du service public"
+  ],
+  "specialCommitments": null,
+  "title": "Préposé à la distribution à domicile",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-09-11",
+  "workHours": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du centre",
+  "dossier": "dps"
+}
