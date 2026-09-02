@@ -1,0 +1,174 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation",
+    "direction": "DIRECTION DES RESSOURCES HUMAINES",
+    "uniteOrganisationnelle": "SERVICE PILOTAGE ET SOUTIEN",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de service (Audrey-nadia CHARBONNEL)",
+    "placeOrganigramme": "N-2 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Equipes RH",
+      "Managers",
+      "Direction"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953464.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Au sein de la Direction des Ressources Humaines, et plus précisément au sein du service pilotage et soutien, le juriste RH accompagne les équipes RH, les managers et la Direction dans la sécurisation juridique des pratiques de gestion des ressources humaines. Véritable expert en droit social et en réglementation applicable à la fonction publique de Nouvelle-Calédonie, il contribue à la prévention des risques juridiques, à la conformité des décisions RH et à l'accompagnement des transformations de l'établissement. Par son expertise, il participe activement à la maîtrise des risques et au développement d'une culture juridique au sein de l'OPT-NC.",
+  "disambiguatingDescription": "Juriste spécialisé en ressources humaines et droit social pour l'OPT-NC.",
+  "identifier": "3134-26-1269/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Juriste RH",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Direction générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.81.84",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-08-21",
+  "directApply": true,
+  "educationRequirements": {
+    "credentialCategory": "Bac+3",
+    "competencyRequired": [
+      "Droit du travail et réglementation applicable à la fonction publique de Nouvelle-Calédonie",
+      "Précontentieux et contentieux du travail et administratif Fonctionnement des administrations et établissements publics",
+      "Pratiques et processus RH",
+      "Gestion des procédures disciplinaires et contentieuses",
+      "Outils bureautiques et environnement Microsoft 365"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications sur le territoire.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "SERVICE PILOTAGE ET SOUTIEN"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience dans un service RH d'une administration ou d'un établissement public",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "2026-11-01",
+  "occupationalCategory": [
+    "Ressources humaines"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Juriste",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K1901",
+      "name": "Défense et conseil juridique"
+    },
+    "code_metier": "OP083",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/pilotage/op083/"
+  },
+  "responsibilities": [
+    "Apporter une expertise juridique aux équipes RH et aux managers sur les problématiques de droit du travail, de la fonction publique de Nouvelle-Calédonie et des relations sociales",
+    "Accompagner les décisions relatives aux contrats, à la mobilité, aux situations individuelles, aux réorganisations et aux procédures RH",
+    "Rédiger les projets de délibérations RH du Conseil d'administration et les documents annexes",
+    "Émettre des avis et recommandations permettant de sécuriser les décisions de l'établissement",
+    "Analyser les situations susceptibles de relever du pouvoir disciplinaire",
+    "Mener une enquête administrative",
+    "Instruire les procédures disciplinaires et garantir leur conformité juridique",
+    "Conseiller les managers dans la gestion des situations sensibles",
+    "Participer aux entretiens disciplinaires et assurer le suivi des procédures",
+    "Mettre en œuvre les procédures statutaires en lien avec les autorités compétentes",
+    "Traiter les demandes de protection fonctionnelle",
+    "Instruire les contentieux individuels et collectifs",
+    "Rédiger les mémoires en défense, constituer les dossiers et assurer leur suivi en lien avec les avocats lorsque nécessaire",
+    "Représenter ou accompagner l'OPT-NC dans les procédures et favoriser, lorsque cela est possible, les solutions amiables",
+    "Identifier les risques juridiques et proposer des actions de prévention",
+    "Réaliser et diffuser une veille permanente sur les évolutions législatives, réglementaires et jurisprudentielles",
+    "Mettre à jour les procédures et les référentiels RH",
+    "Concevoir des guides pratiques, fiches juridiques et outils d'aide à la décision",
+    "Participer aux projets transverses de la DRH et contribuer à l'amélioration continue des pratiques",
+    "Former le personnel en matière de droits et obligations Accompagnement dans la réflexion et mise en œuvre des réformes statutaires réglementaires",
+    "Participer à des task forces de la direction",
+    "Suppléer la chargée d'études juridique RH en cas d'absence, notamment sur des dossiers dits prioritaires"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Analyser des situations complexes et évaluer les risques juridiques",
+    "Rédiger des actes et notes juridiques de qualité",
+    "Conseiller et accompagner les managers dans leurs décisions",
+    "Conduire des études et des projets juridiques",
+    "Formuler des recommandations argumentées",
+    "Communiquer avec pédagogie auprès d'interlocuteurs variés",
+    "Sens de l'analyse et de la synthèse",
+    "Rigueur et sens des responsabilités",
+    "Curiosité intellectuelle",
+    "Réactivité et capacité d'adaptation",
+    "Qualités relationnelles et aptitude à travailler en équipe",
+    "Discrétion et sens de la confidentialité"
+  ],
+  "specialCommitments": null,
+  "title": "Juriste RH",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-09-11",
+  "workHours": null,
+  "dossier": "drh"
+}
