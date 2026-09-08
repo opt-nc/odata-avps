@@ -6,12 +6,19 @@
     center : slice [lat lng] du centre initial (défaut Nouvelle-Calédonie)
     zoom   : niveau de zoom initial (défaut 7)
     fit    : si vrai, recadre la vue sur les marqueurs (utile pour un sous-ensemble)
+    maxzoom: plafond du recadrage (défaut 12). Sur une carte de dossier ou de tag,
+             toutes les offres tiennent souvent dans le même quartier : un plafond
+             de 12 (~35 km de large) y donne toujours la même vue, et le recadrage
+             devient indiscernable d'un zoom fixe. On le relève dans ces cas-là.
+             Il s'applique AUSSI au cas « un seul point » : c'est le plus fréquent
+             (une direction n'a souvent qu'une offre, ou plusieurs au même point).
   Les AVP au même point sont regroupés ; l'anneau du pin agrège l'UNION de leurs familles.
 */ -}}
 {{- $id := .id }}
 {{- $pages := .pages }}
 {{- $center := .center | default (slice -21.3 165.5) }}
 {{- $zoom := .zoom | default 7 }}
+{{- $maxzoom := .maxzoom | default 12 }}
 <link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
 <script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script>
 
@@ -91,8 +98,8 @@
     });
 
     {{- if .fit }}
-    if (bounds.length > 1) { map.fitBounds(bounds, { padding: [30, 30], maxZoom: 12 }); }
-    else if (bounds.length === 1) { map.setView(bounds[0], 12); }
+    if (bounds.length > 1) { map.fitBounds(bounds, { padding: [30, 30], maxZoom: {{ $maxzoom }} }); }
+    else if (bounds.length === 1) { map.setView(bounds[0], {{ $maxzoom }}); }
     {{- end }}
   });
 })();

@@ -5,6 +5,12 @@
   (cf. layouts/_default/taxonomy.html) : même partial, même recadrage
   automatique, même position — entre le titre de la page et la liste.
 
+  maxzoom 15 (~4,4 km de large) au lieu du défaut 12 (~35 km) : sans cela, une
+  direction dont les offres sont toutes au même point retombait sur un zoom 12 fixe,
+  visuellement identique à une absence de recadrage. On ne monte pas plus haut car
+  les coordonnées viennent d'un géocodage parfois approximatif (repli sur le
+  centroïde de la commune) : zoomer à 16 afficherait une précision qu'on n'a pas.
+
   Elle n'est rendue que si au moins un AVP de la direction est géolocalisé :
   une direction dont aucune offre n'a de coordonnées afficherait sinon une
   carte vide centrée au hasard.
@@ -19,6 +25,7 @@
     "id" (printf "avp-map-%s" (.Page.Section | default (.Page.RelPermalink | urlize)))
     "pages" $pages
     "fit" true
+    "maxzoom" 15
   ) }}
 </div>
 {{- end }}
