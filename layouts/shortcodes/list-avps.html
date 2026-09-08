@@ -1,1 +1,26 @@
-{{ partial "avp-cards-list.html" .Page.Pages }}
+{{- /*
+  Liste des AVP d'une direction, précédée de leur carte.
+
+  La carte reprend exactement le traitement des pages de tag
+  (cf. layouts/_default/taxonomy.html) : même partial, même recadrage
+  automatique, même position — entre le titre de la page et la liste.
+
+  Elle n'est rendue que si au moins un AVP de la direction est géolocalisé :
+  une direction dont aucune offre n'a de coordonnées afficherait sinon une
+  carte vide centrée au hasard.
+*/ -}}
+{{- $pages := .Page.Pages }}
+
+{{- $hasGeo := false }}
+{{- range $pages }}{{ if and .Params.latitude .Params.longitude }}{{ $hasGeo = true }}{{ end }}{{- end }}
+{{- if $hasGeo }}
+<div style="margin-bottom: 2.5rem;">
+  {{ partial "avp-map.html" (dict
+    "id" (printf "avp-map-%s" (.Page.Section | default (.Page.RelPermalink | urlize)))
+    "pages" $pages
+    "fit" true
+  ) }}
+</div>
+{{- end }}
+
+{{ partial "avp-cards-list.html" $pages }}
