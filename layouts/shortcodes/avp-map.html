@@ -2,9 +2,16 @@
   Carte interactive affichant la répartition géographique des offres d'emploi. Les offres sont également listées textuellement ci-dessous par ordre de publication. La couleur de chaque pin correspond à la ou aux familles de métier concernées.
 </div>
 
+{{/*
+  "fit" recadre la vue sur les offres réellement publiées, au lieu de figer le
+  territoire entier au zoom 7 : quand tout est concentré sur le Grand Nouméa, la
+  carte s'y ajuste ; le jour où une offre part aux Loyauté, elle s'élargit d'elle-même.
+  "center"/"zoom" restent le repli utilisé tant qu'aucune offre n'est géolocalisée.
+*/}}
 {{ partial "avp-map.html" (dict
   "id" "avp-global-map"
   "pages" .Page.Site.RegularPages
   "center" (slice -21.3 165.5)
   "zoom" 7
+  "fit" true
 ) }}
