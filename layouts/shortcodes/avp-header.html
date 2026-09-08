@@ -66,11 +66,10 @@
           {{- $href := index $tagLinks ($fam | urlize) }}
           {{- if $href }}
           <a href="{{ $href }}" title="Voir les offres de la famille « {{ $fam }} »" style="text-decoration: none;">
-            <span class="famille-badge" style="--couleur: {{ index $colors $fam | default " #999999" }}">{{ $fam
-              }}</span>
+            <span class="famille-badge" style="--couleur: {{ index $colors $fam | default "#999999" }}">{{ $fam }}</span>
           </a>
           {{- else }}
-          <span class="famille-badge" style="--couleur: {{ index $colors $fam | default " #999999" }}">{{ $fam }}</span>
+          <span class="famille-badge" style="--couleur: {{ index $colors $fam | default "#999999" }}">{{ $fam }}</span>
           {{- end }}
           {{- end }}
         </td>
@@ -90,8 +89,7 @@
           <a href="{{ $.Page.Params.url_fiche_metier }}" target="_blank" rel="noopener"
             title="Voir la fiche métier dans le référentiel officiel OPT-NC - Nouvelle fenêtre"
             style="display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fas fa-book" aria-hidden="true"></i> {{ $.Page.Params.metier_ref_nom }}{{ with
-            $.Page.Params.code_metier_ref }} <code>{{ . }}</code>{{ end }}
+            <i class="fas fa-book" aria-hidden="true"></i> {{ $.Page.Params.metier_ref_nom }}{{ with $.Page.Params.code_metier_ref }} <code>{{ . }}</code>{{ end }}
           </a>
           {{- else }}
           {{ $.Page.Params.metier_ref_nom }}
@@ -137,8 +135,8 @@
 
   {{ if and .Page.Params.latitude .Page.Params.longitude }}
   <!-- Leaflet (auto-hébergé, sans dépendance CDN) -->
-  <link rel="stylesheet" href="{{ " vendor/leaflet/leaflet.css" | relURL }}">
-  <script src="{{ " vendor/leaflet/leaflet.js" | relURL }}" defer></script>
+  <link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
+  <script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script>
 
   <div class="avp-single-map-wrapper">
     <h3 id="localisation-poste">
@@ -152,8 +150,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const lat = {{ .Page.Params.latitude }
-    };
+    const lat = {{ .Page.Params.latitude }};
     const lng = {{ .Page.Params.longitude }};
     const title = {{ .Page.Title }};
     const ref = {{ .Page.Params.ref }};
