@@ -104,8 +104,19 @@ au lieu d'y être silencieusement invisible.
 Le nom d'hôte est testé côté navigateur, pas l'environnement de build : une
 page générée par `hugo` puis ouverte en local ne doit pas être comptée. */}}
 <!-- Matomo Tag Manager -->
-
-
+<script>
+  (function () {
+    var h = location.hostname;
+    // Rien : page ouverte en file://  ·  puis localhost, boucle locale, IPv6,
+    // plages privées (test depuis un mobile du réseau) et domaines .local (mDNS).
+    var local = !h || /^(localhost|0\.0\.0\.0|\[?::1\]?)$|^127\.|^10\.|^192\.168\.|^172\.(1[6-9]|2\d|3[01])\.|\.local$/i.test(h);
+    if (local) { return; }
+    var _mtm = window._mtm = window._mtm || [];
+    _mtm.push({ 'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start' });
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true; g.src = 'https://cdn.matomo.cloud/optnc.matomo.cloud/container_TJyI0323.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
 <!-- End Matomo Tag Manager -->
 {{/* Note : le site déclare par ailleurs « aucune dépendance CDN » pour les libs
 JS (Leaflet, easyqrcode auto-hébergés dans static/vendor/) — le conteneur
