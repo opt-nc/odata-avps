@@ -1,4 +1,0 @@
-# DIRECTION DES TELECOMMUNICATIONS
-
-{{< list-avps >}}
-

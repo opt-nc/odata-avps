@@ -732,3 +732,14 @@ body.slideshow-active #R-body {
     max-width: 100% !important;
     /* 🎯 Supprime le bridage du thème sur PC */
 }
+
+/* ── Archives : ne pas faire apparaître la fiche courante dans le menu ──────────
+   Les AVP archivés portent `hidden: true` : ils sont donc absents du menu latéral,
+   comme la page « developpeurs ». Relearn fait toutefois une exception pour la page
+   ACTIVE, qu'il affiche toujours afin de situer le lecteur — d'où une entrée qui
+   surgissait sous « Archives » à chaque consultation d'une fiche close.
+   On la masque : la navigation reste celle des offres en cours, et la liste
+   complète des archives demeure accessible via la page /archives/. */
+.R-sidebarmenu li.hidden {
+    display: none;
+}

@@ -9,3 +9,9 @@ samples
 # Fichiers système Mac
 .DS_Store
 *~
+
+# Sorties de `hugo --destination …` lancées à la main : ce sont des artefacts de
+# build, jamais du contenu. `server/` avait fini committé (514 fichiers suivis),
+# et `--server/` provient d'un flag mal passé sur la ligne de commande.
+/server/
+/--server/
