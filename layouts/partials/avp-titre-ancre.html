@@ -1,0 +1,12 @@
+{{- /*
+  Titre de section ancrable.
+
+  Les titres écrits en HTML dans un shortcode ne passent pas par le render hook
+  Goldmark du thème : ils n'ont donc pas d'identifiant, et l'on ne peut pas
+  partager un lien vers une section précise de la page Statistiques (demande du
+  métier, 10/09/2026).
+
+  L'identifiant est passé explicitement plutôt que dérivé du libellé : il devient
+  une adresse publique, il ne doit donc PAS changer si l'on reformule le titre.
+*/ -}}
+<h3 id="{{ .id }}">{{ .texte }}<a class="avp-ancre" href="#{{ .id }}" aria-label="Lien vers cette section" title="Lien vers cette section">#</a></h3>

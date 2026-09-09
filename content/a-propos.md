@@ -10,7 +10,7 @@ hidden: true
 
 ### 🏛️ La démarche de production
 
-Cette plateforme a été conçue pour moderniser et fluidifier l'accès aux Avis de Vacances de Postes (AVP) de l'**Office des Postes et Télécommunications de Nouvelle-Calédonie**. 
+Cette plateforme a été conçue pour moderniser et fluidifier l'accès aux Avis de Vacances de Postes (AVP) de l'**Office des Postes et Télécommunications de Nouvelle-Calédonie**.
 
 Le processus de publication est entièrement automatisé et s'articule autour de trois piliers technologiques :
 

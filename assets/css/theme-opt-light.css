@@ -813,3 +813,25 @@ body.slideshow-active #R-body {
 .avp-trend-down { color: #C8102E; }
 .avp-trend-flat { opacity: .55; }
 .avp-stat-l small { opacity: .8; font-size: .8em; }
+
+/* Lien d'ancrage des sections de la page Statistiques.
+   Discret par défaut, révélé au survol du titre — mais toujours atteignable au
+   clavier (:focus-visible), sinon il serait invisible pour qui n'a pas de souris. */
+.avp-ancre {
+    margin-left: .4rem;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0;
+    color: var(--PRIMARY-color, #005A9C);
+    transition: opacity .15s ease-in-out;
+}
+h3:hover > .avp-ancre,
+.avp-ancre:focus-visible {
+    opacity: .6;
+}
+.avp-ancre:hover { opacity: 1; }
+/* La cible d'une ancre ne doit pas se coller au bord haut de la fenêtre. */
+h3[id] { scroll-margin-top: 5rem; }
+@media (prefers-reduced-motion: reduce) {
+    .avp-ancre { transition: none; }
+}

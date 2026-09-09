@@ -6,19 +6,30 @@ disableNextPrev: true
 hidden: true
 ---
 
-### 🚀 Une API publique, trois façons de l'utiliser
+### 🚀 Une API publique, trois façons de l'utiliser {#trois-usages}
 
 Les données de cette plateforme sont **intégrables** dans vos applications, scripts,
 tableaux de bord ou agents IA. Tout passe par le
-[portail d'APIs de l'OPT-NC](https://apigee-optnc-prd-api.apigee.io/) :
+[portail d'APIs de l'OPT-NC](https://apigee-optnc-prd-api.apigee.io/).
 
-1. Créez un compte sur le portail et une *app* ;
-2. Abonnez-la au produit **`avps`** (approbation automatique) ;
-3. Récupérez votre clé API (« Key » dans les détails de votre app).
+{{% notice style="primary" title="Obtenir votre clé, en trois étapes" icon="key" %}}
+1. Créez un compte sur le portail, puis une *app* ;
+2. Abonnez-la au produit **`avps`** — l'approbation est automatique ;
+3. Récupérez votre clé API : champ « Key » dans les détails de votre app.
+{{% /notice %}}
+
+#### Pour vous aider {#demarrer}
+
+{{< button href="https://dev.to/optnc/apigee-101-onboarding-authentication-1ghl" icon="fas fa-book-open" >}}Lire le guide complet{{< /button >}}
+{{< button href="https://youtu.be/L56z2Vkht5E" icon="fab fa-youtube" >}}Voir la vidéo sur YouTube{{< /button >}}
+
+L'onboarding APIGEE pas à pas, de la création du compte au premier appel authentifié :
+
+{{< youtube L56z2Vkht5E >}}
 
 ---
 
-### 🔎 L'API REST de recherche
+### 🔎 L'API REST de recherche {#api-rest}
 
 Exemples avec [httpie](https://httpie.io/) (`brew install httpie` / `apt install httpie`) :
 
@@ -27,7 +38,19 @@ Exemples avec [httpie](https://httpie.io/) (`brew install httpie` / `apt install
 ```bash
 http POST https://api.opt.nc/avps/search \
   x-apikey:$API_KEY \
-  prompt="développeur informatique orienté données"
+  prompt="Je suis spécialiste data. Trouve moi un poste adapté"
+```
+
+ou avec curl
+
+```
+curl --request POST \
+  'https://api.opt.nc/avps/search' \
+  --header 'x-apikey: [YOUR_API_KEY]' \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --data '{"prompt":"Je suis spécialiste data. Trouve moi un poste adapté"}' \
+  --compressed
 ```
 
 **Filtres structurés** — commune, province et direction utilisent les référentiels
@@ -62,7 +85,7 @@ de synthèse (`titre`, `ville`, `province`, `familles`, `direction`, `distance`)
 
 ---
 
-### 🤖 Le serveur MCP pour les agents IA
+### 🤖 Le serveur MCP pour les agents IA {#serveur-mcp}
 
 Vos assistants (Claude, Gemini, agents maison…) peuvent interroger les AVPs
 nativement via le protocole **MCP** (Model Context Protocol) :
@@ -84,7 +107,7 @@ province Nord ? »* en croisant plusieurs sources.
 
 ---
 
-### 📊 La donnée brute (open data)
+### 📊 La donnée brute (open data) {#open-data}
 
 - **Dataset Hugging Face** : [opt-nc/odata-avps](https://huggingface.co/datasets/opt-nc/odata-avps)
   — le corpus consolidé (JSONL) et les embeddings (Parquet) des AVP actifs ;
@@ -93,7 +116,7 @@ province Nord ? »* en croisant plusieurs sources.
 
 ---
 
-### 📬 Support
+### 📬 Support {#support}
 
 Une idée d'intégration, un besoin de quota supérieur, un bug ? Ouvrez une issue sur
 [le dépôt du projet](https://github.com/opt-nc/odata-avps) ou contactez le support

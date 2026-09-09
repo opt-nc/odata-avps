@@ -16,6 +16,14 @@ theme = 'hugo-theme-relearn'
 [params.topbar]
     sidebar = "show"
 
+# Vidéos YouTube : mode confidentialité renforcée (youtube-nocookie.com).
+# Le site n'a pas de bandeau de consentement ; sans ce réglage, une simple visite
+# de la page déposerait des cookies de suivi YouTube, avant même que le visiteur
+# ne lance la lecture.
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true
+
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-info-circle'></i> À propos"
 pageRef = "/a-propos"
@@ -25,6 +33,11 @@ weight = 10
 name = "<i class='fas fa-fw fa-chart-line'></i> Statistiques"
 pageRef = "/stats"
 weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-code'></i> Développeurs"
+pageRef = "/developpeurs"
+weight = 30
 
 [outputFormats.jobs_sitemap]
   mediaType = "application/xml"

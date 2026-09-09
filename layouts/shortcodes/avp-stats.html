@@ -95,6 +95,7 @@
 {{- $moyenne := 0 }}
 {{- if $stock }}{{ $moyenne = div $total (len $stock) }}{{ end }}
 
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "chiffres-cles" "texte" "Chiffres clés") }}
 <div class="avp-stats-tiles">
   <div class="avp-stat"><span class="avp-stat-n">{{ len $encours }}</span><span class="avp-stat-l">offres en cours</span></div>
   <div class="avp-stat"><span class="avp-stat-n">{{ $postes }}</span><span class="avp-stat-l">postes à pourvoir</span></div>
@@ -144,11 +145,11 @@
   {{- $pubs = $pubs | append $p }}{{- $clos = $clos | append $c }}
 {{- end }}
 
-<h3>Offres ouvertes, semaine par semaine</h3>
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "offres-par-semaine" "texte" "Offres ouvertes, semaine par semaine") }}
 <p class="avp-stats-note">Nombre d'offres simultanément ouvertes à chaque semaine. Le pic atteint {{ $max }}{{ with $maxSem }} le {{ . }}{{ end }}.</p>
 <div class="avp-chart-box"><canvas id="avp-chart-stock" height="120"></canvas></div>
 
-<h3>Activité mois par mois</h3>
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "activite-mensuelle" "texte" "Activité mois par mois") }}
 <p class="avp-stats-note">Nombre d'offres publiées et clôturées, sur l'ensemble du corpus ({{ len $avps }} offres, archives comprises).</p>
 <div class="avp-chart-box"><canvas id="avp-chart-timeline" height="120"></canvas></div>
 
@@ -275,24 +276,24 @@
 {{- end }}
 {{- $seriesFam = sort $seriesFam "tot" "desc" }}
 
-<h3>Offres ouvertes par famille de métier, mois par mois</h3>
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "offres-par-famille" "texte" "Offres ouvertes par famille de métier, mois par mois") }}
 <p class="avp-stats-note">Les barres ne sont pas empilées : une offre pouvant relever de plusieurs familles, leur somme dépasserait le nombre réel d'offres.</p>
 <div class="avp-chart-box"><canvas id="avp-chart-fammois" height="300"></canvas></div>
 
-<h3>Offres ouvertes par métier, mois par mois</h3>
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "offres-par-metier" "texte" "Offres ouvertes par métier, mois par mois") }}
 <p class="avp-stats-note">{{ len $metiersL }} métiers de référence distincts sur l'ensemble du corpus.</p>
 <div class="avp-chart-box"><canvas id="avp-chart-metmois" height="340"></canvas></div>
 
-<h3>Offres ouvertes par direction, mois par mois</h3>
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "offres-par-direction" "texte" "Offres ouvertes par direction, mois par mois") }}
 <p class="avp-stats-note">Une offre est comptée dans chaque mois où elle a été ouverte au moins un jour. Les barres empilées donnent le total mensuel.</p>
 <div class="avp-chart-box"><canvas id="avp-chart-dirmois" height="300"></canvas></div>
 
-<h3>Offres en cours par direction</h3>
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "en-cours-par-direction" "texte" "Offres en cours par direction") }}
 <div class="avp-chart-box"><canvas id="avp-chart-directions" height="{{ mul (len $pardir) 26 | add 40 }}"></canvas></div>
 
 {{- /* ---- Prochaines clôtures -------------------------------------------- */ -}}
 {{- $futures := sort $encours "Params.date_cloture" }}
-<h3>Prochaines dates de clôture</h3>
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "prochaines-clotures" "texte" "Prochaines dates de clôture") }}
 {{- if $futures }}
 <ul class="avp-stats-list">
   {{- range first 8 $futures }}
@@ -304,7 +305,7 @@
 
 {{- /* ---- Dernières clôtures --------------------------------------------- */ -}}
 {{- $recentes := sort $archives "Params.date_cloture" "desc" }}
-<h3>Dernières offres clôturées</h3>
+{{ partial "avp-titre-ancre.html" (dict "page" .Page "id" "dernieres-cloturees" "texte" "Dernières offres clôturées") }}
 {{- if $recentes }}
 <ul class="avp-stats-list">
   {{- range first 8 $recentes }}
