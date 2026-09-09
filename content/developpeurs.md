@@ -25,7 +25,7 @@ tableaux de bord ou agents IA. Tout passe par le
 
 L'onboarding APIGEE pas à pas, de la création du compte au premier appel authentifié :
 
-{{< youtube L56z2Vkht5E >}}
+{{< avp-video L56z2Vkht5E >}}
 
 ---
 

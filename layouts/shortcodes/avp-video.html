@@ -1,0 +1,13 @@
+{{- /*
+  Vidéo YouTube en vignette.
+
+  Évite d'écrire du HTML dans le Markdown : le conteneur qui borne la largeur est
+  posé ici, pas dans le contenu. Le rendu de l'iframe est délégué au shortcode
+  interne de Hugo, qui respecte `privacy.youtube.privacyEnhanced` (hugo.toml) et
+  sert donc youtube-nocookie.com.
+
+  Usage : {{< avp-video L56z2Vkht5E >}}
+*/ -}}
+<div class="avp-video">
+{{- template "_internal/shortcodes/youtube.html" . -}}
+</div>
