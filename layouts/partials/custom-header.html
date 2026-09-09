@@ -5,11 +5,11 @@ NETTOYAGE CHIRURGICAL DES CATÉGORIES VIDES (IMMUNE AUX PIÈGES D'URLS)
   document.addEventListener("DOMContentLoaded", function () {
     // 1. Hugo génère proprement la liste de TOUS les titres de vos catégories
     const checkedCategories = [
-      {{- range.Site.Pages }}
-    {{- if .IsSection }}
-  "{{ .Title }}",
-    {{ - end }}
-  { { - end } }
+    {{- range .Site.Pages }}
+      {{- if .IsSection }}
+        "{{ .Title }}",
+      {{- end }}
+    {{- end }}
   ];
 
   // 2. Le script inspecte les éléments réels de la sidebar au chargement
