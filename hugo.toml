@@ -16,6 +16,18 @@ theme = 'hugo-theme-relearn'
 [params.topbar]
     sidebar = "show"
 
+# Moteur de recherche : Orama plutôt que Lunr (défaut du thème).
+# Ce qu'on gagne : la tolérance aux fautes de frappe, précieuse sur un corpus
+# plein de termes longs (« télécommunications », « concepteur-développeur »).
+# Ce qu'on paie : +22 Ko gzippés (24 contre 2 pour Lunr).
+# Ce qui ne change PAS : l'index searchindex.fr.js, 57 Ko gzippés, généré par le
+# thème indépendamment du moteur — c'est lui le vrai poids, et il grossira avec
+# les archives. Le réduire passerait par les options search.index du thème, pas
+# par le choix de l'adaptateur.
+[params.search]
+  [params.search.adapter]
+    identifier = "orama"
+
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-info-circle'></i> À propos"
 pageRef = "/a-propos"
