@@ -1,4 +1,0 @@
-# DIRECTION GENERALE
-
-{{< list-avps >}}
-

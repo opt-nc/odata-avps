@@ -1,4 +1,0 @@
-# AGENCE COMPTABLE
-
-{{< list-avps >}}
-
