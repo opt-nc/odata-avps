@@ -1,6 +1,12 @@
 baseURL = 'https://opt-nc.github.io/odata-avps/'
 locale = 'fr-fr'
 defaultContentLanguage = 'fr'
+
+# Fuseau du site : les dates du front-matter sans heure ni décalage (« date: 2026-09-10 »)
+# étaient interprétées en UTC. Le pipeline, lui, les calcule en heure de Nouméa (UTC+11) :
+# le billet du jour tombait donc onze heures dans le futur et Hugo refusait de le générer.
+# Constaté le 10/09/2026 — le mot de la DRH publié à 9h42 restait invisible.
+timeZone = 'Pacific/Noumea'
 title = "Emploi OPT-NC"
 theme = 'hugo-theme-relearn'
 
