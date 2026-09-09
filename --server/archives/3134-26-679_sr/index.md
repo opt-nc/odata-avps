@@ -1,0 +1,73 @@
+# Assistant(e) Ressources Humaines études et projets – Section appui stratégique
+
+{{< avp-header >}}
+
+
+## 📝 Description du poste & Contexte
+
+Avis de vacances de poste lié à la réorganisation de la Direction de la Poste et des services de proximité pour un poste d'Assistant(e) Ressources Humaines études et projets au sein de la Section appui stratégique.
+
+## 🏢 Organisation & Relations Fonctionnelles
+
+**Supérieur hiérarchique direct :** Chef de section appui stratégique
+
+**Place dans l'organigramme :** N -3 (par rapport au directeur opérationnel)
+
+## 🎯 Missions et Activités
+
+- Intervenir en appui opérationnel aux études et projets RH relatifs à l’organisation et aux équipes, dans le cadre des orientations définies par la Direction
+- Contribuer à la préparation, à l’instruction et au suivi des travaux d’études RH, en apportant un soutien méthodologique et technique adapté à leur périmètre
+- Participer à la coordination des acteurs et à la mise en œuvre des dispositifs RH, afin de soutenir le fonctionnement des équipes et l’application des décisions prises
+- Collecter, fiabiliser et consolider les données RH nécessaires aux différents types d’études à mener
+- Participer à la réalisation d’analyses de charge et d’impacts RH, selon les méthodes et orientations définies
+- Contribuer à l’identification des besoins en compétences à partir des éléments recueillis
+- Préparer des éléments d’analyse et de synthèse pour alimenter les travaux d’aide à la décision
+- Contribuer à l’élaboration et à la mise à jour d’outils de suivi RH et de tableaux de bord
+- Participer à la formalisation des circuits internes (demandes, validations, remontées d’information)
+- Aider à la production d’indicateurs RH, sous le pilotage de la Direction
+- Instruire les dossiers liés aux évolutions d’organisation, à la mobilité ou aux ajustements internes
+- Assurer le suivi opérationnel des actions RH décidées (planning, tableaux de suivi, états d’avancement)
+- Mettre à jour les supports et documents de référence RH
+
+## 👤 Profil Recherché
+
+### 🎓 Formation & Connaissances
+
+**Savoirs et connaissances théoriques :**
+- Ressources humaines (statuts du personnel de la fonction publique)
+- Environnement administratif, institutionnel et politique
+- Techniques de communication
+- Techniques de rédaction
+- Bureautique et outils collaboratifs
+- Organisation, méthode et processus
+
+### 🛠️ Savoir-faire & Aptitudes comportementales
+
+- Accompagner une personne, un groupe
+- Accompagner un changement, une réforme, un dispositif
+- Alerter sur une situation à risque
+- Analyser un contexte, une problématique, une complexité
+- Concevoir un projet, une démarche
+- Traduire un projet en plan d’actions
+- Elaborer un plan d’action, un programme
+- Aisance relationnelle
+- Capacité à communiquer
+- Esprit de synthèse
+- Sens de l’analyse
+- Être rigoureux
+- Faire preuve de discrétion
+- Etre diplomate
+- Faculté d’adaptation
+- Réactivité
+
+## 🚗 Habilitations & Permis Requis
+
+Permis B
+
+## 📬 Contact & Modalités de candidature
+
+Pour répondre à cette offre, merci de transmettre votre dossier de candidature (CV et lettre de motivation) :
+
+- 📧 **Par email :** [drh-candidature@opt.nc](mailto:drh-candidature@opt.nc)
+- 📞 **Par téléphone :** 26.79.28
+

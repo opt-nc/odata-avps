@@ -1,0 +1,4 @@
+# SECRETARIAT GENERAL
+
+{{< list-avps >}}
+

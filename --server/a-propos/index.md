@@ -1,0 +1,19 @@
+# À propos de la plateforme
+
+### 🏛️ La démarche de production
+
+Cette plateforme a été conçue pour moderniser et fluidifier l'accès aux Avis de Vacances de Postes (AVP) de l'**Office des Postes et Télécommunications de Nouvelle-Calédonie**. 
+
+Le processus de publication est entièrement automatisé et s'articule autour de trois piliers technologiques :
+
+1. **Extraction de la Donnée (IA Générative) :** Les documents administratifs bruts au format PDF sont analysés par un agent d'intelligence artificielle (propulsé par Gemini). Il structure les données essentielles (références, dates de clôture, critères requis) au format JSON/Markdown sans aucune intervention humaine.
+2. **Identité Visuelle Synchrone :** Les illustrations bannières thématiques intégrées à chaque offre sont générées à la volée par les algorithmes de **Nanobanana**, garantissant une charte graphique unique et moderne pour chaque métier.
+3. **Performance Statique :** Le site est compilé via **Hugo**, offrant une rapidité de chargement instantanée, une sécurité maximale et une empreinte carbone minimale. Les images sont automatiquement converties au format nouvelle génération `WebP`.
+
+---
+
+### 🛠️ Informations de build (Suivi technique)
+
+Pour garantir la traçabilité de l'application, les indicateurs de révision système sont injectés à chaque déploiement :
+
+{{< build-info >}}

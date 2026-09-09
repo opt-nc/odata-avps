@@ -1,0 +1,15 @@
+{{- /*
+  Filtre commun : ne garde que les AVP EN COURS, c'est-à-dire non archivés.
+
+  Depuis la décision client du 09/09/2026, les AVP clos ne sont plus supprimés mais
+  déplacés dans content/archives/ avec `archive: true` au front-matter. Ils restent
+  donc dans .Site.RegularPages et entreraient sans ce filtre dans les listes, la
+  carte, les compteurs et — plus grave — dans le flux Google Jobs et le flux ATS
+  Indeed, où ils seraient présentés comme des offres ouvertes.
+
+  `"!=" true` conserve bien les pages qui n'ont PAS le paramètre (valeur nil),
+  c'est-à-dire tous les AVP en cours : inutile d'ajouter `archive: false` partout.
+
+  Usage : {{ $actives := partial "avp-actives.html" .Site.RegularPages }}
+*/ -}}
+{{- return where . "Params.archive" "!=" true }}

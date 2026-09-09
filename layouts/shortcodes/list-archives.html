@@ -1,0 +1,20 @@
+{{- /*
+  Liste des AVP archivés, du plus récemment clôturé au plus ancien.
+
+  Volontairement SANS carte : la cartographie sert à situer les offres auxquelles on
+  peut postuler. Ici on est dans un fonds documentaire, la valeur est chronologique.
+
+  Le tri porte sur `date_cloture` et non sur `date` (publication) : ce qui intéresse
+  le lecteur d'une archive, c'est quand l'offre a fermé.
+*/ -}}
+{{- $archives := where .Page.Pages "Params.archive" true }}
+{{- $archives = sort $archives "Params.date_cloture" "desc" }}
+
+{{- if $archives }}
+<p style="font-style: italic; opacity: 0.75;">
+  {{ len $archives }} offre(s) clôturée(s).
+</p>
+{{ partial "avp-cards-list.html" $archives }}
+{{- else }}
+<p style="font-style: italic; opacity: 0.75;">Aucune offre archivée pour le moment.</p>
+{{- end }}
