@@ -1,0 +1,88 @@
+# Contrôleur en soutien et SAV
+
+{{< avp-header >}}
+
+
+## 📝 Description du poste & Contexte
+
+Renforcer les agences en tant que de besoin (renfort, remplacement…) pour la fonction de chef de cellule et chef d’agences Garantir à ce titre, la réalisation effective des opérations intra agence (commercialisation, opérations de guichet, activités administratives, tenue de poste et renfort…), dans les meilleures conditions d'accueil du client, de conformité aux guides et pratiques et de délai de réalisation Assurer le SAV métier (sur affectation)
+
+## 🏢 Organisation et relations fonctionnelles
+
+**Affectation :** DIRECTION DE LA DISTRIBUTION
+
+**Supérieur hiérarchique direct :** Chef de cellule – Superviseur Nouméa et Agglomération
+
+**Place dans l'organigramme :** N - 4 (par rapport au directeur opérationnel)
+
+**Relations fonctionnelles clés :**
+- Chef de cellule superviseur / planificateur
+- Chef d'agence (ou cellule)
+- Chef de bureau soutien SI et pratiques métiers
+
+## 🎯 Missions et activités
+
+- Organiser, contrôler et suivre l'activité des guichets et/ou du service arrière
+- Tenir les états comptables journaliers et mensuels des agences
+- Encadrer et animer une équipe
+- Traiter et suivre les erreurs de caisse
+- Traiter les réclamations
+- Prendre part activement à l'atteinte des objectifs des agences
+- Renseigner et conseiller les clients sur les produits commercialisés par l'OPT
+- Contrôler l'exactitude des états comptables et leur conformité aux pièces comptables correspondantes
+- Assurer les intérims des chefs d'agence de la zone
+- Effectuer les tâches administratives nécessaires au fonctionnement des agences
+- Assurer l'entraide avec les autres positions de travail
+- Recevoir et dispenser des formations selon les besoins du service
+- Tenir d'autres positions de travail en fonction des besoins d'organisation et de polyvalence
+- Assurer les services opérationnels du guichet et du courrier
+- Tenir une position de guichet informatisée
+- Assurer la passation sans moyen supplémentaire
+- Assurer le SAV métier (sur affectation)
+
+## 👤 Profil recherché
+
+### 🎓 Formation et connaissances
+
+**Savoirs et connaissances théoriques :**
+- Offre et réglementation des produits et services commercialisés par l'OPT-NC
+- Organisation et fonctionnement de l'OPT-NC
+- Techniques de vente
+- Outils de bureautique, applications informatiques et logiciels de guichet
+- Techniques de gestes et postures
+- Règles d'hygiène et sécurité
+
+### 🛠️ Savoir-faire et aptitudes comportementales
+
+- Appliquer les techniques de vente
+- Utiliser les applications informatiques métier
+- S'exprimer et communiquer avec aisance
+- Conseiller et renseigner les clients
+- Manipuler du numéraire, tenir une caisse
+- Appliquer les procédures et règlements en vigueur
+- Faire preuve de maîtrise de soi en toutes circonstances
+- Sens de l’accueil et relationnel avec le public et le personnel
+- Esprit d'initiative
+- Aptitude au changement
+- Rigueur et méthode
+- Intégrité et discrétion professionnelle
+- Esprit d'entreprise
+- Esprit d'équipe et d'entraide
+
+## 🚗 Habilitations et permis requis
+
+Permis B
+
+## 📋 Compléments d'information
+
+**Caractéristiques particulières du poste :** Est sous la responsabilité du chef de cellule superviseur / planificateur mais est placé aussi en affectation sous la responsabilité d'un chef d'agence (ou cellule) et peut l’être aussi sous la responsabilité du chef de bureau soutien SI et pratiques métiers. Itinérance.
+
+**Régimes indemnitaires rattachés au poste de travail :** indemnité de guichet et indemnité forfaitaire mensuelle d’utilisation de véhicule personnel
+
+## 📬 Contact et modalités de candidature
+
+Pour répondre à cette offre, merci de transmettre votre dossier de candidature (CV et lettre de motivation) :
+
+- 📧 **Par email :** [DRH-candidature@opt.nc](mailto:DRH-candidature@opt.nc)
+- 📞 **Par téléphone :** [26.79.03](tel:267903)
+

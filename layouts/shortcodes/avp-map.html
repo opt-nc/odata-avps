@@ -10,7 +10,7 @@
 */}}
 {{ partial "avp-map.html" (dict
   "id" "avp-global-map"
-  "pages" .Page.Site.RegularPages
+  "pages" (partial "avp-actives.html" .Page.Site.RegularPages)
   "center" (slice -21.3 165.5)
   "zoom" 7
   "fit" true

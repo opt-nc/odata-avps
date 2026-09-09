@@ -30,12 +30,16 @@
     </div>
 
   {{ else }}
-    
+
+    {{/* Une page de tag présente les offres OUVERTES : les AVP archivés sont écartés
+         du compteur, de la carte et de la liste. */}}
+    {{- $actives := partial "avp-actives.html" .Pages }}
+
     <h1 style="color: var(--MAIN-TITLES-color); margin-bottom: 0.5rem; font-size: 2rem;">
       <i class="fas fa-tag"></i> Offres associées au critère : {{ .Title }}
     </h1>
     <p style="font-style: italic; color: var(--MAIN-TEXT-color); opacity: 0.7; margin-bottom: 1.5rem;">
-    {{ len .Pages }} poste(s) disponible(s).
+    {{ len $actives }} poste(s) disponible(s).
     </p>
 
     {{/* Si ce tag est une famille de métier, on renvoie vers sa fiche dans le référentiel officiel OPT-NC. */}}
@@ -53,21 +57,22 @@
     </p>
     {{- end }}
 
-    {{/* Carte des offres de ce tag (pins colorés par famille), avant la liste. */}}
+    {{/* Carte des offres de ce tag (pins colorés par famille), avant la liste.
+         Les archives sont écartées : une page de tag présente les offres OUVERTES. */}}
     {{- $hasGeo := false }}
-    {{- range .Pages }}{{ if and .Params.latitude .Params.longitude }}{{ $hasGeo = true }}{{ end }}{{- end }}
+    {{- range $actives }}{{ if and .Params.latitude .Params.longitude }}{{ $hasGeo = true }}{{ end }}{{- end }}
     {{- if $hasGeo }}
     <div style="margin-bottom: 2.5rem;">
       {{ partial "avp-map.html" (dict
         "id" (printf "avp-map-%s" (or (and .Data .Data.Term) .Title | urlize))
-        "pages" .Pages
+        "pages" $actives
         "fit" true
         "maxzoom" 15
       ) }}
     </div>
     {{- end }}
 
-    {{ partial "avp-cards-list.html" .Pages }}
+    {{ partial "avp-cards-list.html" $actives }}
 
   {{ end }}
 

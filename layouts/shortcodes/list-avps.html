@@ -15,7 +15,9 @@
   une direction dont aucune offre n'a de coordonnées afficherait sinon une
   carte vide centrée au hasard.
 */ -}}
-{{- $pages := .Page.Pages }}
+{{- /* Les AVP archivés vivent dans content/archives/ : ils ne doivent apparaître
+     ni dans la liste d'une direction, ni sur sa carte. */ -}}
+{{- $pages := partial "avp-actives.html" .Page.Pages }}
 
 {{- $hasGeo := false }}
 {{- range $pages }}{{ if and .Params.latitude .Params.longitude }}{{ $hasGeo = true }}{{ end }}{{- end }}

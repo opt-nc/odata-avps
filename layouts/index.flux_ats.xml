@@ -7,7 +7,10 @@
        cela garantit que l'URL diffusée existe vraiment et pointe sur la fiche publiée.
        Les champs riches (missions, compétences) sont récupérés dans le JSON associé.
        Les champs simples sont en texte XML échappé ; seule la description (HTML) est en CDATA. */}}
-  {{ range .Site.RegularPages }}
+  {{/* ⚠️ Ce flux n'a PAS de contrôle de date de clôture, contrairement au jobs-sitemap :
+       le filtre des archives est donc ici la SEULE protection contre la diffusion d'une
+       offre close chez Indeed. Ne pas le retirer. */}}
+  {{ range partial "avp-actives.html" .Site.RegularPages }}
     {{ if .Params.ref }}
       {{ $page := . }}
       {{ $key := replace .Params.ref "/" "_" }}

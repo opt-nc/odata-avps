@@ -1,9 +1,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{ $now := now }}
-  {{ range .Site.RegularPages }}
-    {{/* 🎯 On retient les pages possédant une référence d'AVP et dont la date de clôture
-         n'est pas dépassée. (Le champ `actif` n'existe pas dans le front-matter : il vit
-         dans BigQuery ; les AVP clos sont de toute façon supprimés du dépôt par le fetcher.) */}}
+  {{/* 🎯 On retient les pages possédant une référence d'AVP et dont la date de clôture
+       n'est pas dépassée.
+       Depuis le 09/09/2026 les AVP clos ne sont PLUS supprimés du dépôt mais archivés
+       (content/archives/, `archive: true`) : sans ce filtre ils seraient soumis à Google
+       comme des offres ouvertes. Le contrôle de date ci-dessous les écarterait déjà, mais
+       on ne fait pas reposer une soumission externe sur ce seul garde-fou. */}}
+  {{ range partial "avp-actives.html" .Site.RegularPages }}
     {{ if .Params.ref }}
       {{ $ouvert := true }}
       {{ with .Params.date_cloture }}
