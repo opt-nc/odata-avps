@@ -1,19 +1,19 @@
 {{/* ==========================================================================
-   NETTOYAGE CHIRURGICAL DES CATÉGORIES VIDES (IMMUNE AUX PIÈGES D'URLS)
-   ========================================================================== */}}
+NETTOYAGE CHIRURGICAL DES CATÉGORIES VIDES (IMMUNE AUX PIÈGES D'URLS)
+========================================================================== */}}
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // 1. Hugo génère proprement la liste de TOUS les titres de vos catégories
-  const checkedCategories = [
-    {{- range .Site.Pages }}
-      {{- if .IsSection }}
-        "{{ .Title }}",
-      {{- end }}
-    {{- end }}
+  document.addEventListener("DOMContentLoaded", function () {
+    // 1. Hugo génère proprement la liste de TOUS les titres de vos catégories
+    const checkedCategories = [
+      {{- range.Site.Pages }}
+    {{- if .IsSection }}
+  "{{ .Title }}",
+    {{ - end }}
+  { { - end } }
   ];
 
   // 2. Le script inspecte les éléments réels de la sidebar au chargement
-  document.querySelectorAll('#R-sidebar li > a').forEach(function(anchor) {
+  document.querySelectorAll('#R-sidebar li > a').forEach(function (anchor) {
     const linkText = anchor.textContent.trim();
 
     // Si le lien correspond à l'une de nos catégories
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
       if (listItem) {
         // Dans le thème Relearn, la présence d'enfants crée un élément <label> ou une icône de chevron
         const hasArrow = listItem.querySelector('label') ||
-                         listItem.querySelector('.fa-chevron-right') ||
-                         listItem.querySelector('.fa-chevron-down');
+          listItem.querySelector('.fa-chevron-right') ||
+          listItem.querySelector('.fa-chevron-down');
 
         // S'il n'y a PAS de flèche ">", c'est que la catégorie est vide !
         if (!hasArrow) {
@@ -37,75 +37,87 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 {{/* ==========================================================================
-   SEO TECHNIQUE
-   - Les balises Open Graph / Twitter sont gérées une seule fois par les partials
-     surchargés `opengraph.html` et `twitter_cards.html` (plus de doublon ici).
-   - Ci-dessous : URL canonique + métadonnées de build + JSON-LD JobPosting épuré.
-   ========================================================================== */}}
+SEO TECHNIQUE
+- Les balises Open Graph / Twitter sont gérées une seule fois par les partials
+surchargés `opengraph.html` et `twitter_cards.html` (plus de doublon ici).
+- Ci-dessous : URL canonique + métadonnées de build + JSON-LD JobPosting épuré.
+========================================================================== */}}
 
 {{/* 🎨 Styles des composants AVP (fin des styles inline dans les templates) */}}
 {{ with resources.Get "css/avp-components.css" }}
-  {{ $css := . | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ $css := . | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}
 
 {{/* 🔗 URL canonique (le thème n'en émet pas pour la page elle-même) */}}
 <link rel="canonical" href="{{ .Permalink }}">
 
 {{/* 🏗️ Traçabilité du build (injectée à chaque déploiement) */}}
-<meta name="hugo-build-time" content="{{ now.Format "2006-01-02 15:04:05" }}">
+<meta name="hugo-build-time" content="{{ now.Format " 2006-01-02 15:04:05" }}">
 <meta name="hugo-version" content="{{ hugo.Version }}">
 <meta name="git-revision" content="{{ if site.Data.git_commit }}{{ site.Data.git_commit.hash }}{{ else }}dev{{ end }}">
 
 {{/* ==========================================================================
-   DONNÉES STRUCTURÉES JSON-LD (Schema.org/JobPosting) — VERSION ÉPURÉE
-   On ne sérialise que les champs valides et utiles à Google for Jobs,
-   au lieu d'injecter le JSON brut (qui contient des `null` et des propriétés
-   non standard conservées, elles, pour le dataset Hugging Face).
-   ========================================================================== */}}
+DONNÉES STRUCTURÉES JSON-LD (Schema.org/JobPosting) — VERSION ÉPURÉE
+On ne sérialise que les champs valides et utiles à Google for Jobs,
+au lieu d'injecter le JSON brut (qui contient des `null` et des propriétés
+non standard conservées, elles, pour le dataset Hugging Face).
+========================================================================== */}}
 {{ if .Params.ref }}
-  {{ $key := replace .Params.ref "/" "_" }}
-  {{ with index .Site.Data.avps $key }}
-    {{/* Identifiant au format PropertyValue recommandé par Google */}}
-    {{ $ld := dict
-        "@context" "https://schema.org/"
-        "@type" "JobPosting"
-        "title" .title
-        "description" .description
-        "datePosted" .datePosted
-        "identifier" (dict "@type" "PropertyValue" "name" "OPT-NC" "value" .identifier)
-    }}
-    {{ with .validThrough }}{{ $ld = merge $ld (dict "validThrough" .) }}{{ end }}
-    {{ with .employmentType }}{{ $ld = merge $ld (dict "employmentType" .) }}{{ end }}
-    {{ with .industry }}{{ $ld = merge $ld (dict "industry" .) }}{{ end }}
-    {{ with .occupationalCategory }}{{ $ld = merge $ld (dict "occupationalCategory" .) }}{{ end }}
-    {{ with .hiringOrganization }}{{ $ld = merge $ld (dict "hiringOrganization" .) }}{{ end }}
-    {{ with .jobLocation }}{{ $ld = merge $ld (dict "jobLocation" .) }}{{ end }}
-    {{ with .applicantLocationRequirements }}{{ $ld = merge $ld (dict "applicantLocationRequirements" .) }}{{ end }}
-    {{ with .jobLocationType }}{{ $ld = merge $ld (dict "jobLocationType" .) }}{{ end }}
-    {{ with .baseSalary }}{{ $ld = merge $ld (dict "baseSalary" .) }}{{ end }}
-    <script type="application/ld+json">
+{{ $key := replace .Params.ref "/" "_" }}
+{{ with index .Site.Data.avps $key }}
+{{/* Identifiant au format PropertyValue recommandé par Google */}}
+{{ $ld := dict
+"@context" "https://schema.org/"
+"@type" "JobPosting"
+"title" .title
+"description" .description
+"datePosted" .datePosted
+"identifier" (dict "@type" "PropertyValue" "name" "OPT-NC" "value" .identifier)
+}}
+{{ with .validThrough }}{{ $ld = merge $ld (dict "validThrough" .) }}{{ end }}
+{{ with .employmentType }}{{ $ld = merge $ld (dict "employmentType" .) }}{{ end }}
+{{ with .industry }}{{ $ld = merge $ld (dict "industry" .) }}{{ end }}
+{{ with .occupationalCategory }}{{ $ld = merge $ld (dict "occupationalCategory" .) }}{{ end }}
+{{ with .hiringOrganization }}{{ $ld = merge $ld (dict "hiringOrganization" .) }}{{ end }}
+{{ with .jobLocation }}{{ $ld = merge $ld (dict "jobLocation" .) }}{{ end }}
+{{ with .applicantLocationRequirements }}{{ $ld = merge $ld (dict "applicantLocationRequirements" .) }}{{ end }}
+{{ with .jobLocationType }}{{ $ld = merge $ld (dict "jobLocationType" .) }}{{ end }}
+{{ with .baseSalary }}{{ $ld = merge $ld (dict "baseSalary" .) }}{{ end }}
+<script type="application/ld+json">
       {{ $ld | jsonify (dict "indent" "  ") | safeJS }}
     </script>
-  {{ end }}
+{{ end }}
 {{ end }}
 
 {{/* ==========================================================================
-   📊 MESURE D'AUDIENCE — Matomo Tag Manager (conteneur optnc.matomo.cloud)
-   Ce partial est le dernier inclus avant </head> par le thème relearn
-   (themes/hugo-theme-relearn/layouts/_default/baseof.html) : le conteneur est
-   donc chargé en fin de head, en asynchrone (pas de blocage du rendu).
-   ========================================================================== */}}
+📊 MESURE D'AUDIENCE — Matomo Tag Manager (conteneur optnc.matomo.cloud)
+Ce partial est le dernier inclus avant </head> par le thème relearn
+(themes/hugo-theme-relearn/layouts/_default/baseof.html) : le conteneur est
+donc chargé en fin de head, en asynchrone (pas de blocage du rendu).
+========================================================================== */}}
+{{/* Le conteneur est chargé PARTOUT SAUF en local. Le test exclut les hôtes de
+développement plutôt que d'autoriser un domaine précis : ainsi le suivi
+continue de fonctionner si le site passe un jour sur un vrai nom de domaine,
+sans toucher à ce fichier — et un hébergement inattendu remonte dans Matomo
+au lieu d'y être silencieusement invisible.
+Le nom d'hôte est testé côté navigateur, pas l'environnement de build : une
+page générée par `hugo` puis ouverte en local ne doit pas être comptée. */}}
 <!-- Matomo Tag Manager -->
 <script>
-  var _mtm = window._mtm = window._mtm || [];
-  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-  (function() {
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/optnc.matomo.cloud/container_TJyI0323.js'; s.parentNode.insertBefore(g,s);
+  (function () {
+    var h = location.hostname;
+    // Rien : page ouverte en file://  ·  puis localhost, boucle locale, IPv6,
+    // plages privées (test depuis un mobile du réseau) et domaines .local (mDNS).
+    var local = !h || /^(localhost|0\.0\.0\.0|\[?::1\]?)$|^127\.|^10\.|^192\.168\.|^172\.(1[6-9]|2\d|3[01])\.|\.local$/i.test(h);
+    if (local) { return; }
+    var _mtm = window._mtm = window._mtm || [];
+    _mtm.push({ 'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start' });
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true; g.src = 'https://cdn.matomo.cloud/optnc.matomo.cloud/container_TJyI0323.js'; s.parentNode.insertBefore(g, s);
   })();
 </script>
 <!-- End Matomo Tag Manager -->
 {{/* Note : le site déclare par ailleurs « aucune dépendance CDN » pour les libs
-   JS (Leaflet, easyqrcode auto-hébergés dans static/vendor/) — le conteneur
-   Matomo est une exception assumée (outil de mesure, mise à jour côté Matomo). */}}
+JS (Leaflet, easyqrcode auto-hébergés dans static/vendor/) — le conteneur
+Matomo est une exception assumée (outil de mesure, mise à jour côté Matomo). */}}
