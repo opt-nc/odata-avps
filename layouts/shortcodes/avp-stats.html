@@ -1,0 +1,479 @@
+{{- /*
+  Tableau de bord des offres — tout est calculé AU BUILD, à partir des pages du
+  dépôt. Aucune source externe : les chiffres sont donc mécaniquement synchrones
+  avec ce qui est publié, sans décalage possible avec une base ou un cache.
+
+  C'est l'archivage des offres closes (content/archives/) qui rend possible
+  l'historique : avant, les AVP clôturés étaient supprimés et toute profondeur
+  temporelle était perdue.
+
+  Chart.js est auto-hébergé (static/vendor/chartjs/), même politique que Leaflet :
+  aucune dépendance à un CDN à l'exécution.
+*/ -}}
+
+{{- $avps := where site.RegularPages "Params.ref" "!=" nil }}
+{{- $encours := where $avps "Params.archive" "!=" true }}
+{{- $archives := where $avps "Params.archive" true }}
+
+{{- /* ---- Chiffres clés ------------------------------------------------ */ -}}
+{{- $metiers := slice }}
+{{- range $encours }}{{ with .Params.metier_ref_nom }}{{ $metiers = $metiers | append . }}{{ end }}{{ end }}
+{{- $directions := slice }}
+{{- range $encours }}{{ with .Params.direction }}{{ $directions = $directions | append . }}{{ end }}{{ end }}
+
+{{- /* Nombre de postes : totalJobOpenings du JSON-LD, avec repli à 1 par offre
+       (le champ est absent sur une partie du corpus ; quand il est présent il
+       vaut 1, donc ce total égale aujourd'hui le nombre d'offres). */ -}}
+{{- $postes := 0 }}
+{{- range $encours }}
+  {{- $k := replace .Params.ref "/" "_" }}
+  {{- $n := 1 }}
+  {{- with index site.Data.avps $k }}{{ with .totalJobOpenings }}{{ $n = . }}{{ end }}{{ end }}
+  {{- $postes = add $postes $n }}
+{{- end }}
+
+{{- /* ---- Offres ouvertes semaine par semaine ---------------------------
+     On ne compte pas des événements (publications, clôtures) mais un STOCK :
+     à une date donnée, combien d'offres étaient simultanément ouvertes. Une offre
+     est réputée ouverte de sa date de publication à sa date de clôture.
+
+     Une offre ARCHIVÉE n'est plus ouverte aujourd'hui, même si son échéance est à
+     venir : elle a été retirée de l'Open Data avant terme. Les fiches ne portent
+     pas de date de retrait, on borne donc sa fin à hier — sans quoi le dernier
+     point de la courbe dépasserait le nombre d'offres réellement en cours.
+     Il reste une imprécision au milieu de la courbe : pour ces offres-là, on ne
+     sait pas à quelle date exacte elles ont disparu. */ -}}
+{{- $bornes := slice }}
+{{- range $avps }}
+  {{- if and .Params.date .Params.date_cloture }}
+    {{- /* Fin de vie de l'offre : sa date d'archivage réelle (posée par le fetcher,
+           ou reconstituée depuis git pour les reprises). À défaut, sa date de
+           clôture. On borne aussi à la clôture : une offre restée en ligne après
+           son échéance n'accepte plus de candidatures, elle n'est donc plus
+           « ouverte » — le cas existe (3134-26-0754 : clôture 05/06, retrait 09/07). */ -}}
+    {{- $fin := (time.AsTime (string .Params.date_cloture)).Unix }}
+    {{- with .Params.date_archivage }}
+      {{- $a := (time.AsTime (string .)).Unix }}
+      {{- if lt $a $fin }}{{ $fin = $a }}{{ end }}
+    {{- end }}
+    {{- $bornes = $bornes | append (dict
+        "d" (time.AsTime (string .Params.date)).Unix
+        "f" $fin
+        "dir" (partial "avp-dir-cle.html" (.Params.direction | default "Non précisée"))
+        "met" (.Params.metier_ref_nom | default "Non précisé")
+        "fams" (.Params.families_metier | default slice)) }}
+  {{- end }}
+{{- end }}
+
+{{- $sem := slice }}{{- $stock := slice }}
+{{- $max := 0 }}{{- $maxSem := "" }}{{- $total := 0 }}
+{{- if $bornes }}
+  {{- $premier := 9999999999 }}
+  {{- range $bornes }}{{ if lt .d $premier }}{{ $premier = .d }}{{ end }}{{ end }}
+  {{- $cur := (time.AsTime (printf "%s" (now.Format "2006-01-02"))) }}
+  {{- $nb := int (div (sub now.Unix $premier) 604800) }}
+  {{- if lt $nb 1 }}{{ $nb = 1 }}{{ end }}
+  {{- if gt $nb 78 }}{{ $nb = 78 }}{{ end }}{{/* 18 mois de recul suffisent */}}
+  {{- $cur = $cur.AddDate 0 0 (mul $nb -7) }}
+  {{- range seq 0 $nb }}
+    {{- $ts := $cur.Unix }}
+    {{- $n := 0 }}
+    {{- range $bornes }}{{ if and (le .d $ts) (ge .f $ts) }}{{ $n = add $n 1 }}{{ end }}{{ end }}
+    {{- $sem = $sem | append ($cur.Format "02/01") }}
+    {{- $stock = $stock | append $n }}
+    {{- $total = add $total $n }}
+    {{- if gt $n $max }}{{ $max = $n }}{{ $maxSem = $cur.Format "02/01/2006" }}{{ end }}
+    {{- $cur = $cur.AddDate 0 0 7 }}
+  {{- end }}
+{{- end }}
+
+{{- /* Tendance : dernière semaine comparée à la précédente. */ -}}
+{{- $tendance := 0 }}
+{{- if ge (len $stock) 2 }}
+  {{- $tendance = sub (index $stock (sub (len $stock) 1)) (index $stock (sub (len $stock) 2)) }}
+{{- end }}
+{{- $moyenne := 0 }}
+{{- if $stock }}{{ $moyenne = div $total (len $stock) }}{{ end }}
+
+<div class="avp-stats-tiles">
+  <div class="avp-stat"><span class="avp-stat-n">{{ len $encours }}</span><span class="avp-stat-l">offres en cours</span></div>
+  <div class="avp-stat"><span class="avp-stat-n">{{ $postes }}</span><span class="avp-stat-l">postes à pourvoir</span></div>
+  <div class="avp-stat"><span class="avp-stat-n">{{ len (uniq $metiers) }}</span><span class="avp-stat-l">métiers différents</span></div>
+  <div class="avp-stat"><span class="avp-stat-n">{{ len (uniq $directions) }}</span><span class="avp-stat-l">directions qui recrutent</span></div>
+  <div class="avp-stat"><span class="avp-stat-n">{{ $max }}</span><span class="avp-stat-l">maximum simultané{{ with $maxSem }}<br><small>{{ . }}</small>{{ end }}</span></div>
+  <div class="avp-stat"><span class="avp-stat-n avp-trend-{{ cond (gt $tendance 0) "up" (cond (lt $tendance 0) "down" "flat") }}">{{ if gt $tendance 0 }}+{{ end }}{{ $tendance }}</span><span class="avp-stat-l">sur 7 jours</span></div>
+  <div class="avp-stat"><span class="avp-stat-n">{{ $moyenne }}</span><span class="avp-stat-l">moyenne hebdo</span></div>
+  <div class="avp-stat avp-stat-sec"><span class="avp-stat-n">{{ len $archives }}</span><span class="avp-stat-l">offres archivées</span></div>
+</div>
+
+{{- /* ---- Série mensuelle : publications et clôtures --------------------- */ -}}
+{{- $mois := slice }}
+{{- range $avps }}
+  {{- with .Params.date }}{{ $mois = $mois | append (substr (string .) 0 7) }}{{ end }}
+  {{- with .Params.date_cloture }}{{ $mois = $mois | append (substr (string .) 0 7) }}{{ end }}
+{{- end }}
+{{- $mois = sort (uniq $mois) }}
+
+{{- /* Étiquettes de l'axe : « mars » sur une ligne, l'année en dessous mais
+       SEULEMENT quand elle change. Chart.js accepte un tableau par étiquette et
+       l'affiche sur plusieurs lignes. Avec plusieurs années de recul, l'axe reste
+       lisible : on lit les mois, et l'année sert de repère de section. */ -}}
+{{- /* Table indexée sur la chaîne : `int "08"` échoue en Go, le zéro initial
+       étant lu comme une notation octale invalide. */ -}}
+{{- $noms := dict "01" "janv." "02" "févr." "03" "mars" "04" "avr." "05" "mai" "06" "juin"
+                  "07" "juil." "08" "août" "09" "sept." "10" "oct." "11" "nov." "12" "déc." }}
+{{- /* Deux listes PARALLÈLES, assemblées côté JS. On ne peut pas construire ici
+       une liste de paires : `append` avec un slice l'APLATIT au lieu de l'ajouter
+       comme élément, ce qui produisait 14 étiquettes pour 7 mois — Chart.js
+       affichait alors les données sur la première moitié de l'axe seulement. */ -}}
+{{- $etiqMois := slice }}{{- $etiqAn := slice }}{{- $anneePrec := "" }}
+{{- range $m := $mois }}
+  {{- $an := substr $m 0 4 }}
+  {{- $etiqMois = $etiqMois | append (index $noms (substr $m 5 2)) }}
+  {{- $etiqAn = $etiqAn | append (cond (ne $an $anneePrec) $an "") }}
+  {{- $anneePrec = $an }}
+{{- end }}
+
+{{- $pubs := slice }}{{- $clos := slice }}
+{{- range $m := $mois }}
+  {{- $p := 0 }}{{- $c := 0 }}
+  {{- range $avps }}
+    {{- with .Params.date }}{{ if eq (substr (string .) 0 7) $m }}{{ $p = add $p 1 }}{{ end }}{{ end }}
+    {{- with .Params.date_cloture }}{{ if eq (substr (string .) 0 7) $m }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+  {{- end }}
+  {{- $pubs = $pubs | append $p }}{{- $clos = $clos | append $c }}
+{{- end }}
+
+<h3>Offres ouvertes, semaine par semaine</h3>
+<p class="avp-stats-note">Nombre d'offres simultanément ouvertes à chaque semaine. Le pic atteint {{ $max }}{{ with $maxSem }} le {{ . }}{{ end }}.</p>
+<div class="avp-chart-box"><canvas id="avp-chart-stock" height="120"></canvas></div>
+
+<h3>Activité mois par mois</h3>
+<p class="avp-stats-note">Nombre d'offres publiées et clôturées, sur l'ensemble du corpus ({{ len $avps }} offres, archives comprises).</p>
+<div class="avp-chart-box"><canvas id="avp-chart-timeline" height="120"></canvas></div>
+
+{{- /* ---- Répartition par direction (offres en cours) -------------------- */ -}}
+{{- $pardir := dict }}
+{{- range $encours }}
+  {{- with .Params.direction }}
+    {{- $k := partial "avp-dir-cle.html" . }}
+    {{- $pardir = merge $pardir (dict $k (add (int (index $pardir $k | default 0)) 1)) }}
+  {{- end }}
+{{- end }}
+
+{{- /* ---- Offres ouvertes par direction et par mois ----------------------
+     Une offre est comptée dans un mois dès lors qu'elle a été ouverte AU MOINS UN
+     JOUR de ce mois : c'est la lecture naturelle de « combien d'offres ouvertes
+     ce mois-là », et elle évite l'arbitraire d'un relevé à date fixe. Une même
+     offre peut donc apparaître sur plusieurs mois consécutifs. */ -}}
+{{- $dirs := slice }}
+{{- range $bornes }}{{ $dirs = $dirs | append .dir }}{{ end }}
+{{- $dirs = sort (uniq $dirs) }}
+
+{{- $series := slice }}
+{{- range $dir := $dirs }}
+  {{- $vals := slice }}
+  {{- range $m := $mois }}
+    {{- $debutMois := (time.AsTime (printf "%s-01" $m)) }}
+    {{- $finMois := ($debutMois.AddDate 0 1 -1).Unix }}
+    {{- $d0 := $debutMois.Unix }}
+    {{- $n := 0 }}
+    {{- range $bornes }}
+      {{- if and (eq .dir $dir) (le .d $finMois) (ge .f $d0) }}{{ $n = add $n 1 }}{{ end }}
+    {{- end }}
+    {{- $vals = $vals | append $n }}
+  {{- end }}
+  {{- $series = $series | append (dict "dir" $dir "vals" $vals) }}
+{{- end }}
+
+{{- /* Mêmes règles que pour les directions, appliquées au métier de référence.
+     Les fiches anciennes n'ont pas toujours `metier_ref_nom` : elles sont
+     regroupées sous « Non précisé » plutôt que d'être écartées, sans quoi les
+     totaux ne correspondraient plus à ceux du graphique par direction. */ -}}
+{{- $metiersL := slice }}
+{{- range $bornes }}{{ $metiersL = $metiersL | append .met }}{{ end }}
+{{- $metiersL = sort (uniq $metiersL) }}
+
+{{- /* Famille dominante de chaque métier : celle qui revient le plus souvent
+       parmi les offres portant ce métier. Elle donne la couleur, pour que le
+       graphique reste lisible avec la même charte que les badges et la carte
+       (data/families_colors.yml). */ -}}
+{{- $famDuMetier := dict }}
+{{- range $met := $metiersL }}
+  {{- $compte := dict }}
+  {{- range $avps }}
+    {{- if eq (.Params.metier_ref_nom | default "Non précisé") $met }}
+      {{- range (.Params.families_metier | default slice) }}
+        {{- $compte = merge $compte (dict . (add (int (index $compte . | default 0)) 1)) }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+  {{- $best := "" }}{{- $bestN := 0 }}
+  {{- range $f, $n := $compte }}{{ if gt $n $bestN }}{{ $best = $f }}{{ $bestN = $n }}{{ end }}{{ end }}
+  {{- /* « Non précisé » regroupe des offres sans métier de référence, toutes
+         familles confondues : lui donner la couleur de sa famille majoritaire
+         laisserait croire à un ensemble homogène. On le laisse en gris. */ -}}
+  {{- if eq $met "Non précisé" }}{{ $best = "" }}{{ end }}
+  {{- $famDuMetier = merge $famDuMetier (dict $met $best) }}
+{{- end }}
+
+{{- $seriesMet := slice }}
+{{- range $met := $metiersL }}
+  {{- $vals := slice }}{{- $tot := 0 }}
+  {{- range $m := $mois }}
+    {{- $dm := (time.AsTime (printf "%s-01" $m)) }}
+    {{- $fm := ($dm.AddDate 0 1 -1).Unix }}{{- $d0 := $dm.Unix }}
+    {{- $n := 0 }}
+    {{- range $bornes }}
+      {{- if and (eq .met $met) (le .d $fm) (ge .f $d0) }}{{ $n = add $n 1 }}{{ end }}
+    {{- end }}
+    {{- $vals = $vals | append $n }}{{- $tot = add $tot $n }}
+  {{- end }}
+  {{- $seriesMet = $seriesMet | append (dict "lib" $met "vals" $vals "tot" $tot "fam" (index $famDuMetier $met)) }}
+{{- end }}
+{{- $seriesMet = sort $seriesMet "tot" "desc" }}
+
+{{- /* 23 métiers distincts : au-delà d'une dizaine de séries, la légende occupe
+       plus de place que le graphique et les couleurs deviennent indistinguables.
+       On garde les 10 plus fréquents et on cumule le reste sous « Autres métiers »,
+       de sorte que les totaux mensuels restent exacts. */ -}}
+{{- $LIMITE := 10 }}
+{{- if gt (len $seriesMet) $LIMITE }}
+  {{- $tete := first $LIMITE $seriesMet }}
+  {{- $queue := after $LIMITE $seriesMet }}
+  {{- $cumul := slice }}
+  {{- range $i, $_ := $mois }}
+    {{- $n := 0 }}
+    {{- range $q := $queue }}{{ $n = add $n (index $q.vals $i) }}{{ end }}
+    {{- $cumul = $cumul | append $n }}
+  {{- end }}
+  {{- $seriesMet = $tete | append (dict "lib" (printf "Autres métiers (%d)" (len $queue)) "vals" $cumul "tot" 0 "fam" "") }}
+{{- end }}
+
+{{- /* ---- Offres ouvertes par famille de métier -------------------------
+     ATTENTION : une offre peut relever de PLUSIEURS familles (22 sur 46 au
+     09/09/2026). Empiler les barres afficherait donc un total très supérieur au
+     nombre réel d'offres. Les barres sont volontairement GROUPÉES : chaque
+     famille se lit pour elle-même, sans total trompeur. */ -}}
+{{- $famL := slice }}
+{{- range $bornes }}{{ range .fams }}{{ $famL = $famL | append . }}{{ end }}{{ end }}
+{{- $famL = sort (uniq $famL) }}
+
+{{- $seriesFam := slice }}
+{{- range $f := $famL }}
+  {{- $vals := slice }}{{- $tot := 0 }}
+  {{- range $m := $mois }}
+    {{- $dm := (time.AsTime (printf "%s-01" $m)) }}
+    {{- $fm := ($dm.AddDate 0 1 -1).Unix }}{{- $d0 := $dm.Unix }}
+    {{- $n := 0 }}
+    {{- range $b := $bornes }}
+      {{- if and (le $b.d $fm) (ge $b.f $d0) (in $b.fams $f) }}{{ $n = add $n 1 }}{{ end }}
+    {{- end }}
+    {{- $vals = $vals | append $n }}{{- $tot = add $tot $n }}
+  {{- end }}
+  {{- $seriesFam = $seriesFam | append (dict "lib" $f "vals" $vals "tot" $tot) }}
+{{- end }}
+{{- $seriesFam = sort $seriesFam "tot" "desc" }}
+
+<h3>Offres ouvertes par famille de métier, mois par mois</h3>
+<p class="avp-stats-note">Les barres ne sont pas empilées : une offre pouvant relever de plusieurs familles, leur somme dépasserait le nombre réel d'offres.</p>
+<div class="avp-chart-box"><canvas id="avp-chart-fammois" height="300"></canvas></div>
+
+<h3>Offres ouvertes par métier, mois par mois</h3>
+<p class="avp-stats-note">{{ len $metiersL }} métiers de référence distincts sur l'ensemble du corpus.</p>
+<div class="avp-chart-box"><canvas id="avp-chart-metmois" height="340"></canvas></div>
+
+<h3>Offres ouvertes par direction, mois par mois</h3>
+<p class="avp-stats-note">Une offre est comptée dans chaque mois où elle a été ouverte au moins un jour. Les barres empilées donnent le total mensuel.</p>
+<div class="avp-chart-box"><canvas id="avp-chart-dirmois" height="300"></canvas></div>
+
+<h3>Offres en cours par direction</h3>
+<div class="avp-chart-box"><canvas id="avp-chart-directions" height="{{ mul (len $pardir) 26 | add 40 }}"></canvas></div>
+
+{{- /* ---- Prochaines clôtures -------------------------------------------- */ -}}
+{{- $futures := sort $encours "Params.date_cloture" }}
+<h3>Prochaines dates de clôture</h3>
+{{- if $futures }}
+<ul class="avp-stats-list">
+  {{- range first 8 $futures }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="avp-stats-date">{{ .Params.date_cloture }}</span></li>
+  {{- end }}
+</ul>
+{{- else }}<p>Aucune offre en cours.</p>{{- end }}
+
+{{- /* ---- Dernières clôtures --------------------------------------------- */ -}}
+{{- $recentes := sort $archives "Params.date_cloture" "desc" }}
+<h3>Dernières offres clôturées</h3>
+{{- if $recentes }}
+<ul class="avp-stats-list">
+  {{- range first 8 $recentes }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="avp-stats-date">{{ .Params.date_cloture }}</span></li>
+  {{- end }}
+</ul>
+<p class="avp-stats-note"><a href="{{ "archives/" | relURL }}">Voir les {{ len $archives }} offres archivées →</a></p>
+{{- else }}<p>Aucune offre archivée.</p>{{- end }}
+
+<script src="{{ "vendor/chartjs/chart.umd.js" | relURL }}" defer></script>
+<script>
+(function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof Chart === "undefined") return;
+
+    // Les couleurs suivent le thème (clair/sombre) au lieu d'être figées.
+    var css = getComputedStyle(document.documentElement);
+    var encre = (css.getPropertyValue("--MAIN-TEXT-color") || "#333").trim();
+    var grille = "rgba(128,128,128,.18)";
+    Chart.defaults.color = encre;
+    Chart.defaults.font.family = "inherit";
+
+    new Chart(document.getElementById("avp-chart-stock"), {
+      type: "line",
+      data: {
+        labels: {{ $sem | jsonify | safeJS }},
+        datasets: [{
+          label: "Offres ouvertes", data: {{ $stock | jsonify | safeJS }},
+          borderColor: "#005A9C", backgroundColor: "rgba(0,90,156,.14)",
+          fill: true, tension: .3, pointRadius: 2
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        interaction: { mode: "index", intersect: false },
+        scales: {
+          y: { beginAtZero: true, ticks: { precision: 0 }, grid: { color: grille } },
+          x: { grid: { display: false }, ticks: { maxTicksLimit: 14 } }
+        }
+      }
+    });
+
+    // Étiquettes sur deux lignes : le mois, et l'année seulement quand elle change.
+    // Chart.js accepte un tableau par étiquette et l'affiche sur plusieurs lignes.
+    var etiqMois = {{ $etiqMois | jsonify | safeJS }};
+    var etiqAn = {{ $etiqAn | jsonify | safeJS }};
+    var mois = etiqMois.map(function (m, i) { return etiqAn[i] ? [m, etiqAn[i]] : [m]; });
+    new Chart(document.getElementById("avp-chart-timeline"), {
+      type: "line",
+      data: {
+        labels: mois,
+        datasets: [
+          { label: "Publiées", data: {{ $pubs | jsonify | safeJS }},
+            borderColor: "#007A3F", backgroundColor: "rgba(0,122,63,.12)", fill: true, tension: .3 },
+          { label: "Clôturées", data: {{ $clos | jsonify | safeJS }},
+            borderColor: "#C8102E", backgroundColor: "rgba(200,16,46,.10)", fill: true, tension: .3 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        scales: {
+          y: { beginAtZero: true, ticks: { precision: 0 }, grid: { color: grille } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+
+    // Palette stable : un même libellé garde sa couleur d'un graphique à l'autre.
+    var PALETTE = ["#005A9C","#007A3F","#FBC109","#C8102E","#6A4C93","#00838F",
+                   "#E07A5F","#3D5A80","#81B29A","#B56576","#8A817C","#5F0F40"];
+    // Charte officielle des familles de métier — la même que les badges et les
+    // pins de la carte, pour qu'une famille garde sa couleur partout sur le site.
+    var FAM_COLORS = {{ site.Data.families_colors.families | jsonify | safeJS }};
+
+    // Deux métiers d'une même famille partageraient la même couleur : on décale
+    // donc la luminosité de chacun, ce qui les distingue tout en gardant la
+    // teinte de la famille reconnaissable.
+    function nuance(hex, rang) {
+      if (!hex) return "#9A9A9A";
+      if (!rang) return hex;
+      var n = parseInt(hex.slice(1), 16);
+      var r = (n >> 16) & 255, v = (n >> 8) & 255, b = n & 255;
+      var f = rang > 0 ? 1 + Math.min(rang, 3) * 0.22 : 1;   // éclaircit par paliers
+      var cl = function (x) { return Math.max(0, Math.min(255, Math.round(x * f))); };
+      return "rgb(" + cl(r) + "," + cl(v) + "," + cl(b) + ")";
+    }
+
+    var seriesFam = {{ $seriesFam | jsonify | safeJS }};
+    new Chart(document.getElementById("avp-chart-fammois"), {
+      type: "bar",
+      data: {
+        labels: mois,
+        datasets: seriesFam.map(function (s) {
+          return { label: s.lib, data: s.vals, backgroundColor: FAM_COLORS[s.lib] || "#9A9A9A" };
+        })
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: { legend: { position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } } },
+        scales: {
+          x: { grid: { display: false } },
+          y: { beginAtZero: true, ticks: { precision: 0 }, grid: { color: grille } }
+        }
+      }
+    });
+
+    var seriesMet = {{ $seriesMet | jsonify | safeJS }};
+    var vus = {};
+    new Chart(document.getElementById("avp-chart-metmois"), {
+      type: "bar",
+      data: {
+        labels: mois,
+        datasets: seriesMet.map(function (s) {
+          var base = FAM_COLORS[s.fam];
+          var rang = vus[s.fam] = (vus[s.fam] === undefined ? 0 : vus[s.fam] + 1);
+          return { label: s.lib, data: s.vals, backgroundColor: nuance(base, rang) };
+        })
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: { legend: { position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } } },
+        scales: {
+          x: { stacked: true, grid: { display: false } },
+          y: { stacked: true, beginAtZero: true, ticks: { precision: 0 }, grid: { color: grille } }
+        }
+      }
+    });
+
+    var series = {{ $series | jsonify | safeJS }};
+    new Chart(document.getElementById("avp-chart-dirmois"), {
+      type: "bar",
+      data: {
+        labels: mois,
+        datasets: series.map(function (s, i) {
+          return { label: s.dir, data: s.vals, backgroundColor: PALETTE[i % PALETTE.length] };
+        })
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: { legend: { position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } } },
+        scales: {
+          x: { stacked: true, grid: { display: false } },
+          y: { stacked: true, beginAtZero: true, ticks: { precision: 0 }, grid: { color: grille } }
+        }
+      }
+    });
+
+    var dirs = {{ $pardir | jsonify | safeJS }};
+    new Chart(document.getElementById("avp-chart-directions"), {
+      type: "bar",
+      data: {
+        labels: Object.keys(dirs),
+        datasets: [{ label: "Offres en cours", data: Object.values(dirs), backgroundColor: "#005A9C" }]
+      },
+      options: {
+        indexAxis: "y", responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { beginAtZero: true, ticks: { precision: 0 }, grid: { color: grille } },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+  });
+})();
+</script>

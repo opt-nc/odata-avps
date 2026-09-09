@@ -1,0 +1,19 @@
+{{- /*
+  Clé de regroupement d'un libellé de direction.
+
+  Les fiches portent le libellé tel qu'il figurait dans l'AVP d'origine, sans
+  normalisation : on trouve « Agence comptable » et « AGENCE COMPTABLE », ou
+  « Direction des télécommunications » et « DIRECTION DES TELECOMMUNICATIONS ».
+  Sans regroupement, une même direction apparaît plusieurs fois dans les
+  statistiques et les totaux se dispersent.
+
+  On passe donc en majuscules et on retire les accents. Attention : cela ne
+  fusionne QUE les variantes de graphie. Les changements de périmètre réels
+  (« BU Distribution » -> « DIRECTION DE LA DISTRIBUTION ») restent distincts,
+  ce qui est correct : ce sont des entités différentes dans le temps.
+*/ -}}
+{{- $s := . | upper -}}
+{{- range $a, $b := dict "É" "E" "È" "E" "Ê" "E" "Ë" "E" "À" "A" "Â" "A" "Ä" "A" "Î" "I" "Ï" "I" "Ô" "O" "Ö" "O" "Û" "U" "Ù" "U" "Ü" "U" "Ç" "C" "’" "'" -}}
+  {{- $s = replace $s $a $b -}}
+{{- end -}}
+{{- return $s -}}

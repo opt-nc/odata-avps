@@ -21,6 +21,11 @@ name = "<i class='fas fa-fw fa-info-circle'></i> À propos"
 pageRef = "/a-propos"
 weight = 10
 
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-chart-line'></i> Statistiques"
+pageRef = "/stats"
+weight = 20
+
 [outputFormats.jobs_sitemap]
   mediaType = "application/xml"
   baseName = "jobs-sitemap"

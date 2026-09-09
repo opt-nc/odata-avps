@@ -787,3 +787,73 @@ body.slideshow-active #R-body {
 .R-sidebarmenu li.hidden {
     display: none;
 }
+
+/* ── Page Statistiques ─────────────────────────────────────────────────────── */
+.avp-stats-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2.5rem;
+}
+.avp-stat {
+    padding: 1.1rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--CARD-BORDER-color, #e0e0e0);
+    background-color: var(--CARD-BG-color, #fff);
+    text-align: center;
+}
+.avp-stat-n {
+    display: block;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--PRIMARY-color, #005A9C);
+}
+.avp-stat-l {
+    display: block;
+    margin-top: .35rem;
+    font-size: .85rem;
+    opacity: .75;
+}
+/* La tuile « archivées » compte un corpus fermé : on la distingue des offres
+   ouvertes pour qu'on ne lise pas les deux chiffres sur le même plan. */
+.avp-stat-sec .avp-stat-n {
+    color: var(--MAIN-TEXT-color, #333);
+    opacity: .55;
+}
+/* Chart.js a besoin d'un conteneur de hauteur bornée, sinon le canvas grandit
+   à chaque redimensionnement (responsive + maintainAspectRatio: false). */
+.avp-chart-box {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0 2.5rem;
+}
+.avp-stats-note {
+    font-size: .88rem;
+    opacity: .7;
+    font-style: italic;
+}
+.avp-stats-list {
+    list-style: none;
+    padding-left: 0;
+    margin: .5rem 0 1.5rem;
+}
+.avp-stats-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .45rem 0;
+    border-bottom: 1px solid var(--CARD-BORDER-color, #ececec);
+}
+.avp-stats-date {
+    white-space: nowrap;
+    opacity: .65;
+    font-size: .88rem;
+}
+
+/* Tendance hebdomadaire : la couleur porte le sens (hausse / baisse / stable),
+   mais le signe reste écrit en toutes lettres pour rester lisible sans couleur. */
+.avp-trend-up   { color: #007A3F; }
+.avp-trend-down { color: #C8102E; }
+.avp-trend-flat { opacity: .55; }
+.avp-stat-l small { opacity: .8; font-size: .8em; }
