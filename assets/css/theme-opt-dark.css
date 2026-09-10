@@ -33,6 +33,14 @@
   /* 🃏 Cartes (Mode Sombre Corporate) */
   --CARD-BG-color: #1a2333;          /* Fond bleu/ardoise pour détacher les cartes */
   --CARD-BORDER-color: #243147;      
+
+  /* 📦 Boîtes des shortcodes (notice, expand, tab...)
+     Sans ces trois variables, Relearn retombe sur ses valeurs par défaut :
+     un fond blanc à 83 % (variables.css) combiné à notre --MAIN-TEXT-color
+     clair, donc du texte quasi invisible en mode sombre. */
+  --BOX-BG-color: #1a2333;           /* Aligné sur les cartes */
+  --BOX-TEXT-color: #e2e8f0;         /* Aligné sur le texte principal */
+  --BOX-CAPTION-color: #ffffff;      /* Titre sur le bandeau coloré */
 }
 
 /* ==========================================================================
