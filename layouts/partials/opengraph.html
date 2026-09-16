@@ -28,9 +28,14 @@
     <meta property="og:type" content="website">
 {{- end }}
 
-{{- /* Image : bannière de la fiche si présente, sinon logo OPT. On retire le slash
-       initial pour que absURL conserve le préfixe /odata-avps/. */ -}}
-{{- $img := .Params.featured_image | default "/assets/logo-opt.png" -}}
-{{- $img = strings.TrimPrefix "/" $img -}}
-    <meta property="og:image" content="{{ $img | absURL }}">
-    <meta property="og:image:secure_url" content="{{ $img | absURL }}">
+{{- /* Image : bannière de la fiche si présente, sinon logo OPT.
+       Voir avp-image-sociale.html : le PNG de la bannière n'étant pas publié,
+       le partial rend une variante JPEG réellement servie. */ -}}
+{{- $img := partial "avp-image-sociale.html" . -}}
+    <meta property="og:image" content="{{ $img.url }}">
+    <meta property="og:image:secure_url" content="{{ $img.url }}">
+{{- with $img.width }}
+    <meta property="og:image:type" content="{{ $img.type }}">
+    <meta property="og:image:width" content="{{ . }}">
+    <meta property="og:image:height" content="{{ $img.height }}">
+{{- end }}

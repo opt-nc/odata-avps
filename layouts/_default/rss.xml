@@ -16,15 +16,17 @@
         {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType.Type | safeHTML }}
     {{ end }}
     
-    {{ range .Site.RegularPages }}
-      {{/* 🎯 FILTRES D'EXCLUSION : On identifie les pages à ignorer */}}
-      {{ $isMotDrh := eq .Section "mot-drh" }}
-      {{ $isAPropos := in .Permalink "a-propos" }}
-      {{ $is404 := in .Permalink "404" }}
-      {{ $isSearch := in .Permalink "search" }}
-      
-      {{/* Si la page n'est AUCUNE de ces trois-là, on génère l'item RSS */}}
-      {{ if and (not $isMotDrh) (not $isAPropos) (not $is404) (not $isSearch) }}
+    {{/* 🎯 Même filtre que le flux ATS et le jobs-sitemap : les AVP NON archivés,
+         reconnus à leur `ref` (absente des pages éditoriales et du mot de la DRH).
+
+         C'était auparavant une liste noire d'URL — a-propos, 404, search — qui
+         laissait donc passer toute page ajoutée par la suite : `stats` et
+         `developpeurs` s'y étaient glissées, et surtout les 44 AVP archivés,
+         si bien que le flux annonçait 44 offres closes pour 2 ouvertes.
+         Une liste blanche échoue dans le bon sens : une nouvelle page reste
+         dehors tant qu'elle n'est pas un AVP. */}}
+    {{ range partial "avp-actives.html" .Site.RegularPages }}
+      {{ if .Params.ref }}
       <item>
         <title>{{ .Title }}</title>
         <link>{{ .Permalink }}</link>
@@ -32,13 +34,14 @@
         <guid>{{ .Permalink }}</guid>
         <description>{{ or .Description .Summary | html }}</description>
         
-        {{/* 🎯 INJECTION DE L'ILLUSTRATION NANO BANANA DE L'AVP */}}
-        {{ with .Params.featured_image }}
-          {{/* 1. Balise standard RSS 2.0 */}}
-          <enclosure url="{{ . | absURL }}" type="image/png" length="0" />
-          
-          {{/* 2. Balise enrichie Yahoo/Media RSS pour les agrégateurs modernes */}}
-          <media:content url="{{ . | absURL }}" medium="image" type="image/png" width="1200" height="675" />
+        {{/* 🎯 ILLUSTRATION DE L'AVP — même source que les aperçus sociaux,
+             cf. partials/avp-image-sociale.html : le PNG de `featured_image`
+             vit dans assets/ et n'est jamais publié, le partial rend donc une
+             variante réellement servie. */}}
+        {{ if .Params.featured_image }}
+          {{ $img := partial "avp-image-sociale.html" . }}
+          <enclosure url="{{ $img.url }}" type="{{ $img.type }}" length="0" />
+          <media:content url="{{ $img.url }}" medium="image" type="{{ $img.type }}" width="{{ $img.width }}" height="{{ $img.height }}" />
         {{ end }}
       </item>
       {{ end }}

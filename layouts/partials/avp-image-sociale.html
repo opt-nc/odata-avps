@@ -1,0 +1,26 @@
+{{- /*
+  Rend l'illustration d'une page sous une forme RÉELLEMENT PUBLIÉE, pour les
+  aperçus de lien (Open Graph, Twitter Card) et le flux RSS.
+
+  Le problème qu'il règle : `featured_image` vaut « /images/avps/X.png », or ce
+  PNG vit dans assets/ — un dossier que Hugo traite mais ne publie jamais tel
+  quel. L'URL était donc un 404 chez tous les crawlers et agrégateurs, alors
+  que la page, elle, s'affichait bien (elle passe par resources.Get, cf.
+  shortcodes/avp-header.html).
+
+  On publie une variante JPEG et non WebP comme la page : le crawler LinkedIn
+  ne consomme que JPEG/PNG/GIF, et c'est le réseau qui compte le plus pour des
+  offres d'emploi. Les navigateurs gardent le WebP, plus léger, côté page.
+
+  Le logo de repli est servi depuis static/ : resources.Get ne le trouve pas,
+  on retombe sur absURL — ce qui est le comportement correct pour lui.
+
+  Usage : {{ $img := partial "avp-image-sociale.html" . }} → .url .type .width .height
+*/ -}}
+{{- $chemin := strings.TrimPrefix "/" (.Params.featured_image | default "/assets/logo-opt.png") -}}
+{{- $img := dict "url" ($chemin | absURL) "type" "image/png" "width" 0 "height" 0 -}}
+{{- with resources.Get $chemin -}}
+  {{- $jpeg := .Process "jpeg q85" -}}
+  {{- $img = dict "url" $jpeg.Permalink "type" $jpeg.MediaType.Type "width" $jpeg.Width "height" $jpeg.Height -}}
+{{- end -}}
+{{- return $img -}}

@@ -1,9 +1,8 @@
 {{- /* Surcharge OPT-NC du partial Twitter Cards du thème Relearn.
        Source unique, image correcte sur le sous-chemin /odata-avps/. */ -}}
-{{- $img := .Params.featured_image | default "/assets/logo-opt.png" -}}
-{{- $img = strings.TrimPrefix "/" $img -}}
+{{- $img := partial "avp-image-sociale.html" . -}}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ $img | absURL }}">
+    <meta name="twitter:image" content="{{ $img.url }}">
     <meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title | plainify }}{{ else }}{{ .Title | plainify }}{{ end }}">
 {{- with trim (or .Description .Summary | plainify | htmlUnescape) "\n\r\t " }}
     <meta name="twitter:description" content="{{ . }}">
