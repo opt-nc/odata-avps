@@ -1,0 +1,173 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation",
+    "direction": "DIRECTION DES SERVICES BANCAIRES",
+    "uniteOrganisationnelle": "Direction des services Bancaires",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de section Comptabilité et Recettes",
+    "placeOrganigramme": "N-4 (par rapport au directeur général)",
+    "relationsFonctionnelles": [
+      "Chef de Centre",
+      "Agent Comptable",
+      "autres sections"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Déplacements et télétravail possibles selon les missions occupées"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériel fourni",
+        "value": "PC portable"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12952006.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le collaborateur du pôle Comptabilité et Recettes coordonnera, supervisera et traitera l'ensemble des opérations comptables et de recettes du centre, en garantissant l'exactitude, et la fiabilité des données financières. Il contribuera au suivi des incidents de compensation et des GAB.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1377/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Cadre comptabilité – Centre de production bancaire",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "(+687) 26.88.42 / (+687) 26.88.41",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": true,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Bureautique et outils collaboratifs",
+      "Droit/Réglementation bancaire",
+      "Organisation, méthode et processus",
+      "Techniques d'accueil",
+      "Processus de décision bancaire"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Centre de Production Bancaire",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Services bancaires",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Centre de Production Bancaire",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 rue Eugène Porcheron Quartier Latin",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Services bancaires"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Gestionnaire comptable",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1203",
+      "name": "Comptabilité"
+    },
+    "code_metier": "OP047",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/finances_budget/op047/"
+  },
+  "responsibilities": [
+    "Appliquer le plan de surveillance permanente des comptes internes (comptes généraux et comptes OPT) : justification périodique des comptes",
+    "Rapprocher et justifier les états de développement de solde du compte Nostro (compte LBP)",
+    "Justifier les encours clients CCP et CNE",
+    "Actualiser les procédures affectées au pôle comptabilité et recettes et s'assurer de la diffusion et de son application",
+    "Produire les Reporting comptables",
+    "Identifier les suspens en collaboration avec les responsables de pôles et proposer les actions correctrices nécessaires",
+    "Traiter les demandes de régularisations comptables en lien avec les services concernés",
+    "Assurer la traçabilité et l'archivage des opérations",
+    "Traiter les incidents liés à la compensation et aux GABS",
+    "Traiter les process à risque afin de prévenir tout engagement de la responsabilité pécuniaire du Chef de Centre et engager des actions correctrices en collaboration avec les autres pôles si besoin",
+    "Contrôler l'exhaustivité de l'imputation correcte des recettes",
+    "Effectuer les régularisations nécessaires en cas d'erreur ou d'écart",
+    "Collaborer étroitement avec le Chef de Centre, l'Agent Comptable et les autres sections pour garantir la cohérence de la comptabilité",
+    "Participer aux projets d'amélioration continue des outils et processus comptable",
+    "Effectuer toute mission particulière confiée par sa hiérarchie dans le cadre de ses attributions (groupe de travail, études diverses)",
+    "Participer aux comités où sa présence sera jugée nécessaire par le chef du Centre de production bancaire",
+    "Seconder le Chef de Section et assurer ses intérims si besoin"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Travailler en équipe",
+    "Savoir s'exprimer à l'oral et rédiger des mails et des courriers",
+    "Prioriser",
+    "Assurer une veille réglementaire",
+    "Concevoir, rédiger les documents administratifs, les modes opératoires",
+    "Appliquer une règle, une procédure, la réglementation en vigueur",
+    "Renseigner et conseiller les clients",
+    "Bon relationnel",
+    "Capacité d'adaptation",
+    "Rigueur",
+    "Intégrité",
+    "Grande discrétion professionnelle",
+    "Esprit d'équipe",
+    "Curiosité intellectuelle",
+    "Sens du service public"
+  ],
+  "specialCommitments": null,
+  "title": "Cadre comptabilité – Centre de production bancaire",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": null,
+  "dossier": "dsb"
+}
