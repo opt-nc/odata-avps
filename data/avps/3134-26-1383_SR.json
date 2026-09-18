@@ -1,0 +1,164 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "DIRECTION DE LA POSTE ET DES SERVICES DE PROXIMITE",
+    "uniteOrganisationnelle": "AGENCE DE LIFOU",
+    "nbAgentsEncadres": 8,
+    "superieurHierarchique": "Manager de zone Nouméa / Grand Nouméa / Iles (Sophie DIJOU)",
+    "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "Indemnité de Chef d’agence"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "néant"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12952118.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Chef d’agence pour l'Agence de Lifou et ses annexes. Le poste consiste à contrôler et adapter les moyens disponibles en agence, garantir la qualité de service ainsi que le respect des guides et pratiques par les agents, assurer les activités relatives à la position d'agent comptable secondaire, produire le reporting d'activités et en tirer les recommandations éventuelles.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1383/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef d’agence - Agence de Lifou et ses annexes",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/logo.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.79.10",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Maîtriser la comptabilité des agences",
+      "Connaître les offres et la réglementation des produits et services commercialisés par l'OPT",
+      "Maîtriser les outils de bureautique, les applications informatiques et les logiciels de guichet",
+      "Manipuler du numéraire et tenir une caisse"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "AGENCE DE LIFOU"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/logo.png"
+  },
+  "incentiveCompensation": "Indemnité de Chef d’agence",
+  "industry": "Services bancaires, Activités postales",
+  "jobBenefits": "Indemnité de Chef d’agence",
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Agence de Lifou et ses annexes",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Lifou",
+      "addressRegion": "Province des Îles Loyauté",
+      "addressCountry": "NC",
+      "province": "province des îles Loyauté"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Activités postales",
+    "Services bancaires",
+    "Pilotage"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chef d’établissement",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K2107",
+      "name": "Direction d'exploitation de banque ou de centre financier"
+    },
+    "code_metier": "OP081",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/pilotage/op081/"
+  },
+  "responsibilities": [
+    "Prévoir et anticiper : analyser l'activité passée (évènements intervenus, volumétrie, d'activités, chiffre d'affaires, ressources utilisées, saisonnalité, stock, valeurs ...) et en tirer des prévisions quant à la mobilisation des moyens nécessaires et leur calendrier de mise en œuvre (travaux, congés des collaborateurs, pic d'activité...) de manière à assurer la continuité de service",
+    "Garantir les bons niveaux de stock fonds et valeurs",
+    "Contrôler la disponibilité et la qualité des moyens nécessaires convenus, alerter la hiérarchie en cas d'écarts et suggérer les adaptations",
+    "Organiser le travail en agence de manière à garantir la qualité de service et la satisfaction des clients ainsi que la meilleure optimisation des moyens alloués",
+    "Contrôler et piloter la bonne compréhension et application par ses équipes de toutes les directives et instructions de travail, guides et procédures ayant attrait soit au métier confié soit aux politiques internes d'amélioration continue (qualité - santé / sécurité / hygiène - RSE...) et de maîtrise des risques (réglementation, risques...)",
+    "Tenir la fonction d'agent de guichet ou d'autres positions de travail lorsque nécessité",
+    "Préserver les intérêts et actifs de l'OPT/agence (conservation des fonds et valeurs, entretien bâtiment, équipement et véhicules...)",
+    "Représenter l'organisme localement dans le cadre des procédures/pratiques mises en œuvre",
+    "Répondre aux obligations incombant à la position d'agent comptable secondaire (production de comptabilité et de reporting)",
+    "Rendre compte de l'activité couverte sur tous les volets de son périmètre, l'analyser et en proposer à sa hiérarchie les enseignements / recommandations",
+    "Apporter une contribution personnelle sur les sujets d'évolution/transformation/amélioration, en particulier être porteur des démarches Lean au sein de l'agence",
+    "Contribuer à la meilleure efficacité collective de l'entité de rattachement par la capacité à tenir d'autre positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) /conseiller ses collègues",
+    "Manager l'équipe : s'approprier, mettre en œuvre et incarner les valeurs, les responsabilités et les pratiques managériales",
+    "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT (agents et managers)"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "S’exprimer à l’oral",
+    "Rédiger",
+    "Manager",
+    "Diriger une structure, un service",
+    "Expliquer",
+    "Gérer les relations interpersonnelles",
+    "Gérer une relation client",
+    "Piloter une activité",
+    "Accueillir une personne, un groupe, du public",
+    "Animer un groupe, une équipe",
+    "Aisance relationnelle",
+    "Faire preuve de leadership",
+    "Avoir l’esprit d'équipe",
+    "Maîtrise de soi",
+    "Esprit d'initiative",
+    "Être rigoureux",
+    "Faire preuve de discrétion",
+    "Esprit d’entreprise",
+    "Sens du service public"
+  ],
+  "specialCommitments": null,
+  "title": "Chef d’agence - Agence de Lifou et ses annexes",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence",
+  "dossier": "dps"
+}
