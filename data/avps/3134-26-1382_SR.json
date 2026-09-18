@@ -1,0 +1,187 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation",
+    "direction": "DIRECTION DE LA POSTE ET DES SERVICES DE PROXIMITE",
+    "uniteOrganisationnelle": "SECTION APPLICATIONS ET PRATIQUES METIERS",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de section applications et pratiques métiers",
+    "placeOrganigramme": "N-4 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Pôle Opérationnel",
+      "Pôle Fonctionnel",
+      "Directions opérationnelles",
+      "Directions supports",
+      "Autres services de la BU",
+      "Centre de contact"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Est amené à se déplacer sur l'ensemble du territoire"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Néant"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "Néant"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953312.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Garantir la cohérence, la formalisation et la bonne application des processus et procédures métiers au sein des pôles Opérationnel et Fonctionnel, en lien avec les différentes directions (opérationnelles et supports) et les autres services de la BU.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1382/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Administrateur des pratiques métiers",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Section Applications et pratiques métiers",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.88.72",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Techniques de vente",
+      "Technique de rédaction",
+      "Conduite et gestion de projet",
+      "Organisation, méthode et processus",
+      "Technique et supports de communication/Médias",
+      "Contrôle, audit et évaluation"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "Office des Postes et des Télécommunications de Nouvelle-Calédonie",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SECTION APPLICATIONS ET PRATIQUES METIERS",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": "Régimes indemnitaires rattachés au poste de travail : Néant",
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Section Applications et pratiques métiers",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": [
+    "Activités postales",
+    "Vente et relation client"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé de soutien réseaux de vente",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K2503",
+      "name": "Animation de réseau de franchise"
+    },
+    "code_metier": "OP001",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op001/"
+  },
+  "responsibilities": [
+    "Élaborer, formaliser et actualiser les normes, procédures et modes opératoires applicables aux agences et centres de la BU",
+    "Assurer la publication, la mise à jour et la diffusion de la documentation métier dans le référentiel de la direction",
+    "Participer aux travaux inter directions pour la conception ou l’évolution des processus métiers",
+    "Communiquer au sein de la BU les nouveautés ou évolutions des process et procédures métiers",
+    "Conseiller les équipes d’assistance fonctionnelle et les agents sur l’application de la réglementation, des produits et des procédures",
+    "Contrôler la bonne mise en œuvre et l’adaptation des process sur le terrain",
+    "Identifier les dysfonctionnements, proposer des actions correctives et contribuer à l’amélioration continue des pratiques en collaboration avec le centre de contact",
+    "Réaliser le reporting d’activité et contribuer à l’alimentation du tableau de bord de la section",
+    "Gérer les commandes de fonds de l’ensemble du réseau d’agences, de centres et GAB externalisés"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Communiquer",
+    "Rédiger des procédures",
+    "Modéliser des processus",
+    "Auditer les pratiques (analyser, identifier les écarts et proposer des actions d’amélioration)",
+    "Animer des réunions et animer des groupes de travail interservices",
+    "Accompagner le changement des agents dans l’appropriation des pratiques et outils",
+    "Conduire un projet",
+    "Capacité à communiquer",
+    "Sens de l’analyse et sens critique",
+    "Aisance relationnelle",
+    "Esprit d’équipe",
+    "Sens de la pédagogie",
+    "Sens de l’organisation",
+    "Être autonome",
+    "Réactivité",
+    "Faculté d’adaptation"
+  ],
+  "specialCommitments": null,
+  "title": "Administrateur des pratiques métiers",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": null,
+  "dossier": "dps"
+}
