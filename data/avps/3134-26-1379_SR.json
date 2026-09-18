@@ -1,0 +1,164 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Agent technique",
+    "direction": "DIRECTION DES MOYENS ET DE L'IMMOBILIER",
+    "uniteOrganisationnelle": "SECTION MAGASINS ET TRANSPORTS",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de la cellule Magasins et Transports",
+    "placeOrganigramme": "N-4 (par rapport au Directeur opérationnel)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis VL, PL et cariste"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Conditions physiques, Travaux insalubres ou dangereux, Milieux poussiéreux, bruyant ou odorant, Déplacements sur la Grande Terre"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériels fournis",
+        "value": "Tél fixe/mobile de sécurité, EPI, Habillement complet"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "Indemnité mensuelle pour travaux insalubres ou dangereux selon le taux déclaré"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12952104.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Réceptionner, mettre en rayon et livrer du matériel. Traiter les demandes internes sur Oracle STOCK et les réintégrations de matériel.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1379/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Magasinier polyvalent",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.87.26",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Gestes et postures de manutention",
+      "Méthodes d’entreposage",
+      "Techniques d’inventaire",
+      "Règles d’hygiène et sécurité",
+      "Application informatique (ORACLE STOCK)",
+      "Outils de bureautique: EXCEL, WORD, OUTLOOK"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SECTION MAGASINS ET TRANSPORTS"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Logistique",
+  "jobBenefits": "Indemnité mensuelle pour travaux insalubres ou dangereux selon le taux déclaré",
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "CENTAL",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 rue Eiffel ZI Ducos",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Logistique"
+  ],
+  "physicalRequirement": "Conditions physiques, Travaux insalubres ou dangereux, Milieux poussiéreux, bruyant ou odorant",
+  "qualifications": "Permis VL, PL et cariste",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "MAGASINIER",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K1103",
+      "name": "Magasinage et préparation de commandes"
+    },
+    "code_metier": "OP054",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/logistique/op054/"
+  },
+  "responsibilities": [
+    "Réceptionner et vérifier le matériel livré au CENTAL",
+    "Mettre en rayon la marchandise",
+    "Traiter les demandes internes de matériel sur l’application ORACLE et les demandes de travaux/transport des clients internes sur OTRS",
+    "Préparer, livrer du matériel et monter du mobilier",
+    "Réaliser l’inventaire de fin d’année",
+    "Collecter et trier le matériel réformé en vue de son retraitement (recyclage, destruction, vente…)",
+    "Ranger et nettoyer les aires de stockage",
+    "Dépoter des containers",
+    "Gérer les échanges et les nouvelles dotations en habillement des agents de l’OPT en l’absence du chef de cellule"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Reconnaître et vérifier les marchandises et produits",
+    "Mettre le matériel en rayon",
+    "Conduire des engins de portage",
+    "Préparer des commandes",
+    "Appliquer les règlements en vigueur",
+    "Savoir rédiger",
+    "Bonne qualité relationnelle",
+    "Rigueur",
+    "Disponibilité",
+    "Initiative",
+    "Réactivité",
+    "Méthodes et sens de l’organisation",
+    "Sens du travail en équipe",
+    "Aptitude au changement"
+  ],
+  "specialCommitments": null,
+  "title": "Magasinier polyvalent",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": null,
+  "dossier": "dmi"
+}
