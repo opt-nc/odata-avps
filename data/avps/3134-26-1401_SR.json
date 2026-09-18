@@ -1,0 +1,173 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "Centre de Supervision NOC",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de Centre de Supervision NOC (CSNO)",
+    "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Equipes techniques",
+      "Services internes",
+      "Partenaires externes"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Durée de résidence exigée",
+        "value": "/"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "/"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "/"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "/"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12957150.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Assurer l'assistance administrative, organisationnelle et logistique du NOC, le suivi de dossiers RH, achats et moyens généraux, ainsi que la gestion des accès et habilitations. Contribuer au fonctionnement opérationnel du centre, au suivi des interventions et des tableaux de bord, et assurer l'interface avec les équipes techniques, les services internes et les partenaires externes.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1401/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Assistant administratif et opérationnel - CSNOC",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.75.01",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Organisation et fonctionnement de l'OPT- NC",
+      "Maîtrise des outils bureautiques et des techniques de communication écrite et orale",
+      "Connaissance des procédures administratives, du suivi RH, des achats et marchés",
+      "Notions de gestion des habilitations, comptes utilisateurs et droits d'accès dans un environnement SI",
+      "Anglais lu et parlé"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Centre de Supervision NOC"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "CSNO (Centre de Supervision NOC)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 rue du Général Gallieni",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "2026-12-08",
+  "occupationalCategory": [
+    "Administration",
+    "Télécommunications"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis de conduire B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Assistant administratif",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K1601",
+      "name": "Assistanat technique et administratif"
+    },
+    "code_metier": "OP033",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/administration/op033/"
+  },
+  "responsibilities": [
+    "Assurer l'accueil physique et téléphonique ainsi que la gestion administrative courante du CSNO",
+    "Gérer le courrier, les documents officiels, les comptes rendus et l'organisation des réunions",
+    "Assurer le suivi administratif du personnel : positions, formations et contrats",
+    "Suivre les factures, lettres de commande, conventions, marchés, consultations et appels d'offres",
+    "Assurer la gestion logistique du centre : fournitures, équipements, véhicule et moyens généraux",
+    "Gérer les droits d'accès aux sites et locaux : badges, habilitations, mise à jour des référentiels et traçabilité des accès",
+    "Assurer, sur les outils relevant de son périmètre, la création et la gestion des comptes utilisateurs, l'attribution ou la modification des droits, ainsi que certaines évolutions de configuration selon les procédures établies",
+    "Contribuer aux activités opérationnelles du NOC : prise d'appels opérationnels, suivi des interventions et alimentation des tableaux de bord",
+    "Assurer la coordination avec les équipes techniques, les services internes et les partenaires externes",
+    "Veiller au respect des règles de sécurité, de sûreté, de confidentialité et des procédures internes"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Organiser, prioriser et suivre plusieurs dossiers en parallèle",
+    "Respecter les échéances et assurer la traçabilité",
+    "Rédiger, synthétiser, mettre en forme et archiver des documents et informations",
+    "Gérer des droits d'accès, comptes utilisateurs et habilitations conformément aux procédures",
+    "Alimenter des tableaux de bord, suivre des interventions et travailler avec des interlocuteurs techniques",
+    "Identifier une anomalie, alerter et rendre compte à la hiérarchie",
+    "Rigueur",
+    "Organisation",
+    "Autonomie",
+    "Réactivité",
+    "Discrétion",
+    "Sens de la confidentialité",
+    "Fiabilité",
+    "Sens du service",
+    "Qualités relationnelles",
+    "Esprit d'équipe",
+    "Capacité d'adaptation",
+    "Aisance dans un environnement technique"
+  ],
+  "specialCommitments": null,
+  "title": "Assistant administratif et opérationnel - CSNOC",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": null,
+  "dossier": "dt"
+}
