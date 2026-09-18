@@ -1,0 +1,178 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "DIRECTION DE LA POSTE ET DES SERVICES DE PROXIMITE",
+    "uniteOrganisationnelle": "AGENCE DE LIFOU",
+    "nbAgentsEncadres": 5,
+    "superieurHierarchique": "Chef d’agence de Lifou",
+    "placeOrganigramme": "N-4 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Chef d'agence",
+      "Agent Comptable"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "néant"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "Indemnité hiérarchique de chef de cellule"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956102.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Piloter, contrôler à l'échelle de sa cellule la disponibilité et l'adéquation des moyens ainsi que les conditions de réalisation de l'offre définie, en effectuer le reporting et l'analyse. Développer les niveaux de maîtrise des différentes fonctions au sein de sa section, inspirer, imposer et accompagner les comportements adéquats. Suppléer le chef d'agence dans ses missions de gestion de l'agence et d'agent comptable secondaire.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1397/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef de cellule polyvalent - Agence de Lifou et ses annexes",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "20.62.81",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Maîtriser la comptabilité des agences",
+      "Connaître les offres et la réglementation des produits et services commercialisés par l'OPT",
+      "Maîtriser les outils de bureautique, les applications informatiques et les logiciels de guichet",
+      "Manipuler du numéraire et tenir une caisse"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "AGENCE DE LIFOU",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": "Indemnité hiérarchique de chef de cellule",
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Agence de Lifou WE et ses annexes MOU et CHEPENEHE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Lifou",
+      "addressRegion": "Province des îles Loyauté",
+      "addressCountry": "NC",
+      "province": "province des îles Loyauté"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Activités postales",
+    "Services bancaires"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Coordonnateur de l'exploitation commerciale",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Management de département commercial"
+    },
+    "code_metier": "OP004",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op004/"
+  },
+  "responsibilities": [
+    "Prévoir et anticiper : analyser l'activité passée (évènements intervenus, volumétrie, d'activités, chiffre d'affaires, ressources utilisées, saisonnalité, stock, valeurs...) et en tirer des prévisions quant à la mobilisation des moyens nécessaires et leur calendrier de mise en œuvre (travaux, congés des collaborateurs, pic d'activité...) de manière à assurer la continuité de service",
+    "Solliciter sa hiérarchie si besoin de moyens particuliers / spécifiques",
+    "Garantir les bons niveaux de stock fonds et valeurs nécessaires à l’activité",
+    "Contrôler la disponibilité et la qualité des moyens humains convenus, alerter la hiérarchie en cas d'écarts et suggérer les adaptations",
+    "Organiser le travail de la cellule de manière à garantir la qualité de service et la satisfaction des clients ainsi que la meilleure optimisation des moyens alloués",
+    "Contrôler et piloter la bonne compréhension et application par la cellule de toutes les directives et instructions de travail, guides et procédures ayant attrait au métier confié ou aux politiques internes d'amélioration continue (qualité - santé / sécurité / hygiène - RSE...) et de maîtrise des risques (réglementation, risques...)",
+    "Tenir la fonction d'agent de guichet ou autre position de travail lorsque nécessité",
+    "Préserver les intérêts et actifs de l'OPT/agence (conservation des fonds et valeurs, entretien bâtiment, équipement et véhicules...)",
+    "Rendre compte de l'activité couverte sur tous les volets de son périmètre, l'analyser et en proposer à sa hiérarchie les enseignements / recommandations",
+    "Participer à la démarche d’amélioration continue au sein des agences (LEAN)",
+    "Apporter une contribution personnelle sur les sujets d'évolution/transformation/amélioration des équipes",
+    "Contribuer à la meilleure efficacité collective de l'entité de rattachement par la capacité à tenir d'autres positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) /conseiller ses collègues",
+    "Manager l'équipe : s'approprier, mettre en œuvre et incarner les valeurs, les responsabilités et les pratiques managériales telles que spécifiées dans le référentiel managérial interne",
+    "En tant qu' intérim du chef d’agences, sous réserve de l’accord de l’AC et sous la responsabilité du chef d’agences : répondre aux obligations incombant à la position d'agent comptable secondaire (production de comptabilité et de reporting)"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "S’exprimer à l’oral",
+    "Rédiger",
+    "Manager",
+    "Diriger une structure, un service",
+    "Expliquer",
+    "Gérer les relations interpersonnelles",
+    "Gérer une relation client",
+    "Piloter une activité",
+    "Accueillir une personne, un groupe, du public",
+    "Animer un groupe, une équipe",
+    "Aisance relationnelle",
+    "Faire preuve de leadership",
+    "Avoir l’esprit d'équipe",
+    "Maîtrise de soi",
+    "Esprit d'initiative",
+    "Être rigoureux",
+    "Faire preuve de discrétion",
+    "Esprit d’entreprise",
+    "Sens du service public"
+  ],
+  "specialCommitments": null,
+  "title": "Chef de cellule polyvalent - Agence de Lifou et ses annexes",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": "horaires de travail du lundi au samedi en fonction du règlement intérieur de l’agence",
+  "dossier": "dps"
+}
