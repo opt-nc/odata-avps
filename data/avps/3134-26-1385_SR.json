@@ -1,0 +1,163 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "DIRECTION DES SERVICES BANCAIRES",
+    "uniteOrganisationnelle": "CELLULE CLIENT",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de Cellule Client (Nelsy TEMAURI)",
+    "placeOrganigramme": "N-4 par rapport au directeur général",
+    "relationsFonctionnelles": [
+      "Pôle Conformité",
+      "Autres pôles du centre"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Télétravail possible selon les missions occupées"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériel fourni",
+        "value": "PC portable"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956078.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le contrôleur client contrôlera et traitera l’ensemble des activités liées au suivi et à la résolution des réclamations, à la gestion des fraudes et du précontentieux, afin de garantir la conformité, l’efficacité opérationnelle et la satisfaction client",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1385/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Contrôleur Client – Centre de Production Bancaire",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.88.67",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Bureautique et outils collaboratifs",
+      "Droit/Réglementation bancaire",
+      "Organisation, méthode et processus",
+      "Techniques d'accueil",
+      "Processus de décision bancaire"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "CELLULE CLIENT"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Services bancaires",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Centre de Production Bancaire",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 rue Eugène Porcheron Quartier Latin",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Services bancaires"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Gestionnaire du back office bancaire",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Opérations de back et middle-office"
+    },
+    "code_metier": "OP012",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/services_bancaires/op012/"
+  },
+  "responsibilities": [
+    "Traiter et contrôler, dans les délais et avec traçabilité, les réclamations clients, tout en analysant leurs causes récurrentes et en proposant des actions correctives",
+    "Traiter et contrôler les dossiers de précontentieux en garantissant la conformité, la traçabilité et la production des rapports afférents : analyse des comptes à découvert, validation des opérations soumises à décision, préparation de la liste des comptes débiteurs à clôturer, relance clients, préparation des fichiers de reporting pour le comité de précontentieux, mise en application des directives du comité",
+    "Traiter et contrôler les dossiers de fraude, en pilotant les actions préventives ou correctives avec les services concernés et en assurant un suivi régulier des indicateurs",
+    "Contribuer à la mise à jour de la documentation des activités de son périmètre (modes opératoires, procédures…), en collaboration avec le pôle Conformité",
+    "Concourir à l’exactitude de la comptabilité journalière",
+    "Echange multicanal avec la clientèle",
+    "Pratiquer l’entraide selon les besoins du service, notamment la reprise d’activité de l’assistant pilotage et support en cas d’absence",
+    "Travailler en collaboration étroite avec les autres pôles du centre",
+    "Seconder le chef de cellule et assurer ses intérims si besoin",
+    "Périmètre du poste susceptible d’évoluer"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Travailler en équipe",
+    "Savoir s’exprimer à l’oral et rédiger des mails et des courriers",
+    "Prioriser",
+    "Assurer une veille réglementaire",
+    "Concevoir, rédiger les documents administratifs, les modes opératoires",
+    "Appliquer une règle, une procédure, la réglementation en vigueur",
+    "Renseigner et conseiller les clients",
+    "Bon relationnel",
+    "Capacité d’adaptation",
+    "Rigueur",
+    "Intégrité",
+    "Grande discrétion professionnelle",
+    "Esprit d’équipe",
+    "Curiosité intellectuelle",
+    "Sens du service public"
+  ],
+  "specialCommitments": null,
+  "title": "Contrôleur Client – Centre de Production Bancaire",
+  "totalJobOpenings": null,
+  "validThrough": "2026-10-09",
+  "workHours": null,
+  "dossier": "dsb"
+}
