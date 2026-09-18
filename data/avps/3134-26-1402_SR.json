@@ -1,0 +1,171 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Technicien",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "SECTION SUPERVISION",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de section supervision (Anne-laure FEUILLET)",
+    "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Equipes techniques",
+      "Fournisseurs extérieurs",
+      "Clients professionnels",
+      "Grands Comptes"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Travail du lundi au vendredi en heures ouvrées et en horaires spéciaux, travail de nuit, travail week-ends et jours fériés compris"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis de conduire B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12957424.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Assurer la supervision des infrastructures, réseaux et services. Gérer et suivre les tickets concernant les évènements en lien avec ses domaines de responsabilité.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1402/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Superviseur - CSNO",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.75.10",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Bac",
+    "competencyRequired": [
+      "Organisation et fonctionnement de l’OPT- NC",
+      "Connaissances des réseaux et services télécoms",
+      "Connaissances des systèmes d’information",
+      "Connaissances d’outils de supervisions (CENTREON)",
+      "Connaissances d’outils métiers de type Operations Support System (OSS) : OSS/EMM d’Ericsson, 1360COM/AMS de NOKIA…",
+      "Connaissances d’outils de gestion de services d’assistance (OTRS)",
+      "Connaissances de la suite bureautique Office 365",
+      "Connaissances des outils collaboratifs de la suite Office 365",
+      "Connaissances des bonnes pratiques ITIL",
+      "Anglais lu (requis) et parlé (souhaité)"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public de Nouvelle-Calédonie.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SECTION SUPERVISION"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "CSNO (Centre de Supervision NOC)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 rue du Général Gallieni",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": [
+    "Télécommunications",
+    "Systèmes d'information"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis de conduire B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "technicien support",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1602",
+      "name": "Assistance et support technique en informatique"
+    },
+    "code_metier": "OP028",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/telecommunications/op028/"
+  },
+  "responsibilities": [
+    "Superviser, surveiller et étudier les domaines dont il a la responsabilité, de bout en bout",
+    "Établir un diagnostic et s'assurer de la prise en charge de l'incident par les équipes techniques",
+    "Faire intervenir, contrôler et assister l'action de l'ensemble des intervenants qui participent à la fourniture du service",
+    "Assurer la bonne coordination des actions des équipes techniques et des fournisseurs extérieurs en vue du rétablissement du service",
+    "Informer les entités concernées des actions correctives menées, de la nature des évènements rencontrés, de leurs impacts et des délais éventuels de rétablissement de service",
+    "Réceptionner et synthétiser l'ensemble des interventions programmées en lien avec les infrastructures, réseaux et services télécoms",
+    "Rendre compte de l'activité sur tous les volets, l'analyser et en proposer à sa hiérarchie les enseignements/recommandations",
+    "Suspendre les abonnements Mobilis",
+    "Assurer la saisie des signalisations de dérangements des Liaisons Spécialisées en dehors des heures ouvrées, et réaliser les traitements particuliers liés aux clients spécifiques (domaines de la santé et de la sécurité)",
+    "Assurer un contact SAV privilégié pour les clients professionnels et Grands Comptes",
+    "Participer aux transferts de compétence pour les nouveaux arrivants",
+    "Rédaction de processus et procédures liés à l’activité",
+    "Participer à des projets techniques spécifiques en rapport avec l’activité de supervision avec gestion des échéances",
+    "Ajouter des équipements, ajuster des seuils dans les outils de supervision",
+    "Veiller au respect des attendus décrits dans les référentiels de fonction de l’OPT (Agents)"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Diagnostiquer une anomalie",
+    "Analyser une information, une donnée, une situation, un dispositif",
+    "Travailler en équipe",
+    "Rendre compte",
+    "Prioriser",
+    "Alerter sur une situation à risque",
+    "Être rigoureux",
+    "Esprit d’initiative",
+    "Esprit de synthèse",
+    "Être autonome",
+    "Aisance relationnelle",
+    "Avoir l'esprit d'équipe",
+    "Capacité à communiquer",
+    "Sens du service public",
+    "Faculté d’adaptation"
+  ],
+  "specialCommitments": "Travail de nuit, week-ends et jours fériés",
+  "title": "Superviseur - CSNO",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": "Horaires spéciaux, travail de nuit, week-ends et jours fériés",
+  "dossier": "dt"
+}
