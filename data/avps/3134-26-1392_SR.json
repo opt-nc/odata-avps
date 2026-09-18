@@ -1,0 +1,159 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Agent d'exploitation",
+    "direction": "DIRECTION DE LA POSTE ET DES SERVICES DE PROXIMITE",
+    "uniteOrganisationnelle": "CENTRE DE TRAITEMENT POSTAL",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de cellule International",
+    "placeOrganigramme": "N-5 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du CTP, Travail en équipe, Travail en position debout, Travail en espace ouvert équipé de machines, Manutention d'objets lourds"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels",
+        "value": "EPI"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956068.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Au sein du Centre de traitement postal (CTP), cellule International, l'agent d'exploitation départ est responsable de réceptionner et traiter les flux d'envois postaux.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1392/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Agent polyvalent d'exploitation cellule international - CTP",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.86.10",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": true,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Organisation et fonctionnement de l'OPT-NC",
+      "Plan de tri général et codes postaux de la Nouvelle-Calédonie",
+      "Réglementation courrier colis",
+      "Produits et services courrier colis",
+      "Outils de bureautique et applications informatiques métier (MPRH, Sido, IPS, Outlook, Teams, O365)",
+      "Règles d'hygiène et sécurité",
+      "Techniques de gestes et postures"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "CENTRE DE TRAITEMENT POSTAL",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Activités postales",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Centre de Traitement Postal",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 rue Fernand Forest",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Immédiatement",
+  "occupationalCategory": [
+    "Activités postales"
+  ],
+  "physicalRequirement": "Travail en position debout, Manutention d'objets lourds",
+  "qualifications": null,
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé d'exploitation courrier colis",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Intervention technique d'exploitation logistique"
+    },
+    "code_metier": "OP015",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/activites_postales/op015/"
+  },
+  "responsibilities": [
+    "Réceptionner et traiter les flux d'envois postaux : LCAO (ordinaires et recommandés), EMS, Colis conformément aux processus et aux procédures de production définis dans le respect des directives et des objectifs fixés en termes d'intégrité, de qualité et de délai",
+    "Effectuer les opérations d'arrivée, de Tri et de Départ des différentes catégories d'objets postaux",
+    "Détecter et signaler les anomalies et les dysfonctionnements",
+    "Respecter les consignes de sécurité",
+    "Être dans une démarche d'amélioration continue et de qualité de service",
+    "Fermeture des contenants par destination, gestion des objets hors norme, distribution en coffre Cedex, fermeture des acheminements et dépêches à l'export",
+    "Gestion des traitements des rebuts",
+    "Contribuer au contrôle de qualité de l'activité en relayant toute information pertinente concernant l'optimisation de la production, l'amélioration de la qualité de service ou l'alerte maintenance",
+    "Préserver la qualité de vie au travail, y compris la sécurité",
+    "Adapter et valoriser vos compétences",
+    "Entretenir votre poste de travail",
+    "Rôle de guide-fil et/ou de serre-file d'évacuation incendie selon la position occupée",
+    "Contribuer à traiter les réclamations des clients et à améliorer notre qualité de service",
+    "Assurer une polyvalence dans la section et entraider au sein du centre de traitement postal"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Appliquer les règles et les procédures en vigueur",
+    "S'exprimer et communiquer avec clarté et bienveillance",
+    "Assurer une polyvalence au sein de la section",
+    "Utiliser les outils informatiques",
+    "Valeurs du Centre et de son activité",
+    "Intégrité",
+    "Respect",
+    "Travail en équipe",
+    "Rigueur",
+    "Esprit d'initiative",
+    "Obligations de discrétion et de secret professionnels"
+  ],
+  "specialCommitments": null,
+  "title": "Agent polyvalent d'exploitation cellule international - CTP",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du CTP",
+  "dossier": "dps"
+}
