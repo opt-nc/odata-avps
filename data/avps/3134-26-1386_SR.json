@@ -1,0 +1,176 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation",
+    "direction": "DIRECTION DES SYSTEMES D'INFORMATION",
+    "uniteOrganisationnelle": "SERVICE DES MOYENS",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Directeur adjoint de la DSI",
+    "placeOrganigramme": "N-4 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Direction des Systèmes d'Information"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Au bureau avec l'outil informatique"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Téléphone fixe d'exploitation, téléphone de sécurité (fixe et mobile)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "/"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12957716.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le Responsable Méthodes et Qualité du SI veille à la définition, à la mise en œuvre, à l'évolution et au respect des méthodes, normes et référentiels permettant d'assurer la qualité, la cohérence et la maîtrise des risques du Système d'Information de l'OPT-NC. Il est garant de la cohérence et de la tenue des référentiels documentaires du Système d'Information. Il fait appliquer et évoluer les méthodes et normes établies et contribue à l'amélioration continue des pratiques afin de garantir un niveau d'exigence suffisant. Il contribue également à la mise en œuvre du dispositif de contrôle interne du SI, notamment par l'identification des risques, la réalisation de contrôles, la formalisation des écarts et le suivi des actions correctives. À ce titre, il doit être consulté dans le cadre des projets et de la maintenance évolutive impactant le SI de l'OPT-NC.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1386/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Responsable qualité du SI",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.76.00",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-18",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Bac+3",
+    "competencyRequired": [
+      "Maîtrise des outils de gouvernance des SI (TOGAF, COBIT, ITIL, CIGREF)",
+      "Connaissance des principes de contrôle interne et de gestion des risques appliqués aux Systèmes d'Information",
+      "Connaissance des normes, procédures et protocoles d'audit",
+      "Maîtrise des outils Confluence, Jira",
+      "Maîtrise de la suite Office 365"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public de Nouvelle-Calédonie.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SERVICE DES MOYENS"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience souhaitée",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Immeuble COPERNIC",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "59 Rue Georges Clémenceau",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Systèmes d'information",
+    "Pilotage"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis de conduire B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Responsable qualité",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K2102",
+      "name": "Conseil et maîtrise d'ouvrage en systèmes d'information"
+    },
+    "code_metier": "OP077",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/pilotage/op077/"
+  },
+  "responsibilities": [
+    "Veiller à la cohérence globale des méthodes, normes, référentiels et outils permettant une gestion de qualité du Système d'Information de l'OPT-NC",
+    "Rédiger et faire évoluer les guides de bonnes pratiques, procédures et référentiels relatifs aux méthodes et outils du SI",
+    "Accompagner et assister les utilisateurs et contributeurs du référentiel documentaire du SI",
+    "S'assurer de l'accès à l'exhaustivité des données et informations nécessaires au SI (couches métier, fonctionnelle, applicative) par les différents collaborateurs",
+    "Proposer et maintenir les modèles et standards de documentation du SI (spécifications, dossiers de conception, cahiers de recette, tests, dossiers d'exploitation, etc.)",
+    "Auditer la qualité et la conformité de la documentation produite, notamment par l'application d'une méthode de notation par domaine fonctionnel et/ou applicatif et par le challenge des contributeurs",
+    "Veiller à la mise à jour et à la cohérence des informations fonctionnelles et applicatives au sein du référentiel du SI",
+    "Faire respecter les méthodes, normes, outils et structures définis dans le cadre des projets SI et des activités de maintenance évolutive, par les collaborateurs internes et externes",
+    "Contribuer à l'identification et à l'évaluation des risques liés aux processus et activités du SI et proposer les contrôles associés",
+    "Réaliser ou coordonner des contrôles internes sur les processus et activités du SI, formaliser les constats et assurer le suivi des actions correctives",
+    "Contribuer à la préparation et au suivi des audits et contrôles portant sur le Système d'Information, notamment par le suivi des recommandations et des plans d'actions",
+    "Définir et suivre les indicateurs permettant de mesurer la qualité, la conformité aux méthodes et la maîtrise des risques du SI, et en assurer le reporting",
+    "Promouvoir la mise en place et l'évolution d'outils et de pratiques permettant d'optimiser la gestion du SI, en contexte projet et maintenance",
+    "Être consulté dans le cadre des projets et des évolutions significatives du SI afin d'apporter une expertise méthodologique et qualité et de veiller au respect des exigences définies par la DSI",
+    "Être l'interlocuteur privilégié sur les aspects méthodologiques et qualité du Système d'Information, alerter la hiérarchie sur les écarts significatifs ou risques identifiés et contribuer à la sensibilisation des équipes"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Définir et maintenir le référentiel normes et méthodes du SI",
+    "Définir et formaliser des procédures, processus et dispositifs de contrôle",
+    "Identifier et évaluer les risques liés aux activités du SI",
+    "Réaliser des contrôles de conformité des pratiques et de la documentation",
+    "Formaliser des constats, recommandations et plans d'actions et en assurer le suivi",
+    "Rédiger des procédures, comptes rendus, notes et divers documents",
+    "Animer des réunions et des groupes de travail",
+    "Établir des tableaux de bord et indicateurs",
+    "Argumenter, influencer et convaincre",
+    "Faire appliquer les normes et méthodes définies",
+    "Accompagner les équipes dans l'évolution des pratiques et méthodes",
+    "Esprit d'équipe",
+    "Initiative",
+    "Innovation",
+    "Analyse et de synthèse",
+    "Rigueur et méthode",
+    "Facultés de communication, d'écoute et d'expression",
+    "Capacité à rédiger",
+    "Capacité à fédérer",
+    "Persuasion et capacité à respecter un cadre commun",
+    "Diplomatie et sens du dialogue",
+    "Autonomie",
+    "Sens de l'alerte"
+  ],
+  "specialCommitments": null,
+  "title": "Responsable qualité du SI",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-09",
+  "workHours": null,
+  "dossier": "dsi"
+}
