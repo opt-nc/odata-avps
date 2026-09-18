@@ -1,0 +1,167 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "CENTRE AGENCE ENTREPRISES",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de Cellule Support Entreprises",
+    "placeOrganigramme": "N-4 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Chargés d'affaires",
+      "Chef de cellule",
+      "Clients",
+      "Interlocuteurs internes"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations et permis",
+        "value": "Permis de conduire B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "du lundi au samedi en fonction du règlement intérieur"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956084.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Assurer l'administration des ventes en support des chargés d'affaire (EN). Assurer la relation client.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1395/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Assistant Commercial Entreprises",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.77.83",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-10-09",
+  "directApply": true,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Outils informatiques et suite MS 365",
+      "Systèmes d’Information et applications métiers liées aux produits et services vendus",
+      "Techniques rédactionnelles et maîtrise de l'orthographe",
+      "Techniques commerciales et conseil au client",
+      "Produits et services télécoms commercialisés par l'OPT-NC",
+      "Organisation de l’OPT-NC",
+      "Processus métiers et interlocuteurs internes",
+      "Techniques de vente (processus de vente : prospection, accueil client, découverte du besoin, présentation produits, négociation, suivi du client…)"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "Office des postes et télécommunications",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "CENTRE AGENCE ENTREPRISES"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des postes et télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Agence Entreprise",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 rue Galliéni",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Vente et relation client",
+    "Télécommunications"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis de conduire B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Commercial",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Assistance commerciale"
+    }
+  },
+  "responsibilities": [
+    "Accueillir, renseigner, proposer les produits et services aux clients",
+    "Traiter les courriers (électroniques et papiers) en back office",
+    "Traiter les demandes clients et évaluer leurs besoins",
+    "Proposer les offres et établir des devis simples (en fonction de la demande et de la technicité requise) ou solliciter l'intervention d'un chargé d'affaires pour l'ingénierie commerciale et la production d'offres adaptées",
+    "Assurer l'administration des ventes (mise à jour des bases de données, saisie, statistiques...) et le support aux chargés d'affaires (saisie, préparation des réunions clients, préparation et émission des offres...)",
+    "Veiller à la qualité des données clients dans les Systèmes d'Information",
+    "Participer aux actions commerciales (opérations markéting, salons...)",
+    "Assurer le reporting de son activité au chef de cellule",
+    "Contribuer à la meilleure efficacité collective de l'entité de rattachement par la capacité à tenir d'autre positions, à élever son niveau de pratique, à tutorer (sur la base du volontariat) et conseiller ses collègues",
+    "Garantir une qualité de service en termes d'accueil téléphonique et physique de la clientèle",
+    "Assurer l'assistance commerciale du chargé d'affaires Entreprises",
+    "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT (Agents)"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Gérer une relation client",
+    "Analyser un besoin",
+    "Conseiller",
+    "Instruire un dossier",
+    "Argumenter",
+    "Rendre compte",
+    "Synthétiser les informations",
+    "Rédiger des comptes rendus",
+    "S'exprimer à l'oral",
+    "Capacité à communiquer",
+    "Sens de la pédagogie",
+    "Aptitude à l'écoute",
+    "Aisance relationnelle",
+    "Sens de l’organisation",
+    "Avoir l'esprit d'équipe",
+    "Etre rigoureux",
+    "Réactivité",
+    "Etre autonome"
+  ],
+  "specialCommitments": null,
+  "title": "Assistant Commercial Entreprises",
+  "totalJobOpenings": null,
+  "validThrough": "2026-09-18",
+  "workHours": "du lundi au samedi en fonction du règlement intérieur",
+  "dossier": "dt"
+}
