@@ -1,50 +1,143 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+{{- /*
+  Flux RSS des Avis de Vacance de Poste — issues 556 et 532.
+
+  Trois principes :
+
+  1. `description` reste COURT et de longueur régulière (le `summary` normalisé
+     du front matter, précédé de la date limite). Le détail part dans
+     `content:encoded`, ce qui est exactement le rôle de ce module. Avant, le
+     flux servait `.Description` — la description longue, très variable — d'où
+     l'hétérogénéité signalée dans l'issue.
+
+  2. Tout ce qui permet de FILTRER est en `<category domain="...">` : direction,
+     lieu, province, référence, famille de métier. Un script peut ainsi trier le
+     flux sans ouvrir les annonces.
+
+  3. Pas de `<enclosure>`. Elle faisait doublon avec `<media:content>` et
+     n'annonçait qu'un `length="0"` invalide ; la taille réelle imposerait de
+     matérialiser chaque JPEG au build. L'issue 556 autorise explicitement la
+     suppression, c'est l'option retenue.
+
+  Le tri est STABLE : référence décroissante, puis date décroissante. Les AVP
+  partagent massivement la même date de publication (à 00:00:00, le pipeline ne
+  capte pas d'heure) et sortaient donc dans un ordre alphabétique instable d'un
+  build à l'autre. La référence, elle, est monotone croissante dans le temps.
+*/ -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- $ctx := . -}}
+
+{{- /* 🎯 Périmètre : le flux d'accueil couvre tout le site, un flux de section
+       ne couvre QUE sa section. Auparavant tous itéraient sur `.Site.RegularPages`,
+       si bien que /dsi/index.xml, /dps/index.xml et /archives/index.xml servaient
+       tous les trois le flux global à l'identique. */ -}}
+{{- $scope := .Site.RegularPages -}}
+{{- if not .IsHome -}}{{- $scope = .RegularPagesRecursive -}}{{- end -}}
+
+{{- /* Liste blanche : les AVP non archivés, reconnus à leur `ref` (absente des
+       pages éditoriales et du mot de la DRH).
+
+       C'était auparavant une liste noire d'URL — a-propos, 404, search — qui
+       laissait donc passer toute page ajoutée par la suite : `stats` et
+       `developpeurs` s'y étaient glissées, et surtout les 44 AVP archivés,
+       si bien que le flux annonçait 44 offres closes pour 2 ouvertes. */ -}}
+{{- $items := where (partial "avp-actives.html" $scope) "Params.ref" "!=" nil -}}
+{{- $items = sort (sort $items "Params.ref" "desc") "Date" "desc" -}}
+{{- with site.Config.Services.RSS.Limit -}}
+  {{- if ge . 1 -}}{{- $items = first . $items -}}{{- end -}}
+{{- end -}}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} sur {{ end }}{{ .Site.Title }}{{ end }}</title>
+    {{- /* Titre propre : le titre de la page d'accueil est un slogan
+           (« 🏢 Vous souhaitez exercer un métier à l'OPT-NC ? ») destiné au menu.
+           Concaténé au titre du site, il donnait un titre de canal illisible. */}}
+    <title>{{ if .IsHome }}Emploi OPT-NC — Avis de vacance de poste{{ else }}Emploi OPT-NC — {{ .Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
-    <description>Flux RSS des Avis de Vacances de Poste - {{ .Site.Title }}</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>{{ if .IsHome }}Les avis de vacance de poste de l'OPT de Nouvelle-Calédonie, publiés à chaque nouvelle offre.{{ else }}Les avis de vacance de poste de l'OPT-NC pour {{ .Title }}.{{ end }}</description>
     <language>{{ site.Language.Locale | default .Site.LanguageCode }}</language>
-    
+    <copyright>OPT-NC</copyright>
+    <generator>Hugo -- gohugo.io</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    <ttl>60</ttl>
+
     <image>
       <url>{{ "assets/logo-opt.png" | absURL }}</url>
       <title>{{ .Site.Title }}</title>
       <link>{{ .Permalink }}</link>
     </image>
 
-    {{ with .OutputFormats.Get "RSS" }}
-        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType.Type | safeHTML }}
-    {{ end }}
-    
-    {{/* 🎯 Même filtre que le flux ATS et le jobs-sitemap : les AVP NON archivés,
-         reconnus à leur `ref` (absente des pages éditoriales et du mot de la DRH).
+    {{ with .OutputFormats.Get "RSS" -}}
+      {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType.Type | safeHTML }}
+    {{- end }}
 
-         C'était auparavant une liste noire d'URL — a-propos, 404, search — qui
-         laissait donc passer toute page ajoutée par la suite : `stats` et
-         `developpeurs` s'y étaient glissées, et surtout les 44 AVP archivés,
-         si bien que le flux annonçait 44 offres closes pour 2 ouvertes.
-         Une liste blanche échoue dans le bon sens : une nouvelle page reste
-         dehors tant qu'elle n'est pas un AVP. */}}
-    {{ range partial "avp-actives.html" .Site.RegularPages }}
-      {{ if .Params.ref }}
-      <item>
-        <title>{{ .Title }}</title>
-        <link>{{ .Permalink }}</link>
-        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-        <guid>{{ .Permalink }}</guid>
-        <description>{{ or .Description .Summary | html }}</description>
-        
-        {{/* 🎯 ILLUSTRATION DE L'AVP — même source que les aperçus sociaux,
-             cf. partials/avp-image-sociale.html : le PNG de `featured_image`
-             vit dans assets/ et n'est jamais publié, le partial rend donc une
-             variante réellement servie. */}}
-        {{ if .Params.featured_image }}
-          {{ $img := partial "avp-image-sociale.html" . }}
-          <enclosure url="{{ $img.url }}" type="{{ $img.type }}" length="0" />
-          <media:content url="{{ $img.url }}" medium="image" type="{{ $img.type }}" width="{{ $img.width }}" height="{{ $img.height }}" />
-        {{ end }}
-      </item>
-      {{ end }}
+    {{ range $items }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+
+      {{- /* Axes de filtrage. `direction` porte le libellé canonique Pyramide du
+             front matter, pas le code de dossier de l'URL (dsi, dps, dt…). */}}
+      {{ with .Params.direction }}<category domain="direction">{{ . | html }}</category>{{ end }}
+      {{ with .Params.ville }}<category domain="lieu">{{ . | html }}</category>{{ end }}
+      {{ with .Params.ref }}<category domain="reference">{{ . | html }}</category>{{ end }}
+      {{ with .Params.date_cloture }}<category domain="date-limite">{{ . | html }}</category>{{ end }}
+      {{ range .Params.families_metier }}<category domain="famille">{{ . | html }}</category>{{ end }}
+
+      {{- /* Résumé court et régulier, précédé de la date limite : un abonné voit
+             lieu, direction et échéance sans ouvrir l'annonce (le `summary` du
+             front matter vaut « Titre, basé à Ville (DIRECTION). »). */}}
+      {{- $resume := .Params.summary | default .Summary -}}
+      {{- with .Params.date_cloture -}}
+        {{- $resume = printf "Candidatures jusqu'au %s — %s" (time.Format "02/01/2006" .) $resume -}}
+      {{- end }}
+      <description>{{ $resume | html }}</description>
+
+      {{- /* Détail complet, depuis le JSON Schema.org associé à la page — même
+             jointure que layouts/index.flux_ats.xml. */}}
+      {{- $key := replace .Params.ref "/" "_" -}}
+      {{- $avp := index $.Site.Data.avps $key }}
+      <content:encoded>{{ "<![CDATA[" | safeHTML }}
+        {{- with $avp }}
+          {{- with .description }}<p>{{ . | htmlUnescape | safeHTML }}</p>{{ end }}
+          {{- with .responsibilities }}
+          <h3>Missions et activités</h3>
+          <ul>{{ range . }}<li>{{ . | htmlUnescape | safeHTML }}</li>{{ end }}</ul>
+          {{- end }}
+          {{- with .skills }}
+          <h3>Savoir-faire et aptitudes</h3>
+          <ul>{{ range . }}<li>{{ . | htmlUnescape | safeHTML }}</li>{{ end }}</ul>
+          {{- end }}
+          {{- with .educationRequirements }}
+            {{- with .competencyRequired }}
+          <h3>Savoirs et connaissances</h3>
+          <ul>{{ range . }}<li>{{ . | htmlUnescape | safeHTML }}</li>{{ end }}</ul>
+            {{- end }}
+          {{- end }}
+        {{- end }}
+        <h3>En pratique</h3>
+        <ul>
+          {{- with .Params.direction }}<li><strong>Direction :</strong> {{ . | htmlUnescape | safeHTML }}</li>{{ end }}
+          {{- with .Params.unite_orga }}<li><strong>Service :</strong> {{ . | htmlUnescape | safeHTML }}</li>{{ end }}
+          {{- with .Params.corps_grade }}<li><strong>Corps ou grade :</strong> {{ . | htmlUnescape | safeHTML }}</li>{{ end }}
+          {{- with .Params.adresse_complete }}<li><strong>Lieu :</strong> {{ . | htmlUnescape | safeHTML }}</li>{{ else }}{{ with .Params.ville }}<li><strong>Lieu :</strong> {{ . | htmlUnescape | safeHTML }}</li>{{ end }}{{ end }}
+          {{- with .Params.date_cloture }}<li><strong>Date limite de candidature :</strong> {{ time.Format "02/01/2006" . }}</li>{{ end }}
+          {{- with .Params.disponibilite }}<li><strong>Prise de poste :</strong> {{ . | htmlUnescape | safeHTML }}</li>{{ end }}
+          {{- with .Params.ref }}<li><strong>Référence :</strong> {{ . | htmlUnescape | safeHTML }}</li>{{ end }}
+        </ul>
+        <p><a href="{{ .Permalink }}">Consulter l'avis de vacance de poste</a>{{ with .Params.url_pdf }} — <a href="{{ . }}">version PDF d'origine</a>{{ end }}</p>
+      {{ "]]>" | safeHTML }}</content:encoded>
+
+      {{- /* Illustration réellement publiée (cf. partials/avp-image-sociale.html).
+             Une largeur nulle signale le repli sur le logo, dont les dimensions
+             sont inconnues : on omet alors la balise plutôt que d'annoncer
+             width="0" height="0", que le validateur W3C signale. */}}
+      {{- $img := partial "avp-image-sociale.html" . }}
+      {{- with $img.width }}
+      <media:content url="{{ $img.url }}" medium="image" type="{{ $img.type }}" width="{{ . }}" height="{{ $img.height }}" />
+      {{- end }}
+    </item>
     {{ end }}
   </channel>
 </rss>
