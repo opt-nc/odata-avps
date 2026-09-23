@@ -81,6 +81,27 @@
         <td><code>{{ . }}</code>{{ with $.Page.Params.libelle_rome }} — {{ . }}{{ end }}</td>
       </tr>
       {{- end }}
+      {{- /* 🇪🇺 Profession ESCO — classification EUROPÉENNE. Elle ne remplace ni le
+             code ROME ni le métier de référence RESPNC, qui restent les références
+             locales : c'est un gain d'interopérabilité, et le libellé le dit. La
+             ligne disparaît quand aucun rapprochement fiable n'a été trouvé, ce qui
+             est un cas normal pour beaucoup de postes calédoniens. */}}
+      {{- with $.Page.Params.code_esco }}
+      <tr>
+        <th scope="row">Profession ESCO</th>
+        <td>
+          {{- if $.Page.Params.url_esco }}
+          <a href="{{ $.Page.Params.url_esco }}" target="_blank" rel="noopener"
+            title="Voir la profession dans la classification européenne ESCO - Nouvelle fenêtre"
+            style="display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fas fa-globe-europe" aria-hidden="true"></i> <code>{{ . }}</code>{{ with $.Page.Params.libelle_esco }} — {{ . }}{{ end }}
+          </a>
+          {{- else }}
+          <code>{{ . }}</code>{{ with $.Page.Params.libelle_esco }} — {{ . }}{{ end }}
+          {{- end }}
+        </td>
+      </tr>
+      {{- end }}
       {{- with $.Page.Params.metier_ref_nom }}
       <tr>
         <th scope="row">Métier de référence</th>
