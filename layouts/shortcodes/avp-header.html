@@ -21,12 +21,12 @@
     <img src="{{ $webp.RelPermalink }}" alt="Illustration du poste : {{ $.Page.Title }}">
   </div>
 
-  {{ else }}
-  {{/* 🔄 FALLBACK DE SÉCURITÉ : Si l'image n'est pas encore déplacée dans assets, on l'affiche normalement */}}
-  <div class="avp-dynamic-banner">
-    <img src="{{ .Page.Params.featured_image | relURL }}" alt="Illustration du poste : {{ $.Page.Title }}">
-  </div>
   {{ end }}
+  {{/* Pas de repli sur `featured_image` : ce chemin pointe dans assets/, que Hugo ne
+       publie jamais tel quel. L'ancien fallback rendait donc une <img> en 404 dès que
+       la bannière n'avait pas été générée (cf. 3134-26-1381_SR, issue 556). Mieux vaut
+       pas de bannière qu'une image cassée — les aperçus sociaux, eux, retombent sur le
+       logo via partials/avp-image-sociale.html. */}}
   {{ end }}
 
   <div class="avp-stamp-qrcode">

@@ -12,13 +12,24 @@
   ne consomme que JPEG/PNG/GIF, et c'est le réseau qui compte le plus pour des
   offres d'emploi. Les navigateurs gardent le WebP, plus léger, côté page.
 
-  Le logo de repli est servi depuis static/ : resources.Get ne le trouve pas,
-  on retombe sur absURL — ce qui est le comportement correct pour lui.
+  Le repli est TOUJOURS le logo, servi depuis static/ (resources.Get ne l'y
+  trouve pas, on reste donc sur absURL — comportement correct pour lui).
+  Il ne doit surtout pas être `featured_image` : quand la génération de la
+  bannière échoue, le PNG n'est jamais commité alors que le front matter
+  l'annonçait, et on renvoyait une URL en 404 avec width/height à 0 (constaté
+  sur 3134-26-1381_SR et 3134-26-1389_SR, cf. issue 556). La cause côté
+  pipeline est corrigée dans gcp-avp-cloudfunctions ; ce repli protège les AVP
+  déjà publiés et tous les ratés futurs.
+
+  width/height restent à 0 pour le logo : il n'est pas traité par Hugo, donc
+  ses dimensions sont inconnues ici. Les consommateurs omettent les attributs
+  dans ce cas.
 
   Usage : {{ $img := partial "avp-image-sociale.html" . }} → .url .type .width .height
 */ -}}
-{{- $chemin := strings.TrimPrefix "/" (.Params.featured_image | default "/assets/logo-opt.png") -}}
-{{- $img := dict "url" ($chemin | absURL) "type" "image/png" "width" 0 "height" 0 -}}
+{{- $logo := "assets/logo-opt.png" -}}
+{{- $chemin := strings.TrimPrefix "/" (.Params.featured_image | default (printf "/%s" $logo)) -}}
+{{- $img := dict "url" ($logo | absURL) "type" "image/png" "width" 0 "height" 0 -}}
 {{- with resources.Get $chemin -}}
   {{- $jpeg := .Process "jpeg q85" -}}
   {{- $img = dict "url" $jpeg.Permalink "type" $jpeg.MediaType.Type "width" $jpeg.Width "height" $jpeg.Height -}}
