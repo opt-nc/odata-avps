@@ -1,0 +1,167 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "DIRECTION DES SERVICES BANCAIRES",
+    "uniteOrganisationnelle": "SECTION CONFORMITE ET KYC",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de Section Conformité et KYC (Alexandra BRUNET-BETTIOL)",
+    "placeOrganigramme": "N-4 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Chef de Section Conformité et KYC",
+      "Autres pôles du centre"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Télétravail possible selon les missions occupées"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations et permis",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956078.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le contrôleur de la section Conformité et KYC, contrôlera et traitera l’ensemble des activités liées à la conformité réglementaire et opérationnelle du CPB en supervisant les contrôles, l’entrée en relation et la mise à jour des informations clients. Assurera la gestion documentaire, l’accompagnement des équipes et la relation avec les clients spécifiques. Contribuera activement à la lutte contre le blanchiment et le financement du terrorisme et au respect des obligations légales et internes.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1427/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Contrôleur conformité et KYC – Centre Production Bancaire",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.88.59",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-09-25",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Bureautique et outils collaboratifs",
+      "Droit/Réglementation bancaire",
+      "Organisation, méthode et processus",
+      "Techniques d'accueil",
+      "Processus de décision bancaire"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "SECTION CONFORMITE ET KYC",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Services bancaires",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Centre de Production Bancaire",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 rue Eugène Porcheron Quartier Latin",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "2027-01-01",
+  "occupationalCategory": [
+    "Services bancaires"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "GESTIONNAIRE DU BACK OFFICE BANCAIRE",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Accueil et services bancaires"
+    },
+    "code_metier": "OP012",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/services_bancaires/op012/"
+  },
+  "responsibilities": [
+    "Contrôler la mise à jour du KYC tout au long de la vie des comptes en assurant la relation avec les clients concernés",
+    "Contrôler et valider la conformité de l’entrée en relation phygitale",
+    "Régulariser les dossiers incomplets",
+    "Effectuer des contrôles à postériori des ouvertures de comptes",
+    "Assurer la relation client avec les clients spéciaux (AGTNC)",
+    "Effectuer les contrôles opérationnels conformément aux procédures internes et aux exigences réglementaires",
+    "Mettre en œuvre les plans d’actions issus des audits",
+    "Assurer l’archivage et la numérisation des dossiers du centre",
+    "Mettre à jour et diffuser les procédures et modes opératoires du CPB, en garantissant leur accessibilité à l’ensemble des équipes",
+    "Former et accompagner les collaborateurs sur les bonnes pratiques en matière de conformité et de connaissance client (KYC)",
+    "Servir de référent et de point de contact pour les questions de conformité et KYC",
+    "Collaborer avec les autres pôles pour assurer la cohérence, la fluidité et l’amélioration continue des processus",
+    "Contribuer aux déclarations LCBFT",
+    "Concourir à l’exactitude de la comptabilité journalière de son pôle",
+    "Echanges multicanal avec la clientèle",
+    "Pratiquer l’entraide selon les besoins du service",
+    "Travailler en collaboration étroite avec les autres pôles du centre",
+    "Seconder le Chef de Section et assurer ses intérims si besoin",
+    "Périmètre du poste susceptible d’évoluer"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Bureautique et outils collaboratifs",
+    "Droit/Réglementation bancaire",
+    "Organisation, méthode et processus",
+    "Techniques d'accueil",
+    "Processus de décision bancaire",
+    "Bon relationnel",
+    "Capacité d’adaptation",
+    "Rigueur",
+    "Intégrité",
+    "Grande discrétion professionnelle",
+    "Esprit d’équipe",
+    "Curiosité intellectuelle",
+    "Sens du service public"
+  ],
+  "specialCommitments": null,
+  "title": "Contrôleur conformité et KYC – Centre Production Bancaire",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-10-16",
+  "workHours": "Télétravail possible selon les missions occupées",
+  "dossier": "dsb"
+}
