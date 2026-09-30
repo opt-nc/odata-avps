@@ -5,11 +5,11 @@ NETTOYAGE CHIRURGICAL DES CATÉGORIES VIDES (IMMUNE AUX PIÈGES D'URLS)
   document.addEventListener("DOMContentLoaded", function () {
     // 1. Hugo génère proprement la liste de TOUS les titres de vos catégories
     const checkedCategories = [
-      {{- range.Site.Pages }}
-    {{- if .IsSection }}
-  "{{ .Title }}",
-    {{ - end }}
-  { { - end } }
+    {{- range .Site.Pages }}
+      {{- if .IsSection }}
+        "{{ .Title }}",
+      {{- end }}
+    {{- end }}
   ];
 
   // 2. Le script inspecte les éléments réels de la sidebar au chargement
@@ -53,15 +53,13 @@ surchargés `opengraph.html` et `twitter_cards.html` (plus de doublon ici).
 <link rel="canonical" href="{{ .Permalink }}">
 
 {{/* 📡 Auto-découverte du flux RSS sur les pages qui n'en produisent pas.
-Le thème n'émet le
-<link rel="alternate"> qu'à partir des sorties de la page
-elle-même (baseof.html, .AlternativeOutputFormats) : l'accueil et les sections
-l'ont donc, mais pas les fiches AVP, dont les `[outputs] page` se limitent à
-html/print/markdown. Un lecteur RSS posé sur une annonce ne trouvait rien à
-s'abonner. On pointe vers le flux du site, pas vers un flux par annonce. */}}
+     Le thème n'émet le <link rel="alternate"> qu'à partir des sorties de la page
+     elle-même (baseof.html, .AlternativeOutputFormats) : l'accueil et les sections
+     l'ont donc, mais pas les fiches AVP, dont les `[outputs] page` se limitent à
+     html/print/markdown. Un lecteur RSS posé sur une annonce ne trouvait rien à
+     s'abonner. On pointe vers le flux du site, pas vers un flux par annonce. */}}
 {{- if not (.OutputFormats.Get "RSS") }}
-<link rel="alternate" type="application/rss+xml" title="Emploi OPT-NC — Avis de vacance de poste" href="{{ " index.xml"
-  | absURL }}">
+<link rel="alternate" type="application/rss+xml" title="Emploi OPT-NC — Avis de vacance de poste" href="{{ "index.xml" | absURL }}">
 {{- end }}
 
 {{/* 🏗️ Traçabilité du build (injectée à chaque déploiement) */}}
