@@ -1,0 +1,13 @@
+{
+  // Tous les .html de ce repo sont des templates Go (layouts/, overrides/, thème).
+  // Le formateur HTML de VS Code prend les {{ ... }} pour du JavaScript et les casse :
+  // - build en échec : `{{ - end }}`, `{ { - end } }` (4e823eb, 30/09/2026) ;
+  // - dégât silencieux, build au vert : `{{ " index.xml" }}` → URL avec %20, 404 (b279b08, 09/09/2026).
+  // On coupe donc tout formatage automatique du HTML dans ce workspace.
+  "html.format.enable": false,
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false
+  }
+}
