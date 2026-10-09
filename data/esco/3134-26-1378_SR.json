@@ -1,0 +1,147 @@
+{
+  "identifier": "3134-26-1378/SR",
+  "source_file": "data/avps/3134-26-1378_SR.json",
+  "source_sha256": "ea0fe034b4750567dc009342c3d41380dc786ec1df4f74de5dad6df27a182faa",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/b2e81332-0972-4e0f-9a4d-1d15c9c9513b",
+      "prefLabel_fr": "agent de back-office/agente de back-office",
+      "iscoCode": "4312",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Gestionnaire du back office bancaire ; contrôler et traiter les activités de conformité, KYC et dossiers clients du centre"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+      "prefLabel_fr": "travailler en équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Travailler en équipe ; esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Grande discrétion professionnelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Bureautique et outils collaboratifs",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8d5ee30c-4b1c-465f-84a1-7bb7a05aaca6",
+      "prefLabel_fr": "superviser des activités bancaires",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Contrôler et valider la conformité de l’entrée en relation ; effectuer des contrôles opérationnels",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3c209873-c757-47bb-91b5-9b6dc05df116",
+      "prefLabel_fr": "activités bancaires",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Droit/Réglementation bancaire ; activités liées à la conformité réglementaire et opérationnelle du CPB",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4",
+      "prefLabel_fr": "conseiller les clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Assurer la relation client avec les clients spéciaux ; renseigner et conseiller les clients",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ec0bbf39-0edd-4015-a2c3-82ad563ce3a8",
+      "prefLabel_fr": "rédiger des courriers électroniques professionnels",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Savoir s’exprimer à l’oral et rédiger des mails et des courriers",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/84f583f4-f32a-4202-9b92-e25f0c978410",
+      "prefLabel_fr": "logiciels bancaires",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Entrée en relation phygitale ; mise à jour des informations clients ; processus de décision bancaire",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/376bc7c6-085e-4a5f-a6a6-6fa8d2c15ca5",
+      "prefLabel_fr": "mettre à jour des consignes de procédure",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Mettre à jour et diffuser les procédures et modes opératoires du CPB",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3a5231a0-8c30-48ee-b671-08e2debd4441",
+      "prefLabel_fr": "stratégies d’organisation",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.8,
+      "evidence": "Organisation, méthode et processus",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.8,
+      "evidence": "Curiosité intellectuelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f17f94f1-88cb-4815-873a-2a9639f10729",
+      "prefLabel_fr": "rédiger des documents de projet",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Concevoir, rédiger les documents administratifs, les modes opératoires",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/35421ebd-dc4c-4827-adbb-faf4a98c1968",
+      "prefLabel_fr": "appliquer des procédures de vérification de la conformité d’un chargement à la règlementation douanière",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.6,
+      "evidence": "Appliquer une règle, une procédure, la réglementation en vigueur ; conformité réglementaire",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/84295dbe-16b0-47e8-af9e-67ee1801673d",
+      "prefLabel_fr": "détecter des menaces de terrorisme",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.6,
+      "evidence": "Contribuer aux déclarations LCBFT ; lutte contre le blanchiment et le financement du terrorisme",
+      "source_field": "responsibilities"
+    }
+  ]
+}

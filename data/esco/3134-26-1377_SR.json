@@ -1,0 +1,156 @@
+{
+  "identifier": "3134-26-1377/SR",
+  "source_file": "data/avps/3134-26-1377_SR.json",
+  "source_sha256": "dbfdd8f65cab09e0fcc4015927ee53251e767bb0ab56b9e9540ba94d3d7ed2f2",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/eda0d957-3c3c-4139-b89a-a18bc9e18897",
+      "prefLabel_fr": "comptable",
+      "iscoCode": "2411",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Cadre comptabilité : coordonner, superviser et traiter l’ensemble des opérations comptables et de recettes"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f5652e8e-7e25-4f3a-bd31-509c8406213f",
+      "prefLabel_fr": "superviser des opérations comptables",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Coordonner, superviser et traiter l’ensemble des opérations comptables et de recettes",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b5cb259e-83e7-48f5-950e-245d5b5fd6d0",
+      "prefLabel_fr": "rédiger des procédures comptables",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Actualiser les procédures affectées au pôle comptabilité et recettes",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+      "prefLabel_fr": "travailler en équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Travailler en équipe ; esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Grande discrétion professionnelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Bureautique et outils collaboratifs",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5f1ebff6-98ec-411f-a1d4-0bf04bd03bdf",
+      "prefLabel_fr": "vérifier des registres comptables",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Appliquer le plan de surveillance permanente des comptes internes ; justification périodique des comptes",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e717b036-2c0c-4c11-99e9-0cb4ce084fed",
+      "prefLabel_fr": "effectuer des imputations comptables",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Contrôler l’exhaustivité de l’imputation correcte des recettes ; effectuer les régularisations nécessaires",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3c209873-c757-47bb-91b5-9b6dc05df116",
+      "prefLabel_fr": "activités bancaires",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Droit/Réglementation bancaire ; processus de décision bancaire",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ec0bbf39-0edd-4015-a2c3-82ad563ce3a8",
+      "prefLabel_fr": "rédiger des courriers électroniques professionnels",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Savoir s’exprimer à l’oral et rédiger des mails et des courriers",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4",
+      "prefLabel_fr": "conseiller les clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Renseigner et conseiller les clients",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e2e15494-65b9-4af5-8b86-53fb51e7e022",
+      "prefLabel_fr": "gérer des comptes",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Justifier les encours clients CCP et CNE ; rapprocher et justifier les états de développement de solde",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/84f583f4-f32a-4202-9b92-e25f0c978410",
+      "prefLabel_fr": "logiciels bancaires",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Traiter les incidents liés à la compensation et aux GABS ; processus de décision bancaire",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3a5231a0-8c30-48ee-b671-08e2debd4441",
+      "prefLabel_fr": "stratégies d’organisation",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.8,
+      "evidence": "Organisation, méthode et processus",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/60f51172-37c0-4933-a27a-cbf55dcd7580",
+      "prefLabel_fr": "préparer des états financiers",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Produire les Reporting comptables",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f17f94f1-88cb-4815-873a-2a9639f10729",
+      "prefLabel_fr": "rédiger des documents de projet",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Concevoir, rédiger les documents administratifs, les modes opératoires",
+      "source_field": "skills"
+    }
+  ]
+}

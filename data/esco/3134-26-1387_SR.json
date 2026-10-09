@@ -1,0 +1,155 @@
+{
+  "identifier": "3134-26-1387/SR",
+  "source_file": "data/avps/3134-26-1387_SR.json",
+  "source_sha256": "8a6d29de74096112dcf0e8e4df3fb51d870639c6290fc3a2c553a9a430dc7ac5",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/d96de969-d43d-4082-8559-7fc35484a217",
+      "prefLabel_fr": "chargé de clientèle banque/chargée de clientèle banque",
+      "iscoCode": "2412",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Accueillir et conseiller les clients, vendre les produits et services adaptés et gérer des demandes financières au guichet"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/2ff9e53c-6e7f-42af-8d71-b5dd7f283089",
+      "prefLabel_fr": "employé de banque/employée de banque",
+      "iscoCode": "4211",
+      "matchType": "broad",
+      "confidence": 0.66,
+      "evidence": "Réaliser les opérations courantes, gestion de caisse, manipulations de fonds et demandes financières"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3982571a-e9ce-442a-a4a0-fdfc97727091",
+      "prefLabel_fr": "tenir une caisse",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.93,
+      "evidence": "Manipuler du numéraire, tenir une caisse",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Communiquer",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Outils de bureautique, applications informatiques et logiciels de guichet",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/26a6e6d2-1c9a-4d7e-8c04-5ba16d1f53da",
+      "prefLabel_fr": "accueillir les clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.88,
+      "evidence": "Accueillir une personne, un groupe, du public",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Esprit d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5a927fa0-462e-4d54-ae12-97fd6ca45762",
+      "prefLabel_fr": "pratiquer le self-control",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Maîtrise de soi",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4",
+      "prefLabel_fr": "conseiller les clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Gérer une relation client ; accueillir et conseiller les clients",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/756ae350-9e1f-4cb9-9c27-6bd99806dadc",
+      "prefLabel_fr": "techniques de promotion des ventes",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Techniques de vente ; vendre les produits et services adaptés",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+      "prefLabel_fr": "entretenir des relations avec des clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Gérer une relation client",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Avoir l'esprit d'équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/dc9a236c-c640-43c3-812f-269403591edb",
+      "prefLabel_fr": "gestion de la relation client",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Gérer une relation client",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d433c82e-fa7a-492e-a8fd-eee7b39e4c48",
+      "prefLabel_fr": "règles de sécurité",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Règles d'hygiène et sécurité",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/376bc7c6-085e-4a5f-a6a6-6fa8d2c15ca5",
+      "prefLabel_fr": "mettre à jour des consignes de procédure",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.76,
+      "evidence": "Garantir la conformité des opérations dans le respect des règles, process et procédures",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bcf002ce-90f8-42e5-ac1b-5dba208639b0",
+      "prefLabel_fr": "être fiable",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.74,
+      "evidence": "Être rigoureux",
+      "source_field": "skills"
+    }
+  ]
+}

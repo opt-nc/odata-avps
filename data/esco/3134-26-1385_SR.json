@@ -1,0 +1,128 @@
+{
+  "identifier": "3134-26-1385/SR",
+  "source_file": "data/avps/3134-26-1385_SR.json",
+  "source_sha256": "fc75201408ae180403ab0ef917779b01b5c10ff10f4f4ba85ed0f5dd1d26cc09",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/b2e81332-0972-4e0f-9a4d-1d15c9c9513b",
+      "prefLabel_fr": "agent de back-office/agente de back-office",
+      "iscoCode": "4312",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Gestionnaire du back office bancaire : traiter et contrôler réclamations, fraudes, précontentieux, reporting"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/b3ce981c-5b32-4de2-8e53-502a6357b2bc",
+      "prefLabel_fr": "analyste du risques crédits",
+      "iscoCode": "3312",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Traiter les dossiers de fraude et de précontentieux, analyser les comptes à découvert et maîtriser les risques"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+      "prefLabel_fr": "travailler en équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Travailler en équipe ; esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Grande discrétion professionnelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Curiosité intellectuelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Bureautique et outils collaboratifs",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4",
+      "prefLabel_fr": "conseiller les clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Renseigner et conseiller les clients ; échange multicanal avec la clientèle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3c209873-c757-47bb-91b5-9b6dc05df116",
+      "prefLabel_fr": "activités bancaires",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Droit/Réglementation bancaire ; processus de décision bancaire",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ec0bbf39-0edd-4015-a2c3-82ad563ce3a8",
+      "prefLabel_fr": "rédiger des courriers électroniques professionnels",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Savoir s’exprimer à l’oral et rédiger des mails et des courriers",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d7e3b0c-3995-4953-816d-cf3c5e9ffe34",
+      "prefLabel_fr": "respecter les procédures opérationnelles standard",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Concevoir, rédiger les documents administratifs, les modes opératoires",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3a5231a0-8c30-48ee-b671-08e2debd4441",
+      "prefLabel_fr": "stratégies d’organisation",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.76,
+      "evidence": "Organisation, méthode et processus",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bcf002ce-90f8-42e5-ac1b-5dba208639b0",
+      "prefLabel_fr": "être fiable",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.74,
+      "evidence": "Rigueur",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8804d963-5a31-4609-b5df-f741b7199fb7",
+      "prefLabel_fr": "audit interne",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "garantir la conformité, la traçabilité et la production des rapports",
+      "source_field": "responsibilities"
+    }
+  ]
+}

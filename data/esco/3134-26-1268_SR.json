@@ -1,0 +1,164 @@
+{
+  "identifier": "3134-26-1268/SR",
+  "source_file": "data/avps/3134-26-1268_SR.json",
+  "source_sha256": "59bc1c432602bb5dd356aad10a5b0f7537cfad674818f1a260c6442c49abe16b",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/02eb0ae6-ecdd-4602-9c8e-60ffe6dbe1e2",
+      "prefLabel_fr": "ingénieur de télécommunications/ingénieure de télécommunications",
+      "iscoCode": "2153",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Architecte réseaux IP et transport : définir, concevoir et faire évoluer les architectures des réseaux IP/MPLS et de transport"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/3ce4691e-ecea-4278-939e-b89ab01087b8",
+      "prefLabel_fr": "responsable des télécommunications",
+      "iscoCode": "1330",
+      "matchType": "broad",
+      "confidence": 0.68,
+      "evidence": "Piloter l’évolution et le cycle de vie des infrastructures de télécommunications ; coordonner les équipes techniques"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0da6cab1-0ee9-4391-a299-f71fbf21db56",
+      "prefLabel_fr": "routage de réseau",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Architecture IP : routage BGP et OSPF/IS-IS, MPLS, VPN L2/L3, IPv4/IPv6",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2164e860-7f20-48bc-b98c-5d9f8a561550",
+      "prefLabel_fr": "concevoir un réseau informatique",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Formaliser une architecture cible ; définir et faire évoluer l’architecture cible des réseaux IP/MPLS et de transport",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/02058de6-4b98-449f-8a45-8588b0eb2446",
+      "prefLabel_fr": "ingénierie des réseaux",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Expérience confirmée dans la conception, l’ingénierie ou l’exploitation de réseaux d’opérateurs IP et transport",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/fdfa3dcb-b8f0-454f-a659-64c66dc6b6a2",
+      "prefLabel_fr": "fibre optique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Transport : Ethernet opérateur, fibre optique, DWDM, faisceaux hertziens",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0",
+      "prefLabel_fr": "anglais",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Anglais technique permettant d’exploiter une documentation et d’échanger avec les fournisseurs",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ed39edd3-44d0-4a16-9796-bfb99f92baf3",
+      "prefLabel_fr": "méthodes d’analyse de la performance des TIC",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Analyse de performance, gestion de capacité et cycle de vie des infrastructures",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cffc3e97-e942-4b13-a2f3-0bf4910c06d3",
+      "prefLabel_fr": "utiliser de la documentation technique",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Exploiter une documentation technique",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "prefLabel_fr": "gestion de projets",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Conduite de projet, marchés publics, gestion contractuelle et analyse technico-économique",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f9e788df-d68a-4f92-92c7-80e135fc35ff",
+      "prefLabel_fr": "équipement d’interconnexion réseau",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Interconnexions opérateurs ; cœur, collecte et interconnexions",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b9f16465-56a9-426b-a047-0f9f1f95ec92",
+      "prefLabel_fr": "aborder des problèmes avec un esprit critique",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Esprit d’analyse, de synthèse et sens critique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/281a0cb1-4e12-46f4-ba4a-2746cba36e78",
+      "prefLabel_fr": "coordonner des équipes",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Animer des ateliers techniques et coordonner des équipes pluridisciplinaires",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/05bd9f18-370a-4a88-98c7-473cffb7b2ca",
+      "prefLabel_fr": "produire des documents pour la prise de décision",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Produire des dossiers d’architecture, schémas, spécifications et dossiers d’aide à la décision",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d62d2b4c-a6f8-439e-8a1b-4f29ab5f2c47",
+      "prefLabel_fr": "prendre des décisions",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Autonomie, initiative et capacité de décision",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d0f2f8a7-d935-4a6d-8e54-dcc3e5e2cbeb",
+      "prefLabel_fr": "présenter des rapports",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Présenter clairement des sujets complexes à des interlocuteurs techniques, métiers et décisionnaires",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/11747665-0e98-4f27-bd0d-536862cd5746",
+      "prefLabel_fr": "identifier les fournisseurs",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.74,
+      "evidence": "Comparer des solutions, conduire des consultations et challenger les propositions des fournisseurs",
+      "source_field": "skills"
+    }
+  ]
+}

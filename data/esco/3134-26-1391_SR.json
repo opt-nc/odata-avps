@@ -1,0 +1,120 @@
+{
+  "identifier": "3134-26-1391/SR",
+  "source_file": "data/avps/3134-26-1391_SR.json",
+  "source_sha256": "703a3f7a6032e0492c088e4e761211f20f55dfa6de4dc026d8822c8f7a8d45fe",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/511f366c-ba41-4826-9622-8cda6d6e3b91",
+      "prefLabel_fr": "employé au courrier/employée au courrier",
+      "iscoCode": "4412",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Agent d'exploitation cellule départ : réceptionner, trier, enregistrer et traiter les flux d'envois postaux, EMS et colis"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/76f22707-8d30-453f-9eb7-3376e2960311",
+      "prefLabel_fr": "gérer le courrier",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Réceptionner et traiter les flux d'envois postaux ; opérations d'arrivée, de tri et de départ",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d7e3b0c-3995-4953-816d-cf3c5e9ffe34",
+      "prefLabel_fr": "respecter les procédures opérationnelles standard",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Appliquer les règles et les procédures en vigueur",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f632251a-4078-4546-b19f-7ef528d08325",
+      "prefLabel_fr": "utiliser des outils informatiques",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Utiliser les outils informatiques",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Obligations de discrétion et de secret professionnels",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2e2bde69-09df-45f7-88f4-a938717bee04",
+      "prefLabel_fr": "assurer l'intégrité du courrier",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Respect des objectifs fixés en termes d'intégrité, de qualité et de délai",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e1f2f22f-3248-4eb2-83a6-c6f7c4437c5c",
+      "prefLabel_fr": "gérer les colis et livraisons",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Réceptionner et traiter les flux EMS, colis ; gérer les rebuts",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "S'exprimer et communiquer avec clarté et bienveillance",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/75e48971-3242-4ea5-a1ba-4deec48ad41c",
+      "prefLabel_fr": "gérer le travail d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Travail en équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d433c82e-fa7a-492e-a8fd-eee7b39e4c48",
+      "prefLabel_fr": "règles de sécurité",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Respecter les consignes de sécurité ; règles d'hygiène et sécurité",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0b3ee7c8-dc29-48de-a54b-2c91560161a4",
+      "prefLabel_fr": "vérifier des expéditions",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Détecter et signaler les anomalies et les dysfonctionnements",
+      "source_field": "responsibilities"
+    }
+  ]
+}

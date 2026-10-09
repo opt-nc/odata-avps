@@ -1,0 +1,128 @@
+{
+  "identifier": "3134-26-1128/SR",
+  "source_file": "data/avps/3134-26-1128_SR.json",
+  "source_sha256": "b7287634ae3f6972c91ac2f67eb4cb6a103b4a3f4518c332ab738d876ac17894",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/1ad59946-d13e-441e-9b36-56e1df055e21",
+      "prefLabel_fr": "auditeur comptable et financier/auditrice comptable et financière",
+      "iscoCode": "2411",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Auditeur : donner une assurance raisonnable sur le degré de maîtrise des processus de management et de contrôle interne"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/cd4f41a5-87a6-4b3c-8ee3-14e6f457c365",
+      "prefLabel_fr": "directeur de l'audit interne/directrice de l'audit interne",
+      "iscoCode": "2411",
+      "matchType": "broad",
+      "confidence": 0.62,
+      "evidence": "Méthodologie d'audit et de contrôle interne ; normes professionnelles de l'audit interne"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8804d963-5a31-4609-b5df-f741b7199fb7",
+      "prefLabel_fr": "audit interne",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.93,
+      "evidence": "Maîtrise de la méthodologie d'audit et de contrôle interne et normes professionnelles de l'audit interne",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0550431f-9c8b-4204-9c45-59bc5feacf06",
+      "prefLabel_fr": "philosophies d’amélioration continue",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Démarche d'amélioration continue, notamment de type lean",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Discrétion",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2058f70f-af29-460d-b319-9048c6db0d18",
+      "prefLabel_fr": "faire preuve d’impartialité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Impartialité, diplomatie et éthique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ece25f2f-e91a-4186-a221-caa715195fd7",
+      "prefLabel_fr": "faire preuve de diplomatie",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Impartialité, diplomatie et éthique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cef5c0f8-1e40-4c09-b6a7-aa7811849e5d",
+      "prefLabel_fr": "éthique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Impartialité, diplomatie et éthique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f780a6ad-b01e-4c35-9746-af8fc0c5ad06",
+      "prefLabel_fr": "appliquer la gestion de crises",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Gestion de crise",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0daaf096-1639-461c-bf1a-bbeea77e6b67",
+      "prefLabel_fr": "politique de gestion interne des risques",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Degré de maîtrise des processus de management et de contrôle interne des activités",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b9bf9e17-ae47-417b-bbb1-e8b7c263ccac",
+      "prefLabel_fr": "identifier les exigences légales",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Maîtrise de l'environnement réglementaire et normative de l'OPT-NC",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/eb8babfb-ab91-4937-a032-6a79f82e9b7f",
+      "prefLabel_fr": "analyser le risque financier",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Analyser les risques d'une situation",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a117f32c-662b-4dd9-b739-1230dd04cb60",
+      "prefLabel_fr": "pédagogie",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Sens de la pédagogie et de la persuasion",
+      "source_field": "skills"
+    }
+  ]
+}

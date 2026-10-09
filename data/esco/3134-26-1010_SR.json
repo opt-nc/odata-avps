@@ -1,0 +1,182 @@
+{
+  "identifier": "3134-26-1010/SR",
+  "source_file": "data/avps/3134-26-1010_SR.json",
+  "source_sha256": "5714034b0791c452cafe43b24d2869b02911d6e7c6b09a362fc77ed45c64869c",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/9e2e6e1e-363b-4e1b-a673-7bc0f7343300",
+      "prefLabel_fr": "administrateur de systèmes informatiques/administratrice de systèmes informatiques",
+      "iscoCode": "2522",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Administrateur d’applications : assure les évolutions, la maintenance et administre les systèmes d’information"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/a7c1d23d-aeca-4bee-9a08-5993ed98b135",
+      "prefLabel_fr": "développeur de systèmes informatiques/développeuse de systèmes informatiques",
+      "iscoCode": "2511",
+      "matchType": "broad",
+      "confidence": 0.66,
+      "evidence": "Assurer la maintenance évolutive et corrective des applications en lien avec les éditeurs / fournisseurs"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+      "prefLabel_fr": "aider les utilisateurs de systèmes d'information",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Apporter un support technique et une assistance aux utilisateurs sur les applications dont il a la charge",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Facultés de communication, d'écoute et d'expression",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'initiative, force de proposition",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/89f6560b-2194-45c9-9ece-d33049a73eef",
+      "prefLabel_fr": "génie informatique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Ingénierie Informatique",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d0c6d77e-cb25-4770-bf77-2073fc5f7523",
+      "prefLabel_fr": "infrastructure des TIC",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Connaissance de l'architecture standard d'un SI Télécom et des infrastructures Télécom",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+      "prefLabel_fr": "systèmes d’exploitation",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Connaissance des systèmes d'exploitation Linux RHEL, Unix AIX",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+      "prefLabel_fr": "SQL",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Connaissance SQL, Korn Shell, Java",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+      "prefLabel_fr": "Java (programmation informatique)",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Connaissance SQL, Korn Shell, Java",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7ee20fe2-facd-4cc5-837b-927429e0e7ac",
+      "prefLabel_fr": "comprendre l’anglais écrit",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Anglais technique lu et écrit",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd",
+      "prefLabel_fr": "contrôler la performance du système",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Superviser et surveiller les applications afin de garantir leur performance et leur stabilité",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2636b3d3-843e-46a9-8b4c-a9d6ca3f5a2d",
+      "prefLabel_fr": "fournir une documentation technique",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Rédiger et maintenir à jour la documentation technique, ainsi que la base de connaissances associée",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/113b4428-0a31-4199-8496-070af7854b91",
+      "prefLabel_fr": "respecter ses engagements",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Motivation, implication et respect des engagements",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/1af2db15-2af9-44dd-9639-bf1fc69d4c34",
+      "prefLabel_fr": "gérer les relations avec des parties prenantes",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Gérer des relations avec un prestataire dans le cadre d'une TMA ou de développements tiers",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "prefLabel_fr": "gestion de projets",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Conduire des projets techniques",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6cb9c23b-e3bc-4917-b588-26c4cef9d920",
+      "prefLabel_fr": "opérations de maintenance",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Assurer la maintenance évolutive et corrective des applications",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d0f2f8a7-d935-4a6d-8e54-dcc3e5e2cbeb",
+      "prefLabel_fr": "présenter des rapports",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Présenter et argumenter des recommandations",
+      "source_field": "skills"
+    }
+  ]
+}

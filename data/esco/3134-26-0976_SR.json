@@ -1,0 +1,209 @@
+{
+  "identifier": "3134-26-0976/SR",
+  "source_file": "data/avps/3134-26-0976_SR.json",
+  "source_sha256": "a5a00bd0cd64de6e3c9c67b877b93d757edefaf328af7e32fc8d3af97170e39a",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/bd272aee-adc9-4a06-a15c-a73b4b4a46a7",
+      "prefLabel_fr": "concepteur de logiciels d’application/conceptrice de logiciels d’application",
+      "iscoCode": "2514",
+      "matchType": "exact",
+      "confidence": 0.93,
+      "evidence": "Concepteur-Développeur d’Applications SI Télécom : développements logiciels et maintenance d'applications"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1",
+      "prefLabel_fr": "développeur de logiciels/développeuse de logiciels",
+      "iscoCode": "2512",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Applications SI Télécom : mobile, téléphonie fixe/mobile, gestion des interventions et référentiels de données"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4",
+      "prefLabel_fr": "DevOps",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Démarche DevOps",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575",
+      "prefLabel_fr": "cycle de développement logiciel",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Conception, développement, industrialisation d'applications",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0550431f-9c8b-4204-9c45-59bc5feacf06",
+      "prefLabel_fr": "philosophies d’amélioration continue",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Culture de l'amélioration continue",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221",
+      "prefLabel_fr": "développement par méthode agile",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtrise des approches agiles",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/1ffac4ac-fda7-407d-8ed1-ca8f4a8dc146",
+      "prefLabel_fr": "Angular",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Framework SpringBoot, Quarkus, Angular, Ionic",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+      "prefLabel_fr": "Java (programmation informatique)",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Environnements et langages Linux, Windows, Java, Javascript, Typescript",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996",
+      "prefLabel_fr": "PostgreSQL",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "PostgreSQL",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b16200f4-4f39-4b8b-aa9d-3568054d6bdb",
+      "prefLabel_fr": "modèle en code source ouverte",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Culture et expérience Open Source",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2636b3d3-843e-46a9-8b4c-a9d6ca3f5a2d",
+      "prefLabel_fr": "fournir une documentation technique",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Maintenance de documentation et de référentiels d'architecture technique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73",
+      "prefLabel_fr": "développer des tests logiciels automatisés",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Connaissance de processus et outils d'automatisation des tests",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/96eb286a-58b7-45ff-a916-5578d0b79b8c",
+      "prefLabel_fr": "développement rapide d’applications",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Développement d'applications mobile",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/1d86f05e-e9cc-40ce-99d8-2b21cc71b16b",
+      "prefLabel_fr": "déploiement de solutions",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Pratique de l'intégration, de la livraison, du déploiement, continus",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c",
+      "prefLabel_fr": "résoudre les problèmes des systèmes d’information",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Assister l'exploitation dans l'analyse et la résolution des problèmes de production",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/83b33952-3872-46ec-9a2e-b28f91303a7e",
+      "prefLabel_fr": "superviser le développement d’un logiciel",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Pilotage et planification de développements logiciels",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+      "prefLabel_fr": "intégration de systèmes de TIC",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Contribuer aux phases d'intégration avec les autres SI",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+      "prefLabel_fr": "définir l’architecture logicielle",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Référentiels d'architecture technique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b483124c-180c-4d3a-8b7c-72e4e7a5b49b",
+      "prefLabel_fr": "migration",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Migration de SI en environnements hétérogènes",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/925463a7-d51f-4d5b-9f79-4d28cf30acde",
+      "prefLabel_fr": "environnement de développement intégré",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Développement en environnement Linux, développement Web",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ddfe79e2-c2e3-4ba7-9bdf-3820b4f75b54",
+      "prefLabel_fr": "identifier les besoins des utilisateurs de TIC",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.74,
+      "evidence": "Apporter son expertise technique aux équipes de la maitrise d'ouvrage",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/fb7aee4d-f6c6-4a87-8e9d-8e542b3771f8",
+      "prefLabel_fr": "métrique logicielle",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.68,
+      "evidence": "Analyse et chiffrage d'évolutions logicielles",
+      "source_field": "skills"
+    }
+  ]
+}

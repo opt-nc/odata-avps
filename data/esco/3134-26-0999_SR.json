@@ -1,0 +1,164 @@
+{
+  "identifier": "3134-26-0999/SR",
+  "source_file": "data/avps/3134-26-0999_SR.json",
+  "source_sha256": "d9028ceb75a122450e1aa58ca88f050fde79dc4c12cc09644f923001ebb0f15f",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/a330b100-e651-4db1-bcf0-e9cbc025c614",
+      "prefLabel_fr": "responsable du processus",
+      "iscoCode": "2421",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Piloter, coordonner et optimiser les activités, les projets et les processus dans une démarche d'amélioration continue"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/f0ca39a8-1e30-487c-95f9-ef2d5e734adc",
+      "prefLabel_fr": "responsable des activités informatiques",
+      "iscoCode": "1330",
+      "matchType": "broad",
+      "confidence": 0.62,
+      "evidence": "Piloter ou superviser les projets de développement, d'évolution ou d'optimisation des systèmes, processus ou outils métiers"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "prefLabel_fr": "gestion de projets",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Travailler en mode projet ; piloter ou superviser les projets de développement",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/91abe492-18be-4cce-93c7-0dca07072363",
+      "prefLabel_fr": "respecter des délais",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtriser les délais",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit de synthèse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c29aa9d2-4da8-4bdd-831c-8d4a2fb51730",
+      "prefLabel_fr": "travailler de manière autonome",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Être autonome",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7",
+      "prefLabel_fr": "assumer ses responsabilités",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Sens des responsabilités",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Bureautique et outils collaboratifs",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/958b8802-ec3e-4813-97f7-6c8f48610dbd",
+      "prefLabel_fr": "identifier les améliorations des processus",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Identifier les leviers d'optimisation des processus, outils et méthodes de travail",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17",
+      "prefLabel_fr": "analyser les exigences des entreprises",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Analyser un besoin",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5e9e6dea-23d9-46ba-b8ea-749319b48994",
+      "prefLabel_fr": "présider une réunion",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Animer une réunion",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d4cc5022-7801-4885-bcff-166552788d35",
+      "prefLabel_fr": "proposer des stratégies d’amélioration",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Identifier, proposer et mettre en œuvre toutes actions et évolutions d'organisation permettant d'améliorer le fonctionnement de sa section",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/580660a6-5d3a-421d-a54f-d85b706c2b2f",
+      "prefLabel_fr": "utiliser des outils en ligne pour collaborer",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Bureautique et outils collaboratifs",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cb1b0777-0388-4b01-a0cf-7c6bbfbbd61d",
+      "prefLabel_fr": "analyser le processus de développement d’une organisation",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Modéliser un processus ; optimisation des processus",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7f0b1a66-ebaf-4c8a-b606-4c1844eb692e",
+      "prefLabel_fr": "veiller à la qualité des systèmes d’information et de communication",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Matériels, systèmes et réseaux d'information et de communication",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0868eef3-2213-4572-9343-74931345a7d3",
+      "prefLabel_fr": "administrer un système de TIC",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Mettre en œuvre toute action de communication en lien avec les SI métiers et pratiques métiers",
+      "source_field": "responsibilities"
+    }
+  ]
+}

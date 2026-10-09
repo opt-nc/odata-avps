@@ -1,0 +1,173 @@
+{
+  "identifier": "3134-26-1386/SR",
+  "source_file": "data/avps/3134-26-1386_SR.json",
+  "source_sha256": "a7b9fce9c77fb25e74d07ee9523f14cd55a96b140baba5118578e4845b5dcce0",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/a28dff76-74df-46ee-929f-d1fffbb63cd7",
+      "prefLabel_fr": "responsable de l’assurance qualité informatique",
+      "iscoCode": "2519",
+      "matchType": "exact",
+      "confidence": 0.93,
+      "evidence": "Responsable Méthodes et Qualité du SI : méthodes, normes, référentiels, qualité et maîtrise des risques du Système d'Information"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/cdd3d773-75a4-4f35-bd1d-1ac720afcf9d",
+      "prefLabel_fr": "auditeur des systèmes d’information/auditrice des systèmes d’information",
+      "iscoCode": "2511",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Contribuer au contrôle interne du SI, réaliser des contrôles, préparer et suivre les audits du Système d'Information"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5efec19d-aca8-4608-b824-f8cf438a8dfe",
+      "prefLabel_fr": "surveiller le suivi des recommandations",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Formaliser des constats, recommandations et plans d'actions et en assurer le suivi",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ece25f2f-e91a-4186-a221-caa715195fd7",
+      "prefLabel_fr": "faire preuve de diplomatie",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Diplomatie et sens du dialogue",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+      "prefLabel_fr": "gestion des risques",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Identifier et évaluer les risques liés aux activités du SI",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/9bb7a97a-1a16-431e-8ea6-ad0f9f59aa0a",
+      "prefLabel_fr": "objectifs de contrôle de l’information et des technologies associées",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Maîtrise des outils de gouvernance des SI (TOGAF, COBIT, ITIL, CIGREF)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5d9e766b-8f17-4e17-bfab-3bb0e0719791",
+      "prefLabel_fr": "définir des normes de qualité",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Définir et maintenir le référentiel normes et méthodes du SI",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5b8a3dd2-de10-48a0-8ce5-522f1fff8450",
+      "prefLabel_fr": "réaliser des audits de conformité contractuelle",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Réaliser des contrôles de conformité des pratiques et de la documentation",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c29aa9d2-4da8-4bdd-831c-8d4a2fb51730",
+      "prefLabel_fr": "travailler de manière autonome",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.84,
+      "evidence": "Autonomie",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5e9e6dea-23d9-46ba-b8ea-749319b48994",
+      "prefLabel_fr": "présider une réunion",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Animer des réunions et des groupes de travail",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Facultés de communication, d'écoute et d'expression",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Esprit d'équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5fa6cd2f-9bab-4afa-a184-2d2f1401b770",
+      "prefLabel_fr": "rédiger des comptes rendus de réunion",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Rédiger des procédures, comptes rendus, notes et divers documents",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/580660a6-5d3a-421d-a54f-d85b706c2b2f",
+      "prefLabel_fr": "utiliser des outils en ligne pour collaborer",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Maîtrise des outils Confluence, Jira",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2fb8480e-de3c-462b-b169-e8bbb344da68",
+      "prefLabel_fr": "processus d’innovation",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Innovation ; promouvoir la mise en place et l’évolution d’outils et de pratiques",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/81633a44-f1db-4a01-a940-804c6905e330",
+      "prefLabel_fr": "utiliser un logiciel de traitement de texte",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Maîtrise de la suite Office 365",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.76,
+      "evidence": "Analyse et de synthèse",
+      "source_field": "skills"
+    }
+  ]
+}

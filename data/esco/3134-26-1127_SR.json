@@ -1,0 +1,146 @@
+{
+  "identifier": "3134-26-1127/SR",
+  "source_file": "data/avps/3134-26-1127_SR.json",
+  "source_sha256": "563e5c001a6ce1c310ce5b9c958c4dea335e376db944685827c528b13437ddb7",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/7ed2e153-8da8-4c0d-b4c5-3402c623f34b",
+      "prefLabel_fr": "facteur/factrice",
+      "iscoCode": "4412",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Préposé à la distribution à domicile : collecte, tri et distribution du courrier et des colis dans une zone géographique spécifique"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/511f366c-ba41-4826-9622-8cda6d6e3b91",
+      "prefLabel_fr": "employé au courrier/employée au courrier",
+      "iscoCode": "4412",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Collecte, tri et distribution du courrier et des colis ; tâches liées aux services postaux"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/df1265b9-81fd-4a40-a746-f0442ffbf7ef",
+      "prefLabel_fr": "distribuer le courrier",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.94,
+      "evidence": "Distribution du courrier et des colis aux destinataires",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e1f2f22f-3248-4eb2-83a6-c6f7c4437c5c",
+      "prefLabel_fr": "gérer les colis et livraisons",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.9,
+      "evidence": "Courrier et colis ; livraison précise, fiable et ponctuelle",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+      "prefLabel_fr": "travailler en équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Travailler en équipe ; avoir l'esprit d'équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/91abe492-18be-4cce-93c7-0dca07072363",
+      "prefLabel_fr": "respecter des délais",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtriser les délais",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5a927fa0-462e-4d54-ae12-97fd6ca45762",
+      "prefLabel_fr": "pratiquer le self-control",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtrise de soi",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Curiosité intellectuelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Outils de bureautique et outils digitaux SIDO, IPS, applications O365",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf9879fa-f1fc-4f17-8dcb-ece29ea61682",
+      "prefLabel_fr": "rendre compte de l’activité professionnelle",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Rendre compte",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/76f22707-8d30-453f-9eb7-3376e2960311",
+      "prefLabel_fr": "gérer le courrier",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Collecte, tri et distribution du courrier",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d7e3b0c-3995-4953-816d-cf3c5e9ffe34",
+      "prefLabel_fr": "respecter les procédures opérationnelles standard",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Modes opératoires et procédures en vigueur au sein de l'établissement",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/fb1bae44-1ca4-4937-84e1-4abef47bf584",
+      "prefLabel_fr": "organiser la livraison de courrier",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Assurer une livraison précise, fiable et ponctuelle du courrier et des colis",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/05338a70-1ea1-4c33-a886-1c4f0c7d7241",
+      "prefLabel_fr": "transmettre les techniques d’un métier",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Transmettre un savoir, une technique, une compétence",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/198b614d-a9af-46f5-b3fd-2672b401dd8e",
+      "prefLabel_fr": "hygiène et sécurité sur le lieu de travail",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Règles d'hygiène, sécurité, risques animaliers et conditions de travail",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}
