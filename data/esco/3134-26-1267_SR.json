@@ -1,0 +1,173 @@
+{
+  "identifier": "3134-26-1267/SR",
+  "source_file": "data/avps/3134-26-1267_SR.json",
+  "source_sha256": "a6b820b60471f69327938504356a4663b450c9b60dfa9f4113cc8bb73e22a259",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/044d78cc-f62f-4532-83a5-8e04f2889652",
+      "prefLabel_fr": "assistant administratif/assistante administrative",
+      "iscoCode": "3343",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Assistant(e) administratif(ve) ; gestion administrative et comptable des commandes, engagements et factures fournisseurs"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/5ac377d2-e1d0-4911-a299-b4ef2782a0ba",
+      "prefLabel_fr": "secrétaire",
+      "iscoCode": "4120",
+      "matchType": "broad",
+      "confidence": 0.62,
+      "evidence": "Traitement fiable et traçable des opérations administratives et financières ; activités de gestion administrative mutualisées"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6",
+      "prefLabel_fr": "techniques comptables",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Appliquer les techniques et procédures comptables",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8dcbcabe-09f7-4d11-940d-125af57bbc40",
+      "prefLabel_fr": "suivre des indicateurs clés de performance",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Suivre les indicateurs de pilotage d’activité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5a927fa0-462e-4d54-ae12-97fd6ca45762",
+      "prefLabel_fr": "pratiquer le self-control",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtrise de soi",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Outils de bureautique Applications informatiques (OTRS, OA)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/9b862976-aa05-4bde-8ed6-8f39790edd0f",
+      "prefLabel_fr": "législation en matière de marchés publics",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Technique des marchés publics ; règles internes de la commande",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ecc18804-a466-40d9-98b4-fba5cd67dd4b",
+      "prefLabel_fr": "comptabilité",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Sensibiliser les agents à la comptabilité publique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ab986bc4-df92-4351-9ac1-aa75af943cf7",
+      "prefLabel_fr": "effectuer des tâches administratives",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Procédures administratives de l’OPT-NC ; gestion administrative mutualisée",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c29aa9d2-4da8-4bdd-831c-8d4a2fb51730",
+      "prefLabel_fr": "travailler de manière autonome",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Être rigoureux et autonome",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/74688c5d-2af1-4f7a-9d1c-00e808eaa1e6",
+      "prefLabel_fr": "principes budgétaires",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Règles et techniques budgétaires",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/1dae8445-12e5-423a-bb26-824010e299b9",
+      "prefLabel_fr": "assurer le respect des exigences légales",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Assurer l’application de la réglementation et des règles internes",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.84,
+      "evidence": "Avoir l’esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Faire preuve de discrétion",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+      "prefLabel_fr": "service clients",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Sens du service client et des responsabilités",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/51bc28e9-c489-44d8-9263-4ada49ed1933",
+      "prefLabel_fr": "communiquer clairement avec des passagers",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Rédiger et s’exprimer clairement",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/875eeec4-fc70-4e6a-80ef-4d18356976e3",
+      "prefLabel_fr": "prévoir la charge de travail",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.76,
+      "evidence": "Disponibilité lors des charges de travail importantes en période de clôture budgétaire",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8d4271ca-c9fd-40b3-875f-15f78332a49e",
+      "prefLabel_fr": "normes de qualité",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.76,
+      "evidence": "Normes et procédures qualité / contrôle interne / maîtrise des risques",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

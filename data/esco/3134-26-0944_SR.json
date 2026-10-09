@@ -1,0 +1,164 @@
+{
+  "identifier": "3134-26-0944/SR",
+  "source_file": "data/avps/3134-26-0944_SR.json",
+  "source_sha256": "e0916188a23d2ded6329689f0f4c5d3c9cd57ed91bb77b09eb97b1e6eab97b7d",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/c0489e22-6a1b-4e52-974a-eb71bbb42134",
+      "prefLabel_fr": "chargé des relations publiques/chargée des relations publiques",
+      "iscoCode": "2432",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Chargé(e) de communication : mise en œuvre des actions de communication interne et externe"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/dc97adbe-f807-4ad8-8f3c-c24b3416cdef",
+      "prefLabel_fr": "responsable du marketing numérique",
+      "iscoCode": "1221",
+      "matchType": "close",
+      "confidence": 0.74,
+      "evidence": "Création de contenus digitaux, animation des réseaux sociaux et mise à jour des supports digitaux"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/be40c4c3-a855-4d67-9ca5-6f4428c34b0d",
+      "prefLabel_fr": "fournir du contenu écrit",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "La rédaction d’articles, de publications et de contenus digitaux",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f5369f2f-e52b-43d8-8d31-79a6c11188d8",
+      "prefLabel_fr": "création de contenus numériques",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "La création et la mise à jour de supports de communication ; création de contenus",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5303169c-75d6-4751-9136-a4b88343388c",
+      "prefLabel_fr": "gestion des réseaux sociaux",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "L’animation des réseaux sociaux ; connaissance des réseaux sociaux",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41",
+      "prefLabel_fr": "avoir un esprit créatif",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Sens de l’innovation et créativité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f715be1d-5fc4-49d3-82a5-0b8090d12849",
+      "prefLabel_fr": "synthétiser des informations",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Synthétiser des informations et des données",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Maîtrise des outils bureautiques",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+      "prefLabel_fr": "travailler en équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Travailler en équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Communiquer à l’oral et à l’écrit",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Esprit d’initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/67dbfc2a-3dd4-41a1-90bd-97035e7add60",
+      "prefLabel_fr": "suivre le fil d'actualité de médias sociaux",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Réalisation d’une veille sur l’actualité des télécommunications, des médias et des tendances digitales",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4",
+      "prefLabel_fr": "s'adapter au changement",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Faculté d’adaptation",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5436f06d-4cc0-42a6-8e5b-63b842cce03b",
+      "prefLabel_fr": "diffuser des informations générales sur l’entreprise",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Diffuser une information ou une publication",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/441da17f-5560-43d3-920e-2865931c96d2",
+      "prefLabel_fr": "prendre des photos",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "La réalisation de reportages photo et vidéo",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2",
+      "prefLabel_fr": "principes de l’intelligence artificielle",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Utilisation des outils numériques et d’intelligence artificielle pour la création de contenus",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e6262391-ffda-4b8e-9f5c-89cf1a0e7384",
+      "prefLabel_fr": "matériel audiovisuel",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.68,
+      "evidence": "La réalisation de reportages photo et vidéo",
+      "source_field": "responsibilities"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "identifier": "3134-26-1379/SR",
+  "source_file": "data/avps/3134-26-1379_SR.json",
+  "source_sha256": "b0dd519ee5b77b59553decbd71edcdf5dded1774efca19dc873f8920d102bcf7",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/bea705fe-06ac-4147-b8e0-6e8ac1208d8f",
+      "prefLabel_fr": "magasinier/magasinière",
+      "iscoCode": "9333",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Magasinier polyvalent : réceptionner, mettre en rayon et livrer du matériel ; inventaire et stockage"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/808becc8-5a4e-4e71-a043-c2ea32b56ae3",
+      "prefLabel_fr": "manutentionnaire",
+      "iscoCode": "9333",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Préparer, livrer du matériel, dépoter des containers, ranger et nettoyer les aires de stockage"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/24c4beb4-429c-4cd1-b0bd-c04ba4c82e13",
+      "prefLabel_fr": "préparer des commandes",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Préparer des commandes",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f7f56b20-8f05-4731-a1bf-79fdcffc72ce",
+      "prefLabel_fr": "vérifier les livraisons à leur réception",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Reconnaître et vérifier les marchandises et produits ; réceptionner et vérifier le matériel livré",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e883d55a-75ae-460b-ba0a-47fecf14f1b3",
+      "prefLabel_fr": "stocker des marchandises d’entrepôt",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Mettre en rayon la marchandise ; ranger les aires de stockage",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/28cb374e-6261-4133-8371-f9a5470145da",
+      "prefLabel_fr": "utiliser un chariot élévateur",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Conduire des engins de portage ; permis cariste",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Outils de bureautique: EXCEL, WORD, OUTLOOK",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ee5e2297-39cc-4ed6-89e5-d58016118a7f",
+      "prefLabel_fr": "préparer des commandes en vue de leur expédition",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Préparer, livrer du matériel",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b",
+      "prefLabel_fr": "gérer des stocks",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Réaliser l’inventaire de fin d’année ; méthodes d’inventaire",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5d2e82cc-5943-4218-a459-a1956fad2b63",
+      "prefLabel_fr": "gérer les stocks d’un entrepôt",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Méthodes d’entreposage ; traiter les demandes internes sur Oracle STOCK",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7afb5a64-e574-421a-bb3a-7a7bc108d2a5",
+      "prefLabel_fr": "exécuter des opérations d’entreposage",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Méthodes d’entreposage ; ranger et nettoyer les aires de stockage",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7838de1e-d65e-4a3f-b60b-e2213026116f",
+      "prefLabel_fr": "utiliser des équipements de manutention",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Gestes et postures de manutention ; dépoter des containers",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d433c82e-fa7a-492e-a8fd-eee7b39e4c48",
+      "prefLabel_fr": "règles de sécurité",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Règles d’hygiène et sécurité",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4",
+      "prefLabel_fr": "s'adapter au changement",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Aptitude au changement",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f632251a-4078-4546-b19f-7ef528d08325",
+      "prefLabel_fr": "utiliser des outils informatiques",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Application informatique (ORACLE STOCK)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a5b0cd5c-e13a-4ab3-8d93-4d242adcfb01",
+      "prefLabel_fr": "principes du travail d'équipe",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.8,
+      "evidence": "Sens du travail en équipe",
+      "source_field": "skills"
+    }
+  ]
+}

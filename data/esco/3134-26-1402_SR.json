@@ -1,0 +1,191 @@
+{
+  "identifier": "3134-26-1402/SR",
+  "source_file": "data/avps/3134-26-1402_SR.json",
+  "source_sha256": "7a2c8e9f733575b1701302eed72246009a819cd10263b17038ee524b2bb0cf01",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/d84bf1d7-ef99-40c4-a407-3791d6531b44",
+      "prefLabel_fr": "technicien en télécommunications/technicienne en télécommunications",
+      "iscoCode": "3522",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Superviser les infrastructures, réseaux et services télécoms, diagnostiquer les incidents et ajuster les seuils dans les outils de supervision"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/aaeec9a7-dc57-4485-890c-86b3eef735f9",
+      "prefLabel_fr": "agent de service d’assistance informatique/agente de service d’assistance informatique",
+      "iscoCode": "3512",
+      "matchType": "broad",
+      "confidence": 0.65,
+      "evidence": "Gérer et suivre les tickets, assurer un contact SAV privilégié pour les clients professionnels et Grands Comptes"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4fb7c7aa-9f19-4cc3-9e19-64ce564f22f5",
+      "prefLabel_fr": "gérer des incidents",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Établir un diagnostic et s’assurer de la prise en charge de l’incident",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0ab03c6c-281b-48f4-83e0-10eeb27a1bae",
+      "prefLabel_fr": "outils de système de gestion de réseau",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Connaissances d’outils de supervisions (CENTREON)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+      "prefLabel_fr": "travailler en équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Travailler en équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d’initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2e90ef65-646a-4b1d-8597-26ca88aa1c6b",
+      "prefLabel_fr": "détecter des anomalies",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Diagnostiquer une anomalie",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d12e9d68-84c5-444e-aa98-d36533bf03f6",
+      "prefLabel_fr": "appliquer des opérations pour un environnement ITIL",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Connaissances des bonnes pratiques ITIL",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f1a56786-e6d7-4b2e-a39c-23e09024d473",
+      "prefLabel_fr": "concepts des télécommunications",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Connaissances des réseaux et services télécoms",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf9879fa-f1fc-4f17-8dcb-ece29ea61682",
+      "prefLabel_fr": "rendre compte de l’activité professionnelle",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Rendre compte de l’activité sur tous les volets",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Réceptionner et synthétiser l’ensemble des interventions programmées",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c29aa9d2-4da8-4bdd-831c-8d4a2fb51730",
+      "prefLabel_fr": "travailler de manière autonome",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Être autonome",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Capacité à communiquer",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Connaissances de la suite bureautique Office 365",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ed5bbc64-7017-4e2e-b44e-65df88013a84",
+      "prefLabel_fr": "analyser des systèmes d'information",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Analyser une information, une donnée, une situation, un dispositif",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf7ea00f-db77-4a95-9b9f-2d12b6d9fcb4",
+      "prefLabel_fr": "mettre en œuvre des outils de diagnostic d’un réseau TIC",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Ajouter des équipements, ajuster des seuils dans les outils de supervision",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/118efbcd-8fc5-4668-81d1-c383a0d16070",
+      "prefLabel_fr": "gérer les problèmes soumis au service d’assistance",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Gérer et suivre les tickets concernant les évènements",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/93e65de1-923c-437e-aa5b-e6002967ce71",
+      "prefLabel_fr": "plateformes collaboratives en ligne",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.8,
+      "evidence": "Connaissances des outils collaboratifs de la suite Office 365",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/64ff8d5f-58a8-4efb-af5a-e161854b3e9a",
+      "prefLabel_fr": "comprendre l'anglais parlé",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Anglais lu (requis) et parlé (souhaité)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/397da142-ab35-48fe-b154-7c38f447adfb",
+      "prefLabel_fr": "systèmes numériques",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Connaissances des systèmes d’information",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

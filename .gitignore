@@ -15,3 +15,7 @@ samples
 # et `--server/` provient d'un flag mal passé sur la ligne de commande.
 /server/
 /--server/
+build/
+
+# Environnement Python local (pipeline ESCO)
+.venv/

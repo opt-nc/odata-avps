@@ -1,0 +1,119 @@
+{
+  "identifier": "3134-26-1382/SR",
+  "source_file": "data/avps/3134-26-1382_SR.json",
+  "source_sha256": "dfcff6a89e17d52469e9c706aa4fb07bf9a6169c90578795959b383706abce08",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/a330b100-e651-4db1-bcf0-e9cbc025c614",
+      "prefLabel_fr": "responsable du processus",
+      "iscoCode": "2421",
+      "matchType": "close",
+      "confidence": 0.9,
+      "evidence": "Élaborer, formaliser et actualiser les normes, procédures et modes opératoires ; participer à l’évolution des processus métiers"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/109e0a5d-203d-4af6-8f70-692111335ec3",
+      "prefLabel_fr": "responsable qualité services",
+      "iscoCode": "1219",
+      "matchType": "broad",
+      "confidence": 0.62,
+      "evidence": "Contrôler la bonne mise en œuvre, identifier les dysfonctionnements et contribuer à l’amélioration continue des pratiques"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Communiquer ; communiquer au sein de la BU les nouveautés ou évolutions",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/958b8802-ec3e-4813-97f7-6c8f48610dbd",
+      "prefLabel_fr": "identifier les améliorations des processus",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Identifier les dysfonctionnements, proposer des actions correctives et contribuer à l’amélioration continue",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/91dd8397-063d-499c-83b9-0603a10d94ac",
+      "prefLabel_fr": "techniques d'écriture",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Rédiger des procédures ; Technique de rédaction",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5e9e6dea-23d9-46ba-b8ea-749319b48994",
+      "prefLabel_fr": "présider une réunion",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Animer des réunions et animer des groupes de travail interservices",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "prefLabel_fr": "gestion de projets",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Conduire un projet ; conduite et gestion de projet",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8804d963-5a31-4609-b5df-f741b7199fb7",
+      "prefLabel_fr": "audit interne",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Contrôle, audit et évaluation ; auditer les pratiques",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/756ae350-9e1f-4cb9-9c27-6bd99806dadc",
+      "prefLabel_fr": "techniques de promotion des ventes",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Techniques de vente",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3a5231a0-8c30-48ee-b671-08e2debd4441",
+      "prefLabel_fr": "stratégies d’organisation",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Organisation, méthode et processus",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4",
+      "prefLabel_fr": "s'adapter au changement",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Accompagner le changement des agents dans l’appropriation des pratiques et outils",
+      "source_field": "skills"
+    }
+  ]
+}

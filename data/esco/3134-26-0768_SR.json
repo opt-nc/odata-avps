@@ -1,0 +1,155 @@
+{
+  "identifier": "3134-26-0768/SR",
+  "source_file": "data/avps/3134-26-0768_SR.json",
+  "source_sha256": "1d92a03be5a10abcbb58a332bef12db8d2d83c34806949e775d22d580e6d5d66",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/78db356f-a96a-4456-ab29-2de62e52f830",
+      "prefLabel_fr": "agent comptable/agente comptable",
+      "iscoCode": "2411",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Agent comptable : recettes, dépenses, compte financier annuel, contrôles réglementaires, recouvrement"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/04f39bfa-bc03-4480-98bc-b18ce4fe4b4b",
+      "prefLabel_fr": "directeur comptable/directrice comptable",
+      "iscoCode": "1211",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Encadrer une équipe comptable de 21 personnes et garantir la production comptable et le contrôle interne"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ecc18804-a466-40d9-98b4-fba5cd67dd4b",
+      "prefLabel_fr": "comptabilité",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Solide maîtrise des règles de la comptabilité publique et de la production comptable",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2ff405ec-f59c-4a7b-84b6-9776a49582c4",
+      "prefLabel_fr": "règles de comptabilité",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Règles de la comptabilité publique",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6",
+      "prefLabel_fr": "techniques comptables",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Production comptable ; schémas comptables",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+      "prefLabel_fr": "gérer une équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Encadrer une équipe de 21 personnes",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/19a64e91-bfe3-4c48-9225-3bb1229b12f0",
+      "prefLabel_fr": "faire preuve de détermination",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Détermination et pugnacité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7",
+      "prefLabel_fr": "assumer ses responsabilités",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Sens des responsabilités",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+      "prefLabel_fr": "gestion des risques",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Identifier et maîtriser les risques comptables, financiers et organisationnels",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/fd89f784-88dc-4d35-abd7-86aa073cab12",
+      "prefLabel_fr": "garder un esprit ouvert",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Grande ouverture d'esprit",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Esprit d’analyse et de synthèse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0daaf096-1639-461c-bf1a-bbeea77e6b67",
+      "prefLabel_fr": "politique de gestion interne des risques",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Mise en place et suivi du CICF ainsi que de la qualité comptable",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "prefLabel_fr": "gestion de projets",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Expérience en conduite de projet de modernisation comptable, financière ou organisationnelle",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4",
+      "prefLabel_fr": "s'adapter au changement",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Environnement en transformation ; accompagner l’évolution des pratiques",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/09f4c52b-ac72-4f0e-a8ae-78bb1d7bffba",
+      "prefLabel_fr": "logiciel de transport lié à un progiciel de gestion intégré",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Préparation du déploiement d’un futur ERP ; cadrage fonctionnel du futur ERP",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a117f32c-662b-4dd9-b739-1230dd04cb60",
+      "prefLabel_fr": "pédagogie",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.68,
+      "evidence": "Accompagner le changement avec pédagogie et fermeté",
+      "source_field": "skills"
+    }
+  ]
+}
