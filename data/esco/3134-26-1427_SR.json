@@ -1,0 +1,182 @@
+{
+  "identifier": "3134-26-1427/SR",
+  "source_file": "data/avps/3134-26-1427_SR.json",
+  "source_sha256": "80638efebd59e2258b154af183e32abdc3a01290cccdf9e064face3ae95649ab",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/b2e81332-0972-4e0f-9a4d-1d15c9c9513b",
+      "prefLabel_fr": "agent de back-office/agente de back-office",
+      "iscoCode": "4312",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Gestionnaire du back office bancaire : activités de conformité, KYC, gestion documentaire et opérations du centre production bancaire"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/b3ce981c-5b32-4de2-8e53-502a6357b2bc",
+      "prefLabel_fr": "analyste du risques crédits",
+      "iscoCode": "3312",
+      "matchType": "close",
+      "confidence": 0.72,
+      "evidence": "Contrôler le KYC, contribuer à la lutte contre le blanchiment et le financement du terrorisme, effectuer des contrôles opérationnels"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Bureautique et outils collaboratifs",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/05fc6f8d-639c-4329-a6de-dfdd800ed091",
+      "prefLabel_fr": "connaissance du client",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Connaissance client (KYC), mise à jour des informations clients",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Grande discrétion professionnelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/93e65de1-923c-437e-aa5b-e6002967ce71",
+      "prefLabel_fr": "plateformes collaboratives en ligne",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Bureautique et outils collaboratifs",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3c209873-c757-47bb-91b5-9b6dc05df116",
+      "prefLabel_fr": "activités bancaires",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Droit/Réglementation bancaire ; processus de décision bancaire",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f453b1a6-c7db-4d9d-9ba3-47c45159bfe3",
+      "prefLabel_fr": "assurer la conformité des produits à la réglementation",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Contrôler et valider la conformité de l’entrée en relation ; exigences réglementaires",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/1c7c161d-1c78-4098-b28d-147857d44699",
+      "prefLabel_fr": "assurer la conformité permanente avec la réglementation",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Respect des obligations légales et internes ; conformité réglementaire et opérationnelle",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Curiosité intellectuelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c753a3b5-d5cc-406d-adfe-3372bb267f4b",
+      "prefLabel_fr": "tenir des dossiers de clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Régulariser les dossiers incomplets ; mise à jour des informations clients",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0c606377-fbd6-4f66-b700-ba4524670b73",
+      "prefLabel_fr": "contrôler les antécédents d’un client",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Contrôler la mise à jour du KYC tout au long de la vie des comptes",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4ab4e298-4e35-4e2e-938c-da2c1e11864c",
+      "prefLabel_fr": "ouvrir un compte bancaire",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Contrôles à postériori des ouvertures de comptes",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/376bc7c6-085e-4a5f-a6a6-6fa8d2c15ca5",
+      "prefLabel_fr": "mettre à jour des consignes de procédure",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Mettre à jour et diffuser les procédures et modes opératoires du CPB",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/541cdc23-1eec-4520-81fc-3392eaf538ed",
+      "prefLabel_fr": "détection des fraudes",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Contribuer activement à la lutte contre le blanchiment et le financement du terrorisme",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/833289fa-3646-4010-9d9e-93ba8c9ef2d8",
+      "prefLabel_fr": "appliquer des principes d’éthique et d’intégrité scientifique de la recherche dans les activités de recherche",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Intégrité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4f411d0f-e723-4815-b7f9-d0fc3540169d",
+      "prefLabel_fr": "empêcher le blanchiment d’argent dans des jeux",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.65,
+      "evidence": "Contribuer aux déclarations LCBFT",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d39022ab-d102-4720-b689-540d6f056b17",
+      "prefLabel_fr": "administration publique",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.65,
+      "evidence": "Sens du service public",
+      "source_field": "skills"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "identifier": "3134-26-0946/SR",
+  "source_file": "data/avps/3134-26-0946_SR.json",
+  "source_sha256": "6811a3a5e34599153239819949ecaa6ed8f033b632925ba703c4b4695b110e55",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/bd9d395a-d587-45c6-8d72-ceef226df9e1",
+      "prefLabel_fr": "consultant en intégration de systèmes informatiques/consultante en intégration de systèmes informatiques",
+      "iscoCode": "2511",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Consultant fonctionnel : piloter l'alignement des SI Télécoms et assurer la maîtrise d'ouvrage des projets SI"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/b1c80369-067e-4041-84c8-dbe65640a5d8",
+      "prefLabel_fr": "consultant informatique/consultante informatique",
+      "iscoCode": "2511",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Accompagner, assister, former les équipes et optimiser l'utilisation des outils SI"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "prefLabel_fr": "gestion de projets",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.93,
+      "evidence": "Exercer le rôle de chef de projet; conduite de planification, coordination et suivi",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3d64b8fd-bb09-4d13-a3cf-300ed8909088",
+      "prefLabel_fr": "rédiger un cahier des charges",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Rédiger des cahiers des charges, des spécifications fonctionnelles, des cahiers de tests",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf9879fa-f1fc-4f17-8dcb-ece29ea61682",
+      "prefLabel_fr": "rendre compte de l’activité professionnelle",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Rendre compte de l'activité couverte",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/281a0cb1-4e12-46f4-ba4a-2746cba36e78",
+      "prefLabel_fr": "coordonner des équipes",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Coordonner; planification, mobilisation des ressources et suivi des livrables",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3c03ee71-4a23-448f-b79e-81fd75d27dca",
+      "prefLabel_fr": "appliquer la gestion du changement",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Accompagner un changement; favoriser la bonne appropriation des outils par les utilisateurs",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d’initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtrise des outils bureautiques",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Curiosité intellectuelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+      "prefLabel_fr": "gestion des risques",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Contribuer à l'analyse et la maîtrise des risques",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5fa6cd2f-9bab-4afa-a184-2d2f1401b770",
+      "prefLabel_fr": "rédiger des comptes rendus de réunion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Rédiger des comptes rendus",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/64ff8d5f-58a8-4efb-af5a-e161854b3e9a",
+      "prefLabel_fr": "comprendre l'anglais parlé",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Anglais : lu, parlé, écrit",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7ee20fe2-facd-4cc5-837b-927429e0e7ac",
+      "prefLabel_fr": "comprendre l’anglais écrit",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Anglais : lu, parlé, écrit",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Esprit de synthèse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Communiquer efficacement",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4",
+      "prefLabel_fr": "gestion de projets par méthode Agile",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Maîtrise d’une méthodologie de gestion de projet (PMP, PMI, Prince 2, Agile…)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17",
+      "prefLabel_fr": "analyser les exigences des entreprises",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Retranscrire un besoin; phase de cadrage des projets SI",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d4cc5022-7801-4885-bcff-166552788d35",
+      "prefLabel_fr": "proposer des stratégies d’amélioration",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Proposer tout moyen/dispositif concourant à la réussite des projets",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+      "prefLabel_fr": "concevoir un système d’information",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Très bonne connaissance des différents SI Télécoms",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

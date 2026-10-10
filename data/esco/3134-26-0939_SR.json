@@ -1,0 +1,155 @@
+{
+  "identifier": "3134-26-0939/SR",
+  "source_file": "data/avps/3134-26-0939_SR.json",
+  "source_sha256": "1e7cd7804c49ac8a8d63bcab9026d35da1d41ec56ef34b3d8d9a60649f7385f3",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/aaeec9a7-dc57-4485-890c-86b3eef735f9",
+      "prefLabel_fr": "agent de service d’assistance informatique/agente de service d’assistance informatique",
+      "iscoCode": "3512",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Technicien Hotline : répondre aux sollicitations des utilisateurs (appels téléphoniques, emails ou tickets de support)"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/a44a1dc5-be08-4840-8bd5-770c4ac1ca6d",
+      "prefLabel_fr": "technicien en sécurité informatique/technicienne en sécurité informatique",
+      "iscoCode": "3512",
+      "matchType": "close",
+      "confidence": 0.72,
+      "evidence": "Contribue à la sécurité des systèmes ; traite les attaques et incidents liés à la sécurité informatique"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8088750d-8388-4170-a76f-48354c469c44",
+      "prefLabel_fr": "cybersécurité",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Appliquer rigoureusement les règles de cybersécurité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f683ae1d-cb7c-4aa1-b9fe-205e1bd23535",
+      "prefLabel_fr": "utiliser Microsoft Office",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Bonne connaissance des logiciels Microsoft (Suite Office)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/07e51c60-763a-4335-b4ec-70a15f66d328",
+      "prefLabel_fr": "proposer des solutions TIC aux problèmes des entreprises",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Proposer des solutions adaptées",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+      "prefLabel_fr": "systèmes d’exploitation",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Solide connaissance des systèmes d’exploitation Microsoft",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7a147904-22b3-498a-b4d9-7bceeb86b45d",
+      "prefLabel_fr": "gérer le stress",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Aptitude à la gestion du stress",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4fb7c7aa-9f19-4cc3-9e19-64ce564f22f5",
+      "prefLabel_fr": "gérer des incidents",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.87,
+      "evidence": "Diagnostiquer et qualifier rapidement les incidents informatiques",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/118efbcd-8fc5-4668-81d1-c383a0d16070",
+      "prefLabel_fr": "gérer les problèmes soumis au service d’assistance",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Traiter et réaliser les demandes de travaux informatiques ; maintenir et mettre à jour la base de connaissances",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf9879fa-f1fc-4f17-8dcb-ece29ea61682",
+      "prefLabel_fr": "rendre compte de l’activité professionnelle",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Capacité à rendre compte de son activité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ddc3119d-1d6e-4324-9125-a3380d299ac5",
+      "prefLabel_fr": "technologie informatique",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Grande expérience en micro-informatique",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Sens de l’anticipation et prise d’initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Bonne communication et bon relationnel",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d4cc5022-7801-4885-bcff-166552788d35",
+      "prefLabel_fr": "proposer des stratégies d’amélioration",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Force de proposition ; proposer et mettre en œuvre des solutions visant à améliorer la qualité des services",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Esprit d’analyse et de synthèse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2164e860-7f20-48bc-b98c-5d9f8a561550",
+      "prefLabel_fr": "concevoir un réseau informatique",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.65,
+      "evidence": "Connaissances en réseau informatique",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

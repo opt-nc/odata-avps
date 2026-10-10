@@ -1,0 +1,183 @@
+{
+  "identifier": "3134-26-0903/SR",
+  "source_file": "data/avps/3134-26-0903_SR.json",
+  "source_sha256": "bc296f213b0ae1f9cb093a8bf978282b442523acb293868d6708afbf5b3179db",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/30f3ea93-882a-4525-841c-1d5b4b64076f",
+      "prefLabel_fr": "directeur financier/directrice financière",
+      "iscoCode": "1211",
+      "matchType": "exact",
+      "confidence": 0.94,
+      "evidence": "Directeur des Finances : définir et mettre en œuvre la stratégie financière, piloter la gestion budgétaire, financière et de trésorerie"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/44e0c015-309d-4f67-98a3-1e036966ed7f",
+      "prefLabel_fr": "directeur du budget/directrice du budget",
+      "iscoCode": "1211",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Piloter l’élaboration budgétaire, le suivi de l’exécution des budgets et les trajectoires financières pluriannuelles"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/52e53619-fa77-4f72-b237-5e4aae784dc2",
+      "prefLabel_fr": "gestion financière",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Très bonne maîtrise de la gestion budgétaire, financière et du contrôle de gestion",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+      "prefLabel_fr": "gestion des risques",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtrise des dispositifs de contrôle interne, de gestion des risques et de gouvernance financière",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Capacité d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ece25f2f-e91a-4186-a221-caa715195fd7",
+      "prefLabel_fr": "faire preuve de diplomatie",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Diplomatie",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4b2db903-cd8e-48ce-97fb-a92db4def54e",
+      "prefLabel_fr": "prévision financière",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Garantir la qualité de la prévision financière",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "prefLabel_fr": "gestion de projets",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Piloter des projets complexes et transversaux ; conduite de projets de transformation",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d62d2b4c-a6f8-439e-8a1b-4f29ab5f2c47",
+      "prefLabel_fr": "prendre des décisions",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Arbitrer et prendre des décisions dans un environnement à forts enjeux",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4e0076f7-155d-4e2a-a058-39097de48420",
+      "prefLabel_fr": "transposer la stratégie en actions et objectifs",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Traduire des orientations stratégiques en plans d'action opérationnels",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/74688c5d-2af1-4f7a-9d1c-00e808eaa1e6",
+      "prefLabel_fr": "principes budgétaires",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Pilotage de la gestion budgétaire ; élaboration budgétaire",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/99c4c69a-025c-464f-adda-874c7f107a31",
+      "prefLabel_fr": "dialoguer avec les parties prenantes",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Dialoguer avec des interlocuteurs de haut niveau et fédérer des parties prenantes diverses",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Esprit d’analyse et de synthèse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0daaf096-1639-461c-bf1a-bbeea77e6b67",
+      "prefLabel_fr": "politique de gestion interne des risques",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Refonte du dispositif de contrôle interne ; contrôle interne budgétaire, financier et comptable",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/949ced5f-7536-4614-ac60-563ffc91a2f2",
+      "prefLabel_fr": "planning stratégique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.84,
+      "evidence": "Vision stratégique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4",
+      "prefLabel_fr": "s'adapter au changement",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Conduire le changement ; transformation majeure de la fonction financière",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/626326d5-1cee-4729-9381-3debc87ddac4",
+      "prefLabel_fr": "gouvernance d'une entreprise",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Instances de gouvernance ; gouvernance financière",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Sens de l'écoute, de la coopération et de la communication",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/09f4c52b-ac72-4f0e-a8ae-78bb1d7bffba",
+      "prefLabel_fr": "logiciel de transport lié à un progiciel de gestion intégré",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Déploiement d’un nouvel ERP financier ; projets de modernisation des systèmes d’information",
+      "source_field": "description"
+    }
+  ],
+  "comment": "Le candidat exact directeur financier provient de la recherche ESCO car les candidats initiaux étaient majoritairement hors domaine financier."
+}

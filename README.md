@@ -25,10 +25,12 @@ GCP [`gcp-avp-cloudfunctions`](../gcp-avp-cloudfunctions). Ce dépôt ne contien
 | `content/<direction>/` | Fiches AVP en Markdown (générées) + `_index.md` par direction (Pyramide, remontée niveau 4) |
 | `content/mot-drh/` | « Le mot de la DRH » (généré par le consolidateur) |
 | `data/avps/*.json` | Schéma JSON-LD par AVP (source du JSON-LD + des flux) |
+| `data/esco/*.json` | Annotations [ESCO](https://esco.ec.europa.eu/fr) (métiers + compétences) par AVP — voir [`data/esco/README.md`](data/esco/README.md) |
 | `layouts/` | Shortcodes (`avp-header`, `avp-map`, `list-avps`), partials SEO, sorties XML |
 | `assets/css/` | Thèmes `opt-light` / `opt-dark` + `avp-components.css` |
 | `static/vendor/` | Leaflet & easyqrcode **auto-hébergés** (aucune dépendance CDN) |
 | `scripts/` | Outils de build : enrichissement des descriptions |
+| `scripts/esco/` | Pipeline d'annotation ESCO (candidats, finalisation, validation, export HF) |
 
 ## 🚀 Développement local
 

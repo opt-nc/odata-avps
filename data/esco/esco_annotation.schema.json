@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/opt-nc/odata-avps/data/esco/esco_annotation.schema.json",
+  "title": "Annotation ESCO d'un AVP OPT-NC",
+  "type": "object",
+  "required": [
+    "identifier",
+    "source_file",
+    "source_sha256",
+    "esco_version",
+    "esco_db",
+    "annotated_at",
+    "annotation_method",
+    "occupations",
+    "skills"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "description": "Identifiant de l'AVP (champ schema.org identifier), ex: 3134-26-1049/SR"
+    },
+    "source_file": {
+      "type": "string",
+      "description": "Fichier AVP source, relatif à la racine du dépôt (data/avps/....json)"
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 du fichier AVP source au moment de l'annotation (détection d'obsolescence)"
+    },
+    "esco_version": { "type": "string", "description": "Version du référentiel ESCO, ex: 1.2.1" },
+    "esco_db": { "type": "string", "description": "Provenance de la base, ex: adriens/odata-esco v1.0.1" },
+    "annotated_at": { "type": "string", "format": "date" },
+    "annotation_method": { "type": "string" },
+    "comment": { "type": "string" },
+    "occupations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["escoUri", "prefLabel_fr", "iscoCode", "matchType", "confidence", "evidence"],
+        "additionalProperties": false,
+        "properties": {
+          "escoUri": {
+            "type": "string",
+            "pattern": "^http://data\\.europa\\.eu/esco/occupation/[0-9a-f-]{36}$"
+          },
+          "prefLabel_fr": { "type": "string" },
+          "iscoCode": { "type": "string" },
+          "matchType": { "type": "string", "enum": ["exact", "close", "broad"] },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence": { "type": "string" }
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["escoUri", "prefLabel_fr", "skillType", "matchType", "confidence", "evidence", "source_field"],
+        "additionalProperties": false,
+        "properties": {
+          "escoUri": {
+            "type": "string",
+            "pattern": "^http://data\\.europa\\.eu/esco/skill/[0-9a-f-]{36}$"
+          },
+          "prefLabel_fr": { "type": "string" },
+          "skillType": { "type": "string" },
+          "matchType": { "type": "string", "enum": ["exact", "close", "broad"] },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence": { "type": "string" },
+          "source_field": { "type": "string" }
+        }
+      }
+    }
+  }
+}

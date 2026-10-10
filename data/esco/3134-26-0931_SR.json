@@ -1,0 +1,146 @@
+{
+  "identifier": "3134-26-0931/SR",
+  "source_file": "data/avps/3134-26-0931_SR.json",
+  "source_sha256": "5b04b438f19d633c235c44f6d945a8f04ed93d3e14efba2a22e56eb03c5ff262",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/a330b100-e651-4db1-bcf0-e9cbc025c614",
+      "prefLabel_fr": "responsable du processus",
+      "iscoCode": "2421",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Responsable processus, documentation et communication : concevoir, formaliser et maintenir les processus et procédures opérationnels du centre"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/3ce4691e-ecea-4278-939e-b89ab01087b8",
+      "prefLabel_fr": "responsable des télécommunications",
+      "iscoCode": "1330",
+      "matchType": "broad",
+      "confidence": 0.62,
+      "evidence": "Centre de supervision télécoms : gestion des maintenances ou incidents télécoms et connaissances des réseaux et services télécoms"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d’initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+      "prefLabel_fr": "modélisation de processus d’entreprise",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Formalisation et optimisation de processus",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0",
+      "prefLabel_fr": "anglais",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Anglais lu (requis) et parlé (souhaité)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4fb7c7aa-9f19-4cc3-9e19-64ce564f22f5",
+      "prefLabel_fr": "gérer des incidents",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Analyse d’incidents ; participer à la gestion des incidents",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Excellentes capacités rédactionnelles (clarté, synthèse, structuration)",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/958b8802-ec3e-4813-97f7-6c8f48610dbd",
+      "prefLabel_fr": "identifier les améliorations des processus",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Être dans une dynamique d’amélioration continue de l’activité",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f1a56786-e6d7-4b2e-a39c-23e09024d473",
+      "prefLabel_fr": "concepts des télécommunications",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Connaissances des réseaux et services télécoms",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2636b3d3-843e-46a9-8b4c-a9d6ca3f5a2d",
+      "prefLabel_fr": "fournir une documentation technique",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Être garant de la documentation et des référentiels du centre ; mettre en place des standards documentaires",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f780a6ad-b01e-4c35-9746-af8fc0c5ad06",
+      "prefLabel_fr": "appliquer la gestion de crises",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Principes de gestion de crise et communication opérationnelle",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e58a3832-4e13-458e-8efd-bfa251eed702",
+      "prefLabel_fr": "maintenir des communications opérationnelles",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Réaliser la communication interne/externe en cas d’incidents sur les réseaux télécoms",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/118efbcd-8fc5-4668-81d1-c383a0d16070",
+      "prefLabel_fr": "gérer les problèmes soumis au service d’assistance",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Connaissances d’outils de gestion de services d’assistance (OTRS)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+      "prefLabel_fr": "concevoir un système d’information",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.63,
+      "evidence": "Connaissances des systèmes d’information",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

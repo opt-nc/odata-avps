@@ -1,0 +1,137 @@
+{
+  "identifier": "3134-26-1107/SR",
+  "source_file": "data/avps/3134-26-1107_SR.json",
+  "source_sha256": "bfa74b39b036c6c7fac12d0a9b420cc662766fde8c84e185b1aac79157decf2e",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/78db356f-a96a-4456-ab29-2de62e52f830",
+      "prefLabel_fr": "agent comptable/agente comptable",
+      "iscoCode": "2411",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Gestionnaire caveau - auditeur au service Comptabilité générale ; contrôle des règles comptables et gestion du caveau"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/eda0d957-3c3c-4139-b89a-a18bc9e18897",
+      "prefLabel_fr": "comptable",
+      "iscoCode": "2411",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Participe aux missions d'audit et aux travaux de la Cellule Audit et Vérification du service Comptabilité générale"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ab6265f2-a9bf-49e8-a9a5-67cbab4de38b",
+      "prefLabel_fr": "gérer des stocks",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Gérer différents types de stocks et les commandes s'y rapportant",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Discrétion",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ece25f2f-e91a-4186-a221-caa715195fd7",
+      "prefLabel_fr": "faire preuve de diplomatie",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Diplomatie",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ecc18804-a466-40d9-98b4-fba5cd67dd4b",
+      "prefLabel_fr": "comptabilité",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Règles de la comptabilité publique",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2ff405ec-f59c-4a7b-84b6-9776a49582c4",
+      "prefLabel_fr": "règles de comptabilité",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Contrôler l'application des règles comptables ; règles de la comptabilité publique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4",
+      "prefLabel_fr": "s'adapter au changement",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Aptitude au changement",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+      "prefLabel_fr": "analyse de données",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Analyser et synthétiser des données",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ddc3119d-1d6e-4324-9125-a3380d299ac5",
+      "prefLabel_fr": "technologie informatique",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Outils de bureautique (Microsoft 365) et applications informatiques (AS400, Oracle, SIDO, Portail Stock)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b88fde8f-1b98-4a83-8a2e-75232be4f725",
+      "prefLabel_fr": "rédiger des rapports de situation",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Rédaction de rapports",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f371606f-9b45-4340-9e92-ebd91d14ab29",
+      "prefLabel_fr": "tenir un inventaire des outils",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Réaliser des inventaires",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d62d2b4c-a6f8-439e-8a1b-4f29ab5f2c47",
+      "prefLabel_fr": "prendre des décisions",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Processus de décision de l'OPT-NC",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

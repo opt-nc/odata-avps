@@ -1,0 +1,173 @@
+{
+  "identifier": "3134-26-1389/SR",
+  "source_file": "data/avps/3134-26-1389_SR.json",
+  "source_sha256": "984f94a29a39739f2e731f3f9e799979f301d814958ca8f961d568e1e88615a1",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/823db06f-25e1-4658-b063-d6ef956b41f5",
+      "prefLabel_fr": "responsable logistique et distribution",
+      "iscoCode": "1324",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Chef de cellule distribution : management de la cellule, organisation de la distribution du courrier et des colis, qualité de service"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/511f366c-ba41-4826-9622-8cda6d6e3b91",
+      "prefLabel_fr": "employé au courrier/employée au courrier",
+      "iscoCode": "4412",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Organiser, planifier et superviser la réception, le tri et la distribution du courrier, des colis"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/afd49651-9119-4327-91fc-844a6dda1254",
+      "prefLabel_fr": "gestion des conflits",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Gérer un conflit ; techniques de gestion des conflits",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Outils de bureautique et outils digitaux SIDO, IPS, applications O365",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/281a0cb1-4e12-46f4-ba4a-2746cba36e78",
+      "prefLabel_fr": "coordonner des équipes",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Contrôler, prioriser, coordonner ; coordonner avec les autres services",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d7e3b0c-3995-4953-816d-cf3c5e9ffe34",
+      "prefLabel_fr": "respecter les procédures opérationnelles standard",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Modes opératoires et procédures en vigueur au sein de l'établissement",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/198b614d-a9af-46f5-b3fd-2672b401dd8e",
+      "prefLabel_fr": "hygiène et sécurité sur le lieu de travail",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Règles d'hygiène, sécurité, risques animaliers et conditions de travail",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5a927fa0-462e-4d54-ae12-97fd6ca45762",
+      "prefLabel_fr": "pratiquer le self-control",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtrise de soi",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5e9e6dea-23d9-46ba-b8ea-749319b48994",
+      "prefLabel_fr": "présider une réunion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Animer une réunion",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+      "prefLabel_fr": "gérer une équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Manager, accompagner une personne, un groupe ; encadrer les membres de l'équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7",
+      "prefLabel_fr": "assumer ses responsabilités",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Sens des responsabilités",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/76f22707-8d30-453f-9eb7-3376e2960311",
+      "prefLabel_fr": "gérer le courrier",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Assurer une gestion efficace des flux de courrier entrant et sortant",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e1f2f22f-3248-4eb2-83a6-c6f7c4437c5c",
+      "prefLabel_fr": "gérer les colis et livraisons",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.83,
+      "evidence": "Superviser la réception, le tri et la distribution du courrier, des colis",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e49f4158-9d4c-425d-bf32-dfe89b19840a",
+      "prefLabel_fr": "planifier",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Organiser les plannings de travail et assurer une répartition équitable des tâches",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/df1265b9-81fd-4a40-a746-f0442ffbf7ef",
+      "prefLabel_fr": "distribuer le courrier",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.78,
+      "evidence": "Maîtriser deux tournées de distribution afin de pouvoir renforcer l'équipe",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Capacité à communiquer ; techniques de communication et d'information",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17",
+      "prefLabel_fr": "analyser les exigences des entreprises",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.76,
+      "evidence": "Analyser un besoin, un contexte, une problématique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ecf7869e-7d87-478d-9d80-edfdcd39ec52",
+      "prefLabel_fr": "gérer les situations de soins d’urgence",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Gérer une situation de crise, d'urgence ou dangereuse",
+      "source_field": "skills"
+    }
+  ]
+}
