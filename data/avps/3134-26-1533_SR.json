@@ -1,0 +1,175 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre technique ou technicien principal",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "AGENCE COMPTABLE",
+    "nbAgentsEncadres": 5,
+    "superieurHierarchique": "Chef de Section Accès",
+    "placeOrganigramme": "N-4 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Section Accès",
+      "CERT",
+      "Direction des télécommunications"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B, Habilitation électrique br"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Astreintes hors heures ouvrées, Travaux insalubres ou dangereux, Horaires spéciaux (travail hors heures ouvrées), Déplacement principalement sur Nouméa et périphérie, Travaux en hauteur"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériels fournis",
+        "value": "Equipements de protection individuels (epi), Habillement, Téléphone mobile d'exploitation"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "Indemnité pour travaux insalubres ou dangereux (6 points INM), Indemnité ponctuelle pour travaux sur pylône de plus de 10 mètres, Indemnité hiérarchique de chef de cellule"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956104.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Planifier/organiser l'activité, rendre compte de l'exploitation, la supervision et la maintenance des équipements et systèmes des réseaux sous sa responsabilité. Développer les niveaux de maîtrise des différentes fonctions au sein de son unité, inspirer, imposer et accompagner les comportements adéquats.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1533/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef de cellule Radio - CERT",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/logo.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "41.35.50",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-10-16",
+  "directApply": true,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Maîtriser les techniques et les équipements de commutation numérique et du réseau radio",
+      "Avoir de bonnes connaissances des réseaux de télécommunication et IP",
+      "Exploiter les systèmes d'exploitation Windows, Unix, Linux et les outils bureautiques",
+      "Parler la langue anglaise",
+      "Connaître et utiliser les systèmes d'information de l'OPT-NC"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public de Nouvelle-Calédonie.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "AGENCE COMPTABLE"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/logo.png"
+  },
+  "incentiveCompensation": "Indemnité pour travaux insalubres ou dangereux (6 points INM), Indemnité ponctuelle pour travaux sur pylône de plus de 10 mètres, Indemnité hiérarchique de chef de cellule",
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Centre d'Exploitation des Réseaux Télécom (CERT)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "205 rue Jacques IEKAWE PK5",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Télécommunications",
+    "Pilotage"
+  ],
+  "physicalRequirement": "Travaux en hauteur, travaux insalubres ou dangereux",
+  "qualifications": "Permis B, Habilitation électrique br",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Technicien d'exploitation des réseaux et services des télécommunications",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Administration de réseaux et services de télécommunications"
+    },
+    "code_metier": "OP027",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/telecommunications/op027/"
+  },
+  "responsibilities": [
+    "Piloter, exploiter et maintenir les réseaux du domaine radio et en être le référent",
+    "Analyser l'activité et les besoins, proposer un dispositif permettant d'atteindre les objectifs d'exploitation, de supervision et de maintenance des équipements et systèmes des réseaux sous sa responsabilité",
+    "Organiser le travail, suivre les charges et les conditions de réalisation",
+    "Contrôler et piloter la bonne compréhension et application par les équipes de toutes les directives et instructions de travail, guides et procédures ayant attrait soit au métier confié soit au politiques internes d'amélioration continue et de maîtrise des risques",
+    "Exploiter, maintenir les équipements et garantir les meilleurs efforts en vue de réduire les durées d'indisponibilité",
+    "Proposer toute amélioration de méthode ou de moyens pouvant être utile à l'optimisation de son activité et au service client",
+    "Aider les équipes terrain à qualifier et à analyser les causes de dysfonctionnement et mettre en œuvre les opérations nécessaires au rétablissement du service",
+    "Accompagner les équipes sur le terrain",
+    "Contrôler les travaux internes ou sous-traités",
+    "Rendre compte de l'activité sur tous les volets, l'analyser et en proposer à sa hiérarchie les enseignements / recommandations",
+    "Apporter une contribution personnelle sur les sujets d'évolution, transformation et amélioration",
+    "Assurer une entraide avec les autres équipes en cas de nécessité ou de situation de crise",
+    "Assurer l'intérim du chef de section en cas de nécessité",
+    "Assurer périodiquement l'astreinte pour les services relevant des domaines du Centre",
+    "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Manager",
+    "Transmettre un savoir, une technique, une compétence",
+    "Synthétiser des informations, des données, un document",
+    "Prioriser",
+    "Organiser une activité, une réunion, un événement",
+    "Piloter un prestataire",
+    "Rigueur",
+    "Esprit d'initiative",
+    "Autonomie",
+    "Faire preuve de leadership",
+    "Aisance relationnelle",
+    "Esprit d'équipe",
+    "Faculté d'adaptation",
+    "Sens des responsabilités",
+    "Sens du service public"
+  ],
+  "specialCommitments": "Astreintes hors heures ouvrées, Horaires spéciaux (travail hors heures ouvrées)",
+  "title": "Chef de cellule Radio - CERT",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-06",
+  "workHours": "Horaires spéciaux (travail hors heures ouvrées)",
+  "dossier": "dt"
+}
