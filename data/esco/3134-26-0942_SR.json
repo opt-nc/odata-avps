@@ -1,0 +1,164 @@
+{
+  "identifier": "3134-26-0942/SR",
+  "source_file": "data/avps/3134-26-0942_SR.json",
+  "source_sha256": "b933a6dac49832f9479054a1b25c5bc79d179544f4724227253af073d66605d9",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/6a6e174e-cffa-49a9-9f2f-aa39c81cdee5",
+      "prefLabel_fr": "guichetier en bureau de poste/guichetière en bureau de poste",
+      "iscoCode": "4211",
+      "matchType": "exact",
+      "confidence": 0.94,
+      "evidence": "Chargé de contact clientèle : accueillir et conseiller les clients, vendre les produits et services OPT, traiter courrier et colis, tenir une caisse"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/2ff9e53c-6e7f-42af-8d71-b5dd7f283089",
+      "prefLabel_fr": "employé de banque/employée de banque",
+      "iscoCode": "4211",
+      "matchType": "broad",
+      "confidence": 0.58,
+      "evidence": "Réaliser les opérations courantes incluant les demandes financières et la gestion de caisse"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3982571a-e9ce-442a-a4a0-fdfc97727091",
+      "prefLabel_fr": "tenir une caisse",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Manipuler du numéraire, tenir une caisse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/dc9a236c-c640-43c3-812f-269403591edb",
+      "prefLabel_fr": "gestion de la relation client",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Gérer une relation client",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d’initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4",
+      "prefLabel_fr": "conseiller les clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.88,
+      "evidence": "Gérer une relation client ; accueillir et conseiller les clients",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Outils de bureautique, applications informatiques et logiciels de guichet",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/26a6e6d2-1c9a-4d7e-8c04-5ba16d1f53da",
+      "prefLabel_fr": "accueillir les clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Accueillir une personne, un groupe, du public",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5a927fa0-462e-4d54-ae12-97fd6ca45762",
+      "prefLabel_fr": "pratiquer le self-control",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Maîtrise de soi",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/756ae350-9e1f-4cb9-9c27-6bd99806dadc",
+      "prefLabel_fr": "techniques de promotion des ventes",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Techniques de vente",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0eb05180-6927-4c35-b898-176e00d0488c",
+      "prefLabel_fr": "vendre des services",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Commercialiser les produits et services de l’OPT-NC, apporter du conseil",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/29a50780-f81b-429c-b410-7f23a492e19d",
+      "prefLabel_fr": "vendre des produits",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Vendre les produits et services adaptés à leur besoin",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4",
+      "prefLabel_fr": "s'adapter au changement",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Faculté d’adaptation",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d7e3b0c-3995-4953-816d-cf3c5e9ffe34",
+      "prefLabel_fr": "respecter les procédures opérationnelles standard",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Mettre en œuvre une règle, une norme, une procédure, un protocole",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Communiquer",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f780a6ad-b01e-4c35-9746-af8fc0c5ad06",
+      "prefLabel_fr": "appliquer la gestion de crises",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Gérer une situation de crise, d’urgence ou dangereuse",
+      "source_field": "skills"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "identifier": "3134-26-0940/SR",
+  "source_file": "data/avps/3134-26-0940_SR.json",
+  "source_sha256": "f83466ba309f0d2972045f68526cbefea05e991515f3954836c2f92d949d1a10",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/2c9939ef-ebab-4111-8f27-605ae8782791",
+      "prefLabel_fr": "gestionnaire de contrats",
+      "iscoCode": "2619",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Gestionnaire technique de contrat de service et maintenance : veiller à la bonne exécution, au pilotage et au contrôle des contrats"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/615920c5-4f63-4eb3-8b60-afaaed3ab1ff",
+      "prefLabel_fr": "ingénieur maintenance/ingénieure maintenance",
+      "iscoCode": "2141",
+      "matchType": "broad",
+      "confidence": 0.6,
+      "evidence": "Coordination des opérations de maintenance préventive, curative et corrective des parcs immobiliers"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/880c54f9-866e-4f37-b5fa-25ef8a7d49b6",
+      "prefLabel_fr": "techniques comptables",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtriser les techniques et procédures comptables",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/9b862976-aa05-4bde-8ed6-8f39790edd0f",
+      "prefLabel_fr": "législation en matière de marchés publics",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Technique des marchés publics",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8dcbcabe-09f7-4d11-940d-125af57bbc40",
+      "prefLabel_fr": "suivre des indicateurs clés de performance",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Suivre et analyser les indicateurs de pilotage d’activité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Rigueur, discrétion, méthode et sens de l’organisation",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Autonomie et esprit d’initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/fb40d2c6-fe3c-4e49-9289-49e98900b315",
+      "prefLabel_fr": "contrôler la conformité aux règles et à la législation en matière de maintenance",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Contrôler l’application de la réglementation et des règles internes",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/234d1c8f-c921-483e-9a6e-4fbfc14946dc",
+      "prefLabel_fr": "gérer des financements publics",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Gérer des deniers publics",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a9dc9e40-14a6-4899-93ec-29d5c79c2ebd",
+      "prefLabel_fr": "gérer la planification des marchés publics",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Participer à la préparation et à la passation des marchés publics",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f715be1d-5fc4-49d3-82a5-0b8090d12849",
+      "prefLabel_fr": "synthétiser des informations",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Rédiger, synthétiser et s’exprimer clairement",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/445b65c5-5b16-4f66-94ce-f2a7f49f9ee7",
+      "prefLabel_fr": "gérer des procédures d’urgence",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Savoir prioriser, gérer et hiérarchiser les urgences et les échéances",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/adc6dc11-3376-467b-96c5-9b0a21edc869",
+      "prefLabel_fr": "résoudre les problèmes",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Assurer une maintenance, contrôler, anticiper, résoudre un problème",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+      "prefLabel_fr": "service clients",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Sens du service client et des responsabilités",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Très bon relationnel, bonne communication et travail d’équipe",
+      "source_field": "skills"
+    }
+  ]
+}

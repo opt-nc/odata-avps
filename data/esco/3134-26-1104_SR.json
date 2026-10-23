@@ -1,0 +1,155 @@
+{
+  "identifier": "3134-26-1104/SR",
+  "source_file": "data/avps/3134-26-1104_SR.json",
+  "source_sha256": "b4b5147fceb4d5522a8a838acb322a0586c1d647ab0cbe7b17071ff3e4a685cc",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/13d1b2b4-99dd-44da-9734-c9f74bae18f7",
+      "prefLabel_fr": "représentant du service clients/représentante du service clients",
+      "iscoCode": "4225",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Chargé de contact clientèle : accueillir et conseiller les clients, vendre les produits et services adaptés à leur besoin"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/d96de969-d43d-4082-8559-7fc35484a217",
+      "prefLabel_fr": "chargé de clientèle banque/chargée de clientèle banque",
+      "iscoCode": "2412",
+      "matchType": "broad",
+      "confidence": 0.62,
+      "evidence": "Réaliser les opérations courantes ... gestion des demandes financières ; gestion de caisse"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3982571a-e9ce-442a-a4a0-fdfc97727091",
+      "prefLabel_fr": "tenir une caisse",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.94,
+      "evidence": "Manipuler du numéraire, tenir une caisse ; opérations de gestion de caisse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/dc9a236c-c640-43c3-812f-269403591edb",
+      "prefLabel_fr": "gestion de la relation client",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Gérer une relation client",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Communiquer",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/26a6e6d2-1c9a-4d7e-8c04-5ba16d1f53da",
+      "prefLabel_fr": "accueillir les clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Accueillir une personne, un groupe, du public",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5a927fa0-462e-4d54-ae12-97fd6ca45762",
+      "prefLabel_fr": "pratiquer le self-control",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtrise de soi",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Outils de bureautique, applications informatiques et logiciels de guichet",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0c0488b3-fca5-4deb-865b-8dc605c3d909",
+      "prefLabel_fr": "argumentaire de vente",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Techniques de vente",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4",
+      "prefLabel_fr": "conseiller les clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Accueillir et conseiller les clients",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/756ae350-9e1f-4cb9-9c27-6bd99806dadc",
+      "prefLabel_fr": "techniques de promotion des ventes",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Techniques de vente ; vendre les produits et services adaptés",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/df5e3d02-9f0f-44ee-91c2-85c62f161868",
+      "prefLabel_fr": "promouvoir des idées, des produits ou des services",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Promouvoir les dispositifs de vente multi canal ; commercialiser les produits et services de l'OPT-NC",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/1dae8445-12e5-423a-bb26-824010e299b9",
+      "prefLabel_fr": "assurer le respect des exigences légales",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Garantir la conformité des opérations dans le respect des règles, process et procédures",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f632251a-4078-4546-b19f-7ef528d08325",
+      "prefLabel_fr": "utiliser des outils informatiques",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Outils de bureautique, applications informatiques et logiciels de guichet",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "identifier": "3134-26-1266/SR",
+  "source_file": "data/avps/3134-26-1266_SR.json",
+  "source_sha256": "fcdf1b60ac5cb731d0fc4c26c154513e1d6811ddaeadeac57fdb6d85ae780264",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/1c36dd08-f6a7-43f2-a889-beebedb71c25",
+      "prefLabel_fr": "ingénieur équipement/ingénieure équipement",
+      "iscoCode": "2144",
+      "matchType": "close",
+      "confidence": 0.76,
+      "evidence": "Exploitation, entretien et maintenance des systèmes de supervision, ainsi que des parcs mobiliers et immobiliers ; garantir la disponibilité des équipements"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/615920c5-4f63-4eb3-8b60-afaaed3ab1ff",
+      "prefLabel_fr": "ingénieur maintenance/ingénieure maintenance",
+      "iscoCode": "2141",
+      "matchType": "close",
+      "confidence": 0.74,
+      "evidence": "Organiser les programmes de maintenance préventive et garantir le maintien en condition opérationnelle des infrastructures"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6cb9c23b-e3bc-4917-b588-26c4cef9d920",
+      "prefLabel_fr": "opérations de maintenance",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Méthodes d’ingénierie d’entretien et de maintenance ; modes opératoires et processus de maintenance",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cdb66bd3-e356-45a4-888b-6d1f69cd30a7",
+      "prefLabel_fr": "planifier des travaux de maintenance dans un bâtiment",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Organise les programmes de maintenance préventive et définit les gammes opératoires",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf9879fa-f1fc-4f17-8dcb-ece29ea61682",
+      "prefLabel_fr": "rendre compte de l’activité professionnelle",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Rendre compte auprès de sa hiérarchie ; reporting de l’activité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/9b862976-aa05-4bde-8ed6-8f39790edd0f",
+      "prefLabel_fr": "législation en matière de marchés publics",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Règles concernant les marchés publics et suivi de l’exécution des contrats de maintenance",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/281a0cb1-4e12-46f4-ba4a-2746cba36e78",
+      "prefLabel_fr": "coordonner des équipes",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.83,
+      "evidence": "Anime, coordonne et supervise les activités de la cellule",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.83,
+      "evidence": "Excellent relationnel et très bonne communication",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/afbc401c-cad8-43b6-8d61-775d2c7b58d5",
+      "prefLabel_fr": "préparer des documents de conformité",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Contrôler la conformité des documents administratifs et financiers",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5e9e6dea-23d9-46ba-b8ea-749319b48994",
+      "prefLabel_fr": "présider une réunion",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Animer des réunions",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/887a5c70-5524-4c7d-96cc-6cdcf1c5309f",
+      "prefLabel_fr": "inspecter les installations techniques de bâtiments",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Technique du bâtiment (lots techniques, second œuvre, sécurité des ERP)",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/75e48971-3242-4ea5-a1ba-4deec48ad41c",
+      "prefLabel_fr": "gérer le travail d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Manager une équipe, fixer des objectifs",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+      "prefLabel_fr": "analyse de données",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Analyser la donnée technique de maintenance ; analyse des données d’exploitation",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d62d2b4c-a6f8-439e-8a1b-4f29ab5f2c47",
+      "prefLabel_fr": "prendre des décisions",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Proposer et fiabiliser des solutions, prendre des décisions dans l’intérêt de l’OPT-NC",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d433c82e-fa7a-492e-a8fd-eee7b39e4c48",
+      "prefLabel_fr": "règles de sécurité",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Règles de sécurité relevant des ERP et ERT, hygiène, prévention des risques et habilitations",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c54b03a9-fe20-42af-9e8a-f8896af4a4f9",
+      "prefLabel_fr": "ajuster ses priorités",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Sens développé de l’organisation et capacité à hiérarchiser les priorités",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/74688c5d-2af1-4f7a-9d1c-00e808eaa1e6",
+      "prefLabel_fr": "principes budgétaires",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Procédures budgétaires et comptabilité publique",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

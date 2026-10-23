@@ -1,0 +1,174 @@
+{
+  "identifier": "3134-26-1315/SR",
+  "source_file": "data/avps/3134-26-1315_SR.json",
+  "source_sha256": "9c09dc970f018331bf8b2d7680efde9eb358789019abd5cd61851a34eb6e214e",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/e297ec12-4712-40a4-ad98-ba004cacb205",
+      "prefLabel_fr": "directeur des données/directrice des données",
+      "iscoCode": "1330",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Responsable des données (CDO) : définit et met en œuvre la stratégie de gestion et de valorisation des données"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+      "prefLabel_fr": "gérer les données",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Définir et mettre en œuvre la stratégie de gestion et de valorisation des données ; piloter le cycle de vie des données",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/713fb616-118e-40bc-9366-4a69879a49d5",
+      "prefLabel_fr": "mettre en œuvre des processus de qualité des données",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Piloter la qualité des données ; garantir la qualité, la cohérence, la traçabilité et la conformité des données",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/be20d05c-f6b4-4580-9fcf-f00f4baab562",
+      "prefLabel_fr": "prendre des décisions fondées sur les données",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Valoriser les données pour l’aide à la décision",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cc7370dd-69fa-4c67-a96f-d4d135d38700",
+      "prefLabel_fr": "évaluation de la qualité de données",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Auditer les processus manipulant des données et veiller à la mise en œuvre des actions correctives",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4d85b881-e490-4b4c-897a-2faa4ef53956",
+      "prefLabel_fr": "gérer l’architecture des données TIC",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Bonne connaissance des architectures logicielles, notamment pour les stockages, partages et flux de données",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a7f0fbe0-c546-4f30-8e41-34a58c64567e",
+      "prefLabel_fr": "stockage de données",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Architectures logicielles, notamment pour les stockages, partages et flux de données",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9",
+      "prefLabel_fr": "méthodes de gestion de projets TIC",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Piloter des projets de transformation par la donnée ; maîtrise du management de projets",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+      "prefLabel_fr": "principes de leadership",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Leadership ; animer des instances et des réseaux d’acteurs",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Force de proposition et esprit d’initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/54c9c155-9293-4329-8ed2-2e76e8b519d4",
+      "prefLabel_fr": "définir les critères de qualité des données",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Maîtrise des principes et méthodes de la gouvernance des données ; piloter la qualité des données",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/48db96bf-3314-45c6-bad8-fdb6e20e5639",
+      "prefLabel_fr": "data ingineering",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Gestion et valorisation des données ; DWH, DLH ; projets de transformation par la donnée",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/adcca622-b933-4ba3-bc43-bf371879edc3",
+      "prefLabel_fr": "principes de sécurité des données",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Garantir la sécurité, la traçabilité et la conformité des données",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6f2721bf-40ad-4f5d-8774-a478d1d6f5a6",
+      "prefLabel_fr": "travailler par équipes",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Capacité à travailler en transversalité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Adaptabilité et curiosité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e9575f7f-053a-439e-8074-f93df3334e92",
+      "prefLabel_fr": "éthique des données",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Contribuer à la gouvernance de l’intelligence artificielle ; cadre réglementaire applicable aux données",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2",
+      "prefLabel_fr": "principes de l’intelligence artificielle",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Connaissance des principes de gouvernance de l’IA",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/626326d5-1cee-4729-9381-3debc87ddac4",
+      "prefLabel_fr": "gouvernance d'une entreprise",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.65,
+      "evidence": "Définir et déployer une gouvernance des données ; animer la gouvernance opérationnelle des données",
+      "source_field": "skills"
+    }
+  ]
+}

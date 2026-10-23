@@ -1,0 +1,164 @@
+{
+  "identifier": "3134-26-1380/SR",
+  "source_file": "data/avps/3134-26-1380_SR.json",
+  "source_sha256": "3482e526e57706a62579328370378ca256e3881539815b351e54532b1350d72a",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/bcc2c1db-f969-4355-bebf-4878ff6c2a94",
+      "prefLabel_fr": "responsable service clients",
+      "iscoCode": "1349",
+      "matchType": "close",
+      "confidence": 0.85,
+      "evidence": "Chef de cellule guichet : organiser le travail de la cellule pour garantir la qualité de service et la satisfaction des clients"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/2eac08c2-a81a-46fc-8d75-eb0e0f3e0f6d",
+      "prefLabel_fr": "directeur ventes et relations clientèle/directrice ventes et relations clientèle",
+      "iscoCode": "1420",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Coordonnateur de l’exploitation commerciale ; stimuler l’impulsion commerciale de son équipe"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/3982571a-e9ce-442a-a4a0-fdfc97727091",
+      "prefLabel_fr": "tenir une caisse",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Manipuler du numéraire et tenir une caisse ; conservation des fonds et valeurs",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f43ee9cc-7284-406f-b23f-3eedb0581141",
+      "prefLabel_fr": "déterminer les besoins de clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Ecouter les besoins et les attentes de son interlocuteur client et externe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cace7a77-38b7-4cdf-8171-e17692bef5f6",
+      "prefLabel_fr": "répondre aux demandes des clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Répondre à la demande du client et chercher à le satisfaire au mieux",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5a927fa0-462e-4d54-ae12-97fd6ca45762",
+      "prefLabel_fr": "pratiquer le self-control",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Avoir une maîtrise de soi en toute circonstance",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Capacité d’initiative, d’anticipation et de dynamisme",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtriser les outils de bureautique, les applications informatiques nécessaires au métier",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Communiquer et expliquer les actions engagées ; affirmer ses décisions",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8330c86e-63cf-4be6-849f-4f77628cc5c5",
+      "prefLabel_fr": "satisfaire les clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Garantir la qualité de service et la satisfaction des clients",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Bonne aptitude au management et à l’esprit d’équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Intégrité et discrétion professionnelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bdcf429c-5ccf-4c3d-bb61-4c987573a35e",
+      "prefLabel_fr": "faire preuve d’esprit d’entreprise",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Esprit d’entreprise",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5bbaa0e6-0fd7-4df2-9db7-34f78b40dc34",
+      "prefLabel_fr": "gestion du marketing",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Savoir stimuler l’impulsion commerciale de son équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+      "prefLabel_fr": "statistiques",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.8,
+      "evidence": "Renseigner et mettre à jour des statistiques ; reporting et analyse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/704fda1b-cd0a-40fe-99fc-0a24250a2010",
+      "prefLabel_fr": "gérer le public",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Bon relationnel avec le public et le personnel",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f453b1a6-c7db-4d9d-9ba3-47c45159bfe3",
+      "prefLabel_fr": "assurer la conformité des produits à la réglementation",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Maîtriser la règlementation des produits et services commercialisés par l’OPT",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

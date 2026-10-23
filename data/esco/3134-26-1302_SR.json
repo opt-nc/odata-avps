@@ -1,0 +1,155 @@
+{
+  "identifier": "3134-26-1302/SR",
+  "source_file": "data/avps/3134-26-1302_SR.json",
+  "source_sha256": "1270340cea1e6c57843fa5b2b0c691281bb7991ea1e8c450ef0c9de9884eae92",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/1619d7f3-7d95-407c-a20e-47745bfcde73",
+      "prefLabel_fr": "délégué à la protection des données/déléguée à la protection des données",
+      "iscoCode": "2619",
+      "matchType": "close",
+      "confidence": 0.9,
+      "evidence": "Chargé(e) d’études protection des données : contribue au pilotage opérationnel du dispositif RGPD et accompagne les directions métiers"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/5d601b40-7e0e-404e-bbff-bb98e147437c",
+      "prefLabel_fr": "chargé de mission affaires juridiques/chargée de mission affaires juridiques",
+      "iscoCode": "2422",
+      "matchType": "broad",
+      "confidence": 0.65,
+      "evidence": "RelevantOccupation : Chargé d’études juridiques ; rédiger des notes, avis et procédures internes"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5",
+      "prefLabel_fr": "protection des données",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Connaissance ou intérêt marqué pour le droit de la protection des données personnelles",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d3e9b00a-0891-4fa8-836d-8240ec3d2758",
+      "prefLabel_fr": "RGPD",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.95,
+      "evidence": "Dispositif RGPD ; documentation RGPD ; demandes d’exercice des droits",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/8d202e22-85e9-47b1-a1e0-3296d17244cd",
+      "prefLabel_fr": "respecter la confidentialité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Sens aigu de la confidentialité et de la déontologie",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Autonomie, esprit d’initiative et sens du service public",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/097c6a36-f031-4d3e-b5c1-62d6ffcb430b",
+      "prefLabel_fr": "respecter les principes de protection des données",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Vérifier la conformité des traitements ; contribuer à l’élaboration et à l’actualisation de la documentation RGPD",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Connaissance des outils bureautiques et de gestion documentaire",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Curiosité intellectuelle et goût pour la formation continue",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/91dd8397-063d-499c-83b9-0603a10d94ac",
+      "prefLabel_fr": "techniques d'écriture",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Techniques de rédaction claire, structurée et opérationnelle (notes, avis, procédures)",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/896563fc-6255-4419-89c2-ffed30159ad6",
+      "prefLabel_fr": "mener un entretien de recherche",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Capacité à conduire des entretiens de recueil d’information auprès d’interlocuteurs variés",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a8585efe-4011-47b2-9aed-cd01bd3652c0",
+      "prefLabel_fr": "recherche juridique",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Formation juridique de niveau bac+3 minimum ; assurer une veille en matière de protection des données",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c881ddd2-9c0e-4743-bd24-36be650493dd",
+      "prefLabel_fr": "gérer plusieurs projets à la fois",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Capacité à gérer plusieurs dossiers en parallèle dans le respect des délais",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a117f32c-662b-4dd9-b739-1230dd04cb60",
+      "prefLabel_fr": "pédagogie",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Qualités relationnelles, sens de la pédagogie ; concevoir et animer des actions de sensibilisation",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/86d2e2ea-1ba2-4aa6-b465-8a1f9abc81b8",
+      "prefLabel_fr": "appliquer des politiques de sécurité de l’information",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.75,
+      "evidence": "Notions en matière de sécurité des systèmes d’information ; renforcer les dispositifs de sécurité",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88ec9e5e-8798-475d-81a3-dd5ea7e96215",
+      "prefLabel_fr": "techniques d’analyse qualitative des risques",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.65,
+      "evidence": "Techniques d’analyse, de qualification des situations ; contribuer à l’évaluation et à la maîtrise des risques liés aux traitements de données",
+      "source_field": "skills"
+    }
+  ]
+}

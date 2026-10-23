@@ -1,0 +1,182 @@
+{
+  "identifier": "3134-26-1396/SR",
+  "source_file": "data/avps/3134-26-1396_SR.json",
+  "source_sha256": "210e6b4d2ed43741845fab0b5f471c5b4f209e1251b97807253b290f4ff8557a",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/89b85c45-ddc7-4fe1-be5a-d3db2be11f3b",
+      "prefLabel_fr": "chargé de compte TIC/chargée de compte TIC",
+      "iscoCode": "2434",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Chargé d'affaires Télécom Grands Comptes : relation B to B, analyse des besoins clients et vente de solutions télécoms"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/6e591f17-65c1-4a24-af2a-ca7862d4625e",
+      "prefLabel_fr": "attaché technico-commercial en équipements électroniques et de télécommunications/attachée technico-commerciale en équipements électroniques et de télécommunications",
+      "iscoCode": "2434",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Conseiller et vendre aux clients les solutions télécoms correspondant à leurs besoins"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d97bf55-6fb6-4795-8282-3ef915ae0bb8",
+      "prefLabel_fr": "prospecter de nouveaux clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Prospecter une clientèle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/dc9a236c-c640-43c3-812f-269403591edb",
+      "prefLabel_fr": "gestion de la relation client",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.92,
+      "evidence": "Gérer une relation client",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+      "prefLabel_fr": "entretenir des relations avec des clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Fidéliser les clients B2B par une grande proximité et réactivité",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ac6ff889-328b-46ea-a8ee-e196443b2447",
+      "prefLabel_fr": "aider des clients de ses conseils",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Conseiller et vendre aux clients les solutions correspondant à leurs besoins",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f715be1d-5fc4-49d3-82a5-0b8090d12849",
+      "prefLabel_fr": "synthétiser des informations",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Synthétiser les informations",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5fa6cd2f-9bab-4afa-a184-2d2f1401b770",
+      "prefLabel_fr": "rédiger des comptes rendus de réunion",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Rédiger des comptes rendus",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f632251a-4078-4546-b19f-7ef528d08325",
+      "prefLabel_fr": "utiliser des outils informatiques",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Outils informatiques et suite MS 365",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/be3f635b-b400-4eb3-b4cc-c44a34f26eae",
+      "prefLabel_fr": "orthographe",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Techniques rédactionnelles et maîtrise de l'orthographe",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0c0488b3-fca5-4deb-865b-8dc605c3d909",
+      "prefLabel_fr": "argumentaire de vente",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Argumenter",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/756ae350-9e1f-4cb9-9c27-6bd99806dadc",
+      "prefLabel_fr": "techniques de promotion des ventes",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Techniques de vente : prospection, découverte du besoin, présentation produits, négociation, suivi du client",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ccb0809c-d045-4621-82f7-192b9e89a4f2",
+      "prefLabel_fr": "assurer le suivi des clients",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Suivi du client",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf9879fa-f1fc-4f17-8dcb-ece29ea61682",
+      "prefLabel_fr": "rendre compte de l’activité professionnelle",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Rendre compte",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17",
+      "prefLabel_fr": "analyser les exigences des entreprises",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Écouter, identifier et analyser les besoins émis",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/df5e3d02-9f0f-44ee-91c2-85c62f161868",
+      "prefLabel_fr": "promouvoir des idées, des produits ou des services",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Promouvoir les offres OPT par une information régulière",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "S'exprimer à l'oral ; capacité à communiquer",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c753a3b5-d5cc-406d-adfe-3372bb267f4b",
+      "prefLabel_fr": "tenir des dossiers de clients",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Instruire un dossier",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/88f2ee42-01c8-4390-a108-e733cecaaa77",
+      "prefLabel_fr": "agir avec discrétion",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Faire preuve de discrétion",
+      "source_field": "skills"
+    }
+  ]
+}

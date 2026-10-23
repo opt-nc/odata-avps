@@ -1,0 +1,174 @@
+{
+  "identifier": "3134-26-0712/SR",
+  "source_file": "data/avps/3134-26-0712_SR.json",
+  "source_sha256": "9952887e9ff7d378e10b16be77f27145e89658aa9c0916ca32d03c923c4da3c0",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/544cd9cf-e2ee-4ac0-8a02-7147af6b97d7",
+      "prefLabel_fr": "responsable commercial/responsable commerciale",
+      "iscoCode": "1213",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Chef de centre - Agence Entreprises : appliquer la stratégie commerciale, organiser les moyens, atteindre les objectifs"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/bcc2c1db-f969-4355-bebf-4878ff6c2a94",
+      "prefLabel_fr": "responsable service clients",
+      "iscoCode": "1349",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Garantir la qualité de la relation client et accompagner les équipes dans la maîtrise des leviers commerciaux"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+      "prefLabel_fr": "gérer une équipe",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Manager ; développer les niveaux de maîtrise au sein de son unité",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7",
+      "prefLabel_fr": "assumer ses responsabilités",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Sens des responsabilités",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/0bfb44c7-c412-49ed-aab4-e33d0dd3b265",
+      "prefLabel_fr": "gérer des équipes de vente",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Techniques de management des ventes ; posture commerciale",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf9879fa-f1fc-4f17-8dcb-ece29ea61682",
+      "prefLabel_fr": "rendre compte de l’activité professionnelle",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Rendre compte de la mise en œuvre et des résultats obtenus",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Esprit de synthèse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/afd49651-9119-4327-91fc-844a6dda1254",
+      "prefLabel_fr": "gestion des conflits",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.86,
+      "evidence": "Techniques de gestion des conflits",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d433c82e-fa7a-492e-a8fd-eee7b39e4c48",
+      "prefLabel_fr": "règles de sécurité",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.85,
+      "evidence": "Règles d'hygiène et sécurité",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f632251a-4078-4546-b19f-7ef528d08325",
+      "prefLabel_fr": "utiliser des outils informatiques",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Outils informatiques, applications métiers et la suite MS 365",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4",
+      "prefLabel_fr": "s'adapter au changement",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Accompagner un changement ; conduire les changements nécessaires",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5e9e6dea-23d9-46ba-b8ea-749319b48994",
+      "prefLabel_fr": "présider une réunion",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Animer un groupe, une équipe, des réunions",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/4e0076f7-155d-4e2a-a058-39097de48420",
+      "prefLabel_fr": "transposer la stratégie en actions et objectifs",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Elaborer un plan d'action ; orientations stratégiques",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/dc9a236c-c640-43c3-812f-269403591edb",
+      "prefLabel_fr": "gestion de la relation client",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Garantir la qualité de la relation client",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+      "prefLabel_fr": "gestion des risques",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.8,
+      "evidence": "Maîtrise des risques, cartographie des risques, procédures et plan d’actions",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ecc18804-a466-40d9-98b4-fba5cd67dd4b",
+      "prefLabel_fr": "comptabilité",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Comptabilité publique",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Communiquer ; Capacité à communiquer",
+      "source_field": "skills"
+    }
+  ],
+  "comment": "Les candidats occupation initiaux étaient centrés sur des établissements scolaires/santé ; les deux occupations retenues proviennent de la recherche ESCO et correspondent mieux au pilotage commercial et service client."
+}

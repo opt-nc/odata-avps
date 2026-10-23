@@ -1,0 +1,155 @@
+{
+  "identifier": "3134-26-1008/SR",
+  "source_file": "data/avps/3134-26-1008_SR.json",
+  "source_sha256": "468776a8183d60900872a00a99cdf7b0e564477b1aa2325bbf9ee7dbcedf0c81",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/c418ed9a-132f-48cd-ae5c-dd375070ee0e",
+      "prefLabel_fr": "agent chargé du développement commercial",
+      "iscoCode": "2422",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Concevoir, développer et coordonner les partenariats internes et externes en appui aux objectifs stratégiques et de développement commercial"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/4791e217-d607-40d5-9f84-df1d0a071cbc",
+      "prefLabel_fr": "chargé de marketing/chargée de marketing",
+      "iscoCode": "2431",
+      "matchType": "broad",
+      "confidence": 0.62,
+      "evidence": "Valorisation des initiatives d'innovation, performance du réseau et développement commercial et numérique"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+      "prefLabel_fr": "communication",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Communiquer",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+      "prefLabel_fr": "gestion de projets",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Conduite et gestion de projet ; participer à la conception et au déploiement de projets",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/c29aa9d2-4da8-4bdd-831c-8d4a2fb51730",
+      "prefLabel_fr": "travailler de manière autonome",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Être autonome",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Curiosité intellectuelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/91dd8397-063d-499c-83b9-0603a10d94ac",
+      "prefLabel_fr": "techniques d'écriture",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Techniques de rédaction",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/d4cc5022-7801-4885-bcff-166552788d35",
+      "prefLabel_fr": "proposer des stratégies d’amélioration",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.84,
+      "evidence": "Proposer, analyser une problématique et présenter des préconisations",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17",
+      "prefLabel_fr": "analyser les exigences des entreprises",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Analyser un besoin",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f17f94f1-88cb-4815-873a-2a9639f10729",
+      "prefLabel_fr": "rédiger des documents de projet",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Contribuer à la conduite d'un projet, à l'élaboration d'une procédure ou d'un dispositif, à la rédaction d'un document",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/5436f06d-4cc0-42a6-8e5b-63b842cce03b",
+      "prefLabel_fr": "diffuser des informations générales sur l’entreprise",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Diffuser une information, une publication ; valoriser les partenariats",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/71152876-b629-4a99-b9ea-0f25a0d07e4e",
+      "prefLabel_fr": "négocier des contrats de vente",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Piloter la préparation, la négociation, la contractualisation et le suivi de sa bonne exécution",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/20e7c937-a5e5-4a27-bb87-ddda5826f777",
+      "prefLabel_fr": "assurer la liaison avec des partenaires culturels",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Identifier, développer, suivre et animer les partenariats avec les acteurs institutionnels, économiques, technologiques",
+      "source_field": "responsibilities"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/74688c5d-2af1-4f7a-9d1c-00e808eaa1e6",
+      "prefLabel_fr": "principes budgétaires",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Gestion budgétaire et comptable",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/947e6a15-5539-43e2-b62f-6a52fd57e0a0",
+      "prefLabel_fr": "droit de la consommation",
+      "skillType": "knowledge",
+      "matchType": "broad",
+      "confidence": 0.68,
+      "evidence": "Droit/Réglementation",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}

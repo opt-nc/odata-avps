@@ -1,0 +1,81 @@
+name: Annotations ESCO
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/avps/**"
+      - "data/esco/**"
+      - "scripts/esco/**"
+  pull_request:
+    paths:
+      - "data/avps/**"
+      - "data/esco/**"
+      - "scripts/esco/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache base ESCO DuckDB
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/esco
+          key: esco-duckdb-v1.0.1
+
+      - name: Installer les dépendances
+        run: pip install duckdb jsonschema
+
+      - name: Valider les annotations ESCO (schéma + URIs + fraîcheur + couverture)
+        id: validate
+        run: |
+          python scripts/esco/validate_annotations.py --coverage | tee validation.log
+
+      - name: Détecter les AVPs non annotés ou obsolètes
+        if: github.event_name != 'pull_request'
+        id: stale
+        run: |
+          MISSING=$(grep -c "⚠️" validation.log || true)
+          echo "missing=$MISSING" >> "$GITHUB_OUTPUT"
+
+      - name: Ouvrir une issue si des annotations manquent
+        if: github.event_name != 'pull_request' && steps.stale.outputs.missing != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const log = fs.readFileSync('validation.log', 'utf8');
+            const lines = log.split('\n').filter(l => l.includes('⚠️')).join('\n');
+            const title = '🏷️ Annotations ESCO manquantes ou obsolètes';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'esco'
+            });
+            const body = [
+              'Des AVPs sont sans annotation ESCO ou leur annotation est obsolète :',
+              '', '```', lines, '```', '',
+              'Relancer le pipeline d\'annotation (voir `data/esco/README.md`).'
+            ].join('\n');
+            const existing = issues.find(i => i.title === title);
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: existing.number, body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['esco']
+              });
+            }

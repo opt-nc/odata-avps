@@ -1,0 +1,164 @@
+{
+  "identifier": "3134-26-1159/SR",
+  "source_file": "data/avps/3134-26-1159_SR.json",
+  "source_sha256": "e8417a6342c9fbbec5c8901d60405291d06210b0682fef19c79f3278e132f245",
+  "esco_version": "v1.2.1",
+  "esco_db": "adriens/odata-esco v1.0.1",
+  "annotated_at": "2026-10-10",
+  "annotation_method": "llm/claude-fable-5 + candidats lexicaux esco.duckdb",
+  "occupations": [
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/fe0fa514-b48d-4a53-9757-a283c0baacf0",
+      "prefLabel_fr": "analyste d’étude en TIC",
+      "iscoCode": "2511",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Assistant fonctionnel SI Télécom : formaliser les besoins métiers, accompagner les équipes métiers dans l'utilisation des applications et processus"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/occupation/a6a0b60f-08da-4faa-bf54-942987efb471",
+      "prefLabel_fr": "analyste de système informatique",
+      "iscoCode": "2511",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Support fonctionnel SI, analyse des demandes utilisateur et contribution à une recette fonctionnelle"
+    }
+  ],
+  "skills": [
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/cf310cff-0d28-4dbc-9dbb-cc500a3196c2",
+      "prefLabel_fr": "logiciels de bureautique",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Maîtrise des outils bureautiques",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156",
+      "prefLabel_fr": "faire preuve de curiosité",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Curiosité intellectuelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+      "prefLabel_fr": "faire preuve d’initiative",
+      "skillType": "skill/competence",
+      "matchType": "exact",
+      "confidence": 0.9,
+      "evidence": "Esprit d'initiative",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/f1a56786-e6d7-4b2e-a39c-23e09024d473",
+      "prefLabel_fr": "concepts des télécommunications",
+      "skillType": "knowledge",
+      "matchType": "exact",
+      "confidence": 0.88,
+      "evidence": "Très bonne connaissance des produits et services télécoms",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+      "prefLabel_fr": "aider les utilisateurs de systèmes d'information",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.86,
+      "evidence": "Assurer le support fonctionnel SI, l'assistance aux utilisateurs internes",
+      "source_field": "description"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/91d06ad9-245e-4ecb-bd18-624eed884108",
+      "prefLabel_fr": "traiter des demandes",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Analyser et qualifier une demande utilisateur ; prioriser les demandes",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6d7e3b0c-3995-4953-816d-cf3c5e9ffe34",
+      "prefLabel_fr": "respecter les procédures opérationnelles standard",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Rédiger une expression de besoin, une procédure ou un mode opératoire",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/bf9879fa-f1fc-4f17-8dcb-ece29ea61682",
+      "prefLabel_fr": "rendre compte de l’activité professionnelle",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Rendre compte de manière claire et synthétique",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "prefLabel_fr": "construire un esprit d’équipe",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.82,
+      "evidence": "Esprit d'équipe",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/1de6b87b-2c7d-49aa-bcc0-3b2ef75f064f",
+      "prefLabel_fr": "résoudre des dysfonctionnements d’équipements",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Diagnostiquer un dysfonctionnement fonctionnel de premier niveau",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/05fc6f8d-639c-4329-a6de-dfdd800ed091",
+      "prefLabel_fr": "connaissance du client",
+      "skillType": "knowledge",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Processus de vente, de souscription, de gestion client, de paiement en ligne et/ou de support applicatif",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/6c06c0f6-3510-4ef3-ab51-b0bec7f209ba",
+      "prefLabel_fr": "rédiger des synthèses",
+      "skillType": "skill/competence",
+      "matchType": "close",
+      "confidence": 0.78,
+      "evidence": "Esprit de synthèse",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/ea412de3-9d7a-4943-8d8c-c6d3c7495d0e",
+      "prefLabel_fr": "exécuter un test d’intégration",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Contribuer à une recette fonctionnelle",
+      "source_field": "skills"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+      "prefLabel_fr": "concevoir un système d’information",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.72,
+      "evidence": "Très bonne connaissance des différents SI Télécoms",
+      "source_field": "educationRequirements.competencyRequired"
+    },
+    {
+      "escoUri": "http://data.europa.eu/esco/skill/a46c1df8-9885-4036-98d8-b225a8d13c19",
+      "prefLabel_fr": "vendre des produits de télécommunication",
+      "skillType": "skill/competence",
+      "matchType": "broad",
+      "confidence": 0.7,
+      "evidence": "Très bonne connaissance des produits et services télécoms",
+      "source_field": "educationRequirements.competencyRequired"
+    }
+  ]
+}
