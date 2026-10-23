@@ -1,0 +1,165 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre Technique",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "Centre de Supervision NOC (CSNO)",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de Centre de Supervision NOC",
+    "placeOrganigramme": "N-3 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "NOC",
+      "Sécurité",
+      "Architectes",
+      "Fournisseurs",
+      "Équipes systèmes",
+      "Équipes applicatives"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Possibilité de faire des astreintes, sollicitation en HNO pour gestion de crise. Ce poste s'inscrit dans une phase de création et de structuration d'une nouvelle équipe au sein de la Direction des télécommunications."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations et permis",
+        "value": "Permis de conduire B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956072.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Maintenir la disponibilité, la performance et la sécurité des réseaux informatiques la Direction des Télécommunications. Traiter les incidents et contribuer aux évolutions du socle technique.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1585/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Administrateur réseaux",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.75.01",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-10-23",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Bac+3",
+    "competencyRequired": [
+      "Connaissances des réseaux et services télécoms",
+      "Maîtriser les réseaux IP, le routage, la commutation, les VLAN, la virtualisation et le dépannage des flux",
+      "Connaître les principes de sécurisation et d’administration des équipements réseau",
+      "Maîtriser le cycle de gestion des vulnérabilités, de l’identification à la vérification du correctif",
+      "Connaître les méthodes d’exploitation : incidents, changements, supervision, MCO/MCS et retour arrière",
+      "Connaître les environnements télécoms : IP/MPLS, transport, accès, interconnexions et services critiques",
+      "Connaître les principes de continuité, reprise d’activité et cycle de vie des équipements",
+      "Connaissances en scripting Shell/Bash",
+      "Lecture de documentation technique en anglais"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public à caractère industriel et commercial.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Centre de Supervision NOC (CSNO)"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "2 ans d’expérience dans une activité similaire.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "CSNO (Centre de Supervision NOC)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 rue du Général Gallieni",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": [
+    "Télécommunications",
+    "Systèmes d'information"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis de conduire B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Ingénieur des réseaux et services des télécommunications",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Expertise réseaux et télécoms"
+    },
+    "code_metier": "OP026",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/telecommunications/op026/"
+  },
+  "responsibilities": [
+    "Conception, mise en œuvre, administration et maintenance des composants et de l’infrastructure réseau",
+    "Assurer les mises à jour, le patching, le durcissement (hardening) et le maintien en conditions opérationnelles et de sécurité",
+    "Diagnostiquer les incidents, participer aux changements et maintenir la documentation technique",
+    "Assurer la veille, la qualification et le traitement des vulnérabilités affectant les équipements du périmètre, puis vérifier l’application des correctifs ou mesures compensatoires",
+    "Définir et gérer les politiques de droits d’accès aux réseaux",
+    "Contribuer à l’amélioration continue de l’exploitation : initiatives visant à fiabiliser et automatiser les tâches récurrentes",
+    "Participer aux projets transverses, aux tests de continuité/reprise d'activité et à la veille technologique"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Concevoir, déployer et valider une évolution réseau, avec analyse d’impact et plan de retour arrière",
+    "Administrer et dépanner les équipements réseau en production et établir un diagnostic",
+    "Maintenir l’inventaire du parc et assurer le suivi des vulnérabilités",
+    "Travailler en coordination avec les équipes systèmes, sécurité et applicatives",
+    "Qualifier, corriger et tracer le traitement des vulnérabilités",
+    "Mettre en œuvre et contrôler les règles d’accès, les droits et les dérogations",
+    "Maintenir à jour les configurations, schémas, procédures et comptes rendus",
+    "Automatiser les contrôles et tâches réseau en garantissant tests et traçabilité",
+    "Analyser les causes d’incidents et contribuer à la fiabilisation et à la continuité d’activité",
+    "Collaborer avec le NOC, la sécurité, les architectes et les fournisseurs",
+    "Faire preuve de rigueur et de prudence avant toute intervention",
+    "Assumer ses responsabilités et assurer la traçabilité des actions et décisions",
+    "Garder calme et méthode lors des incidents et communiquer clairement",
+    "Coopérer efficacement et expliquer les enjeux techniques et de sécurité",
+    "Faire preuve de curiosité technique et contribuer à l’amélioration continue",
+    "Accompagner les collègues et favoriser le travail collectif"
+  ],
+  "specialCommitments": "Possibilité de faire des astreintes, sollicitation en HNO pour gestion de crise",
+  "title": "Administrateur réseaux",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-13",
+  "workHours": "Astreintes, sollicitation en HNO",
+  "dossier": "dt"
+}
