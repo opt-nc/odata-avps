@@ -4,7 +4,7 @@ Annotations faites à la main pour **mesurer** la qualité du rapprochement auto
 avec le référentiel européen [ESCO v1.2.1](https://esco.ec.europa.eu/fr) (professions et compétences),
 et comparer des pipelines ou des LLM entre eux sur les mêmes données.
 
-> 🚧 Annotation en cours : `"gold": null` signale une ligne pas encore annotée.
+> Version 1 : annotation terminée (100 exigences, 30 AVP).
 
 ## Fichiers
 
