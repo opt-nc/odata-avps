@@ -12,6 +12,7 @@ et comparer des pipelines ou des LLM entre eux sur les mêmes données.
 |---|---|
 | `skills.jsonl` | 100 exigences (`skills`, `competencyRequired`) → compétences ESCO |
 | `occupations.jsonl` | 70 AVP → professions ESCO (la totalité du run) |
+| `annotator2.jsonl` | passe indépendante d'un second annotateur sur 20 lignes du test (accord inter-annotateurs) |
 
 Champs communs :
 
@@ -86,6 +87,13 @@ Deux scores :
 
 Les annotations sont **proposées par un LLM (Claude) puis validées ou corrigées par un humain** connaissant
 les métiers de l'OPT-NC. Un second annotateur, sans voir les réponses, reprendra une vingtaine de lignes du test
-pour mesurer l'accord entre humains, qui donne le plafond réaliste des scores. Les lots o031-o070 ont été
-annotés par un second LLM (Claude Fable) avec relecture humaine. Le jeu est petit (100 exigences, 70 AVP) :
+pour mesurer l'accord entre annotateurs, qui donne le plafond réaliste des scores. Les lots o031-o070 ont été
+annotés par un second LLM (Claude Fable) avec relecture humaine.
+
+**Accord inter-annotateurs** : un second annotateur (Claude Fable, sans voir les réponses du premier) a repris
+20 lignes du test (15 exigences + 5 AVP, graine 42, fichier `annotator2.jsonl`) : accord strict (mêmes `gold`)
+14/20, accord tolérant (via `acceptable`) 19/20. Le seul désaccord (s088) est un rappel manqué du second
+annotateur. Les scores strict d'un pipeline au-delà de ~70 % ne sont donc pas interprétables.
+
+Le jeu est petit (100 exigences, 70 AVP) :
 les écarts de quelques points entre deux pipelines ne sont pas significatifs.
