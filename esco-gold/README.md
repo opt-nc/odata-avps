@@ -79,7 +79,7 @@ Deux scores :
     dans `acceptable`.
 11. **Professions** : `gold` contient la profession ESCO qui correspond au poste, la plus précise possible (2 au plus
     si le poste combine réellement deux métiers) ; une profession voisine (niveau hiérarchique au-dessus ou en
-    dessous, domaine proche) va dans `acceptable`.
+    dessous, domaine proche) va dans `acceptable`, y compris pour un poste junior de la même fonction.
 
 ## Méthode et limites
 
