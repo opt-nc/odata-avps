@@ -17,8 +17,10 @@ Champs communs :
 
 - `id` : identifiant stable de la ligne (`s001`…, `o001`…)
 - `split` : `dev` (30 %) ou `test` (70 %), voir plus bas
-- `gold` : `null` = pas encore annotée, `[]` = aucun concept ESCO ne convient, sinon la liste des URI ESCO
-  retenues (`http://data.europa.eu/esco/skill/…` ou `…/occupation/…`), la plus pertinente en premier
+- `gold` : `null` = pas encore annotée, `[]` = aucun concept ESCO n'a le même sens, sinon la liste des URI ESCO
+  de même sens (`http://data.europa.eu/esco/skill/…` ou `…/occupation/…`), la plus pertinente en premier
+- `acceptable` : alternatives défendables (quasi-synonyme ESCO, concept partiel ou le plus proche quand `gold`
+  vaut `[]`) ; un pipeline qui les choisit ne commet pas d'erreur au score tolérant
 - `note` : remarque libre de l'annotateur (cas limite, hésitation…)
 
 ## Échantillon
@@ -41,19 +43,32 @@ Les choix du modèle ne figurent pas dans les fichiers, pour ne pas orienter l'a
 
 Mesures prévues : précision, rappel et F1 sur les URI ESCO, taux de réponses valides, et rappel@k de
 l'étape de présélection (la bonne compétence figure-t-elle parmi les candidates soumises au LLM ?).
+Deux scores :
+
+- **strict** : seul `gold` compte ;
+- **tolérant** : un choix présent dans `acceptable` n'est pas compté comme une erreur (ni juste, ni faux).
 
 ## Guide d'annotation
 
-À compléter au fil des premiers lots, à partir des cas difficiles.
-
 1. On cherche dans **tout** ESCO, pas seulement parmi les candidates d'un pipeline.
-2. Un lien n'est valable que si le **sens** est le même, pas seulement les mots.
-3. Une exigence qui énumère plusieurs savoir-faire distincts reçoit une compétence par élément (3 au plus).
-4. Les qualités personnelles (rigueur, autonomie…) se relient aux compétences transversales ESCO.
-5. Si rien ne convient (outil interne, connaissance propre à l'OPT-NC…), `gold` vaut `[]` et `note` dit pourquoi.
+2. On valide chaque concept sur sa **description** ESCO, pas seulement sur son libellé, et on écarte ceux
+   propres à un autre domaine (ex. « répondre aux demandes des clients » est décrit pour le tourisme).
+3. `gold` ne contient que des concepts de **même sens**. Un concept approximatif va dans `acceptable` ; si
+   rien n'a le même sens, `gold` vaut `[]`, le plus proche va dans `acceptable` et `note` dit pourquoi.
+4. **Un concept par savoir-faire distinct** (3 au plus). Un complément qui ne précise que le moyen ne compte
+   pas : « écouter les besoins du client » est une seule idée (écouter activement).
+5. **Connaissance ou savoir-faire** : on suit la formulation, pas le champ d'origine. « Techniques de… »,
+   « Connaissance de… » → connaissance ESCO ; un verbe d'action → savoir-faire. L'autre forme va dans `acceptable`.
+6. Entre quasi-doublons ESCO (« garantir la satisfaction des clients » / « satisfaire les clients »), le plus
+   complet va dans `gold`, l'autre dans `acceptable`.
+7. Les qualités personnelles (rigueur, autonomie, esprit d'équipe…) se relient aux compétences transversales
+   ESCO, en distinguant la qualité personnelle (« travailler en équipe ») du rôle managérial
+   (« construire un esprit d'équipe »).
+8. Une partie de l'exigence sans équivalent ESCO est signalée dans `note`.
 
 ## Méthode et limites
 
 Les annotations sont **proposées par un LLM (Claude) puis validées ou corrigées par un humain** connaissant
-les métiers de l'OPT-NC. Le jeu est petit (100 exigences, 30 AVP) : les écarts de quelques points entre deux
+les métiers de l'OPT-NC. Un second annotateur, sans voir les réponses, reprendra une vingtaine de lignes du test
+pour mesurer l'accord entre humains, qui donne le plafond réaliste des scores. Le jeu est petit (100 exigences, 30 AVP) : les écarts de quelques points entre deux
 pipelines ne sont pas significatifs.
