@@ -4,14 +4,14 @@ Annotations faites à la main pour **mesurer** la qualité du rapprochement auto
 avec le référentiel européen [ESCO v1.2.1](https://esco.ec.europa.eu/fr) (professions et compétences),
 et comparer des pipelines ou des LLM entre eux sur les mêmes données.
 
-> Version 1 : annotation terminée (100 exigences, 30 AVP).
+> Version 1 : annotation terminée (100 exigences, 70 AVP).
 
 ## Fichiers
 
 | Fichier | Contenu |
 |---|---|
 | `skills.jsonl` | 100 exigences (`skills`, `competencyRequired`) → compétences ESCO |
-| `occupations.jsonl` | 30 AVP → professions ESCO |
+| `occupations.jsonl` | 70 AVP → professions ESCO (la totalité du run) |
 
 Champs communs :
 
@@ -36,7 +36,8 @@ Tiré au hasard (graine fixe) parmi les 70 AVP du run du 2026-10-09 :
 - **exigences** : 20 restées sans compétence ESCO lors de ce run (là où un meilleur rappel peut aider),
   80 autres réparties au prorata des champs `skills` et `competencyRequired`. Les variantes d'écriture
   (« Être rigoureux » / « Etre rigoureux ») sont fusionnées ;
-- **AVP** : au moins un par direction, le reste au hasard.
+- **AVP** : d'abord 30 (au moins un par direction, le reste au hasard), puis extension aux 40 restants
+  (o031-o070, mêmes règles, découpage dev/test au même ratio) : les 70 AVP du run sont couverts.
 
 Les choix du modèle ne figurent pas dans les fichiers, pour ne pas orienter l'annotation.
 
@@ -85,5 +86,6 @@ Deux scores :
 
 Les annotations sont **proposées par un LLM (Claude) puis validées ou corrigées par un humain** connaissant
 les métiers de l'OPT-NC. Un second annotateur, sans voir les réponses, reprendra une vingtaine de lignes du test
-pour mesurer l'accord entre humains, qui donne le plafond réaliste des scores. Le jeu est petit (100 exigences, 30 AVP) : les écarts de quelques points entre deux
-pipelines ne sont pas significatifs.
+pour mesurer l'accord entre humains, qui donne le plafond réaliste des scores. Les lots o031-o070 ont été
+annotés par un second LLM (Claude Fable) avec relecture humaine. Le jeu est petit (100 exigences, 70 AVP) :
+les écarts de quelques points entre deux pipelines ne sont pas significatifs.
