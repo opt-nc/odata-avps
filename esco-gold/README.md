@@ -21,6 +21,12 @@ Champs communs :
   de même sens (`http://data.europa.eu/esco/skill/…` ou `…/occupation/…`), la plus pertinente en premier
 - `acceptable` : alternatives défendables (quasi-synonyme ESCO, concept partiel ou le plus proche quand `gold`
   vaut `[]`) ; un pipeline qui les choisit ne commet pas d'erreur au score tolérant
+- `gap` : ce qu'ESCO ne couvre pas, que `gold` soit vide ou ne couvre qu'une partie de l'exigence ; `null` si
+  l'exigence est entièrement couverte
+  - `opt` : connaissance ou valeur propre à l'OPT-NC ou à la Nouvelle-Calédonie
+  - `outil` : outil ou technologie absent d'ESCO
+  - `esco` : compétence générale qu'ESCO ne couvre pas
+  - `vague` : exigence trop floue pour être reliée à un concept
 - `note` : remarque libre de l'annotateur (cas limite, hésitation…)
 
 ## Échantillon
