@@ -4,7 +4,7 @@ Annotations faites à la main pour **mesurer** la qualité du rapprochement auto
 avec le référentiel européen [ESCO v1.2.1](https://esco.ec.europa.eu/fr) (professions et compétences),
 et comparer des pipelines ou des LLM entre eux sur les mêmes données.
 
-> Version 1 : annotation terminée (100 exigences, 70 AVP).
+> Version 1 : annotation terminée (100 exigences, 70 AVP) ; o031-o070 restent à valider par un humain.
 
 ## Fichiers
 
@@ -12,7 +12,7 @@ et comparer des pipelines ou des LLM entre eux sur les mêmes données.
 |---|---|
 | `skills.jsonl` | 100 exigences (`skills`, `competencyRequired`) → compétences ESCO |
 | `occupations.jsonl` | 70 AVP → professions ESCO (la totalité du run) |
-| `annotator2.jsonl` | passe indépendante d'un second annotateur sur 20 lignes du test (accord inter-annotateurs) |
+| `annotator2.jsonl` | 20 lignes du test reprises par un second annotateur LLM (accord entre annotateurs) |
 | `score.py` | script de notation (voir « Notation ») |
 
 Champs communs :
@@ -109,17 +109,24 @@ l'étape de présélection (lexicale ou par embeddings) qu'il faut améliorer en
 
 ## Méthode et limites
 
-Les annotations sont **proposées par un LLM (Claude) puis validées ou corrigées par un humain** connaissant
-les métiers de l'OPT-NC. Un second annotateur, sans voir les réponses, reprendra une vingtaine de lignes du test
-pour mesurer l'accord entre annotateurs, qui donne le plafond réaliste des scores. Les lots o031-o070 ont été
-annotés par un second LLM (Claude Fable) avec relecture humaine.
+Les annotations s001-s100 et o001-o030 sont **proposées par un LLM (Claude) puis validées ou corrigées par un
+humain** connaissant les métiers de l'OPT-NC.
 
-**Accord inter-annotateurs** : un second annotateur (Claude Fable, sans voir les réponses du premier) a repris
-20 lignes du test (15 exigences + 5 AVP, graine 42, fichier `annotator2.jsonl`) : accord strict (mêmes `gold`)
-14/20, accord tolérant (via `acceptable`) 19/20. Le seul désaccord (s088) est un rappel manqué du second
-annotateur. Noté par `score.py`, le second annotateur obtient un F1 strict de 62 % sur les compétences
-(15 lignes, IC 38–86 %) : au-delà de ~60-70 %, l'écart entre un pipeline et la référence relève surtout du
-désaccord entre annotateurs.
+**À relire par un humain** : les AVP o031-o070 et les corrections de s005 et s037 ont été faits par un autre
+LLM (Claude Fable) et n'ont pas encore été validés.
+
+**Accord entre annotateurs** : Claude Fable a repris 20 lignes du test sans voir les annotations existantes
+(15 exigences + 5 AVP, graine 42, fichier `annotator2.jsonl`). Résultat : accord strict (mêmes `gold`) 14/20,
+accord tolérant (via `acceptable`) 19/20 ; noté par `score.py`, F1 strict de 62 % sur les compétences
+(15 lignes, IC 38–86 %). Seul désaccord : s088, où il n'a pas trouvé « présenter des arguments de manière
+persuasive ». Deux réserves :
+
+- c'est un accord **LLM contre LLM validé par un humain**, pas entre deux humains : il donne une idée du
+  plafond, pas sa valeur ;
+- l'aveugle est imparfait pour o010 et o026 : la description de la PR, lue avant l'annotation, citait déjà
+  l'encadrement postal et la conformité KYC parmi les métiers sans équivalent ESCO.
+
+Une passe par un second annotateur humain reste à faire.
 
 Le jeu est petit (100 exigences, 70 AVP) :
 les écarts de quelques points entre deux pipelines ne sont pas significatifs.
