@@ -56,7 +56,8 @@ Deux scores :
 3. `gold` ne contient que des concepts de **même sens**. Un concept approximatif va dans `acceptable` ; si
    rien n'a le même sens, `gold` vaut `[]`, le plus proche va dans `acceptable` et `note` dit pourquoi.
 4. **Un concept par savoir-faire distinct** (3 au plus). Un complément qui ne précise que le moyen ne compte
-   pas : « écouter les besoins du client » est une seule idée (écouter activement).
+   pas : « écouter les besoins du client » est une seule idée (écouter activement). Exception : une
+   énumération explicite d'outils ou de langages reçoit un concept par élément présent dans ESCO, sans limite.
 5. **Connaissance ou savoir-faire** : on suit la formulation, pas le champ d'origine. « Techniques de… »,
    « Connaissance de… » → connaissance ESCO ; un verbe d'action → savoir-faire. L'autre forme va dans `acceptable`.
 6. Entre quasi-doublons ESCO (« garantir la satisfaction des clients » / « satisfaire les clients »), le plus
