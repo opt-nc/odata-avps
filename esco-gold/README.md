@@ -68,6 +68,9 @@ Deux scores :
 8. Une partie de l'exigence sans équivalent ESCO est signalée dans `note`.
 9. « Maîtrise de… » est ambigu (connaissance ou savoir-faire) : on tranche selon la description ESCO, l'autre
    forme va dans `acceptable`.
+10. **Relationnel** : ESCO n'a pas de concept général. Si l'exigence précise le public (« avec le public et le
+    personnel »), un concept de communication par public ; sinon `gold` vaut `[]`, les concepts proches vont
+    dans `acceptable`.
 
 ## Méthode et limites
 
