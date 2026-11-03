@@ -77,6 +77,9 @@ Deux scores :
 10. **Relationnel** : ESCO n'a pas de concept général. Si l'exigence précise le public (« avec le public et le
     personnel »), un concept de communication par public ; sinon `gold` vaut `[]`, les concepts proches vont
     dans `acceptable`.
+11. **Professions** : `gold` contient la profession ESCO qui correspond au poste, la plus précise possible (2 au plus
+    si le poste combine réellement deux métiers) ; une profession voisine (niveau hiérarchique au-dessus ou en
+    dessous, domaine proche) va dans `acceptable`.
 
 ## Méthode et limites
 
