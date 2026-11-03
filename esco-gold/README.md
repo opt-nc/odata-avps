@@ -65,6 +65,8 @@ Deux scores :
    ESCO, en distinguant la qualité personnelle (« travailler en équipe ») du rôle managérial
    (« construire un esprit d'équipe »).
 8. Une partie de l'exigence sans équivalent ESCO est signalée dans `note`.
+9. « Maîtrise de… » est ambigu (connaissance ou savoir-faire) : on tranche selon la description ESCO, l'autre
+   forme va dans `acceptable`.
 
 ## Méthode et limites
 
