@@ -1,0 +1,184 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Ingénieur",
+    "direction": "DIRECTION DES SYSTEMES D'INFORMATION",
+    "uniteOrganisationnelle": "DIRECTION DES SYSTEMES D'INFORMATION",
+    "nbAgentsEncadres": 2,
+    "superieurHierarchique": "Chef du Service Développement Maintenance",
+    "placeOrganigramme": "N-4 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Directions et responsables métiers concernés",
+      "Partenaires et fournisseurs stratégiques",
+      "Service Delivery Manager"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "2 jours de télétravail possibles"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériel fourni",
+        "value": "Téléphone mobile de sécurité"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régime indemnitaire",
+        "value": "Indemnité de chef de section"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Durée de résidence exigée",
+        "value": "Au moins égale à 5 ans"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955302.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Au sein du service Développements & Maintenance de la DSI, le(la) chef(fe) de section SI Bancaire est responsable de la fourniture et de l'évolution du service SI Bancaire, en veillant à son adéquation avec les besoins de l'OPT-NC. Il pilote l'organisation, les ressources, les priorités et les moyens nécessaires à la qualité et à la continuité du service. Il assure la relation avec les métiers et les principaux fournisseurs et contribue à la définition de la trajectoire du service, en cohérence avec les orientations de la DSI.",
+  "disambiguatingDescription": "Chef de section SI Bancaire au sein du Service Développement et Maintenance de la DSI",
+  "identifier": "3134-26-1662/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef de section SI Bancaire",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "AreaServed",
+    "name": "Nouvelle-Calédonie",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.76.00",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-06",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Bac+3",
+    "competencyRequired": [
+      "Connaissance des principes de fonctionnement d'un SI bancaire",
+      "Solutions cloud et SaaS",
+      "Connaissance du cycle de vie des applications (évolution, maintenance, obsolescence et décommissionnement)",
+      "Connaissance des processus de gestion des incidents et demandes de changements",
+      "Connaissance des principes de sécurité des SI",
+      "Gestion documentaire et de projets : Confluence, JIRA et SharePoint",
+      "Connaissance du métier bancaire appréciée"
+    ]
+  },
+  "eligibilityToWorkRequirement": "Durée de résidence exigée pour le recrutement sur titre : au moins égale à 5 ans",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public territorial.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "DIRECTION DES SYSTEMES D'INFORMATION"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience dans une activité similaire, Expérience en management d'équipe SI",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": "Indemnité de chef de section",
+  "industry": "Télécommunications",
+  "jobBenefits": "Indemnité de chef de section, 2 jours de télétravail possibles, Téléphone mobile de sécurité",
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Immeuble COPERNIC",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "59 Rue Georges Clémenceau",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Systèmes d'information"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis de conduire B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Responsable de système applicatif",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1801",
+      "name": "Conseil et maîtrise d'ouvrage en systèmes d'information"
+    },
+    "code_metier": "OP067",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/systemes_d_information/op067/"
+  },
+  "responsibilities": [
+    "Piloter la section SI Bancaire, en organisant l'activité, les priorités et les ressources nécessaires à la réalisation des missions",
+    "Garantir l'adéquation du SI Bancaire aux besoins de l'OPT-NC, en lien avec les directions et responsables métiers concernés",
+    "Définir et suivre les priorités du domaine SI Bancaire, en tenant compte des enjeux métiers, des contraintes techniques, des risques et des ressources disponibles",
+    "Piloter le portefeuille des évolutions et projets du SI Bancaire, en assurant leur cohérence avec les orientations de la DSI et les priorités de l'OPT-NC",
+    "Superviser la qualité et la continuité du service, en s'appuyant sur le Service Delivery Manager et les indicateurs de performance du SI Bancaire",
+    "Piloter la relation avec les partenaires et fournisseurs stratégiques, notamment le fournisseur du progiciel bancaire SaaS, en lien avec les équipes concernées de la DSI",
+    "Maîtriser les coûts et les engagements du domaine, en participant à la préparation budgétaire, au suivi des dépenses et au pilotage des prestations",
+    "Anticiper les évolutions du SI Bancaire, en identifiant les enjeux fonctionnels, techniques, réglementaires et organisationnels susceptibles d'impacter le domaine",
+    "Développer les compétences de la section, en accompagnant les collaborateurs dans leur évolution professionnelle et en veillant à l'adéquation des compétences aux besoins du SI",
+    "Contribuer à la gouvernance de la DSI, en apportant une vision du domaine SI Bancaire et en participant aux arbitrages, instances et démarches d'amélioration du système d'information"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Piloter la qualité de service d'un portefeuille d'applications",
+    "Manager et accompagner une équipe",
+    "Construire et analyser des tableaux de bord et reporting",
+    "Analyser les incidents et dysfonctionnements, identifier leurs causes et coordonner leur résolution",
+    "Organiser et suivre les activités de maintenance corrective et évolutive",
+    "Arbitrer et prioriser les demandes",
+    "Analyser les besoins métier",
+    "Evaluer leur valeur et leur coût",
+    "Présenter une synthèse d'activité et alerter sur les points de vigilance",
+    "Conseiller, proposer, challenger de nouveaux processus et solutions",
+    "Leadership : capacité à inspirer, motiver et guider une équipe vers l'atteinte des objectifs",
+    "Savoir prendre des décisions et déléguer efficacement",
+    "Facultés de communications : tant avec l'équipe technique qu'avec d'autres interlocuteurs non techniques",
+    "Esprit d'équipe : sens du travail collaboratif et capacité à favoriser une bonne dynamique de groupe",
+    "Résilience : capacité à travailler sous pression, à gérer le stress et à rester positif face aux défis",
+    "Rigueur, sens de l'organisation et de la méthode",
+    "Respect de la confidentialité"
+  ],
+  "specialCommitments": null,
+  "title": "Chef de section SI Bancaire",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-27",
+  "workHours": "2 jours de télétravail possibles",
+  "dossier": "dsi"
+}
