@@ -1,0 +1,169 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Technicien",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "UNITE DE SERVICE POINDIMIE",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de la cellule infrastructure de l’US de Poindimié",
+    "placeOrganigramme": "N-5 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Autres équipes",
+      "Chef de cellule"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations et permis requis",
+        "value": "Permis de conduire catégorie B et E, habilitation électrique B1, B2, BR, BC, permis CACES PEMP catégorie 1B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Travail possible hors heures ouvrées, déplacements dans la zone d'action de l'unité de service et sur Nouméa ou Koné, travaux insalubres ou dangereux, travaux en hauteur (3m jusqu'à 9m, et supérieure à 9m)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériels fournis",
+        "value": "Équipements de protection individuels (EPI), téléphone mobile de service"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "Indemnité de travaux insalubres ou dangereux"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956104.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Garantir la meilleure continuité de service au client final par l'exploitation, la supervision et la maintenance des équipements de télécommunication.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1678/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Technicien cellule infrastructure",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "42.68.19",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-06",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Connaissance des réseaux, de l'environnement techniques des infrastructures et des centres de l'OPT",
+      "Maîtriser les techniques et les équipements de commutation numérique et avoir de bonnes connaissances des réseaux de télécommunication et IP",
+      "Connaissance des règles d’ingénieries des réseaux (génie civil, câblage cuivre et fibre optique)",
+      "Connaissance des règles de sécurité routière pour signalisation et balisage",
+      "Bonnes connaissances de l'énergie (basse tension et courant continu)",
+      "Connaissance des applications télécoms, des systèmes d'informations et des outils de bureautique",
+      "Organisation de l’OPT",
+      "Bonne connaissance de la langue anglaise"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "UNITE DE SERVICE POINDIMIE"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": "Indemnité de travaux insalubres ou dangereux",
+  "industry": "Télécommunications",
+  "jobBenefits": "Indemnité de travaux insalubres ou dangereux",
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "US de Poindimié",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Poindimié",
+      "addressRegion": "Province Nord",
+      "addressCountry": "NC",
+      "province": "province Nord"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": [
+    "Télécommunications"
+  ],
+  "physicalRequirement": "Travaux en hauteur (3m jusqu’à 9m, et supérieure à 9m)",
+  "qualifications": "Permis de conduire catégorie B et E, habilitation électrique B1, B2, BR, BC, permis CACES PEMP catégorie 1B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Technicien d’exploitation des réseaux et services des télécommunications",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Maintenance de réseaux de télécommunications"
+    },
+    "code_metier": "OP027",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/telecommunications/op027/"
+  },
+  "responsibilities": [
+    "Exploiter, maintenir et déployer les équipements de transmission, d’agrégation, de commutation et de radiodiffusion et des infrastructures d’énergie primaire et secondaire, garantir les meilleurs efforts en vue de réduire les durées d'indisponibilité",
+    "Participer à l’extension, la densification et la maintenance des réseaux mobiles",
+    "Participer au suivi technique des travaux sous-traités",
+    "Proposer toute amélioration de méthode ou de moyens pouvant être utile à l’optimisation de son activité et au service client",
+    "Assurer périodiquement l'astreinte pour les services relevant des domaines du Centre",
+    "Garantir la conformité des opérations réalisées aux guides, procédures et directives de pratiques internes",
+    "Rendre compte de l'activité, l'analyser et proposer toutes sources d'amélioration",
+    "Assurer une entre-aide avec les autres équipes en cas de nécessité ou de situation de crise",
+    "Assurer l'intérim du chef de cellule en cas de nécessité",
+    "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Diagnostiquer une anomalie",
+    "Analyser une information, une donnée, une situation, un dispositif",
+    "Travailler en équipe",
+    "Rendre compte",
+    "Alerter sur une situation à risque",
+    "Être rigoureux",
+    "Esprit d’initiative et de synthèse",
+    "Être autonome",
+    "Aisance relationnelle",
+    "Avoir l'esprit d'équipe",
+    "Capacité à communiquer",
+    "Sens du service public",
+    "Faculté d’adaptation"
+  ],
+  "specialCommitments": "Astreintes périodiques",
+  "title": "Technicien cellule infrastructure",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-27",
+  "workHours": "Travail possible hors heures ouvrées",
+  "dossier": "dt"
+}
