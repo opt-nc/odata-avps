@@ -1,0 +1,153 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur ou Agent d'exploitation",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "Agence télécom Ducos",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de la cellule force commerciale",
+    "placeOrganigramme": "N-4 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Cellule force commerciale",
+      "Clients"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Bonne audition demandée - Position mobile. La relation client et la vente sont assurées par différents canaux : téléphonique, digital et présentiel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956088.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Intégrez une équipe dynamique au sein de l'Agence Télécom, où votre expertise contribuera à transformer la manière dont nous interagissons avec nos clients. Nous valorisons l'innovation et le service client, et offrons un environnement propice à l'évolution professionnelle.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1669/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Conseiller commercial",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/logo.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Direction générale",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.06.45",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-06",
+  "directApply": true,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Connaissance des produits et services télécoms",
+      "Compréhension des procédures commerciales et de la réglementation afférente au domaine"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public de Nouvelle-Calédonie.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Agence télécom Ducos"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://www.opt.nc/logo.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Agence télécom Ducos",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ducos",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": [
+    "Vente et relation client",
+    "Télécommunications"
+  ],
+  "physicalRequirement": "Bonne audition demandée, position mobile",
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Conseiller commercial",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Assistance commerciale"
+    },
+    "code_metier": "OP003",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/vente_relation_client/op003/"
+  },
+  "responsibilities": [
+    "Gestion de la Relation Client : Vous serez responsable d'interagir avec nos clients existants, d'atteindre les objectifs commerciaux par une gestion proactive de la satisfaction et de la fidélisation, et d'identifier de nouvelles opportunités pour maintenir un portefeuille actif tout en développant des relations durables.",
+    "Conseil et Promotion : Promouvoir notre catalogue auprès des clients, conseiller sur les produits pour répondre à leurs besoins spécifiques.",
+    "Traçabilité et Réclamations : Assurer le suivi des événements et gérer les réclamations de manière proactive. Vous devrez contribuer à produire des reporting d'activité et garantir une traçabilité rigoureuse des événements.",
+    "Administration des Ventes : Gérer le back-office, assurer la mise à jour des bases de données, la saisie et les statistiques (motifs et bloc note) pour garantir un service optimal.",
+    "Actions Marketing : Participer activement aux campagnes de promotion et à l'identification de nouvelles opportunités commerciales, tout en contribuant à l'amélioration des résultats et performances.",
+    "Amélioration Continue : Engagez-vous dans des démarches d'optimisation basées sur des analyses de données et des feedbacks clients, et proposez des recommandations pour améliorer nos résultats.",
+    "Formation et Encadrement : Devenez un mentor pour vos collègues, contribuant à l'efficacité collective de l'équipe et en partageant vos connaissances."
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": "Bonne audition demandée",
+  "skills": [
+    "Techniques de vente",
+    "Gestion du stress",
+    "Gestion de conflits",
+    "Maîtrise des outils informatiques",
+    "Suite MS 365",
+    "Aisance relationnelle",
+    "Capacité à écouter",
+    "Communiquer efficacement",
+    "Travailler en équipe"
+  ],
+  "specialCommitments": null,
+  "title": "Conseiller commercial",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-27",
+  "workHours": null,
+  "dossier": "dt"
+}
