@@ -1,0 +1,163 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Agent technique",
+    "direction": "DIRECTION DES TELECOMMUNICATIONS",
+    "uniteOrganisationnelle": "AGENCE COMPTABLE",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Responsable de l’US de Koumac",
+    "placeOrganigramme": "N-4 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Autres équipes de l'OPT"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations et permis",
+        "value": "Permis de conduire catégorie B et E, habilitation électrique B0, H0V et BR, permis CACES PEMP catégorie 1B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Travail possible hors heures ouvrées, déplacements dans la zone d'action de l'unité de service et sur Nouméa ou Koné, travaux insalubres ou dangereux, travaux en hauteur (3m jusqu’à 9m)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériel fourni",
+        "value": "Équipements de protection individuels (EPI), téléphone mobile de service"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": "Indemnité de travaux insalubres ou dangereux"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12956104.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Garantir la meilleure continuité de service au client final par l'exploitation, la supervision, la maintenance et l’extension des réseaux d’accès, les raccordements de clients",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1677/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Agent cellule client",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "http://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "47.85.88",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-06",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Connaissance des réseaux, de l'environnement techniques des infrastructures et des centres de l'OPT",
+      "Maîtriser les techniques et les équipements de commutation numérique et avoir de bonnes connaissances des réseaux de télécommunication et IP",
+      "Connaissance des règles d’ingénieries des réseaux (génie civil, câblage cuivre et fibre optique)",
+      "Connaissance des applications télécoms, des systèmes d'informations et des outils de bureautique",
+      "Organisation de l’OPT"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "AGENCE COMPTABLE"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": "Indemnité de travaux insalubres ou dangereux",
+  "industry": "Télécommunications",
+  "jobBenefits": "Indemnité de travaux insalubres ou dangereux",
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "US de Koumac",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Koumac",
+      "addressRegion": "Province Nord",
+      "addressCountry": "NC",
+      "province": "province Nord"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": [
+    "Télécommunications"
+  ],
+  "physicalRequirement": "Travaux en hauteur (3m jusqu’à 9m)",
+  "qualifications": "Permis de conduire catégorie B et E, habilitation électrique B0, H0V et BR, permis CACES PEMP catégorie 1B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Technicien d’intervention client",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "I1306",
+      "name": "Installation et maintenance télécoms et courants faibles"
+    },
+    "code_metier": "OP031",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/telecommunications/op031/"
+  },
+  "responsibilities": [
+    "Exécuter les tâches relatives aux raccordements et installations des clients, à la relève des dérangements ainsi que celles relatives à l’extension et à l’exploitation des réseaux d’accès, garantir les meilleurs efforts en vue de réduire les durées d'indisponibilité",
+    "Réaliser l’extension, l’exploitation et la maintenance des réseaux filaires en cuivre et en fibre optique",
+    "Proposer toute amélioration de méthode ou de moyens pouvant être utile à l’optimisation de son activité et au service client",
+    "Garantir la conformité des opérations réalisées aux guides, procédures et directives de pratiques internes",
+    "Rendre compte de l'activité, l'analyser et proposer toutes sources d'amélioration",
+    "Assurer une entre-aide avec les autres équipes en cas de nécessité ou de situation de crise",
+    "Veiller au respect des attendus décrits dans les référentiels de fonction de l'OPT (Agents)"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Gérer une relation client",
+    "Diagnostiquer une anomalie",
+    "Analyser une information, une donnée, une situation, un dispositif",
+    "Travailler en équipe",
+    "Rendre compte",
+    "Alerter sur une situation à risque",
+    "Être rigoureux",
+    "Esprit d’initiative et de synthèse",
+    "Être autonome",
+    "Aisance relationnelle",
+    "Avoir l'esprit d'équipe",
+    "Capacité à communiquer",
+    "Sens du service public",
+    "Faculté d’adaptation"
+  ],
+  "specialCommitments": "Travail possible hors heures ouvrées, déplacements dans la zone d'action de l'unité de service et sur Nouméa ou Koné",
+  "title": "Agent cellule client",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-27",
+  "workHours": "Travail possible hors heures ouvrées",
+  "dossier": "dt"
+}
