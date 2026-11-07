@@ -1,0 +1,177 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Ingénieur",
+    "direction": "DIRECTION DES SYSTEMES D'INFORMATION",
+    "uniteOrganisationnelle": "DIRECTION DES SYSTEMES D'INFORMATION",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef de la section SI Bancaire",
+    "placeOrganigramme": "N-5 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Directions métier",
+      "Fournisseur du progiciel bancaire SaaS",
+      "Équipes de la DSI"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "2 jours de télétravail possibles"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fourniture ou mise à disposition de matériels",
+        "value": "Téléphone mobile de sécurité"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Durée de résidence exigée",
+        "value": "Au moins égale à 5 ans"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955296.PDF"
+      }
+    ]
+  },
+  "alternateName": "Responsable applicatif SI Bancaire",
+  "description": "Au sein du service Développement et Maintenance de la DSI de l'OPT-NC, le responsable applicatif SI Bancaire est le garant de la qualité, de la continuité et de l'évolution du service SI Bancaire en assurant l'interface entre les directions métier, le fournisseur du progiciel bancaire SaaS et les équipes de la DSI.",
+  "disambiguatingDescription": "Le responsable applicatif est le référent opérationnel du service SI Bancaire. Il assure le suivi de la qualité de service, coordonne les acteurs intervenant sur le SI et veille à l'adéquation du service aux besoins du métier.",
+  "identifier": "3134-26-1663/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Administrateur d’applications SI Bancaire",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "WorkLocation",
+    "name": "Immeuble COPERNIC",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "59 Rue Georges Clémenceau",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.76.00",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-06",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Bac+3",
+    "competencyRequired": [
+      "Connaissance des principes de fonctionnement d’un SI bancaire",
+      "Connaissance du cycle de vie des applications (évolution, maintenance, obsolescence et décommissionnement)",
+      "Connaissance des processus de gestion des incidents et demandes de changements",
+      "Connaissance des principes de sécurité des SI",
+      "Gestion documentaire et de projets : Confluence, JIRA et SharePoint",
+      "Connaissance du métier bancaire appréciée",
+      "Connaissance des contraintes réglementaires et de sécurité du secteur bancaire, idéalement"
+    ]
+  },
+  "eligibilityToWorkRequirement": "Durée de résidence exigée pour le recrutement sur titre : au moins égale à 5 ans",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public de Nouvelle-Calédonie.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "DIRECTION DES SYSTEMES D'INFORMATION"
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience dans une activité similaire",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": "2 jours de télétravail possibles, Téléphone mobile de sécurité",
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Immeuble COPERNIC",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "59 Rue Georges Clémenceau",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Systèmes d'information"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis de conduire B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Administrateur d’application",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1801",
+      "name": "Administration de systèmes d'information"
+    },
+    "code_metier": "OP066",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/systemes_d_information/op066/"
+  },
+  "responsibilities": [
+    "Garantir la qualité de service du SI Bancaire, en veillant à sa disponibilité, sa performance et sa continuité au quotidien",
+    "Prendre en charge le RUN et la maintenance corrective, en analysant, qualifiant et suivant les incidents, anomalies et demandes jusqu'à leur résolution",
+    "Améliorer durablement la qualité de service, en analysant les incidents récurrents, leurs causes et les actions permettant d'en prévenir la réapparition",
+    "Assurer la gestion des incidents, en analyser les causes et faire le suivi des actions correctives et préventives",
+    "Prendre en charge les évolutions du SI Bancaire, depuis l'expression du besoin jusqu'à la mise en production des nouvelles fonctionnalités, en lieu avec les acteurs concernés",
+    "Réaliser et coordonner les activités nécessaires au fonctionnement du SI Bancaire, en collaboration avec les équipes de développement, production, infrastructure, sécurité et architecture",
+    "Veiller à la maîtrise du patrimoine applicatif, notamment des interfaces développées et exploitées par l'OPT-NC",
+    "Produire et suivre les indicateurs du service, analyser les résultats et proposer les actions d’améliorations nécessaires",
+    "Garantir la satisfaction des utilisateurs et développer une relation de confiance avec les clients internes ou externes",
+    "Apporter son expertise applicative et technique",
+    "Accompagner les métiers aux phases de recette et de formation"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Piloter la qualité de service d’un portefeuille d’applications",
+    "Analyser les incidents et dysfonctionnements, identifier leurs causes et coordonner leur résolution",
+    "Organiser et suivre les activités de maintenance corrective et évolutive",
+    "Analyser des besoins métier",
+    "Evaluer leur valeur et leur coût",
+    "Ecouter, comprendre, reformuler des besoins utilisateurs",
+    "Conseiller, proposer, challenger de nouveaux processus et solutions",
+    "Expérience en conduite de projet ou en AMOA appréciées",
+    "Utiliser des outils collaboratis Confluence, JIRA, Teams",
+    "Respect de la confidentialité",
+    "Capacités d’écoute et de communication",
+    "Rigueur, sens de l’organisation et de la méthode",
+    "Esprit d’équipe et de communication",
+    "Dynamisme, implication et engagement"
+  ],
+  "specialCommitments": null,
+  "title": "Administrateur d’applications SI Bancaire",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-27",
+  "workHours": "2 jours de télétravail possibles",
+  "dossier": "dsi"
+}
