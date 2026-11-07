@@ -1,0 +1,169 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre spécialiste d'exploitation",
+    "direction": "DIRECTION DE LA POSTE ET DES SERVICES DE PROXIMITE",
+    "uniteOrganisationnelle": "DIRECTION DE LA POSTE ET DES SERVICES DE PROXIMITE",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Directeur DPS",
+    "placeOrganigramme": "N-1 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Direction de la Poste et des services de Proximité",
+      "autres BU de l'OPT"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "Permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires",
+        "value": null
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12955402.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le poste de Responsable développement stratégique et performance des offres au sein de la Direction de la Poste et des services de Proximité consiste à élaborer et proposer les orientations de développement de la DPS, structurer la gouvernance stratégique et économique du portefeuille d'offres, et préparer les scénarios et business cases pour éclairer les décisions de la Direction.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1670/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Responsable développement stratégique et performance des offres",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.79.28",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-06",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Bac+5",
+    "competencyRequired": [
+      "Maîtrise des offres, de la réglementation et des enjeux marketing",
+      "Connaissance des systèmes d'information métiers",
+      "Connaissance du cadre réglementaire applicable",
+      "Analyse économique et financière / Business case",
+      "Gestion de portefeuille de produits et services",
+      "Bureautique et outils d'analyse de données"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est l'opérateur public historique des télécommunications, des services postaux et financiers en Nouvelle-Calédonie.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "DIRECTION DE LA POSTE ET DES SERVICES DE PROXIMITE",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": true,
+  "experienceRequirements": "Équivalent par l'expérience accepté pour compenser le diplôme Bac+5.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Immeuble Le Waruna II",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Activités postales",
+    "Pilotage"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Responsable de projet",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K1205",
+      "name": "Conseil en organisation et management d'entreprise"
+    },
+    "code_metier": "OP078",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/pilotage/op078/"
+  },
+  "responsibilities": [
+    "Analyser les marchés, les usages et les évolutions de l'environnement afin d'identifier les opportunités de développement",
+    "Qualifier les opportunités de croissance, de diversification et de création de valeur",
+    "Consolider et analyser la vision stratégique et économique du portefeuille d'offres",
+    "Préparer les arbitrages relatifs à l'évolution du portefeuille",
+    "Construire les business cases et analyses économiques des projets de développement",
+    "Identifier les synergies et opportunités de développement avec les autres BU de l'OPT",
+    "Qualifier économiquement les opportunités de partenariat en amont de leur prise en charge opérationnelle",
+    "Exploiter les données de performance produites par les dispositifs de pilotage pour éclairer les décisions relatives aux offres",
+    "Élaborer les recommandations et supports d'aide à la décision nécessaires à la Direction",
+    "Animer les travaux transverses relevant de son périmètre",
+    "Piloter les dossiers stratégiques confiés par la Direction"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Piloter des projets transverses",
+    "Élaborer et suivre des tableaux de bord",
+    "Coordonner les actions intra-directions",
+    "Construire un business case",
+    "Analyser la performance économique d'une offre",
+    "Identifier les synergies et des partenariats",
+    "Anticiper une évolution",
+    "Sens de l'analyse",
+    "Faire preuve de leadership transversal",
+    "Sens de la coopération",
+    "Force de proposition",
+    "Curiosité intellectuelle",
+    "Aisance relationnelle",
+    "Rigueur",
+    "Autonomie",
+    "Discrétion"
+  ],
+  "specialCommitments": null,
+  "title": "Responsable développement stratégique et performance des offres",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-27",
+  "workHours": null,
+  "dossier": "dps"
+}
