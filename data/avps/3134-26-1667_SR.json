@@ -1,0 +1,177 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Ingénieur",
+    "direction": "DIRECTION DES SERVICES BANCAIRES",
+    "uniteOrganisationnelle": "Direction des services Bancaires",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef du service évolutions applicatives",
+    "placeOrganigramme": "N-3 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "DSI",
+      "Prestataires monétiques",
+      "Partenaires de paiement",
+      "Equipes métier",
+      "Equipes exploitation",
+      "Fournisseurs"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Bureau et télétravail possible"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Durée de résidence exigée",
+        "value": "Au moins égale à 5 ans"
+      }
+    ]
+  },
+  "alternateName": "Assistant à Maîtrise d'Ouvrage Bancaire",
+  "description": "L'Office des Postes et des Télécommunications recrute un Assistant à Maîtrise d'Ouvrage Bancaire au sein du Service des évolutions applicatives de la Direction des services bancaires. Le poste consiste à assurer le rôle de référent fonctionnel du domaine monétique et à piloter ses évolutions.",
+  "disambiguatingDescription": "Poste de Product Owner en monétique bancaire au sein de la Direction des services bancaires.",
+  "identifier": "3134-26-1667/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Assistant à Maîtrise d'Ouvrage Bancaire",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "WorkLocation",
+    "name": "Nouvelle-Calédonie",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": null,
+      "addressRegion": "Nouvelle-Calédonie",
+      "addressCountry": "NC"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "20.63.15",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-06",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": "Bac+3",
+    "competencyRequired": [
+      "Connaissance des systèmes de paiement par carte : émission, acquisition, cycle de vie des cartes, autorisation, compensation et règlement",
+      "Connaissance des GAB, paiements à distance, authentification forte / 3-D Secure et wallets",
+      "Compréhension des flux, interfaces et échanges de données entre systèmes monétiques, core banking et comptabilité bancaire",
+      "Connaissance des méthodes AMOA, de la conduite de projet, de la recette et de la gestion des incidents",
+      "Notions de sécurité des paiements, de conformité et des règles des réseaux / partenaires monétiques",
+      "Organisation et fonctionnement de l'OPT-NC, produits et services bancaires de la DSB"
+    ]
+  },
+  "eligibilityToWorkRequirement": "Durée de résidence exigée pour le recrutement sur titre : au moins égale à 5 ans",
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public territorial.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Service des évolutions applicatives",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Forte expérience dans la monétique bancaire",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Services bancaires",
+  "jobBenefits": null,
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Direction des services bancaires",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15 rue Edouard GLASSER, MOTOR POOL",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": "Dès que possible",
+  "occupationalCategory": [
+    "Services bancaires",
+    "Systèmes d'information"
+  ],
+  "physicalRequirement": null,
+  "qualifications": null,
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Product Owner",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1806",
+      "name": "Conseil et maîtrise d'ouvrage en systèmes d'information"
+    },
+    "code_metier": "OP017",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/pilotage/op017/"
+  },
+  "responsibilities": [
+    "Assurer le rôle de référent fonctionnel du domaine monétique de la DSB et piloter ses évolutions (BUILD) : cartes, GAB, autorisations, paiements, retraits, authentification, wallets, compensation, etc.",
+    "Piloter, en étroite collaboration avec son manager, l'intégration fonctionnelle et l'évolution des interfaces entre les systèmes monétiques, le core banking MANA et les partenaires de paiement, en garantissant la cohérence des flux, données et traitements.",
+    "Contribuer à la continuité et à la qualité du service monétique (RUN) : qualification des incidents, investigations conjointes avec les prestataires monétiques, coordination des acteurs et suivi des actions correctives.",
+    "Exercer la maîtrise d'ouvrage fonctionnelle des projets monétiques : besoins, spécifications, recettes, homologations, conduite du changement et reporting, en coopération avec les métiers et les prestataires.",
+    "Etre le référent fonctionnel monétique auprès des métiers et des prestataires ; recueillir, analyser, prioriser et formaliser les besoins.",
+    "Piloter les projets et évolutions relatifs aux cartes bancaires, GAB, paiements de proximité et à distance, authentification des paiements et solutions de paiement mobile / wallets.",
+    "Garantir la cohérence des flux entre les systèmes monétiques et MANA : cycle de vie des cartes et comptes, autorisations, remontées d'opérations, comptabilisation, rapprochements, rejets, compensation et régularisations.",
+    "Coordonner les interfaces et échanges fonctionnels avec les processeurs, réseaux, partenaires monétiques et équipes intervenant sur le core banking, en lien avec la DSI.",
+    "Rédiger les expressions de besoins, spécifications fonctionnelles, analyses d'impact, procédures et supports de décision.",
+    "Préparer, organiser et superviser les recettes fonctionnelles et de non-régression, les homologations et les mises en production ; vérifier la traçabilité des anomalies et corrections.",
+    "Accompagner les utilisateurs, organiser la conduite du changement et assurer le reporting des projets, risques, dépendances et jalons.",
+    "Assurer une veille fonctionnelle et réglementaire sur les moyens de paiement, les exigences des réseaux et la sécurité des parcours, avec les experts concernés.",
+    "Qualifier les incidents monétiques en évaluer les impacts clients, métiers et financiers et suivre leur résolution.",
+    "Coordonner les diagnostics avec les équipes métier, exploitation, DSI, fournisseurs et partenaires ; suivre les plans d'action, contournements et corrections pérennes.",
+    "Analyser les écarts de flux et de données entre les systèmes monétiques et MANA, contribuer aux contrôles de cohérence et à la prévention des incidents récurrents.",
+    "Participer aux retours d'expérience, au suivi des indicateurs de qualité de service et à l'amélioration continue des processus.",
+    "Collaborer à la rédaction de la documentation bancaire (procédures, modes opératoires informatique).",
+    "Gestion des moyens de paiements virements - prélèvements - chèques",
+    "Gestion des habilitations du SI bancaire.",
+    "Effectuer toute mission particulière confiée par la DSB dans le cadre de ses attributions (groupes de travail, études diverses)."
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Analyser un parcours monétique de bout en bout, identifier les systèmes concernés et diagnostiquer les écarts fonctionnels",
+    "Exploiter des journaux de transactions, extractions et fichiers de rapprochement en collaboration avec les équipes techniques et métiers",
+    "Rédiger expressions de besoins, spécifications, scénarios de recette, comptes rendus et procédures",
+    "Organiser les recettes de bout en bout entre la monétique et MANA et assurer le suivi des anomalies",
+    "Coordonner des interlocuteurs métiers et techniques, animer des réunions et piloter des plans d'actions",
+    "Esprit d'analyse et de synthèse",
+    "Rigueur",
+    "Autonomie",
+    "Sens des responsabilités",
+    "Excellente capacité de communication et de vulgarisation auprès de publics non techniques",
+    "Curiosité et appétence pour l'innovation"
+  ],
+  "specialCommitments": null,
+  "title": "Assistant à Maîtrise d'Ouvrage Bancaire – Service des évolutions applicatives",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-11-27",
+  "workHours": null,
+  "dossier": "dsb"
+}
