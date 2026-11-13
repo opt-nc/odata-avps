@@ -1,0 +1,172 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation",
+    "direction": "DIRECTION DES FINANCES",
+    "uniteOrganisationnelle": "DIRECTION DES FINANCES",
+    "nbAgentsEncadres": 6,
+    "superieurHierarchique": "Directrice des finances",
+    "placeOrganigramme": "N-1 (par rapport au directeur opérationnel)",
+    "relationsFonctionnelles": [
+      "Directions opérationnelles",
+      "Pôle financier"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Selon règlement intérieur"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "indemnité hiérarchique de chef de service"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12957658.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Encadrement et coordination des activités de pilotage budgétaire, de contrôle de gestion, de comptabilité analytique et de prospective financière. Contribution à l'amélioration du pilotage financier et accompagnement à la transformation de la fonction financière en appui à la direction des finances.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1711/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef du service pilotage et prospective",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.89.49",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-13",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Bonne compréhension des enjeux de gestion, de performance et des équilibres économiques et financiers",
+      "Connaissance des méthodes de management, de conduite de projet et d'accompagnement du changement",
+      "Compréhension des enjeux de transformation des organisations et des systèmes d'information",
+      "Connaissance des principes budgétaires, du contrôle de gestion et de l'analyse financière",
+      "Connaissance de l'environnement institutionnel et des enjeux d'un établissement public industriel et commercial"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": null,
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "DIRECTION DES FINANCES",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Service public",
+  "jobBenefits": "indemnité hiérarchique de chef de service",
+  "jobDuration": null,
+  "jobImmediateStart": true,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Immeuble WARUNA Port Plaisance",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Immeuble WARUNA Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Finances et Budget",
+    "Pilotage"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chef de service",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "K2501",
+      "name": "Direction administrative et financière"
+    },
+    "code_metier": "OP082",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/pilotage/op082/"
+  },
+  "responsibilities": [
+    "Manager, organiser et développer les compétences du service",
+    "Encadrer, animer et fédérer l'équipe autour d'objectifs partagés",
+    "Organiser et prioriser les activités en tenant compte des compétences et des niveaux d'autonomie des collaborateurs",
+    "Superviser les travaux, veiller à leur qualité et au respect des échéances",
+    "Accompagner la montée en compétences, l'autonomie et la polyvalence des collaborateurs",
+    "Favoriser la coopération, le partage des connaissances et l'amélioration continue des pratiques",
+    "Coordonner et renforcer le pilotage financier de l'établissement",
+    "Coordonner l'élaboration budgétaire, le suivi de l'exécution et la programmation financière pluriannuelle",
+    "Superviser les travaux de contrôle de gestion, de comptabilité analytique, d'analyse financière et de prospective",
+    "Veiller à la fiabilité et à la cohérence des données et analyses produites",
+    "Développer les outils de pilotage, les indicateurs de performance et les tableaux de bord",
+    "Structurer le dialogue de gestion avec les directions opérationnelles et contribuer à la préparation des arbitrages financiers",
+    "Contribuer à la transformation de la fonction financière",
+    "Participer à la préfiguration du futur pôle financier et aux évolutions organisationnelles associées",
+    "Contribuer à la simplification, à l'harmonisation et à la fiabilisation des processus financiers",
+    "Participer aux projets structurants, notamment à l'évolution du référentiel comptable et au déploiement du nouvel ERP Finances",
+    "Proposer des leviers d'amélioration de l'organisation et de la performance de la fonction financière",
+    "Développer la coordination transversale et accompagner la direction financière",
+    "Faciliter la coopération au sein du pôle financier et avec les directions opérationnelles",
+    "Contribuer à l'animation des instances de pilotage financier et au suivi des plans d'action",
+    "Anticiper les difficultés, identifier les risques et proposer des mesures correctives",
+    "Appuyer la directrice des finances dans le suivi des dossiers stratégiques et des projets transversaux"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Manager, fédérer et accompagner une équipe aux compétences et niveaux d'autonomie variés",
+    "Organiser, coordonner et sécuriser des activités multiples",
+    "Structurer les méthodes de travail et développer les compétences des collaborateurs",
+    "Comprendre, questionner et valoriser des analyses économiques et financières",
+    "Animer des démarches transversales et conduire des projets de transformation",
+    "Traduire des orientations stratégiques en plans d'action opérationnels",
+    "Animer le dialogue de gestion, préparer les arbitrages et communiquer avec des interlocuteurs variés",
+    "Leadership, sens du collectif et capacité à fédérer",
+    "Qualités relationnelles, pédagogiques et d'écoute",
+    "Vision transversale, esprit d'analyse et de synthèse",
+    "Sens de l'organisation, des responsabilités et des priorités",
+    "Autonomie, initiative et force de proposition",
+    "Pragmatisme, capacité d'adaptation et aptitude à accompagner le changement",
+    "Rigueur, fiabilité et discrétion professionnelle"
+  ],
+  "specialCommitments": null,
+  "title": "Chef du service pilotage et prospective",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-12-04",
+  "workHours": null,
+  "dossier": "dfi"
+}
