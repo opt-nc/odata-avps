@@ -1,0 +1,168 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Cadre d'exploitation",
+    "direction": "DIRECTION DES RESSOURCES HUMAINES",
+    "uniteOrganisationnelle": "SERVICE DEVELOPPEMENT DES COMPETENCES",
+    "nbAgentsEncadres": 0,
+    "superieurHierarchique": "Chef du service développement des compétences",
+    "placeOrganigramme": "N-4 (par rapport au Directeur général)",
+    "relationsFonctionnelles": [
+      "Directions métiers",
+      "GEPP",
+      "Partenaires internes et externes",
+      "Acteurs socioéconomiques"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Selon le règlement intérieur du service"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régimes indemnitaires rattachés au poste de travail",
+        "value": "sans objet"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12953274.PDF"
+      }
+    ]
+  },
+  "alternateName": "Chargé de développement des compétences - SDC",
+  "description": "Le chargé de développement des compétences qualifie les besoins de compétences en lien avec les directions métiers et la GEPP, et conçoit des dispositifs de développement des compétences des collaborateurs cohérents avec les besoins et le plan stratégique de l'OPT.",
+  "disambiguatingDescription": "Poste de chargé de développement des compétences au sein de la Direction des ressources humaines de l'OPT.",
+  "identifier": "3134-26-1721/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chargé de développement des compétences",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": {
+    "@type": "Place",
+    "name": "Nouméa (Ducos)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "26.81.19",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-13",
+  "directApply": false,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Organisation politique, et administrative de la Nouvelle-Calédonie, de son tissu économique et de son environnement (et plus spécifiquement celui de la formation professionnelle) régional et local",
+      "Règles en matière d'achat public"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public qui gère les services postaux, financiers et de télécommunications sur le territoire.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "Organization",
+    "name": "SERVICE DEVELOPPEMENT DES COMPETENCES",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": "Expérience professionnelle dans le domaine du développement des compétences et de l'ingénierie de formation.",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": null,
+  "industry": "Télécommunications",
+  "jobBenefits": "Régimes indemnitaires rattachés au poste de travail : sans objet",
+  "jobDuration": null,
+  "jobImmediateStart": false,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Nouméa (Ducos)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 rue Paul Montchovet, Port Plaisance",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Ressources humaines"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "Permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Chargé de développement des compétences",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1503",
+      "name": "Développement des ressources humaines"
+    },
+    "code_metier": "OP035",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/ressources_humaines/op035/"
+  },
+  "responsibilities": [
+    "Analyser avec les référents métier les évolutions impactant les compétences (business, réglementation, technologies, contexte économique ...)",
+    "Piloter des projets de formation de l'identification du besoin jusqu'à l'évaluation finale du projet",
+    "Assurer l'ingénierie de formation adaptée à chaque projet",
+    "Sourcer et évaluer les formateurs en capacité de répondre au besoin défini dans la consultation",
+    "Assurer la promotion en interne des dispositifs de développement des compétences",
+    "Animer la relation avec les partenaires internes et externes, et les acteurs socioéconomiques",
+    "Mettre en oeuvre les opérations de gestion des formations (suivi stagiaires, organisation des plateaux techniques ...)",
+    "Participer à l'élaboration du plan de développement des compétences de l'OPT",
+    "Proposer et décliner des actions visant à améliorer la satisfaction des clients internes (commanditaires, managers, agents)"
+  ],
+  "salaryCurrency": "XPF",
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Méthodologie de conduite de projet et de pilotage d'un portefeuille de projets",
+    "Techniques d'animation de groupe (atelier d'intelligence collective par exemple)",
+    "Rédaction de cahier des charges et analyse des offres",
+    "Techniques de rédaction et de conception de supports (supports de présentation, note, rapport, bilans ...)",
+    "Capacités d'analyse et de synthèse",
+    "Capacité à animer un réseau d'acteurs internes et externes",
+    "Négociation",
+    "Lecture de données RH et mise en place d'indicateurs",
+    "Fortes capacités d'adaptation et de réactivité",
+    "Sens de l'organisation",
+    "Assertivité",
+    "Autonomie",
+    "Ouverture à l'innovation",
+    "Aisance à l'oral en individuel ou devant un groupe"
+  ],
+  "specialCommitments": null,
+  "title": "Chargé de développement des compétences",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-12-04",
+  "workHours": "Selon le règlement intérieur du service",
+  "dossier": "drh"
+}
