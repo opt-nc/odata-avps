@@ -16,12 +16,12 @@
       {
         "@type": "PropertyValue",
         "name": "Conditions de travail",
-        "value": "Horaires du lundi au vendredi en fonction du règlement intérieur du service. Possibilité de travailler les jours fériés et le week-end. Port obligatoire des équipements de protection individuelle (EPI). Déplacements fréquents sur l'ensemble du territoire."
+        "value": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du service. Possibilité de travailler les jours fériés et le week-end. Port obligatoire des équipements de protection individuelle (EPI). Déplacements fréquents sur l’ensemble du territoire."
       },
       {
         "@type": "PropertyValue",
-        "name": "Matériel fourni",
-        "value": "Utilisation du véhicule de service, Équipement de protection individuelle, Utilisation de matériels homologués, Tenue de travail."
+        "name": "Fourniture ou mise à disposition de matériels, biens ou services",
+        "value": "Utilisation du véhicule de service. Équipement de protection individuelle. Utilisation de matériels homologués. Tenue de travail"
       },
       {
         "@type": "PropertyValue",
@@ -78,7 +78,7 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public de Nouvelle-Calédonie.",
+  "employerOverview": null,
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
@@ -103,7 +103,7 @@
     "name": "Immeuble Kling",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "15 rue Fernand FOREST, Ducos",
+      "streetAddress": "15 rue Fernand FOREST",
       "addressLocality": "Nouméa",
       "addressRegion": "Province Sud",
       "addressCountry": "NC",
@@ -115,7 +115,7 @@
   "occupationalCategory": [
     "Patrimoine Bâti"
   ],
-  "physicalRequirement": "Port obligatoire des équipements de protection individuelle (EPI).",
+  "physicalRequirement": "Port obligatoire des équipements de protection individuelle (EPI). Déplacements fréquents sur l’ensemble du territoire.",
   "qualifications": "Permis de conduire B",
   "relevantOccupation": {
     "@type": "Occupation",
@@ -143,7 +143,7 @@
     "Réalisation d'études d'opportunité, faisabilité, localisation",
     "Veille technique et réglementaire"
   ],
-  "salaryCurrency": "XPF",
+  "salaryCurrency": null,
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
@@ -172,17 +172,18 @@
     "Implication",
     "Aptitude aux projets transversaux",
     "Sens de l'organisation et de la planification",
-    "Calme et serein",
+    "Calme",
+    "Serein",
     "Savoir prendre du recul",
     "Prise d’initiative",
     "Sens du service public",
     "Esprit d’équipe",
     "Adaptabilité"
   ],
-  "specialCommitments": "Possibilité de travailler les jours fériés et le week-end.",
+  "specialCommitments": null,
   "title": "Chargé d’opérations bâtiment - Service immobilier",
   "totalJobOpenings": 1,
   "validThrough": "2026-11-27",
-  "workHours": "Horaires du lundi au vendredi en fonction du règlement intérieur du service",
+  "workHours": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du service. Possibilité de travailler les jours fériés et le week-end.",
   "dossier": "dmi"
 }
