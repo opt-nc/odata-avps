@@ -16,12 +16,12 @@
       {
         "@type": "PropertyValue",
         "name": "Conditions de travail",
-        "value": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du service. Possibilité de travailler les jours fériés et le week-end. Port obligatoire des équipements de protection individuelle (EPI). Déplacements fréquents sur l’ensemble du territoire."
+        "value": "Horaires du lundi au vendredi en fonction du règlement intérieur du service. Possibilité de travailler les jours fériés et le week-end. Port obligatoire des équipements de protection individuelle (EPI). Déplacements fréquents sur l’ensemble du territoire."
       },
       {
         "@type": "PropertyValue",
         "name": "Fourniture ou mise à disposition de matériels, biens ou services",
-        "value": "Utilisation du véhicule de service. Équipement de protection individuelle. Utilisation de matériels homologués. Tenue de travail"
+        "value": "Utilisation du véhicule de service. Équipement de protection individuelle. Utilisation de matériels homologués. Tenue de travail."
       },
       {
         "@type": "PropertyValue",
@@ -32,14 +32,14 @@
   },
   "alternateName": null,
   "description": "Représente ou assiste la maîtrise d'ouvrage sur les plans techniques, administratifs et financiers lors des phases de programmation, conception et réalisation de projets neufs ou de restructuration lourde du patrimoine bâti de l'OPT-NC. Suit la conception ou conçoit, fait réaliser par des entreprises, les travaux de construction, rénovation ou aménagement concernant le patrimoine bâti de l'OPT-NC.",
-  "disambiguatingDescription": null,
+  "disambiguatingDescription": "Chargé d’opérations bâtiment au sein du Service immobilier",
   "identifier": "3134-26-1661/SR",
   "image": null,
   "mainEntityOfPage": null,
   "name": "Chargé d’opérations bâtiment - Service immobilier",
   "owner": {
     "@type": "Organization",
-    "name": "Office des Postes et des Télécommunications de Nouvelle-Calédonie",
+    "name": "Office des postes et télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
@@ -78,18 +78,20 @@
     ]
   },
   "eligibilityToWorkRequirement": null,
-  "employerOverview": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public de Nouvelle-Calédonie.",
   "employmentType": "FULL_TIME",
   "employmentUnit": {
     "@type": "OrganizationalUnit",
-    "name": "SERVICE IMMOBILIER"
+    "name": "SERVICE IMMOBILIER",
+    "url": null,
+    "logo": null
   },
   "estimatedSalary": null,
   "experienceInPlaceOfEducation": null,
   "experienceRequirements": null,
   "hiringOrganization": {
     "@type": "Organization",
-    "name": "Office des Postes et des Télécommunications de Nouvelle-Calédonie",
+    "name": "Office des postes et télécommunications",
     "url": "https://www.opt.nc",
     "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
   },
@@ -115,7 +117,7 @@
   "occupationalCategory": [
     "Patrimoine Bâti"
   ],
-  "physicalRequirement": "Port obligatoire des équipements de protection individuelle (EPI). Déplacements fréquents sur l’ensemble du territoire.",
+  "physicalRequirement": "Port obligatoire des équipements de protection individuelle (EPI).",
   "qualifications": "Permis de conduire B",
   "relevantOccupation": {
     "@type": "Occupation",
@@ -147,18 +149,26 @@
   "securityClearanceRequirement": null,
   "sensoryRequirement": null,
   "skills": [
-    "Porter un diagnostic sur le patrimoine bâti, apporter au maître d'ouvrage des arguments techniques d'aide à la décision, informer des contraintes techniques inhérentes à certains choix",
+    "Porter un diagnostic sur le patrimoine bâti",
+    "Apporter au maître d'ouvrage des arguments techniques d'aide à la décision",
+    "Informer des contraintes techniques inhérentes à certains choix",
     "Analyser les besoins de l'OPT-NC, des clients internes",
-    "Rédiger un cahier des charges, un programme d'opération, choisir un concepteur",
-    "Commanditer des travaux d'expertise, analyser les résultats",
-    "Faire appliquer les règles de conception des ouvrages, contrôler l'application des normes et techniques de mise en œuvre des matériaux et matériels",
+    "Rédiger un cahier des charges",
+    "Rédiger un programme d'opération",
+    "Choisir un concepteur",
+    "Commanditer des travaux d'expertise",
+    "Analyser les résultats",
+    "Faire appliquer les règles de conception des ouvrages",
+    "Contrôler l'application des normes et techniques de mise en œuvre des matériaux et matériels",
     "Mettre en œuvre les techniques du mode projet",
-    "Appliquer la réglementation, élaborer des marchés publics",
+    "Appliquer la réglementation",
+    "Élaborer des marchés publics",
     "Planifier et organiser les tâches du projet",
-    "Consulter les entreprises et autres prestataires et passer les commandes",
+    "Consulter les entreprises et autres prestataires",
+    "Passer les commandes",
     "Prendre des décisions dans l'intérêt de l'OPT-NC",
     "Effectuer des études de coûts prévisionnelles",
-    "Elaborer et suivre l'exécution d'un budget",
+    "Élaborer et suivre l'exécution d'un budget",
     "Réaliser des tableaux de bords avec des indicateurs",
     "Contrôler la conformité des documents administratifs",
     "Contrôler la passation et l'exécution des marchés publics",
@@ -171,7 +181,8 @@
     "Rigueur",
     "Implication",
     "Aptitude aux projets transversaux",
-    "Sens de l'organisation et de la planification",
+    "Sens de l'organisation",
+    "Planification",
     "Calme",
     "Serein",
     "Savoir prendre du recul",
@@ -184,6 +195,6 @@
   "title": "Chargé d’opérations bâtiment - Service immobilier",
   "totalJobOpenings": 1,
   "validThrough": "2026-11-27",
-  "workHours": "Horaires de travail du lundi au vendredi en fonction du règlement intérieur du service. Possibilité de travailler les jours fériés et le week-end.",
+  "workHours": "Horaires du lundi au vendredi en fonction du règlement intérieur du service. Possibilité de travailler les jours fériés et le week-end.",
   "dossier": "dmi"
 }
