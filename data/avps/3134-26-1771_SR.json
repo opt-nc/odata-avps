@@ -1,0 +1,184 @@
+{
+  "additionalType": {
+    "corpsDomaine": "Contrôleur",
+    "direction": "DIRECTION DES SERVICES BANCAIRES",
+    "uniteOrganisationnelle": "Direction des services Bancaires",
+    "nbAgentsEncadres": 5,
+    "superieurHierarchique": "Chef de Centre",
+    "placeOrganigramme": "N-2 par rapport au directeur opérationnel",
+    "relationsFonctionnelles": [
+      "Pôle Conformité",
+      "Service des évolutions applicatives / DSI",
+      "Autres pôles du Centre"
+    ],
+    "informationsLibres": [
+      {
+        "@type": "PropertyValue",
+        "name": "Habilitations requises",
+        "value": "permis B"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Conditions de travail",
+        "value": "Déplacements et télétravail possibles selon les missions occupées"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Matériel fourni",
+        "value": "PC portable"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Régime de rémunération",
+        "value": "indemnité de chef de cellule"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Fiche d'emploi générique RESPNC",
+        "value": "https://drhfpnc.gouv.nc/sites/default/files/atoms/files/12952006.PDF"
+      }
+    ]
+  },
+  "alternateName": null,
+  "description": "Le Chef de cellule Opérations, en collaboration avec le Chef de Centre, assure le management, le pilotage et le contrôle des opérations liées aux comptes CCP et CNE, afin de garantir la qualité, la fiabilité et la conformité des traitements réalisés au sein du Centre. Il veille à la bonne application des procédures internes, au respect des délais opérationnels et à la maîtrise des risques associés.",
+  "disambiguatingDescription": null,
+  "identifier": "3134-26-1771/SR",
+  "image": null,
+  "mainEntityOfPage": null,
+  "name": "Chef de cellule Opérations - Centre de Production Bancaire",
+  "owner": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "potentialAction": null,
+  "sameAs": null,
+  "subjectOf": null,
+  "url": null,
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "applicantLocationRequirements": null,
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "telephone": "(+687) 26.88.42 - 26.88.40",
+    "email": "DRH-candidature@opt.nc"
+  },
+  "baseSalary": null,
+  "datePosted": "2026-11-27",
+  "directApply": null,
+  "educationRequirements": {
+    "credentialCategory": null,
+    "competencyRequired": [
+      "Organisation et fonctionnement de l’OPT-NC",
+      "Maîtrise de la réglementation bancaire et financière",
+      "Compréhension des environnements fonctionnels des applications bancaires"
+    ]
+  },
+  "eligibilityToWorkRequirement": null,
+  "employerOverview": "L'Office des Postes et des Télécommunications de Nouvelle-Calédonie (OPT-NC) est un établissement public de Nouvelle-Calédonie.",
+  "employmentType": "FULL_TIME",
+  "employmentUnit": {
+    "@type": "OrganizationalUnit",
+    "name": "Centre de Production Bancaire",
+    "url": null,
+    "logo": null
+  },
+  "estimatedSalary": null,
+  "experienceInPlaceOfEducation": null,
+  "experienceRequirements": null,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Office des Postes et des Télécommunications",
+    "url": "https://www.opt.nc",
+    "logo": "https://bourse-emploi.opt.nc/images/logo-opt-share.png"
+  },
+  "incentiveCompensation": "indemnité de chef de cellule",
+  "industry": "Services bancaires",
+  "jobBenefits": "indemnité de chef de cellule",
+  "jobDuration": null,
+  "jobImmediateStart": null,
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Centre de Production Bancaire",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 rue Eugène Porcheron Quartier Latin",
+      "addressLocality": "Nouméa",
+      "addressRegion": "Province Sud",
+      "addressCountry": "NC",
+      "province": "province Sud"
+    }
+  },
+  "jobLocationType": null,
+  "jobStartDate": null,
+  "occupationalCategory": [
+    "Services bancaires"
+  ],
+  "physicalRequirement": null,
+  "qualifications": "permis B",
+  "relevantOccupation": {
+    "@type": "Occupation",
+    "name": "Gestionnaire Back Office",
+    "occupationalCategory": {
+      "@type": "CategoryCode",
+      "codeValue": "M1203",
+      "name": "Gestion de back et middle-office financier"
+    },
+    "code_metier": "OP012",
+    "fiche_metier_url": "https://opt-nc.github.io/odata-referentiel-metiers/familles-metiers/services_bancaires/op012/"
+  },
+  "responsibilities": [
+    "Organise, supervise et réalise le traitement quotidien des opérations sur les comptes dans le respect des procédures et des délais",
+    "Contrôle les opérations, veille à la détection des anomalies et proposer des actions correctrices",
+    "Suit les indicateurs d’activité et de performance du périmètre et en rend compte au Chef du Centre",
+    "Encadre et anime les équipes dédiées, en impulsant une culture de maîtrise des risques, de vigilance orientée client",
+    "Organise, coordonne et supervise les activités du Pôle Opérations : successions, virements, prélèvements, gestion des chéquiers et cartes, saisies administratives, liquidations judiciaires, retours de fonds, INL, clôtures de comptes, BEL, ainsi que le traitement du courrier entrant et sortant du Centre",
+    "Évalue la charge de travail quotidienne et adapte l’organisation pour assurer la continuité et la fluidité des traitements",
+    "Met en œuvre un plan de contrôle des opérations traitées, garantissant leur conformité et leur fiabilité",
+    "Assure la mise à jour, la diffusion et l’application des modes opératoires et procédures, en lien avec le Pôle Conformité",
+    "Signale tout dysfonctionnement informatique ou opérationnel auprès du service des évolutions applicatives / DSI et suit la résolution des anomalies",
+    "Garantit l’exactitude de la comptabilité journalière de son périmètre",
+    "Prend part activement au suivi des réclamations et au traitement des dossiers sensibles ou complexes",
+    "Assure l’entraide au sein de l’équipe en cas d’absence ou de surcharge",
+    "Encadrer l’équipe placée sous sa responsabilité, anime les points de coordination et veille à une communication fluide et constructive",
+    "Pilote les activités du pôle selon une approche par les risques et veille à la bonne application des procédures et du dispositif réglementaire",
+    "Suit et analyse les indicateurs d’activité, de qualité et de performance du pôle",
+    "Assure un reporting régulier auprès du Chef de Centre et propose les actions correctrices nécessaires",
+    "Travaille en coordination étroite avec les autres pôles du Centre pour garantir la cohérence et la continuité des opérations",
+    "Participe activement à la mise en œuvre des projets réglementaires et des évolutions des activités bancaires",
+    "Contribue à la refonte des parcours clients et à l’optimisation des processus opérationnels",
+    "Accompagne les actions de conduite du changement et la montée en compétences des agents",
+    "Propose des évolutions d’organisation visant à renforcer la performance et la maîtrise des risques",
+    "Participe aux contrôles de premier niveau et contribue à la mise à jour du dispositif de contrôle interne",
+    "Met en œuvre les plans d’actions issus du contrôle permanent, des audits ou des revues de conformité sur son périmètre",
+    "Réaliser toute mission spécifique confiée par la hiérarchie dans le cadre de ses attributions (groupes de travail, études ou analyses ponctuelles)",
+    "Participe aux comités ou réunions pour lesquels sa présence est requise par le Chef du Centre de Production Bancaire",
+    "Assure l’entraide managériale au sein du Centre, notamment pendant les congés ou absences des autres responsables"
+  ],
+  "salaryCurrency": null,
+  "securityClearanceRequirement": null,
+  "sensoryRequirement": null,
+  "skills": [
+    "Encadrer, animer et développer une équipe",
+    "Réaliser des analyses et proposer des solutions adaptées",
+    "Appliquer une règle, une procédure, la réglementation en vigueur et la faire appliquer",
+    "Rédiger des procédures, comptes rendus",
+    "Animer des réunions",
+    "Grande discrétion professionnelle",
+    "Rigueur",
+    "Organisation",
+    "Anticipation",
+    "Esprit d’analyse et de synthèse",
+    "Qualité relationnelle forte",
+    "Sens aiguë de la communication",
+    "Disponibilité",
+    "Forte implication"
+  ],
+  "specialCommitments": null,
+  "title": "Chef de cellule Opérations - Centre de Production Bancaire",
+  "totalJobOpenings": 1,
+  "validThrough": "2026-12-18",
+  "workHours": null,
+  "dossier": "dsb"
+}
